@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32.0px"
+   height="32.0px"
+   viewBox="0 0 32.0 32.0"
+   version="1.1"
+   id="SVGRoot"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs31757">
+    <linearGradient
+       xlink:href="#linearGradient37101"
+       id="linearGradient37103"
+       x1="0.13015258"
+       y1="16.059042"
+       x2="31.810806"
+       y2="16.059042"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.88139524,0,0,0.8796997,1.9236955,1.8728647)" />
+    <linearGradient
+       id="linearGradient37101">
+      <stop
+         style="stop-color:#008c00;stop-opacity:0.49803922;"
+         offset="0.00321543"
+         id="stop37099" />
+      <stop
+         style="stop-color:#00c800;stop-opacity:0.74901962;"
+         offset="0.04180063"
+         id="stop40033" />
+      <stop
+         style="stop-color:#007800;stop-opacity:1;"
+         offset="0.87138265"
+         id="stop37097" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.18339;stroke-linecap:square;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="rect36610-9"
+       width="32"
+       height="32"
+       x="0"
+       y="0"
+       ry="5.423141" />
+    <rect
+       style="fill:url(#linearGradient37103);fill-opacity:1;stroke:#000000;stroke-width:0.998542;stroke-linecap:square;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="rect36610"
+       width="27.001459"
+       height="27.001457"
+       x="2.4992709"
+       y="2.4992709"
+       ry="4.5760221" />
+    <path
+       d="M 7.2186909,6.0789463 7.1006873,26.033465"
+       id="path2157"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       stroke="#ffffff"
+       stroke-linecap="round"
+       stroke-width="1.38204" />
+    <path
+       d="M 7.3366985,23.904981 25.038007,24.03401"
+       id="path2159"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       stroke="#ffffff"
+       stroke-width="1.38204" />
+    <path
+       d="M 25.156017,25.646375 25.27402,10.138422"
+       id="path2161"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       stroke="#ffffff"
+       stroke-linecap="round"
+       stroke-width="1.38204" />
+    <rect
+       id="rect2163"
+       width="7.671865"
+       height="1.55711"
+       x="14.212317"
+       y="20.205511"
+       fill="#ffffff"
+       stroke="#ffffff"
+       stroke-width="1.33857"
+       rx="0.78696543"
+       ry="0.78696543" />
+    <ellipse
+       id="path2167"
+       fill="#ffffff"
+       stroke="#ffffff"
+       stroke-width="1.72108"
+       cx="11.97761"
+       cy="18.371706"
+       rx="1.0594591"
+       ry="1.0743998" />
+    <rect
+       id="rect2169"
+       width="2.9618406"
+       height="0.27806544"
+       x="9.8907375"
+       y="21.428856"
+       fill="#ffffff"
+       stroke="#ffffff"
+       stroke-width="1.16415"
+       rx="0.140531"
+       ry="0.140531" />
+    <path
+       d="m 7.5122473,14.398241 17.7013097,0.12903"
+       id="path2159-3"
+       fill="#ffffff"
+       fill-rule="evenodd"
+       stroke="#ffffff"
+       stroke-width="1.38204" />
+    <rect
+       id="rect2163-5"
+       width="7.671865"
+       height="1.55711"
+       x="14.379798"
+       y="10.749512"
+       fill="#ffffff"
+       stroke="#ffffff"
+       stroke-width="1.33857"
+       rx="0.78696543"
+       ry="0.78696543" />
+    <ellipse
+       id="path2167-9"
+       fill="#ffffff"
+       stroke="#ffffff"
+       stroke-width="1.72108"
+       cx="12.145281"
+       cy="8.9155312"
+       rx="1.0594591"
+       ry="1.0743998" />
+    <rect
+       id="rect2169-6"
+       width="2.9618406"
+       height="0.27806544"
+       x="10.058216"
+       y="11.972856"
+       fill="#ffffff"
+       stroke="#ffffff"
+       stroke-width="1.16415"
+       rx="0.140531"
+       ry="0.140531" />
+  </g>
+</svg>

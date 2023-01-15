@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32.0px"
+   height="32.0px"
+   viewBox="0 0 32.0 32.0"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="plaque.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1434"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="26.6875"
+     inkscape:cx="15.981265"
+     inkscape:cy="16"
+     inkscape:window-width="1858"
+     inkscape:window-height="1057"
+     inkscape:window-x="1420"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid1557" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1429" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.8523;stroke-linejoin:round;paint-order:markers fill stroke"
+       id="rect1616"
+       width="22.979668"
+       height="10.914094"
+       x="4.5101657"
+       y="9.4937735" />
+    <rect
+       style="fill:#000000;stroke:none;stroke-width:1.21953;stroke-linejoin:round;paint-order:markers fill stroke"
+       id="rect1774"
+       width="10.004683"
+       height="2.0983608"
+       x="7.0070257"
+       y="11.953161" />
+    <rect
+       style="fill:#000000;stroke:none;stroke-width:1.60053;stroke-linejoin:round;paint-order:markers fill stroke"
+       id="rect1774-2"
+       width="5.9203749"
+       height="6.107728"
+       x="19.072599"
+       y="11.990632" />
+    <rect
+       style="fill:#000000;stroke:none;stroke-width:1.21953;stroke-linejoin:round;paint-order:markers fill stroke"
+       id="rect1774-0"
+       width="10.004684"
+       height="2.0983608"
+       x="6.9695549"
+       y="15.962529" />
+  </g>
+</svg>

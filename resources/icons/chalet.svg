@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32.0px"
+   height="32.0px"
+   viewBox="0 0 32.0 32.0"
+   version="1.1"
+   id="SVGRoot"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs36423">
+    <linearGradient
+       id="linearGradient37101">
+      <stop
+         style="stop-color:#008c00;stop-opacity:0.49803922;"
+         offset="0.00321543"
+         id="stop37099" />
+      <stop
+         style="stop-color:#00c800;stop-opacity:0.74901962;"
+         offset="0.04180063"
+         id="stop40033" />
+      <stop
+         style="stop-color:#007800;stop-opacity:1;"
+         offset="0.87138265"
+         id="stop37097" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient37101"
+       id="linearGradient37103"
+       x1="0.13015258"
+       y1="16.059042"
+       x2="31.810806"
+       y2="16.059042"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:url(#linearGradient37103);stroke:#ffffff;stroke-width:1.04575;stroke-linecap:square;stroke-dasharray:none;paint-order:markers fill stroke;fill-opacity:1"
+       id="rect36610"
+       width="30.634903"
+       height="30.693947"
+       x="0.65302759"
+       y="0.71206826"
+       ry="5.2017999" />
+  </g>
+  <path
+     d="M 11.438545,4.9524963 3.92017,11.089875 h 1.5036679 v 9.206077 H 9.934871 v -4.678439 h 3.110457 l 7e-6,4.678439 h 4.407923 v -9.206077 h 1.503674 z"
+     id="path645"
+     fill="#ffffff"
+     fill-rule="evenodd"
+     stroke="#ffffff"
+     stroke-width="0.0383262" />
+  <path
+     d="m 15.518495,26.826846 6.335946,-10.366725 6.341815,10.375936 z"
+     id="path4355"
+     fill="#ffffff"
+     fill-rule="evenodd"
+     stroke="#ffffff"
+     stroke-width="0.0608631" />
+</svg>

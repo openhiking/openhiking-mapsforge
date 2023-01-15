@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32.0px"
+   height="32.0px"
+   viewBox="0 0 32.0 32.0"
+   version="1.1"
+   id="SVGRoot"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs16916" />
+  <g
+     id="layer1">
+    <path
+       id="rect17051-7"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.32198;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="M 15.9459,0.72317517 9.6309002,6.7846918 22.461375,6.7590409 Z M 9.6309002,6.7846918 V 28 H 22.461375 V 6.7846918 Z" />
+    <rect
+       style="fill:#7f753d;fill-opacity:1;stroke:none;stroke-width:2.08749;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect17051"
+       width="10"
+       height="22"
+       x="11"
+       y="6.9688869" />
+    <path
+       style="fill:#000000;stroke-width:2.2;stroke-linecap:round;paint-order:markers fill stroke"
+       id="path17105"
+       d="M 14.800937,5.5831381 1.8409188,5.7213459 8.2012363,-5.5714629 Z"
+       transform="matrix(0.77159072,0.00313615,-0.00123204,0.44452598,9.5866131,4.4509397)" />
+    <rect
+       style="fill:#474123;fill-opacity:1;stroke:none;stroke-width:1.86711;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect17051-2"
+       width="8"
+       height="22"
+       x="12"
+       y="6.9688869" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.803867;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect17051-2-5"
+       width="8"
+       height="4.0779848"
+       x="12"
+       y="10.968887" />
+    <rect
+       style="fill:#000000;stroke:none;stroke-width:1.14214;stroke-linecap:round;paint-order:markers fill stroke"
+       id="rect2097"
+       width="14"
+       height="1"
+       x="9"
+       y="27.968887"
+       ry="0" />
+  </g>
+</svg>

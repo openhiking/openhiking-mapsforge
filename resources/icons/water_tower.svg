@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32.0px"
+   height="32.0px"
+   viewBox="0 0 32.0 32.0"
+   version="1.1"
+   id="SVGRoot"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs43275">
+    <linearGradient
+       id="linearGradient68155">
+      <stop
+         style="stop-color:#4d4d4d;stop-opacity:0;"
+         offset="0"
+         id="stop68153" />
+      <stop
+         style="stop-color:#4d4d4d;stop-opacity:1;"
+         offset="1"
+         id="stop68151" />
+    </linearGradient>
+    <radialGradient
+       xlink:href="#linearGradient68155"
+       id="radialGradient68157"
+       cx="15.868852"
+       cy="8.5058546"
+       fx="15.868852"
+       fy="8.5058546"
+       r="7.4758732"
+       gradientTransform="matrix(1,0,0,1.0025061,0,-0.02131666)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:#ffffff;stroke:none;stroke-width:0.925759;stroke-linecap:square;stroke-dasharray:none;paint-order:fill markers stroke"
+       id="rect69007-6"
+       width="20.084309"
+       height="2.9601874"
+       x="4.9274001"
+       y="29.002342" />
+    <rect
+       style="fill:#ffffff;stroke:none;stroke-width:0.914296;stroke-linecap:square;stroke-dasharray:none;paint-order:fill markers stroke"
+       id="rect69007"
+       width="4.0093675"
+       height="14.4637"
+       x="13.002341"
+       y="15.737705" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.943159;stroke-linecap:square;stroke-dasharray:none;paint-order:fill markers stroke"
+       id="path62162-0"
+       cx="14.932084"
+       cy="8.412178"
+       rx="8.0136824"
+       ry="8.0324173" />
+    <path
+       style="fill:#808080;stroke:#808080;stroke-width:1;stroke-linecap:square;stroke-dasharray:none;paint-order:fill markers stroke"
+       d="M 11.990632,15.325527 7.119438,30.051522"
+       id="path65122" />
+    <path
+       style="fill:#808080;stroke:#808080;stroke-width:1;stroke-linecap:square;stroke-dasharray:none;paint-order:fill markers stroke"
+       d="m 18.06089,15.269322 4.871194,14.725995"
+       id="path65122-9" />
+    <path
+       id="rect60271"
+       style="fill:#000000;stroke:none;stroke-width:1.03512;stroke-linecap:square;stroke-dasharray:none;paint-order:fill markers stroke"
+       d="M 14 15 L 14 30 L 6 30 L 6 31 L 24 31 L 24 30 L 16 30 L 16 15 L 14 15 z " />
+    <ellipse
+       style="fill:url(#radialGradient68157);fill-opacity:1;stroke:#333333;stroke-width:0.8;stroke-linecap:square;stroke-dasharray:none;paint-order:fill markers stroke"
+       id="path62162"
+       cx="15.007025"
+       cy="8.3185005"
+       rx="6.7958832"
+       ry="6.8146186" />
+  </g>
+</svg>

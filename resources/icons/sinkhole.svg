@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64.0px"
+   height="64.0px"
+   viewBox="0 0 64.0 64.0"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="sinkhole.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview21098"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="9.078411"
+     inkscape:cx="32.990355"
+     inkscape:cy="32.054068"
+     inkscape:window-width="1304"
+     inkscape:window-height="745"
+     inkscape:window-x="54"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid21221" />
+  </sodipodi:namedview>
+  <defs
+     id="defs21093" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path25375-1"
+       style="fill:none;stroke:#725d00;stroke-width:6;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       d="m 42.55873,42.948384 5.2969,6.351715 v 0 0 m -30.798193,-33.585155 5.2969,6.351715 v 0 0 m 25.723917,10.523747 h 6.810281 v 0 M 10.351318,32.472325 h 6.81028 v 0 m 15.428808,15.585967 v 6.141719 m 0.118081,-43.337292 v 6.141719 m 10.072954,5.262687 4.575967,-4.45123 m -29.733661,29.302369 4.575967,-4.45123 M 57.091063,32.590405 A 24.500654,24.500654 0 0 1 32.590408,57.091059 24.500654,24.500654 0 0 1 8.0897541,32.590405 24.500654,24.500654 0 0 1 32.590408,8.0897503 24.500654,24.500654 0 0 1 57.091063,32.590405 Z" />
+  </g>
+</svg>
