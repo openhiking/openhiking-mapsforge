@@ -1,9 +1,17 @@
 <?xml-stylesheet type="text/xsl"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!-- 
+# OpenHikingMap
+#
+# Point rendering: Amenities
+#
+# Copyright (c) 2022-2023 OpenHiking contributors
+# SPDX-License-Identifier: GPL-3.0-only
+-->
 
 <xsl:template name="points-amenities">
 
-<rule  e="any" k="amenity" v="police" zoom-min="16">
+<rule  e="any" k="amenity" v="police" zoom-min="15">
         <symbol id="police" src="{$symbolPath}/police.svg" symbol-width="20" priority="{$pr-police}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="police" 
@@ -29,7 +37,7 @@
         <symbol id="recycling" src="{$symbolPath}/recycling.svg" symbol-width="18" priority="{$pr-recycling}"/>
     </rule>        
 
-    <rule  e="any" k="amenity" v="drinking_water" zoom-min="16">
+    <rule  e="any" k="amenity" v="drinking_water" zoom-min="14">
         <symbol id="drinking_water" src="{$symbolPath}/drinking_water.svg" symbol-width="20" priority="{$pr-drinking-water}"/>
     </rule>        
 

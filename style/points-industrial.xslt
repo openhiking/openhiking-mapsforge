@@ -33,7 +33,7 @@
     </rule>           
 </rule>
 
-<rule  e="any" k="man_made" v="works" zoom-min="15">
+<rule  e="any" k="man_made" v="works" zoom-min="14">
   <symbol id="factory" src="{$symbolPath}/factory.svg" symbol-width="24" priority="{$pr-factory}"/>
   <rule e="node" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="factory" 

@@ -1,9 +1,17 @@
 <?xml-stylesheet type="text/xsl"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!-- 
+# OpenHikingMap
+#
+# Point rendering: Leisure
+#
+# Copyright (c) 2022-2023 OpenHiking contributors
+# SPDX-License-Identifier: GPL-3.0-only
+-->
 
 <xsl:template name="points-leisure">
 
-<rule  e="any" k="tourism" v="zoo" zoom-min="15">
+<rule  e="any" k="tourism" v="zoo" zoom-min="14">
   <symbol id="zoo" src="{$symbolPath}/zoo.svg" symbol-width="24" priority="{$pr-zoo}"/>
   <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="zoo" 
@@ -15,7 +23,7 @@
         <symbol id="playground" src="{$symbolPath}/playground.svg" symbol-width="23" priority="{$pr-playground}"/>
 </rule>
 
-<rule  e="any" k="amenity" v="public_bath|spa" zoom-min="15">
+<rule  e="any" k="amenity" v="public_bath|spa" zoom-min="14">
   <symbol id="spa" src="{$symbolPath}/spa.svg" symbol-width="24" priority="{$pr-spa}"/>
   <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="spa" 

@@ -10,7 +10,7 @@
 -->
 <xsl:template name="points-accomodation">
 
-<rule  e="any" k="tourism" v="hostel" zoom-min="16">
+<rule  e="any" k="tourism" v="hostel" zoom-min="15">
         <symbol id="hostel" src="{$symbolPath}/hostel.svg" symbol-width="22" priority="{$pr-hostel}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="hostel" 
@@ -18,7 +18,7 @@
         </rule>
        
 </rule>
-<rule  e="any" k="tourism" v="hotel" zoom-min="16">
+<rule  e="any" k="tourism" v="hotel" zoom-min="15">
         <symbol id="hotel" src="{$symbolPath}/hotel.svg" symbol-width="22" priority="{$pr-hotel}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="hotel" 
@@ -27,7 +27,7 @@
        
 </rule>
 
-<rule  e="any" k="tourism" v="bed_and_breakfast|guest_house" zoom-min="16">
+<rule  e="any" k="tourism" v="bed_and_breakfast|guest_house" zoom-min="15">
         <symbol id="hotel" src="{$symbolPath}/hotel.svg" symbol-width="22" priority="{$pr-hotel}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="hotel" 
@@ -38,7 +38,7 @@
 
 
 <rule e="any" k="access" v="~|yes" >
-    <rule  e="any" k="tourism" v="apartment" zoom-min="16">
+    <rule  e="any" k="tourism" v="apartment" zoom-min="15">
     </rule>
 
     <rule  e="any" k="tourism" v="chalet" zoom-min="16">
@@ -57,7 +57,7 @@
         </rule>
     </rule>
 
-    <rule  e="any" k="tourism" v="wilderness_hut" zoom-min="15">
+    <rule  e="any" k="tourism" v="wilderness_hut" zoom-min="14">
         <symbol id="wilderness_hut" src="{$symbolPath}/wilderness_hut.svg" symbol-width="23" priority="{$pr-wilderness-hut}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="wilderness_hut" 

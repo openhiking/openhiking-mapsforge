@@ -1,9 +1,17 @@
 <?xml-stylesheet type="text/xsl"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!-- 
+# OpenHikingMap
+#
+# Point rendering: Religion
+#
+# Copyright (c) 2022-2023 OpenHiking contributors
+# SPDX-License-Identifier: GPL-3.0-only
+-->
 
 <xsl:template name="points-religion">
 
-<rule  e="any" k="amenity" v="place_of_worship" zoom-min="15">
+<rule  e="any" k="amenity" v="place_of_worship" zoom-min="14">
   <rule  e="any" k="building" v="church|cathedral" >
     <symbol id="church" src="{$symbolPath}/church.svg" symbol-width="26" priority="{$pr-church}"/>
   </rule>

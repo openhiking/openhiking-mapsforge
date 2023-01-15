@@ -20,7 +20,7 @@
         </rule>       
     </rule>        
 
-    <rule  e="any" k="amenity" v="fuel" zoom-min="16">
+    <rule  e="any" k="amenity" v="fuel" zoom-min="14">
         <symbol id="fuel" src="{$symbolPath}/fuel.svg" symbol-width="16" priority="{$pr-fuel}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="fuel" 
@@ -30,7 +30,7 @@
 
 </rule>
 
-<rule  e="any" k="railway" v="station|halt" zoom-min="15">
+<rule  e="any" k="railway" v="station|halt" zoom-min="14">
   <symbol id="train" src="{$symbolPath}/train_station.svg" symbol-width="18" priority="{$pr-train-station}"/>
   <rule e="node" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="train" position="below" 

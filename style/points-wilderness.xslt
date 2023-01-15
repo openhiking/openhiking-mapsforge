@@ -109,7 +109,7 @@
   </rule>
 </rule>
 
-<rule  e="any" k="ford" v="*" zoom-min="16">
+<rule  e="any" k="ford" v="*" zoom-min="15">
   <symbol id="ford" src="{$symbolPath}/ford.svg" symbol-width="20"  priority="{$pr-ford}"/>
 </rule>
 

@@ -78,7 +78,7 @@
     </rule>
 </rule>
 
-<rule e="any" k="natural" v="sinkhole" zoom-min="16">
+<rule e="any" k="natural" v="sinkhole" zoom-min="15">
     <symbol id="sinkhole" src="{$symbolPath}/sinkhole.svg" symbol-width="15" priority="{$pr-sinkhole}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption fill="#666666" font-size="12" font-style="bold" k="name"
@@ -107,7 +107,7 @@
     </rule>
 </rule>
 
-<rule e="node" k="natural" v="hot_spring" zoom-min="15">
+<rule e="node" k="natural" v="hot_spring" zoom-min="14">
     <symbol id="hotspring" src="{$symbolPath}/hot_spring.svg" symbol-width="16" priority="{$pr-spring}"/>    
     <rule e="any" k="*" v="*" zoom-min="15">
         <caption fill="#0000f8" font-size="12" font-style="bold"  k="name" 
