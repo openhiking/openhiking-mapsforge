@@ -44,6 +44,15 @@
 
 </rule>
 
+<rule  e="any" k="amenity" v="marketplace" zoom-min="15">
+        <symbol id="marketplace" src="{$symbolPath}/marketplace.svg" symbol-width="22" priority="{$pr-marketplace}"/>
+        <rule e="any" k="*" v="*" >
+            <caption k="name" symbol-id="marketplace" 
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-marketplace}"/>
+        </rule>       
+</rule>
+
+
 <rule  e="any" k="shop" v="ticket" zoom-min="16">
         <symbol id="tickets" src="{$symbolPath}/tickets.svg" symbol-width="20" priority="{$pr-tickets}"/>
         <rule e="any" k="*" v="*" >

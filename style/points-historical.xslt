@@ -144,6 +144,20 @@
 </rule>
 
 
+<rule  e="any" k="access" v="~|yes">
+  <rule  e="any" k="man_made" v="water_well" >
+    <rule  e="any" k="drinking_water" v="yes" zoom-min="15">
+      <symbol id="drinking_water" src="{$symbolPath}/drinking_water.svg" symbol-width="20" priority="{$pr-drinking-water}"/>
+    </rule>
+    <rule  e="any" k="drinking_water" v="~|no" zoom-min="15">
+        <symbol id="water_well" src="{$symbolPath}/water_well.svg" symbol-width="20" priority="{$pr-water-well}"/>
+    </rule>
+  </rule>
+</rule>
+
+
+
+
 
 
 </xsl:template>

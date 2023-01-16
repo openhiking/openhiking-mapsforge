@@ -1,63 +1,66 @@
 <?xml-stylesheet type="text/xsl"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!-- 
+# OpenHikingMap
+#
+# Facility polygons
+#
+# Copyright (c) 2022-2023 OpenHiking contributors
+# SPDX-License-Identifier: GPL-3.0-only
+-->
+
 
 <xsl:template name="poly-facilities">
 
   <!-- DO 7-->
-  <rule e="way" k="landuse" v="retail">
-    <area fill="#F8E8E8" />
-  </rule>
-  <rule e="way" k="landuse" v="commercial">
-    <area fill="#F8E8E8" />
-  </rule>
-  <rule e="way" k="landuse" v="industrial">
-    <area fill="#D5D5D5" />
-  </rule>
-  <rule e="way" k="landuse" v="railway">
-    <area fill="#c6b4b0" />
-  </rule>
 
-  <rule e="way" k="landuse" v="brownfield">
-    <area fill="#c9b56a" />
-  </rule>
-  <rule e="way" k="landuse" v="construction" zoom-min="13">
-    <area fill="#60FFCD85"/>
-    <rule e="way" k="*" v="*" zoom-max="15">
-      <area src="file:/patterns/construction.svg" symbol-height="12"/>
-    </rule>
-    <rule e="way" k="*" v="*" zoom-min="16">
-      <area src="file:/patterns/construction.svg" symbol-height="24"/>
-    </rule>
-  </rule>
-  <rule e="way" k="landuse" v="landfill">
-    <area fill="#D3D39A"/>
-    <rule e="way" k="*" v="*" zoom-max="15">
-      <area src="file:/patterns/landfill.svg" symbol-height="32"/>
-    </rule>
-    <rule e="way" k="*" v="*" zoom-min="16">
-      <area src="file:/patterns/landfill.svg" symbol-height="48"/>
-    </rule>
-  </rule>
+<rule e="way" k="landuse" v="commercial">
+  <area fill="#F8E8E8" scale="none"/>
+</rule>
 
-  <rule e="way" k="leisure" v="village_green|common|park">
+<rule e="way" k="landuse" v="industrial">
+  <area fill="#D5D5D5" scale="none"/>
+</rule>
+
+<rule e="way" k="landuse" v="landfill">
+  <area fill="#D3D39A" scale="none"/>
+</rule>
+
+<rule e="way" k="landuse" v="brownfield|construction">
+  <area fill="#c9b56a" scale="none"/>
+</rule>
+
+
+<rule e="way" k="leisure" v="common|village_green|park|garden">
+  <area fill="#CFFF9E" scale="none"/>
+  <rule e="way" k="*" v="*" zoom-max="14">
+    <area src="file:/patterns/park.svg" symbol-height="20"/>
+  </rule>
+  <rule e="way" k="*" v="*" zoom-min="15">
+    <area src="file:/patterns/park.svg" symbol-height="30"/>
+  </rule>
+</rule>
+
+<rule e="way" k="landuse" v="recreation_ground">
     <area fill="#CFFF9E" scale="none"/>
-    <rule e="way" k="*" v="*" zoom-max="14">
-      <area src="file:/patterns/park.svg" symbol-height="20"/>
-    </rule>
-    <rule e="way" k="*" v="*" zoom-min="15">
-      <area src="file:/patterns/park.svg" symbol-height="30"/>
-    </rule>
+  <rule e="way" k="*" v="*" zoom-max="14">
+    <area src="file:/patterns/park.svg" symbol-height="20"/>
   </rule>
+  <rule e="way" k="*" v="*" zoom-min="15">
+    <area src="file:/patterns/park.svg" symbol-height="30"/>
+  </rule>
+</rule>
 
-  <rule e="way" k="landuse" v="recreation_ground">
-      <area fill="#CFFF9E" scale="none"/>
-    <rule e="way" k="*" v="*" zoom-max="14">
-      <area src="file:/patterns/park.svg" symbol-height="20"/>
-    </rule>
-    <rule e="way" k="*" v="*" zoom-min="15">
-      <area src="file:/patterns/park.svg" symbol-height="30"/>
-    </rule>
-  </rule>
+
+<rule e="way" k="landuse" v="retail">
+  <area fill="#F8E8E8" />
+</rule>
+<rule e="way" k="landuse" v="railway">
+  <area fill="#c6b4b0" />
+</rule>
+
+
+
 
   <rule e="way" k="landuse" v="plant_nursery">
     <area fill="#AEDFA3" />

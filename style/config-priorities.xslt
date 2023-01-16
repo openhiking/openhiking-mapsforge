@@ -63,8 +63,6 @@
 <!-- Priority 0 -->
 <xsl:variable name="pr-peak-ele">0</xsl:variable>
 <xsl:variable name="pr-sinkhole">0</xsl:variable>
-<xsl:variable name="pr-bench">0</xsl:variable>
-<xsl:variable name="pr-firepit">0</xsl:variable>
 
 <xsl:variable name="pr-gate">0</xsl:variable>
 <xsl:variable name="pr-lift-gate">0</xsl:variable>
@@ -101,7 +99,6 @@
 <xsl:variable name="pr-ice-cream">0</xsl:variable>
 <xsl:variable name="pr-bunker">0</xsl:variable>
 <xsl:variable name="pr-factory">0</xsl:variable>
-<xsl:variable name="pr-crossing">0</xsl:variable>
 <xsl:variable name="pr-obstacle">0</xsl:variable>
 <xsl:variable name="pr-water-tower">0</xsl:variable>
 <xsl:variable name="pr-restaurant">0</xsl:variable>
@@ -113,6 +110,7 @@
 <xsl:variable name="pr-tumulus">0</xsl:variable>
 <xsl:variable name="pr-hillfort">0</xsl:variable>
 <xsl:variable name="pr-shop">0</xsl:variable>
+<xsl:variable name="pr-marketplace">0</xsl:variable>
 
 
 
@@ -125,6 +123,11 @@
 <xsl:variable name="pr-parking">-10</xsl:variable>
 <xsl:variable name="pr-tree">-12</xsl:variable>
 <xsl:variable name="pr-wayside-cross">-10</xsl:variable>
+<xsl:variable name="pr-bench">-10</xsl:variable>
+<xsl:variable name="pr-firepit">-10</xsl:variable>
+<xsl:variable name="pr-crossing">-10</xsl:variable>
+<xsl:variable name="pr-water-well">-10</xsl:variable>
+
 
 <!-- Priority -20 -->
 <xsl:variable name="pr-hiking-symbols">-20</xsl:variable>
