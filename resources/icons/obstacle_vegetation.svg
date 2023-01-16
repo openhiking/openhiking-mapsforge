@@ -10,24 +10,29 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs19913" />
+     id="defs1331" />
   <g
      id="layer1">
-    <path
-       style="fill:#ffffff;stroke:#ff0000;stroke-width:2.3577;stroke-linejoin:round;stroke-dasharray:none;paint-order:markers fill stroke"
-       d="M 2.1804756,25.772656 29.70711,25.722419 15.99534,5.6277859 Z"
-       id="path25961" />
-    <path
-       style="fill:#000000;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;paint-order:fill markers stroke"
-       d="m 9.2862647,19.927949 c 1.1541203,1.129125 2.3075413,2.257566 3.4602583,3.385319"
-       id="path49741" />
-    <path
-       style="fill:#000000;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;paint-order:fill markers stroke"
-       d="m 11.963232,16.197426 c 2.192903,2.117916 4.384471,4.234544 6.574707,6.349885"
-       id="path49741-4" />
-    <path
-       style="fill:#000000;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;paint-order:fill markers stroke"
-       d="m 14.815673,12.305136 c 2.614715,2.539729 5.227841,5.077914 7.839374,7.614552"
-       id="path49741-2" />
+    <g
+       id="layer1-6"
+       transform="translate(0.01873573,0.03743872)">
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:1.96663685;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:fill markers stroke"
+         id="path7178"
+         d="M 13.564402,9.3676812 C 13.412533,9.630531 -6.5218339,9.6241406 -6.6735342,9.3611934 -6.8252344,9.0982462 3.1474835,-8.1622271 3.4510526,-8.1621298 3.7546216,-8.1620324 13.716271,9.1048313 13.564402,9.3676812 Z"
+         transform="matrix(1.3266485,0,0,1.1225825,11.371039,14.902543)" />
+      <path
+         style="fill:#000000;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;paint-order:fill markers stroke"
+         d="m 9.2862647,19.927949 c 1.1541203,1.129125 2.3075413,2.257566 3.4602583,3.385319"
+         id="path49741" />
+      <path
+         style="fill:#000000;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;paint-order:fill markers stroke"
+         d="m 11.963232,16.197426 c 2.192903,2.117916 4.384471,4.234544 6.574707,6.349885"
+         id="path49741-4" />
+      <path
+         style="fill:#000000;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;paint-order:fill markers stroke"
+         d="m 14.815673,12.305136 c 2.614715,2.539729 5.227841,5.077914 7.839374,7.614552"
+         id="path49741-2" />
+    </g>
   </g>
 </svg>

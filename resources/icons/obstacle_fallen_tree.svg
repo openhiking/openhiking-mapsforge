@@ -10,28 +10,33 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs19913" />
+     id="defs1331" />
   <g
      id="layer1">
-    <path
-       style="fill:#ffffff;stroke:#ff0000;stroke-width:2.3577;stroke-linejoin:round;stroke-dasharray:none;paint-order:markers fill stroke"
-       d="M 2.1804756,25.772656 29.70711,25.722419 15.99534,5.6277859 Z"
-       id="path25961" />
-    <path
-       style="fill:#000000;stroke:#000000;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;paint-order:fill markers stroke"
-       d="m 12.101468,16.243388 c -0.0083,2.373146 -0.01664,4.744851 -0.02495,7.115113"
-       id="path49741" />
-    <path
-       style="fill:#000000;stroke:#000000;stroke-width:1.77344;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;paint-order:fill markers stroke"
-       d="m 12.36996,16.091283 c 3.76684,2.315544 7.531416,4.629697 11.293726,6.942456"
-       id="path49741-4" />
-    <path
-       style="fill:#000000;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;paint-order:fill markers stroke"
-       d="m 21.104151,17.342563 c -1.283083,0.553765 -2.565373,1.107188 -3.84687,1.660268"
-       id="path49741-4-9" />
-    <path
-       style="fill:#000000;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;paint-order:fill markers stroke"
-       d="M 18.193165,23.387957 C 17.68703,22.049368 17.181207,20.711606 16.675697,19.37467"
-       id="path49741-4-9-3" />
+    <g
+       id="layer1-6"
+       transform="translate(0.01873573,0.03743872)">
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:1.96663685;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:fill markers stroke"
+         id="path7178"
+         d="M 13.564402,9.3676812 C 13.412533,9.630531 -6.5218339,9.6241406 -6.6735342,9.3611934 -6.8252344,9.0982462 3.1474835,-8.1622271 3.4510526,-8.1621298 3.7546216,-8.1620324 13.716271,9.1048313 13.564402,9.3676812 Z"
+         transform="matrix(1.3266485,0,0,1.1225825,11.371039,14.902543)" />
+      <path
+         style="fill:#000000;stroke:#000000;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;paint-order:fill markers stroke"
+         d="m 12.380161,15.852311 c -0.0083,2.373146 -0.01664,4.744851 -0.02495,7.115113"
+         id="path49741" />
+      <path
+         style="fill:#000000;stroke:#000000;stroke-width:1.77344;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;paint-order:fill markers stroke"
+         d="m 12.648653,15.700206 c 3.76684,2.315544 7.531416,4.629697 11.293726,6.942456"
+         id="path49741-4" />
+      <path
+         style="fill:#000000;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;paint-order:fill markers stroke"
+         d="m 21.382844,16.951486 c -1.283083,0.553765 -2.565373,1.107188 -3.84687,1.660268"
+         id="path49741-4-9" />
+      <path
+         style="fill:#000000;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;paint-order:fill markers stroke"
+         d="M 18.471858,22.99688 C 17.965723,21.658291 17.4599,20.320529 16.95439,18.983593"
+         id="path49741-4-9-3" />
+    </g>
   </g>
 </svg>

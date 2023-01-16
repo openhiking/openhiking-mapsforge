@@ -25,26 +25,26 @@
        rx="4.0797486"
        ry="3.75682" />
     <ellipse
-       style="fill:#ff5555;fill-opacity:1;stroke:#ff2a2a;stroke-width:0.692458;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#ff5555;fill-opacity:1;stroke:#ba0000;stroke-width:0.692458;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path26974-7"
        cx="16.838421"
        cy="5.6743169"
        rx="4.0787764"
        ry="3.7789137" />
     <ellipse
-       style="fill:#ff65ff;fill-opacity:1;stroke:#ff00ff;stroke-width:0.688563;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#ff65ff;fill-opacity:1;stroke:#b500b5;stroke-width:0.688563;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path26974-0"
        cx="19.329584"
        cy="9.964654"
        rx="4.0807242"
        ry="3.7347291" />
     <path
-       style="fill:#ffb380;fill-opacity:1;stroke:#770000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#ffb380;fill-opacity:1;stroke:#5d0000;stroke-width:0.77580881;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="path18588"
        d="M 9.7972295,26.380246 2.48555,13.576952 l 14.743817,0.06955 z"
        transform="matrix(0.70219861,-0.00695524,0.01070148,1.1592764,9.097062,-1.9557683)" />
     <path
-       style="fill:#ffb380;fill-opacity:1;stroke:#770000;stroke-width:0.401073;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#ffb380;fill-opacity:1;stroke:#5d0000;stroke-width:0.7;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        d="m 21.561689,13.790272 c 0.246068,-0.05804 0.737631,-0.173988 1.022819,-0.380418 0.285188,-0.206431 0.364691,-0.504019 0.414234,-0.772523 0.04954,-0.268505 0.06899,-0.507613 -0.07503,-0.642365 -0.144026,-0.134753 -0.451363,-0.163437 -2.544091,-0.176096 -2.092728,-0.01266 -5.967334,-0.0092 -8.114099,-0.008 -2.146765,0.0012 -2.556738,5.4e-5 -2.7604059,0.133046 -0.2036679,0.132992 -0.1986196,0.398885 -0.1453132,0.692889 0.053306,0.294004 0.1548867,0.617315 0.4109318,0.819096 0.2560453,0.201781 0.6660643,0.283276 2.6160093,0.328564 1.949945,0.04529 5.439775,0.05454 7.18433,0.05917 1.744555,0.0046 1.74455,0.0047 1.990619,-0.05339 z"
        id="path21730" />
     <path

@@ -121,6 +121,14 @@
   <symbol id="game_feeding" src="{$symbolPath}/game_feeding.svg" symbol-width="20"  priority="{$pr-game-feeding}"/>
 </rule>
 
+<rule  e="node" k="checkpoint" v="hiking" zoom-min="15">
+  <symbol id="checkpoint" src="{$symbolPath}/checkpoint.svg" symbol-width="18" priority="{$pr-checkpoint}"/>
+  <rule e="node" k="*" v="*" zoom-min="16">
+    <caption k="name" symbol-id="checkpoint" 
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-checkpoint}"/>
+  </rule>
+</rule>
+
 
 </xsl:template>
 </xsl:stylesheet>

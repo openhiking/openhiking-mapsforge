@@ -25,8 +25,8 @@
         <osm-tag key="natural" value="land" zoom-appear="8"/>
         <osm-tag key="natural" value="marsh" zoom-appear="12"/>
         <osm-tag key="natural" value="mud" zoom-appear="12"/>        
-        <osm-tag key="natural" value="scrub" zoom-appear="10"/>
-        <osm-tag key="natural" value="scree" zoom-appear="10"/>
+        <osm-tag key="natural" value="scrub" zoom-appear="12"/>
+        <osm-tag key="natural" value="scree" zoom-appear="12"/>
         <osm-tag key="natural" value="shingle" zoom-appear="10"/>        
         <osm-tag key="natural" value="water" zoom-appear="8"/>
         <osm-tag key="natural" value="wetland" zoom-appear="12"/>
@@ -46,8 +46,8 @@
         <osm-tag key="landuse" value="farmland" zoom-appear="12"/>
         <osm-tag key="landuse" value="farmyard" zoom-appear="12"/>
         <osm-tag key="landuse" value="forest" zoom-appear="10"/>
-        <osm-tag key="landuse" value="garages" zoom-appear="10"/>        
-        <osm-tag key="landuse" value="grass" zoom-appear="10"/>
+        <osm-tag key="landuse" value="garages" zoom-appear="12"/>        
+        <osm-tag key="landuse" value="grass" zoom-appear="12"/>
         <osm-tag key="landuse" value="greenfield" zoom-appear="12"/>
         <osm-tag key="landuse" value="greenhouse_horticulture" zoom-appear="12"/>
         <osm-tag key="landuse" value="industrial" zoom-appear="12"/>
@@ -68,7 +68,8 @@
 
 
         <!-- Other -->
-        <osm-tag key="man_made" value="pier" zoom-appear="12"/>        
+        <osm-tag key="man_made" value="clearcut" zoom-appear="11"/> 
+        <osm-tag key="man_made" value="pier" zoom-appear="12"/> 
 
         <!-- Extra tags -->
         <osm-tag key="intermittent" renderable="false" value="yes"/>
@@ -85,6 +86,7 @@
         <osm-tag key="wetland" renderable="false" value="tidalflag"/>
 
         <osm-tag key="tidal" renderable="false" value="yes"/>
+
     </ways>
 
     <!-- ************************************************** 
@@ -122,6 +124,7 @@
         <osm-tag key="trail_color" value="red" zoom-appear="12"/>
         <osm-tag key="trail_color" value="yellow" zoom-appear="12"/>
         <osm-tag key="trail_color" value="green" zoom-appear="12"/>
+        <osm-tag key="trail_color" value="purple" zoom-appear="12"/>
 
         <!-- Surface -->
         <osm-tag key="surface" equivalent-values="asphalt,chipseal,concrete,paving_stones,metal,wood,sett,cobblestone" renderable="false" value="paved"/>
@@ -561,6 +564,10 @@
         <osm-tag key="power" value="plant" label-position="true" zoom-appear="15"/>
         <osm-tag key="power" value="generator" label-position="true" zoom-appear="15"/>
         <osm-tag key="power" value="tower" label-position="true" zoom-appear="15"/>
+
+        <osm-tag key="plant:source" renderable="false" value="solar"/>        
+        <osm-tag key="generator:source" renderable="false" value="solar"/>                
+
     </ways>  
 
     <pois>
@@ -582,6 +589,8 @@
         <osm-tag key="power" value="generator" zoom-appear="15"/>
         <osm-tag key="power" value="tower" zoom-appear="15"/>
 
+        <osm-tag key="plant:source" renderable="false" value="solar"/>        
+        <osm-tag key="generator:source" renderable="false" value="solar"/>                
     </pois>  
 
 
@@ -589,19 +598,25 @@
                P O I   L E I S U R E
     ************************************************** -->
    <ways>
-        <osm-tag key="leisure" value="beach_resort" label-position="true" zoom-appear="15"/>    
-        <osm-tag key="leisure" value="golf_course" label-position="true" zoom-appear="15"/>
+        <osm-tag key="leisure" value="beach_resort" label-position="true" zoom-appear="12"/>    
+        <osm-tag key="leisure" value="common" zoom-appear="12"/>    
+        <osm-tag key="leisure" value="garden"  zoom-appear="12"/>
+        <osm-tag key="leisure" value="golf_course" label-position="true" zoom-appear="13"/>
         <osm-tag key="leisure" value="horse_riding" label-position="true" zoom-appear="15"/>
         <osm-tag key="leisure" value="ice_rink" label-position="true" zoom-appear="15"/>
-        <osm-tag key="leisure" value="pitch" label-position="true" zoom-appear="15"/>
+        <osm-tag key="leisure" value="park"  zoom-appear="12"/>
+        <osm-tag key="leisure" value="pitch" label-position="true" zoom-appear="14"/>
         <osm-tag key="leisure" value="playground" label-position="true" zoom-appear="14"/>
         <osm-tag key="leisure" value="sports_centre" label-position="true" zoom-appear="14"/>        
         <osm-tag key="leisure" value="stadium" label-position="true" zoom-appear="14"/>        
         <osm-tag key="leisure" value="swimming_pool" label-position="true" zoom-appear="15"/>
-        <osm-tag key="leisure" value="water_park" label-position="true" zoom-appear="15"/>
+        <osm-tag key="leisure" value="water_park" label-position="true" zoom-appear="14"/>
         
         <osm-tag key="amenity" value="public_bath" label-position="true" zoom-appear="15"/>
         <osm-tag key="amenity" value="spa" label-position="true" zoom-appear="15"/>
+
+        <osm-tag key="swimming_pool" renderable="false" value="personal"/>        
+        <osm-tag key="location" renderable="false" value="indoor"/>        
     </ways>  
 
     <pois>
@@ -718,6 +733,7 @@
         <osm-tag key="amenity" value="marketplace" label-position="true" zoom-appear="15"/>        
         <osm-tag key="amenity" value="police" label-position="true" zoom-appear="15"/>
         <osm-tag key="amenity" value="post_office" label-position="true" zoom-appear="15"/>
+        <osm-tag key="amenity" value="prison" label-position="true" zoom-appear="12"/>        
         <osm-tag key="amenity" value="recycling" label-position="true" zoom-appear="15"/>        
         <osm-tag key="amenity" value="townhall" label-position="true" zoom-appear="15"/>
         <osm-tag key="amenity" value="toilets" label-position="true" zoom-appear="15"/>
@@ -732,13 +748,16 @@
         <osm-tag key="amenity" value="fire_station" zoom-appear="15"/>        
         <osm-tag key="amenity" value="marketplace" zoom-appear="15"/>        
         <osm-tag key="amenity" value="police" zoom-appear="15"/>
+        <!-- 
         <osm-tag key="amenity" value="post_box" zoom-appear="15"/>
+        -->
         <osm-tag key="amenity" value="post_office" zoom-appear="15"/>
+        <osm-tag key="amenity" value="prison"  zoom-appear="14"/>        
         <osm-tag key="amenity" value="recycling" zoom-appear="15"/>        
         <osm-tag key="amenity" value="townhall" zoom-appear="15"/>
         <osm-tag key="amenity" value="toilets" zoom-appear="15"/>
+        <osm-tag key="man_made" value="drinking_fountain" zoom-appear="15"/>        
         <osm-tag key="man_made" value="water_tap" zoom-appear="15"/>
-        <osm-tag key="man_made" value="drinking_fountain" zoom-appear="15"/>
         <osm-tag key="office" value="government" zoom-appear="15"/>
         <osm-tag key="tourism" value="information" zoom-appear="15"/>
     </pois>
@@ -1028,20 +1047,20 @@
                H I K I N G   S Y M B O L S
     ************************************************** -->
     <pois>
-        <osm-tag key="trail_symbol" value="hu:k" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:k+" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:k3" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:k4" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:kq" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:kb" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:kl" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:kc" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:kt" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:kpec" zoom-appear="13"/>        
-        <osm-tag key="trail_symbol" value="hu:ktmp" zoom-appear="13"/>        
-        <osm-tag key="trail_symbol" value="hu:keml" zoom-appear="13"/>        
-        <osm-tag key="trail_symbol" value="hu:katl" zoom-appear="13"/>        
-        <osm-tag key="trail_symbol" value="hu:katlv" zoom-appear="13"/>        
+        <osm-tag key="trail_symbol" value="hu:k" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:k+" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:k3" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:k4" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:kq" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:kb" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:kl" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:kc" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:kt" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:kpec" zoom-appear="14"/>        
+        <osm-tag key="trail_symbol" value="hu:ktmp" zoom-appear="14"/>        
+        <osm-tag key="trail_symbol" value="hu:keml" zoom-appear="14"/>        
+        <osm-tag key="trail_symbol" value="hu:katl" zoom-appear="14"/>        
+        <osm-tag key="trail_symbol" value="hu:katlv" zoom-appear="14"/>        
 
         <osm-tag key="trail_symbol" value="hu:p" zoom-appear="13"/>
         <osm-tag key="trail_symbol" value="hu:p+" zoom-appear="13"/>
@@ -1071,9 +1090,16 @@
         <osm-tag key="trail_symbol" value="hu:sb" zoom-appear="13"/>                        
         <osm-tag key="trail_symbol" value="hu:sl" zoom-appear="13"/>    
         <osm-tag key="trail_symbol" value="hu:sc" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:st" zoom-appear="13"/>     
+        <osm-tag key="trail_symbol" value="hu:st" zoom-appear="13"/>  
 
-        <osm-tag key="trail_symbol_level" renderable="false" value="major"/>                           
+        <osm-tag key="trail_symbol" value="hu:km" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:pm" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:zm" zoom-appear="14"/>     
+        <osm-tag key="trail_symbol" value="hu:sm" zoom-appear="14"/>     
+        <osm-tag key="trail_symbol" value="hu:lm" zoom-appear="14"/>             
+
+
+        <osm-tag key="trail_symbol_level" value="major" zoom-appear="13"/>                           
     </pois>
 
 
