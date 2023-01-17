@@ -12,11 +12,21 @@
 
 <rule  e="any" k="ruins" v="~" >
   <rule  e="any" k="historic" v="castle|fort" >
-      <rule  e="any" k="castle_type" v="palace" zoom-min="14">
-        <symbol id="castle" src="{$symbolPath}/palace.svg" symbol-width="26" priority="{$pr-castle}"/>      
+      <rule  e="any" k="castle_type" v="palace" >
+        <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="15">   
+          <symbol id="castle" src="{$symbolPath}/palace.svg" symbol-width="24" priority="{$pr-castle}"/>           
+        </rule>
+        <rule  e="any" k="*" v="*" zoom-min="16" >        
+          <symbol id="castle" src="{$symbolPath}/palace.svg" symbol-width="30" priority="{$pr-castle}"/>                   
+        </rule>
       </rule>
-      <rule  e="any" k="castle_type" v="stately|manor" zoom-min="15">
-        <symbol id="castle" src="{$symbolPath}/manor.svg" symbol-width="26" priority="{$pr-castle}"/>            
+      <rule  e="any" k="castle_type" v="stately|manor" >
+        <rule  e="any" k="*" v="*" zoom-min="15" zoom-max="16">   
+          <symbol id="castle" src="{$symbolPath}/manor.svg" symbol-width="28" priority="{$pr-castle}"/>           
+        </rule>
+        <rule  e="any" k="*" v="*" zoom-min="17" >        
+          <symbol id="castle" src="{$symbolPath}/manor.svg" symbol-width="32" priority="{$pr-castle}"/>                   
+        </rule>
       </rule>
       <rule  e="any" k="castle_type" v="~" zoom-min="14">
         <symbol id="castle" src="{$symbolPath}/castle.svg" symbol-width="28" priority="{$pr-castle}"/>      
@@ -26,8 +36,14 @@
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-castle}"/>
       </rule>      
   </rule>    
-  <rule  e="any" k="historic" v="manor" zoom-min="15">    
-    <symbol id="manor" src="{$symbolPath}/manor.svg" symbol-width="26" priority="{$pr-castle}"/>            
+
+  <rule  e="any" k="historic" v="manor" zoom-min="15">  
+    <rule  e="any" k="*" v="*" zoom-min="15" zoom-max="16">   
+      <symbol id="manor" src="{$symbolPath}/manor.svg" symbol-width="28" priority="{$pr-castle}"/>           
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="17" >        
+      <symbol id="manor" src="{$symbolPath}/manor.svg" symbol-width="32" priority="{$pr-castle}"/>                   
+    </rule>
     <rule e="node" k="*" v="*" zoom-min="15">
       <caption k="name" symbol-id="manor" 
       font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-castle}"/>
@@ -37,7 +53,12 @@
 
 <rule  e="any" k="ruins" v="yes" >
   <rule  e="any" k="historic" v="castle|fort|manor" zoom-min="14">
-    <symbol id="castle" src="{$symbolPath}/ruins_castle.svg" symbol-width="28" priority="{$pr-historic-ruins}"/>
+    <rule  e="any" k="*" v="*"  zoom-max="16">   
+      <symbol id="ruins" src="{$symbolPath}/ruins_castle.svg" symbol-width="26" priority="{$pr-historic-ruins}"/>
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="17" >        
+      <symbol id="ruins" src="{$symbolPath}/ruins_castle.svg" symbol-width="34" priority="{$pr-historic-ruins}"/>
+    </rule>
     <rule e="node" k="*" v="*" zoom-min="15">
         <caption k="name" symbol-id="castle" 
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-historic-ruins}"/>
@@ -48,7 +69,12 @@
 
 <rule  e="any" k="historic" v="ruins" >
   <rule  e="any" k="ruins" v="castle|fort|tower" zoom-min="14">
-    <symbol id="ruins" src="{$symbolPath}/ruins_castle.svg" symbol-width="28" priority="{$pr-historic-ruins}"/>
+    <rule  e="any" k="*" v="*"  zoom-max="16">   
+      <symbol id="ruins" src="{$symbolPath}/ruins_castle.svg" symbol-width="26" priority="{$pr-historic-ruins}"/>
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="17" >        
+      <symbol id="ruins" src="{$symbolPath}/ruins_castle.svg" symbol-width="34" priority="{$pr-historic-ruins}"/>
+    </rule>
   </rule>  
   <rule  e="any" k="ruins" v="chapel|church|monastery|temple" zoom-min="15">
     <symbol id="ruins" src="{$symbolPath}/ruins_church.svg" symbol-width="22"  priority="{$pr-historic-ruins}"/>  
@@ -126,6 +152,19 @@
             <caption k="name" symbol-id="historic_mine" 
             font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-historic-mine}"/>
         </rule>       
+</rule>
+
+<rule  e="any" k="man_made" v="windmill" zoom-min="15">
+  <rule  e="any" k="*" v="*" zoom-max="16">
+    <symbol id="windmill" src="{$symbolPath}/windmill.svg" symbol-width="20" priority="{$pr-windmill}"/>
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="17"> 
+    <symbol id="windmill" src="{$symbolPath}/windmill.svg" symbol-width="22" priority="{$pr-windmill}"/>  
+  </rule>     
+  <rule e="any" k="*" v="*" >
+      <caption k="name" symbol-id="windmill" 
+      font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-windmill}"/>
+  </rule>       
 </rule>
 
 

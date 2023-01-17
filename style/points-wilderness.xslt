@@ -69,22 +69,48 @@
   </rule>
 </rule>
 
-<rule  e="any" k="tourism" v="viewpoint" zoom-min="14">
+<rule  e="any" k="man_made" v="tower" zoom-min="14">
     <rule  e="any" k="tower:type" v="observation">
-        <symbol id="tower_outlook" src="{$symbolPath}/tower_lookout.svg" symbol-width="24" priority="{$pr-tower-lookout}" display="always"/>
+      <rule  e="any" k="viewpoint" v="yes" >
+        <rule  e="any" k="*" v="*" zoom-max="15">
+          <symbol id="tower_outlook" src="{$symbolPath}/tower_lookout.svg" symbol-width="24" priority="{$pr-tower-lookout}" display="always"/>      
+        </rule>
+        <rule  e="any" k="*" v="*" zoom-min="16">
+          <symbol id="tower_outlook" src="{$symbolPath}/tower_lookout.svg" symbol-width="30" priority="{$pr-tower-lookout}" display="always"/>      
+        </rule>
         <rule e="any" k="*" v="*" zoom-min="14">
             <caption k="name" symbol-id="tower_outlook" 
                 font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-tower-lookout}" display="ifspace"/>
         </rule>
-    </rule>
-    <rule e="any" k="tower:type" v="~" >
-        <symbol id="viewpoint" src="{$symbolPath}/viewpoint.svg" symbol-width="20" priority="{$pr-viewpoint}"/>
-        <rule e="any" k="*" v="*" zoom-min="16">
-            <caption k="name" symbol-id="viewpoint" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-viewpoint}"/>
+      </rule> 
+      <rule  e="any" k="viewpoint" v="~" >       
+        <rule  e="any" k="tourism" v="viewpoint" >
+          <rule  e="any" k="*" v="*" zoom-max="15">
+            <symbol id="tower_outlook" src="{$symbolPath}/tower_lookout.svg" symbol-width="24" priority="{$pr-tower-lookout}" display="always"/>      
+          </rule>
+          <rule  e="any" k="*" v="*" zoom-min="16">
+            <symbol id="tower_outlook" src="{$symbolPath}/tower_lookout.svg" symbol-width="30" priority="{$pr-tower-lookout}" display="always"/>      
+          </rule>
+          <rule e="any" k="*" v="*" zoom-min="14">
+              <caption k="name" symbol-id="tower_outlook" 
+                  font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-tower-lookout}" display="ifspace"/>
+          </rule>
         </rule>
-    </rule>
+      </rule> 
+    </rule> 
+</rule>       
+      
+
+<rule  e="any" k="tourism" v="viewpoint" zoom-min="14">
+  <rule e="any" k="tower:type" v="~" >
+      <symbol id="viewpoint" src="{$symbolPath}/viewpoint.svg" symbol-width="20" priority="{$pr-viewpoint}"/>
+      <rule e="any" k="*" v="*" zoom-min="16">
+          <caption k="name" symbol-id="viewpoint" 
+          font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-viewpoint}"/>
+      </rule>
+  </rule>
 </rule>
+
 
 </rule>
 

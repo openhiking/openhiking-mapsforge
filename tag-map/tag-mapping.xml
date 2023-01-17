@@ -64,7 +64,6 @@
         <osm-tag key="landuse" value="retail" zoom-appear="12"/>
         <osm-tag key="landuse" value="village_green" zoom-appear="12"/>
         <osm-tag key="landuse" value="vineyard" zoom-appear="12"/>
-        <osm-tag key="landuse" value="wood" zoom-appear="10"/>
 
 
         <!-- Other -->
@@ -74,9 +73,7 @@
         <!-- Extra tags -->
         <osm-tag key="intermittent" renderable="false" value="yes"/>
 
-        <osm-tag key="wood" renderable="false" value="coniferous"/>
-        <osm-tag key="wood" renderable="false" value="deciduous"/>
-        <osm-tag key="wood" renderable="false" value="mixed"/>
+        <osm-tag key="leaf_type" renderable="false" value="needleleaved"/>
 
         <osm-tag key="water" renderable="false" value="river"/>
         <osm-tag key="water" renderable="false" value="lake"/>
@@ -944,6 +941,7 @@
         <osm-tag key="tourism" label-position="true" value="viewpoint" zoom-appear="12"/> 
 
         <osm-tag key="ford" value="yes" label-position="true" zoom-appear="12"/>     
+        <osm-tag key="viewpoint" value="yes" renderable="false"/>     
 
         <osm-tag key="shelter_type" value="basic_hut"  renderable="false"/>
         <osm-tag key="shelter_type" value="picnic_shelter"  renderable="false"/>
@@ -971,7 +969,7 @@
         <osm-tag key="tourism" value="viewpoint" zoom-appear="12"/>
 
         <osm-tag key="ford" value="yes" zoom-appear="12"/>                
-
+        <osm-tag key="viewpoint" value="yes" renderable="false"/>     
         <osm-tag key="shelter_type" value="basic_hut"  renderable="false"/>
         <osm-tag key="shelter_type" value="picnic_shelter"  renderable="false"/>
         <osm-tag key="shelter_type" value="public_transport"  renderable="false"/>
@@ -1123,6 +1121,9 @@
 
         <osm-tag key="motor_vehicle" equivalent-values="private,agricultural,forestry,customers" renderable="false" value="no"/>
         <osm-tag key="motor_vehicle" equivalent-values="permissive,permit,destination,designated" renderable="false" value="yes"/>
+
+        <osm-tag key="foot" equivalent-values="private,agricultural,forestry,customers" renderable="false" value="no"/>
+        <osm-tag key="foot" equivalent-values="permissive,permit,destination,designated" renderable="false" value="yes"/>
 
         
         <!-- Structures -->

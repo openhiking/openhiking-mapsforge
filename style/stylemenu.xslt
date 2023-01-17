@@ -49,6 +49,11 @@
         <name lang="hu" value="Katonai területek" />
         <cat id="military_area" />
     </layer>
+    <layer id="restricted_access" enabled="true" visible="false">
+        <name lang="en" value="Access restrictions" />
+        <name lang="hu" value="Behajtási korlátozások" />
+        <cat id="restricted_access" />
+    </layer>
 	<layer id="hiking_colored_routes_t" enabled="true" visible="false">
 		<name lang="en" value="Hiking routes " />
 		<name lang="hu" value="Turistaút kiemelés" />        
@@ -64,12 +69,7 @@
 	<layer id="topo" visible="true">
 		<name lang="en" value="OpenHiking layers" />    
 		<name lang="hu" value="OpenHiking rétegek" />
-        <cat id="all" />
-        <cat id="topo" />
-        <cat id="topo_common" />
-        <cat id="topo_icons" />
         <cat id="building" />
-        <cat id="place" />
 		<overlay id="contours" />
 		<overlay id="buildings" />        
 		<overlay id="fences" />
@@ -77,6 +77,7 @@
         <overlay id="ski" /> 
 		<overlay id="protected_area" />
 		<overlay id="military_area" />
+        <overlay id="restricted_access" />
 		<overlay id="hiking_colored_routes_t" />        
 		<overlay id="hiking_symbols" />                
 	</layer>

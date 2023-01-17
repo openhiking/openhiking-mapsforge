@@ -54,6 +54,7 @@
 
 <xsl:variable name="pr-ruins">10</xsl:variable>
 <xsl:variable name="pr-church">10</xsl:variable>
+<xsl:variable name="pr-windmill">10</xsl:variable>
 
 <xsl:variable name="pr-suburb">10</xsl:variable>
 <xsl:variable name="pr-hamlet">10</xsl:variable>
@@ -111,6 +112,7 @@
 <xsl:variable name="pr-hillfort">0</xsl:variable>
 <xsl:variable name="pr-shop">0</xsl:variable>
 <xsl:variable name="pr-marketplace">0</xsl:variable>
+<xsl:variable name="pr-library">0</xsl:variable>
 
 
 

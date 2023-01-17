@@ -26,9 +26,19 @@
 <rule e="way" k="landuse" v="meadow">
   <area fill="#d8fca4" scale="none"/>
 </rule>
-<rule e="way" k="natural|landuse" v="forest|wood"  zoom-min="10">
-  <area fill="#A1E976"/>
-</rule>
+
+<rule e="way" k="landuse" v="forest"  zoom-min="10">
+  <rule e="way" k="leaf_type" v="~|broadleaved" >
+    <area fill="#A1E976"/>
+  </rule>
+</rule>  
+
+<rule e="way" k="natural" v="wood"  zoom-min="10">
+  <rule e="way" k="leaf_type" v="~|broadleaved" >
+    <area fill="#A1E976"/>
+  </rule>
+</rule>  
+
 <rule e="way" k="natural" v="grass|grassland">
   <area fill="#d8fca4" scale="none"/>
 </rule>
@@ -45,6 +55,19 @@
 
 
 <!-- DO 5-->
+<rule e="way" k="landuse" v="forest"  zoom-min="10">
+  <rule e="way" k="leaf_type" v="needleleaved" >
+    <area fill="#83E36E"/>
+  </rule>
+</rule>  
+
+<rule e="way" k="natural" v="wood"  zoom-min="10">
+  <rule e="way" k="leaf_type" v="needleleaved" >
+    <area fill="#83E36E"/>
+  </rule>
+</rule>  
+
+
 <rule e="way" k="natural" v="beach">
     <area fill="#F8F898" scale="none"/>
   </rule>
@@ -65,9 +88,7 @@
 
 
 <rule  e="way" k="natural" v="scrub">
-  <rule cat="all" e="way" k="*" v="*">
-    <area fill="#D8FCB0" scale="none" />   
-  </rule>
+  <area fill="#D8FCB0" scale="none" />   
   <rule e="any" k="*" v="*">
     <rule e="way" k="*" v="*" zoom-max="14">
       <area src="file:/patterns/scrub.svg" symbol-height="28"/>
@@ -83,15 +104,12 @@
 </rule>
 
 <rule e="way" k="man_made" v="clearcut" zoom-min="12">
-  <rule cat="all" e="way" k="*" v="*">
-    <area fill="#D8FCB0" scale="none"/>
-  </rule>
+  <area fill="#D8FCB0" scale="none"/>
 </rule>
 
 <rule e="way" k="landuse" v="farmyard">
   <area fill="#D1DAB2"/>
 </rule>
-
 
 <rule e="way" k="landuse" v="vineyard">
   <area fill="#D8FCB0"/>
@@ -115,6 +133,22 @@
 
 <rule  e="way" k="natural" v="scree">
   <area fill="#E0E4E0" scale="none"/>
+  <rule e="way" k="*" v="*" zoom-max="14">
+    <area src="file:/patterns/scree.svg" symbol-height="18"/>
+  </rule>
+  <rule e="way" k="*" v="*" zoom-min="15">
+    <area src="file:/patterns/scree.svg" symbol-height="32"/>
+  </rule>
+</rule>
+
+<rule  e="way" k="natural" v="shingle">
+  <area fill="#E0E4E0" scale="none"/>
+  <rule e="way" k="*" v="*" zoom-max="14">
+    <area src="file:/patterns/shingle.svg" symbol-height="18"/>
+  </rule>
+  <rule e="way" k="*" v="*" zoom-min="15">
+    <area src="file:/patterns/shingle.svg" symbol-height="32"/>
+  </rule>
 </rule>
 
 

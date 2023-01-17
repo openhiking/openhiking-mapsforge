@@ -83,6 +83,8 @@
 <xsl:variable name="lc-tunnel">#FFFFFF</xsl:variable>
 <xsl:variable name="lc-embankment">#949494</xsl:variable>
 
+<xsl:variable name="lc-restricted">#FF0000</xsl:variable>
+
 <xsl:variable name="lw-motorway">2.2</xsl:variable>
 <xsl:variable name="lw-motorway_link">1.6</xsl:variable>
 <xsl:variable name="lw-trunk">2.2</xsl:variable>
@@ -115,10 +117,13 @@
 <xsl:variable name="lw-trail-highlight">0.6</xsl:variable>
 <xsl:variable name="lw-trail-highlight-deep">0.5</xsl:variable>
 
+<xsl:variable name="lw-restricted">1.5</xsl:variable>
+
 <xsl:variable name="lw-protected-area">1.2</xsl:variable>
 
 <xsl:variable name="da-tunnel">16,16</xsl:variable>
 <xsl:variable name="da-embankment">0.1,2</xsl:variable>
+<xsl:variable name="da-restricted">0.08,1.8</xsl:variable>
 
 <xsl:variable name="surface-paved">paved|asphalt|chipseal|concrete|paving_stones|metal|wood</xsl:variable>
 <xsl:variable name="surface-unpaved-hard">fine_gravel|compacted|pebblestone|rock|grass_paver</xsl:variable>

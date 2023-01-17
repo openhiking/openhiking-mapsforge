@@ -29,6 +29,7 @@
   <xsl:include href="lines-ski.xslt" />
   <xsl:include href="lines-hiking-trails.xslt" />
   <xsl:include href="lines-highways.xslt" />
+  <xsl:include href="lines-access-restrictions.xslt" />
   <xsl:include href="lines-railways.xslt" />
   <xsl:include href="lines-barriers.xslt" />
   <xsl:include href="lines-aerialways.xslt" />
@@ -81,7 +82,7 @@
   <xsl:call-template name="lines-embankments"/>
   <xsl:call-template name="lines-hiking-trails"/>   
   <xsl:call-template name="lines-highways"/>
-
+  <xsl:call-template name="lines-access-restrictions"/>
 
   <xsl:call-template name="lines-railways"/>
   <xsl:call-template name="lines-other"/> 

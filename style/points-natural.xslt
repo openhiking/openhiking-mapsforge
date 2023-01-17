@@ -94,15 +94,15 @@
         <rule e="node" k="drinking_water" v="yes" zoom-min="14">
             <symbol id="spring" src="{$symbolPath}/spring_drinking.svg" priority="{$pr-spring-drinking}"/>    
         </rule>        
-        <rule e="node" k="drinking_water" v="no" zoom-min="15">
+        <rule e="node" k="drinking_water" v="no" zoom-min="14">
             <symbol id="spring" src="{$symbolPath}/spring_non_drinking.svg" priority="{$pr-spring}"/>    
         </rule>        
-        <rule e="node" k="drinking_water" v="~" zoom-min="15">
+        <rule e="node" k="drinking_water" v="~" zoom-min="14">
             <symbol id="spring" src="{$symbolPath}/spring.svg" symbol-width="16" priority="{$pr-spring}"/>    
         </rule>   
     </rule>     
     <rule e="any" k="*" v="*" zoom-min="15">
-        <caption fill="#0000f8" font-size="12" font-style="bold"  k="name" position="right"
+        <caption fill="#0000f8" font-size="11" font-style="bold"  k="name" position="right"
             stroke="#FFFFFF" stroke-width="2.0" symbol-id="spring" priority="{$pr-spring}"/>
     </rule>
 </rule>

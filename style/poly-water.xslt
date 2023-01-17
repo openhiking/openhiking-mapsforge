@@ -46,10 +46,10 @@
   <rule e="way" k="wetland" v="swamp">
       <area fill="#A1E976"/>  
       <rule e="way" k="*" v="*" zoom-max="15">
-        <area src="file:/patterns/wetland.svg" symbol-height="16"/>
+        <area src="file:/patterns/swamp.svg" symbol-height="16"/>
       </rule>
       <rule e="way" k="*" v="*" zoom-min="16">
-        <area src="file:/patterns/wetland.svg" symbol-height="32"/>
+        <area src="file:/patterns/swamp.svg" symbol-height="32"/>
       </rule>
   </rule>
   <rule e="way" k="wetland" v="~">
