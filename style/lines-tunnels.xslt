@@ -43,18 +43,8 @@
     <line stroke="{$bc-tunnel}" dy="-{$lw-pedestrian + $extraSpace}" stroke-width="{$lw-tunnel}" stroke-dasharray="{$da-tunnel}" stroke-linecap="butt" />
 </rule>
 <rule e="way" k="highway" v="track">
-    <rule e="way" k="surface" v="paved">  
-    </rule>
-    <rule e="way" k="surface" v="~|compacted|unpaved" zoom-min="{$zm-track}">  
-        <line stroke="{$bc-tunnel}" dy="{$lw-track + $extraSpace}" stroke-width="{$lw-tunnel}" stroke-dasharray="{$da-tunnel}" stroke-linecap="butt" />
-        <line stroke="{$bc-tunnel}" dy="-{$lw-track + $extraSpace}" stroke-width="{$lw-tunnel}" stroke-dasharray="{$da-tunnel}" stroke-linecap="butt" />
-    </rule>
-</rule>
-<rule e="way" k="highway" v="service|living_street|residential|unclassified">
-    <rule e="way" k="surface" v="compacted|unpaved" zoom-min="{$zm-track}">  
-        <line stroke="{$bc-tunnel}" dy="{$lw-track + $extraSpace}" stroke-width="{$lw-tunnel}" stroke-dasharray="{$da-tunnel}" stroke-linecap="butt" />
-        <line stroke="{$bc-tunnel}" dy="-{$lw-track + $extraSpace}" stroke-width="{$lw-tunnel}" stroke-dasharray="{$da-tunnel}" stroke-linecap="butt" />			
-    </rule>
+    <line stroke="{$bc-tunnel}" dy="{$lw-track + $extraSpace}" stroke-width="{$lw-tunnel}" stroke-dasharray="{$da-tunnel}" stroke-linecap="butt" />
+    <line stroke="{$bc-tunnel}" dy="-{$lw-track + $extraSpace}" stroke-width="{$lw-tunnel}" stroke-dasharray="{$da-tunnel}" stroke-linecap="butt" />
 </rule>
 </xsl:template>
 

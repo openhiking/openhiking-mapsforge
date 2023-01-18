@@ -41,18 +41,10 @@
 <rule e="way" k="highway" v="pedestrian" zoom-min="{$zm-pedestrian}">
 </rule>
 <rule e="way" k="highway" v="track">
-    <rule e="way" k="surface" v="paved">  
-    </rule>
-    <rule e="way" k="surface" v="~|compacted|unpaved" zoom-min="{$zm-track}">  
-        <line stroke="{$lc-embankment}" dy="{$lw-track + $extraSpace}" stroke-width="{$lw-embankment}"  stroke-linecap="butt" />
-        <line stroke="{$lc-embankment}" dy="{$lw-track + $extraSpace + $lw-embankment + 0.4}" stroke-width="{$lw-embankment2}" stroke-dasharray="{$da-embankment}"  stroke-linecap="butt" scale="all"/>
-        <line stroke="{$lc-embankment}" dy="-{$lw-track + $extraSpace}" stroke-width="{$lw-embankment}" stroke-linecap="butt" />
-        <line stroke="{$lc-embankment}" dy="-{$lw-track + $extraSpace + $lw-embankment + 0.4}" stroke-width="{$lw-embankment2}" stroke-dasharray="{$da-embankment}"  stroke-linecap="butt" scale="all"/>        
-    </rule>
-</rule>
-<rule e="way" k="highway" v="service|living_street|residential|unclassified">
-    <rule e="way" k="surface" v="compacted|unpaved" zoom-min="{$zm-track}">  
-    </rule>
+    <line stroke="{$lc-embankment}" dy="{$lw-track + $extraSpace}" stroke-width="{$lw-embankment}"  stroke-linecap="butt" />
+    <line stroke="{$lc-embankment}" dy="{$lw-track + $extraSpace + $lw-embankment + 0.4}" stroke-width="{$lw-embankment2}" stroke-dasharray="{$da-embankment}"  stroke-linecap="butt" scale="all"/>
+    <line stroke="{$lc-embankment}" dy="-{$lw-track + $extraSpace}" stroke-width="{$lw-embankment}" stroke-linecap="butt" />
+    <line stroke="{$lc-embankment}" dy="-{$lw-track + $extraSpace + $lw-embankment + 0.4}" stroke-width="{$lw-embankment2}" stroke-dasharray="{$da-embankment}"  stroke-linecap="butt" scale="all"/>        
 </rule>
 </xsl:template>
 

@@ -170,8 +170,12 @@
         <osm-tag key="railway" value="subway" zoom-appear="15"/>
         <osm-tag key="railway" value="tram" zoom-appear="15"/>
 
-        <osm-tag key="disused:railway" value="rail" zoom-appear="15"/>
-        <osm-tag key="disused:railway" value="narrow_gauge" zoom-appear="15"/>
+        <osm-tag key="disused" renderable="false" value="rail"/>
+        <osm-tag key="disused" renderable="false" value="light_rail"/>
+        <osm-tag key="disused" renderable="false" value="narrow_gauge"/>
+        <osm-tag key="disused" renderable="false" value="tram"/>
+        <osm-tag key="disused" renderable="false" value="funicular"/>
+
     </ways>
 
 <!-- ************************************************** 
@@ -938,9 +942,11 @@
 
         <osm-tag key="tourism" label-position="true" value="attraction" zoom-appear="14"/>    
         <osm-tag key="tourism" label-position="true" value="picnic_site" zoom-appear="14"/>
-        <osm-tag key="tourism" label-position="true" value="viewpoint" zoom-appear="12"/> 
+        <osm-tag key="tourism" label-position="true" value="viewpoint" zoom-appear="14"/> 
+        <osm-tag key="tower" value="outlook" label-position="true" zoom-appear="14"/>     
 
         <osm-tag key="ford" value="yes" label-position="true" zoom-appear="12"/>     
+
         <osm-tag key="viewpoint" value="yes" renderable="false"/>     
 
         <osm-tag key="shelter_type" value="basic_hut"  renderable="false"/>
@@ -966,10 +972,11 @@
 
         <osm-tag key="tourism" value="attraction" zoom-appear="14"/>                    
         <osm-tag key="tourism" value="picnic_site" zoom-appear="14"/>
-        <osm-tag key="tourism" value="viewpoint" zoom-appear="12"/>
+        <osm-tag key="tourism" value="viewpoint" zoom-appear="14"/>
+
+        <osm-tag key="tower" value="outlook" zoom-appear="14"/>     
 
         <osm-tag key="ford" value="yes" zoom-appear="12"/>                
-        <osm-tag key="viewpoint" value="yes" renderable="false"/>     
         <osm-tag key="shelter_type" value="basic_hut"  renderable="false"/>
         <osm-tag key="shelter_type" value="picnic_shelter"  renderable="false"/>
         <osm-tag key="shelter_type" value="public_transport"  renderable="false"/>
@@ -1142,8 +1149,6 @@
 
         <!-- Disused -->
         <osm-tag key="disused" renderable="false" value="yes"/>
-        <osm-tag key="disused" renderable="false" value="narrow_gauge"/>
-        <osm-tag key="disused" renderable="false" value="funicular"/>
 
 
         <!-- Solar plants -->

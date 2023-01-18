@@ -14,34 +14,16 @@
         <rule e="way" k="area" v="~|no">
         <rule e="way" k="tunnel" v="~|false|no">
         <rule e="way" k="highway" v="footway|platform" zoom-min="{$zm-footway}">
-            <rule e="way" k="surface" v="~|{$surface-paved}" >
-                <line stroke="{$lc-bridge}" stroke-width="{$lw-footway + $lw-bridge-border}" stroke-linecap="butt"  /> 
-                <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-footway + $lw-bridge-base}" stroke-linecap="butt" /> 
-            </rule>            
-            <rule e="way" k="surface" v="{$surface-unpaved-hard}|{$surface-unpaved-soft}" >
-                <line stroke="{$lc-bridge}" stroke-width="{$lw-path + $lw-bridge-border}" stroke-linecap="butt"  /> 
-                <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-path + $lw-bridge-base}" stroke-linecap="butt" /> 
-            </rule>            
+            <line stroke="{$lc-bridge}" stroke-width="{$lw-footway + $lw-bridge-border}" stroke-linecap="butt"  /> 
+            <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-footway + $lw-bridge-base}" stroke-linecap="butt" />            
         </rule>
         <rule e="way" k="highway" v="path" zoom-min="{$zm-path}">
-            <rule e="way" k="surface" v="{$surface-paved}" >
-                <line stroke="{$lc-bridge}" stroke-width="{$lw-footway + $lw-bridge-border}" stroke-linecap="butt"  /> 
-                <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-footway + $lw-bridge-base}" stroke-linecap="butt" /> 
-            </rule>            
-            <rule e="way" k="surface" v="~|{$surface-unpaved-hard}|{$surface-unpaved-soft}" >
-                <line stroke="{$lc-bridge}" stroke-width="{$lw-path + $lw-bridge-border}" stroke-linecap="butt"  /> 
-                <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-path + $lw-bridge-base}" stroke-linecap="butt" /> 
-            </rule>            
+            <line stroke="{$lc-bridge}" stroke-width="{$lw-path + $lw-bridge-border}" stroke-linecap="butt"  /> 
+            <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-path + $lw-bridge-base}" stroke-linecap="butt" />          
         </rule>
         <rule e="way" k="highway" v="bridleway" zoom-min="{$zm-bridleway}">
-            <rule e="way" k="surface" v="{$surface-paved}" >
-                <line stroke="{$lc-bridge}" stroke-width="{$lw-footway + $lw-bridge-border}" stroke-linecap="butt"  /> 
-                <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-footway + $lw-bridge-base}" stroke-linecap="butt" /> 
-            </rule>            
-            <rule e="way" k="surface" v="~|{$surface-unpaved-hard}|{$surface-unpaved-soft}" >
-                <line stroke="{$lc-bridge}" stroke-width="{$lw-bridleway + $lw-bridge-border}" stroke-linecap="butt"  /> 
-                <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-bridleway + $lw-bridge-base}" stroke-linecap="butt" /> 
-            </rule>            
+            <line stroke="{$lc-bridge}" stroke-width="{$lw-bridleway + $lw-bridge-border}" stroke-linecap="butt"  /> 
+            <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-bridleway + $lw-bridge-base}" stroke-linecap="butt" /> 
         </rule>
         <rule e="way" k="highway" v="steps" zoom-min="{$zm-steps}">
             <line stroke="{$lc-bridge}" stroke-width="{$lw-steps + $lw-bridge-border}" stroke-linecap="butt"  /> 
@@ -56,63 +38,34 @@
             <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-cycleway + $lw-bridge-base}" stroke-linecap="butt" /> 
         </rule>
         <rule e="way" k="highway" v="track" >
-            <rule e="way" k="surface" v="{$surface-paved}" zoom-min="{$zm-unclassified}">  
-                <line stroke="{$lc-bridge}" stroke-width="{$lw-unclassified + $lw-bridge-border}" stroke-linecap="butt"  /> 
-                <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-unclassified + $lw-bridge-base}" stroke-linecap="butt" /> 
-            </rule>                         
-            <rule e="way" k="surface" v="{$surface-unpaved-hard}" zoom-min="{$zm-track-grade1}">        
+            <rule e="way" k="tracktype" v="grade1" zoom-min="{$zm-track-grade1}"> 
                 <line stroke="{$lc-bridge}" stroke-width="{$lw-track + $lw-bridge-border}" stroke-linecap="butt"  /> 
                 <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-track + $lw-bridge-base}" stroke-linecap="butt" /> 
-            </rule>    
-            <rule e="way" k="surface" v="~|{$surface-unpaved-soft}" >             
-                <rule e="way" k="tracktype" v="grade1" zoom-min="{$zm-track-grade1}"> 
-                    <line stroke="{$lc-bridge}" stroke-width="{$lw-track + $lw-bridge-border}" stroke-linecap="butt"  /> 
-                    <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-track + $lw-bridge-base}" stroke-linecap="butt" /> 
-                </rule>
-                <rule e="way" k="tracktype" v="~|grade2|grade3|grade4|grade5" zoom-min="{$zm-track}"> 
-                    <line stroke="{$lc-bridge}" stroke-width="{$lw-track + $lw-bridge-border}" stroke-linecap="butt"  /> 
-                    <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-track + $lw-bridge-base}" stroke-linecap="butt" /> 
-                </rule>
             </rule>
-        </rule>
-        <rule e="way" k="highway" v="service|living_street|residential|unclassified" >
-            <rule e="way" k="surface" v="{$surface-unpaved-hard}" zoom-min="{$zm-track-grade1}">
+            <rule e="way" k="tracktype" v="~|grade2|grade3|grade4|grade5" zoom-min="{$zm-track}"> 
                 <line stroke="{$lc-bridge}" stroke-width="{$lw-track + $lw-bridge-border}" stroke-linecap="butt"  /> 
                 <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-track + $lw-bridge-base}" stroke-linecap="butt" /> 
-            </rule>                
-            <rule e="way" k="surface" v="{$surface-unpaved-soft}" zoom-min="{$zm-track}">
-                <line stroke="{$lc-bridge}" stroke-width="{$lw-track + $lw-bridge-border}" stroke-linecap="butt"  /> 
-                <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-track + $lw-bridge-base}" stroke-linecap="butt" /> 
-
-            </rule>                                      
+            </rule>
         </rule>
         <rule e="way" k="highway" v="raceway" zoom-min="{$zm-raceway}">
             <line stroke="{$lc-bridge}" stroke-width="{$lw-raceway + $lw-bridge-border}" stroke-linecap="butt"  /> 
             <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-raceway + $lw-bridge-base}" stroke-linecap="butt" /> 
         </rule>
         <rule e="way" k="highway" v="service" >
-            <rule e="way" k="surface" v="~|{$surface-paved}" zoom-min="{$zm-service}">
-                <line stroke="{$lc-bridge}" stroke-width="{$lw-service + $lw-bridge-border}" stroke-linecap="butt"  /> 
-                <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-service + $lw-bridge-base}" stroke-linecap="butt" /> 
-            </rule> 
+            <line stroke="{$lc-bridge}" stroke-width="{$lw-service + $lw-bridge-border}" stroke-linecap="butt"  /> 
+            <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-service + $lw-bridge-base}" stroke-linecap="butt" /> 
         </rule>
         <rule e="way" k="highway" v="living_street"  zoom-min="{$zm-living}">
-            <rule e="way" k="surface" v="~|{$surface-paved}" >
-                <line stroke="{$lc-bridge}" stroke-width="{$lw-living_street + $lw-bridge-border}" stroke-linecap="butt"  /> 
-                <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-living_street + $lw-bridge-base}" stroke-linecap="butt" /> 
-            </rule>   
+            <line stroke="{$lc-bridge}" stroke-width="{$lw-living_street + $lw-bridge-border}" stroke-linecap="butt"  /> 
+            <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-living_street + $lw-bridge-base}" stroke-linecap="butt" />   
         </rule>
         <rule e="way" k="highway" v="residential" zoom-min="{$zm-residential}">
-            <rule e="way" k="surface" v="~|{$surface-paved}" >
-                <line stroke="{$lc-bridge}" stroke-width="{$lw-residential + $lw-bridge-border}" stroke-linecap="butt"  /> 
-                <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-residential + $lw-bridge-base}" stroke-linecap="butt" /> 
-            </rule>            
+            <line stroke="{$lc-bridge}" stroke-width="{$lw-residential + $lw-bridge-border}" stroke-linecap="butt"  /> 
+            <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-residential + $lw-bridge-base}" stroke-linecap="butt" />        
         </rule>
         <rule e="way" k="highway" v="unclassified" >
-            <rule e="way" k="surface" v="~|{$surface-paved}" zoom-min="{$zm-unclassified}">
-                <line stroke="{$lc-bridge}" stroke-width="{$lw-unclassified + $lw-bridge-border}" stroke-linecap="butt"  /> 
-                <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-unclassified + $lw-bridge-base}" stroke-linecap="butt" /> 
-            </rule>  
+            <line stroke="{$lc-bridge}" stroke-width="{$lw-unclassified + $lw-bridge-border}" stroke-linecap="butt"  /> 
+            <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-unclassified + $lw-bridge-base}" stroke-linecap="butt" />   
         </rule>
         <rule e="way" k="highway" v="tertiary|tertiary_link" zoom-min="{$zm-tertiary}">
             <line stroke="{$lc-bridge}" stroke-width="{$lw-tertiary + $lw-bridge-border}" stroke-linecap="butt"  /> 

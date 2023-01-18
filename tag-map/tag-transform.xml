@@ -1,0 +1,426 @@
+<?xml version="1.0"?>
+<translations>
+	<translation>
+		<name>Propagate access restriction to foot</name>
+		<description>Set foot=no if access is restricted</description>
+        <match type="way" >
+            <match type="way" mode="or">
+                <tag k="access" v="no"/>
+                <tag k="access" v="private"/>                
+                <tag k="access" v="agricultural"/>				
+                <tag k="access" v="forestry"/>				
+                <tag k="access" v="customers"/>												                    
+            </match>
+            <notag k="foot" v=".*"/>
+        </match>            
+		<output>
+			<copy-all/>
+			<tag k="foot" v="no"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Propagate access restriction to motor vehicles</name>
+		<description>Set motor_vehicle=no if access is restricted</description>
+        <match type="way" >
+            <match type="way" mode="or">
+                <tag k="access" v="no"/>
+                <tag k="access" v="private"/>                
+                <tag k="access" v="agricultural"/>				
+                <tag k="access" v="forestry"/>				
+                <tag k="access" v="customers"/>												                    
+            </match>
+            <notag k="vehicle" v=".*"/>
+            <notag k="motor_vehicle" v=".*"/>            
+        </match>            
+		<output>
+			<copy-all/>
+			<tag k="motor_vehicle" v="no"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Propagate access restriction to motor vehicles</name>
+		<description>Set motor_vehicle=no if access is restricted</description>
+        <match type="way" >
+            <match type="way" mode="or">
+                <tag k="vehicle" v="no"/>
+                <tag k="vehicle" v="private"/>                
+                <tag k="vehicle" v="agricultural"/>				
+                <tag k="vehicle" v="forestry"/>				
+                <tag k="vehicle" v="customers"/>												                    
+            </match>
+            <notag k="motor_vehicle" v=".*"/>            
+        </match>            
+		<output>
+			<copy-all/>
+			<tag k="motor_vehicle" v="no"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Downgrading unpaved roads</name>
+		<description>Go with track grade1 if unpaved hard</description>
+		<match type="way" mode="and">
+			<match type="way" mode="or">
+				<tag k="highway" v="service"/>
+				<tag k="highway" v="unclassified"/>					
+				<tag k="highway" v="residential"/>
+				<tag k="highway" v="living_street"/>	
+			</match>
+			<match type="way" mode="or">
+				<tag k="surface" v="fine_gravel"/>
+				<tag k="surface" v="compacted"/>                
+				<tag k="surface" v="pebblestone"/>				
+				<tag k="surface" v="rock"/>				
+				<tag k="surface" v="grass_paver"/>												
+			</match>
+		</match>
+		<output>
+			<copy-all/>
+			<tag k="highway" v="track"/>
+			<tag k="tracktype" v="grade1"/>	
+		</output>
+	</translation>
+	<translation>
+		<name>Downgrading unpaved roads</name>
+		<description>Go with track grade3 if unpaved soft</description>
+		<match type="way" mode="and">
+			<match type="way" mode="or">
+				<tag k="highway" v="service"/>
+				<tag k="highway" v="unclassified"/>					
+				<tag k="highway" v="residential"/>
+				<tag k="highway" v="living_street"/>	
+			</match>
+			<match type="way" mode="or">
+                <tag k="surface" v="unpaved"/>            
+				<tag k="surface" v="gravel"/>
+				<tag k="surface" v="ground"/>				
+				<tag k="surface" v="earth"/>				
+				<tag k="surface" v="dirt"/>	
+				<tag k="surface" v="grass"/>	
+				<tag k="surface" v="mud"/>	
+				<tag k="surface" v="sand"/>													
+			</match>
+		</match>
+		<output>
+			<copy-all/>
+			<tag k="highway" v="track"/>
+			<tag k="tracktype" v="grade3"/>			
+		</output>
+	</translation>
+	<translation>
+		<name>Upgrading paved tracks</name>
+		<description>Use unclassified for paved tracks</description>
+		<match type="way" mode="and">
+			<match type="way" mode="or">
+				<tag k="highway" v="track"/>
+			</match>
+			<match type="way" mode="or">
+                <tag k="surface" v="paved"/>
+				<tag k="surface" v="asphalt"/>
+				<tag k="surface" v="chipseal"/>				
+				<tag k="surface" v="concrete"/>				
+				<tag k="surface" v="paving_stones"/>	
+				<tag k="surface" v="metal"/>	
+				<tag k="surface" v="wood"/>
+				<tag k="surface" v="sett"/>	
+				<tag k="surface" v="cobblestone"/>					
+			</match>
+		</match>
+		<output>
+			<copy-all/>
+			<tag k="highway" v="unclassified"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Setting missing tracktype</name>
+		<description>Set to grade1 if surface is unpaved-hard</description>
+        <match type="way" >
+            <match type="way" mode="and">
+                <match type="way" mode="or">
+                    <tag k="highway" v="track"/>
+                </match>
+                <match type="way" mode="or">
+                    <tag k="surface" v="fine_gravel"/>
+                    <tag k="surface" v="compacted"/>                
+                    <tag k="surface" v="pebblestone"/>				
+                    <tag k="surface" v="rock"/>				
+                    <tag k="surface" v="grass_paver"/>												                    
+                </match>
+            </match>
+            <notag k="tracktype" v=".*"/>
+        </match>            
+		<output>
+			<copy-all/>
+			<tag k="tracktype" v="grade1"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Downgrading unpaved footways</name>
+		<description>Go with path if unpaved</description>
+		<match type="way" mode="and">
+			<match type="way" mode="and">
+				<tag k="highway" v="footway"/>
+			</match>
+			<match type="way" mode="or">
+				<tag k="surface" v="gravel"/>
+				<tag k="surface" v="ground"/>				
+				<tag k="surface" v="earth"/>				
+				<tag k="surface" v="dirt"/>	
+				<tag k="surface" v="grass"/>	
+				<tag k="surface" v="mud"/>	
+				<tag k="surface" v="sand"/>													
+			</match>
+		</match>
+		<output>
+			<copy-all/>
+			<tag k="highway" v="path"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Upgrade paved path</name>
+		<description>Use footway</description>
+		<match type="way" mode="and">
+			<match type="way" mode="and">
+				<tag k="highway" v="path"/>
+			</match>
+			<match type="way" mode="or">
+                <tag k="surface" v="paved"/>
+				<tag k="surface" v="asphalt"/>
+				<tag k="surface" v="chipseal"/>				
+				<tag k="surface" v="concrete"/>				
+			</match>
+		</match>
+		<output>
+			<copy-all/>
+			<tag k="highway" v="footway"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Private driveways</name>
+		<description>Remove</description>
+		<match type="way" mode="and">
+            <tag k="highway" v="service"/>
+            <tag k="service" v="driveway"/>
+            <tag k="access" v="private"/>
+            <notag k="trail_color" v=".*"/>      
+		</match>
+		<output>
+			<copy-unmatched/>
+		</output>
+	</translation>
+	<translation>
+		<name>Disused railways</name>
+		<description>Historic=*, ruins=yes to historic=ruins, ruins=*</description>
+		<match type="any" mode="or">
+            <tag k="disused:railway" match_id="disused_rail" v="rail"/>
+            <tag k="disused:railway" match_id="disused_light_rail" v="light_rail"/>
+            <tag k="disused:railway" match_id="disused_narrow_gauge" v="narrow_gauge"/>
+            <tag k="disused:railway" match_id="disused_tram" v="tram"/>
+        </match>
+		<output>
+			<copy-all/>
+			<tag k="railway" v="disused"/>
+            <tag k="disused" from_match="disused_rail" v="rail"/>
+            <tag k="disused" from_match="disused_light_rail" v="light_rail"/>
+            <tag k="disused" from_match="disused_narrow_gauge" v="narrow_gauge"/>
+            <tag k="disused" from_match="disused_tram" v="tram"/>
+		</output>
+	</translation>
+
+	<translation>
+		<name>Tunnels</name>
+		<description>Move tunnels to layer 0</description>
+		<match type="way" mode="or">
+			<match>
+				<tag k="highway" v=".*"/>
+				<tag k="tunnel" v="yes"/>
+			</match>
+			<match>
+				<tag k="railway" v=".*"/>
+				<tag k="tunnel" v="yes"/>
+			</match>
+			<match>
+				<tag k="waterway" v=".*"/>
+                <tag k="tunnel" v="culvert"/>
+			</match>
+		</match>
+		<output>
+			<copy-all/>
+			<tag k="layer" v="0"/>
+		</output>
+	</translation>
+    <translation>
+		<name>Historic Manors</name>
+		<description>Historic=*, ruins=yes to historic=ruins, ruins=*</description>
+		<match type="any" mode="and">
+            <match>
+                <tag k="historic" v="castle"/>
+            </match>
+            <match type="any" mode="or">
+                <tag k="castle_type"  v="stately"/>
+                <tag k="castle_type"  v="manor"/>
+            </match>
+        </match>
+		<output>
+			<copy-all/>
+			<tag k="historic" v="manor"/>
+		</output>
+	</translation>   
+	<translation>
+		<name>Historical mines </name>
+		<description>Alternative tagging</description>
+		<match type="any" mode="and">
+            <match type="any" mode="or">
+                <tag k="man_made" v="mineshaft"/>
+                <tag k="man_made" v="adit"/>
+            </match>            
+            <match type="any" mode="or">
+                <tag k="abandoned" v="yes"/>
+                <tag k="disused" v="yes"/>
+            </match>
+        </match>            
+		<output>
+			<copy-unmatched/>
+			<tag k="historic" v="mine"/>            
+		</output>
+	</translation>
+	<translation>
+		<name>Historic Ruins</name>
+		<description>Historic=*, ruins=yes to historic=ruins, ruins=*</description>
+		<match type="any" mode="and">
+            <match type="any" mode="or">
+                <tag k="historic" match_id="historic_castle" v="castle"/>
+                <tag k="historic" match_id="historic_fort" v="fort"/>
+                <tag k="historic" match_id="historic_manor" v="manor"/>                
+            </match>
+            <match>
+                <tag k="ruins" v="yes"/>
+            </match>
+        </match>
+		<output>
+			<copy-all/>
+			<tag k="historic" v="ruins"/>
+            <tag k="ruins" from_match="historic_castle" v="castle"/>
+            <tag k="ruins" from_match="historic_fort" v="fort"/>
+            <tag k="ruins" from_match="historic_manor" v="manor"/>            
+		</output>
+	</translation>
+	<translation>
+		<name>Archeological sites</name>
+		<description>Old site_type to archeological_site</description>
+		<match type="any" mode="and">
+            <match>
+                <tag k="historic" v="archaeological_site"/>
+            </match>
+            <match type="any" mode="or">
+                <tag k="site_type"  match_id="fortification" v="fortification"/>
+                <tag k="site_type"  match_id="tumulus" v="tumulus"/>                
+            </match>
+        </match>
+		<output>
+			<copy-unmatched/>
+			<tag k="historic" v="archaeological_site"/>            
+			<tag k="archaeological_site" from_match="fortification" v="fortification"/>
+            <tag k="archaeological_site" from_match="tumulus" v="tumulus"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Tumulus </name>
+		<description>Alternative tumulus tagging</description>
+		<match type="any" mode="and">
+            <tag k="historic" v="historic"/>
+            <tag k="tomb" v="tumulus"/>
+        </match>
+		<output>
+			<copy-unmatched/>
+			<tag k="historic" v="archaeological_site"/>            
+            <tag k="archaeological_site" v="tumulus"/>
+		</output>
+	</translation>
+
+	<translation>
+		<name>Lookout towers</name>
+		<description>Unification</description>
+		<match type="any" mode="and">
+            <match>
+                <tag k="man_made" v="tower"/>
+            </match>
+            <match>
+                <tag k="tower:type" v="observation"/>
+            </match>
+            <match>
+                <tag k="tower:type" v="observation"/>
+            </match>                
+            <match type="any" mode="or">
+                <tag k="tourism" v="viewpoint"/>
+                <tag k="viewpoint" v="yes"/>
+                <tag k="access" v="yes"/>
+            </match>   
+        </match>                         
+		<output>
+			<copy-unmatched/>
+			<tag k="tower" v="outlook"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Drinking water </name>
+		<description>from water tap</description>
+		<match type="any" mode="and">
+			<tag k="man_made" v="water_well"/>
+            <tag k="drinking_water" v="yes"/>
+		</match>
+		<output>
+			<copy-unmatched/>
+			<tag k="amenity" v="drinking_water"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Private facilities</name>
+		<description>Remove private facilities</description>
+		<match type="any" mode="and">
+            <match type="any" mode="or">
+                <tag k="access" v="no"/>
+                <tag k="access" v="private"/>
+                <tag k="access" v="customers"/>
+            </match>
+            <match type="any" mode="or">
+                <tag k="amenity" v="bench"/>  
+                <tag k="amenity" v="fuel"/>            
+                <tag k="amenity" v="parking"/>                      
+                <tag k="amenity" v="shelter"/>
+                <tag k="leisure" v="firepit"/>
+                <tag k="leisure" v="picnic_table"/>
+                <tag k="leisure" v="playground"/>
+
+                <tag k="tourism" v="alpine_hut"/>
+                <tag k="tourism" v="apartment"/>
+                <tag k="tourism" v="camp_site"/>                
+                <tag k="tourism" v="chalet"/>
+                
+                <tag k="tourism" v="picnic_site"/>                                                
+                <tag k="tourism" v="wilderness_hut"/>
+
+            </match>   
+        </match>                         
+		<output>
+			<copy-unmatched/>
+		</output>
+	</translation>
+
+
+	<translation>
+		<name>Ford </name>
+		<description></description>
+		<match type="any" >
+			<tag k="ford" v="...*"/>
+		</match>
+		<output>
+			<copy-unmatched/>
+			<tag k="ford" v="yes"/>
+		</output>
+	</translation>
+
+
+
+</translations>
+
+

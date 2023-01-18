@@ -11,7 +11,7 @@
 <xsl:template name="points-accomodation">
 
 <rule  e="any" k="tourism" v="hostel" zoom-min="15">
-        <symbol id="hostel" src="{$symbolPath}/hostel.svg" symbol-width="22" priority="{$pr-hostel}"/>
+        <symbol id="hostel" src="{$symbolPath}/hostel.svg" symbol-width="20" priority="{$pr-hostel}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="hostel" 
             font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-hostel}"/>
@@ -19,7 +19,7 @@
        
 </rule>
 <rule  e="any" k="tourism" v="hotel" zoom-min="15">
-        <symbol id="hotel" src="{$symbolPath}/hotel.svg" symbol-width="22" priority="{$pr-hotel}"/>
+        <symbol id="hotel" src="{$symbolPath}/hotel.svg" symbol-width="20" priority="{$pr-hotel}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="hotel" 
             font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-hotel}"/>
@@ -28,7 +28,7 @@
 </rule>
 
 <rule  e="any" k="tourism" v="bed_and_breakfast|guest_house" zoom-min="15">
-        <symbol id="hotel" src="{$symbolPath}/hotel.svg" symbol-width="22" priority="{$pr-hotel}"/>
+        <symbol id="hotel" src="{$symbolPath}/hotel.svg" symbol-width="20" priority="{$pr-hotel}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="hotel" 
             font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-hotel}"/>
