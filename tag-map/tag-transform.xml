@@ -217,6 +217,7 @@
             	<tag k="proposed" v="yes"/>
 				<tag k="disused" v="yes"/>
 				<tag k="abandoned" v="yes"/>
+			</match>				
 		</match>
 		<output>
 			<copy-unmatched/>
