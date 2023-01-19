@@ -195,6 +195,35 @@
 		</output>
 	</translation>
 	<translation>
+		<name>Via ferrata </name>
+		<description>alternative tagging</description>
+		<match type="way" mode="and">
+			<tag k="highway" v="path"/>
+            <tag k="via_ferrata_scale" v=".*"/>
+		</match>
+		<output>
+			<copy-all/>
+			<tag k="highway" v="via_ferrata"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Proposed highways </name>
+		<description>alternative tagging</description>
+		<match type="way" mode="and">
+			<match>
+				<tag k="highway" v=".*"/>
+			</match>
+			<match type="way" mode="or">
+            	<tag k="proposed" v="yes"/>
+				<tag k="disused" v="yes"/>
+				<tag k="abandoned" v="yes"/>
+		</match>
+		<output>
+			<copy-unmatched/>
+		</output>
+	</translation>	
+
+	<translation>
 		<name>Private driveways</name>
 		<description>Remove</description>
 		<match type="way" mode="and">
@@ -374,6 +403,113 @@
 		</output>
 	</translation>
 	<translation>
+		<name>Hot spring </name>
+		<description>alternative tagging</description>
+		<match mode="and">
+			<match>
+				<tag k="natural" v="spring"/>
+			</match>
+			<match mode="or">
+				<tag k="spring:type" v="hot"/>
+				<tag k="temperature" v="hot"/>
+			</match>
+		</match>
+		<output>
+			<copy-all/>
+			<tag k="natural" v="hot_spring"/>
+		</output>
+	</translation>	
+	<translation>
+		<name>Disused spring </name>
+		<description>modify to non-drinking</description>
+		<match mode="and">
+			<tag k="disused:natural" v="spring"/>
+		</match>
+		<output>
+			<copy-unmatched/>
+			<tag k="natural" v="spring"/>
+			<tag k="drinking_water" v="no"/>
+		</output>
+	</translation>	
+	<translation>
+		<name>Crane well </name>
+		<description>from water tap</description>
+		<match type="any" mode="and">
+			<match >
+				<tag k="man_made" v="water_well"/>
+			</match>
+			<match type="any" mode="or">
+				<tag k="name" v=".*[gG]émeskút"/>
+				<tag k="description" v=".*[gG]émeskút"/>
+				<tag k="description:hu" v=".*[gG]émeskút"/>
+			</match>
+		</match>
+		<output>
+			<copy-all/>
+			<tag k="man_made" v="crane_well"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Chapel </name>
+		<description>by name</description>
+		<match type="any" mode="and">
+			<tag k="amenity" v="place_of_worship"/>
+            <tag k="name" v="'.*k.polna'"/>
+		</match>
+		<output>
+			<copy-all/>
+			<tag k="building" v="chapel"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Bell towers </name>
+		<description>alternative tagging</description>
+		<match type="any" mode="and">
+			<tag k="man_made" v="tower"/>
+            <tag k="tower:type" v="bell_tower"/>
+		</match>
+		<output>
+			<copy-unmatched/>
+			<tag k="man_made" v="campanile"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Stupas </name>
+		<description>alternative tagging</description>
+		<match type="any" mode="and">
+			<tag k="man_made" v="tower"/>
+            <tag k="tower:type" v="stupa"/>
+		</match>
+		<output>
+			<copy-unmatched/>
+			<tag k="man_made" v="stupa"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Mast </name>
+		<description>alternative tagging</description>
+		<match type="any" mode="and">
+			<tag k="man_made" v="tower"/>
+            <tag k="tower:type" v="communication"/>
+		</match>
+		<output>
+			<copy-unmatched/>
+			<tag k="man_made" v="mast"/>
+		</output>
+	</translation>	
+
+	<translation>
+		<name>Remove entrances </name>
+		<description>if tagged as gates</description>
+		<match type="any" mode="and">
+			<tag k="barrier" v="gate"/>
+            <tag k="entrance" v="home"/>
+		</match>
+		<output>
+			<copy-unmatched/>
+		</output>
+	</translation>	
+	<translation>
 		<name>Private facilities</name>
 		<description>Remove private facilities</description>
 		<match type="any" mode="and">
@@ -381,21 +517,32 @@
                 <tag k="access" v="no"/>
                 <tag k="access" v="private"/>
                 <tag k="access" v="customers"/>
+				<tag k="ownership" v="private"/>
             </match>
             <match type="any" mode="or">
                 <tag k="amenity" v="bench"/>  
+				<tag k="amenity" v="drinking_water"/>
                 <tag k="amenity" v="fuel"/>            
-                <tag k="amenity" v="parking"/>                      
+                <tag k="amenity" v="parking"/> 
+				<tag k="amenity" v="public_bath"/> 
+				<tag k="amenity" v="recycling"/>                     
                 <tag k="amenity" v="shelter"/>
+				<tag k="amenity" v="spa"/>
+				<tag k="amenity" v="toilets"/>
+
+				<tag k="leisure" v="beach_resort"/>
                 <tag k="leisure" v="firepit"/>
+				<tag k="leisure" v="golf_course"/>
+				<tag k="leisure" v="horse_riding"/>
+				<tag k="leisure" v="ice_rink"/>
                 <tag k="leisure" v="picnic_table"/>
                 <tag k="leisure" v="playground"/>
+				<tag k="leisure" v="sports_centre"/>
 
                 <tag k="tourism" v="alpine_hut"/>
                 <tag k="tourism" v="apartment"/>
                 <tag k="tourism" v="camp_site"/>                
                 <tag k="tourism" v="chalet"/>
-                
                 <tag k="tourism" v="picnic_site"/>                                                
                 <tag k="tourism" v="wilderness_hut"/>
 
