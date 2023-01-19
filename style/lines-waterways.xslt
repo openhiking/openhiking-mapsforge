@@ -19,8 +19,8 @@
     <xsl:with-param name="zoom-min" select="14" />      
     <xsl:with-param name="stroke-color" select="$stream-color" />
     <xsl:with-param name="stroke-width" select="0.3" />
-    <xsl:with-param name="repeat-gap-low" select="80" />    
-    <xsl:with-param name="repeat-gap-high" select="140" />        
+    <xsl:with-param name="repeat-gap-low" select="120" />    
+    <xsl:with-param name="repeat-gap-high" select="210" />        
 </xsl:call-template>
 
 <xsl:call-template name="create-waterway-rules">
@@ -28,8 +28,8 @@
     <xsl:with-param name="zoom-min" select="14" />      
     <xsl:with-param name="stroke-color" select="$drain-color" />
     <xsl:with-param name="stroke-width" select="0.3" />
-    <xsl:with-param name="repeat-gap-low" select="80" />    
-    <xsl:with-param name="repeat-gap-high" select="140" />        
+    <xsl:with-param name="repeat-gap-low" select="200" />    
+    <xsl:with-param name="repeat-gap-high" select="300" />        
 </xsl:call-template>
 
 </xsl:template>
@@ -43,7 +43,7 @@
 <xsl:param name="repeat-gap-high" />
 <rule e="way" k="waterway" v="{$waterway}" zoom-min="{$zoom-min}"  >
     <rule e="way" k="*" v="*" zoom-min="15">
-        <pathText k="name" font-style="italic" font-size="8" fill="#0000fc" stroke="#ffffff" stroke-width="2" repeat-start="30" repeat-gap="150" priority="-20" />
+        <pathText k="name" font-style="italic" font-size="9" fill="#0000fc" stroke="#ffffff" stroke-width="2" repeat-start="30" repeat-gap="150" priority="{$pr-waterway-name}" />
     </rule>
     <rule e="way" k="tunnel" v="yes|culvert">
         <line stroke="{$stroke-color}" stroke-dasharray="1,0.4" stroke-width="{$stroke-width}" stroke-linecap="butt" scale="all"/>
@@ -57,10 +57,10 @@
         </rule>
     </rule>
     <rule e="way" k="*" v="*" zoom-min="15" zoom-max="17">
-        <lineSymbol src="file:/symbols/waterflow.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="{$repeat-gap-low}" symbol-width="8" priority="-100"/>
+        <lineSymbol src="{$symbolPath}/drift.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="{$repeat-gap-low}" symbol-width="8"  priority="{$pr-drift}"/>
     </rule>
     <rule e="way" k="*" v="*" zoom-min="18">
-        <lineSymbol src="file:/symbols/waterflow.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="{$repeat-gap-high}" symbol-width="10" priority="-100"/>
+        <lineSymbol src="{$symbolPath}/drift.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="{$repeat-gap-high}"  symbol-width="12" priority="{$pr-drift}"/>
     </rule>    
 </rule>
 </xsl:template>

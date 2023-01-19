@@ -129,9 +129,12 @@
 <xsl:variable name="pr-firepit">-10</xsl:variable>
 <xsl:variable name="pr-crossing">-10</xsl:variable>
 <xsl:variable name="pr-water-well">-10</xsl:variable>
+<xsl:variable name="pr-waterway-name">-10</xsl:variable>
+<xsl:variable name="pr-restricted">-10</xsl:variable>
 
 
 <!-- Priority -20 -->
 <xsl:variable name="pr-hiking-symbols">-20</xsl:variable>
 <xsl:variable name="pr-hiking-symbols-minor">-21</xsl:variable>
+<xsl:variable name="pr-drift">-20</xsl:variable>
 </xsl:stylesheet>

@@ -10,54 +10,71 @@
 -->
 <xsl:template name="lines-access-restrictions">
 <rule cat="restricted_access" e="way" k="highway" v="*" >
-    <rule e="way" k="access" v="no" >
-        <rule e="way" k="foot" v="~|no" >    
-            <xsl:call-template name="access-restriction-rules"/>
-        </rule>            
+    <rule e="way" k="foot" v="no" >
+        <xsl:call-template name="access-restriction-rules">
+        <xsl:with-param name="symbolSource" select="concat($symbolPath,'/access_private.svg')" />        
+        </xsl:call-template>
     </rule>
-    <rule e="way" k="access" v="~|yes" >
-        <rule e="way" k="foot" v="no" >    
-            <xsl:call-template name="access-restriction-rules"/>
-        </rule>            
+    <rule e="way" k="foot" v="customers" >
+        <xsl:call-template name="access-restriction-rules">
+        <xsl:with-param name="symbolSource" select="concat($symbolPath,'/access_customers.svg')" />        
+        </xsl:call-template>
     </rule>
 </rule>
 
 </xsl:template>
 
 <xsl:template name="access-restriction-rules">
+<xsl:param name="symbolSource" />
 <rule e="way" k="highway" v="steps|path|footway|bridleway|cycleway" zoom-min="{$zm-path}">
-    <line stroke="{$lc-restricted}" stroke-width="{$lw-restricted}" stroke-dasharray="{$da-restricted}" stroke-linecap="butt" scale="all" /> 
+    <rule e="any" k="*" v="*" zoom-max="{$zm-path + 2 }">
+        <lineSymbol src="{$symbolSource}" align-center="true" repeat="true" repeat-start="15" repeat-gap="60" symbol-width="10"  priority="{$pr-restricted}"/>
+    </rule> 
+    <rule e="any" k="*" v="*" zoom-min="{$zm-path + 3 }">
+        <lineSymbol src="{$symbolSource}g" align-center="true" repeat="true" repeat-start="15" repeat-gap="80" symbol-width="12"  priority="{$pr-restricted}"/>
+    </rule> 
 </rule>
-<rule e="way" k="highway" v="service|living_street|residential|unclassified" >
-    <rule e="way" k="surface" v="{$surface-unpaved-hard}|{$surface-unpaved-soft}" zoom-min="{$zm-track}">
-        <line stroke="{$lc-restricted}" stroke-width="{$lw-restricted}" stroke-dasharray="{$da-restricted}" stroke-linecap="butt" scale="all" />     
-    </rule>                
-</rule>                
 <rule e="way" k="highway" v="track" zoom-min="{$zm-track}">
-    <rule e="way" k="surface" v="{$surface-paved}" zoom-min="{$zm-unclassified}">
-        <line stroke="{$lc-restricted}" stroke-width="{$lw-restricted}" stroke-dasharray="{$da-restricted}" stroke-linecap="butt" scale="all" /> 
-    </rule>
-    <rule e="way" k="surface" v="~|{$surface-unpaved-hard}|{$surface-unpaved-soft}" zoom-min="{$zm-track}">
-        <line stroke="{$lc-restricted}" stroke-width="{$lw-restricted}" stroke-dasharray="{$da-restricted}" stroke-linecap="butt" scale="all" /> 
-    </rule>
+    <rule e="any" k="*" v="*" zoom-max="{$zm-track + 2 }">
+        <lineSymbol src="{$symbolSource}" align-center="true" repeat="true" repeat-start="15" repeat-gap="60" symbol-width="10"  priority="{$pr-restricted}"/>
+    </rule> 
+    <rule e="any" k="*" v="*" zoom-min="{$zm-track + 3 }">
+        <lineSymbol src="{$symbolSource}" align-center="true" repeat="true" repeat-start="15" repeat-gap="80" symbol-width="12"  priority="{$pr-restricted}"/>
+    </rule> 
 </rule>    
-<rule e="way" k="highway" v="service" >
-    <rule e="way" k="surface" v="~|{$surface-paved}" zoom-min="{$zm-service}">
-        <line stroke="{$lc-restricted}" stroke-width="{$lw-restricted}" stroke-dasharray="{$da-restricted}" stroke-linecap="butt" scale="all" />     
-    </rule>                
+<rule e="way" k="highway" v="service" zoom-min="{$zm-service}" >
+    <rule e="any" k="*" v="*" zoom-max="{$zm-service + 2 }">
+        <lineSymbol src="{$symbolSource}" align-center="true" repeat="true" repeat-start="15" repeat-gap="60" symbol-width="10"  priority="{$pr-restricted}"/>
+    </rule> 
+    <rule e="any" k="*" v="*" zoom-min="{$zm-service + 3 }">
+        <lineSymbol src="{$symbolSource}" align-center="true" repeat="true" repeat-start="15" repeat-gap="80" symbol-width="12"  priority="{$pr-restricted}"/>
+    </rule> 
 </rule>                
-<rule e="way" k="highway" v="living_street|residential" >
-    <rule e="way" k="surface" v="~|{$surface-paved}" zoom-min="{$zm-residential}">
-        <line stroke="{$lc-restricted}" stroke-width="{$lw-restricted}" stroke-dasharray="{$da-restricted}" stroke-linecap="butt" scale="all" />     
-    </rule>                
+<rule e="way" k="highway" v="living_street|residential" zoom-min="{$zm-residential}">
+    <rule e="any" k="*" v="*" zoom-max="{$zm-residential + 2 }">
+        <lineSymbol src="{$symbolSource}" align-center="true" repeat="true" repeat-start="15" repeat-gap="60" symbol-width="10"  priority="{$pr-restricted}"/>
+    </rule> 
+    <rule e="any" k="*" v="*" zoom-min="{$zm-residential + 3 }">
+        <lineSymbol src="{$symbolSource}" align-center="true" repeat="true" repeat-start="15" repeat-gap="80" symbol-width="12"  priority="{$pr-restricted}"/>
+    </rule> 
 </rule>                
 <rule e="way" k="highway" v="pedestrian" zoom-min="{$zm-pedestrian}">
-    <line stroke="{$lc-restricted}" stroke-width="{$lw-restricted}" stroke-dasharray="{$da-restricted}" stroke-linecap="butt" scale="all"  /> 
+    <rule e="any" k="*" v="*" zoom-max="{$zm-pedestrian + 2 }">
+        <lineSymbol src="{$symbolSource}" align-center="true" repeat="true" repeat-start="15" repeat-gap="60" symbol-width="10"  priority="{$pr-restricted}"/>
+    </rule> 
+    <rule e="any" k="*" v="*" zoom-min="{$zm-pedestrian + 3 }">
+        <lineSymbol src="{$symbolSource}" align-center="true" repeat="true" repeat-start="15" repeat-gap="80" symbol-width="12"  priority="{$pr-restricted}"/>
+    </rule> 
+
 </rule>
-<rule e="way" k="highway" v="unclassified" >
-    <rule e="way" k="surface" v="~|{$surface-paved}" zoom-min="{$zm-unclassified}">
-        <line stroke="{$lc-restricted}" stroke-width="{$lw-restricted}" stroke-dasharray="{$da-restricted}" stroke-linecap="butt" scale="all" />     
-    </rule>                
+<rule e="way" k="highway" v="unclassified" zoom-min="{$zm-unclassified}">
+    <rule e="any" k="*" v="*" zoom-max="{$zm-unclassified + 2 }">
+        <lineSymbol src="{$symbolSource}" align-center="true" repeat="true" repeat-start="15" repeat-gap="60" symbol-width="10"  priority="{$pr-restricted}"/>
+    </rule> 
+    <rule e="any" k="*" v="*" zoom-min="{$zm-unclassified + 3 }">
+        <lineSymbol src="{$symbolSource}" align-center="true" repeat="true" repeat-start="15" repeat-gap="80" symbol-width="12"  priority="{$pr-restricted}"/>
+    </rule> 
+              
 </rule>                
 </xsl:template>
 

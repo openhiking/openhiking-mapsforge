@@ -9,13 +9,26 @@
                 <tag k="access" v="private"/>                
                 <tag k="access" v="agricultural"/>				
                 <tag k="access" v="forestry"/>				
-                <tag k="access" v="customers"/>												                    
             </match>
             <notag k="foot" v=".*"/>
         </match>            
 		<output>
 			<copy-all/>
 			<tag k="foot" v="no"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Propagate access restriction to foot</name>
+		<description>Set foot=no if access is restricted</description>
+        <match type="way" >
+            <match type="way" mode="or">
+                <tag k="access" v="customers"/>												                    
+            </match>
+            <notag k="foot" v=".*"/>
+        </match>            
+		<output>
+			<copy-all/>
+			<tag k="foot" v="customers"/>
 		</output>
 	</translation>
 	<translation>
@@ -26,8 +39,7 @@
                 <tag k="access" v="no"/>
                 <tag k="access" v="private"/>                
                 <tag k="access" v="agricultural"/>				
-                <tag k="access" v="forestry"/>				
-                <tag k="access" v="customers"/>												                    
+                <tag k="access" v="forestry"/>														                    
             </match>
             <notag k="vehicle" v=".*"/>
             <notag k="motor_vehicle" v=".*"/>            
@@ -45,8 +57,7 @@
                 <tag k="vehicle" v="no"/>
                 <tag k="vehicle" v="private"/>                
                 <tag k="vehicle" v="agricultural"/>				
-                <tag k="vehicle" v="forestry"/>				
-                <tag k="vehicle" v="customers"/>												                    
+                <tag k="vehicle" v="forestry"/>																                    
             </match>
             <notag k="motor_vehicle" v=".*"/>            
         </match>            
@@ -498,7 +509,36 @@
 			<tag k="man_made" v="mast"/>
 		</output>
 	</translation>	
-
+	<translation>
+		<name>Valleys and ridges</name>
+		<description>Remove non-named natural</description>
+        <match type="way" >
+            <match type="way" mode="or">
+                <tag k="natural" v="valley"/>
+                <tag k="natural" v="ridge"/>                
+                <tag k="natural" v="tree"/>				
+            </match>
+            <notag k="name" v=".*"/>
+        </match>            
+		<output>
+			<copy-unmatched/>
+		</output>
+	</translation>
+	<translation>
+		<name>Netural reserve</name>
+		<description>alternative tagging</description>
+        <match type="way" >
+            <match>
+                <tag k="leisure" v="nature_reserve"/>
+            </match>
+            <notag k="boundary" v="protected_area"/>
+        </match>            
+		<output>
+			<copy-unmatched/>
+			<tag k="boundary" v="protected_area"/>
+			<tag k="protect_class" v="5"/>
+		</output>
+	</translation>
 	<translation>
 		<name>Remove entrances </name>
 		<description>if tagged as gates</description>
@@ -508,6 +548,18 @@
 		</match>
 		<output>
 			<copy-unmatched/>
+		</output>
+	</translation>	
+	<translation>
+		<name>Backcountry camp site </name>
+		<description>alternative tagging</description>
+		<match type="any" mode="and">
+			<tag k="tourism" v="camp_site"/>
+            <tag k="backcountry" v="yes"/>
+		</match>
+		<output>
+			<copy-all/>
+			<tag k="camp_site" v="basic"/>
 		</output>
 	</translation>	
 	<translation>

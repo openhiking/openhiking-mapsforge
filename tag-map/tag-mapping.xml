@@ -310,7 +310,6 @@
         <osm-tag key="tourism" value="wilderness_hut" label-position="true" zoom-appear="14"/>
 
         <osm-tag key="camp_site" value="basic" renderable="false" />
-        <osm-tag key="backcountry" value="yes" renderable="false" />        
 
     </ways>
 
@@ -497,8 +496,6 @@
         <osm-tag key="castle_type" renderable="false" value="stately"/>             
         <osm-tag key="castle_type" renderable="false" value="manor"/>
 
-        <osm-tag key="site_type" renderable="false" value="fortification"/> 
-        <osm-tag key="site_type" renderable="false" value="tumulus"/> 
         <osm-tag key="archaeological_site" renderable="false" value="fortification"/> 
         <osm-tag key="archaeological_site" renderable="false" value="tumulus"/> 
         <osm-tag key="fortification_type" renderable="false" value="hill_fort"/> 
@@ -541,16 +538,12 @@
         <osm-tag key="castle_type" renderable="false" value="stately"/>             
         <osm-tag key="castle_type" renderable="false" value="manor"/>
 
-        <osm-tag key="site_type" renderable="false" value="fortification"/> 
-        <osm-tag key="site_type" renderable="false" value="tumulus"/> 
         <osm-tag key="archaeological_site" renderable="false" value="fortification"/> 
         <osm-tag key="archaeological_site" renderable="false" value="tumulus"/> 
         <osm-tag key="fortification_type" renderable="false" value="hill_fort"/> 
         <osm-tag key="fortification_type" renderable="false" value="limes"/> 
 
         <osm-tag key="memorial" renderable="false" value="plaque"/> 
-
-        <osm-tag key="tomb" renderable="false" value="tumulus"/> 
     </pois>
 
     <!-- ************************************************** 
@@ -1101,7 +1094,13 @@
         <osm-tag key="trail_symbol" value="hu:pm" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="hu:zm" zoom-appear="14"/>     
         <osm-tag key="trail_symbol" value="hu:sm" zoom-appear="14"/>     
-        <osm-tag key="trail_symbol" value="hu:lm" zoom-appear="14"/>             
+        <osm-tag key="trail_symbol" value="hu:lm" zoom-appear="14"/>   
+
+        <osm-tag key="trail_symbol" value="hu:kx" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:px" zoom-appear="14"/>
+
+        <osm-tag key="trail_symbol" value="hu:f" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:t" zoom-appear="14"/>
 
 
         <osm-tag key="trail_symbol_level" value="major" zoom-appear="13"/>                           
@@ -1120,17 +1119,17 @@
         <osm-tag key="area" value="yes" renderable="false"/>
 
          <!-- Access -->
-        <osm-tag key="access" equivalent-values="private,agricultural,forestry,customers" renderable="false" value="no"/>
-        <osm-tag key="access" equivalent-values="permissive,permit,destination,designated" renderable="false" value="yes"/>
+        <osm-tag key="access" equivalent-values="private,agricultural,forestry" renderable="false" value="no"/>
+        <osm-tag key="access"  renderable="false" value="customers"/>
 
         <osm-tag key="vehicle" equivalent-values="private,agricultural,forestry,customers" renderable="false" value="no"/>
-        <osm-tag key="vehicle" equivalent-values="permissive,permit,destination,designated" renderable="false" value="yes"/>
+        <osm-tag key="vehicle"  renderable="false" value="customers"/>
 
-        <osm-tag key="motor_vehicle" equivalent-values="private,agricultural,forestry,customers" renderable="false" value="no"/>
-        <osm-tag key="motor_vehicle" equivalent-values="permissive,permit,destination,designated" renderable="false" value="yes"/>
+        <osm-tag key="motor_vehicle" equivalent-values="private,agricultural,forestry" renderable="false" value="no"/>
+        <osm-tag key="motor_vehicle"  renderable="false" value="customers"/>
 
-        <osm-tag key="foot" equivalent-values="private,agricultural,forestry,customers" renderable="false" value="no"/>
-        <osm-tag key="foot" equivalent-values="permissive,permit,destination,designated" renderable="false" value="yes"/>
+        <osm-tag key="foot" equivalent-values="private,agricultural,forestry" renderable="false" value="no"/>
+        <osm-tag key="foot"  renderable="false" value="customers"/>
 
         
         <!-- Structures -->
@@ -1155,18 +1154,16 @@
         <osm-tag key="plant:source" renderable="false" value="solar"/>
         <osm-tag key="generator:source" renderable="false" value="solar"/>
 
-        <osm-tag key="tower:type" renderable="false" value="bell_tower"/> 
-        <osm-tag key="tower:type" renderable="false" value="communication"/> 
         <osm-tag key="tower:type" renderable="false" value="defensive"/>         
         <osm-tag key="tower:type" renderable="false" value="observation"/> 
-        <osm-tag key="tower:type" renderable="false" value="stupa"/>
         <osm-tag key="tower:type" renderable="false" value="watchtower"/> 
 
     </ways>
 
     <pois>
          <!-- Access -->
-        <osm-tag key="access" equivalent-values="private,agricultural,forestry,customers" renderable="false" value="no"/>
+        <osm-tag key="access" equivalent-values="private,agricultural,forestry" renderable="false" value="no"/>
+        <osm-tag key="access" renderable="false" value="customers"/>
         <osm-tag key="access" equivalent-values="permissive,permit,destination,designated" renderable="false" value="yes"/>
 
         <osm-tag key="drinking_water" renderable="false" value="yes"/>
@@ -1177,11 +1174,8 @@
 
         <osm-tag key="generator:source" renderable="false" value="wind"/> 
 
-        <osm-tag key="tower:type" renderable="false" value="bell_tower"/> 
-        <osm-tag key="tower:type" renderable="false" value="communication"/> 
         <osm-tag key="tower:type" renderable="false" value="defensive"/>         
         <osm-tag key="tower:type" renderable="false" value="observation"/> 
-        <osm-tag key="tower:type" renderable="false" value="stupa"/>
         <osm-tag key="tower:type" renderable="false" value="watchtower"/> 
 
         <osm-tag key="sport" value="golf" renderable="false"/>

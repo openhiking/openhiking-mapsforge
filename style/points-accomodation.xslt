@@ -82,7 +82,12 @@
                 </rule>       
             </rule>                       
             <rule  e="any" k="backcountry" v="~" >
-                <symbol id="camp_site" src="{$symbolPath}/camp_site.svg" symbol-width="20" priority="{$pr-camp-site}"/>
+                <rule  e="any" k="*" v="*" zoom-max="15">
+                    <symbol id="camp_site" src="{$symbolPath}/camp_site.svg" symbol-width="18" priority="{$pr-camp-site}"/>
+                </rule> 
+                <rule  e="any" k="*" v="*" zoom-min="16">
+                    <symbol id="camp_site" src="{$symbolPath}/camp_site.svg" symbol-width="20" priority="{$pr-camp-site}"/>
+                </rule>                         
                 <rule e="any" k="*" v="*" >
                     <caption k="name" symbol-id="camp_site" 
                     font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-camp-site}"/>

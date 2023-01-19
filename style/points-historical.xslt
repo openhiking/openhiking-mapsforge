@@ -76,7 +76,7 @@
   <rule  e="any" k="archaeological_site" v="tumulus" zoom-min="15">
     <symbol id="archeological" src="{$symbolPath}/tumulus.svg" symbol-width="22" priority="{$pr-tumulus}"/>  
   </rule>
-  <rule  e="any" k="archaeological_site" v="~" >
+  <rule  e="any" k="archaeological_site" v="~" zoom-min="15">
     <symbol id="archeological" src="{$symbolPath}/archeological.svg" symbol-width="18" priority="{$pr-archeological}"/>    
   </rule>
   <rule e="node" k="*" v="*" zoom-min="16">

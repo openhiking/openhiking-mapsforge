@@ -71,7 +71,12 @@
 
 
 <rule e="node" k="natural" v="cave_entrance" zoom-min="14">
-    <symbol id="cave" src="{$symbolPath}/cave_entrance.svg" symbol-width="16" priority="{$pr-cave}"/>
+    <rule  e="any" k="*" v="*" zoom-max="15">
+        <symbol id="cave" src="{$symbolPath}/cave_entrance.svg" symbol-width="16" priority="{$pr-cave}"/>
+    </rule> 
+    <rule  e="any" k="*" v="*" zoom-min="16">
+        <symbol id="cave" src="{$symbolPath}/cave_entrance.svg" symbol-width="18" priority="{$pr-cave}"/>
+    </rule>                         
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption fill="#7b0000" font-size="10" font-style="bold" k="name" 
             stroke="#FFFFFF" stroke-width="2.0" symbol-id="cave" priority="{$pr-cave}"/>
@@ -87,20 +92,30 @@
 </rule>
 
 <rule e="node" k="natural" v="spring" >
-    <rule e="node" k="spring:type" v="hot" zoom-min="14">
-        <symbol id="spring" src="{$symbolPath}/hot_spring.svg" priority="{$pr-spring}"/>    
-    </rule>
-    <rule e="node" k="spring:type" v="~" >
-        <rule e="node" k="drinking_water" v="yes" zoom-min="14">
-            <symbol id="spring" src="{$symbolPath}/spring_drinking.svg" priority="{$pr-spring-drinking}"/>    
-        </rule>        
-        <rule e="node" k="drinking_water" v="no" zoom-min="14">
-            <symbol id="spring" src="{$symbolPath}/spring_non_drinking.svg" priority="{$pr-spring}"/>    
-        </rule>        
-        <rule e="node" k="drinking_water" v="~" zoom-min="14">
+    <rule e="node" k="drinking_water" v="yes" zoom-min="14">
+        <rule  e="any" k="*" v="*" zoom-max="15">
+            <symbol id="spring" src="{$symbolPath}/spring_drinking.svg" symbol-width="16" priority="{$pr-spring-drinking}"/>    
+        </rule> 
+        <rule  e="any" k="*" v="*" zoom-min="16">
+            <symbol id="spring" src="{$symbolPath}/spring_drinking.svg" symbol-width="18" priority="{$pr-spring-drinking}"/>    
+        </rule>                         
+    </rule>        
+    <rule e="node" k="drinking_water" v="no" zoom-min="14">
+        <rule  e="any" k="*" v="*" zoom-max="15">
+            <symbol id="spring" src="{$symbolPath}/spring_non_drinking.svg" symbol-width="16" priority="{$pr-spring}"/>    
+        </rule> 
+        <rule  e="any" k="*" v="*" zoom-min="16">
+            <symbol id="spring" src="{$symbolPath}/spring_non_drinking.svg" symbol-width="18" priority="{$pr-spring}"/>    
+        </rule>                         
+    </rule>        
+    <rule e="node" k="drinking_water" v="~" zoom-min="14">
+        <rule  e="any" k="*" v="*" zoom-max="15">
             <symbol id="spring" src="{$symbolPath}/spring.svg" symbol-width="16" priority="{$pr-spring}"/>    
-        </rule>   
-    </rule>     
+        </rule> 
+        <rule  e="any" k="*" v="*" zoom-min="16">
+            <symbol id="spring" src="{$symbolPath}/spring.svg" symbol-width="18" priority="{$pr-spring}"/>    
+        </rule>                         
+    </rule>   
     <rule e="any" k="*" v="*" zoom-min="15">
         <caption fill="#0000f8" font-size="11" font-style="bold"  k="name" position="right"
             stroke="#FFFFFF" stroke-width="2.0" symbol-id="spring" priority="{$pr-spring}"/>

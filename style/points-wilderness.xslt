@@ -10,25 +10,40 @@
 -->
 <xsl:template name="points-wilderness">
 
-<rule e="any" k="access" v="~|yes" >
+
 
 <rule  e="any" k="amenity" v="shelter" >
   <rule  e="any" k="shelter_type" v="basic_hut" zoom-min="14">
-    <symbol id="basic_hut" src="{$symbolPath}/basic_hut.svg" symbol-width="26" priority="{$pr-basic-hut}"/>
+    <rule  e="any" k="*" v="*" zoom-max="15">
+      <symbol id="basic_hut" src="{$symbolPath}/basic_hut.svg" symbol-width="24" priority="{$pr-basic-hut}"/>
+    </rule> 
+    <rule  e="any" k="*" v="*" zoom-min="16">
+      <symbol id="basic_hut" src="{$symbolPath}/basic_hut.svg" symbol-width="27" priority="{$pr-basic-hut}"/>
+    </rule>                         
     <rule e="any" k="*" v="*" >
       <caption k="name" symbol-id="basic_hut" 
       font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-basic-hut}"/>
     </rule>
   </rule>
   <rule  e="any" k="shelter_type" v="picnic_shelter" zoom-min="14">
-    <symbol id="picnic_shelter" src="{$symbolPath}/picnic_shelter.svg" symbol-width="18" priority="{$pr-picnic-shelter}"/>
+    <rule  e="any" k="*" v="*" zoom-max="15">
+      <symbol id="picnic_shelter" src="{$symbolPath}/picnic_shelter.svg" symbol-width="18" priority="{$pr-picnic-shelter}"/>
+    </rule> 
+    <rule  e="any" k="*" v="*" zoom-min="16">
+      <symbol id="picnic_shelter" src="{$symbolPath}/picnic_shelter.svg" symbol-width="20" priority="{$pr-picnic-shelter}"/>
+    </rule>                         
     <rule e="any" k="*" v="*" >
       <caption k="name" symbol-id="picnic_shelter" 
       font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-picnic-shelter}"/>
     </rule>
   </rule>
   <rule  e="any" k="shelter_type" v="~" zoom-min="14">
-    <symbol id="shelter" src="{$symbolPath}/shelter.svg" symbol-width="22" priority="{$pr-shelter}"/>
+    <rule  e="any" k="*" v="*" zoom-max="15">
+      <symbol id="shelter" src="{$symbolPath}/shelter.svg" symbol-width="22" priority="{$pr-shelter}"/>
+    </rule> 
+    <rule  e="any" k="*" v="*" zoom-min="16">
+      <symbol id="shelter" src="{$symbolPath}/shelter.svg" symbol-width="24" priority="{$pr-shelter}"/>
+    </rule>                         
     <rule e="any" k="*" v="*" >
       <caption k="name" symbol-id="shelter" 
       font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-shelter}"/>
@@ -91,7 +106,6 @@
 </rule>
 
 
-</rule>
 
 <rule  e="node" k="information" v="guidepost" zoom-min="16">
   <symbol id="guidepost" src="{$symbolPath}/guidepost.svg" symbol-width="28" priority="{$pr-guidepost}"/>
