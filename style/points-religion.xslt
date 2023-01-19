@@ -55,17 +55,28 @@
     font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-bell-tower}"/>
   </rule>
 </rule>
+<!-- 
+<rule  e="any" k="tower:type" v="bell_tower" zoom-min="15">
+  <symbol id="bell_tower" src="{$symbolPath}/bell_tower.svg" symbol-width="24" priority="{$pr-bell-tower}"/>
+  <rule e="any" k="*" v="*" zoom-min="16">
+    <caption k="name" symbol-id="bell_tower" 
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-bell-tower}"/>
+  </rule>
+</rule>
+-->
 
-<rule  e="any" k="man_made" v="tower" zoom-min="15">
-    <rule  e="any" k="tower:type" v="bell_tower">
-      <symbol id="bell_tower" src="{$symbolPath}/bell_tower.svg" symbol-width="24" priority="{$pr-bell-tower}"/>
-      <rule e="any" k="*" v="*" zoom-min="16">
-          <caption k="name" symbol-id="bell_tower" 
-          font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-bell-tower}"/>
-      </rule>         
-    </rule>
-
-</rule>  
+<rule  e="any" k="man_made" v="stupa" >
+  <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="15">   
+    <symbol id="stupa" src="{$symbolPath}/stupa.svg" symbol-width="26" priority="{$pr-stupa}"/>           
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="16" >        
+    <symbol id="stupa" src="{$symbolPath}/stupa.svg" symbol-width="30" priority="{$pr-stupa}"/>                   
+  </rule>
+  <rule e="any" k="*" v="*" zoom-min="15">
+    <caption k="name" symbol-id="stupa" 
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-stupa}"/>
+  </rule>
+</rule>
 
 
 

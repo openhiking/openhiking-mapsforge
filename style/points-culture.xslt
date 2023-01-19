@@ -55,6 +55,14 @@
   </rule>
 </rule>
 
+<rule  e="any" k="man_made" v="obelisk" zoom-min="16">
+  <symbol id="obelisk" src="{$symbolPath}/obelisk.svg" symbol-width="24" priority="{$pr-obelisk}"/>
+  <rule e="any" k="*" v="*" zoom-min="16">
+    <caption k="name" symbol-id="obelisk" 
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-obelisk}"/>
+  </rule>
+</rule>
+
 
 
 

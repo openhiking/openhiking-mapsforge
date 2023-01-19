@@ -762,9 +762,9 @@
     <ways>
         <osm-tag key="amenity" value="grave_yard" zoom-appear="15"/>    
         <osm-tag key="amenity" value="monastery" zoom-appear="15"/> 
-        <osm-tag key="amenity" value="place_of_worship" zoom-appear="15"/>
+        <osm-tag key="amenity" value="place_of_worship" zoom-appear="14"/>
         <osm-tag key="man_made" value="campanile" zoom-appear="15"/> 
-        <osm-tag key="man_made" value="stupa" zoom-appear="15"/> 
+        <osm-tag key="man_made" value="stupa" zoom-appear="14"/> 
 
         <osm-tag key="religion" renderable="false" value="christian"/>
         <osm-tag key="religion" renderable="false" value="jewish"/>

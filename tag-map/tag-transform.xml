@@ -334,7 +334,7 @@
                 <tag k="historic" match_id="historic_manor" v="manor"/>                
             </match>
             <match>
-                <tag k="ruins" v="yes"/>
+                <tag k="ruins" v="...*"/>
             </match>
         </match>
 		<output>
@@ -497,6 +497,19 @@
 			<tag k="man_made" v="stupa"/>
 		</output>
 	</translation>
+	<translation>
+		<name>Obelisk </name>
+		<description>remove double-tagging</description>
+		<match type="any" mode="and">
+			<tag k="man_made" v="obelisk"/>
+            <tag k="historic" v="memorial"/>
+		</match>
+		<output>
+			<copy-unmatched/>
+			<tag k="man_made" v="obelisk"/>
+		</output>
+	</translation>
+
 	<translation>
 		<name>Mast </name>
 		<description>alternative tagging</description>

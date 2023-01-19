@@ -15,7 +15,6 @@
 <xsl:variable name="pr-tower-lookout">31</xsl:variable>
 <xsl:variable name="pr-alpine-hut">30</xsl:variable>
 <xsl:variable name="pr-wilderness-hut">30</xsl:variable>
-<xsl:variable name="pr-basic-hut">30</xsl:variable>
 <xsl:variable name="pr-castle">30</xsl:variable>
 <xsl:variable name="pr-historic-ruins">30</xsl:variable>
 <xsl:variable name="pr-city">30</xsl:variable>
@@ -27,10 +26,14 @@
 <xsl:variable name="pr-cave">20</xsl:variable>
 <xsl:variable name="pr-spring-drinking">20</xsl:variable>
 <xsl:variable name="pr-waterfall">20</xsl:variable>
+<xsl:variable name="pr-basic-hut">20</xsl:variable>
 <xsl:variable name="pr-shelter">20</xsl:variable>
 <xsl:variable name="pr-viewpoint">20</xsl:variable>
 <xsl:variable name="pr-bus-station">20</xsl:variable>
 <xsl:variable name="pr-village">20</xsl:variable>
+
+<xsl:variable name="pr-church">20</xsl:variable>
+<xsl:variable name="pr-stupa">20</xsl:variable>
 
 <!-- Priority 10 -->
 <xsl:variable name="pr-peak">10</xsl:variable>
@@ -51,15 +54,18 @@
 <xsl:variable name="pr-pub">10</xsl:variable>
 <xsl:variable name="pr-zoo">10</xsl:variable>
 <xsl:variable name="pr-train-station">10</xsl:variable>
+<xsl:variable name="pr-bus-stop">10</xsl:variable>
 
 <xsl:variable name="pr-ruins">10</xsl:variable>
-<xsl:variable name="pr-church">10</xsl:variable>
+<xsl:variable name="pr-bell-tower">10</xsl:variable>
 <xsl:variable name="pr-windmill">10</xsl:variable>
+<xsl:variable name="pr-museum">10</xsl:variable>
 
 <xsl:variable name="pr-suburb">10</xsl:variable>
 <xsl:variable name="pr-hamlet">10</xsl:variable>
 <xsl:variable name="pr-island">10</xsl:variable>
 <xsl:variable name="pr-locality">10</xsl:variable>
+
 
 <!-- Priority 0 -->
 <xsl:variable name="pr-peak-ele">0</xsl:variable>
@@ -79,7 +85,6 @@
 <xsl:variable name="pr-shopping-center">0</xsl:variable>
 <xsl:variable name="pr-archeological">0</xsl:variable>
 <xsl:variable name="pr-theatre">0</xsl:variable>
-<xsl:variable name="pr-bus-stop">0</xsl:variable>
 <xsl:variable name="pr-cross">0</xsl:variable>
 <xsl:variable name="pr-memorial">0</xsl:variable>
 <xsl:variable name="pr-tower-observation">0</xsl:variable>
@@ -87,15 +92,12 @@
 <xsl:variable name="pr-post-office">0</xsl:variable>
 <xsl:variable name="pr-doctors">0</xsl:variable>
 <xsl:variable name="pr-pharmacy">0</xsl:variable>
-<xsl:variable name="pr-bell-tower">0</xsl:variable>
-<xsl:variable name="pr-museum">0</xsl:variable>
 <xsl:variable name="pr-gallery">0</xsl:variable>
 <xsl:variable name="pr-fuel">0</xsl:variable>
 <xsl:variable name="pr-spa">0</xsl:variable>
 <xsl:variable name="pr-recycling">0</xsl:variable>
 <xsl:variable name="pr-tickets">0</xsl:variable>
 <xsl:variable name="pr-attraction">0</xsl:variable>
-<xsl:variable name="pr-drinking-water">0</xsl:variable>
 <xsl:variable name="pr-convenience">0</xsl:variable>
 <xsl:variable name="pr-ice-cream">0</xsl:variable>
 <xsl:variable name="pr-bunker">0</xsl:variable>
@@ -113,7 +115,8 @@
 <xsl:variable name="pr-shop">0</xsl:variable>
 <xsl:variable name="pr-marketplace">0</xsl:variable>
 <xsl:variable name="pr-library">0</xsl:variable>
-
+<xsl:variable name="pr-obelisk">0</xsl:variable>
+<xsl:variable name="pr-drinking-water">0</xsl:variable>
 
 
 <!-- Priority -10 -->

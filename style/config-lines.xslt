@@ -116,6 +116,8 @@
 <xsl:variable name="lw-trail-highlight-low">1.5</xsl:variable>
 <xsl:variable name="lw-trail-highlight">0.6</xsl:variable>
 <xsl:variable name="lw-trail-highlight-deep">0.5</xsl:variable>
+<xsl:variable name="lw-trail-highlight-l2">0.5</xsl:variable>
+<xsl:variable name="lw-trail-highlight-l3">0.3</xsl:variable>
 
 <xsl:variable name="lw-restricted">1.5</xsl:variable>
 

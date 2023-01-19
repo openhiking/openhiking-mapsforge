@@ -21,7 +21,12 @@
       </rule>
     </rule>
     <rule  e="any" k="castle_type" v="~" zoom-min="14">
-      <symbol id="castle" src="{$symbolPath}/castle.svg" symbol-width="28" priority="{$pr-castle}"/>      
+      <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="15">   
+        <symbol id="castle" src="{$symbolPath}/castle.svg" symbol-width="28" priority="{$pr-castle}"/>           
+      </rule>
+      <rule  e="any" k="*" v="*" zoom-min="16" >        
+        <symbol id="castle" src="{$symbolPath}/castle.svg" symbol-width="30" priority="{$pr-castle}"/>                   
+      </rule>
     </rule>
     <rule e="node" k="*" v="*" zoom-min="15">
       <caption k="name" symbol-id="castle" 
