@@ -553,17 +553,6 @@
 		</output>
 	</translation>
 	<translation>
-		<name>Remove entrances </name>
-		<description>if tagged as gates</description>
-		<match type="any" mode="and">
-			<tag k="barrier" v="gate"/>
-            <tag k="entrance" v="home"/>
-		</match>
-		<output>
-			<copy-unmatched/>
-		</output>
-	</translation>	
-	<translation>
 		<name>Backcountry camp site </name>
 		<description>alternative tagging</description>
 		<match type="any" mode="and">
@@ -576,7 +565,127 @@
 		</output>
 	</translation>	
 	<translation>
-		<name>Private facilities</name>
+		<name>Wine shop </name>
+		<description>unification</description>
+		<match type="any" mode="and">
+			<tag k="shop" v="alcohol"/>
+            <tag k="drink:wine" v="retail"/>
+		</match>
+		<output>
+			<copy-unmatched/>
+			<tag k="craft" v="winery"/>
+		</output>
+	</translation>	
+	<translation>
+		<name>Grass pitch surface</name>
+		<description>Add default surface</description>
+        <match type="way" mode="and">
+            <match type="way" mode="or">
+                <tag k="leisure" v="pitch"/>
+			</match>
+            <match type="way" mode="or">
+                <tag k="sport" v="soccer"/>
+                <tag k="sport" v="baseball"/>                
+                <tag k="sport" v="equestrian"/>	
+                <tag k="sport" v="croquet"/>
+                <tag k="sport" v="shooting"/>                
+                <tag k="sport" v="model_aerodrome"/>				
+                <tag k="sport" v="rugby_league"/>
+            </match>
+            <notag k="surface" v=".*"/>
+        </match>            
+		<output>
+			<copy-all/>
+			<tag k="surface" v="grass"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Pitch asphalt surface</name>
+		<description>Add default surface</description>
+        <match type="way" mode="and">
+            <match type="way" mode="or">
+                <tag k="leisure" v="pitch"/>
+			</match>
+            <match type="way" mode="or">
+                <tag k="sport" v="basketball"/>
+                <tag k="sport" v="skateboard"/>                
+                <tag k="sport" v="karting"/>	
+                <tag k="sport" v="motor"/>
+            </match>
+            <notag k="surface" v=".*"/>
+        </match>            
+		<output>
+			<copy-all/>
+			<tag k="surface" v="asphalt"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Pitch clay surface</name>
+		<description>Add default surface</description>
+        <match type="way" mode="and">
+            <match type="way" mode="or">
+                <tag k="leisure" v="pitch"/>
+			</match>
+            <match type="way" mode="or">
+                <tag k="sport" v="tennis"/>
+            </match>
+            <notag k="surface" v=".*"/>
+        </match>            
+		<output>
+			<copy-all/>
+			<tag k="surface" v="clay"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Pitch sand surface</name>
+		<description>Add default surface</description>
+        <match type="way" mode="and">
+            <match type="way" mode="or">
+                <tag k="leisure" v="pitch"/>
+			</match>
+            <match type="way" mode="or">
+                <tag k="sport" v="beach_handball"/>
+                <tag k="sport" v="beachvolleyball"/>                
+                <tag k="sport" v="ultimate"/>	
+                <tag k="sport" v="volleyball"/>
+            </match>
+            <notag k="surface" v=".*"/>
+        </match>            
+		<output>
+			<copy-all/>
+			<tag k="surface" v="sand"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Indoor swimming pool </name>
+		<description>Remove indoor swimming pool</description>
+		<match type="any" mode="and">
+            <match>
+                <tag k="leisure" v="swimming_pool"/>
+            </match>
+            <match type="any" mode="or">
+				<tag k="swimming_pool" v="personal"/> 
+				<tag k="location" v="indoor"/>
+            </match>   
+        </match>                         
+		<output>
+			<copy-unmatched/>
+		</output>
+	</translation>
+
+	<translation>
+		<name>Remove entrances </name>
+		<description>if tagged as gates</description>
+		<match type="any" mode="and">
+			<tag k="barrier" v="gate"/>
+            <tag k="entrance" v="home"/>
+		</match>
+		<output>
+			<copy-unmatched/>
+		</output>
+	</translation>	
+	<translation>
+		<name>Private and customer-only facilities</name>
 		<description>Remove private facilities</description>
 		<match type="any" mode="and">
             <match type="any" mode="or">
@@ -590,20 +699,17 @@
 				<tag k="amenity" v="drinking_water"/>
                 <tag k="amenity" v="fuel"/>            
                 <tag k="amenity" v="parking"/> 
-				<tag k="amenity" v="public_bath"/> 
 				<tag k="amenity" v="recycling"/>                     
                 <tag k="amenity" v="shelter"/>
-				<tag k="amenity" v="spa"/>
 				<tag k="amenity" v="toilets"/>
 
-				<tag k="leisure" v="beach_resort"/>
                 <tag k="leisure" v="firepit"/>
 				<tag k="leisure" v="golf_course"/>
 				<tag k="leisure" v="horse_riding"/>
 				<tag k="leisure" v="ice_rink"/>
                 <tag k="leisure" v="picnic_table"/>
+				<tag k="leisure" v="pitch"/>
                 <tag k="leisure" v="playground"/>
-				<tag k="leisure" v="sports_centre"/>
 
                 <tag k="tourism" v="alpine_hut"/>
                 <tag k="tourism" v="apartment"/>
@@ -612,6 +718,27 @@
                 <tag k="tourism" v="picnic_site"/>                                                
                 <tag k="tourism" v="wilderness_hut"/>
 
+            </match>   
+        </match>                         
+		<output>
+			<copy-unmatched/>
+		</output>
+	</translation>
+	<translation>
+		<name>Private facilities</name>
+		<description>Remove private facilities</description>
+		<match type="any" mode="and">
+            <match type="any" mode="or">
+                <tag k="access" v="no"/>
+                <tag k="access" v="private"/>
+				<tag k="ownership" v="private"/>
+            </match>
+            <match type="any" mode="or">
+				<tag k="amenity" v="public_bath"/> 
+				<tag k="amenity" v="spa"/>
+				<tag k="leisure" v="beach_resort"/>
+				<tag k="leisure" v="sports_centre"/>
+				<tag k="leisure" v="swimming_pool"/>
             </match>   
         </match>                         
 		<output>

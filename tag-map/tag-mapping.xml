@@ -124,9 +124,16 @@
         <osm-tag key="trail_color" value="purple" zoom-appear="12"/>
 
         <!-- Surface -->
-        <osm-tag key="surface" equivalent-values="asphalt,chipseal,concrete,paving_stones,metal,wood,sett,cobblestone" renderable="false" value="paved"/>
+        <osm-tag key="surface" equivalent-values="chipseal,concrete,paving_stones,metal,wood,sett,cobblestone" renderable="false" value="paved"/>
         <osm-tag key="surface" equivalent-values="fine_gravel,pebblestone,rock,grass_paver" renderable="false" value="compacted"/>
-        <osm-tag key="surface" equivalent-values="gravel,ground,earth,dirt,grass,mud,sand" renderable="false" value="unpaved"/>        
+        <osm-tag key="surface" equivalent-values="gravel,ground,earth,dirt,mud" renderable="false" value="unpaved"/>        
+
+        <osm-tag key="surface" renderable="false" value="sand"/>
+        <osm-tag key="surface" renderable="false" value="snow"/>
+        <osm-tag key="surface" renderable="false" value="asphalt"/>
+        <osm-tag key="surface" equivalent-values="artificial_turf" renderable="false" value="grass"/> 
+        <osm-tag key="surface" equivalent-values="tartan,carpet" renderable="false" value="clay"/> 
+
 
         <!-- Tracktype -->
         <osm-tag key="tracktype" renderable="false" value="grade1"/>
@@ -793,63 +800,63 @@
                P O I   S H O P S
     ************************************************** -->
     <ways>
-        <osm-tag key="shop" value="alcohol" label-position="true" zoom-appear="16"/> 
-        <osm-tag key="shop" value="bakery" label-position="true" zoom-appear="16"/>
-        <osm-tag key="shop" value="bicycle" label-position="true" zoom-appear="16"/>
-        <osm-tag key="shop" value="boutique" label-position="true"  zoom-appear="16"/>                        
-        <osm-tag key="shop" value="butcher" label-position="true" zoom-appear="16"/> 
-        <osm-tag key="shop" value="clothes" label-position="true" zoom-appear="16"/>
-        <osm-tag key="shop" value="confectionery" label-position="true" zoom-appear="16"/> 
-        <osm-tag key="shop" value="convenience" label-position="true" zoom-appear="16"/>        
-        <osm-tag key="shop" value="department_store" label-position="true" zoom-appear="16"/>        
-        <osm-tag key="shop" value="doityourself" label-position="true" zoom-appear="16"/> 
-        <osm-tag key="shop" value="electrical" label-position="true" zoom-appear="16"/> 
-        <osm-tag key="shop" value="florist" label-position="true" zoom-appear="16"/> 
-        <osm-tag key="shop" value="furniture" label-position="true" zoom-appear="16"/> 
-        <osm-tag key="shop" value="garden_centre" label-position="true" zoom-appear="16"/> 
-        <osm-tag key="shop" value="general" label-position="true" zoom-appear="16"/>
-        <osm-tag key="shop" value="greengrocer" label-position="true" zoom-appear="16"/>
-        <osm-tag key="shop" value="hairdresser" label-position="true" zoom-appear="16"/>
-        <osm-tag key="shop" value="houseware" label-position="true" zoom-appear="16"/>         
-        <osm-tag key="shop" value="interior_decoration" label-position="true" zoom-appear="16"/> 
-        <osm-tag key="shop" value="kiosk" label-position="true" zoom-appear="16"/> 
-        <osm-tag key="shop" value="kitchen" label-position="true" zoom-appear="16"/>         
-        <osm-tag key="shop" value="leather" label-position="true" zoom-appear="16"/> 
-        <osm-tag key="shop" value="mall" label-position="true" zoom-appear="10"/>
-        <osm-tag key="shop" value="pastry" label-position="true" zoom-appear="16"/> 
-        <osm-tag key="shop" value="supermarket" label-position="true" zoom-appear="10"/>
-        <osm-tag key="shop" value="shoes" label-position="true" zoom-appear="16"/> 
-        <osm-tag key="shop" value="ticket" zlabel-position="true" oom-appear="16"/> 
+        <osm-tag key="shop" value="alcohol" label-position="true" zoom-appear="15"/> 
+        <osm-tag key="shop" value="bakery" label-position="true" zoom-appear="14"/>
+        <osm-tag key="shop" value="bicycle" label-position="true" zoom-appear="15"/>
+        <osm-tag key="shop" value="boutique" label-position="true"  zoom-appear="15"/>                        
+        <osm-tag key="shop" value="butcher" label-position="true" zoom-appear="15"/> 
+        <osm-tag key="shop" value="clothes" label-position="true" zoom-appear="15"/>
+        <osm-tag key="shop" value="confectionery" label-position="true" zoom-appear="15"/> 
+        <osm-tag key="shop" value="convenience" label-position="true" zoom-appear="15"/>        
+        <osm-tag key="shop" value="department_store" label-position="true" zoom-appear="14"/>        
+        <osm-tag key="shop" value="doityourself" label-position="true" zoom-appear="15"/> 
+        <osm-tag key="shop" value="electrical" label-position="true" zoom-appear="15"/> 
+        <osm-tag key="shop" value="florist" label-position="true" zoom-appear="15"/> 
+        <osm-tag key="shop" value="furniture" label-position="true" zoom-appear="15"/> 
+        <osm-tag key="shop" value="garden_centre" label-position="true" zoom-appear="15"/> 
+        <osm-tag key="shop" value="general" label-position="true" zoom-appear="14"/>
+        <osm-tag key="shop" value="greengrocer" label-position="true" zoom-appear="15"/>
+        <osm-tag key="shop" value="houseware" label-position="true" zoom-appear="15"/>         
+        <osm-tag key="shop" value="interior_decoration" label-position="true" zoom-appear="15"/> 
+        <osm-tag key="shop" value="kiosk" label-position="true" zoom-appear="15"/> 
+        <osm-tag key="shop" value="kitchen" label-position="true" zoom-appear="15"/>         
+        <osm-tag key="shop" value="leather" label-position="true" zoom-appear="15"/> 
+        <osm-tag key="shop" value="mall" label-position="true" zoom-appear="14"/>
+        <osm-tag key="shop" value="pastry" label-position="true" zoom-appear="15"/> 
+        <osm-tag key="shop" value="supermarket" label-position="true" zoom-appear="14"/>
+        <osm-tag key="shop" value="shoes" label-position="true" zoom-appear="15"/> 
+        <osm-tag key="shop" value="ticket" zlabel-position="true" oom-appear="15"/> 
     </ways>
 
     <pois>
-        <osm-tag key="shop" value="alcohol" zoom-appear="16"/> 
-        <osm-tag key="shop" value="bakery" zoom-appear="16"/>
-        <osm-tag key="shop" value="bicycle" zoom-appear="16"/>
-        <osm-tag key="shop" value="boutique" zoom-appear="16"/>                        
-        <osm-tag key="shop" value="butcher" zoom-appear="16"/> 
-        <osm-tag key="shop" value="clothes" zoom-appear="16"/>
-        <osm-tag key="shop" value="confectionery" zoom-appear="16"/> 
-        <osm-tag key="shop" value="convenience" zoom-appear="16"/>        
-        <osm-tag key="shop" value="department_store" zoom-appear="16"/>        
-        <osm-tag key="shop" value="doityourself" zoom-appear="16"/> 
-        <osm-tag key="shop" value="electrical" zoom-appear="16"/> 
-        <osm-tag key="shop" value="florist" zoom-appear="16"/> 
-        <osm-tag key="shop" value="furniture" zoom-appear="16"/> 
-        <osm-tag key="shop" value="garden_centre" zoom-appear="16"/> 
-        <osm-tag key="shop" value="general" zoom-appear="16"/>
-        <osm-tag key="shop" value="greengrocer" zoom-appear="16"/>
-        <osm-tag key="shop" value="hairdresser" zoom-appear="16"/>
-        <osm-tag key="shop" value="houseware" zoom-appear="16"/>         
-        <osm-tag key="shop" value="interior_decoration" zoom-appear="16"/> 
-        <osm-tag key="shop" value="kiosk" zoom-appear="16"/> 
-        <osm-tag key="shop" value="kitchen" zoom-appear="16"/>         
-        <osm-tag key="shop" value="leather" zoom-appear="16"/> 
-        <osm-tag key="shop" value="mall" zoom-appear="10"/>
-        <osm-tag key="shop" value="pastry" zoom-appear="16"/> 
-        <osm-tag key="shop" value="supermarket" zoom-appear="10"/>
-        <osm-tag key="shop" value="shoes" zoom-appear="16"/> 
-        <osm-tag key="shop" value="ticket" zoom-appear="16"/> 
+        <osm-tag key="shop" value="alcohol" zoom-appear="15"/> 
+        <osm-tag key="shop" value="bakery" zoom-appear="14"/>
+        <osm-tag key="shop" value="bicycle" zoom-appear="15"/>
+        <osm-tag key="shop" value="boutique" zoom-appear="15"/>                        
+        <osm-tag key="shop" value="butcher" zoom-appear="15"/> 
+        <osm-tag key="shop" value="clothes" zoom-appear="15"/>
+        <osm-tag key="shop" value="confectionery" zoom-appear="15"/> 
+        <osm-tag key="shop" value="convenience" zoom-appear="14"/>        
+        <osm-tag key="shop" value="department_store" zoom-appear="14"/>
+        <osm-tag key="shop" value="doityourself" zoom-appear="15"/> 
+        <osm-tag key="shop" value="electrical" zoom-appear="15"/> 
+        <osm-tag key="shop" value="florist" zoom-appear="15"/> 
+        <osm-tag key="shop" value="furniture" zoom-appear="15"/> 
+        <osm-tag key="shop" value="garden_centre" zoom-appear="15"/> 
+        <osm-tag key="shop" value="general" zoom-appear="14"/>
+        <osm-tag key="shop" value="greengrocer" zoom-appear="15"/>
+        <osm-tag key="shop" value="houseware" zoom-appear="15"/>         
+        <osm-tag key="shop" value="interior_decoration" zoom-appear="15"/> 
+        <osm-tag key="shop" value="kiosk" zoom-appear="15"/> 
+        <osm-tag key="shop" value="kitchen" zoom-appear="15"/>         
+        <osm-tag key="shop" value="leather" zoom-appear="15"/> 
+        <osm-tag key="shop" value="mall" zoom-appear="14"/>
+        <osm-tag key="shop" value="pastry" zoom-appear="15"/> 
+        <osm-tag key="shop" value="supermarket" zoom-appear="14"/>
+        <osm-tag key="shop" value="shoes" zoom-appear="15"/> 
+        <osm-tag key="shop" value="ticket" zoom-appear="15"/> 
+
+        <osm-tag key="craft" value="winery" zoom-appear="15"/>
     </pois>
 
 

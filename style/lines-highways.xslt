@@ -3,8 +3,8 @@
 
 <xsl:template name="lines-highways">
 
-<rule e="way" k="highway" v="*">
-  <rule e="way" k="area" v="~|no|false">
+<rule e="way" k="highway" v="*" >
+  <rule e="way" k="area" v="~">
         <rule e="way" k="highway" v="footway|platform" zoom-min="{$zm-footway}">
             <line stroke="{$lc-footway}" stroke-width="{$lw-footway}" stroke-linecap="butt"/>          
         </rule>

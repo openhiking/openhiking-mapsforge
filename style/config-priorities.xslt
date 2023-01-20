@@ -117,6 +117,10 @@
 <xsl:variable name="pr-library">0</xsl:variable>
 <xsl:variable name="pr-obelisk">0</xsl:variable>
 <xsl:variable name="pr-drinking-water">0</xsl:variable>
+<xsl:variable name="pr-winery">0</xsl:variable>
+<xsl:variable name="pr-dentist">0</xsl:variable>
+<xsl:variable name="pr-swimming-pool">0</xsl:variable>
+<xsl:variable name="pr-courthouse">0</xsl:variable>
 
 
 <!-- Priority -10 -->

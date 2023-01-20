@@ -30,6 +30,15 @@
     font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-spa}"/>
   </rule>
 </rule>
+<!-- 
+<rule  e="node" k="leisure" v="swimming_pool" zoom-min="14">
+  <symbol id="swimming_pool" src="{$symbolPath}/swimming_pool.svg" symbol-width="24" priority="{$pr-swimming-pool}"/>
+  <rule e="any" k="*" v="*" zoom-min="16">
+    <caption k="name" symbol-id="swimming_pool" 
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-swimming-pool}"/>
+  </rule>
+</rule>
+-->
 
 <rule  e="any" k="tourism" v="attraction" zoom-min="15">
   <rule  e="any" k="amenity" v="~">

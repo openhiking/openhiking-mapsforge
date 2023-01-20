@@ -86,10 +86,10 @@
 
 <rule  e="any" k="tower" v="outlook" zoom-min="14">
   <rule  e="any" k="*" v="*" zoom-max="15">
-    <symbol id="tower_outlook" src="{$symbolPath}/tower_lookout.svg" symbol-width="24" priority="{$pr-tower-lookout}" display="always"/>      
+    <symbol id="tower_outlook" src="{$symbolPath}/tower_lookout.svg" symbol-width="19" priority="{$pr-tower-lookout}" display="always"/>      
   </rule>
   <rule  e="any" k="*" v="*" zoom-min="16">
-    <symbol id="tower_outlook" src="{$symbolPath}/tower_lookout.svg" symbol-width="30" priority="{$pr-tower-lookout}" display="always"/>      
+    <symbol id="tower_outlook" src="{$symbolPath}/tower_lookout.svg" symbol-width="23" priority="{$pr-tower-lookout}" display="always"/>      
   </rule>
   <rule e="any" k="*" v="*" zoom-min="14">
       <caption k="name" symbol-id="tower_outlook" 

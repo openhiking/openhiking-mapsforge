@@ -19,6 +19,19 @@
         </rule>       
 </rule>
 
+<rule  e="any" k="amenity" v="courthouse" zoom-min="15">
+    <rule  e="any" k="*" v="*" zoom-max="16">
+        <symbol id="courthouse" src="{$symbolPath}/courthouse.svg" symbol-width="20" priority="{$pr-courthouse}"/>
+        </rule>
+    <rule  e="any" k="*" v="*" zoom-max="17"> 
+        <symbol id="courthouse" src="{$symbolPath}/courthouse.svg" symbol-width="22" priority="{$pr-courthouse}"/>       
+    </rule>
+    <rule e="any" k="*" v="*" >
+        <caption k="name" symbol-id="courthouse" 
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-courthouse}"/>
+    </rule>       
+</rule>
+
 
 <rule  e="any" k="amenity" v="post_office" zoom-min="14">
         <symbol id="post_office" src="{$symbolPath}/post_office.svg" symbol-width="20" priority="{$pr-post-office}"/>

@@ -10,15 +10,17 @@
 -->
 <xsl:template name="lines-access-restrictions">
 <rule cat="restricted_access" e="way" k="highway" v="*" >
-    <rule e="way" k="foot" v="no" >
-        <xsl:call-template name="access-restriction-rules">
-        <xsl:with-param name="symbolSource" select="concat($symbolPath,'/access_private.svg')" />        
-        </xsl:call-template>
-    </rule>
-    <rule e="way" k="foot" v="customers" >
-        <xsl:call-template name="access-restriction-rules">
-        <xsl:with-param name="symbolSource" select="concat($symbolPath,'/access_customers.svg')" />        
-        </xsl:call-template>
+    <rule e="way" k="area" v="~">
+        <rule e="way" k="foot" v="no" >
+            <xsl:call-template name="access-restriction-rules">
+            <xsl:with-param name="symbolSource" select="concat($symbolPath,'/access_private.svg')" />        
+            </xsl:call-template>
+        </rule>
+        <rule e="way" k="foot" v="customers" >
+            <xsl:call-template name="access-restriction-rules">
+            <xsl:with-param name="symbolSource" select="concat($symbolPath,'/access_customers.svg')" />        
+            </xsl:call-template>
+        </rule>
     </rule>
 </rule>
 

@@ -31,6 +31,15 @@
     </rule>       
 </rule>
 
+<rule  e="any" k="amenity" v="dentist" zoom-min="14">
+        <symbol id="dentist" src="{$symbolPath}/dentist.svg" symbol-width="16" priority="{$pr-dentist}"/>
+        <rule e="any" k="*" v="*" >
+            <caption k="name" symbol-id="dentist" 
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-dentist}"/>
+        </rule>       
+</rule>
+
+
 <rule  e="any" k="amenity" v="pharmacy" zoom-min="15">
         <symbol id="pharmacy" src="{$symbolPath}/pharmacy.svg" symbol-width="18" priority="{$pr-pharmacy}"/>
         <rule e="any" k="*" v="*" >

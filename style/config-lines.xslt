@@ -99,7 +99,7 @@
 <xsl:variable name="lw-raceway">0.6</xsl:variable>
 <xsl:variable name="lw-track">0.4</xsl:variable>
 <xsl:variable name="lw-track2">0.3</xsl:variable>
-<xsl:variable name="lw-pedestrian">0.5</xsl:variable>
+<xsl:variable name="lw-pedestrian">0.4</xsl:variable>
 <xsl:variable name="lw-cycleway">0.4</xsl:variable>
 <xsl:variable name="lw-footway">0.2</xsl:variable>
 <xsl:variable name="lw-bridleway">0.4</xsl:variable>

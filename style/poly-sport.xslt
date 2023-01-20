@@ -17,81 +17,43 @@
         <caption k="name" font-style="italic" font-family="serif" font-size="14" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
     </rule>
   </rule>
+</rule> 
 
 
-  <rule e="way" k="leisure" v="sports_centre" closed="yes">
-    <area fill="#BDFFD5" scale="none"/>
-      <rule e="way" k="surface" v="grass|artificial_turf" closed="yes">
-        <area fill="{$pitch-color-grass}" stroke="#000000" stroke-width="0.2" scale="none"/>
-      </rule>
-      <rule e="way" k="surface" v="clay|tartan|carpet" closed="yes">
-        <area fill="{$pitch-color-clay}" stroke="#000000" stroke-width="0.2" scale="none"/>
-      </rule>
-      <rule e="way" k="surface" v="sand" closed="yes">
-        <area fill="{$pitch-color-sand}" stroke="#000000" stroke-width="0.2" scale="none"/>
-      </rule>
-      <rule e="way" k="surface" v="snow" closed="yes">
-        <area fill="{$pitch-color-snow}" stroke="#000000" stroke-width="0.2" scale="none"/>
-      </rule>
-      <rule e="way" k="surface" v="asphalt" closed="yes">
-        <area fill="{$pitch-color-asphalt}" stroke="#000000" stroke-width="0.2" scale="none"/>
-      </rule>
+<rule e="way" k="leisure" v="sports_centre" closed="yes">
+  <area fill="#BDFFD5" scale="none"/>
+</rule>
+
+<rule e="way" k="leisure" v="pitch" closed="yes">
+  <area fill="{$pitch-color-grass}" stroke="#000000" stroke-width="0.2" scale="none"/>
+  <rule e="way" k="surface" v="grass|artificial_turf" >
+    <area fill="{$pitch-color-grass}" stroke="#000000" stroke-width="0.2" scale="none"/>
   </rule>
-
-
-  <rule e="way" k="leisure" v="pitch" closed="yes">
-    <rule e="way" k="access" v="~|yes" >
-      <rule e="way" k="sport" v="soccer|baseball|equestrian|croquet|shooting|model_aerodrome|rugby_league" >
-        <area fill="{$pitch-color-grass}" stroke="#000000" stroke-width="0.2" scale="none"/>
-      </rule>
-      <rule e="way" k="sport" v="tennis" >
-        <area fill="{$pitch-color-clay}" stroke="#000000" stroke-width="0.2" scale="none"/>
-      </rule>
-      <rule e="way" k="sport" v="basketball|skateboard|karting|motor" >
-        <area fill="{$pitch-color-asphalt}" stroke="#000000" stroke-width="0.2" scale="none"/>
-      </rule>
-      <rule e="way" k="sport" v="beach_handball|beachvolleyball|ultimate|volleyball">
-        <area fill="{$pitch-color-sand}" stroke="#000000" stroke-width="0.2" scale="none"/>
-      </rule>
-      <rule e="way" k="sport" v="skiing" >
-        <area fill="{$pitch-color-snow}" stroke="#000000" stroke-width="0.2" scale="none"/>
-      </rule>
-      
-      <rule e="way" k="sport" v="~" closed="yes">
-        <rule e="way" k="surface" v="grass|artificial_turf" closed="yes">
-          <area fill="{$pitch-color-grass}" stroke="#000000" stroke-width="0.2" scale="none"/>
-        </rule>
-        <rule e="way" k="surface" v="clay|tartan|carpet" closed="yes">
-          <area fill="{$pitch-color-clay}" stroke="#000000" stroke-width="0.2" scale="none"/>
-        </rule>
-        <rule e="way" k="surface" v="sand" closed="yes">
-          <area fill="{$pitch-color-sand}" stroke="#000000" stroke-width="0.2" scale="none"/>
-        </rule>
-        <rule e="way" k="surface" v="snow" closed="yes">
-          <area fill="{$pitch-color-snow}" stroke="#000000" stroke-width="0.2" scale="none"/>
-        </rule>
-        <rule e="way" k="surface" v="~" closed="yes">
-          <area fill="{$pitch-color-asphalt}" stroke="#000000" stroke-width="0.2" scale="none"/>
-        </rule>
-      </rule>
-      
-    </rule>    
+  <rule e="way" k="surface" v="clay|tartan|carpet" >
+    <area fill="{$pitch-color-clay}" stroke="#000000" stroke-width="0.2" scale="none"/>
   </rule>
+  <rule e="way" k="surface" v="sand" >
+    <area fill="{$pitch-color-sand}" stroke="#000000" stroke-width="0.2" scale="none"/>
+  </rule>
+  <rule e="way" k="surface" v="snow" >
+    <area fill="{$pitch-color-snow}" stroke="#000000" stroke-width="0.2" scale="none"/>
+  </rule>
+  <rule e="way" k="surface" v="~" >
+    <area fill="{$pitch-color-grass}" stroke="#000000" stroke-width="0.2" scale="none"/>
+  </rule>
+</rule>
 
-  <rule e="way" k="leisure" v="swimming_pool" closed="yes">
-    <rule e="way" k="access" v="yes" closed="yes">
-      <rule e="way" k="location" v="~|outdoor" closed="yes">
-        <area fill="#66B2FF" stroke="#000000" stroke-width="0.2" scale="none"/>
-      </rule>
+<rule e="way" k="leisure" v="swimming_pool" closed="yes">
+    <rule e="way" k="location" v="~|outdoor" closed="yes">
+      <area fill="#66B2FF" stroke="#000000" stroke-width="0.2" scale="none"/>
     </rule>
-  </rule>
+</rule>
 
-  <rule e="way" k="tourism" v="camp_site" closed="yes">
+<rule e="way" k="tourism" v="camp_site" closed="yes">
     <area fill="#7BFF8B" stroke="#000000" stroke-width="0.2" scale="none"/>
     <rule e="way" k="*" v="*" zoom-min="16">
         <caption k="name" font-style="italic" font-family="serif" font-size="14" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
     </rule>
-  </rule>
 </rule>
 
 </xsl:template>

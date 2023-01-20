@@ -129,6 +129,14 @@
     </rule>       
 </rule>
 
+<rule  e="any" k="craft" v="winery" zoom-min="15">
+    <symbol id="winery" src="{$symbolPath}/winery.svg" symbol-width="20" priority="{$pr-winery}"/>
+    <rule e="any" k="*" v="*" >
+        <caption k="name" symbol-id="winery" 
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-winery}"/>
+    </rule>       
+</rule>
+
 
 </xsl:template>
 </xsl:stylesheet>
