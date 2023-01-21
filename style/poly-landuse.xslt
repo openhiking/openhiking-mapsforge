@@ -44,12 +44,15 @@
 </rule>
 
 <rule e="way" k="tourism" v="zoo" closed="yes">
-  <area fill="#CFFF9E" scale="none"/>
-  <rule e="way" k="*" v="*" zoom-max="14">
+  <area fill="#CFFF9E" stroke="#1f7d18" stroke-width="1" scale="none"/>
+<rule e="way" k="*" v="*" zoom-max="14">
     <area src="file:/patterns/zoo.svg" symbol-height="20"/>
   </rule>
   <rule e="way" k="*" v="*" zoom-min="15">
     <area src="file:/patterns/zoo.svg" symbol-height="30"/>
+  </rule>  
+  <rule e="way" k="*" v="*" zoom-min="16">
+    <caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
   </rule>
 </rule>
 

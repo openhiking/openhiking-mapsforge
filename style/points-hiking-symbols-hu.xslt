@@ -147,6 +147,22 @@
 		<symbol src="{$hikingSymbolPath}/hu-t.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}"/>
 	</rule>
 
+	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-hu}px" zoom-min="12" zoom-max="15">
+		<symbol src="{$hikingSymbolPath}/hu-px.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols-minor}"/>
+	</rule>
+	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-hu}px" zoom-min="16" >
+		<symbol src="{$hikingSymbolPath}/hu-px.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}"/>
+	</rule>
+
+	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-hu}kx" zoom-min="12" zoom-max="15">
+		<symbol src="{$hikingSymbolPath}/hu-kx.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols-minor}"/>
+	</rule>
+	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-hu}kx" zoom-min="16" >
+		<symbol src="{$hikingSymbolPath}/hu-kx.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}"/>
+	</rule>
+
+
+
 	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-hu}km" zoom-min="12" zoom-max="15">
 		<symbol src="{$hikingSymbolPath}/hu-km.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}"/>
 	</rule>

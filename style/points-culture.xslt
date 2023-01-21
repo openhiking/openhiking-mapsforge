@@ -15,7 +15,7 @@
   <symbol id="theatre" src="{$symbolPath}/theatre.svg" symbol-width="24" priority="{$pr-theatre}"/>
   <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="theatre" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-theatre}"/>
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-culture}"/>
   </rule>
 </rule>
 
@@ -23,7 +23,7 @@
   <symbol id="library" src="{$symbolPath}/library.svg" symbol-width="20" priority="{$pr-library}"/>
   <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="library" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-library}"/>
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-culture}"/>
   </rule>
 </rule>
 
@@ -33,7 +33,7 @@
   <symbol id="museum" src="{$symbolPath}/museum.svg" symbol-width="18" priority="{$pr-museum}"/>
   <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="museum" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-museum}"/>
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-culture}"/>
   </rule>
 </rule>
 
@@ -41,7 +41,7 @@
   <symbol id="gallery" src="{$symbolPath}/art_gallery.svg" symbol-width="22" priority="{$pr-gallery}"/>
   <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="gallery" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-gallery}"/>
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-culture}"/>
   </rule>
 </rule>
 
@@ -51,7 +51,7 @@
   <symbol id="cross" src="{$symbolPath}/cross.svg" symbol-width="24" priority="{$pr-cross}"/>
   <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="cross" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-cross}"/>
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-culture}"/>
   </rule>
 </rule>
 
@@ -59,7 +59,7 @@
   <symbol id="obelisk" src="{$symbolPath}/obelisk.svg" symbol-width="24" priority="{$pr-obelisk}"/>
   <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="obelisk" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-obelisk}"/>
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-culture}"/>
   </rule>
 </rule>
 

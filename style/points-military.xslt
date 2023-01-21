@@ -14,7 +14,7 @@
         <symbol id="bunker" src="{$symbolPath}/bunker.svg" symbol-width="22" priority="{$pr-bunker}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="bunker" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-bunker}"/>
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-military}"/>
         </rule>       
 </rule>
 

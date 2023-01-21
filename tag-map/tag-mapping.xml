@@ -9,7 +9,7 @@
 
     <!-- NATURAL / WATERWAY TAGS -->
     <ways>
-        <osm-tag key="lock" value="yes" zoom-appear="14"/>
+        <osm-tag key="lock" value="yes" zoom-appear="13"/>
 
         <!-- mapsforge artificial tags for land/sea areas, do not remove -->
         <osm-tag key="natural" value="sea" zoom-appear="0"/>
@@ -1067,35 +1067,35 @@
         <osm-tag key="trail_symbol" value="hu:katl" zoom-appear="14"/>        
         <osm-tag key="trail_symbol" value="hu:katlv" zoom-appear="14"/>        
 
-        <osm-tag key="trail_symbol" value="hu:p" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:p+" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:p3" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:p4" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:pq" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:pb" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:pl" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:pc" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:pt" zoom-appear="13"/>
+        <osm-tag key="trail_symbol" value="hu:p" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:p+" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:p3" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:p4" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:pq" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:pb" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:pl" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:pc" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:pt" zoom-appear="14"/>
 
-        <osm-tag key="trail_symbol" value="hu:z" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:z+" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:z3" zoom-appear="13"/>                
-        <osm-tag key="trail_symbol" value="hu:z4" zoom-appear="13"/>        
-        <osm-tag key="trail_symbol" value="hu:zq" zoom-appear="13"/>                
-        <osm-tag key="trail_symbol" value="hu:zb" zoom-appear="13"/>        
-        <osm-tag key="trail_symbol" value="hu:zl" zoom-appear="13"/>        
-        <osm-tag key="trail_symbol" value="hu:zc" zoom-appear="13"/>                
-        <osm-tag key="trail_symbol" value="hu:zt" zoom-appear="13"/>        
+        <osm-tag key="trail_symbol" value="hu:z" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:z+" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:z3" zoom-appear="14"/>                
+        <osm-tag key="trail_symbol" value="hu:z4" zoom-appear="14"/>        
+        <osm-tag key="trail_symbol" value="hu:zq" zoom-appear="14"/>                
+        <osm-tag key="trail_symbol" value="hu:zb" zoom-appear="14"/>        
+        <osm-tag key="trail_symbol" value="hu:zl" zoom-appear="14"/>        
+        <osm-tag key="trail_symbol" value="hu:zc" zoom-appear="14"/>                
+        <osm-tag key="trail_symbol" value="hu:zt" zoom-appear="14"/>        
 
-        <osm-tag key="trail_symbol" value="hu:s" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:s+" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:s3" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:s4" zoom-appear="13"/>    
-        <osm-tag key="trail_symbol" value="hu:sq" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:sb" zoom-appear="13"/>                        
-        <osm-tag key="trail_symbol" value="hu:sl" zoom-appear="13"/>    
-        <osm-tag key="trail_symbol" value="hu:sc" zoom-appear="13"/>
-        <osm-tag key="trail_symbol" value="hu:st" zoom-appear="13"/>  
+        <osm-tag key="trail_symbol" value="hu:s" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:s+" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:s3" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:s4" zoom-appear="14"/>    
+        <osm-tag key="trail_symbol" value="hu:sq" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:sb" zoom-appear="14"/>                        
+        <osm-tag key="trail_symbol" value="hu:sl" zoom-appear="14"/>    
+        <osm-tag key="trail_symbol" value="hu:sc" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:st" zoom-appear="14"/>  
 
         <osm-tag key="trail_symbol" value="hu:km" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="hu:pm" zoom-appear="14"/>
@@ -1108,6 +1108,47 @@
 
         <osm-tag key="trail_symbol" value="hu:f" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="hu:t" zoom-appear="14"/>
+
+        <osm-tag key="trail_symbol" value="czsk:blue:major" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:blue:ruin" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:blue:peak" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:blue:spring" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:blue:interesting_object" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:blue:roundtrip" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:blue:education" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol" value="czsk:blue:learning" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol" value="czsk:blue:local" zoom-appear="14"/>                 
+
+        <osm-tag key="trail_symbol" value="czsk:red:major" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:red:ruin" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:red:peak" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:red:spring" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:red:interesting_object" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:red:roundtrip" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:red:education" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol" value="czsk:red:learning" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol" value="czsk:red:local" zoom-appear="14"/>   
+
+        <osm-tag key="trail_symbol" value="czsk:yellow:major" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:yellow:ruin" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:yellow:peak" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:yellow:spring" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:yellow:interesting_object" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:yellow:roundtrip" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:yellow:education" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol" value="czsk:yellow:learning" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol" value="czsk:yellow:local" zoom-appear="14"/>   
+
+        <osm-tag key="trail_symbol" value="czsk:green:major" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:green:ruin" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:green:peak" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:green:spring" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:green:interesting_object" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:green:roundtrip" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="czsk:green:education" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol" value="czsk:green:learning" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol" value="czsk:green:local" zoom-appear="14"/>   
+
 
 
         <osm-tag key="trail_symbol_level" value="major" zoom-appear="13"/>                           

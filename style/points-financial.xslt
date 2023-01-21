@@ -14,7 +14,7 @@
         <symbol id="bank" src="{$symbolPath}/bank.svg" symbol-width="20" priority="{$pr-bank}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="bank" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-bank}"/>
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-financial}"/>
         </rule>       
 </rule>
 

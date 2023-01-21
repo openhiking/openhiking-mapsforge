@@ -17,12 +17,7 @@
             </rule>                                
         </rule>            
         <rule e="way" k="highway" v="bridleway" zoom-min="{$zm-bridleway}">
-            <rule e="way" k="surface" v="paved" >
-                <line stroke="{$lc-footway}" stroke-width="{$lw-footway}" stroke-linecap="butt"/>          
-            </rule>            
-            <rule e="way" k="surface" v="~|compacted|unpaved" >
-                <line stroke="{$lc-bridleway}" stroke-width="{$lw-bridleway}" stroke-dasharray="4,4"  stroke-linecap="butt"/>          
-            </rule>            
+            <line stroke="{$lc-bridleway}" stroke-width="{$lw-bridleway}" stroke-dasharray="4,4"  stroke-linecap="butt"/>                      
         </rule>
         <rule e="way" k="highway" v="via_ferrata" zoom-min="{$zm-ferrata}">
             <line stroke="{$lc-ferrata}" stroke-width="0.2" stroke-dasharray="0.4,0.6" scale="all"/>
@@ -82,10 +77,8 @@
             <line stroke="{$lc-living}" stroke-width="{$lw-living_street - 0.4}" stroke-linecap="butt"/>          
         </rule>
         <rule e="way" k="highway" v="residential" zoom-min="{$zm-residential}">
-            <rule e="way" k="surface" v="~|paved" >
-                <line stroke="{$bc-residential}" stroke-width="{$lw-residential}" stroke-linecap="butt"/>
-                <line stroke="{$lc-residential}" stroke-width="{$lw-residential - 0.4}" />          
-            </rule>            
+            <line stroke="{$bc-residential}" stroke-width="{$lw-residential}" stroke-linecap="butt"/>
+            <line stroke="{$lc-residential}" stroke-width="{$lw-residential - 0.4}" />          
         </rule>
         <rule e="way" k="highway" v="unclassified" >
             <line stroke="{$bc-unclassified}" stroke-width="{$lw-unclassified}" stroke-linecap="butt"/>

@@ -22,48 +22,48 @@
     </rule>                         
     <rule e="any" k="*" v="*" >
       <caption k="name" symbol-id="basic_hut" 
-      font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-basic-hut}"/>
+      font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-wilderness}"/>
     </rule>
   </rule>
   <rule  e="any" k="shelter_type" v="picnic_shelter" zoom-min="14">
     <rule  e="any" k="*" v="*" zoom-max="15">
-      <symbol id="picnic_shelter" src="{$symbolPath}/picnic_shelter.svg" symbol-width="18" priority="{$pr-picnic-shelter}"/>
+      <symbol id="picnic_shelter" src="{$symbolPath}/picnic_shelter.svg" symbol-width="20" priority="{$pr-picnic-shelter}"/>
     </rule> 
     <rule  e="any" k="*" v="*" zoom-min="16">
-      <symbol id="picnic_shelter" src="{$symbolPath}/picnic_shelter.svg" symbol-width="20" priority="{$pr-picnic-shelter}"/>
+      <symbol id="picnic_shelter" src="{$symbolPath}/picnic_shelter.svg" symbol-width="22" priority="{$pr-picnic-shelter}"/>
     </rule>                         
     <rule e="any" k="*" v="*" >
       <caption k="name" symbol-id="picnic_shelter" 
-      font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-picnic-shelter}"/>
+      font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-wilderness}"/>
     </rule>
   </rule>
   <rule  e="any" k="shelter_type" v="~" zoom-min="14">
     <rule  e="any" k="*" v="*" zoom-max="15">
-      <symbol id="shelter" src="{$symbolPath}/shelter.svg" symbol-width="22" priority="{$pr-shelter}"/>
+      <symbol id="shelter" src="{$symbolPath}/shelter.svg" symbol-width="24" priority="{$pr-shelter}"/>
     </rule> 
     <rule  e="any" k="*" v="*" zoom-min="16">
-      <symbol id="shelter" src="{$symbolPath}/shelter.svg" symbol-width="24" priority="{$pr-shelter}"/>
+      <symbol id="shelter" src="{$symbolPath}/shelter.svg" symbol-width="26" priority="{$pr-shelter}"/>
     </rule>                         
     <rule e="any" k="*" v="*" >
       <caption k="name" symbol-id="shelter" 
-      font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-shelter}"/>
+      font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-wilderness}"/>
     </rule>
   </rule>
 </rule>
 
 <rule  e="any" k="tourism" v="picnic_site" zoom-min="15">
-  <symbol id="picnic_site" src="{$symbolPath}/picnic.svg" symbol-width="18" priority="{$pr-picnic}"/>
+  <symbol id="picnic_site" src="{$symbolPath}/picnic.svg" symbol-width="20" priority="{$pr-picnic}"/>
   <rule e="any" k="*" v="*" >
     <caption k="name" symbol-id="picnic_site" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-picnic}"/>
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-wilderness}"/>
   </rule>
 </rule>
 
 <rule  e="any" k="leisure" v="picnic_table" zoom-min="15">
-  <symbol id="picnic_site" src="{$symbolPath}/picnic.svg" symbol-width="18" priority="{$pr-picnic}"/>
+  <symbol id="picnic_site" src="{$symbolPath}/picnic.svg" symbol-width="20" priority="{$pr-picnic}"/>
   <rule e="any" k="*" v="*" >
     <caption k="name" symbol-id="picnic_site" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-picnic}"/>
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-wilderness}"/>
   </rule>
 </rule>
 
@@ -72,16 +72,12 @@
   <symbol id="bench" src="{$symbolPath}/bench.svg" symbol-width="16" priority="{$pr-bench}"/>
   <rule e="node" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="bench" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-bench}"/>
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-wilderness}"/>
   </rule>
 </rule>
 
 <rule  e="node" k="leisure" v="firepit" zoom-min="16">
   <symbol id="firepit" src="{$symbolPath}/firepit.svg" symbol-width="18" priority="{$pr-firepit}"/>
-  <rule e="node" k="*" v="*" zoom-min="16">
-    <caption k="name" symbol-id="firepit" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-firepit}"/>
-  </rule>
 </rule>
 
 <rule  e="any" k="tower" v="outlook" zoom-min="14">
@@ -93,7 +89,7 @@
   </rule>
   <rule e="any" k="*" v="*" zoom-min="14">
       <caption k="name" symbol-id="tower_outlook" 
-          font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-tower-lookout}" display="ifspace"/>
+          font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-wilderness}" display="ifspace"/>
   </rule>
 </rule>       
 
@@ -101,7 +97,7 @@
     <symbol id="viewpoint" src="{$symbolPath}/viewpoint.svg" symbol-width="20" priority="{$pr-viewpoint}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="viewpoint" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-viewpoint}"/>
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-wilderness}"/>
     </rule>
 </rule>
 
@@ -111,7 +107,7 @@
   <symbol id="guidepost" src="{$symbolPath}/guidepost.svg" symbol-width="28" priority="{$pr-guidepost}"/>
   <rule e="node" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="guidepost" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-guidepost}"/>
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-wilderness}"/>
   </rule>
 </rule>
 
@@ -124,7 +120,7 @@
   </rule>
   <rule e="node" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="board" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-board}"/>
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-wilderness}"/>
   </rule>
 </rule>
 
@@ -144,7 +140,7 @@
   <symbol id="checkpoint" src="{$symbolPath}/checkpoint.svg" symbol-width="18" priority="{$pr-checkpoint}"/>
   <rule e="node" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="checkpoint" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-checkpoint}"/>
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-wilderness}"/>
   </rule>
 </rule>
 

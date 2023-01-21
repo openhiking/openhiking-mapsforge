@@ -43,7 +43,7 @@
 
 <xsl:variable name="pr-checkpoint">10</xsl:variable>
 <xsl:variable name="pr-picnic">10</xsl:variable>
-<xsl:variable name="pr-picnic-shelter">10</xsl:variable>
+<xsl:variable name="pr-picnic-shelter">11</xsl:variable>
 
 <xsl:variable name="pr-hostel">10</xsl:variable>
 <xsl:variable name="pr-hotel">10</xsl:variable>
@@ -68,7 +68,7 @@
 
 
 <!-- Priority 0 -->
-<xsl:variable name="pr-peak-ele">0</xsl:variable>
+
 <xsl:variable name="pr-sinkhole">0</xsl:variable>
 
 <xsl:variable name="pr-gate">0</xsl:variable>
@@ -122,6 +122,12 @@
 <xsl:variable name="pr-swimming-pool">0</xsl:variable>
 <xsl:variable name="pr-courthouse">0</xsl:variable>
 
+<xsl:variable name="pr-label-natural">0</xsl:variable>
+<xsl:variable name="pr-label-spring">0</xsl:variable>
+<xsl:variable name="pr-label-peak">0</xsl:variable>
+<xsl:variable name="pr-label-public-transport">0</xsl:variable>
+
+
 
 <!-- Priority -10 -->
 <xsl:variable name="pr-hunting-stand">-10</xsl:variable>
@@ -138,6 +144,22 @@
 <xsl:variable name="pr-water-well">-10</xsl:variable>
 <xsl:variable name="pr-waterway-name">-10</xsl:variable>
 <xsl:variable name="pr-restricted">-10</xsl:variable>
+
+<xsl:variable name="pr-label-accomodation">-10</xsl:variable>
+<xsl:variable name="pr-label-amenities">-10</xsl:variable>
+<xsl:variable name="pr-label-culture">-10</xsl:variable>
+<xsl:variable name="pr-label-financial">-10</xsl:variable>
+<xsl:variable name="pr-label-healthcare">-10</xsl:variable>
+<xsl:variable name="pr-label-historical">-10</xsl:variable>
+<xsl:variable name="pr-label-industrial">-10</xsl:variable>
+<xsl:variable name="pr-label-food">-10</xsl:variable>
+<xsl:variable name="pr-label-leisure">-10</xsl:variable>
+<xsl:variable name="pr-label-military">-10</xsl:variable>
+<xsl:variable name="pr-label-religion">-10</xsl:variable>
+<xsl:variable name="pr-label-shop">-10</xsl:variable>
+<xsl:variable name="pr-label-transportation">-10</xsl:variable>
+<xsl:variable name="pr-label-wilderness">-10</xsl:variable>
+
 
 
 <!-- Priority -20 -->

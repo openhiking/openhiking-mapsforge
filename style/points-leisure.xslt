@@ -13,9 +13,9 @@
 
 <rule  e="any" k="tourism" v="zoo" zoom-min="14">
   <symbol id="zoo" src="{$symbolPath}/zoo.svg" symbol-width="24" priority="{$pr-zoo}"/>
-  <rule e="any" k="*" v="*" zoom-min="16">
+  <rule e="node" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="zoo" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-zoo}"/>
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
   </rule>
 </rule>
 
@@ -27,7 +27,7 @@
   <symbol id="spa" src="{$symbolPath}/spa.svg" symbol-width="24" priority="{$pr-spa}"/>
   <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="spa" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-spa}"/>
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
   </rule>
 </rule>
 <!-- 
@@ -48,7 +48,7 @@
           <symbol id="attraction" src="{$symbolPath}/attraction.svg" symbol-width="16" priority="{$pr-attraction}"/>
           <rule e="any" k="*" v="*" zoom-min="16">
             <caption k="name" symbol-id="attraction" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-attraction}"/>
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
           </rule>
         </rule>
       </rule>        

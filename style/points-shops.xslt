@@ -21,7 +21,7 @@
     </rule>                         
     <rule e="any" k="*" v="*" >
         <caption k="name" symbol-id="shopping_center" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-shopping-center}"/>
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
     </rule>       
 </rule>
 
@@ -34,7 +34,7 @@
     </rule>                         
     <rule e="any" k="*" v="*" >
         <caption k="name" symbol-id="supermarket" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-supermarket}"/>
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
     </rule>       
 </rule>
 
@@ -48,7 +48,7 @@
     </rule>                         
     <rule e="any" k="*" v="*" >
         <caption k="name" symbol-id="convenience" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-convenience}"/>
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
     </rule>       
 </rule>
 
@@ -61,7 +61,7 @@
     </rule>                         
     <rule e="any" k="*" v="*" >
         <caption k="name" symbol-id="bakery" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-bakery}"/>
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
     </rule>       
 </rule>
 
@@ -69,7 +69,7 @@
     <symbol id="shop" src="{$symbolPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
     <rule e="any" k="*" v="*" >
         <caption k="name" symbol-id="shop" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-shop}"/>
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
     </rule>       
 </rule>
 
@@ -77,7 +77,7 @@
     <symbol id="shop" src="{$symbolPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
     <rule e="any" k="*" v="*" >
         <caption k="name" symbol-id="shop" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-shop}"/>
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
     </rule>       
 </rule>
 
@@ -85,7 +85,7 @@
     <symbol id="shop" src="{$symbolPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
     <rule e="any" k="*" v="*" >
         <caption k="name" symbol-id="shop" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-shop}"/>
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
     </rule>       
 </rule>
 
@@ -93,7 +93,7 @@
     <symbol id="shop" src="{$symbolPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
     <rule e="any" k="*" v="*" >
         <caption k="name" symbol-id="shop" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-shop}"/>
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
     </rule>       
 </rule>
 
@@ -101,7 +101,7 @@
     <symbol id="shop" src="{$symbolPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
     <rule e="any" k="*" v="*" >
         <caption k="name" symbol-id="shop" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-shop}"/>
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
     </rule>       
 </rule>
 
@@ -109,7 +109,7 @@
     <symbol id="shop" src="{$symbolPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
     <rule e="any" k="*" v="*" >
         <caption k="name" symbol-id="shop" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-shop}"/>
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
     </rule>       
 </rule>
 
@@ -117,7 +117,7 @@
     <symbol id="shop" src="{$symbolPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
     <rule e="any" k="*" v="*" >
         <caption k="name" symbol-id="shop" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-shop}"/>
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
     </rule>       
 </rule>
 
@@ -125,7 +125,7 @@
     <symbol id="shop" src="{$symbolPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
     <rule e="any" k="*" v="*" >
         <caption k="name" symbol-id="shop" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-shop}"/>
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
     </rule>       
 </rule>
 
@@ -133,7 +133,7 @@
     <symbol id="winery" src="{$symbolPath}/winery.svg" symbol-width="20" priority="{$pr-winery}"/>
     <rule e="any" k="*" v="*" >
         <caption k="name" symbol-id="winery" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-winery}"/>
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
     </rule>       
 </rule>
 

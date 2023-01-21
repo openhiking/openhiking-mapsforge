@@ -14,7 +14,7 @@
         <symbol id="hostel" src="{$symbolPath}/hostel.svg" symbol-width="20" priority="{$pr-hostel}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="hostel" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-hostel}"/>
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-accomodation}"/>
         </rule>
        
 </rule>
@@ -22,7 +22,7 @@
         <symbol id="hotel" src="{$symbolPath}/hotel.svg" symbol-width="20" priority="{$pr-hotel}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="hotel" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-hotel}"/>
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-accomodation}"/>
         </rule>
        
 </rule>
@@ -31,7 +31,7 @@
         <symbol id="hotel" src="{$symbolPath}/hotel.svg" symbol-width="20" priority="{$pr-hotel}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="hotel" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-hotel}"/>
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-accomodation}"/>
         </rule>
        
 </rule>
@@ -45,7 +45,7 @@
             <symbol id="hotel" src="{$symbolPath}/chalet.svg" symbol-width="20" priority="{$pr-chalet}"/>
             <rule e="any" k="*" v="*" >
                 <caption k="name" symbol-id="chalet" 
-                font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-chalet}"/>
+                font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-accomodation}"/>
             </rule>       
     </rule>
 
@@ -53,7 +53,7 @@
         <symbol id="alpine_hut" src="{$symbolPath}/alpine_hut.svg" symbol-width="23" priority="{$pr-alpine-hut}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="alpine_hut" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-alpine-hut}"/>
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-accomodation}"/>
         </rule>
     </rule>
 
@@ -61,7 +61,7 @@
         <symbol id="wilderness_hut" src="{$symbolPath}/wilderness_hut.svg" symbol-width="23" priority="{$pr-wilderness-hut}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="wilderness_hut" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-wilderness-hut}"/>
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-accomodation}"/>
         </rule>
     </rule>        
 
@@ -70,7 +70,7 @@
             <symbol id="camp_site" src="{$symbolPath}/camp_site_basic.svg" symbol-width="20" priority="{$pr-camp-site}"/>
             <rule e="any" k="*" v="*" >
                 <caption k="name" symbol-id="camp_site" 
-                font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-camp-site}"/>
+                font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-accomodation}"/>
             </rule>       
         </rule> 
         <rule  e="any" k="camp_site" v="~" >
@@ -78,7 +78,7 @@
                 <symbol id="camp_site" src="{$symbolPath}/camp_site_basic.svg" symbol-width="20" priority="{$pr-camp-site}"/>
                 <rule e="any" k="*" v="*" >
                     <caption k="name" symbol-id="camp_site" 
-                    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-camp-site}"/>
+                    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-accomodation}"/>
                 </rule>       
             </rule>                       
             <rule  e="any" k="backcountry" v="~" >
@@ -86,11 +86,11 @@
                     <symbol id="camp_site" src="{$symbolPath}/camp_site.svg" symbol-width="18" priority="{$pr-camp-site}"/>
                 </rule> 
                 <rule  e="any" k="*" v="*" zoom-min="16">
-                    <symbol id="camp_site" src="{$symbolPath}/camp_site.svg" symbol-width="20" priority="{$pr-camp-site}"/>
+                    <symbol id="camp_site" src="{$symbolPath}/camp_site.svg" symbol-width="20" priority="{$pr-label-accomodation}"/>
                 </rule>                         
                 <rule e="any" k="*" v="*" >
                     <caption k="name" symbol-id="camp_site" 
-                    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-camp-site}"/>
+                    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-accomodation}"/>
                 </rule>       
             </rule>           
         </rule>                   
@@ -100,7 +100,7 @@
         <symbol id="caravan_site" src="{$symbolPath}/camp_site.svg" symbol-width="23" priority="{$pr-camp-site}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="caravan_site" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-camp-site}"/>
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-accomodation}"/>
         </rule>
     </rule>        
 

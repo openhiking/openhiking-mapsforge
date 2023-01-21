@@ -12,9 +12,9 @@
 <xsl:template name="points-healthcare">
 <rule  e="any" k="amenity" v="hospital|clinic" zoom-min="14">
         <symbol id="hospital" src="{$symbolPath}/hospital.svg" symbol-width="16" priority="{$pr-hospital}"/>
-        <rule e="any" k="*" v="*" >
+        <rule e="node" k="*" v="*" >
             <caption k="name" symbol-id="hospital" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-hospital}"/>
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-healthcare}"/>
         </rule>       
 </rule>
 
@@ -27,7 +27,7 @@
   </rule>     
     <rule e="any" k="*" v="*" >
         <caption k="name" symbol-id="doctors" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-doctors}"/>
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-healthcare}"/>
     </rule>       
 </rule>
 
@@ -35,7 +35,7 @@
         <symbol id="dentist" src="{$symbolPath}/dentist.svg" symbol-width="16" priority="{$pr-dentist}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="dentist" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-dentist}"/>
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-healthcare}"/>
         </rule>       
 </rule>
 
@@ -44,7 +44,7 @@
         <symbol id="pharmacy" src="{$symbolPath}/pharmacy.svg" symbol-width="18" priority="{$pr-pharmacy}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="pharmacy" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-pharmacy}"/>
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-healthcare}"/>
         </rule>       
 </rule>
 

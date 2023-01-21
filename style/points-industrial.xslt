@@ -17,7 +17,7 @@
         <symbol id="adit" src="{$symbolPath}/adit.svg" symbol-width="18" priority="{$pr-adit}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="adit" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-adit}"/>
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-industrial}"/>
         </rule>       
         </rule>               
     </rule>           
@@ -28,7 +28,7 @@
         <symbol id="mineshaft" src="{$symbolPath}/mineshaft.svg" symbol-width="17" priority="{$pr-mineshaft}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="mineshaft" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-mineshaft}"/>     
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-industrial}"/>     
         </rule>               
     </rule>           
 </rule>
@@ -37,7 +37,7 @@
   <symbol id="factory" src="{$symbolPath}/factory.svg" symbol-width="24" priority="{$pr-factory}"/>
   <rule e="node" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="factory" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-factory}"/>
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-industrial}"/>
   </rule>
 </rule>
 
@@ -50,19 +50,15 @@
 </rule>
 
 <rule  e="any" k="man_made" v="tower" zoom-min="15">
-    <rule  e="any" k="tower:type" v="communication" >
-        <symbol src="{$symbolPath}/mast.svg" symbol-width="25" priority="{$pr-mast}"/>
-    </rule>
     <rule  e="any" k="tower:type" v="observation">
         <rule  e="any" k="tourism" v="~">
             <symbol id="observation" src="{$symbolPath}/tower_observation.svg" symbol-width="24" priority="{$pr-tower-observation}"/>
             <rule e="any" k="*" v="*" zoom-min="14">
                 <caption k="name" symbol-id="observation" 
-                font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-tower-observation}"/>
+                font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-industrial}"/>
             </rule>
         </rule>            
     </rule>
-
 </rule>  
 
 

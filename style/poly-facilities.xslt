@@ -16,10 +16,16 @@
 
 <rule e="way" k="landuse" v="commercial">
   <area fill="#F8E8E8" scale="none"/>
+  <rule e="way" k="*" v="*" zoom-min="16">
+    <caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
+  </rule>
 </rule>
 
 <rule e="way" k="landuse" v="industrial">
   <area fill="#D5D5D5" scale="none"/>
+  <rule e="way" k="*" v="*" zoom-min="16">
+    <caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
+  </rule>
 </rule>
 
 <rule e="way" k="landuse" v="landfill">
@@ -27,7 +33,10 @@
 </rule>
 
 <rule e="way" k="landuse" v="brownfield|construction">
-  <area fill="#c9b56a" scale="none"/>
+<area fill="#e7debc" stroke="#c9b56a" stroke-width="1" scale="none"/>
+  <rule e="way" k="*" v="*" zoom-min="16">
+    <caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
+  </rule>
 </rule>
 
 
@@ -39,6 +48,9 @@
   <rule e="way" k="*" v="*" zoom-min="15">
     <area src="file:/patterns/park.svg" symbol-height="30"/>
   </rule>
+  <rule e="way" k="*" v="*" zoom-min="16">
+    <caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
+  </rule>
 </rule>
 
 <rule e="way" k="landuse" v="recreation_ground">
@@ -49,26 +61,32 @@
   <rule e="way" k="*" v="*" zoom-min="15">
     <area src="file:/patterns/park.svg" symbol-height="30"/>
   </rule>
+  <rule e="way" k="*" v="*" zoom-min="16">
+    <caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
+  </rule>
 </rule>
 
 
 <rule e="way" k="landuse" v="retail">
   <area fill="#F8E8E8" />
+  <rule e="way" k="*" v="*" zoom-min="16">
+    <caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
+  </rule>
 </rule>
+
 <rule e="way" k="landuse" v="railway">
   <area fill="#c6b4b0" />
 </rule>
 
 
 
+<rule e="way" k="landuse" v="plant_nursery">
+  <area fill="#AEDFA3" />
+</rule>
 
-  <rule e="way" k="landuse" v="plant_nursery">
-    <area fill="#AEDFA3" />
-  </rule>
-
-  <rule e="way" k="landuse" v="greenhouse_horticulture">
-    <area fill="#ECF1B8" />
-  </rule>
+<rule e="way" k="landuse" v="greenhouse_horticulture">
+  <area fill="#ECF1B8" />
+</rule>
 
 <rule e="way" k="building" v="~" >
   <rule e="way" k="power" v="plant">
@@ -91,12 +109,19 @@
   </rule>
 
   <rule e="way" k="amenity" v="school|childcare" closed="yes">
-    <area fill="#E0ECD3" />
+    <area fill="#E0ECD3" stroke="#676a3f" stroke-width="1" scale="none"/>
+    <rule e="way" k="*" v="*" zoom-min="16">
+      <caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
+    </rule>
   </rule>
 
   <rule e="way" k="amenity" v="hospital|clinic" closed="yes">
-    <area fill="#F86C68" />
+    <area fill="#fcb6b4" stroke="#F86C68" stroke-width="1" scale="none"/>
+    <rule e="way" k="*" v="*" zoom-min="16">
+      <caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
+    </rule>
   </rule>
+
 
   <rule e="way" k="amenity" v="prison" closed="yes">
     <rule e="any" k="*" v="*" zoom-max="14">
@@ -143,6 +168,9 @@
         <area src="file:/patterns/cemetery.svg" symbol-scaling="size" symbol-height="64" />
       </rule>
     </rule>
+    <rule e="way" k="*" v="*" zoom-min="16">
+      <caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
+    </rule>
   </rule>
 
 <rule e="way" k="leisure" v="beach_resort" closed="yes">
@@ -155,20 +183,7 @@
   </rule>
 
 <rule e="way" k="amenity" v="parking" zoom-min="15">
-  <rule e="way" k="access" v="~|yes">
     <area fill="#FFCAD5" />
-
-    <rule e="way" k="fee" v="yes" >
-      <area src="file:/patterns/parking-fee.svg" symbol-scaling="size" symbol-height="18" symbol-width="20"/>
-    </rule>
-    <rule cat="default" e="way" k="fee" v="~|no" zoom-min="18">
-      <symbol src="file:/poi/parking.svg" symbol-width="9" priority="-50"/>
-    </rule>
-    <rule cat="default" e="way" k="fee" v="yes" zoom-min="18">
-      <symbol src="file:/poi/parking-fee.svg" symbol-width="9" priority="-50"/>
-    </rule>
-
-  </rule>
 </rule>
 
 

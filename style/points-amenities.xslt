@@ -15,7 +15,7 @@
         <symbol id="police" src="{$symbolPath}/police.svg" symbol-width="20" priority="{$pr-police}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="police" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-police}"/>
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-amenities}"/>
         </rule>       
 </rule>
 
@@ -28,7 +28,7 @@
     </rule>
     <rule e="any" k="*" v="*" >
         <caption k="name" symbol-id="courthouse" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-courthouse}"/>
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-amenities}"/>
     </rule>       
 </rule>
 
@@ -37,31 +37,29 @@
         <symbol id="post_office" src="{$symbolPath}/post_office.svg" symbol-width="20" priority="{$pr-post-office}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="post_office" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-post-office}"/>
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-amenities}"/>
         </rule>       
 </rule>
 
-<rule e="any" k="access" v="~|yes" >
-    <rule  e="any" k="amenity" v="toilets" zoom-min="16">
-        <symbol id="toilets" src="{$symbolPath}/toilets.svg" symbol-width="18" priority="{$pr-toilets}"/>
-    </rule>        
 
-    <rule  e="any" k="amenity" v="recycling" zoom-min="16">
-        <symbol id="recycling" src="{$symbolPath}/recycling.svg" symbol-width="18" priority="{$pr-recycling}"/>
-    </rule>        
+<rule  e="any" k="amenity" v="toilets" zoom-min="16">
+    <symbol id="toilets" src="{$symbolPath}/toilets.svg" symbol-width="18" priority="{$pr-toilets}"/>
+</rule>        
 
-    <rule  e="any" k="amenity" v="drinking_water" zoom-min="14">
-        <symbol id="drinking_water" src="{$symbolPath}/drinking_water.svg" symbol-width="20" priority="{$pr-drinking-water}"/>
-    </rule>        
+<rule  e="any" k="amenity" v="recycling" zoom-min="16">
+    <symbol id="recycling" src="{$symbolPath}/recycling.svg" symbol-width="18" priority="{$pr-recycling}"/>
+</rule>        
 
+<rule  e="any" k="amenity" v="drinking_water" zoom-min="14">
+    <symbol id="drinking_water" src="{$symbolPath}/drinking_water.svg" symbol-width="20" priority="{$pr-drinking-water}"/>
+</rule>        
 
-</rule>
 
 <rule  e="any" k="amenity" v="marketplace" zoom-min="15">
         <symbol id="marketplace" src="{$symbolPath}/marketplace.svg" symbol-width="22" priority="{$pr-marketplace}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="marketplace" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-marketplace}"/>
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-amenities}"/>
         </rule>       
 </rule>
 
@@ -70,7 +68,7 @@
         <symbol id="tickets" src="{$symbolPath}/tickets.svg" symbol-width="20" priority="{$pr-tickets}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="tickets" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-tickets}"/>
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-amenities}"/>
         </rule>       
 </rule>
 

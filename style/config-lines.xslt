@@ -49,9 +49,9 @@
 
 
 <xsl:variable name="lc-motorway">#FC7352</xsl:variable>
-<xsl:variable name="lc-motorway_link">#FC7352</xsl:variable>
+<xsl:variable name="lc-motorway_link">#FEF458</xsl:variable>
 <xsl:variable name="lc-trunk">#FC7352</xsl:variable>
-<xsl:variable name="lc-trunk_link">#FC7352</xsl:variable>
+<xsl:variable name="lc-trunk_link">#FEF458</xsl:variable>
 <xsl:variable name="lc-primary">#FB9C39</xsl:variable>
 <xsl:variable name="lc-secondary">#FEF458</xsl:variable>
 <xsl:variable name="lc-tertiary">#FEF458</xsl:variable>
@@ -105,7 +105,7 @@
 <xsl:variable name="lw-bridleway">0.4</xsl:variable>
 <xsl:variable name="lw-path">0.4</xsl:variable>
 <xsl:variable name="lw-path2">0.3</xsl:variable>
-<xsl:variable name="lw-steps">0.5</xsl:variable>
+<xsl:variable name="lw-steps">0.6</xsl:variable>
 <xsl:variable name="lw-tunnel">0.2</xsl:variable>
 <xsl:variable name="lw-embankment">0.1</xsl:variable>
 <xsl:variable name="lw-embankment2">1</xsl:variable>
@@ -121,7 +121,8 @@
 
 <xsl:variable name="lw-restricted">1.5</xsl:variable>
 
-<xsl:variable name="lw-protected-area">1.2</xsl:variable>
+<xsl:variable name="lw-protected-area">1.1</xsl:variable>
+<xsl:variable name="lw-protected-area-l2">0.8</xsl:variable>
 
 <xsl:variable name="da-tunnel">16,16</xsl:variable>
 <xsl:variable name="da-embankment">0.1,2</xsl:variable>

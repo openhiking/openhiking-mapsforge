@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32.0px"
+   height="32.0px"
+   viewBox="0 0 32.0 32.0"
+   version="1.1"
+   id="SVGRoot"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs31757">
+    <linearGradient
+       xlink:href="#linearGradient37101"
+       id="linearGradient37103"
+       x1="0.13015258"
+       y1="16.059042"
+       x2="31.810806"
+       y2="16.059042"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.88139524,0,0,0.8796997,1.9236955,1.8728647)" />
+    <linearGradient
+       id="linearGradient37101">
+      <stop
+         style="stop-color:#008c00;stop-opacity:0.49803922;"
+         offset="0.00321543"
+         id="stop37099" />
+      <stop
+         style="stop-color:#00c800;stop-opacity:0.74901962;"
+         offset="0.04180063"
+         id="stop40033" />
+      <stop
+         style="stop-color:#007800;stop-opacity:1;"
+         offset="0.87138265"
+         id="stop37097" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.18339;stroke-linecap:square;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="rect36610-9"
+       width="32"
+       height="32"
+       x="0"
+       y="0"
+       ry="5.423141" />
+    <rect
+       style="fill:url(#linearGradient37103);fill-opacity:1;stroke:#000000;stroke-width:0.998542;stroke-linecap:square;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="rect36610"
+       width="27.001459"
+       height="27.001457"
+       x="2.4992709"
+       y="2.4992709"
+       ry="4.5760221" />
+    <path
+       d="m 12.983104,19.6374 1.938939,-4.939761 H 16.90921 L 18.84815,19.6374 Z M 19.3033,14.697639 h 3.231324 v -1.83698 H 9.726934 v 1.83698 h 3.207952 L 10.995938,19.6374 H 6.2559767 v 1.836222 H 10.27779 l -2.2260621,5.759396 h 2.1785731 l 2.250164,-5.759396 h 7.277248 l 2.250172,5.759396 h 2.202681 l -2.250171,-5.759396 h 4.045922 V 19.6374 h -4.764078 z"
+       id="flowRoot3192"
+       fill="#ffffff"
+       style="stroke-width:0.60942" />
+    <path
+       id="path32641"
+       style="fill:#ffffff;stroke-width:0.681168;stroke-linecap:round;paint-order:markers fill stroke"
+       d="M 16.135875,4.1686182 4.0503514,12.168618 h 3.0213809 l 9.0641427,-5.9999998 9.22567,5.9980468 3.075224,-10e-7 z" />
+  </g>
+</svg>
