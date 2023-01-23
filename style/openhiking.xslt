@@ -8,6 +8,7 @@
 # SPDX-License-Identifier: GPL-3.0-only
 -->
   <xsl:include href="stylemenu.xslt" />
+  <xsl:include href="config.xslt" />
   <xsl:include href="config-priorities.xslt" />
   <xsl:include href="config-lines.xslt" />
 

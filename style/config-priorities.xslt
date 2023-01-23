@@ -171,10 +171,9 @@
 <xsl:variable name="pr-label-transportation">-10</xsl:variable>
 <xsl:variable name="pr-label-wilderness">-10</xsl:variable>
 
-
-
 <!-- Priority -20 -->
 <xsl:variable name="pr-hiking-symbols">-20</xsl:variable>
 <xsl:variable name="pr-hiking-symbols-minor">-21</xsl:variable>
 <xsl:variable name="pr-drift">-20</xsl:variable>
+<xsl:variable name="pr-label-contour-ele">-21</xsl:variable>
 </xsl:stylesheet>

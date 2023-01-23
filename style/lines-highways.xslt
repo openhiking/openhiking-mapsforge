@@ -21,7 +21,7 @@
         </rule>
         <rule e="way" k="highway" v="via_ferrata" zoom-min="{$zm-ferrata}">
             <line stroke="{$lc-ferrata}" stroke-width="0.2" stroke-dasharray="0.4,0.6" scale="all"/>
-            <line stroke="{$lc-ferrata}" stroke-width="0.9" stroke-linecap="butt" stroke-dasharray="0.2,0.8" scale="all"/>
+            <line stroke="{$lc-ferrata}" stroke-width="0.9" stroke-linecap="butt" stroke-dasharray="0,0.1,0.2,0.7" scale="all"/>
         </rule>  
         <rule e="way" k="highway" v="steps" zoom-min="{$zm-steps}">
             <line stroke="{$lc-steps}" stroke-width="{$lw-steps}" stroke-dasharray="2,2" stroke-linecap="butt"/>          

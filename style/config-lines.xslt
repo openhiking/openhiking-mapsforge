@@ -136,8 +136,4 @@
 <xsl:variable name="da-embankment">0.1,2</xsl:variable>
 <xsl:variable name="da-restricted">0.08,1.8</xsl:variable>
 
-
-<xsl:variable name="symbolPath">file:/icons</xsl:variable>
-<xsl:variable name="hikingSymbolPath">file:/hiking</xsl:variable>
-
 </xsl:stylesheet>

@@ -37,28 +37,28 @@
   <rule e="way" k="wetland" v="reedbed">
       <area fill="{$wetland-color}"/>      
       <rule e="way" k="*" v="*" zoom-max="15">
-        <area src="file:/patterns/reedbed.svg" symbol-height="16"/>
+        <area src="{$patternPath}/reedbed.svg" symbol-height="16"/>
       </rule>
       <rule e="way" k="*" v="*" zoom-min="16">
-        <area src="file:/patterns/reedbed.svg" symbol-height="32"/>
+        <area src="{$patternPath}/reedbed.svg" symbol-height="32"/>
       </rule>
   </rule>
   <rule e="way" k="wetland" v="swamp">
       <area fill="#A1E976"/>  
       <rule e="way" k="*" v="*" zoom-max="15">
-        <area src="file:/patterns/swamp.svg" symbol-height="16"/>
+        <area src="{$patternPath}/swamp.svg" symbol-height="16"/>
       </rule>
       <rule e="way" k="*" v="*" zoom-min="16">
-        <area src="file:/patterns/swamp.svg" symbol-height="32"/>
+        <area src="{$patternPath}/swamp.svg" symbol-height="32"/>
       </rule>
   </rule>
   <rule e="way" k="wetland" v="~">
       <area fill="{$wetland-color}"/> 
       <rule e="way" k="*" v="*" zoom-max="15">
-        <area src="file:/patterns/wetland.svg" symbol-height="16"/>
+        <area src="{$patternPath}/wetland.svg" symbol-height="16"/>
       </rule>
       <rule e="way" k="*" v="*" zoom-min="16">
-        <area src="file:/patterns/wetland.svg" symbol-height="32"/>
+        <area src="{$patternPath}/wetland.svg" symbol-height="32"/>
       </rule>
   </rule>
 </rule>
@@ -66,7 +66,7 @@
 <rule e="way" k="natural" v="marsh">
   <rule cat="all" e="way" k="*" v="*">
       <area fill="{$wetland-color}"/>    
-      <area src="file:/patterns/wetland.svg" symbol-height="30"/>
+      <area src="{$patternPath}/wetland.svg" symbol-height="30"/>
   </rule>
 </rule>
 

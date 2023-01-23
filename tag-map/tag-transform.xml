@@ -711,16 +711,11 @@
 		<name>Shops </name>
 		<description>Set building default</description>
 		<match type="any" mode="and">
-			<match>
-				<tag k="shop" v=".*"/>
-			</match>
-			<match type="any" mode="or">
-				<tag k="building" v="yes"/>
-				<notag k="building" v=".*"/>
-			</match>
+			<tag k="shop" v=".*"/>
+			<tag k="building" v="yes"/>
         </match>                         
 		<output>
-			<copy-unmatched/>
+			<copy-all/>
 			<tag k="building" v="shop"/>
 		</output>
 	</translation>
