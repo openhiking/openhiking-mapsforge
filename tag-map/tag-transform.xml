@@ -444,6 +444,24 @@
 		</output>
 	</translation>	
 	<translation>
+		<name>Water well </name>
+		<description>Remove private or powered water wells</description>
+		<match type="any" mode="and">
+            <match>
+                <tag k="man_made" v="water_well"/>
+            </match>
+            <match type="any" mode="or">
+				<tag k="access" v="no"/> 
+				<tag k="access" v="private"/>
+				<tag k="access" v="customers"/>
+				<tag k="pump" v="powered"/>
+            </match>   
+        </match>                         
+		<output>
+			<copy-unmatched/>
+		</output>
+	</translation>
+	<translation>
 		<name>Crane well </name>
 		<description>from water tap</description>
 		<match type="any" mode="and">
@@ -672,7 +690,40 @@
 			<copy-unmatched/>
 		</output>
 	</translation>
-
+	<translation>
+		<name>Recreation ground </name>
+		<description>Remove double tagging</description>
+		<match type="any" mode="and">
+            <match>
+                <tag k="landuse" v="recreation_ground"/>
+            </match>
+            <match type="any" mode="or">
+				<tag k="leisure" v="park"/> 
+				<tag k="tourism" v="museum"/>
+            </match>   
+        </match>                         
+		<output>
+			<copy-unmatched/>
+			<tag k="landuse" v="recreation_ground"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Shops </name>
+		<description>Set building default</description>
+		<match type="any" mode="and">
+			<match>
+				<tag k="shop" v=".*"/>
+			</match>
+			<match type="any" mode="or">
+				<tag k="building" v="yes"/>
+				<notag k="building" v=".*"/>
+			</match>
+        </match>                         
+		<output>
+			<copy-unmatched/>
+			<tag k="building" v="shop"/>
+		</output>
+	</translation>
 	<translation>
 		<name>Remove entrances </name>
 		<description>if tagged as gates</description>
@@ -698,7 +749,6 @@
                 <tag k="amenity" v="bench"/>  
 				<tag k="amenity" v="drinking_water"/>
                 <tag k="amenity" v="fuel"/>            
-                <tag k="amenity" v="parking"/> 
 				<tag k="amenity" v="recycling"/>                     
                 <tag k="amenity" v="shelter"/>
 				<tag k="amenity" v="toilets"/>
@@ -734,6 +784,7 @@
 				<tag k="ownership" v="private"/>
             </match>
             <match type="any" mode="or">
+                <tag k="amenity" v="parking"/> 			
 				<tag k="amenity" v="public_bath"/> 
 				<tag k="amenity" v="spa"/>
 				<tag k="leisure" v="beach_resort"/>

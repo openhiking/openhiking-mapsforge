@@ -37,7 +37,7 @@
     </rule>
 </rule>
 
-<rule e="node" k="natural" v="rock" zoom-min="16">
+<rule e="node" k="natural" v="rock" zoom-min="15">
     <symbol id="cliff" src="{$symbolPath}/rock.svg" priority="{$pr-rock}"/>
     <rule e="any" k="*" v="*" >
             <caption fill="#7b0000" font-size="10" font-style="bold" k="name" position="below"

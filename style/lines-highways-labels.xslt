@@ -28,10 +28,10 @@
             <pathText k="name" dy="0.5" font-style="bold" font-size="11" stroke="#FFFFFF" stroke-width="3" repeat-gap="200"/>
         </rule>
         <rule e="way" k="highway" v="trunk" zoom-min="11">
-            <caption k="ref" font-style="bold" font-size="9" fill="#FFFFFF" stroke="#006600" stroke-width="4" />       
+            <caption k="ref" font-style="bold" font-size="9" fill="#FFFFFF" stroke="#1076BA" stroke-width="4" />       
         </rule>
         <rule e="way" k="highway" v="motorway" zoom-min="11">
-            <caption k="ref" font-style="bold" font-size="9" fill="#FFFFFF" stroke="#000066" stroke-width="4" />        
+            <caption k="ref" font-style="bold" font-size="9" fill="#FFFFFF" stroke="#1076BA" stroke-width="4" />        
         </rule>
     </rule>
 </rule>    

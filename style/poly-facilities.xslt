@@ -108,7 +108,7 @@
     <area fill="#F0E8E0" />
   </rule>
 
-  <rule e="way" k="amenity" v="school|childcare" closed="yes">
+  <rule e="way" k="amenity" v="school|childcare" closed="yes">  
     <area fill="#E0ECD3" stroke="#676a3f" stroke-width="1" scale="none"/>
     <rule e="way" k="*" v="*" zoom-min="16">
       <caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />

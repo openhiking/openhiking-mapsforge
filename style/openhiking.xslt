@@ -14,6 +14,7 @@
   <xsl:include href="poly-landuse.xslt" />
   <xsl:include href="poly-water.xslt" />
   <xsl:include href="poly-facilities.xslt" />
+  <xsl:include href="poly-highways.xslt" />
   <xsl:include href="poly-sport.xslt" />
   <xsl:include href="poly-buildings.xslt" />
   <xsl:include href="poly-naming.xslt" />
@@ -22,6 +23,7 @@
   <xsl:include href="lines-admin.xslt" />
   <xsl:include href="lines-waterways.xslt" />
   <xsl:include href="lines-natural.xslt" />
+  <xsl:include href="lines-protected.xslt" />
   <xsl:include href="lines-other.xslt" />
   <xsl:include href="lines-bridges.xslt" />
   <xsl:include href="lines-tunnels.xslt" />
@@ -44,6 +46,7 @@
   <xsl:include href="points-food.xslt" />
   <xsl:include href="points-healthcare.xslt" />
   <xsl:include href="points-historical.xslt" />
+  <xsl:include href="points-hiking.xslt" />
   <xsl:include href="points-industrial.xslt" />
   <xsl:include href="points-leisure.xslt" />
   <xsl:include href="points-military.xslt" />
@@ -65,6 +68,7 @@
   <xsl:call-template name="poly-landuse"/>
   <xsl:call-template name="poly-water"/>
   <xsl:call-template name="poly-facilities"/>
+  <xsl:call-template name="poly-highways"/>
   <xsl:call-template name="poly-sport"/>
   
   <xsl:call-template name="poly-buildings"/>  
@@ -72,10 +76,11 @@
 
   <xsl:call-template name="lines-contours"/>
   
-  <xsl:call-template name="lines-admin"/>
   <xsl:call-template name="lines-waterways"/>  
-  <xsl:call-template name="lines-natural"/>  
+  <xsl:call-template name="lines-natural"/> 
+  <xsl:call-template name="lines-protected"/> 
   <xsl:call-template name="lines-ski"/>
+
 
   <xsl:call-template name="lines-bridges"/> 
   <xsl:call-template name="lines-tunnels"/>
@@ -90,6 +95,7 @@
   <xsl:call-template name="lines-aerialways"/>
 
   <xsl:call-template name="lines-highways-labels"/>
+  <xsl:call-template name="lines-admin"/>>
 
   <xsl:call-template name="points-hiking-symbols-hu"/>  
   <xsl:call-template name="points-accomodation"/>
@@ -99,6 +105,7 @@
   <xsl:call-template name="points-financial"/>
   <xsl:call-template name="points-food"/>
   <xsl:call-template name="points-healthcare"/>
+  <xsl:call-template name="points-hiking"/>
   <xsl:call-template name="points-historical"/>
   <xsl:call-template name="points-industrial"/>
   <xsl:call-template name="points-leisure"/>

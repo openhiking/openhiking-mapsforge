@@ -18,7 +18,7 @@
         <name lang="hu" value="Szintvonalak" />
         <cat id="contours" />
     </layer>
-    <layer id="buildings" enabled="false" visible="false">
+    <layer id="buildings" enabled="true" visible="false">
         <name lang="en" value="Buildings" />
         <name lang="hu" value="Épületkontúrok" />
         <cat id="buildings" />

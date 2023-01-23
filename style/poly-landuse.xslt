@@ -23,9 +23,6 @@
 <rule e="way" k="landuse" v="garages">
   <area fill="#FADEA5" stroke="#000000" stroke-width="0.2" scale="none" />   
 </rule>
-<rule e="way" k="landuse" v="meadow">
-  <area fill="#d8fca4" scale="none"/>
-</rule>
 
 <rule e="way" k="landuse" v="forest"  zoom-min="10">
   <rule e="way" k="leaf_type" v="~|broadleaved" >
@@ -38,6 +35,10 @@
     <area fill="#A1E976"/>
   </rule>
 </rule>  
+
+<rule e="way" k="landuse" v="meadow">
+  <area fill="#d8fca4" scale="none"/>
+</rule>
 
 <rule e="way" k="natural" v="grass|grassland">
   <area fill="#d8fca4" scale="none"/>

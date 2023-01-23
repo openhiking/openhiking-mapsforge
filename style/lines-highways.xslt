@@ -7,7 +7,7 @@
   <rule e="way" k="area" v="~">
         <rule e="way" k="highway" v="footway|platform" zoom-min="{$zm-footway}">
             <line stroke="{$lc-footway}" stroke-width="{$lw-footway}" stroke-linecap="butt"/>          
-        </rule>
+        </rule>        
         <rule e="way" k="highway" v="path" zoom-min="{$zm-path}">
             <rule e="way" k="*" v="*" zoom-min="{$zm-path}" zoom-max="{$zm-deep - 1}"> 
                 <line stroke="{$lc-path}" stroke-width="{$lw-path}" stroke-dasharray="4,4"  stroke-linecap="butt"/>          

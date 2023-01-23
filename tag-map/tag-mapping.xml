@@ -528,8 +528,9 @@
         <osm-tag key="historic" value="ruins" zoom-appear="15"/>            
         <osm-tag key="historic" value="tomb" zoom-appear="15"/> 
         <osm-tag key="historic" value="tower" zoom-appear="15"/> 
-        <osm-tag key="man_made" value="watermill" zoom-appear="15"/> 
+        <osm-tag key="man_made" value="crane_well" zoom-appear="15"/> 
         <osm-tag key="man_made" value="water_well" zoom-appear="15"/> 
+        <osm-tag key="man_made" value="watermill" zoom-appear="15"/> 
         <osm-tag key="man_made" value="windmill" zoom-appear="15"/> 
 
         <osm-tag key="ruins" renderable="false" value="castle"/>
@@ -551,6 +552,8 @@
         <osm-tag key="fortification_type" renderable="false" value="limes"/> 
 
         <osm-tag key="memorial" renderable="false" value="plaque"/> 
+
+        <osm-tag key="pump" renderable="false" value="manual"/>
     </pois>
 
     <!-- ************************************************** 

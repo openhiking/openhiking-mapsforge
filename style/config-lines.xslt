@@ -32,7 +32,13 @@
 <xsl:variable name="zm-path2">17</xsl:variable>
 <xsl:variable name="zm-steps">15</xsl:variable>
 <xsl:variable name="zm-ferrata">15</xsl:variable>
+
+<xsl:variable name="zm-ferry">12</xsl:variable>
+
 <xsl:variable name="zm-deep">17</xsl:variable>
+<xsl:variable name="zm-level2">17</xsl:variable>
+<xsl:variable name="zm-level3">19</xsl:variable>
+
 
 <xsl:variable name="bc-motorway">#808080</xsl:variable>
 <xsl:variable name="bc-motorway_link">#808080</xsl:variable>
@@ -110,6 +116,7 @@
 <xsl:variable name="lw-embankment">0.1</xsl:variable>
 <xsl:variable name="lw-embankment2">1</xsl:variable>
 
+<xsl:variable name="lw-ferry">0.5</xsl:variable>
 <xsl:variable name="lw-rail">0.55</xsl:variable>
 <xsl:variable name="lw-rail-narrow">0.45</xsl:variable>
 
@@ -122,15 +129,13 @@
 <xsl:variable name="lw-restricted">1.5</xsl:variable>
 
 <xsl:variable name="lw-protected-area">1.1</xsl:variable>
-<xsl:variable name="lw-protected-area-l2">0.8</xsl:variable>
+<xsl:variable name="lw-protected-area-l2">0.7</xsl:variable>
+<xsl:variable name="lw-protected-area-l3">0.5</xsl:variable>
 
 <xsl:variable name="da-tunnel">16,16</xsl:variable>
 <xsl:variable name="da-embankment">0.1,2</xsl:variable>
 <xsl:variable name="da-restricted">0.08,1.8</xsl:variable>
 
-<xsl:variable name="surface-paved">paved|asphalt|chipseal|concrete|paving_stones|metal|wood</xsl:variable>
-<xsl:variable name="surface-unpaved-hard">fine_gravel|compacted|pebblestone|rock|grass_paver</xsl:variable>
-<xsl:variable name="surface-unpaved-soft">unpaved|gravel|ground|earth|dirt|grass|mud|sand</xsl:variable>
 
 <xsl:variable name="symbolPath">file:/icons</xsl:variable>
 <xsl:variable name="hikingSymbolPath">file:/hiking</xsl:variable>

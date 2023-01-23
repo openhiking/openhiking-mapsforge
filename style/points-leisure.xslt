@@ -12,8 +12,13 @@
 <xsl:template name="points-leisure">
 
 <rule  e="any" k="tourism" v="zoo" zoom-min="14">
-  <symbol id="zoo" src="{$symbolPath}/zoo.svg" symbol-width="24" priority="{$pr-zoo}"/>
-  <rule e="node" k="*" v="*" zoom-min="16">
+  <rule  e="any" k="*" v="*" zoom-max="15">
+    <symbol id="zoo" src="{$symbolPath}/zoo.svg" symbol-width="22" priority="{$pr-zoo}"/>
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="16"> 
+    <symbol id="zoo" src="{$symbolPath}/zoo.svg" symbol-width="26" priority="{$pr-zoo}"/>
+  </rule>     
+  <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="zoo" 
     font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
   </rule>
@@ -24,7 +29,12 @@
 </rule>
 
 <rule  e="any" k="amenity" v="public_bath|spa" zoom-min="14">
-  <symbol id="spa" src="{$symbolPath}/spa.svg" symbol-width="24" priority="{$pr-spa}"/>
+  <rule  e="any" k="*" v="*" zoom-max="15">
+    <symbol id="spa" src="{$symbolPath}/spa.svg" symbol-width="24" priority="{$pr-spa}"/>
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="16"> 
+    <symbol id="spa" src="{$symbolPath}/spa.svg" symbol-width="26" priority="{$pr-spa}"/>
+  </rule>     
   <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="spa" 
     font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>

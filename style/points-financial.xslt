@@ -10,9 +10,9 @@
 -->
 
 <xsl:template name="points-financial">
-<rule  e="any" k="amenity" v="bank" zoom-min="14">
+<rule  e="any" k="amenity" v="bank" zoom-min="15">
         <symbol id="bank" src="{$symbolPath}/bank.svg" symbol-width="20" priority="{$pr-bank}"/>
-        <rule e="any" k="*" v="*" >
+        <rule e="any" k="*" v="*" zoom-min="16">
             <caption k="name" symbol-id="bank" 
             font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-financial}"/>
         </rule>       

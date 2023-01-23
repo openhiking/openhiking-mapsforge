@@ -19,7 +19,7 @@
 </rule>
 
 <rule e="way" k="route" v="ferry">
-	<line stroke="#78FCF8" stroke-width="0.5" stroke-dasharray="13,3" stroke-linecap="butt" />
+	<line stroke="#78FCF8" stroke-width="{$lw-ferry}" stroke-dasharray="13,3" stroke-linecap="butt" />
 </rule>
 
 <rule cat="power" e="way" k="power" v="*">
