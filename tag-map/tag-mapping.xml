@@ -254,7 +254,7 @@
         <osm-tag key='contour_ext' value='elevation_medium' zoom-appear='12'/> 
         <osm-tag key='contour_ext' value='elevation_minor' zoom-appear='14'/>    
 
-        <osm-tag key="ele" renderable="false" value="%s"/>    
+        <osm-tag key="ele" renderable="false" value="%f"/>    
     </ways>
     <!-- ************************************************** 
                 N A T U R A L   L I N E S

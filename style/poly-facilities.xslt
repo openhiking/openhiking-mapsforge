@@ -183,7 +183,7 @@
   </rule>
 
 <rule e="way" k="amenity" v="parking" zoom-min="15">
-    <area fill="#FFCAD5" />
+    <area fill="#ffe4ea" stroke="#FFCAD5" stroke-width="1" scale="none" />
 </rule>
 
 
