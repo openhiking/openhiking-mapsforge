@@ -117,23 +117,26 @@
         <osm-tag key="highway" value="via_ferrata" zoom-appear="14"/>
 
         <!-- Trail color -->
-        <osm-tag key="trail_color" value="blue" zoom-appear="12"/>
+        <osm-tag key="trail_color" value="%s" zoom-appear="12"/>
+        <!-- 
         <osm-tag key="trail_color" value="red" zoom-appear="12"/>
         <osm-tag key="trail_color" value="yellow" zoom-appear="12"/>
         <osm-tag key="trail_color" value="green" zoom-appear="12"/>
         <osm-tag key="trail_color" value="purple" zoom-appear="12"/>
+        -->
 
         <!-- Surface -->
+        <!-- 
         <osm-tag key="surface" equivalent-values="chipseal,concrete,paving_stones,metal,wood,sett,cobblestone" renderable="false" value="paved"/>
         <osm-tag key="surface" equivalent-values="fine_gravel,pebblestone,rock,grass_paver" renderable="false" value="compacted"/>
         <osm-tag key="surface" equivalent-values="gravel,ground,earth,dirt,mud" renderable="false" value="unpaved"/>        
+        -->
 
         <osm-tag key="surface" renderable="false" value="sand"/>
         <osm-tag key="surface" renderable="false" value="snow"/>
         <osm-tag key="surface" renderable="false" value="asphalt"/>
         <osm-tag key="surface" equivalent-values="artificial_turf" renderable="false" value="grass"/> 
         <osm-tag key="surface" equivalent-values="tartan,carpet" renderable="false" value="clay"/> 
-
 
         <!-- Tracktype -->
         <osm-tag key="tracktype" renderable="false" value="grade1"/>
@@ -233,11 +236,13 @@
     ************************************************** -->
     <ways>
         <osm-tag key="admin_level" value="2" force-polygon-line="true" zoom-appear="6"/>
-        <osm-tag key="boundary" value="national_park" force-polygon-line="true" zoom-appear="10"/>
-        <osm-tag key='boundary' value='protected_area'  force-polygon-line="true" zoom-appear='10'/>
-        <osm-tag key='boundary' value='protected_landscape_area'  force-polygon-line="true" zoom-appear='10'/>        
-        <osm-tag key='leisure' value='nature_reserve'  force-polygon-line="true" zoom-appear='10'/>     
+        <osm-tag key="boundary" value="national_park" force-polygon-line="true" zoom-appear="13"/>
+        <osm-tag key='boundary' value='protected_area'  force-polygon-line="true" zoom-appear='13'/>
+        <osm-tag key='boundary' value='protected_landscape_area'  force-polygon-line="true" zoom-appear='13'/>        
 
+        <!-- 
+        <osm-tag key='leisure' value='nature_reserve'  force-polygon-line="true" zoom-appear='10'/>             
+        -->
         <osm-tag key="boundary" value="administrative" renderable="false" />
         <osm-tag key="protect_class" renderable="false" force-polygon-line="true" value="1"/>
         <osm-tag key="protect_class" renderable="false" force-polygon-line="true" value="2"/>
@@ -250,16 +255,18 @@
     <ways>
         <osm-tag key='contour_ext' value='elevation_major' zoom-appear='11'/> 
         <osm-tag key='contour_ext' value='elevation_medium' zoom-appear='12'/> 
-        <osm-tag key='contour_ext' value='elevation_minor' zoom-appear='14'/>        
+        <osm-tag key='contour_ext' value='elevation_minor' zoom-appear='14'/>    
+
+        <osm-tag key="ele" renderable="false" value="%s"/>    
     </ways>
     <!-- ************************************************** 
                 N A T U R A L   L I N E S
     ************************************************** -->
     <ways>
-        <osm-tag key='natural' value='arete' zoom-appear='10'/>             
-        <osm-tag key='natural' value='cliff' zoom-appear='10'/>     
-        <osm-tag key='natural' value='ridge' zoom-appear='10'/>     
-        <osm-tag key='natural' value='valley' zoom-appear='10'/>     
+        <osm-tag key='natural' value='arete' zoom-appear='12'/>             
+        <osm-tag key='natural' value='cliff' zoom-appear='12'/>     
+        <osm-tag key='natural' value='ridge' zoom-appear='12'/>     
+        <osm-tag key='natural' value='valley' zoom-appear='12'/>     
     </ways>
 
     <!-- ************************************************** 
@@ -333,7 +340,9 @@
         <osm-tag key="tourism" value="wilderness_hut" zoom-appear="14"/>
 
         <osm-tag key="camp_site" value="basic" renderable="false" />
+        <!-- 
         <osm-tag key="backcountry" value="yes" renderable="false" />        
+        -->
     </pois>
 
     <!-- ************************************************** 
@@ -480,7 +489,6 @@
         <osm-tag key="historic" value="castle" label-position="true" zoom-appear="14"/>        
         <osm-tag key="historic" value="church" label-position="true" zoom-appear="15"/>  
         <osm-tag key="historic" value="city_gate" label-position="true" zoom-appear="15"/>  
-        <osm-tag key="historic" value="farm" label-position="true" zoom-appear="15"/>  
         <osm-tag key="historic" value="fort" label-position="true" zoom-appear="14"/>      
         <osm-tag key="historic" value="manor" label-position="true" zoom-appear="15"/>    
         <osm-tag key="historic" value="memorial" label-position="true" zoom-appear="15"/>
@@ -501,7 +509,6 @@
 
         <osm-tag key="castle_type" renderable="false" value="palace"/>     
         <osm-tag key="castle_type" renderable="false" value="stately"/>             
-        <osm-tag key="castle_type" renderable="false" value="manor"/>
 
         <osm-tag key="archaeological_site" renderable="false" value="fortification"/> 
         <osm-tag key="archaeological_site" renderable="false" value="tumulus"/> 
@@ -519,7 +526,6 @@
         <osm-tag key="historic" value="castle" zoom-appear="14"/>        
         <osm-tag key="historic" value="church" zoom-appear="15"/>  
         <osm-tag key="historic" value="city_gate" zoom-appear="15"/>  
-        <osm-tag key="historic" value="farm" zoom-appear="15"/>  
         <osm-tag key="historic" value="fort" zoom-appear="14"/>      
         <osm-tag key="historic" value="manor" zoom-appear="15"/>    
         <osm-tag key="historic" value="memorial" zoom-appear="15"/>
@@ -544,7 +550,6 @@
 
         <osm-tag key="castle_type" renderable="false" value="palace"/>     
         <osm-tag key="castle_type" renderable="false" value="stately"/>             
-        <osm-tag key="castle_type" renderable="false" value="manor"/>
 
         <osm-tag key="archaeological_site" renderable="false" value="fortification"/> 
         <osm-tag key="archaeological_site" renderable="false" value="tumulus"/> 

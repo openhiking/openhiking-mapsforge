@@ -46,7 +46,7 @@
 
 <rule e="way" k="tourism" v="zoo" closed="yes">
   <area fill="#CFFF9E" stroke="#1f7d18" stroke-width="1" scale="none"/>
-<rule e="way" k="*" v="*" zoom-max="14">
+  <rule e="way" k="*" v="*" zoom-max="14">
     <area src="file:/patterns/zoo.svg" symbol-height="20"/>
   </rule>
   <rule e="way" k="*" v="*" zoom-min="15">
