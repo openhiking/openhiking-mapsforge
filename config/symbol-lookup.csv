@@ -1,0 +1,18 @@
+O,blue:white:::M:blue,9,blue,hu:km
+O,red:white:::M:red,9,red,hu:pm
+O,yellow:white:::M:yellow,9,yellow,hu:sm
+O,green:white:::M:green,9,green,hu:zm
+O,purple:white:::M:purple,9,purple,hu:lm
+O,:white:orange_dot:::,7,orange,osmc:white:orange_dot
+O,:yellow:blue_dot,6,blue,osmc:yellow:blue_dot
+O,::white:blue_rectangle,7,blue,osmc:white:blue_rectangle
+O,red:white: :T:red,9,red,no:t
+O,blue:blue::E4:yellow,-1,,
+J,t,10,blue,hu:t
+J,zut,-1,,
+J,sgy,-1,,
+P,red:white:red_bar,1,red,osmc:white:red_bar
+P,red:white:red_circle,1,red,osmc:white:red_circle
+P,red:white:red_stripe,1,red,osmc:white:red_stripe
+P,red:red:white_bar,1,red,osmc:red:white_bar
+P,red:red:white_stripe,1,red,osmc:red:white_stripe
