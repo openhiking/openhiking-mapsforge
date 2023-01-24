@@ -117,6 +117,7 @@
         <osm-tag key="highway" value="via_ferrata" zoom-appear="14"/>
 
         <!-- Trail color -->
+        <osm-tag key="trail_color" value="blue" zoom-appear="12"/>
         <osm-tag key="trail_color" value="red" zoom-appear="12"/>
         <osm-tag key="trail_color" value="yellow" zoom-appear="12"/>
         <osm-tag key="trail_color" value="green" zoom-appear="12"/>
