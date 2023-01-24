@@ -1,5 +1,5 @@
 # Input data
 OSM_COUNTRY_LIST=hungary slovakia
-CONTOUR_LINES=contour-mf-hungary-v10.o5m
+CONTOUR_LINES=contour-ce-alos-10-v54.o5m
 BOUNDARY_POLYGON=hungary.poly
 GENERATE_HIKING_SYMBOLS=yes
