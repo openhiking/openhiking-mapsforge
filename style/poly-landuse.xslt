@@ -130,9 +130,7 @@
 </rule>
 
 <rule  e="way" k="natural" v="heath">
-  <rule cat="all" e="way" k="*" v="*">
-    <area fill="#d8fca4" scale="none"/>
-  </rule>
+    <area fill="#eef9a8" scale="none"/>
 </rule>
 
 <rule  e="way" k="natural" v="scree">

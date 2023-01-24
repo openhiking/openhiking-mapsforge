@@ -112,6 +112,7 @@
 <xsl:variable name="lw-path">0.4</xsl:variable>
 <xsl:variable name="lw-path2">0.3</xsl:variable>
 <xsl:variable name="lw-steps">0.6</xsl:variable>
+
 <xsl:variable name="lw-tunnel">0.2</xsl:variable>
 <xsl:variable name="lw-embankment">0.1</xsl:variable>
 <xsl:variable name="lw-embankment2">1</xsl:variable>

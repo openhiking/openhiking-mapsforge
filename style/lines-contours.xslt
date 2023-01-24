@@ -20,14 +20,19 @@
     <line stroke="#FFDB8888" stroke-width="0.3" stroke-linecap="butt" scale="none"/>
   </rule>
   <rule e="way" k="contour_ext" v="elevation_major" zoom-min="14" zoom-max="15">
-    <pathText k="ele" font-size="7" font-style="bold" fill="#A86868" stroke="#FFFFFF" stroke-width="1" repeat="true" repeat-gap="250" priority="{$pr-label-contour-ele}"/>
+    <pathText k="ele" font-size="8" font-style="bold" fill="#A86868" stroke="#FFFFFF" stroke-width="1" repeat="true" repeat-gap="250" priority="{$pr-label-contour-ele}"/>
   </rule>
-  <rule e="way" k="contour_ext" v="elevation_major" zoom-min="16">
-    <pathText k="ele" font-size="9" font-style="bold" fill="#A86868" stroke="#FFFFFF" stroke-width="1" repeat="true" repeat-gap="300" priority="{$pr-label-contour-ele}"/>
+  <rule e="way" k="contour_ext" v="elevation_major|elevation_medium" zoom-min="16" zoom-max="16">
+    <pathText k="ele" font-size="9" font-style="bold" fill="#A86868" stroke="#FFFFFF" stroke-width="1.2" repeat="true" repeat-gap="250" priority="{$pr-label-contour-ele}"/>
   </rule>
-  <rule e="way" k="contour_ext" v="elevation_medium" zoom-min="15">
+  <rule e="way" k="contour_ext" v="elevation_major|elevation_medium" zoom-min="17">
+    <pathText k="ele" font-size="10" font-style="bold" fill="#A86868" stroke="#FFFFFF" stroke-width="1.3" repeat="true" repeat-gap="300" priority="{$pr-label-contour-ele}"/>
+  </rule>
+  <!-- 
+  <rule e="way" k="contour_ext" v="elevation_medium" zoom-min="17">
     <pathText k="ele" font-size="8" font-style="bold" fill="#A86868" stroke="#FFFFFF" stroke-width="1" repeat="true" repeat-gap="350" priority="{$pr-label-contour-ele}"/>
   </rule>
+  -->
 </rule>
 
 

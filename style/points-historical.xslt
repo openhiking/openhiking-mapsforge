@@ -155,6 +155,14 @@
   </rule>
 </rule>
 
+<rule  e="any" k="man_made" v="crane_well" zoom-min="16">
+  <rule  e="any" k="*" v="*" zoom-max="17">
+    <symbol id="crane_well" src="{$symbolPath}/crane_well.svg" symbol-width="26" priority="{$pr-label-historical}"/>
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="18"> 
+    <symbol id="crane_well" src="{$symbolPath}/crane_well.svg" symbol-width="28" priority="{$pr-label-historical}"/>
+  </rule>     
+</rule>
 
 
 

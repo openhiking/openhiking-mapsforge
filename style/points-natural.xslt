@@ -92,38 +92,69 @@
 </rule>
 
 <rule e="node" k="natural" v="spring" >
-    <rule e="node" k="drinking_water" v="yes" zoom-min="14">
+    <rule e="node" k="seasonal" v="yes" zoom-min="14">
         <rule  e="any" k="*" v="*" zoom-max="15">
-            <symbol id="spring" src="{$symbolPath}/spring_drinking.svg" symbol-width="16" priority="{$pr-spring-drinking}"/>    
+            <symbol id="spring" src="{$symbolPath}/spring_seasonal.svg" symbol-width="12" priority="{$pr-spring}"/>    
         </rule> 
         <rule  e="any" k="*" v="*" zoom-min="16">
-            <symbol id="spring" src="{$symbolPath}/spring_drinking.svg" symbol-width="18" priority="{$pr-spring-drinking}"/>    
+            <symbol id="spring" src="{$symbolPath}/spring_seasonal.svg" symbol-width="15" priority="{$pr-spring}"/>    
         </rule>                         
+    </rule>
+    <rule e="node" k="seasonal" v="~" >
+        <rule e="node" k="drinking_water" v="yes" zoom-min="14">
+            <rule  e="any" k="*" v="*" zoom-max="15">
+                <symbol id="spring" src="{$symbolPath}/spring_drinking.svg" symbol-width="16" priority="{$pr-spring-drinking}"/>    
+            </rule> 
+            <rule  e="any" k="*" v="*" zoom-min="16" zoom-max="17">
+                <symbol id="spring" src="{$symbolPath}/spring_drinking.svg" symbol-width="18" priority="{$pr-spring-drinking}"/>    
+            </rule>     
+            <rule  e="any" k="*" v="*" zoom-min="18">
+                <symbol id="spring" src="{$symbolPath}/spring_drinking.svg" symbol-width="20" priority="{$pr-spring-drinking}"/>    
+            </rule>                         
+        </rule>        
+        <rule e="node" k="drinking_water" v="no" zoom-min="14">
+            <rule  e="any" k="*" v="*" zoom-max="15">
+                <symbol id="spring" src="{$symbolPath}/spring_non_drinking.svg" symbol-width="15" priority="{$pr-spring}"/>    
+            </rule> 
+            <rule  e="any" k="*" v="*" zoom-min="16" zoom-max="17">
+                <symbol id="spring" src="{$symbolPath}/spring_non_drinking.svg" symbol-width="17" priority="{$pr-spring}"/>    
+            </rule>   
+            <rule  e="any" k="*" v="*" zoom-min="18">
+                <symbol id="spring" src="{$symbolPath}/spring_non_drinking.svg" symbol-width="19" priority="{$pr-spring}"/>    
+            </rule>                                                      
+        </rule>        
+        <rule e="node" k="drinking_water" v="~" zoom-min="14">
+            <rule  e="any" k="*" v="*" zoom-max="15">
+                <symbol id="spring" src="{$symbolPath}/spring.svg" symbol-width="12" priority="{$pr-spring}"/>    
+            </rule> 
+            <rule  e="any" k="*" v="*" zoom-min="16">
+                <symbol id="spring" src="{$symbolPath}/spring.svg" symbol-width="15" priority="{$pr-spring}"/>    
+            </rule>                         
+        </rule>   
     </rule>        
-    <rule e="node" k="drinking_water" v="no" zoom-min="14">
-        <rule  e="any" k="*" v="*" zoom-max="15">
-            <symbol id="spring" src="{$symbolPath}/spring_non_drinking.svg" symbol-width="16" priority="{$pr-spring}"/>    
-        </rule> 
-        <rule  e="any" k="*" v="*" zoom-min="16">
-            <symbol id="spring" src="{$symbolPath}/spring_non_drinking.svg" symbol-width="18" priority="{$pr-spring}"/>    
-        </rule>                         
-    </rule>        
-    <rule e="node" k="drinking_water" v="~" zoom-min="14">
-        <rule  e="any" k="*" v="*" zoom-max="15">
-            <symbol id="spring" src="{$symbolPath}/spring.svg" symbol-width="16" priority="{$pr-spring}"/>    
-        </rule> 
-        <rule  e="any" k="*" v="*" zoom-min="16">
-            <symbol id="spring" src="{$symbolPath}/spring.svg" symbol-width="18" priority="{$pr-spring}"/>    
-        </rule>                         
-    </rule>   
     <rule e="any" k="*" v="*" zoom-min="15">
         <caption fill="#0000f8" font-size="11" font-style="bold"  k="name" position="right"
             stroke="#FFFFFF" stroke-width="2.0" symbol-id="spring" priority="{$pr-label-spring}"/>
     </rule>
 </rule>
 
+<rule e="node" k="natural" v="mineral_spring" zoom-min="14">
+    <rule  e="any" k="*" v="*" zoom-max="15">
+        <symbol id="spring" src="{$symbolPath}/mineral_spring.svg" symbol-width="16" priority="{$pr-spring}"/>    
+    </rule> 
+    <rule  e="any" k="*" v="*" zoom-min="16">
+        <symbol id="spring" src="{$symbolPath}/mineral_spring.svg" symbol-width="18" priority="{$pr-spring}"/>    
+    </rule>                         
+</rule>
+
+
 <rule e="node" k="natural" v="hot_spring" zoom-min="14">
-    <symbol id="hotspring" src="{$symbolPath}/hot_spring.svg" symbol-width="16" priority="{$pr-spring}"/>    
+    <rule  e="any" k="*" v="*" zoom-max="15">
+        <symbol id="hotspring" src="{$symbolPath}/hot_spring.svg" symbol-width="12" priority="{$pr-spring}"/>    
+    </rule> 
+    <rule  e="any" k="*" v="*" zoom-min="16">
+        <symbol id="hotspring" src="{$symbolPath}/hot_spring.svg" symbol-width="15" priority="{$pr-spring}"/>    
+    </rule>                         
     <rule e="any" k="*" v="*" zoom-min="15">
         <caption fill="#0000f8" font-size="12" font-style="bold"  k="name" 
                 stroke="#FFFFFF" stroke-width="2.0" symbol-id="hotspring" priority="{$pr-label-spring}"/>
@@ -131,11 +162,16 @@
 </rule>
 
 <rule  e="node" k="waterway" v="waterfall" zoom-min="14">
-  <symbol id="waterfall" src="{$symbolPath}/waterfall.svg" symbol-width="18" priority="{$pr-waterfall}"/>
-  <rule e="node" k="*" v="*" zoom-min="16">
+    <rule  e="any" k="*" v="*" zoom-max="15">
+        <symbol id="waterfall" src="{$symbolPath}/waterfall.svg" symbol-width="18" display="always" priority="{$pr-waterfall}"/>
+    </rule> 
+    <rule  e="any" k="*" v="*" zoom-min="16">
+        <symbol id="waterfall" src="{$symbolPath}/waterfall.svg" symbol-width="20" display="always" priority="{$pr-waterfall}"/>
+    </rule>                         
+    <rule e="node" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="waterfall" position="below" 
     font-style="bold" font-size="10" fill="#4040ff" stroke="#ffffff" stroke-width="2" priority="{$pr-label-natural}"/>
-  </rule>
+    </rule>
 </rule>
 
 <!-- 

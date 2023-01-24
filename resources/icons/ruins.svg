@@ -7,41 +7,11 @@
    viewBox="0 0 32.0 32.0"
    version="1.1"
    id="SVGRoot"
-   sodipodi:docname="ruins.svg"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview33145"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="px"
-     showgrid="true"
-     inkscape:zoom="16.9375"
-     inkscape:cx="15.97048"
-     inkscape:cy="16"
-     inkscape:window-width="1304"
-     inkscape:window-height="745"
-     inkscape:window-x="54"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1">
-    <inkscape:grid
-       type="xygrid"
-       id="grid33268" />
-  </sodipodi:namedview>
   <defs
      id="defs33140" />
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
      id="layer1">
     <path
        id="rect33275-0"
@@ -49,7 +19,7 @@
        d="m 2.9004916,5.9834897 c 0,7.3610733 0,14.7221453 0,22.0832193 8.6147714,0 17.2295414,0 25.8443124,0 0,-4.705614 0,-9.411229 0,-14.116843 -3.625134,0 -7.250265,0 -10.875399,0 0,-3.338844 0,-6.6776874 0,-10.0165317 -4.989637,0 -9.9792756,1e-7 -14.9689134,0 0,0.6833852 0,1.3667708 0,2.0501554 z" />
     <path
        id="rect33275"
-       style="fill:#5f5f5f;stroke:#000000;stroke-width:0.82317;stroke-linecap:square;paint-order:fill markers stroke;fill-opacity:1"
+       style="fill:#a5a5a5;stroke:#000000;stroke-width:0.82317;stroke-linecap:square;paint-order:fill markers stroke;fill-opacity:1"
        d="m 5.3135604,6.3726009 v 9.7713111 9.77131 H 15.94096 26.568358 v -9.77131 H 15.94096 V 6.3726009 Z" />
   </g>
 </svg>

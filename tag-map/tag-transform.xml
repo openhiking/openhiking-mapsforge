@@ -346,6 +346,23 @@
 		</output>
 	</translation>
 	<translation>
+		<name>Place-of-worship ruins </name>
+		<description>Remove active tagging</description>
+		<match type="any" mode="and">
+            <match>
+                <tag k="amenity" v="place_of_worship"/>
+            </match>
+            <match type="any" mode="or">
+				<tag k="ruins" v="yes"/> 
+				<tag k="historic" v="ruins"/>
+            </match>   
+        </match>                         
+		<output>
+			<copy-all/>
+			<tag k="amenity" v="abandoned"/>
+		</output>
+	</translation>
+	<translation>
 		<name>Archeological sites</name>
 		<description>Old site_type to archeological_site</description>
 		<match type="any" mode="and">
@@ -432,6 +449,22 @@
 		</output>
 	</translation>	
 	<translation>
+		<name>Mineral spring </name>
+		<description>simplification</description>
+		<match mode="and">
+			<match>
+				<tag k="natural" v="spring"/>
+			</match>
+			<match mode="or">
+				<tag k="water_characteristic" v="mineral"/>
+			</match>
+		</match>
+		<output>
+			<copy-all/>
+			<tag k="natural" v="mineral_spring"/>
+		</output>
+	</translation>	
+	<translation>
 		<name>Disused spring </name>
 		<description>modify to non-drinking</description>
 		<match mode="and">
@@ -440,7 +473,7 @@
 		<output>
 			<copy-unmatched/>
 			<tag k="natural" v="spring"/>
-			<tag k="drinking_water" v="no"/>
+			<tag k="seasonal" v="yes"/>
 		</output>
 	</translation>	
 	<translation>
@@ -490,7 +523,7 @@
 			<copy-all/>
 			<tag k="building" v="chapel"/>
 		</output>
-	</translation>
+	</translation>	
 	<translation>
 		<name>Bell towers </name>
 		<description>alternative tagging</description>
