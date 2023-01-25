@@ -79,6 +79,10 @@ ifneq (${MKG_MAKESYMBOLS},)
 MAKESYMBOLS=${MKG_MAKESYMBOLS}
 endif
 
+ifneq (${MKG_OSMOSIS},)
+OSMOSIS=${MKG_OSMOSIS}
+endif
+
 ifneq (${MKG_ZIP},)
 ZIP=${MKG_ZIP}
 endif
@@ -298,6 +302,7 @@ cleancache:
 
 test:
 	@echo $(DEL) $(MFMAP_DIR)$(PSEP)*
+	@echo $(OSMOSIS)
 
 
 

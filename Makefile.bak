@@ -79,6 +79,10 @@ ifneq (${MKG_MAKESYMBOLS},)
 MAKESYMBOLS=${MKG_MAKESYMBOLS}
 endif
 
+ifneq (${MKG_OSMOSIS},)
+OSMOSIS=${MKG_OSMOSIS}
+endif
+
 ifneq (${MKG_ZIP},)
 ZIP=${MKG_ZIP}
 endif
@@ -260,6 +264,13 @@ $(MAP_MASTERX_PBF_FP): $(MAP_MASTER_PBF_FP)
 
 $(MAP_MAPSFORGE_FP): $(MAP_MASTERX_PBF_FP)
 	$(OSMOSIS) --rb file=$< --mw tag-conf-file=$(MAP_TAG_MAP) --wb file=$@ $(MAP_WRITER_CONF) 
+
+transform: $(MAP_MASTERX_PBF_FP)
+	@echo "DONE"
+
+map: $(MAP_MAPSFORGE_FP)
+	@echo "DONE"
+
 
 
 zip:
