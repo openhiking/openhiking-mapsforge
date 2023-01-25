@@ -261,6 +261,13 @@ $(MAP_MASTERX_PBF_FP): $(MAP_MASTER_PBF_FP)
 $(MAP_MAPSFORGE_FP): $(MAP_MASTERX_PBF_FP)
 	$(OSMOSIS) --rb file=$< --mw tag-conf-file=$(MAP_TAG_MAP) --wb file=$@ $(MAP_WRITER_CONF) 
 
+transform: $(MAP_MASTERX_PBF_FP)
+	@echo "DONE"
+
+map: $(MAP_MAPSFORGE_FP)
+	@echo "DONE"
+
+
 
 zip:
 ifeq ($(OUTPUT_DIR),)
@@ -289,9 +296,8 @@ cleancache:
 	$(DEL) $(COMMON_DIR)$(PSEP)*.o5m
 
 
-
 test:
-	@echo $(MAP_MAPSFORGE_FP)
+	@echo $(DEL) $(MFMAP_DIR)$(PSEP)*
 
 
 

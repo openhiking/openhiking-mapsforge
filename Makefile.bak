@@ -190,6 +190,8 @@ MAP_TAG_MAP_FP=$(TAGMAP_DIR)$(PSEP)$(MAP_TAG_MAP)
 MAP_MASTERX_PBF=master$(MAP)x.pbf
 MAP_MASTERX_PBF_FP=$(MFMAP_DIR)$(PSEP)$(MAP_MASTERX_PBF)
 
+
+MAP_WRITER_CONF=tag-values=true preferred-languages=$(LANGUAGES)
 MAP_MAPSFORGE_FP=$(MFMAP_DIR)$(PSEP)$(MAPNAME).map
 
 ##############################################
@@ -254,8 +256,10 @@ merge-osmosis:  $(MAP_INP_OSM_PBF) $(MAP_INP_SUPP_PBF) $(MAP_INP_CONTOUR)
 	@echo "Merge completed"
 
 $(MAP_MASTERX_PBF_FP): $(MAP_MASTER_PBF_FP)
-	$(OSMOSIS) --rb file=$(MAP_MASTER_PBF_FP) --tag-transform file=$(MAP_TAG_TANSFORM_FP) --wb file=$(MAP_MASTERX_PBF_FP)
+	$(OSMOSIS) --rb file=$< --tag-transform file=$(MAP_TAG_TANSFORM_FP) --wb file=$@
 
+$(MAP_MAPSFORGE_FP): $(MAP_MASTERX_PBF_FP)
+	$(OSMOSIS) --rb file=$< --mw tag-conf-file=$(MAP_TAG_MAP) --wb file=$@ $(MAP_WRITER_CONF) 
 
 
 zip:
@@ -285,9 +289,8 @@ cleancache:
 	$(DEL) $(COMMON_DIR)$(PSEP)*.o5m
 
 
-
 test:
-	@echo $(MAP_MAPSFORGE_FP)
+	@echo $(DEL) $(MFMAP_DIR)$(PSEP)*
 
 
 
