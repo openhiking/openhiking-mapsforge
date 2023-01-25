@@ -122,6 +122,8 @@
         <osm-tag key="trail_color" value="yellow" zoom-appear="12"/>
         <osm-tag key="trail_color" value="green" zoom-appear="12"/>
         <osm-tag key="trail_color" value="purple" zoom-appear="12"/>
+        <osm-tag key="trail_color" value="orange" zoom-appear="12"/>
+        <osm-tag key="trail_color" value="black" zoom-appear="12"/>
 
         <!-- Surface -->
         <!-- 

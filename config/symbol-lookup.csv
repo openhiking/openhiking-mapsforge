@@ -11,8 +11,13 @@ O,blue:blue::E4:yellow,-1,,
 J,t,10,blue,hu:t
 J,zut,-1,,
 J,sgy,-1,,
-P,red:white:red_bar,1,red,osmc:white:red_bar
+P,red:white:red_bar,1,red,hu:p
 P,red:white:red_circle,1,red,osmc:white:red_circle
 P,red:white:red_stripe,1,red,osmc:white:red_stripe
 P,red:red:white_bar,1,red,osmc:red:white_bar
 P,red:red:white_stripe,1,red,osmc:red:white_stripe
+P,red:white:red_bar,1,red,hu:p
+P,blue:white:blue_bar,2,blue,hu:k
+P,green:white:green_bar,3,green,hu:z
+P,yellow:white:yellow_bar,4,yellow,hu:s
+P,black:white:black_bar,5,black,osmc:white:black_bar
