@@ -10,6 +10,7 @@
   <xsl:include href="stylemenu.xslt" />
   <xsl:include href="config.xslt" />
   <xsl:include href="config-priorities.xslt" />
+  <xsl:include href="config-hiking.xslt" />
   <xsl:include href="config-lines.xslt" />
 
   <xsl:include href="poly-landuse.xslt" />
@@ -39,6 +40,7 @@
   <xsl:include href="lines-highways-labels.xslt" />
   
   <xsl:include href="points-hiking-symbols-hu.xslt"/>
+  <xsl:include href="points-hiking-symbols-czsk.xslt"/>
   <xsl:include href="points-accomodation.xslt" />
   <xsl:include href="points-amenities.xslt" />  
   <xsl:include href="points-barriers.xslt" />  
@@ -80,6 +82,7 @@
   <xsl:call-template name="lines-waterways"/>  
   <xsl:call-template name="lines-natural"/> 
   <xsl:call-template name="lines-protected"/> 
+  <xsl:call-template name="lines-admin"/>>
   <xsl:call-template name="lines-ski"/>
 
 
@@ -89,16 +92,16 @@
   <xsl:call-template name="lines-hiking-trails"/>   
   <xsl:call-template name="lines-highways"/>
   <xsl:call-template name="lines-access-restrictions"/>
-
   <xsl:call-template name="lines-railways"/>
   <xsl:call-template name="lines-other"/> 
   <xsl:call-template name="lines-barriers"/>
   <xsl:call-template name="lines-aerialways"/>
 
   <xsl:call-template name="lines-highways-labels"/>
-  <xsl:call-template name="lines-admin"/>>
+  
 
   <xsl:call-template name="points-hiking-symbols-hu"/>  
+  <xsl:call-template name="points-hiking-symbols-czsk"/>  
   <xsl:call-template name="points-accomodation"/>
   <xsl:call-template name="points-amenities"/>
   <xsl:call-template name="points-barriers"/>

@@ -2,110 +2,78 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="32.0px"
-   height="32.0px"
-   viewBox="0 0 32.0 32.0"
+   width="32"
+   height="22"
+   viewBox="0 0 32 22"
    version="1.1"
    id="SVGRoot"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs31757">
-    <linearGradient
-       xlink:href="#linearGradient37101"
-       id="linearGradient37103"
-       x1="0.13015258"
-       y1="16.059042"
-       x2="31.810806"
-       y2="16.059042"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.88139524,0,0,0.8796997,1.9236955,1.8728647)" />
-    <linearGradient
-       id="linearGradient37101">
-      <stop
-         style="stop-color:#008c00;stop-opacity:0.49803922;"
-         offset="0.00321543"
-         id="stop37099" />
-      <stop
-         style="stop-color:#00c800;stop-opacity:0.74901962;"
-         offset="0.04180063"
-         id="stop40033" />
-      <stop
-         style="stop-color:#007800;stop-opacity:1;"
-         offset="0.87138265"
-         id="stop37097" />
-    </linearGradient>
-  </defs>
+     id="defs371" />
   <g
      id="layer1">
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.18339;stroke-linecap:square;stroke-dasharray:none;paint-order:markers fill stroke"
-       id="rect36610-9"
-       width="32"
-       height="32"
-       x="0"
-       y="0"
-       ry="5.423141" />
-    <rect
-       style="fill:url(#linearGradient37103);fill-opacity:1;stroke:#000000;stroke-width:0.998542;stroke-linecap:square;stroke-dasharray:none;paint-order:markers fill stroke"
-       id="rect36610"
-       width="27.001459"
-       height="27.001457"
-       x="2.4992709"
-       y="2.4992709"
-       ry="4.5760221" />
     <path
-       d="M 6.3883409,10.794274 6.2539843,22.966693"
+       id="path2157-0"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1"
+       d="M 8.1388659,0.86428741 C 7.2425003,1.3108661 6.7960797,1.6195019 6.6505265,1.6388239 6.1440348,2.2629471 5.8172211,2.0246439 4.9801851,2.5607901 c -1.0384175,0.038743 -1.9494693,0.028305 -3.52102,0.023722 0.079578,5.8572062 -0.00429,12.9359219 -0.00629,17.9891489 l 4.7442222,10e-7 c 4.287e-4,-1.078734 0.039071,-2.232411 0.039491,-3.311147 6.8922942,6.47e-4 12.4356652,-0.03587 19.3279612,-0.03507 -0.0016,1.100048 0.03507,2.200103 0.03347,3.300152 l 4.781693,0.04657 c -0.001,-4.567963 -0.04964,-12.5229503 0.02442,-15.1936894 -3.409198,0.0076 -13.039965,0.022171 -16.4483,0.048896 C 13.208554,5.4104661 13.117062,5.0080419 13.056163,3.7724884 12.438028,2.4691936 12.377289,2.3083999 11.388196,1.526229 10.839512,1.1692251 10.311906,0.80271486 9.6751214,0.78939866 Z" />
+    <path
+       d="M 3.9292583,5.2406147 3.9245647,18.58446"
        id="path2157"
        fill="#ffffff"
        fill-rule="evenodd"
        stroke="#ffffff"
        stroke-linecap="round"
-       stroke-width="1.62178" />
+       stroke-width="1.62178"
+       style="fill:#a80012;fill-opacity:1;stroke:#a80012;stroke-opacity:1" />
     <path
-       d="m 6.5227,18.44105 20.153662,0.156057"
+       d="m 4.161443,13.818034 23.488969,4.28e-4"
        id="path2159"
        fill="#ffffff"
        fill-rule="evenodd"
        stroke="#ffffff"
-       stroke-width="1.62178" />
+       stroke-width="1.62178"
+       style="fill:#a80012;fill-opacity:1;stroke:#a80012;stroke-opacity:1" />
     <path
-       d="m 26.810723,22.498524 0.134356,-7.958891"
+       d="m 27.877046,18.645125 0.0158,-9.3539255"
        id="path2161"
        fill="#ffffff"
        fill-rule="evenodd"
        stroke="#ffffff"
        stroke-linecap="round"
-       stroke-width="1.62178" />
+       stroke-width="1.62178"
+       style="fill:#a80012;fill-opacity:1;stroke:#a80012;stroke-opacity:1" />
     <rect
        id="rect2163"
-       width="10.614233"
-       height="2.1847951"
-       x="14.181195"
-       y="13.993505"
+       width="12.370452"
+       height="2.3411047"
+       x="13.124928"
+       y="7.9946551"
        fill="#ffffff"
        stroke="#ffffff"
        stroke-width="1.8649"
-       rx="0.94050533" />
+       rx="1.0961204"
+       style="fill:#a80012;fill-opacity:1;stroke:#a80012;stroke-opacity:1" />
     <ellipse
        id="path2167"
        fill="#ffffff"
        stroke="#ffffff"
        stroke-width="2.39796"
-       cx="11.19163"
-       cy="11.080854"
-       rx="1.4658202"
-       ry="1.5074805" />
+       cx="8.9419842"
+       cy="5.026185"
+       rx="1.7083532"
+       ry="1.6153321"
+       style="fill:#a80012;fill-opacity:1;stroke:#a80012;stroke-opacity:1" />
     <rect
        id="rect2169"
-       width="4.0979371"
-       height="0.39011762"
-       x="8.2020788"
-       y="15.710181"
+       width="4.7759771"
+       height="0.4180283"
+       x="6.1565127"
+       y="9.9465628"
        fill="#ffffff"
        stroke="#ffffff"
        stroke-width="1.62178"
-       rx="0.16795787" />
+       rx="0.195748"
+       style="fill:#a80012;fill-opacity:1;stroke:#a80012;stroke-opacity:1" />
   </g>
 </svg>

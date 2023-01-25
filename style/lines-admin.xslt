@@ -13,7 +13,7 @@
 <xsl:variable name="prot-class-1-line-color">#FF956A</xsl:variable>
 <xsl:variable name="prot-class-2-line-color">#39CA20</xsl:variable>
 
-<rule  e="way" k="boundary" v="administrative"  zoom-min="12">
+<rule  e="way" k="boundary" v="administrative"  zoom-min="8">
     <rule  e="way" k="admin_level" v="2">
         <line stroke="#e680ff" stroke-width="1.2"/>
         <line stroke="#CC00FF" stroke-width="0.4" stroke-dasharray="0.4,2,2,2" scale="all" />
