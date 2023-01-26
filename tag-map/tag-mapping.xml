@@ -1179,7 +1179,7 @@
         <osm-tag key="access" equivalent-values="private,agricultural,forestry" renderable="false" value="no"/>
         <osm-tag key="access"  renderable="false" value="customers"/>
 
-        <osm-tag key="vehicle" equivalent-values="private,agricultural,forestry,customers" renderable="false" value="no"/>
+        <osm-tag key="vehicle" equivalent-values="private,agricultural,forestry" renderable="false" value="no"/>
         <osm-tag key="vehicle"  renderable="false" value="customers"/>
 
         <osm-tag key="motor_vehicle" equivalent-values="private,agricultural,forestry" renderable="false" value="no"/>
@@ -1208,9 +1208,6 @@
 
 
         <!-- Solar plants -->
-        <osm-tag key="plant:source" renderable="false" value="solar"/>
-        <osm-tag key="generator:source" renderable="false" value="solar"/>
-
         <osm-tag key="tower:type" renderable="false" value="defensive"/>         
         <osm-tag key="tower:type" renderable="false" value="observation"/> 
         <osm-tag key="tower:type" renderable="false" value="watchtower"/> 
