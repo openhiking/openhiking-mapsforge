@@ -195,7 +195,7 @@ MAP_MASTERX_PBF=master$(MAP)x.pbf
 MAP_MASTERX_PBF_FP=$(MFMAP_DIR)$(PSEP)$(MAP_MASTERX_PBF)
 
 
-MAP_WRITER_CONF=tag-values=true preferred-languages=$(LANGUAGES)
+MAP_WRITER_CONF=tag-values=true preferred-languages=$(MAP_LANGUAGES)
 MAP_MAPSFORGE_FP=$(MFMAP_DIR)$(PSEP)$(MAPNAME).map
 
 ##############################################
