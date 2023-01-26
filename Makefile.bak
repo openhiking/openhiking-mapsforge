@@ -263,7 +263,7 @@ $(MAP_MASTERX_PBF_FP): $(MAP_MASTER_PBF_FP)
 	$(OSMOSIS) --rb file=$< --tag-transform file=$(MAP_TAG_TANSFORM_FP) --wb file=$@
 
 $(MAP_MAPSFORGE_FP): $(MAP_MASTERX_PBF_FP)
-	$(OSMOSIS) --rb file=$< --mw tag-conf-file=$(MAP_TAG_MAP) --wb file=$@ $(MAP_WRITER_CONF) 
+	$(OSMOSIS) --rb file=$< --mw tag-conf-file=$(MAP_TAG_MAP_FP) --wb file=$@ $(MAP_WRITER_CONF) 
 
 transform: $(MAP_MASTERX_PBF_FP)
 	@echo "DONE"
@@ -302,6 +302,7 @@ cleancache:
 
 test:
 	@echo $(DEL) $(MFMAP_DIR)$(PSEP)*
+	@echo $(OSMOSIS)
 
 
 

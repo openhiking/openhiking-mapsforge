@@ -195,7 +195,7 @@ MAP_MASTERX_PBF=master$(MAP)x.pbf
 MAP_MASTERX_PBF_FP=$(MFMAP_DIR)$(PSEP)$(MAP_MASTERX_PBF)
 
 
-MAP_WRITER_CONF=tag-values=true preferred-languages=$(LANGUAGES)
+MAP_WRITER_CONF=tag-values=true preferred-languages=$(MAP_LANGUAGES)
 MAP_MAPSFORGE_FP=$(MFMAP_DIR)$(PSEP)$(MAPNAME).map
 
 ##############################################
@@ -263,7 +263,7 @@ $(MAP_MASTERX_PBF_FP): $(MAP_MASTER_PBF_FP)
 	$(OSMOSIS) --rb file=$< --tag-transform file=$(MAP_TAG_TANSFORM_FP) --wb file=$@
 
 $(MAP_MAPSFORGE_FP): $(MAP_MASTERX_PBF_FP)
-	$(OSMOSIS) --rb file=$< --mw tag-conf-file=$(MAP_TAG_MAP) --wb file=$@ $(MAP_WRITER_CONF) 
+	$(OSMOSIS) --rb file=$< --mw tag-conf-file=$(MAP_TAG_MAP_FP) --wb file=$@ $(MAP_WRITER_CONF) 
 
 transform: $(MAP_MASTERX_PBF_FP)
 	@echo "DONE"
