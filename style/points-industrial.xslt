@@ -51,13 +51,16 @@
 
 <rule  e="any" k="man_made" v="tower" zoom-min="15">
     <rule  e="any" k="tower:type" v="observation">
-        <rule  e="any" k="tourism" v="~">
-            <symbol id="observation" src="{$symbolPath}/tower_observation.svg" symbol-width="24" priority="{$pr-tower-observation}"/>
-            <rule e="any" k="*" v="*" zoom-min="16">
-                <caption k="name" symbol-id="observation" 
-                font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-industrial}"/>
-            </rule>
-        </rule>            
+        <rule  e="any" k="*" v="*" zoom-max="16">
+            <symbol id="observation" src="{$symbolPath}/tower_observation.svg" symbol-width="12" priority="{$pr-tower-observation}"/>
+        </rule> 
+        <rule  e="any" k="*" v="*" zoom-min="17">
+            <symbol id="observation" src="{$symbolPath}/tower_observation.svg" symbol-width="14" priority="{$pr-tower-observation}"/>
+        </rule>                         
+        <rule e="any" k="*" v="*" zoom-min="16">
+            <caption k="name" symbol-id="observation" 
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-industrial}"/>
+        </rule>       
     </rule>
 </rule>  
 

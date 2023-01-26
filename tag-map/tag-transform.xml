@@ -448,6 +448,25 @@
 		</output>
 	</translation>
 	<translation>
+		<name>Attraction</name>
+		<description>Remove double-tagging</description>
+		<match type="any" mode="and">
+            <match>
+                <tag k="tourism" v="attraction"/>
+            </match>
+            <match type="any" mode="or">
+                <tag k="amenity"  match_id="amenity" v=".*"/>
+                <tag k="leisure"  match_id="leisure" v=".*"/>
+				<tag k="historic"  match_id="historic" v=".*"/>
+				<tag k="natural"  match_id="natural" v=".*"/>
+            </match>   
+        </match>                         
+		<output>
+			<copy-all/>
+			<tag k="tourism" v="none"/>
+		</output>
+	</translation>	
+	<translation>
 		<name>Drinking water </name>
 		<description>from water tap</description>
 		<match type="any" mode="and">
@@ -502,6 +521,22 @@
 			<copy-unmatched/>
 			<tag k="natural" v="spring"/>
 			<tag k="seasonal" v="yes"/>
+		</output>
+	</translation>	
+	<translation>
+		<name>Summit cross </name>
+		<description>alternative tagging</description>
+		<match type="node" mode="and">
+			<tag k="natural" v="peak"/>
+			<match type="node" mode="or">
+				<tag k="man_made" v="cross"/>
+				<tag k="man_made" v="summit_cross"/>
+			</match>
+		</match>
+		<output>
+			<copy-unmatched/>
+			<tag k="natural" v="peak"/>
+			<tag k="summit:cross" v="yes"/>
 		</output>
 	</translation>	
 	<translation>

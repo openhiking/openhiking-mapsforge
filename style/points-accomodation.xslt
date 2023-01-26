@@ -11,14 +11,19 @@
 <xsl:template name="points-accomodation">
 
 <rule  e="any" k="tourism" v="hostel" zoom-min="15">
-    <symbol id="hostel" src="{$symbolPath}/hostel.svg" symbol-width="20" priority="{$pr-hostel}"/>
+        <rule  e="any" k="*" v="*" zoom-max="16">
+            <symbol id="hostel" src="{$symbolPath}/hostel.svg" symbol-width="20" priority="{$pr-hostel}"/>
+        </rule> 
+        <rule  e="any" k="*" v="*" zoom-min="17">
+            <symbol id="hostel" src="{$symbolPath}/hostel.svg" symbol-width="24" priority="{$pr-hostel}"/>
+        </rule>                         
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="hostel" 
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-accomodation}"/>
     </rule>       
 </rule>
 
-<rule  e="any" k="tourism" v="hotel" zoom-min="15">
+<rule  e="any" k="tourism" v="hotel|guest_house|bed_and_breakfast|apartment|chalet" zoom-min="15">
         <rule  e="any" k="*" v="*" zoom-max="16">
             <symbol id="hotel" src="{$symbolPath}/hotel.svg" symbol-width="20" priority="{$pr-hotel}"/>
         </rule> 
@@ -31,17 +36,7 @@
     </rule>       
 </rule>
 
-<rule  e="any" k="tourism" v="bed_and_breakfast|guest_house" zoom-min="15">
-    <symbol id="hotel" src="{$symbolPath}/hotel.svg" symbol-width="20" priority="{$pr-hotel}"/>
-    <rule e="any" k="*" v="*" zoom-min="16">
-        <caption k="name" symbol-id="hotel" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-accomodation}"/>
-    </rule>       
-</rule>
-
-<rule  e="any" k="tourism" v="apartment" zoom-min="15">
-</rule>
-
+<!-- 
 <rule  e="any" k="tourism" v="chalet" zoom-min="16">
     <symbol id="hotel" src="{$symbolPath}/chalet.svg" symbol-width="20" priority="{$pr-chalet}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
@@ -49,7 +44,7 @@
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-accomodation}"/>
     </rule>       
 </rule>
-
+-->
 
 <rule  e="any" k="tourism" v="camp_site" zoom-min="14">
     <rule  e="any" k="camp_site" v="basic" >

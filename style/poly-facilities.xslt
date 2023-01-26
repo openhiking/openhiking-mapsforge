@@ -135,8 +135,8 @@
 
 
   <!-- DO 8-->
-  <rule cat="military_area" e="way" k="landuse" v="military">
-    <rule e="any" k="*" v="*" zoom-min="13" zoom-max="14">
+  <rule  e="way" k="landuse" v="military">
+    <rule e="any" k="*" v="*" zoom-min="12" zoom-max="14">
       <area stroke="#F89696" stroke-width="2" scale="none" src="file:/patterns/military.svg" symbol-height="20"/>
     </rule>
     <rule e="any" k="*" v="*" zoom-min="15">

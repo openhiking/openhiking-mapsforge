@@ -17,7 +17,7 @@
         <symbol id="shopping_center" src="{$symbolPath}/shopping_center.svg" symbol-width="20" priority="{$pr-shopping-center}"/>
     </rule> 
     <rule  e="any" k="*" v="*" zoom-min="16">
-        <symbol id="shopping_center" src="{$symbolPath}/shopping_center.svg" symbol-width="22" priority="{$pr-shopping-center}"/>
+        <symbol id="shopping_center" src="{$symbolPath}/shopping_center.svg" symbol-width="24" priority="{$pr-shopping-center}"/>
     </rule>                         
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="shopping_center" 
@@ -30,7 +30,7 @@
         <symbol id="supermarket" src="{$symbolPath}/supermarket.svg" symbol-width="18" priority="{$pr-supermarket}"/>
     </rule> 
     <rule  e="any" k="*" v="*" zoom-min="16">
-        <symbol id="supermarket" src="{$symbolPath}/supermarket.svg" symbol-width="20" priority="{$pr-supermarket}"/>            
+        <symbol id="supermarket" src="{$symbolPath}/supermarket.svg" symbol-width="22" priority="{$pr-supermarket}"/>            
     </rule>                         
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="supermarket" 
@@ -44,7 +44,7 @@
         <symbol id="convenience" src="{$symbolPath}/convenience.svg" symbol-width="18" priority="{$pr-convenience}"/>
     </rule> 
     <rule  e="any" k="*" v="*" zoom-min="16">
-        <symbol id="convenience" src="{$symbolPath}/convenience.svg" symbol-width="20" priority="{$pr-convenience}"/>
+        <symbol id="convenience" src="{$symbolPath}/convenience.svg" symbol-width="22" priority="{$pr-convenience}"/>
     </rule>                         
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="convenience" 
