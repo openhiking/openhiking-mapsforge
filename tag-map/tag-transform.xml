@@ -3,7 +3,10 @@
 	<translation>
 		<name>Propagate access restriction to foot</name>
 		<description>Set foot=no if access is restricted</description>
-        <match type="way" >
+        <match type="way" mode="and">
+			<match>
+				<tag k="highway" v=".*"/>
+			</match>
             <match type="way" mode="or">
                 <tag k="access" v="no"/>
                 <tag k="access" v="private"/>                
@@ -20,7 +23,10 @@
 	<translation>
 		<name>Propagate access restriction to foot</name>
 		<description>Set foot=no if access is restricted</description>
-        <match type="way" >
+        <match type="way" mode="and">
+			<match>
+				<tag k="highway" v=".*"/>
+			</match>
             <match type="way" mode="or">
                 <tag k="access" v="customers"/>												                    
             </match>
@@ -34,7 +40,10 @@
 	<translation>
 		<name>Propagate access restriction to motor vehicles</name>
 		<description>Set motor_vehicle=no if access is restricted</description>
-        <match type="way" >
+        <match type="way" mode="and">
+			<match>
+				<tag k="highway" v=".*"/>
+			</match>
             <match type="way" mode="or">
                 <tag k="access" v="no"/>
                 <tag k="access" v="private"/>                
@@ -52,7 +61,10 @@
 	<translation>
 		<name>Propagate access restriction to motor vehicles</name>
 		<description>Set motor_vehicle=no if access is restricted</description>
-        <match type="way" >
+        <match type="way" mode="and">
+			<match>
+				<tag k="highway" v=".*"/>
+			</match>
             <match type="way" mode="or">
                 <tag k="vehicle" v="no"/>
                 <tag k="vehicle" v="private"/>                
@@ -85,7 +97,7 @@
 			</match>
 		</match>
 		<output>
-			<copy-all/>
+			<copy-unmatched/>
 			<tag k="highway" v="track"/>
 			<tag k="tracktype" v="grade1"/>	
 		</output>
@@ -112,7 +124,7 @@
 			</match>
 		</match>
 		<output>
-			<copy-all/>
+			<copy-unmatched/>
 			<tag k="highway" v="track"/>
 			<tag k="tracktype" v="grade3"/>			
 		</output>
@@ -137,7 +149,7 @@
 			</match>
 		</match>
 		<output>
-			<copy-all/>
+			<copy-unmatched/>
 			<tag k="highway" v="unclassified"/>
 		</output>
 	</translation>
@@ -160,7 +172,8 @@
             <notag k="tracktype" v=".*"/>
         </match>            
 		<output>
-			<copy-all/>
+			<copy-unmatched/>
+			<tag k="highway" v="track"/>
 			<tag k="tracktype" v="grade1"/>
 		</output>
 	</translation>
@@ -182,7 +195,7 @@
 			</match>
 		</match>
 		<output>
-			<copy-all/>
+			<copy-unmatched/>
 			<tag k="highway" v="path"/>
 		</output>
 	</translation>
@@ -201,7 +214,7 @@
 			</match>
 		</match>
 		<output>
-			<copy-all/>
+			<copy-unmatched/>
 			<tag k="highway" v="footway"/>
 		</output>
 	</translation>
@@ -258,7 +271,7 @@
             <tag k="disused:railway" match_id="disused_tram" v="tram"/>
         </match>
 		<output>
-			<copy-all/>
+			<copy-unmatched/>
 			<tag k="railway" v="disused"/>
             <tag k="disused" from_match="disused_rail" v="rail"/>
             <tag k="disused" from_match="disused_light_rail" v="light_rail"/>
@@ -302,7 +315,7 @@
             </match>
         </match>
 		<output>
-			<copy-all/>
+			<copy-unmatched/>
 			<tag k="historic" v="manor"/>
 		</output>
 	</translation>   
@@ -346,6 +359,24 @@
 		</output>
 	</translation>
 	<translation>
+		<name>Castle type </name>
+		<description>Removal due to OruxMaps issues</description>
+		<match type="any" mode="and">
+            <match>
+                <tag k="castle_type" v=".*"/>
+            </match>
+            <match type="any" mode="or">
+				<tag k="ruins" match_id="ruins" v="yes"/> 
+				<tag k="historic" match_id="historic" v="ruins"/>
+            </match>   
+        </match>                         
+		<output>
+			<copy-unmatched/>
+			<tag k="ruins" from_match="ruins" v="yes"/>
+			<tag k="historic" from_match="historic" v="ruins"/>
+		</output>
+	</translation>
+	<translation>
 		<name>Place-of-worship ruins </name>
 		<description>Remove active tagging</description>
 		<match type="any" mode="and">
@@ -353,13 +384,14 @@
                 <tag k="amenity" v="place_of_worship"/>
             </match>
             <match type="any" mode="or">
-				<tag k="ruins" v="yes"/> 
-				<tag k="historic" v="ruins"/>
+				<tag k="ruins" match_id="ruins" v="yes"/> 
+				<tag k="historic" match_id="historic" v="ruins"/>
             </match>   
         </match>                         
 		<output>
-			<copy-all/>
-			<tag k="amenity" v="abandoned"/>
+			<copy-unmatched/>
+			<tag k="ruins" from_match="ruins" v="yes"/>
+			<tag k="historic" from_match="historic" v="ruins"/>
 		</output>
 	</translation>
 	<translation>
@@ -385,7 +417,7 @@
 		<name>Tumulus </name>
 		<description>Alternative tumulus tagging</description>
 		<match type="any" mode="and">
-            <tag k="historic" v="historic"/>
+            <tag k="historic" v="tomb"/>
             <tag k="tomb" v="tumulus"/>
         </match>
 		<output>
@@ -394,7 +426,6 @@
             <tag k="archaeological_site" v="tumulus"/>
 		</output>
 	</translation>
-
 	<translation>
 		<name>Lookout towers</name>
 		<description>Unification</description>
@@ -405,9 +436,6 @@
             <match>
                 <tag k="tower:type" v="observation"/>
             </match>
-            <match>
-                <tag k="tower:type" v="observation"/>
-            </match>                
             <match type="any" mode="or">
                 <tag k="tourism" v="viewpoint"/>
                 <tag k="viewpoint" v="yes"/>
@@ -444,7 +472,7 @@
 			</match>
 		</match>
 		<output>
-			<copy-all/>
+			<copy-unmatched/>
 			<tag k="natural" v="hot_spring"/>
 		</output>
 	</translation>	
@@ -460,7 +488,7 @@
 			</match>
 		</match>
 		<output>
-			<copy-all/>
+			<copy-unmatched/>
 			<tag k="natural" v="mineral_spring"/>
 		</output>
 	</translation>	
@@ -589,7 +617,7 @@
 		</output>
 	</translation>
 	<translation>
-		<name>Netural reserve</name>
+		<name>Natural reserve</name>
 		<description>alternative tagging</description>
         <match type="way" >
             <match>
@@ -611,7 +639,8 @@
             <tag k="backcountry" v="yes"/>
 		</match>
 		<output>
-			<copy-all/>
+			<copy-unmatched/>
+			<tag k="tourism" v="camp_site"/>
 			<tag k="camp_site" v="basic"/>
 		</output>
 	</translation>	

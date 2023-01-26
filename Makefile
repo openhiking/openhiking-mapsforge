@@ -260,10 +260,10 @@ merge-osmosis:  $(MAP_INP_OSM_PBF) $(MAP_INP_SUPP_PBF) $(MAP_INP_CONTOUR)
 	@echo "Merge completed"
 
 $(MAP_MASTERX_PBF_FP): $(MAP_MASTER_PBF_FP)
-	$(OSMOSIS) --rb file=$< --tag-transform file=$(MAP_TAG_TANSFORM_FP) --wb file=$@
+	$(OSMOSIS) --rb file=$< --tag-transform file=$(MAP_TAG_TANSFORM_FP) --wb file=$@ omitmetadata=true
 
 $(MAP_MAPSFORGE_FP): $(MAP_MASTERX_PBF_FP)
-	$(OSMOSIS) --rb file=$< --mw tag-conf-file=$(MAP_TAG_MAP_FP) --wb file=$@ $(MAP_WRITER_CONF) 
+	$(OSMOSIS) --rb file=$< --mw tag-conf-file=$(MAP_TAG_MAP_FP) $(MAP_WRITER_CONF) file=$@ 
 
 transform: $(MAP_MASTERX_PBF_FP)
 	@echo "DONE"
