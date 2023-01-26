@@ -47,7 +47,7 @@
   </rule>      
 </rule>
 
-
+<!-- 
 <rule  e="any" k="historic" v="ruins" >
   <rule  e="any" k="ruins" v="castle|fort|tower" zoom-min="14">
     <rule  e="any" k="*" v="*"  zoom-max="16">   
@@ -81,6 +81,7 @@
     </rule>
   </rule>  
 </rule>
+-->
 
 <rule  e="any" k="historic" v="archaeological_site" >
   <rule  e="any" k="archaeological_site" v="fortification" >

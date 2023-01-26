@@ -338,7 +338,7 @@
             </match>
         </match>
 		<output>
-			<copy-all/>
+			<copy-unmatched/>
 			<tag k="historic" v="ruins"/>
             <tag k="ruins" from_match="historic_castle" v="castle"/>
             <tag k="ruins" from_match="historic_fort" v="fort"/>
