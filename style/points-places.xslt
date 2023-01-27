@@ -10,13 +10,13 @@
 -->
 <xsl:template name="points-places">
 <rule e="node" k="place" v="city">
-    <rule e="node" k="*" v="*" zoom-min="7" zoom-max="8">    
+    <rule e="node" k="*" v="*" zoom-min="6" zoom-max="7">    
         <caption k="name" font-style="bold_italic" font-size="12" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-city}"/>
     </rule>
-    <rule e="node" k="*" v="*" zoom-min="9" zoom-max="10">    
+    <rule e="node" k="*" v="*" zoom-min="8" zoom-max="9">    
         <caption k="name" font-style="bold_italic" font-size="14" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-city}"/>
     </rule>
-    <rule e="node" k="*" v="*" zoom-min="11" zoom-max="14">    
+    <rule e="node" k="*" v="*" zoom-min="10" zoom-max="14">    
         <caption k="name" font-style="bold_italic" font-size="16" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-city}"/>
     </rule>
 </rule>

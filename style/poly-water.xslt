@@ -35,11 +35,14 @@
 <!-- DO 7-->
 <rule e="way" k="natural" v="wetland">
   <rule e="way" k="wetland" v="reedbed">
-      <area fill="{$wetland-color}"/>      
-      <rule e="way" k="*" v="*" zoom-max="15">
+      <area fill="{$wetland-color}"/>  
+      <rule e="way" k="*" v="*" zoom-max="12">
         <area src="{$patternPath}/reedbed.svg" symbol-height="16"/>
       </rule>
-      <rule e="way" k="*" v="*" zoom-min="16">
+      <rule e="way" k="*" v="*" zoom-min="13" zoom-max="14">
+        <area src="{$patternPath}/reedbed.svg" symbol-height="24"/>
+      </rule>
+      <rule e="way" k="*" v="*" zoom-min="15">
         <area src="{$patternPath}/reedbed.svg" symbol-height="32"/>
       </rule>
   </rule>

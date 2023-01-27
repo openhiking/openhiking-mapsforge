@@ -14,10 +14,10 @@
 
 <rule  e="any" k="shop" v="mall" zoom-min="14">
     <rule  e="any" k="*" v="*" zoom-max="15">
-        <symbol id="shopping_center" src="{$symbolPath}/shopping_center.svg" symbol-width="20" priority="{$pr-shopping-center}"/>
+        <symbol id="shopping_center" src="{$symbolPath}/shopping_center.svg" symbol-width="18" priority="{$pr-shopping-center}"/>
     </rule> 
     <rule  e="any" k="*" v="*" zoom-min="16">
-        <symbol id="shopping_center" src="{$symbolPath}/shopping_center.svg" symbol-width="24" priority="{$pr-shopping-center}"/>
+        <symbol id="shopping_center" src="{$symbolPath}/shopping_center.svg" symbol-width="20" priority="{$pr-shopping-center}"/>
     </rule>                         
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="shopping_center" 

@@ -29,7 +29,7 @@
         <osm-tag key="natural" value="scree" zoom-appear="12"/>
         <osm-tag key="natural" value="shingle" zoom-appear="10"/>        
         <osm-tag key="natural" value="water" zoom-appear="8"/>
-        <osm-tag key="natural" value="wetland" zoom-appear="12"/>
+        <osm-tag key="natural" value="wetland" zoom-appear="11"/>
         <osm-tag key="natural" value="wood" zoom-appear="10"/>
     </ways>
 
@@ -626,6 +626,13 @@
 
         <osm-tag key="swimming_pool" renderable="false" value="personal"/>        
         <osm-tag key="location" renderable="false" value="indoor"/>        
+
+        <osm-tag key="sport" value="golf" renderable="false"/>
+        <osm-tag key="sport" value="soccer" renderable="false"/>
+        <osm-tag key="sport" value="swimming" renderable="false"/>
+        <osm-tag key="sport" value="tennis" renderable="false"/>
+        <osm-tag key="sport" value="skiing" renderable="false"/>
+
     </ways>  
 
     <pois>
@@ -695,8 +702,10 @@
         <osm-tag key="sinkhole" value="estavelle" renderable="false"/>   
         <osm-tag key="sinkhole" value="pit" renderable="false"/>   
 
+        <!-- 
         <osm-tag key="water_characteristic" value="mineral" renderable="false"/>   
         <osm-tag key="spring:type" value="hot" renderable="false"/>   
+        -->
         <osm-tag key="seasonal" value="yes" equivalent-values="wet_season,dry_season,winter,summer" renderable="false"/> 
 
 
@@ -956,7 +965,9 @@
 
         <osm-tag key="ford" value="yes" label-position="true" zoom-appear="12"/>     
 
+        <!-- 
         <osm-tag key="viewpoint" value="yes" renderable="false"/>     
+        -->
 
         <osm-tag key="shelter_type" value="basic_hut"  renderable="false"/>
         <osm-tag key="shelter_type" value="picnic_shelter"  renderable="false"/>
@@ -1158,6 +1169,21 @@
         <osm-tag key="trail_symbol" value="czsk:green:learning" zoom-appear="14"/> 
         <osm-tag key="trail_symbol" value="czsk:green:local" zoom-appear="14"/>   
 
+        <osm-tag key="trail_symbol" value="osmc:white:black_bar" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="osmc:red:white_bar" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="osmc:green:white_bar" zoom-appear="14"/>
+
+        <osm-tag key="trail_symbol" value="osmc:white:red_circle" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="osmc:white:red_cross" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="osmc:white:red_stripe" zoom-appear="14"/>
+
+        <osm-tag key="trail_symbol" value="osmc:white:blue_circle" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="osmc:white:blue_cross" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="osmc:white:blue_stripe" zoom-appear="14"/>
+
+        <osm-tag key="trail_symbol" value="osmc:white:yellow_circle" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="osmc:white:yellow_cross" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="osmc:white:yellow_stripe" zoom-appear="14"/>
 
 
         <osm-tag key="trail_symbol_level" value="major" zoom-appear="13"/>                           
@@ -1179,8 +1205,10 @@
         <osm-tag key="access" equivalent-values="private,agricultural,forestry" renderable="false" value="no"/>
         <osm-tag key="access"  renderable="false" value="customers"/>
 
+        <!-- 
         <osm-tag key="vehicle" equivalent-values="private,agricultural,forestry" renderable="false" value="no"/>
         <osm-tag key="vehicle"  renderable="false" value="customers"/>
+        -->
 
         <osm-tag key="motor_vehicle" equivalent-values="private,agricultural,forestry" renderable="false" value="no"/>
         <osm-tag key="motor_vehicle"  renderable="false" value="customers"/>
@@ -1192,15 +1220,23 @@
         <!-- Structures -->
         <osm-tag key="bridge" renderable="false" value="yes"/>
         <osm-tag key="tunnel" renderable="false" value="yes"/>
+        <!-- 
         <osm-tag key="tunnel" renderable="false" value="no"/>
+        -->
         <osm-tag key="embankment" renderable="false" value="yes"/>
-        <osm-tag key="embankment" renderable="false" value="no"/>
-        <osm-tag key="cutting" renderable="false" value="yes"/>
-        <osm-tag key="cutting" renderable="false" value="no"/>
 
+        <!-- 
+        <osm-tag key="embankment" renderable="false" value="no"/>
+        -->
+        <osm-tag key="cutting" renderable="false" value="yes"/>
+        <!--         
+        <osm-tag key="cutting" renderable="false" value="no"/>
+        -->
         <!-- Oneway -->
         <osm-tag equivalent-values="1,true" key="oneway" renderable="false" value="yes"/>
+        <!-- 
         <osm-tag equivalent-values="0,false" key="oneway" renderable="false" value="no"/>
+        -->
         <osm-tag key="oneway" renderable="false" value="-1"/>
 
         <!-- Disused -->

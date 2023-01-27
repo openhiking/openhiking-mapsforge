@@ -92,7 +92,7 @@
 
 
 <rule  e="way" k="natural" v="scrub">
-  <area fill="#D8FCB0" scale="none" />   
+  <area fill="#e2fbac" scale="none" />   
   <rule e="any" k="*" v="*">
     <rule e="way" k="*" v="*" zoom-max="14">
       <area src="file:/patterns/scrub.svg" symbol-height="28"/>
@@ -133,8 +133,13 @@
     <area fill="#eef9a8" scale="none"/>
 </rule>
 
+<rule  e="way" k="natural" v="fell">
+    <area fill="#ecf6e2" scale="none"/>
+</rule>
+
+
 <rule  e="way" k="natural" v="scree">
-  <area fill="#E0E4E0" scale="none"/>
+  <area fill="#ebedeb" scale="none"/>
   <rule e="way" k="*" v="*" zoom-max="14">
     <area src="file:/patterns/scree.svg" symbol-height="18"/>
   </rule>

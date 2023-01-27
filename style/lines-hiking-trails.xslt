@@ -8,7 +8,7 @@
 <xsl:variable name="lc-trail-yellow">#F8C800</xsl:variable>
 <xsl:variable name="lc-trail-purple">#A800A8</xsl:variable>
 
-<rule cat="colored_hiking" e="way" k="highway" v="*" >
+<rule cat="colored_hiking" e="way" k="highway" v="*" zoom-min="12">
 	<rule  e="way" k="trail_color" v="blue" >
    		<xsl:call-template name="trail-highlight-rules">
         	<xsl:with-param name="color" select="$lc-trail-blue" />
