@@ -38,9 +38,9 @@
             <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-cycleway + $lw-bridge-base}" stroke-linecap="butt" /> 
         </rule>
         <rule e="way" k="highway" v="track" >
-            <rule e="way" k="tracktype" v="grade1" zoom-min="{$zm-track-grade1}"> 
-                <line stroke="{$lc-bridge}" stroke-width="{$lw-track + $lw-bridge-border}" stroke-linecap="butt"  /> 
-                <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-track + $lw-bridge-base}" stroke-linecap="butt" /> 
+            <rule e="way" k="tracktype" v="grade1" zoom-min="{$zm-macadam}"> 
+                <line stroke="{$lc-bridge}" stroke-width="{$lw-macadam + $lw-bridge-border}" stroke-linecap="butt"  /> 
+                <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-macadam + $lw-bridge-base}" stroke-linecap="butt" /> 
             </rule>
             <rule e="way" k="tracktype" v="~|grade2|grade3|grade4|grade5" zoom-min="{$zm-track}"> 
                 <line stroke="{$lc-bridge}" stroke-width="{$lw-track + $lw-bridge-border}" stroke-linecap="butt"  /> 

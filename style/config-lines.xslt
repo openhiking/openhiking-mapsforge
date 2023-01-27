@@ -22,6 +22,7 @@
 <xsl:variable name="zm-living">13</xsl:variable>
 <xsl:variable name="zm-service">14</xsl:variable>
 <xsl:variable name="zm-raceway">15</xsl:variable>
+<xsl:variable name="zm-macadam">13</xsl:variable>
 <xsl:variable name="zm-track-grade1">13</xsl:variable>
 <xsl:variable name="zm-track">14</xsl:variable>
 <xsl:variable name="zm-track2">17</xsl:variable>
@@ -51,6 +52,7 @@
 <xsl:variable name="bc-residential">#383040</xsl:variable>
 <xsl:variable name="bc-living">#383040</xsl:variable>
 <xsl:variable name="bc-service">#383040</xsl:variable>
+<xsl:variable name="bc-macadam">#383040</xsl:variable>
 <xsl:variable name="bc-tunnel">#383040</xsl:variable>
 
 
@@ -66,6 +68,7 @@
 <xsl:variable name="lc-living">#FFFFFF</xsl:variable>
 <xsl:variable name="lc-service">#FFFFFF</xsl:variable>
 <xsl:variable name="lc-raceway">#838383</xsl:variable>
+<xsl:variable name="lc-macadam">#FFFFFF</xsl:variable>
 <xsl:variable name="lc-track">#7B3000</xsl:variable>
 <xsl:variable name="lc-pedestrian">#626262</xsl:variable>
 <xsl:variable name="lc-cycleway">#BB00B6</xsl:variable>
@@ -100,9 +103,10 @@
 <xsl:variable name="lw-tertiary">1.8</xsl:variable>
 <xsl:variable name="lw-residential">1.2</xsl:variable>
 <xsl:variable name="lw-living_street">1.2</xsl:variable>
-<xsl:variable name="lw-unclassified">1.0</xsl:variable>
+<xsl:variable name="lw-unclassified">1.2</xsl:variable>
 <xsl:variable name="lw-service">0.8</xsl:variable>
 <xsl:variable name="lw-raceway">0.6</xsl:variable>
+<xsl:variable name="lw-macadam">1.2</xsl:variable>
 <xsl:variable name="lw-track">0.4</xsl:variable>
 <xsl:variable name="lw-track2">0.3</xsl:variable>
 <xsl:variable name="lw-pedestrian">0.4</xsl:variable>

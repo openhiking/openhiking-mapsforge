@@ -6,7 +6,7 @@
 <xsl:variable name="lc-trail-red">#F80000</xsl:variable>
 <xsl:variable name="lc-trail-green">#38C820</xsl:variable>
 <xsl:variable name="lc-trail-yellow">#F8C800</xsl:variable>
-<xsl:variable name="lc-trail-purple">#A800A8</xsl:variable>
+<xsl:variable name="lc-trail-purple">#be40be</xsl:variable>
 
 <rule cat="colored_hiking" e="way" k="highway" v="*" zoom-min="12">
 	<rule  e="way" k="trail_color" v="blue" >
@@ -126,20 +126,31 @@
 		</rule>
 	</rule>
 	<rule e="way" k="highway" v="track">
-		<rule e="way" k="*" v="*" zoom-max="{$zm-track - 1}">		
-			<line stroke="{$color}" stroke-width="{$lw-trail-highlight-low}" stroke-linecap="butt" />
+		<rule e="way" k="tracktype" v="grade1">
+			<rule e="way" k="*" v="*" zoom-max="{$zm-macadam - 1}">		
+				<line stroke="{$color}" stroke-width="{$lw-trail-highlight-low}" stroke-linecap="butt" />
+			</rule>
+			<rule e="way" k="*" v="*" zoom-min="{$zm-macadam}">	
+				<line stroke="{$color}" stroke-width="{$lw-macadam + $lw-trail-highlight + 0.3}" stroke-linecap="butt" />														
+				<line stroke="{$lc-macadam}" stroke-width="{$lw-macadam}" stroke-linecap="butt" />
+			</rule>
 		</rule>
-		<rule e="way" k="*" v="*" zoom-min="{$zm-track}" zoom-max="{$zm-level2 - 1}">					
-			<line stroke="{$color}" dy="{$lw-track}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
-			<line stroke="{$color}" dy="-{$lw-track}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
-		</rule>	
-		<rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}" >		
-			<line stroke="{$color}" dy="{$lw-track}" stroke-width="{$lw-trail-highlight-deep}" stroke-linecap="butt" />
-			<line stroke="{$color}" dy="-{$lw-track}" stroke-width="{$lw-trail-highlight-deep}" stroke-linecap="butt" />
-		</rule>
-		<rule e="way" k="*" v="*" zoom-min="{$zm-level3 }">		
-			<line stroke="{$color}" dy="{$lw-track - 0.1}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
-			<line stroke="{$color}" dy="-{$lw-track - 0.1}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
+		<rule e="way" k="tracktype" v="grade2|grade3|grade4|grade5|~">		
+			<rule e="way" k="*" v="*" zoom-max="{$zm-track - 1}">		
+				<line stroke="{$color}" stroke-width="{$lw-trail-highlight-low}" stroke-linecap="butt" />
+			</rule>
+			<rule e="way" k="*" v="*" zoom-min="{$zm-track}" zoom-max="{$zm-level2 - 1}">					
+				<line stroke="{$color}" dy="{$lw-track}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
+				<line stroke="{$color}" dy="-{$lw-track}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
+			</rule>	
+			<rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}" >		
+				<line stroke="{$color}" dy="{$lw-track}" stroke-width="{$lw-trail-highlight-deep}" stroke-linecap="butt" />
+				<line stroke="{$color}" dy="-{$lw-track}" stroke-width="{$lw-trail-highlight-deep}" stroke-linecap="butt" />
+			</rule>
+			<rule e="way" k="*" v="*" zoom-min="{$zm-level3 }">		
+				<line stroke="{$color}" dy="{$lw-track - 0.1}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
+				<line stroke="{$color}" dy="-{$lw-track - 0.1}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
+			</rule>
 		</rule>
 	</rule>
 	<rule e="way" k="highway" v="pedestrian">
@@ -147,7 +158,7 @@
 			<line stroke="{$color}" stroke-width="{$lw-trail-highlight-low}" stroke-linecap="butt" />
 		</rule>
 		<rule e="way" k="*" v="*" zoom-min="{$zm-pedestrian}">	
-			<line stroke="{$color}" stroke-width="{$lw-pedestrian + $lw-trail-highlight + 0.1}" stroke-linecap="butt" />							
+			<line stroke="{$color}" stroke-width="{$lw-pedestrian + $lw-trail-highlight + 0.2}" stroke-linecap="butt" />							
 		</rule>				
 	</rule>
 	<rule e="way" k="highway" v="service">
@@ -155,7 +166,7 @@
 			<line stroke="{$color}" stroke-width="{$lw-trail-highlight-low}" stroke-linecap="butt" />
 		</rule>
 		<rule e="way" k="*" v="*" zoom-min="{$zm-service}">	
-			<line stroke="{$color}" stroke-width="{$lw-service + $lw-trail-highlight + 0.1}" stroke-linecap="butt" />				
+			<line stroke="{$color}" stroke-width="{$lw-service + $lw-trail-highlight + 0.2}" stroke-linecap="butt" />				
 		</rule>	
 	</rule>			
 	<rule e="way" k="highway" v="living_street|residential">
@@ -163,7 +174,7 @@
 			<line stroke="{$color}" stroke-width="{$lw-trail-highlight-low}" stroke-linecap="butt" />
 		</rule>
 		<rule e="way" k="*" v="*" zoom-min="{$zm-residential}">		
-			<line stroke="{$color}" stroke-width="{$lw-residential + $lw-trail-highlight + 0.1}" stroke-linecap="butt" />
+			<line stroke="{$color}" stroke-width="{$lw-residential + $lw-trail-highlight + 0.3}" stroke-linecap="butt" />
 		</rule>
 	</rule>
 	<rule e="way" k="highway" v="unclassified">
@@ -171,7 +182,7 @@
 			<line stroke="{$color}" stroke-width="{$lw-trail-highlight-low}" stroke-linecap="butt" />
 		</rule>
 		<rule e="way" k="*" v="*" zoom-min="{$zm-unclassified}">	
-			<line stroke="{$color}" stroke-width="{$lw-unclassified + $lw-trail-highlight + 0.1}" stroke-linecap="butt" />		
+			<line stroke="{$color}" stroke-width="{$lw-unclassified + $lw-trail-highlight + 0.3}" stroke-linecap="butt" />		
 		</rule>				
 	</rule>
 	<rule e="way" k="highway" v="tertiary|tertiary_link">
@@ -179,7 +190,7 @@
 			<line stroke="{$color}" stroke-width="{$lw-trail-highlight-low}" stroke-linecap="butt" />
 		</rule>
 		<rule e="way" k="*" v="*" zoom-min="{$zm-tertiary}">
-			<line stroke="{$color}" stroke-width="{$lw-tertiary + $lw-trail-highlight + 0.2}" stroke-linecap="butt" />
+			<line stroke="{$color}" stroke-width="{$lw-tertiary + $lw-trail-highlight + 0.3}" stroke-linecap="butt" />
 		</rule>
 	</rule>
 	<rule e="way" k="highway" v="secondary|secondary_link" >

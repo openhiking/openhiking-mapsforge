@@ -41,6 +41,7 @@
   
   <xsl:include href="points-hiking-symbols-hu.xslt"/>
   <xsl:include href="points-hiking-symbols-czsk.xslt"/>
+  <xsl:include href="points-hiking-symbols-osmc.xslt"/>
   <xsl:include href="points-accomodation.xslt" />
   <xsl:include href="points-amenities.xslt" />  
   <xsl:include href="points-barriers.xslt" />  
@@ -102,6 +103,7 @@
 
   <xsl:call-template name="points-hiking-symbols-hu"/>  
   <xsl:call-template name="points-hiking-symbols-czsk"/>  
+  <xsl:call-template name="points-hiking-symbols-osmc"/>  
   <xsl:call-template name="points-accomodation"/>
   <xsl:call-template name="points-amenities"/>
   <xsl:call-template name="points-barriers"/>

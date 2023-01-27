@@ -23,7 +23,7 @@
     </rule>       
 </rule>
 
-<rule  e="any" k="tourism" v="hotel|guest_house|bed_and_breakfast|apartment|chalet" zoom-min="15">
+<rule  e="any" k="tourism" v="hotel|motel|guest_house|bed_and_breakfast|apartment|chalet" zoom-min="15">
         <rule  e="any" k="*" v="*" zoom-max="16">
             <symbol id="hotel" src="{$symbolPath}/hotel.svg" symbol-width="20" priority="{$pr-hotel}"/>
         </rule> 

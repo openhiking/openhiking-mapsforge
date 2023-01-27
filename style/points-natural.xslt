@@ -83,8 +83,13 @@
     </rule>
 </rule>
 
-<rule e="any" k="natural" v="sinkhole" zoom-min="15">
-    <symbol id="sinkhole" src="{$symbolPath}/sinkhole.svg" symbol-width="15" priority="{$pr-sinkhole}"/>
+<rule e="any" k="natural" v="sinkhole" >
+    <rule e="any" k="sinkhole" v="estavelle|pit" zoom-min="15">
+        <symbol id="sinkhole" src="{$symbolPath}/sinkhole.svg" symbol-width="14" priority="{$pr-sinkhole}"/>
+    </rule>
+    <rule e="any" k="sinkhole" v="~" zoom-min="15">
+        <symbol id="sinkhole" src="{$symbolPath}/doline.svg" symbol-width="15" priority="{$pr-sinkhole}"/>
+    </rule>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption fill="#666666" font-size="12" font-style="bold" k="name"
             stroke="#FFFFFF" stroke-width="2.0" symbol-id="sinkhole" priority="{$pr-label-natural}"/>
