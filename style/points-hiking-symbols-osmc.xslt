@@ -44,23 +44,35 @@
 
 <xsl:template name="hiking-symbol-osmc-white-bg-rules">
 <xsl:param name="color" />
-	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-osmc}white:{$color}_circle" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_circle.svg" symbol-width="{$sw-hiking2-z14}" priority="{$pr-hiking-symbols}"/>
-	</rule>
-	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-osmc}white:{$color}_circle" zoom-min="16">
-		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_circle.svg" symbol-width="{$sw-hiking2-z16}" priority="{$pr-hiking-symbols}"/>
-	</rule>
-	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-osmc}white:{$color}_cross" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_cross.svg" symbol-width="{$sw-hiking2-z14}" priority="{$pr-hiking-symbols}"/>
-	</rule>
-	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-osmc}white:{$color}_cross" zoom-min="16">
-		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_cross.svg" symbol-width="{$sw-hiking2-z16}" priority="{$pr-hiking-symbols}"/>
-	</rule>
 	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-osmc}white:{$color}_stripe" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_stripe.svg" symbol-width="{$sw-hiking2-z14}" priority="{$pr-hiking-symbols}"/>
+		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_stripe.svg" symbol-width="{$sw-hiking-b-z14}" priority="{$pr-hiking-symbols}"/>
 	</rule>
 	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-osmc}white:{$color}_stripe" zoom-min="16">
-		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_stripe.svg" symbol-width="{$sw-hiking2-z16}" priority="{$pr-hiking-symbols}"/>
+		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_stripe.svg" symbol-width="{$sw-hiking-b-z16}" priority="{$pr-hiking-symbols}"/>
+	</rule>
+	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-osmc}white:{$color}_dot" zoom-min="12" zoom-max="15">
+		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_dot.svg" symbol-width="{$sw-hiking-b-z14}" priority="{$pr-hiking-symbols}"/>
+	</rule>
+	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-osmc}white:{$color}_dot" zoom-min="16">
+		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_dot.svg" symbol-width="{$sw-hiking-b-z16}" priority="{$pr-hiking-symbols}"/>
+	</rule>
+	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-osmc}white:{$color}_cross" zoom-min="12" zoom-max="15">
+		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_cross.svg" symbol-width="{$sw-hiking-b-z14}" priority="{$pr-hiking-symbols}"/>
+	</rule>
+	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-osmc}white:{$color}_cross" zoom-min="16">
+		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_cross.svg" symbol-width="{$sw-hiking-b-z16}" priority="{$pr-hiking-symbols}"/>
+	</rule>
+	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-osmc}white:{$color}_triangle" zoom-min="12" zoom-max="15">
+		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_triangle.svg" symbol-width="{$sw-hiking-s-z14}" priority="{$pr-hiking-symbols}"/>
+	</rule>
+	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-osmc}white:{$color}_triangle" zoom-min="16">
+		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_triangle.svg" symbol-width="{$sw-hiking-s-z16}" priority="{$pr-hiking-symbols}"/>
+	</rule>
+	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-osmc}white:{$color}_circle" zoom-min="12" zoom-max="15">
+		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_circle.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}"/>
+	</rule>
+	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-osmc}white:{$color}_circle" zoom-min="16">
+		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_circle.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}"/>
 	</rule>
 
 </xsl:template>
