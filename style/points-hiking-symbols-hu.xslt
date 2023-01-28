@@ -195,6 +195,14 @@
 		<symbol src="{$hikingSymbolPath}/hu-lm.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}"/>
 	</rule>
 
+	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-hu}palp" zoom-min="12" zoom-max="15">
+		<symbol src="{$hikingSymbolPath}/hu-palp.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}"/>
+	</rule>
+	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-hu}palp" zoom-min="16" >
+		<symbol src="{$hikingSymbolPath}/hu-palp.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}"/>
+	</rule>
+
+
 
 </xsl:template>
 

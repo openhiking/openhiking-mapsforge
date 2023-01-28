@@ -42,13 +42,9 @@ P,green:white:green_arch,10,green,hu:zb
 P,green:white:green_L,10,green,hu:zl
 P,blue:white:blue_bowl,10,blue,czsk:blue:spring
 P,blue:white:blue_turned_T,10,blue,czsk:blue:interesting_object
-P,blue:white:blue_corner,10,blue,czsk:blue:local
 P,red:white:red_bowl,9,red,czsk:red:spring
 P,red:white:red_turned_T,9,red,czsk:red:interesting_object
-P,red:white:red_corner,9,red,czsk:red:local
 P,yellow:white:yellow_bowl,10,yellow,czsk:yellow:spring
 P,yellow:white:yellow_turned_T,10,yellow,czsk:yellow:interesting_object
-P,yellow:white:yellow_corner,10,yellow,czsk:yellow:local
 P,green:white:green_bowl,10,green,czsk:green:spring
 P,green:white:green_turned_T,10,green,czsk:green:interesting_object
-P,green:white:green_corner,10,green,czsk:green:local

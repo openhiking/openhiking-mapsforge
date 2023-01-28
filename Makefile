@@ -195,7 +195,14 @@ MAP_MASTERX_PBF=master$(MAP)x.pbf
 MAP_MASTERX_PBF_FP=$(MFMAP_DIR)$(PSEP)$(MAP_MASTERX_PBF)
 
 
-MAP_WRITER_CONF=tag-values=true preferred-languages=$(MAP_LANGUAGES)
+ifeq ($(MAPWRITER_IN_MEMORY),yes)
+	MAP_MW_TYPE=ram
+else
+	MAP_MW_TYPE=hd
+endif
+
+
+MAP_WRITER_CONF=tag-values=true type=$(MAP_MW_TYPE) preferred-languages=$(MAP_LANGUAGES)
 MAP_MAPSFORGE_FP=$(MFMAP_DIR)$(PSEP)$(MAPNAME).map
 
 ##############################################
@@ -302,7 +309,7 @@ cleancache:
 
 test:
 	@echo $(DEL) $(MFMAP_DIR)$(PSEP)*
-	@echo $(OSMOSIS)
+	@echo $(MAP_WRITER_CONF)
 
 
 
