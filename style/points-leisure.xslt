@@ -51,21 +51,12 @@
 -->
 
 <rule  e="any" k="tourism" v="attraction" zoom-min="15">
-  <rule  e="any" k="amenity" v="~">
-    <rule  e="any" k="leisure" v="~">
-      <rule  e="any" k="natural" v="~">    
-        <rule  e="any" k="historic" v="~">    
-          <symbol id="attraction" src="{$symbolPath}/attraction.svg" symbol-width="16" priority="{$pr-attraction}"/>
-          <rule e="any" k="*" v="*" zoom-min="16">
-            <caption k="name" symbol-id="attraction" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
-          </rule>
-        </rule>
-      </rule>        
-    </rule>        
+  <symbol id="attraction" src="{$symbolPath}/attraction.svg" symbol-width="16" priority="{$pr-attraction}"/>
+  <rule e="any" k="*" v="*" zoom-min="16">
+    <caption k="name" symbol-id="attraction" 
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
   </rule>
 </rule>
-
 
 
 </xsl:template>

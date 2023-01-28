@@ -570,8 +570,8 @@
         <osm-tag key="man_made" value="water_tower" label-position="true" zoom-appear="15"/>
         <osm-tag key="man_made" value="wastewater_plant" label-position="true" zoom-appear="15"/>
         <osm-tag key="man_made" value="works" label-position="true" zoom-appear="15"/>
-        <osm-tag key="power" value="plant" label-position="true" zoom-appear="15"/>
-        <osm-tag key="power" value="generator" label-position="true" zoom-appear="15"/>
+        <osm-tag key="power" value="plant" label-position="true" zoom-appear="13"/>
+        <osm-tag key="power" value="generator" label-position="true" zoom-appear="13"/>
         <osm-tag key="power" value="tower" label-position="true" zoom-appear="15"/>
 
         <osm-tag key="plant:source" renderable="false" value="solar"/>        
@@ -594,12 +594,13 @@
         <osm-tag key="man_made" value="wastewater_plant" zoom-appear="15"/>
         <osm-tag key="man_made" value="works" zoom-appear="15"/>
 
+        
         <osm-tag key="power" value="plant" zoom-appear="15"/>
         <osm-tag key="power" value="generator" zoom-appear="15"/>
+        <osm-tag key="generator:source" renderable="false" value="wind"/>                
+        
         <osm-tag key="power" value="tower" zoom-appear="15"/>
 
-        <osm-tag key="plant:source" renderable="false" value="solar"/>        
-        <osm-tag key="generator:source" renderable="false" value="solar"/>                
     </pois>  
 
 

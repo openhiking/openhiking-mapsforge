@@ -125,24 +125,49 @@
 
   <rule e="way" k="amenity" v="prison" closed="yes">
     <rule e="any" k="*" v="*" zoom-max="14">
-      <area stroke="#E6E6E6" stroke-width="2" scale="none" src="file:/patterns/prison.svg" symbol-height="20"/>  
+      <area stroke="#E6E6E6" stroke-width="2" scale="none" src="{$patternPath}/prison.svg" symbol-height="20"/>  
     </rule>
     <rule e="any" k="*" v="*" zoom-min="15">
-      <area stroke="#E6E6E6" stroke-width="2" scale="none" src="file:/patterns/prison.svg" symbol-height="40"/>  
+      <area stroke="#E6E6E6" stroke-width="2" scale="none" src="{$patternPath}/prison.svg" symbol-height="40"/>  
     </rule>
   </rule>
 </rule>  
 
 
   <!-- DO 8-->
-  <rule  e="way" k="landuse" v="military">
-    <rule e="any" k="*" v="*" zoom-min="13" zoom-max="14">
-      <area stroke="#F89696" stroke-width="2" scale="none" src="file:/patterns/military.svg" symbol-height="20"/>
+<rule e="way" k="power" v="plant">
+  <rule e="way" k="plant:source" v="solar">
+    <area fill="#42979B" />
+    <rule e="any" k="*" v="*"  zoom-max="15">
+      <area stroke="#C5C5C5" stroke-width="2" scale="none" src="{$patternPath}/solar.svg" symbol-height="32"/>
     </rule>
-    <rule e="any" k="*" v="*" zoom-min="15">
-      <area stroke="#F89696" stroke-width="2" scale="none" src="file:/patterns/military.svg" symbol-height="40"/>
+    <rule e="any" k="*" v="*"  zoom-min="16">
+      <area stroke="#C5C5C5" stroke-width="2" scale="none" src="{$patternPath}/solar.svg" symbol-height="48"/>
+    </rule>
+  </rule>    
+</rule>
+
+<rule e="way" k="power" v="generator">
+  <rule e="way" k="generator:source" v="solar">
+    <area fill="#42979B" />
+    <rule e="any" k="*" v="*"  zoom-max="15">
+      <area stroke="#C5C5C5" stroke-width="2" scale="none" src="{$patternPath}/solar.svg" symbol-height="32"/>
+    </rule>
+    <rule e="any" k="*" v="*"  zoom-min="16">
+      <area stroke="#C5C5C5" stroke-width="2" scale="none" src="{$patternPath}/solar.svg" symbol-height="48"/>
     </rule>
   </rule>
+</rule>
+
+
+<rule  e="way" k="landuse" v="military">
+  <rule e="any" k="*" v="*" zoom-min="13" zoom-max="14">
+    <area stroke="#F89696" stroke-width="2" scale="none" src="{$patternPath}/military.svg" symbol-height="20"/>
+  </rule>
+  <rule e="any" k="*" v="*" zoom-min="15">
+    <area stroke="#F89696" stroke-width="2" scale="none" src="{$patternPath}/military.svg" symbol-height="40"/>
+  </rule>
+</rule>
 
   <rule e="way" k="landuse" v="cemetery">
     <area fill="#B8E4A8" stroke="#C0C0C0" stroke-width="0.8" scale="none"/>

@@ -10,8 +10,8 @@
 -->
 <xsl:template name="points-historical">
 
-
-<rule  e="any" k="historic" v="castle|fort" >
+<!--
+<rule  e="any" k="historic" v="castle" >
     <rule  e="any" k="castle_type" v="palace" >
       <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="15">   
         <symbol id="castle" src="{$symbolPath}/palace.svg" symbol-width="24" priority="{$pr-castle}"/>           
@@ -32,7 +32,33 @@
       <caption k="name" symbol-id="castle" 
       font-style="bold" font-size="12" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-historical}"/>
     </rule>      
+</rule>   
+-->     
+
+<rule  e="any" k="historic" v="castle" >
+    <rule  e="any" k="historic" v="ruins" zoom-min="14">
+      <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="15">   
+        <symbol id="castle" src="{$symbolPath}/graveyard.svg" symbol-width="28" priority="{$pr-castle}"/>           
+      </rule>
+      <rule  e="any" k="*" v="*" zoom-min="16" >        
+        <symbol id="castle" src="{$symbolPath}/graveyard.svg" symbol-width="30" priority="{$pr-castle}"/>                   
+      </rule>
+    </rule>
+    <rule  e="any" k="historic" v="~" zoom-min="14">
+      <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="15">   
+        <symbol id="castle" src="{$symbolPath}/windmill.svg" symbol-width="28" priority="{$pr-castle}"/>           
+      </rule>
+      <rule  e="any" k="*" v="*" zoom-min="16" >        
+        <symbol id="castle" src="{$symbolPath}/windmill.svg" symbol-width="30" priority="{$pr-castle}"/>                   
+      </rule>
+    </rule>
+
+    <rule e="any" k="*" v="*" zoom-min="16">
+      <caption k="name" symbol-id="castle" 
+      font-style="bold" font-size="12" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-historical}"/>
+    </rule>      
 </rule>        
+
 
 <rule  e="any" k="historic" v="manor" >  
   <rule  e="any" k="*" v="*" zoom-min="15" zoom-max="16">   
@@ -47,7 +73,7 @@
   </rule>      
 </rule>
 
-
+<!--
 <rule  e="any" k="historic" v="ruins" >
   <rule  e="any" k="ruins" v="castle|fort|tower" zoom-min="14">
     <rule  e="any" k="*" v="*"  zoom-max="16">   
@@ -81,6 +107,7 @@
     </rule>
   </rule>  
 </rule>
+-->
 
 <rule  e="any" k="historic" v="archaeological_site" >
   <rule  e="any" k="archaeological_site" v="fortification" >

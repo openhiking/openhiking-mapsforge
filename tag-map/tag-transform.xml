@@ -467,6 +467,25 @@
 		</output>
 	</translation>	
 	<translation>
+		<name>Solar plants</name>
+		<description>Remove double-tagging</description>
+		<match type="any" mode="and">
+            <match>
+                <tag k="landuse" v="industrial"/>
+            </match>
+            <match type="any" mode="or">
+                <tag k="plant:source"  match_id="plant" v="solar"/>
+                <tag k="generator:source"  match_id="generator" v="solar"/>
+            </match>   
+        </match>                         
+		<output>
+			<copy-all/>
+			<tag k="landuse" v="none"/>
+			<tag k="power" from_match="plant" v="plant"/>
+			<tag k="power" from_match="generator" v="generator"/>
+		</output>
+	</translation>	
+	<translation>
 		<name>Drinking water </name>
 		<description>from water tap</description>
 		<match type="any" mode="and">
