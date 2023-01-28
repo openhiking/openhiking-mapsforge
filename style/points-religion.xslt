@@ -74,6 +74,20 @@
   </rule>
 </rule>
 
+<rule  e="any" k="amenity" v="monastery" >
+  <rule  e="any" k="religion" v="christian|~" >
+    <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="15">   
+      <symbol id="monastery" src="{$symbolPath}/monastery.svg" symbol-width="26" priority="{$pr-monastery}"/>           
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="16" >        
+      <symbol id="monastery" src="{$symbolPath}/monastery.svg" symbol-width="28" priority="{$pr-monastery}"/>                   
+    </rule>
+    <rule e="any" k="*" v="*" zoom-min="15">
+      <caption k="name" symbol-id="monastery" 
+      font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-religion}"/>
+    </rule>
+  </rule>
+</rule>
 
 
 </xsl:template>

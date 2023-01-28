@@ -56,9 +56,6 @@
 
 <rule e="way" k="tourism" v="camp_site" closed="yes">
     <area fill="#7BFF8B" stroke="#000000" stroke-width="0.2" scale="none"/>
-    <rule e="way" k="*" v="*" zoom-min="16">
-        <caption k="name" font-style="italic" font-family="serif" font-size="14" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
-    </rule>
 </rule>
 
 </xsl:template>

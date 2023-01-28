@@ -787,7 +787,7 @@
     ************************************************** -->
     <ways>
         <osm-tag key="amenity" value="grave_yard" zoom-appear="15"/>    
-        <osm-tag key="amenity" value="monastery" zoom-appear="15"/> 
+        <osm-tag key="amenity" value="monastery" zoom-appear="14"/> 
         <osm-tag key="amenity" value="place_of_worship" zoom-appear="14"/>
         <osm-tag key="man_made" value="campanile" zoom-appear="15"/> 
         <osm-tag key="man_made" value="stupa" zoom-appear="14"/> 
@@ -1129,6 +1129,7 @@
 
         <osm-tag key="trail_symbol" value="hu:f" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="hu:t" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:palp" zoom-appear="14"/>
 
         <osm-tag key="trail_symbol" value="czsk:blue:major" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="czsk:blue:ruin" zoom-appear="14"/>

@@ -179,6 +179,20 @@
     </rule>
 </rule>
 
+<rule  e="node" k="natural" v="geyser" zoom-min="14">
+    <rule  e="any" k="*" v="*" zoom-max="15">
+        <symbol id="geyser" src="{$symbolPath}/geyser.svg" symbol-width="20" display="always" priority="{$pr-geyser}"/>
+    </rule> 
+    <rule  e="any" k="*" v="*" zoom-min="16">
+        <symbol id="geyser" src="{$symbolPath}/geyser.svg" symbol-width="24" display="always" priority="{$pr-geyser}"/>
+    </rule>                         
+    <rule e="node" k="*" v="*" zoom-min="16">
+    <caption k="name" symbol-id="geyser" 
+    font-style="bold" font-size="10" fill="#4040ff" stroke="#ffffff" stroke-width="2" priority="{$pr-label-natural}"/>
+    </rule>
+</rule>
+
+
 <!-- 
 <rule e="node" k="natural" v="tree" zoom-min="16">
     <rule e="node" k="name" v="*">

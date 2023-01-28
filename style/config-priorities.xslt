@@ -24,7 +24,8 @@
 <xsl:variable name="pr-cliff">30</xsl:variable>
 <xsl:variable name="pr-cave">30</xsl:variable>
 <xsl:variable name="pr-spring-drinking">30</xsl:variable>
-<xsl:variable name="pr-waterfall">30</xsl:variable>
+<xsl:variable name="pr-waterfall">31</xsl:variable>
+<xsl:variable name="pr-geyser">31</xsl:variable>
 
 <xsl:variable name="pr-wilderness-hut">32</xsl:variable>
 <xsl:variable name="pr-basic-hut">31</xsl:variable>
@@ -48,6 +49,7 @@
 
 <xsl:variable name="pr-church">20</xsl:variable>
 <xsl:variable name="pr-stupa">20</xsl:variable>
+<xsl:variable name="pr-monastery">20</xsl:variable>
 
 <xsl:variable name="pr-camp-site">20</xsl:variable>
 <xsl:variable name="pr-zoo">20</xsl:variable>
