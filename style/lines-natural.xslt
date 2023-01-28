@@ -38,7 +38,7 @@
   </rule>
 </rule>
 -->
-<rule  e="way" k="natural" v="ridge|valley" zoom-min="13"> 
+<rule  e="way" k="natural" v="ridge|valley|gorge" zoom-min="13"> 
   <rule e="way" k="*" v="*" zoom-min="12" zoom-max="13">
     <pathText k="name"  font-size="10" fill="#1f8500" stroke="#f0f0e8" repeat-gap="150" stroke-width="0.5" />
   </rule>

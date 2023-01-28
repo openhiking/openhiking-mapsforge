@@ -661,6 +661,7 @@
         <match type="way" >
             <match type="way" mode="or">
                 <tag k="natural" v="valley"/>
+				<tag k="natural" v="gorge"/>
                 <tag k="natural" v="ridge"/>                
                 <tag k="natural" v="tree"/>				
             </match>

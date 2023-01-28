@@ -267,6 +267,7 @@
         <osm-tag key='natural' value='cliff' zoom-appear='12'/>     
         <osm-tag key='natural' value='ridge' zoom-appear='12'/>     
         <osm-tag key='natural' value='valley' zoom-appear='12'/>     
+        <osm-tag key='natural' value='gorge' zoom-appear='12'/>     
     </ways>
 
     <!-- ************************************************** 
