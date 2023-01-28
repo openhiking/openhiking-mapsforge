@@ -160,5 +160,43 @@
 </rule>    
 </rule>
 
+<rule e="way" k="oneway" v="yes">
+    <rule e="way" k="highway" v="secondary|secondary_link|tertiary|tertiary_link|residential|living_street|service">
+        <rule e="way" k="*" v="*" zoom-min="15" zoom-max="16"> 
+            <lineSymbol src="{$symbolPath}/oneway.svg" dy="1.6" align-center="true" repeat="true" repeat-start="30" repeat-gap="100" symbol-width="12" priority="{$pr-oneway}" display="always" />
+        </rule>
+        <rule e="way" k="*" v="*" zoom-min="17"> 
+            <lineSymbol src="{$symbolPath}/oneway.svg" dy="1.6" align-center="true" repeat="true" repeat-start="30" repeat-gap="200" symbol-width="16" priority="{$pr-oneway}" display="always"/>
+        </rule>
+    </rule>   
+    <rule e="way" k="highway" v="track|path|footway|pedestrian">
+        <rule e="way" k="*" v="*" zoom-min="15" zoom-max="16"> 
+            <lineSymbol src="{$symbolPath}/oneway.svg" dy="1.5" align-center="true" repeat="true" repeat-start="30" repeat-gap="100" symbol-width="12" priority="{$pr-oneway}" display="always" />
+        </rule>
+        <rule e="way" k="*" v="*" zoom-min="17"> 
+            <lineSymbol src="{$symbolPath}/oneway.svg" dy="1.5" align-center="true" repeat="true" repeat-start="30" repeat-gap="200" symbol-width="16" priority="{$pr-oneway}" display="always"/>
+        </rule>
+    </rule>   
+</rule>     
+
+<rule e="way" k="oneway" v="-1">
+    <rule e="way" k="highway" v="secondary|secondary_link|tertiary|tertiary_link|residential|living_street|service">
+        <rule e="way" k="*" v="*" zoom-min="15" zoom-max="16"> 
+            <lineSymbol src="{$symbolPath}/oneway-back.svg" dy="1.4" align-center="true" repeat="true" repeat-start="30" repeat-gap="100" symbol-width="12" priority="{$pr-oneway}" display="always" />
+        </rule>
+        <rule e="way" k="*" v="*" zoom-min="17"> 
+            <lineSymbol src="{$symbolPath}/oneway-back.svg" dy="1.4" align-center="true" repeat="true" repeat-start="30" repeat-gap="200" symbol-width="16" priority="{$pr-oneway}" display="always"/>
+        </rule>
+    </rule>   
+    <rule e="way" k="highway" v="track|path|footway|pedestrian">
+        <rule e="way" k="*" v="*" zoom-min="15" zoom-max="16"> 
+            <lineSymbol src="{$symbolPath}/oneway-back.svg" dy="1.5" align-center="true" repeat="true" repeat-start="30" repeat-gap="100" symbol-width="12" priority="{$pr-oneway}" display="always" />
+        </rule>
+        <rule e="way" k="*" v="*" zoom-min="17"> 
+            <lineSymbol src="{$symbolPath}/oneway-back.svg" dy="1.5" align-center="true" repeat="true" repeat-start="30" repeat-gap="200" symbol-width="16" priority="{$pr-oneway}" display="always"/>
+        </rule>
+    </rule>   
+</rule>       
+
 </xsl:template>
 </xsl:stylesheet>

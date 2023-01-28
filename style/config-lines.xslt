@@ -23,7 +23,6 @@
 <xsl:variable name="zm-service">14</xsl:variable>
 <xsl:variable name="zm-raceway">15</xsl:variable>
 <xsl:variable name="zm-macadam">13</xsl:variable>
-<xsl:variable name="zm-track-grade1">13</xsl:variable>
 <xsl:variable name="zm-track">14</xsl:variable>
 <xsl:variable name="zm-track2">17</xsl:variable>
 <xsl:variable name="zm-cycleway">15</xsl:variable>

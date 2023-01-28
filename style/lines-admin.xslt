@@ -15,7 +15,7 @@
 
 <rule  e="way" k="boundary" v="administrative"  zoom-min="6">
     <rule  e="way" k="admin_level" v="2">
-        <line stroke="#e680ff" stroke-width="1.2"/>
+        <line stroke="#e680ff" stroke-width="2"/>
         <line stroke="#CC00FF" stroke-width="0.4" stroke-dasharray="0.4,2,2,2" scale="all" />
     </rule>
 </rule>

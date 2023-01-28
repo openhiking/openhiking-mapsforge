@@ -41,12 +41,12 @@
 
 
 <rule e="way" k="leisure" v="common|village_green|park|garden">
-  <area fill="#CFFF9E" scale="none"/>
+  <area fill="#CFFF9E" stroke="#34b24e" stroke-width="1" scale="none"/>
   <rule e="way" k="*" v="*" zoom-max="14">
-    <area src="file:/patterns/park.svg" symbol-height="20"/>
+    <area src="{$patternPath}/park.svg" symbol-height="20"/>
   </rule>
   <rule e="way" k="*" v="*" zoom-min="15">
-    <area src="file:/patterns/park.svg" symbol-height="30"/>
+    <area src="{$patternPath}/park.svg" symbol-height="30"/>
   </rule>
   <rule e="way" k="*" v="*" zoom-min="16">
     <caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />

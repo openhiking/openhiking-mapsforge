@@ -8,9 +8,6 @@
     <rule e="way" k="shop" v="~">
       <area fill="#B0CBCBCB" stroke="#8F8F8F" stroke-width="0.6" scale="none" />
     </rule>
-    <rule e="way" k="shop" v="*">
-      <area fill="#B0EDCDE9" stroke="#971583" stroke-width="0.6" scale="none" />
-    </rule>
     <rule e="way" k="amenity" v="fuel">
       <area fill="#B0EDCDE9" stroke="#971583" stroke-width="0.6" scale="none" />
     </rule>
@@ -24,8 +21,8 @@
   <rule e="way" k="building" v="cathedral|church|chapel">
     <area fill="#B0d19158" stroke="#8F8F8F" stroke-width="1.6" scale="none" />
   </rule>
-  <rule e="way" k="building" v="shop">
-    <area fill="#B0971583" stroke="#8F8F8F" stroke-width="0.6" scale="none" />
+  <rule e="way" k="building" v="shop|retail">
+    <area fill="#b89669" stroke="#bd956a" stroke-width="0.6" scale="none" />
   </rule>
   <rule e="way" k="building" v="stadium">
     <area fill="#B0A3D3D9" stroke="#1b8389" stroke-width="1" scale="none" />
