@@ -7,6 +7,8 @@
 <xsl:variable name="lc-trail-green">#38C820</xsl:variable>
 <xsl:variable name="lc-trail-yellow">#F8C800</xsl:variable>
 <xsl:variable name="lc-trail-purple">#be40be</xsl:variable>
+<xsl:variable name="lc-trail-orange">#ffa100</xsl:variable>
+<xsl:variable name="lc-trail-black">#626262</xsl:variable>
 
 <rule cat="colored_hiking" e="way" k="highway" v="*" zoom-min="12">
 	<rule  e="way" k="trail_color" v="blue" >
@@ -29,10 +31,19 @@
         	<xsl:with-param name="color" select="$lc-trail-yellow" />
     	</xsl:call-template>
 	</rule>
-
 	<rule  e="way" k="trail_color" v="purple" >
    		<xsl:call-template name="trail-highlight-rules">
         	<xsl:with-param name="color" select="$lc-trail-purple" />
+    	</xsl:call-template>
+	</rule>
+	<rule  e="way" k="trail_color" v="orange" >
+   		<xsl:call-template name="trail-highlight-rules">
+        	<xsl:with-param name="color" select="$lc-trail-orange" />
+    	</xsl:call-template>
+	</rule>
+	<rule  e="way" k="trail_color" v="black" >
+   		<xsl:call-template name="trail-highlight-rules">
+        	<xsl:with-param name="color" select="$lc-trail-black" />
     	</xsl:call-template>
 	</rule>
 </rule>
@@ -58,10 +69,19 @@
         	<xsl:with-param name="color" select="$lc-trail-yellow" />
     	</xsl:call-template>
 	</rule>
-
 	<rule  e="way" k="trail_color" v="purple" >
    		<xsl:call-template name="trail-highlight-rules-ferry">
         	<xsl:with-param name="color" select="$lc-trail-purple" />
+    	</xsl:call-template>
+	</rule>
+	<rule  e="way" k="trail_color" v="orange" >
+   		<xsl:call-template name="trail-highlight-rules">
+        	<xsl:with-param name="color" select="$lc-trail-orange" />
+    	</xsl:call-template>
+	</rule>
+	<rule  e="way" k="trail_color" v="black" >
+   		<xsl:call-template name="trail-highlight-rules">
+        	<xsl:with-param name="color" select="$lc-trail-black" />
     	</xsl:call-template>
 	</rule>
 </rule>

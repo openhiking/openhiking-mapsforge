@@ -50,6 +50,13 @@
 </rule>
 -->
 
+<rule  e="any" k="leisure" v="*" >
+  <rule  e="any" k="sport" v="soccer" zoom-min="15">
+    <symbol id="soccer" src="{$symbolPath}/soccer.svg" symbol-width="22" priority="{$pr-soccer}"/>
+  </rule>
+</rule>  
+
+
 <rule  e="any" k="tourism" v="attraction" zoom-min="15">
   <symbol id="attraction" src="{$symbolPath}/attraction.svg" symbol-width="16" priority="{$pr-attraction}"/>
   <rule e="any" k="*" v="*" zoom-min="16">
