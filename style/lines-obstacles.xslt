@@ -13,10 +13,10 @@
     <rule e="way" k="area" v="~">
         <rule e="way" k="obstacle" v="vegetation" >
             <rule e="any" k="*" v="*" zoom-min="15" zoom-max="16">
-                <lineSymbol src="{$symbolPath}/obstacle_vegetation.svg" align-center="true" repeat="true" repeat-start="30" repeat-gap="120" symbol-width="22"  priority="{$pr-obstacle}"/>
+                <lineSymbol src="{$symbolPath}/obstacle_vegetation.svg" align-center="true" repeat="true" repeat-start="10" repeat-gap="40" symbol-width="18"  priority="50"/>
             </rule>
             <rule e="any" k="*" v="*" zoom-min="17" >
-                <lineSymbol src="{$symbolPath}/obstacle_vegetation.svg" align-center="true" repeat="true" repeat-start="30" repeat-gap="240" symbol-width="22"  priority="{$pr-obstacle}"/>
+                <lineSymbol src="{$symbolPath}/obstacle_vegetation.svg" align-center="true" repeat="true" repeat-start="30" repeat-gap="240" symbol-width="22"  priority="52"/>
             </rule>            
         </rule>
         <rule e="way" k="obstacle" v="fallen_tree" zoom-min="15">

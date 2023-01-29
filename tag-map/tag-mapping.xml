@@ -717,9 +717,9 @@
                P O I   O B S T A C L E S 
     ************************************************** -->
     <ways>
-        <osm-tag key="obstacle" value="fallen_tree" label-position="true" zoom-appear="14"/> 
-        <osm-tag key="obstacle" value="vegetation" label-position="true" zoom-appear="14"/> 
-        <osm-tag key="obstacle" value="yes" label-position="true" zoom-appear="14"/> 
+        <osm-tag key="obstacle" value="fallen_tree" renderable="false"/> 
+        <osm-tag key="obstacle" value="vegetation" renderable="false"/> 
+        <osm-tag key="obstacle" value="yes"  renderable="false"/> 
     </ways>    
 
     <pois>
