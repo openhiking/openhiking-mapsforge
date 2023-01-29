@@ -34,6 +34,7 @@
   <xsl:include href="lines-hiking-trails.xslt" />
   <xsl:include href="lines-highways.xslt" />
   <xsl:include href="lines-access-restrictions.xslt" />
+  <xsl:include href="lines-obstacles.xslt" />
   <xsl:include href="lines-railways.xslt" />
   <xsl:include href="lines-barriers.xslt" />
   <xsl:include href="lines-aerialways.xslt" />
@@ -93,6 +94,7 @@
   <xsl:call-template name="lines-hiking-trails"/>   
   <xsl:call-template name="lines-highways"/>
   <xsl:call-template name="lines-access-restrictions"/>
+  <xsl:call-template name="lines-obstacles"/>
   <xsl:call-template name="lines-railways"/>
   <xsl:call-template name="lines-other"/> 
   <xsl:call-template name="lines-barriers"/>
@@ -116,7 +118,9 @@
   <xsl:call-template name="points-industrial"/>
   <xsl:call-template name="points-leisure"/>
   <xsl:call-template name="points-military"/>  
+  <!--
   <xsl:call-template name="points-obstacles"/>
+  -->
   <xsl:call-template name="points-places"/>  
   <xsl:call-template name="points-religion"/>
   <xsl:call-template name="points-shops"/>

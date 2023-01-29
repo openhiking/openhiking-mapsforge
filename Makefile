@@ -295,7 +295,7 @@ stage1: refresh merge tiles
 stage2: map nsi-script install $(MAKE_GMAPI)
 	@echo Stage-2 completed successfully
 
-all: refresh merge tiles map nsi-script install $(MAKE_GMAPI)
+all:  master transform map
 	@echo Map making completed successfully
 
 clean:
