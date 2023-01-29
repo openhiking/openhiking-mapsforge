@@ -25,7 +25,7 @@
 		</xsl:call-template>
 		<xsl:call-template name="hiking-symbol-osmc-special-rules"/>
 	</rule>
-	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="14">
+	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
 		<xsl:call-template name="hiking-symbol-osmc-white-bg-rules">
 			<xsl:with-param name="color" select="'red'" />
 		</xsl:call-template>

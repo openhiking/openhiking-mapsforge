@@ -105,7 +105,7 @@
 <xsl:variable name="lw-unclassified">1.2</xsl:variable>
 <xsl:variable name="lw-service">0.8</xsl:variable>
 <xsl:variable name="lw-raceway">0.6</xsl:variable>
-<xsl:variable name="lw-macadam">1.2</xsl:variable>
+<xsl:variable name="lw-macadam">1.0</xsl:variable>
 <xsl:variable name="lw-track">0.4</xsl:variable>
 <xsl:variable name="lw-track2">0.3</xsl:variable>
 <xsl:variable name="lw-pedestrian">0.4</xsl:variable>

@@ -154,8 +154,8 @@
         <osm-tag key="sac_scale" renderable="false" value="difficult_alpine_hiking"/>        
 
         <!-- Assisted trails -->
-        <osm-tag key="assisted_trail" renderable="false" value="yes"/>
-        <osm-tag key="safety_rope" renderable="false" value="yes"/>
+        <osm-tag key="assisted_trail" equivalent-values="ropes,iron_ropes" renderable="false" value="yes"/>
+        <osm-tag key="safety_rope" equivalent-values="wire_rope,chain" renderable="false" value="yes"/>
         <osm-tag key="ladder" renderable="false" value="yes"/>
         <osm-tag key="rungs" renderable="false" value="yes"/>
             
@@ -316,8 +316,8 @@
         <osm-tag key="tourism" value="apartment" label-position="true" zoom-appear="15"/>
         <osm-tag key="tourism" value="alpine_hut" label-position="true" zoom-appear="12"/>
         <osm-tag key="tourism" value="bed_and_breakfast" label-position="true" zoom-appear="15"/>
-        <osm-tag key='tourism' value='camp_site' label-position="true" zoom-appear='14' />
-        <osm-tag key='tourism' value='caravan_site' label-position="true" zoom-appear='14' />
+        <osm-tag key='tourism' value='camp_site' label-position="true" zoom-appear='13' />
+        <osm-tag key='tourism' value='caravan_site' label-position="true" zoom-appear='13' />
         <osm-tag key="tourism" value="chalet" label-position="true" zoom-appear="15"/>        
         <osm-tag key="tourism" value="hostel" label-position="true" zoom-appear="15"/>
         <osm-tag key="tourism" value="hotel" label-position="true" zoom-appear="15"/>

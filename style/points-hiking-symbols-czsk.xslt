@@ -47,7 +47,7 @@
 		</xsl:call-template>		
 
 	</rule>
-	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="14">
+	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
 		<xsl:call-template name="hiking-symbol-czsk-rules">
 			<xsl:with-param name="color" select="'blue'" />
 		</xsl:call-template>

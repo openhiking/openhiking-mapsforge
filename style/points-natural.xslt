@@ -11,19 +11,26 @@
 <xsl:template name="points-natural">
 
 <rule e="node" k="natural" v="peak" >
-    <rule e="node" k="name" v="*" zoom-min="13">
-        <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="8" priority="{$pr-peak-named}"/>
-        <caption  k="name" font-size="11" fill="#693600" font-style="bold_italic"  position="above"
-         stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}" />
-        <rule e="any" k="*" v="*" >
+    <rule e="node" k="name" v="*" >
+        <rule e="node" k="name" v="*" zoom-min="13" zoom-max="14">        
+            <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="8" priority="{$pr-peak-named}"/>
+            <caption  k="name" font-size="11" fill="#693600" font-style="bold_italic"  position="above"
+            stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}" />
             <caption fill="#693600" font-size="10" font-style="bold" k="ele" position="below"
+                stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}"/>
+        </rule>
+        <rule e="node" k="name" v="*" zoom-min="15">
+            <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="9" priority="{$pr-peak-named}"/>
+            <caption  k="name" font-size="12" fill="#693600" font-style="bold_italic"  position="above"
+            stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}" />
+            <caption fill="#693600" font-size="11" font-style="bold" k="ele" position="below"
                 stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}"/>
         </rule>
     </rule>
     <rule e="node" k="name" v="~" zoom-min="14">
         <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="8" priority="{$pr-peak}"/>
         <rule e="any" k="*" v="*" >
-            <caption fill="#000000" font-size="10" font-style="bold" k="ele" position="below"
+            <caption fill="#693600" font-size="10" font-style="bold" k="ele" position="below"
                 stroke="#FFFFFF" stroke-width="2.0" symbol-id="peak" priority="{$pr-label-peak}"/>
         </rule>
     </rule>
@@ -61,9 +68,11 @@
 -->
 
 <rule e="any" k="natural" v="saddle" zoom-min="14">
-    <symbol id="saddle" src="{$symbolPath}/mountain_pass.svg" symbol-width="16" priority="{$pr-saddle}"/>
-    <caption k="name"  fill="#000000" font-size="11" font-style="italic"  
-        stroke="#FFFFFF" stroke-width="2.0" symbol-id="saddle"  priority="{$pr-label-natural}"/>
+    <rule e="any" k="name" v="*" >
+        <symbol id="saddle" src="{$symbolPath}/mountain_pass.svg" symbol-width="16" priority="{$pr-saddle}"/>
+        <caption k="name"  fill="#000000" font-size="11" font-style="italic"  
+            stroke="#FFFFFF" stroke-width="2.0" symbol-id="saddle"  priority="{$pr-label-natural}"/>
+    </rule>
 </rule>
 
 <rule e="any" k="natural" v="geyser" zoom-min="15">
@@ -71,16 +80,20 @@
 
 
 <rule e="node" k="natural" v="cave_entrance" zoom-min="14">
-    <rule  e="any" k="*" v="*" zoom-max="15">
-        <symbol id="cave" src="{$symbolPath}/cave_entrance.svg" symbol-width="16" priority="{$pr-cave}"/>
+    <rule  e="any" k="*" v="*" zoom-max="14">
+        <symbol id="cave" src="{$symbolPath}/cave_entrance.svg" symbol-width="14" priority="{$pr-cave}"/>
     </rule> 
-    <rule  e="any" k="*" v="*" zoom-min="16">
-        <symbol id="cave" src="{$symbolPath}/cave_entrance.svg" symbol-width="18" priority="{$pr-cave}"/>
+    <rule  e="any" k="*" v="*" zoom-min="15" zoom-max="16">
+        <symbol id="cave" src="{$symbolPath}/cave_entrance.svg" symbol-width="16" priority="{$pr-cave}"/>
+        <caption fill="#7b0000" font-size="11" font-style="bold" k="name" 
+            stroke="#FFFFFF" stroke-width="1.5" symbol-id="cave" priority="{$pr-label-natural}"/>
     </rule>                         
-    <rule e="any" k="*" v="*" zoom-min="16">
-        <caption fill="#7b0000" font-size="10" font-style="bold" k="name" 
-            stroke="#FFFFFF" stroke-width="2.0" symbol-id="cave" priority="{$pr-label-natural}"/>
+    <rule e="any" k="*" v="*" zoom-min="17">
+        <symbol id="cave" src="{$symbolPath}/cave_entrance.svg" symbol-width="18" priority="{$pr-cave}"/>    
+        <caption fill="#7b0000" font-size="12" font-style="bold" k="name" 
+            stroke="#FFFFFF" stroke-width="1.5" symbol-id="cave" priority="{$pr-label-cave}"/>
     </rule>
+
 </rule>
 
 <rule e="any" k="natural" v="sinkhole" >

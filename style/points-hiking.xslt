@@ -158,7 +158,7 @@
   <rule  e="any" k="board_type" v="~" >
     <symbol id="board" src="{$symbolPath}/board.svg" symbol-width="24" priority="{$pr-board}"/>
   </rule>
-  <rule e="node" k="*" v="*" zoom-min="16">
+  <rule e="node" k="*" v="*" zoom-min="17">
     <caption k="name" symbol-id="board" 
     font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-wilderness}"/>
   </rule>

@@ -26,13 +26,19 @@
 
 <rule e="way" k="landuse" v="forest"  zoom-min="10">
   <rule e="way" k="leaf_type" v="~|broadleaved" >
+  <!-- 
     <area fill="#A1E976"/>
+    -->
+    <area fill="#aee98a"/>
   </rule>
 </rule>  
 
 <rule e="way" k="natural" v="wood"  zoom-min="10">
   <rule e="way" k="leaf_type" v="~|broadleaved" >
+  <!--
     <area fill="#A1E976"/>
+    -->
+    <area fill="#aee98a"/>
   </rule>
 </rule>  
 

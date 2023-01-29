@@ -35,8 +35,8 @@
         <rule e="way" k="highway" v="track" >
             <rule e="way" k="tracktype" v="grade1" zoom-min="{$zm-macadam}"> 
                 <rule e="way" k="*" v="*" zoom-max="{$zm-macadam + 1}"> 
-                    <line stroke="{$bc-macadam}" stroke-width="{$lw-macadam}" stroke-dasharray="8,4" stroke-linecap="butt"/>
-                    <line stroke="{$lc-macadam}" stroke-width="{$lw-macadam - 0.4}" />          
+                    <line stroke="{$bc-macadam}" stroke-width="{$lw-macadam}" stroke-dasharray="8,2" stroke-linecap="butt"/>
+                    <line stroke="{$lc-macadam}" stroke-width="{$lw-macadam - 0.3}" />          
                 </rule>  
                 <rule e="way" k="*" v="*" zoom-min="{$zm-macadam + 2}" zoom-max="{$zm-level2 - 1 }"> 
                     <line stroke="{$bc-macadam}" stroke-width="{$lw-macadam}" stroke-dasharray="10,5" stroke-linecap="butt"/>
