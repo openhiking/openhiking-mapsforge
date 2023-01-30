@@ -37,9 +37,6 @@
         <rule e="any" k="*" v="*" zoom-min="18"  >
             <line stroke="#FF956A" stroke-width="{$lw-protected-area-l3}" stroke-dasharray="2,2" scale="all"/>                  
         </rule> 
-        <rule e="any" k="*" v="*" zoom-min="13"  >
-            <caption k="name" font-style="bold_italic" font-family="serif" font-size="12" fill="#95588d42"  />
-        </rule>
     </rule>        
     <rule e="any" k="protect_class" v="2|~" >
         <rule e="any" k="*" v="*" zoom-min="13"  zoom-max="15">
@@ -51,10 +48,12 @@
         <rule e="any" k="*" v="*" zoom-min="18"  >
             <line stroke="#39CA20" stroke-width="{$lw-protected-area-l3}" stroke-dasharray="2,2" scale="all"/>                  
         </rule> 
-
-        <rule e="any" k="*" v="*" zoom-min="13"  >
-            <caption k="name" font-style="bold_italic" font-family="serif" font-size="12" fill="#95588d42"  />
-        </rule>
+    </rule>
+    <rule e="any" k="*" v="*" zoom-min="13"  zoom-max="14">
+        <caption k="name" font-style="bold_italic" font-family="serif" font-size="11" fill="#95588d42"  />
+    </rule>
+    <rule e="any" k="*" v="*" zoom-min="14"  >
+        <caption k="name" font-style="bold_italic" font-family="serif" font-size="12" fill="#95588d42"  />
     </rule>
 </rule>
 

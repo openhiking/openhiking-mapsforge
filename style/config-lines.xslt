@@ -35,7 +35,6 @@
 
 <xsl:variable name="zm-ferry">12</xsl:variable>
 
-<xsl:variable name="zm-deep">17</xsl:variable>
 <xsl:variable name="zm-level2">17</xsl:variable>
 <xsl:variable name="zm-level3">19</xsl:variable>
 
@@ -74,6 +73,7 @@
 <xsl:variable name="lc-footway">#4B3D23</xsl:variable>
 <xsl:variable name="lc-bridleway">#7B3000</xsl:variable>
 <xsl:variable name="lc-path">#7B3000</xsl:variable>
+<xsl:variable name="lc-mountain-path">#7B3000</xsl:variable>
 <xsl:variable name="lc-steps">#BD3041</xsl:variable>
 <xsl:variable name="lc-ferrata">#D90000</xsl:variable>
 
@@ -114,6 +114,7 @@
 <xsl:variable name="lw-bridleway">0.4</xsl:variable>
 <xsl:variable name="lw-path">0.4</xsl:variable>
 <xsl:variable name="lw-path2">0.3</xsl:variable>
+<xsl:variable name="lw-path3">0.25</xsl:variable>
 <xsl:variable name="lw-steps">0.6</xsl:variable>
 
 <xsl:variable name="lw-tunnel">0.2</xsl:variable>

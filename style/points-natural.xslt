@@ -75,9 +75,6 @@
     </rule>
 </rule>
 
-<rule e="any" k="natural" v="geyser" zoom-min="15">
-</rule>
-
 
 <rule e="node" k="natural" v="cave_entrance" zoom-min="14">
     <rule  e="any" k="*" v="*" zoom-max="14">

@@ -146,7 +146,9 @@
         <osm-tag key="tracktype" renderable="false" value="grade5"/>
 
         <!-- SAC Scale -->
+        <!--
         <osm-tag key="sac_scale" renderable="false" value="hiking"/>
+        -->
         <osm-tag key="sac_scale" renderable="false" value="mountain_hiking"/>
         <osm-tag key="sac_scale" renderable="false" value="demanding_mountain_hiking"/>
         <osm-tag key="sac_scale" renderable="false" value="alpine_hiking"/>
@@ -319,6 +321,7 @@
         <osm-tag key='tourism' value='camp_site' label-position="true" zoom-appear='13' />
         <osm-tag key='tourism' value='caravan_site' label-position="true" zoom-appear='13' />
         <osm-tag key="tourism" value="chalet" label-position="true" zoom-appear="15"/>        
+        <osm-tag key="tourism" value="guest_house" label-position="true" zoom-appear="15"/>        
         <osm-tag key="tourism" value="hostel" label-position="true" zoom-appear="15"/>
         <osm-tag key="tourism" value="hotel" label-position="true" zoom-appear="15"/>
         <osm-tag key="tourism" value="motel" label-position="true" zoom-appear="15"/>
@@ -335,15 +338,13 @@
         <osm-tag key='tourism' value='camp_site' zoom-appear='14' />
         <osm-tag key='tourism' value='caravan_site' zoom-appear='14' />
         <osm-tag key="tourism" value="chalet" zoom-appear="15"/>        
+        <osm-tag key="tourism" value="guest_house" zoom-appear="15"/>                
         <osm-tag key="tourism" value="hostel" zoom-appear="15"/>
         <osm-tag key="tourism" value="hotel" zoom-appear="15"/>       
         <osm-tag key="tourism" value="motel" zoom-appear="15"/>
         <osm-tag key="tourism" value="wilderness_hut" zoom-appear="14"/>
 
-        <osm-tag key="camp_site" value="basic" renderable="false" />
-        <!-- 
-        <osm-tag key="backcountry" value="yes" renderable="false" />        
-        -->
+        <osm-tag key="camp_site" value="basic" renderable="false" />    
     </pois>
 
     <!-- ************************************************** 

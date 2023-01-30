@@ -9,12 +9,28 @@
             <line stroke="{$lc-footway}" stroke-width="{$lw-footway}" stroke-linecap="butt"/>          
         </rule>        
         <rule e="way" k="highway" v="path" zoom-min="{$zm-path}">
-            <rule e="way" k="*" v="*" zoom-min="{$zm-path}" zoom-max="{$zm-deep - 1}"> 
-                <line stroke="{$lc-path}" stroke-width="{$lw-path}" stroke-dasharray="4,4"  stroke-linecap="butt"/>          
-            </rule>                                
-            <rule e="way" k="*" v="*" zoom-min="{$zm-deep}" > 
-                <line stroke="{$lc-path}" stroke-width="{$lw-path2}" stroke-dasharray="4,4"  stroke-linecap="butt"/>          
-            </rule>                                
+            <rule e="way" k="sac_scale" v="demanding_mountain_hiking|alpine_hiking|demanding_alpine_hiking|difficult_alpine_hiking" zoom-min="{$zm-path}">
+                <rule e="way" k="*" v="*" zoom-min="{$zm-path}" zoom-max="{$zm-level2 - 1}"> 
+                    <line stroke="{$lc-mountain-path}" stroke-width="{$lw-path}" stroke-dasharray="2,2"  stroke-linecap="butt"/>          
+                </rule>                                
+                <rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}"> 
+                    <line stroke="{$lc-mountain-path}" stroke-width="{$lw-path2}" stroke-dasharray="3,3"  stroke-linecap="butt"/>          
+                </rule> 
+                <rule e="way" k="*" v="*" zoom-min="{$zm-level3}" > 
+                    <line stroke="{$lc-mountain-path}" stroke-width="{$lw-path3}" stroke-dasharray="4,4"  stroke-linecap="butt"/>          
+                </rule>                                
+            </rule>
+            <rule e="way" k="sac_scale" v="hiking|mountain_hiking|~" zoom-min="{$zm-path}">
+                <rule e="way" k="*" v="*" zoom-min="{$zm-path}" zoom-max="{$zm-level2 - 1}"> 
+                    <line stroke="{$lc-path}" stroke-width="{$lw-path}" stroke-dasharray="4,4"  stroke-linecap="butt"/>          
+                </rule>                                
+                <rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}"> 
+                    <line stroke="{$lc-path}" stroke-width="{$lw-path2}" stroke-dasharray="7,7"  stroke-linecap="butt"/>          
+                </rule>       
+                <rule e="way" k="*" v="*" zoom-min="{$zm-level3}"> 
+                    <line stroke="{$lc-path}" stroke-width="{$lw-path3}" stroke-dasharray="10,10"  stroke-linecap="butt"/>          
+                </rule>                                
+            </rule>
         </rule>            
         <rule e="way" k="highway" v="bridleway" zoom-min="{$zm-bridleway}">
             <line stroke="{$lc-bridleway}" stroke-width="{$lw-bridleway}" stroke-dasharray="4,4"  stroke-linecap="butt"/>                      
@@ -45,9 +61,9 @@
                 <rule e="way" k="*" v="*" zoom-min="{$zm-level2 }"> 
                     <line stroke="{$bc-macadam}" stroke-width="{$lw-macadam}" stroke-dasharray="14,6" stroke-linecap="butt"/>
                     <line stroke="{$lc-macadam}" stroke-width="{$lw-macadam - 0.4}" />          
-                </rule>                    
+                </rule>                                    
             </rule>
-            <rule e="way" k="*" v="*" zoom-min="{$zm-track}" zoom-max="{$zm-deep - 1}"> 
+            <rule e="way" k="*" v="*" zoom-min="{$zm-track}" zoom-max="{$zm-level2 - 1}"> 
                 <rule e="way" k="tracktype" v="grade2" > 
                     <line stroke="{$lc-track}" stroke-width="{$lw-track}" stroke-dasharray="24,3" stroke-linecap="butt" />
                 </rule>
@@ -61,7 +77,7 @@
                     <line stroke="{$lc-track}" stroke-width="{$lw-track}" stroke-dasharray="5,4"  stroke-linecap="butt" />
                 </rule>
             </rule>
-            <rule e="way" k="*" v="*" zoom-min="{$zm-deep}"> 
+            <rule e="way" k="*" v="*" zoom-min="{$zm-level2}"> 
                 <rule e="way" k="tracktype" v="grade2" > 
                     <line stroke="{$lc-track}" stroke-width="{$lw-track2}" stroke-dasharray="30,7" stroke-linecap="butt" />
                 </rule>
@@ -159,6 +175,19 @@
     </rule>
 </rule>    
 </rule>
+
+<rule e="way" k="assisted_trail|safety_rope|ladder|rungs" v="yes">
+    <rule e="way" k="highway" v="path">
+        <rule e="way" k="trail_color" v="*">    
+            <line stroke="#BD0000" stroke-dasharray="0.15,0.8" stroke-width="1.9" stroke-linecap="butt" scale="all"/>
+        </rule>    
+        <rule e="way" k="trail_color" v="~">    
+            <line stroke="#FF6500" stroke-dasharray="0.15,0.9" stroke-width="1.3" stroke-linecap="butt" scale="all"/>
+        </rule>    
+    </rule>    
+</rule>
+
+
 
 <rule e="way" k="oneway" v="yes">
     <rule e="way" k="highway" v="secondary|secondary_link|tertiary|tertiary_link|residential|living_street|service">

@@ -24,7 +24,7 @@
 </rule>
 
 <rule  e="any" k="amenity" v="fast_food" zoom-min="15">
-    <symbol id="fast_food" src="{$symbolPath}/fast_food.svg" symbol-width="18" priority="{$pr-fast-food}"/>
+    <symbol id="fast_food" src="{$symbolPath}/fast_food.svg" symbol-width="17" priority="{$pr-fast-food}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="fast_food" 
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-food}"/>

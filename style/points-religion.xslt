@@ -13,15 +13,30 @@
 
 <rule  e="any" k="amenity" v="place_of_worship" zoom-min="14">
   <rule  e="any" k="building" v="church|cathedral" >
-    <symbol id="church" src="{$symbolPath}/church.svg" symbol-width="20" priority="{$pr-church}"/>
+    <rule  e="any" k="*" v="*"  zoom-max="15">   
+      <symbol id="church" src="{$symbolPath}/church.svg" symbol-width="20" priority="{$pr-church}"/>
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="16" >        
+      <symbol id="church" src="{$symbolPath}/church.svg" symbol-width="24" priority="{$pr-church}"/>
+    </rule>
   </rule>
   <rule  e="any" k="building" v="chapel" >
-    <symbol id="church" src="{$symbolPath}/chapel.svg" symbol-width="24" priority="{$pr-church}"/>
+    <rule  e="any" k="*" v="*"  zoom-max="15">   
+      <symbol id="church" src="{$symbolPath}/chapel.svg" symbol-width="16" priority="{$pr-church}"/>
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="16" >        
+      <symbol id="church" src="{$symbolPath}/chapel.svg" symbol-width="20" priority="{$pr-church}"/>
+    </rule>
   </rule>
 
   <rule  e="any" k="building" v="~" >
     <rule  e="any" k="religion" v="christian" >
-      <symbol id="church" src="{$symbolPath}/church.svg" symbol-width="26" priority="{$pr-church}"/>
+      <rule  e="any" k="*" v="*"  zoom-max="15">   
+        <symbol id="church" src="{$symbolPath}/church.svg" symbol-width="20" priority="{$pr-church}"/>
+      </rule>
+      <rule  e="any" k="*" v="*" zoom-min="16" >        
+        <symbol id="church" src="{$symbolPath}/church.svg" symbol-width="24" priority="{$pr-church}"/>
+      </rule>
     </rule>
   </rule>
   <rule e="any" k="*" v="*" zoom-min="16">

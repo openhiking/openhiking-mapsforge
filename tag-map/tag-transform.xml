@@ -459,6 +459,7 @@
                 <tag k="leisure"  match_id="leisure" v=".*"/>
 				<tag k="historic"  match_id="historic" v=".*"/>
 				<tag k="natural"  match_id="natural" v=".*"/>
+				<tag k="man_made"  match_id="cross" v="cross"/>
             </match>   
         </match>                         
 		<output>
@@ -658,11 +659,12 @@
 	<translation>
 		<name>Valleys and ridges</name>
 		<description>Remove non-named natural</description>
-        <match type="way" >
-            <match type="way" mode="or">
+        <match type="any" >
+            <match type="any" mode="or">
                 <tag k="natural" v="valley"/>
 				<tag k="natural" v="gorge"/>
-                <tag k="natural" v="ridge"/>                
+                <tag k="natural" v="ridge"/>   
+				<tag k="natural" v="saddle"/>             
                 <tag k="natural" v="tree"/>				
             </match>
             <notag k="name" v=".*"/>
@@ -873,13 +875,8 @@
 				<tag k="leisure" v="pitch"/>
                 <tag k="leisure" v="playground"/>
 
-                <tag k="tourism" v="alpine_hut"/>
-                <tag k="tourism" v="apartment"/>
-                <tag k="tourism" v="camp_site"/>                
                 <tag k="tourism" v="chalet"/>
                 <tag k="tourism" v="picnic_site"/>                                                
-                <tag k="tourism" v="wilderness_hut"/>
-
             </match>   
         </match>                         
 		<output>
@@ -902,6 +899,11 @@
 				<tag k="leisure" v="beach_resort"/>
 				<tag k="leisure" v="sports_centre"/>
 				<tag k="leisure" v="swimming_pool"/>
+
+                <tag k="tourism" v="alpine_hut"/>
+                <tag k="tourism" v="apartment"/>
+                <tag k="tourism" v="camp_site"/>                
+                <tag k="tourism" v="wilderness_hut"/>
             </match>   
         </match>                         
 		<output>

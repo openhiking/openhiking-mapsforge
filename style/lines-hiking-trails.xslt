@@ -140,9 +140,13 @@
 			<line stroke="{$color}" dy="{$lw-steps}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
 			<line stroke="{$color}" dy="-{$lw-steps}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
 		</rule>
-		<rule e="way" k="*" v="*" zoom-min="{$zm-level2}">		
+		<rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}">		
 			<line stroke="{$color}" dy="{$lw-steps}" stroke-width="{$lw-trail-highlight-l2}" stroke-linecap="butt" />
 			<line stroke="{$color}" dy="-{$lw-steps}" stroke-width="{$lw-trail-highlight-l2}" stroke-linecap="butt" />
+		</rule>
+		<rule e="way" k="*" v="*" zoom-min="{$zm-level3 }">		
+			<line stroke="{$color}" dy="{$lw-steps - 0.1}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
+			<line stroke="{$color}" dy="-{$lw-steps - 0.1}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
 		</rule>
 	</rule>
 	<rule e="way" k="highway" v="track">
