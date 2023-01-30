@@ -1275,8 +1275,6 @@
         <osm-tag key="abandoned" renderable="false" value="yes"/> 
         <osm-tag key="disused" renderable="false" value="yes"/> 
 
-        <osm-tag key="generator:source" renderable="false" value="wind"/> 
-
         <osm-tag key="tower:type" renderable="false" value="defensive"/>         
         <osm-tag key="tower:type" renderable="false" value="observation"/> 
         <osm-tag key="tower:type" renderable="false" value="watchtower"/> 

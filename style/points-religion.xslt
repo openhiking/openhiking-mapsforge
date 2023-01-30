@@ -13,7 +13,7 @@
 
 <rule  e="any" k="amenity" v="place_of_worship" zoom-min="14">
   <rule  e="any" k="building" v="church|cathedral" >
-    <symbol id="church" src="{$symbolPath}/church.svg" symbol-width="26" priority="{$pr-church}"/>
+    <symbol id="church" src="{$symbolPath}/church.svg" symbol-width="20" priority="{$pr-church}"/>
   </rule>
   <rule  e="any" k="building" v="chapel" >
     <symbol id="church" src="{$symbolPath}/chapel.svg" symbol-width="24" priority="{$pr-church}"/>
@@ -33,10 +33,10 @@
 
 <rule  e="any" k="historic" v="wayside_cross|wayside_shrine|tree_shrine" zoom-min="16">
   <rule  e="any" k="*" v="*"  zoom-max="17">   
-    <symbol id="wayside_cross" src="{$symbolPath}/wayside_cross.svg" symbol-width="19" priority="{$pr-wayside-cross}"/>
+    <symbol id="wayside_cross" src="{$symbolPath}/wayside_cross.svg" symbol-width="16" priority="{$pr-wayside-cross}"/>
   </rule>
   <rule  e="any" k="*" v="*" zoom-min="18" >        
-    <symbol id="wayside_cross" src="{$symbolPath}/wayside_cross.svg" symbol-width="22" priority="{$pr-wayside-cross}"/>
+    <symbol id="wayside_cross" src="{$symbolPath}/wayside_cross.svg" symbol-width="18" priority="{$pr-wayside-cross}"/>
   </rule>
   <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="wayside_cross" 
