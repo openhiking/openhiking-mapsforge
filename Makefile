@@ -219,6 +219,7 @@ MAP_STYLE_OUTPUT_DIR= $(WORKING_DIR)$(PSEP)style
 MAP_STYLE_XML=$(MAP_STYLE_NAME).xml
 MAP_STYLE_XML_FP = $(MAP_STYLE_OUTPUT_DIR)$(PSEP)$(MAP_STYLE_XML)
 MAP_STYLE_ZIP=$(MAP_STYLE_NAME).zip
+STYLEZIPARGS=-r
 
 ##############################################
 # Recipes
@@ -296,12 +297,8 @@ transform: $(MAP_MASTERX_PBF_FP)
 map: $(MAP_MAPSFORGE_FP)
 	@echo "DONE"
 
-style1: $(MAP_STYLE_XML_FP)
-	@echo "DONE"
-
 style: $(MAP_STYLE_XML_FP)
-	cd $(MAP_STYLE_OUTPUT_DIR) && $(ZIP) $(ZIPARGS) $(MAP_STYLE_ZIP) $(MAP_STYLE_RESOURCES) $(MAP_STYLE_XML)
-
+	cd $(MAP_STYLE_OUTPUT_DIR) && $(ZIP) $(STYLEZIPARGS) $(MAP_STYLE_ZIP) $(MAP_STYLE_RESOURCES) $(MAP_STYLE_XML)
 
 stage1: refresh master transform map
 	@echo Stage-1 completed successfully
