@@ -209,6 +209,9 @@ endif
 
 MAP_WRITER_CONF=tag-values=true type=$(MAP_MW_TYPE) preferred-languages=$(MAP_LANGUAGES)
 MAP_MAPSFORGE_FP=$(MFMAP_DIR)$(PSEP)$(MAPNAME).map
+MAP_MAPSFORGE_ZIP_FP=$(MFMAP_DIR)$(PSEP)$(MAPNAME).zip
+
+
 
 ##############################################
 # Map style
@@ -291,13 +294,16 @@ $(MAP_MASTERX_PBF_FP): $(MAP_MASTER_PBF_FP)
 $(MAP_MAPSFORGE_FP): $(MAP_MASTERX_PBF_FP)
 	$(OSMOSIS) --rb file=$< --mw tag-conf-file=$(MAP_TAG_MAP_FP) $(MAP_WRITER_CONF) file=$@ 
 
+$(MAP_MAPSFORGE_ZIP_FP): $(MAP_MAPSFORGE_FP):
+	$(ZIP) -j $(MAP_MAPSFORGE_ZIP_FP) $(MAP_MAPSFORGE_FP)
+
 $(MAP_STYLE_XML_FP): $(MAP_STYLE_XSLT_FP)
 	$(XSLTPROC) $< > $@
-
+	
 transform: $(MAP_MASTERX_PBF_FP)
 	@echo "DONE"
 
-map: $(MAP_MAPSFORGE_FP)
+map: $(MAP_MAPSFORGE_ZIP_FP)
 	@echo "DONE"
 
 style: $(MAP_STYLE_XML_FP)
