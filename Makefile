@@ -19,7 +19,7 @@ GEOFABRIK_URL=http://download.geofabrik.de/europe/
 CONFIG_DIR=config
 BOUNDARY_DIR=boundaries
 TAGMAP_DIR=tag-map
-STYLES_DIR=styles
+STYLES_DIR=style
 RESOURCES_DIR=resources
 
 
@@ -60,7 +60,6 @@ endif
 
 SEA_AREA_DIR=$(MKG_SEA_AREA_DIR)
 OUTPUT_DIR=${MKG_OUTPUT_DIR}
-MAPSOURCE_DIR?=${MKG_MAPSOURCE_DIR}
 
 ifneq (${MKG_WGET},)
 WGET=${MKG_WGET}
@@ -83,6 +82,11 @@ ifneq (${MKG_OSMOSIS},)
 OSMOSIS=${MKG_OSMOSIS}
 endif
 
+ifneq (${MKG_XSLTPROC},)
+XSLTPROC=${MKG_XSLTPROC}
+endif
+
+
 ifneq (${MKG_ZIP},)
 ZIP=${MKG_ZIP}
 endif
@@ -97,6 +101,7 @@ ifeq (${ComSpec},)
 	OSMCONVERT?=osmconvert64
 	OSMFILTER?=osmfilter
 	OSMOSIS?=${HOME}/tools/osmosis-0.48.3/bin/osmosis
+	XSLTPROC?=xsltproc
 	ZIP?=zip
 	ZIPARGS?=-r
 	PSEP=$(subst /,/,/)
@@ -111,6 +116,7 @@ else
 	OSMCONVERT?=osmconvert64.exe
 	OSMFILTER?=osmfilter.exe
 	OSMOSIS?=c:\Apps\osmosis-0-48\bin\osmosis
+	XSLTPROC?=xsltproc
 	ZIP?="c:\Program Files\7-Zip\7z.exe"
 	ZIPARGS?=a -tzip
 	PSEP=$(subst /,\,/)
@@ -184,7 +190,6 @@ MAP_MASTER_PBF_FP=$(MFMAP_DIR)$(PSEP)$(MAP_MASTER_PBF)
 ##############################################
 # Tag-transform and map writing
 
-
 MAP_TAG_TRANSFORM=tag-transform.xml
 MAP_TAG_MAP=tag-mapping.xml
 
@@ -204,6 +209,16 @@ endif
 
 MAP_WRITER_CONF=tag-values=true type=$(MAP_MW_TYPE) preferred-languages=$(MAP_LANGUAGES)
 MAP_MAPSFORGE_FP=$(MFMAP_DIR)$(PSEP)$(MAPNAME).map
+
+##############################################
+# Map style
+MAP_STYLE_NAME=OpenHiking
+MAP_STYLE_RESOURCES=icons/ hiking/ patterns/
+MAP_STYLE_INPUT_FP=$(STYLES_DIR)$(PSEP)$(MAP_STYLE_NAME).xslt
+MAP_STYLE_OUTPUT_DIR= $(WORKING_DIR)$(PSEP)style
+MAP_STYLE_XML=$(MAP_STYLE_NAME).xml
+MAP_STYLE_XML_FP = $(MAP_STYLE_OUTPUT_DIR)$(PSEP)$(MAP_STYLE_XML)
+MAP_STYLE_ZIP=$(MAP_STYLE_NAME).zip
 
 ##############################################
 # Recipes
@@ -272,24 +287,23 @@ $(MAP_MASTERX_PBF_FP): $(MAP_MASTER_PBF_FP)
 $(MAP_MAPSFORGE_FP): $(MAP_MASTERX_PBF_FP)
 	$(OSMOSIS) --rb file=$< --mw tag-conf-file=$(MAP_TAG_MAP_FP) $(MAP_WRITER_CONF) file=$@ 
 
+$(MAP_STYLE_OUTPUT_FP): $(MAP_STYLE_INPUT_FP)
+	$(XSLTPROC) $< > $@
+
 transform: $(MAP_MASTERX_PBF_FP)
 	@echo "DONE"
 
 map: $(MAP_MAPSFORGE_FP)
 	@echo "DONE"
 
+style1: $(MAP_STYLE_XML_FP)
+	@echo "DONE"
+
+style: $(MAP_STYLE_XML_FP)
+	cd $(MAP_STYLE_OUTPUT_DIR) && $(ZIP) $(ZIPARGS) $(MAP_STYLE_ZIP) $(MAP_STYLE_RESOURCES) $(MAP_STYLE_XML)
 
 
-zip:
-ifeq ($(OUTPUT_DIR),)
-$(error MKG_OUTPUT_DIR env variable is not set!)
-endif
-	$(DEL) "$(OUTPUT_DIR)$(PSEP)$(IMG_ZIP_NAME)"
-	$(ZIP) $(ZIPARGS) "$(OUTPUT_DIR)$(PSEP)$(IMG_ZIP_NAME)" "$(GMAP_DIR)$(PSEP)7*.img" "$(GMAP_DIR)$(PSEP)$(MAPNAME).img" \
-	"$(GMAP_DIR)$(PSEP)$(MAPNAME)_mdr.img" "$(GMAP_DIR)$(PSEP)*.mdx" "$(GMAP_DIR)$(PSEP)*.tdb" "$(GMAP_DIR)$(PSEP)*.typ"
-
-
-stage1: refresh merge tiles
+stage1: refresh master transform map
 	@echo Stage-1 completed successfully
 
 stage2: map nsi-script install $(MAKE_GMAPI)
@@ -309,7 +323,8 @@ cleancache:
 
 test:
 	@echo $(DEL) $(MFMAP_DIR)$(PSEP)*
-	@echo $(MAP_WRITER_CONF)
+	@echo $(MAP_STYLE_INPUT_FP)
+	@echo $(MAP_STYLE_OUTPUT_FP)
 
 
 
