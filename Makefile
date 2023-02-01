@@ -294,8 +294,6 @@ $(MAP_MASTERX_PBF_FP): $(MAP_MASTER_PBF_FP)
 $(MAP_MAPSFORGE_FP): $(MAP_MASTERX_PBF_FP)
 	$(OSMOSIS) --rb file=$< --mw tag-conf-file=$(MAP_TAG_MAP_FP) $(MAP_WRITER_CONF) file=$@ 
 
-$(MAP_MAPSFORGE_ZIP_FP): $(MAP_MAPSFORGE_FP):
-	$(ZIP) -j $(MAP_MAPSFORGE_ZIP_FP) $(MAP_MAPSFORGE_FP)
 
 $(MAP_STYLE_XML_FP): $(MAP_STYLE_XSLT_FP)
 	$(XSLTPROC) $< > $@
@@ -308,6 +306,9 @@ map: $(MAP_MAPSFORGE_ZIP_FP)
 
 style: $(MAP_STYLE_XML_FP)
 	cd $(MAP_STYLE_OUTPUT_DIR) && $(ZIP) $(STYLEZIPARGS) $(MAP_STYLE_ZIP) $(MAP_STYLE_NAME)/ 
+
+zip: $(MAP_MAPSFORGE_FP)
+	$(ZIP) -j $(MAP_MAPSFORGE_ZIP_FP) $(MAP_MAPSFORGE_FP)
 
 stage1: refresh master transform map
 	@echo Stage-1 completed successfully
@@ -328,7 +329,7 @@ cleancache:
 
 
 test:
-	@echo $(MAP_STYLE_XSLT_FP)
+	@echo $(MAP_MAPSFORGE_ZIP_FP)
 	@echo $(MAP_STYLE_XML_FP)
 
 
