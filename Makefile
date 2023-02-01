@@ -214,7 +214,7 @@ MAP_MAPSFORGE_FP=$(MFMAP_DIR)$(PSEP)$(MAPNAME).map
 # Map style
 MAP_STYLE_NAME=OpenHiking
 MAP_STYLE_RESOURCES=icons/ hiking/ patterns/
-MAP_STYLE_INPUT_FP=$(STYLES_DIR)$(PSEP)$(MAP_STYLE_NAME).xslt
+MAP_STYLE_XSLT_FP=$(STYLES_DIR)$(PSEP)$(MAP_STYLE_NAME).xslt
 MAP_STYLE_OUTPUT_DIR= $(WORKING_DIR)$(PSEP)style
 MAP_STYLE_XML=$(MAP_STYLE_NAME).xml
 MAP_STYLE_XML_FP = $(MAP_STYLE_OUTPUT_DIR)$(PSEP)$(MAP_STYLE_XML)
@@ -287,7 +287,7 @@ $(MAP_MASTERX_PBF_FP): $(MAP_MASTER_PBF_FP)
 $(MAP_MAPSFORGE_FP): $(MAP_MASTERX_PBF_FP)
 	$(OSMOSIS) --rb file=$< --mw tag-conf-file=$(MAP_TAG_MAP_FP) $(MAP_WRITER_CONF) file=$@ 
 
-$(MAP_STYLE_OUTPUT_FP): $(MAP_STYLE_INPUT_FP)
+$(MAP_STYLE_XML_FP): $(MAP_STYLE_XSLT_FP)
 	$(XSLTPROC) $< > $@
 
 transform: $(MAP_MASTERX_PBF_FP)
@@ -313,7 +313,7 @@ all:  master transform map
 	@echo Map making completed successfully
 
 clean:
-	$(DEL) $(MF_DIR)$(PSEP)*
+	echo $(DEL) $(MF_DIR)$(PSEP)*
 
 cleancache:
 	$(DEL) $(OSM_CACHE_DIR)$(PSEP)*.pbf
@@ -322,9 +322,8 @@ cleancache:
 
 
 test:
-	@echo $(DEL) $(MFMAP_DIR)$(PSEP)*
-	@echo $(MAP_STYLE_INPUT_FP)
-	@echo $(MAP_STYLE_OUTPUT_FP)
+	@echo $(MAP_STYLE_XSLT_FP)
+	@echo $(MAP_STYLE_XML_FP)
 
 
 
