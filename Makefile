@@ -320,7 +320,7 @@ all:  master transform map
 	@echo Map making completed successfully
 
 clean:
-	echo $(DEL) $(MFMAP_DIR)$(PSEP)*
+	$(DEL) $(MFMAP_DIR)$(PSEP)*
 
 cleancache:
 	$(DEL) $(OSM_CACHE_DIR)$(PSEP)*.pbf
