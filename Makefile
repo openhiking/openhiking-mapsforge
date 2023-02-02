@@ -327,6 +327,10 @@ cleancache:
 	$(DEL) $(COMMON_DIR)$(PSEP)*.pbf
 	$(DEL) $(COMMON_DIR)$(PSEP)*.o5m
 
+cleanstyle:
+	echo $(DEL) $(MAP_STYLE_XML_FP)
+	echo $(DEL) $(MAP_STYLE_OUTPUT_DIR)$(PSEP)$(MAP_STYLE_ZIP)
+
 
 test:
 	@echo $(MAP_MAPSFORGE_ZIP_FP)
