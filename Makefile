@@ -301,14 +301,15 @@ $(MAP_STYLE_XML_FP): $(MAP_STYLE_XSLT_FP)
 transform: $(MAP_MASTERX_PBF_FP)
 	@echo "DONE"
 
-map: $(MAP_MAPSFORGE_ZIP_FP)
+map: $(MAP_MAPSFORGE_FP)
 	@echo "DONE"
+
+zip: $(MAP_MAPSFORGE_FP)
+	$(ZIP) -j $(MAP_MAPSFORGE_ZIP_FP) $(MAP_MAPSFORGE_FP)
 
 style: $(MAP_STYLE_XML_FP)
 	cd $(MAP_STYLE_OUTPUT_DIR) && $(ZIP) $(STYLEZIPARGS) $(MAP_STYLE_ZIP) $(MAP_STYLE_NAME)/ 
 
-zip: $(MAP_MAPSFORGE_FP)
-	$(ZIP) -j $(MAP_MAPSFORGE_ZIP_FP) $(MAP_MAPSFORGE_FP)
 
 stage1: refresh master transform map
 	@echo Stage-1 completed successfully
@@ -316,7 +317,7 @@ stage1: refresh master transform map
 stage2: map nsi-script install $(MAKE_GMAPI)
 	@echo Stage-2 completed successfully
 
-all:  master transform map
+all:  master transform map zip
 	@echo Map making completed successfully
 
 clean:
