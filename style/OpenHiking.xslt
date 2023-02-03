@@ -48,6 +48,7 @@
   <xsl:include href="points-amenities.xslt" />  
   <xsl:include href="points-barriers.xslt" />  
   <xsl:include href="points-culture.xslt" />  
+  <xsl:include href="points-emergency.xslt" />
   <xsl:include href="points-financial.xslt" />
   <xsl:include href="points-food.xslt" />
   <xsl:include href="points-healthcare.xslt" />
@@ -111,6 +112,7 @@
   <xsl:call-template name="points-amenities"/>
   <xsl:call-template name="points-barriers"/>
   <xsl:call-template name="points-culture"/>
+  <xsl:call-template name="points-emergency"/>  
   <xsl:call-template name="points-financial"/>
   <xsl:call-template name="points-food"/>
   <xsl:call-template name="points-healthcare"/>

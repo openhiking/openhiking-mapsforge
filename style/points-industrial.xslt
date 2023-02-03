@@ -41,6 +41,22 @@
   </rule>
 </rule>
 
+<rule  e="any" k="power" v="plant" zoom-min="13">
+    <rule e="way" k="plant:source" v="~">
+        <rule  e="any" k="*" v="*" zoom-max="14">
+            <symbol id="power_plant" src="{$symbolPath}/power_plant.svg" symbol-width="16" priority="{$pr-power-plant}"/>
+        </rule> 
+        <rule  e="any" k="*" v="*" zoom-min="15">
+            <symbol id="power_plant" src="{$symbolPath}/power_plant.svg" symbol-width="21" priority="{$pr-power-plant}"/>
+        </rule>                         
+        <rule e="node" k="*" v="*" zoom-min="16">
+            <caption k="name" symbol-id="power_plant" 
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-industrial}"/>
+        </rule>
+    </rule>
+</rule>
+
+
 <rule  e="any" k="man_made" v="water_tower" zoom-min="16">
     <symbol id="mast" src="{$symbolPath}/water_tower.svg" symbol-width="22" priority="{$pr-water-tower}"/>
 </rule>

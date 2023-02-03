@@ -47,6 +47,7 @@
 <xsl:variable name="pr-saddle">20</xsl:variable>
 
 <xsl:variable name="pr-checkpoint">20</xsl:variable>
+<xsl:variable name="pr-mountain-rescue">20</xsl:variable>
 
 <xsl:variable name="pr-church">20</xsl:variable>
 <xsl:variable name="pr-stupa">20</xsl:variable>
@@ -101,6 +102,9 @@
 
 <xsl:variable name="pr-drinking-water">10</xsl:variable>
 
+<xsl:variable name="pr-factory">10</xsl:variable>
+<xsl:variable name="pr-power-plant">10</xsl:variable>
+
 <!-- Priority 0 -->
 
 <xsl:variable name="pr-gate">0</xsl:variable>
@@ -122,7 +126,6 @@
 <xsl:variable name="pr-recycling">0</xsl:variable>
 <xsl:variable name="pr-tickets">0</xsl:variable>
 <xsl:variable name="pr-bunker">0</xsl:variable>
-<xsl:variable name="pr-factory">0</xsl:variable>
 <xsl:variable name="pr-obstacle">0</xsl:variable>
 <xsl:variable name="pr-water-tower">0</xsl:variable>
 <xsl:variable name="pr-police">0</xsl:variable>
