@@ -810,6 +810,17 @@
 		</output>
 	</translation>
 	<translation>
+		<name>Public transport shelters </name>
+		<description>removal</description>
+		<match type="node" mode="and">
+			<tag k="amenity" v="shelter"/>
+			<tag k="shelter_type" v="public_transport"/>
+		</match>
+		<output>
+			<copy-unmatched/>
+		</output>
+	</translation>	
+	<translation>
 		<name>Recreation ground </name>
 		<description>Remove double tagging</description>
 		<match type="any" mode="and">

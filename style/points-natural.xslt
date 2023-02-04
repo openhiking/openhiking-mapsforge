@@ -11,28 +11,41 @@
 <xsl:template name="points-natural">
 
 <rule e="node" k="natural" v="peak" >
-    <rule e="node" k="name" v="*" >
-        <rule e="node" k="name" v="*" zoom-min="13" zoom-max="14">        
-            <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="8" priority="{$pr-peak-named}"/>
-            <caption  k="name" font-size="11" fill="#693600" font-style="bold_italic"  position="above"
-            stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}" />
-            <caption fill="#693600" font-size="10" font-style="bold" k="ele" position="below"
-                stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}"/>
+    <rule e="node" k="summit:cross|name" v="*" zoom-min="13" zoom-max="13">   
+        <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="8" priority="{$pr-peak-named}"/>
+        <caption  k="name" font-size="11" fill="#693600" font-style="bold_italic"  position="above"
+        stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}" />
+        <caption fill="#693600" font-size="10" font-style="bold" k="ele" position="below"
+            stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}"/>
+    </rule>
+    <rule e="node" k="summit:cross" v="*" zoom-min="14" >   
+        <rule e="node" k="*" v="*" zoom-min="14" zoom-max="15">        
+            <symbol id="peak" src="{$symbolPath}/peak_cross.svg" symbol-width="10" priority="{$pr-peak-named}"/>
         </rule>
-        <rule e="node" k="name" v="*" zoom-min="15">
-            <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="9" priority="{$pr-peak-named}"/>
-            <caption  k="name" font-size="12" fill="#693600" font-style="bold_italic"  position="above"
-            stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}" />
-            <caption fill="#693600" font-size="11" font-style="bold" k="ele" position="below"
+        <rule e="node" k="*" v="*" zoom-min="16">
+            <symbol id="peak" src="{$symbolPath}/peak_cross.svg" symbol-width="11" priority="{$pr-peak-named}"/>
+        </rule>
+    </rule>
+    <rule e="node" k="summit:cross" v="~" zoom-min="14">
+        <rule e="node" k="name" v="*" >    
+            <rule e="node" k="*" v="*" zoom-max="14">        
+                <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="8" priority="{$pr-peak-named}"/>
+            </rule>
+            <rule e="node" k="*" v="*" zoom-min="15">
+                <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="9" priority="{$pr-peak-named}"/>
+            </rule>
+        </rule>
+        <rule e="node" k="name" v="~" >    
+            <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="8" priority="{$pr-peak}"/>
+            <caption fill="#693600" font-size="10" font-style="bold" k="ele" position="below"
                 stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}"/>
         </rule>
     </rule>
-    <rule e="node" k="name" v="~" zoom-min="14">
-        <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="8" priority="{$pr-peak}"/>
-        <rule e="any" k="*" v="*" >
-            <caption fill="#693600" font-size="10" font-style="bold" k="ele" position="below"
-                stroke="#FFFFFF" stroke-width="2.0" symbol-id="peak" priority="{$pr-label-peak}"/>
-        </rule>
+    <rule e="node" k="summit:cross|name" v="*" zoom-min="14" >
+        <caption  k="name" font-size="12" fill="#693600" font-style="bold_italic"  position="above"
+        stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}" />
+        <caption fill="#693600" font-size="11" font-style="bold" k="ele" position="below"
+            stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}"/>
     </rule>
 </rule>
 

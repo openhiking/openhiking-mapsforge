@@ -75,6 +75,18 @@
   </rule>
 </rule>
 
+<rule  e="any" k="amenity" v="ferry_terminal">
+  <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="15">
+    <symbol id="ferry_terminal" src="{$symbolPath}/ferry_terminal.svg" symbol-width="17" priority="{$pr-ferry-terminal}"/>
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="16" >
+    <symbol id="ferry_terminal" src="{$symbolPath}/ferry_terminal.svg" symbol-width="20" priority="{$pr-ferry-terminal}"/>
+  </rule>
+  <rule e="node" k="*" v="*" zoom-min="15">
+    <caption k="name" symbol-id="ferry_terminal" 
+    font-style="bold" font-size="10" fill="#4040ff" stroke="#ffffff" stroke-width="2" priority="{$pr-label-public-transport}"/>
+  </rule>
+</rule>
 
 </xsl:template>
 </xsl:stylesheet>
