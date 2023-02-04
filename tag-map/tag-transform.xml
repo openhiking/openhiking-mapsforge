@@ -421,6 +421,7 @@
 		<match type="any" mode="and">
 			<tag k="historic" v="archaeological_site"/>
 			<tag k="leisure" v="nature_reserve"/>
+		</match>	
 		<output>
 			<copy-unmatched/>
 			<tag k="historic" v="archaeological_site"/>            
