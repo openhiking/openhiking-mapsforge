@@ -47,14 +47,19 @@
 
 
 <rule  e="any" k="highway" v="bus_stop">
-  <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="14">
-    <symbol id="bus_stop" src="{$symbolPath}/bus_stop_small.svg" symbol-width="8" priority="{$pr-bus-stop}"/>
+  <rule  e="any" k="bus_local" v="~" zoom-min="14" zoom-max="15">
+    <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="14">
+      <symbol id="bus_stop" src="{$symbolPath}/bus_stop_small.svg" symbol-width="8" priority="{$pr-bus-stop}"/>
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="15" zoom-max="15">
+      <symbol id="bus_stop" src="{$symbolPath}/bus_stop.svg" symbol-width="14" priority="{$pr-bus-stop}"/>
+    </rule>    
   </rule>
-  <rule  e="any" k="*" v="*" zoom-min="15" zoom-max="15">
-    <symbol id="bus_stop" src="{$symbolPath}/bus_stop.svg" symbol-width="14" priority="{$pr-bus-stop}"/>
+  <rule  e="any" k="bus_local" v="yes" zoom-min="15" zoom-max="15">
+     <symbol id="bus_stop" src="{$symbolPath}/bus_stop_small.svg" symbol-width="8" priority="{$pr-bus-stop}"/>
   </rule>
   <rule  e="any" k="*" v="*" zoom-min="16" >
-    <symbol id="bus_stop" src="{$symbolPath}/bus_stop.svg" symbol-width="18" priority="{$pr-bus-stop}"/>
+    <symbol id="bus_stop" src="{$symbolPath}/bus_stop.svg" symbol-width="18" priority="{$pr-bus-stop}"/>  
   </rule>
   <rule e="node" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="bus_stop" 

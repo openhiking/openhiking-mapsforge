@@ -130,8 +130,8 @@
 		</output>
 	</translation>
 	<translation>
-		<name>Upgrading paved tracks</name>
-		<description>Use unclassified for paved tracks</description>
+		<name> Paved tracks</name>
+		<description>Reclassify to unclassified</description>
 		<match type="way" mode="and">
 			<match type="way" mode="or">
 				<tag k="highway" v="track"/>
@@ -141,11 +141,13 @@
 				<tag k="surface" v="asphalt"/>
 				<tag k="surface" v="chipseal"/>				
 				<tag k="surface" v="concrete"/>				
+				<tag k="surface" v="concrete:lanes"/>	
+				<tag k="surface" v="concrete:plates"/>	
 				<tag k="surface" v="paving_stones"/>	
+				<tag k="surface" v="sett"/>	
+				<tag k="surface" v="cobblestone"/>									
 				<tag k="surface" v="metal"/>	
 				<tag k="surface" v="wood"/>
-				<tag k="surface" v="sett"/>	
-				<tag k="surface" v="cobblestone"/>					
 			</match>
 		</match>
 		<output>
@@ -154,7 +156,7 @@
 		</output>
 	</translation>
 	<translation>
-		<name>Setting missing tracktype</name>
+		<name>Hard unpaved tracks</name>
 		<description>Set to grade1 if surface is unpaved-hard</description>
         <match type="way" >
             <match type="way" mode="and">
@@ -169,14 +171,41 @@
                     <tag k="surface" v="grass_paver"/>												                    
                 </match>
             </match>
-			<!-- 
-            <notag k="tracktype" v=".*"/>
-			-->
         </match>            
 		<output>
 			<copy-unmatched/>
 			<tag k="highway" v="track"/>
 			<tag k="tracktype" v="grade1"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Soft unpaved tracks</name>
+		<description>Set to grade1 if surface is unpaved-hard</description>
+        <match type="way" >
+            <match type="way" mode="and">
+                <match type="way" mode="or">
+                    <tag k="highway" v="track"/>
+                </match>
+                <match type="way" mode="or">
+                    <tag k="tracktype" v="grade1"/>
+                    <tag k="tracktype" v="grade2"/>					
+                </match>
+				<match type="way" mode="or">
+					<tag k="surface" v="unpaved"/>            
+					<tag k="surface" v="gravel"/>
+					<tag k="surface" v="ground"/>				
+					<tag k="surface" v="earth"/>				
+					<tag k="surface" v="dirt"/>	
+					<tag k="surface" v="grass"/>	
+					<tag k="surface" v="mud"/>	
+					<tag k="surface" v="sand"/>													
+				</match>
+            </match>
+        </match>            
+		<output>
+			<copy-unmatched/>
+			<tag k="highway" v="track"/>
+			<tag k="tracktype" v="grade3"/>
 		</output>
 	</translation>
 	<translation>

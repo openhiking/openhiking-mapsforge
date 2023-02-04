@@ -66,6 +66,7 @@
 <xsl:variable name="pr-island">20</xsl:variable>
 <xsl:variable name="pr-locality">20</xsl:variable>
 
+<xsl:variable name="pr-fixme">20</xsl:variable>
 
 <!-- Priority 10 -->
 <xsl:variable name="pr-picnic">10</xsl:variable>

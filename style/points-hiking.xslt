@@ -139,7 +139,6 @@
 </rule>
 
 
-
 <rule  e="node" k="information" v="guidepost" zoom-min="16">
   <rule  e="any" k="*" v="*" zoom-max="17">
     <symbol id="guidepost" src="{$symbolPath}/guidepost.svg" symbol-width="18" priority="{$pr-guidepost}"/>
@@ -152,6 +151,7 @@
     font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-wilderness}"/>
   </rule>
 </rule>
+
 
 <rule  e="node" k="information" v="board" zoom-min="16">
   <rule  e="any" k="board_type" v="notice" >

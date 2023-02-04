@@ -64,7 +64,11 @@
 		<name lang="hu" value="Turistajelzések" />
 		<cat id="hiking_symbols" />
 	</layer>
-
+	<layer id="editorial" enabled="false" visible="false">
+		<name lang="en" value="OSM editorial symbols" />
+		<name lang="hu" value="OSM szerkesztői jelölések" />
+		<cat id="editorial" />
+	</layer>
 
 	<layer id="topo" visible="true">
 		<name lang="en" value="OpenHiking layers" />    
@@ -80,6 +84,7 @@
         <overlay id="restricted_access" />
 		<overlay id="hiking_colored_routes_t" />        
 		<overlay id="hiking_symbols" />                
+        <overlay id="editorial" />    
 	</layer>
 
 

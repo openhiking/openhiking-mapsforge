@@ -394,6 +394,14 @@
         
 
     <!-- ************************************************** 
+               P O I   E D I T O R I A L
+    ************************************************** -->
+    <pois>
+        <osm-tag key="fixme" value="continue" zoom-appear="15"/>
+    </pois>
+
+
+    <!-- ************************************************** 
                P O I   E D U C A T I O N
     ************************************************** -->
     <ways>
@@ -937,7 +945,10 @@
             <zoom-override key="railway" value="station"/>
         </osm-tag>
 
-        <osm-tag key="bus_local" value="yes"  renderable="false"/>        
+        <osm-tag key="bus_local" value="yes" zoom-appear="15">
+            <zoom-override key="highway" value="bus_stop"/>
+        </osm-tag>
+
     </pois>
 
     <!-- ************************************************** 
@@ -1294,8 +1305,6 @@
         <osm-tag key="information" value="office" renderable="false"/>                 
 
         <osm-tag key="board_type" value="notice" renderable="false"/> 
-
-        <osm-tag key="fixme" value="continue" renderable="false"/> 
 
     </pois>
 </tag-mapping>
