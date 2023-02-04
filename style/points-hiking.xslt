@@ -174,12 +174,12 @@
   </rule>
 </rule>
 
-<rule  e="any" k="amenity" v="watering_place" zoom-min="14">
-  <rule  e="any" k="*" v="*" zoom-max="15">
-      <symbol id="watering_place" src="{$symbolPath}/watering_place.svg" symbol-width="16"  priority="{$pr-watering-place}"/>
+<rule  e="any" k="amenity" v="watering_place" zoom-min="15">
+  <rule  e="any" k="*" v="*" zoom-max="16">
+      <symbol id="watering_place" src="{$symbolPath}/watering_place.svg" symbol-width="20"  priority="{$pr-watering-place}"/>
   </rule> 
-  <rule  e="any" k="*" v="*" zoom-min="16">
-      <symbol id="watering_place" src="{$symbolPath}/watering_place.svg" symbol-width="18"  priority="{$pr-watering-place}"/>
+  <rule  e="any" k="*" v="*" zoom-min="17">
+      <symbol id="watering_place" src="{$symbolPath}/watering_place.svg" symbol-width="24"  priority="{$pr-watering-place}"/>
   </rule>                         
 </rule>
 
