@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32.0px"
+   height="32.0px"
+   viewBox="0 0 32.0 32.0"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="airport.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview342"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="16.9375"
+     inkscape:cx="15.97048"
+     inkscape:cy="16"
+     inkscape:window-width="1304"
+     inkscape:window-height="745"
+     inkscape:window-x="54"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid465" />
+  </sodipodi:namedview>
+  <defs
+     id="defs337" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="airport-8"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-dasharray:none"
+       d="M 15.830172,0.2366322 C 13.911697,0.2614916 12.539795,1.9881756 12.247347,3.7322984 11.82793,5.973802 12.099693,8.2703392 12.021578,10.535863 8.0651434,12.448851 4.1092174,14.36286 0.15243732,16.275158 c 0,1.79273 0,3.585459 0,5.378189 C 4.1085484,21.14487 8.0652114,20.640553 12.021578,20.134008 c 0,0.689561 0,1.379122 0,2.068683 -1.979197,1.331697 -3.9580326,2.663916 -5.9374996,3.995225 0,1.861878 0,3.723755 0,5.585633 3.310918,-0.895446 6.6223826,-1.788934 9.9335936,-2.683332 3.298815,0.820221 6.597359,1.641503 9.896484,2.460521 0,-1.766478 0,-3.532957 0,-5.299436 -1.986173,-1.354089 -3.971304,-2.709655 -5.957031,-4.064374 -0.01497,-0.685719 -0.02995,-1.371438 -0.04492,-2.057158 3.978529,0.503137 7.956752,1.008623 11.935547,1.509735 0,-1.791449 0,-3.582898 0,-5.374347 -3.956782,-1.912295 -7.912705,-3.826309 -11.869141,-5.739295 -0.08186,-2.2875444 0.204127,-4.6096 -0.241027,-6.8704794 -0.340785,-1.8610591 -1.848706,-3.580367 -3.90741,-3.4287514 z" />
+    <path
+       d="m 30,18.968148 v 1.827108 L 18,18 v 5.622899 l 5.826963,4.120125 v 1.772875 L 15.911887,27.513274 7.9959248,29.688212 V 27.685587 L 14,23.622899 V 18 L 2,20.795256 V 18.850067 L 14,11.184246 V 6.1162121 C 14,4.1710249 14.373162,2.2258375 15.911889,2.2258375 17.450597,2.2258375 18,4.1710249 18,6.1162121 v 4.9499529 z"
+       id="airport"
+       style="fill:#0000ff;fill-opacity:1;stroke:#1a1a1a;stroke-width:0.5;stroke-dasharray:none"
+       sodipodi:nodetypes="ccccccccccccccssscc" />
+  </g>
+</svg>

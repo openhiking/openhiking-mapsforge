@@ -37,6 +37,7 @@
 <xsl:variable name="pr-bus-station">30</xsl:variable>
 <xsl:variable name="pr-train-station">30</xsl:variable>
 <xsl:variable name="pr-ferry-terminal">30</xsl:variable>
+<xsl:variable name="pr-airport">30</xsl:variable>
 
 <xsl:variable name="pr-village">30</xsl:variable>
 

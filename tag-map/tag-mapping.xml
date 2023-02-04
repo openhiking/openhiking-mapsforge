@@ -896,8 +896,10 @@
         <osm-tag key="railway" value="halt" label-position="true" zoom-appear="14"/>
         <osm-tag key="railway" value="station" label-position="true" zoom-appear="14"/>
 
-        <osm-tag key="aeroway" value="aerodrome" zoom-appear="13"/>
+        <osm-tag key="aeroway" value="aerodrome" label-position="true" zoom-appear="13"/>
+        <!-- 
         <osm-tag key="aeroway" value="apron" zoom-appear="13"/>
+        -->
         <osm-tag key="aeroway" value="helipad" zoom-appear="17"/>
         <osm-tag key="aeroway" value="runway" zoom-appear="10"/>
         <osm-tag key="aeroway" value="taxiway" zoom-appear="10"/>
@@ -913,8 +915,9 @@
 
     <pois>
         <osm-tag key="aeroway" value="aerodrome" zoom-appear="13"/>
-        <osm-tag key="aeroway" value="airport" zoom-appear="13"/>
+        <!--
         <osm-tag key="aeroway" value="gate" zoom-appear="17"/>
+        -->
         <osm-tag key="aeroway" value="helipad" zoom-appear="17"/>
 
         <osm-tag key="amenity" value="bus_station" zoom-appear="14"/>
