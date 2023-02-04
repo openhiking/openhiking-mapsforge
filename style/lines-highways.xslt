@@ -49,7 +49,7 @@
             <line stroke="{$lc-cycleway}" stroke-width="{$lw-cycleway}" stroke-linecap="butt"/>          
         </rule>
         <rule e="way" k="highway" v="track" >
-            <rule e="way" k="tracktype" v="grade1" zoom-min="{$zm-macadam}"> 
+            <rule e="way" k="tracktype" v="grade1|grade2" zoom-min="{$zm-macadam}"> 
                 <rule e="way" k="*" v="*" zoom-max="{$zm-macadam + 1}"> 
                     <line stroke="{$bc-macadam}" stroke-width="{$lw-macadam}" stroke-dasharray="8,2" stroke-linecap="butt"/>
                     <line stroke="{$lc-macadam}" stroke-width="{$lw-macadam - 0.3}" />          
@@ -64,9 +64,6 @@
                 </rule>                                    
             </rule>
             <rule e="way" k="*" v="*" zoom-min="{$zm-track}" zoom-max="{$zm-level2 - 1}"> 
-                <rule e="way" k="tracktype" v="grade2" > 
-                    <line stroke="{$lc-track}" stroke-width="{$lw-track}" stroke-dasharray="24,3" stroke-linecap="butt" />
-                </rule>
                 <rule e="way" k="tracktype" v="grade3" > 
                     <line stroke="{$lc-track}" stroke-width="{$lw-track}" stroke-dasharray="16,3"  stroke-linecap="butt"/>
                 </rule>
@@ -78,9 +75,6 @@
                 </rule>
             </rule>
             <rule e="way" k="*" v="*" zoom-min="{$zm-level2}"> 
-                <rule e="way" k="tracktype" v="grade2" > 
-                    <line stroke="{$lc-track}" stroke-width="{$lw-track2}" stroke-dasharray="30,7" stroke-linecap="butt" />
-                </rule>
                 <rule e="way" k="tracktype" v="grade3" > 
                     <line stroke="{$lc-track}" stroke-width="{$lw-track2}" stroke-dasharray="22,7"  stroke-linecap="butt"/>
                 </rule>

@@ -705,10 +705,6 @@
         <osm-tag key="sinkhole" value="estavelle" renderable="false"/>   
         <osm-tag key="sinkhole" value="pit" renderable="false"/>   
 
-        <!-- 
-        <osm-tag key="water_characteristic" value="mineral" renderable="false"/>   
-        <osm-tag key="spring:type" value="hot" renderable="false"/>   
-        -->
         <osm-tag key="summit:cross" value="yes" renderable="false"/>   
         <osm-tag key="seasonal" value="yes" equivalent-values="wet_season,dry_season,winter,summer" renderable="false"/> 
 
@@ -940,6 +936,8 @@
         <osm-tag key="station" value="subway" zoom-appear="15">
             <zoom-override key="railway" value="station"/>
         </osm-tag>
+
+        <osm-tag key="bus_local" value="yes"  renderable="false"/>        
     </pois>
 
     <!-- ************************************************** 
@@ -960,6 +958,7 @@
     ************************************************** -->
     <ways>
         <osm-tag key="amenity" label-position="true" value="shelter" zoom-appear="14"/>
+        <osm-tag key="amenity" label-position="true" value="watering_place" zoom-appear="14"/>
 
         <osm-tag key="tourism" label-position="true" value="attraction" zoom-appear="14"/>    
         <osm-tag key="tourism" label-position="true" value="picnic_site" zoom-appear="14"/>
@@ -986,6 +985,8 @@
         <osm-tag key="amenity" value="game_feeding" zoom-appear="16"/> 
         <osm-tag key="amenity" value="hunting_stand" zoom-appear="16"/>    
         <osm-tag key="amenity" value="shelter" zoom-appear="14"/>    
+        <osm-tag key="amenity" value="watering_place" zoom-appear="14"/>   
+
         <osm-tag key="man_made" value="survey_point" zoom-appear="16"/>                
 
         <osm-tag key="leisure" value="bird_hide" zoom-appear="16"/>   
@@ -1234,24 +1235,12 @@
         
         <!-- Structures -->
         <osm-tag key="bridge" renderable="false" value="yes"/>
-        <osm-tag key="tunnel" renderable="false" value="yes"/>
-        <!-- 
-        <osm-tag key="tunnel" renderable="false" value="no"/>
-        -->
+        <osm-tag key="tunnel" renderable="false" equivalent-values="culvert" value="yes"/>
         <osm-tag key="embankment" renderable="false" value="yes"/>
-
-        <!-- 
-        <osm-tag key="embankment" renderable="false" value="no"/>
-        -->
         <osm-tag key="cutting" renderable="false" value="yes"/>
-        <!--         
-        <osm-tag key="cutting" renderable="false" value="no"/>
-        -->
+  
         <!-- Oneway -->
         <osm-tag equivalent-values="1,true" key="oneway" renderable="false" value="yes"/>
-        <!-- 
-        <osm-tag equivalent-values="0,false" key="oneway" renderable="false" value="no"/>
-        -->
         <osm-tag key="oneway" renderable="false" value="-1"/>
 
         <!-- Disused -->

@@ -23,6 +23,7 @@
     </rule>
 </rule>
 
+
 <rule  e="any" k="tourism" v="wilderness_hut" zoom-min="14">
     <rule  e="any" k="*" v="*" zoom-max="15">
         <symbol id="wilderness_hut" src="{$symbolPath}/wilderness_hut.svg" symbol-width="21" priority="{$pr-wilderness-hut}"/>
@@ -34,7 +35,8 @@
         <caption k="name" symbol-id="wilderness_hut" 
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-accomodation}"/>
     </rule>
-</rule>        
+</rule>       
+
 
 
 <rule  e="any" k="amenity" v="shelter" >
@@ -170,6 +172,15 @@
     <caption k="name" symbol-id="checkpoint" 
     font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-wilderness}"/>
   </rule>
+</rule>
+
+<rule  e="any" k="amenity" v="watering_place" zoom-min="14">
+  <rule  e="any" k="*" v="*" zoom-max="15">
+      <symbol id="watering_place" src="{$symbolPath}/watering_place.svg" symbol-width="16"  priority="{$pr-watering-place}"/>
+  </rule> 
+  <rule  e="any" k="*" v="*" zoom-min="16">
+      <symbol id="watering_place" src="{$symbolPath}/watering_place.svg" symbol-width="18"  priority="{$pr-watering-place}"/>
+  </rule>                         
 </rule>
 
 

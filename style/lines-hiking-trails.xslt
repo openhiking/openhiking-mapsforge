@@ -150,7 +150,7 @@
 		</rule>
 	</rule>
 	<rule e="way" k="highway" v="track">
-		<rule e="way" k="tracktype" v="grade1">
+		<rule e="way" k="tracktype" v="grade1|grade2">
 			<rule e="way" k="*" v="*" zoom-max="{$zm-macadam - 1}">		
 				<line stroke="{$color}" stroke-width="{$lw-trail-highlight-low}" stroke-linecap="butt" />
 			</rule>
@@ -159,7 +159,7 @@
 				<line stroke="{$lc-macadam}" stroke-width="{$lw-macadam}" stroke-linecap="butt" />
 			</rule>
 		</rule>
-		<rule e="way" k="tracktype" v="grade2|grade3|grade4|grade5|~">		
+		<rule e="way" k="tracktype" v="grade3|grade4|grade5|~">		
 			<rule e="way" k="*" v="*" zoom-max="{$zm-track - 1}">		
 				<line stroke="{$color}" stroke-width="{$lw-trail-highlight-low}" stroke-linecap="butt" />
 			</rule>

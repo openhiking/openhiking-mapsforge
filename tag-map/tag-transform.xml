@@ -169,7 +169,9 @@
                     <tag k="surface" v="grass_paver"/>												                    
                 </match>
             </match>
+			<!-- 
             <notag k="tracktype" v=".*"/>
+			-->
         </match>            
 		<output>
 			<copy-unmatched/>
@@ -294,7 +296,7 @@
 			</match>
 			<match>
 				<tag k="waterway" v=".*"/>
-                <tag k="tunnel" v="culvert"/>
+                <tag k="tunnel" v=".*"/>
 			</match>
 		</match>
 		<output>
@@ -411,6 +413,17 @@
 			<tag k="historic" v="archaeological_site"/>            
 			<tag k="archaeological_site" from_match="fortification" v="fortification"/>
             <tag k="archaeological_site" from_match="tumulus" v="tumulus"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Archeological sites</name>
+		<description>remove nature reserve</description>
+		<match type="any" mode="and">
+			<tag k="historic" v="archaeological_site"/>
+			<tag k="leisure" v="nature_reserve"/>
+		<output>
+			<copy-unmatched/>
+			<tag k="historic" v="archaeological_site"/>            
 		</output>
 	</translation>
 	<translation>
@@ -807,6 +820,31 @@
         </match>                         
 		<output>
 			<copy-unmatched/>
+		</output>
+	</translation>
+	<translation>
+		<name>Local bus stops </name>
+		<description>selection</description>
+		<match type="any" mode="and">
+            <match>
+                <tag k="highway" v="bus_stop"/>
+            </match>
+            <match type="any" mode="or">
+				<tag k="operator" v="BKV"/>	
+				<tag k="operator" v="RATB"/>
+				<tag k="operator" v="DPB"/>
+				<tag k="operator" v="STB"/>
+				<tag k="operator" v="DKV"/>
+				<tag k="operator" v="DKV Zrt\."/>
+				<tag k="network" v="VOR"/> 
+				<tag k="network" v="MHD Košice"/> 
+				<tag k="network" v="RAT Brașov"/> 
+				<tag k="network" v="Miskolc Városi Közlekedési Zrt\."/>
+            </match>   
+        </match>     
+		<output>
+			<copy-all/>
+			<tag k="bus_local" v="yes"/>
 		</output>
 	</translation>
 	<translation>

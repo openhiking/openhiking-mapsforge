@@ -41,13 +41,13 @@
 <rule e="way" k="highway" v="pedestrian" zoom-min="{$zm-pedestrian}">
 </rule>
 <rule e="way" k="highway" v="track">
-    <rule e="way" k="tracktype" v="grade1"  zoom-min="{$zm-macadam}">
+    <rule e="way" k="tracktype" v="grade1|grade2"  zoom-min="{$zm-macadam}">
         <line stroke="{$lc-embankment}" dy="{$lw-macadam + $extraSpace}" stroke-width="{$lw-embankment}"  stroke-linecap="butt" />
         <line stroke="{$lc-embankment}" dy="{$lw-macadam + $extraSpace + $lw-embankment + 0.4}" stroke-width="{$lw-embankment2}" stroke-dasharray="{$da-embankment}"  stroke-linecap="butt" scale="all"/>
         <line stroke="{$lc-embankment}" dy="-{$lw-macadam + $extraSpace}" stroke-width="{$lw-embankment}" stroke-linecap="butt" />
         <line stroke="{$lc-embankment}" dy="-{$lw-macadam + $extraSpace + $lw-embankment + 0.4}" stroke-width="{$lw-embankment2}" stroke-dasharray="{$da-embankment}"  stroke-linecap="butt" scale="all"/>        
     </rule>
-    <rule e="way" k="tracktype" v="~|grade2|grade3|grade4|grade5"  zoom-min="{$zm-track}"> 
+    <rule e="way" k="tracktype" v="~|grade3|grade4|grade5"  zoom-min="{$zm-track}"> 
         <line stroke="{$lc-embankment}" dy="{$lw-track + $extraSpace}" stroke-width="{$lw-embankment}"  stroke-linecap="butt" />
         <line stroke="{$lc-embankment}" dy="{$lw-track + $extraSpace + $lw-embankment + 0.4}" stroke-width="{$lw-embankment2}" stroke-dasharray="{$da-embankment}"  stroke-linecap="butt" scale="all"/>
         <line stroke="{$lc-embankment}" dy="-{$lw-track + $extraSpace}" stroke-width="{$lw-embankment}" stroke-linecap="butt" />

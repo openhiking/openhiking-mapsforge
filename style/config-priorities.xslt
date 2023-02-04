@@ -69,6 +69,7 @@
 
 <!-- Priority 10 -->
 <xsl:variable name="pr-picnic">10</xsl:variable>
+<xsl:variable name="pr-watering-place">10</xsl:variable>
 
 <xsl:variable name="pr-sinkhole">10</xsl:variable>
 <xsl:variable name="pr-ford">10</xsl:variable>

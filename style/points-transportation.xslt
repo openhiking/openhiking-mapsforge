@@ -89,13 +89,13 @@
 </rule>
 
 <rule  e="any" k="aeroway" v="aerodrome">
-  <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="15">
+  <rule  e="any" k="*" v="*" zoom-min="13" zoom-max="14">
     <symbol id="airport" src="{$symbolPath}/airport.svg" symbol-width="19" priority="{$pr-airport}"/>
   </rule>
-  <rule  e="any" k="*" v="*" zoom-min="16" >
-    <symbol id="airport" src="{$symbolPath}/airport.svg" symbol-width="22" priority="{$pr-airport}"/>
+  <rule  e="any" k="*" v="*" zoom-min="15" >
+    <symbol id="airport" src="{$symbolPath}/airport.svg" symbol-width="23" priority="{$pr-airport}"/>
   </rule>
-  <rule e="node" k="*" v="*" zoom-min="15">
+  <rule e="any" k="*" v="*" zoom-min="14">
     <caption k="name" symbol-id="airport" 
     font-style="bold" font-size="11" fill="#4040ff" stroke="#ffffff" stroke-width="2" priority="{$pr-label-public-transport}"/>
   </rule>

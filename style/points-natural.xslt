@@ -23,7 +23,7 @@
             <symbol id="peak" src="{$symbolPath}/peak_cross.svg" symbol-width="10" priority="{$pr-peak-named}"/>
         </rule>
         <rule e="node" k="*" v="*" zoom-min="16">
-            <symbol id="peak" src="{$symbolPath}/peak_cross.svg" symbol-width="11" priority="{$pr-peak-named}"/>
+            <symbol id="peak" src="{$symbolPath}/peak_cross.svg" symbol-width="13" priority="{$pr-peak-named}"/>
         </rule>
     </rule>
     <rule e="node" k="summit:cross" v="~" zoom-min="14">

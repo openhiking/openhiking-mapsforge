@@ -6,12 +6,17 @@
 <rule  e="way" k="highway" v="*">
   <rule e="way" k="area" v="~|no|false">
     <rule e="way" k="tunnel" v="~|no">
-        <rule e="way" k="highway" v="footway|platform|path|bridleway|via_ferrata|steps" zoom-min="16">
+        <rule e="way" k="highway" v="footway|platform|path|bridleway|cycleway|via_ferrata|steps" zoom-min="16">
             <pathText k="name" dy="0.5" font-style="bold" font-size="9" stroke="#FFFFFF" stroke-width="3"/>        
         </rule>
-        <rule e="way" k="highway" v="cycleway|track" zoom-min="16">
-            <pathText k="name" dy="0.5" font-style="bold" font-size="11" stroke="#FFFFFF" stroke-width="3" repeat-gap="150"/>
-        </rule>
+        <rule e="way" k="highway" v="track" >
+            <rule e="way" k="tracktype" v="grade1|grade2" zoom-min="15">
+                <pathText k="name" font-style="bold" font-size="11" stroke="#FFFFFF" stroke-width="3" repeat-gap="160"/>
+            </rule>
+            <rule e="way" k="tracktype" v="grade3|grade4|grade5|~" zoom-min="16">	
+                <pathText k="name" dy="0.5" font-style="bold" font-size="10" stroke="#FFFFFF" stroke-width="3" repeat-gap="150"/>            
+            </rule>
+        </rule>            
         <rule e="way" k="highway" v="service|living_street|residential|unclassified|pedestrian" zoom-min="15">
             <pathText k="name" font-style="bold" font-size="11" stroke="#FFFFFF" stroke-width="3" repeat-gap="180"/>
         </rule>
