@@ -46,6 +46,11 @@
         	<xsl:with-param name="color" select="$lc-trail-black" />
     	</xsl:call-template>
 	</rule>
+	<rule  e="way" k="trail_color" v="default" >
+   		<xsl:call-template name="trail-highlight-rules">
+        	<xsl:with-param name="color" select="$lc-trail-red" />
+    	</xsl:call-template>
+	</rule>
 </rule>
 
 <rule cat="colored_hiking" e="way" k="route" v="ferry" >
