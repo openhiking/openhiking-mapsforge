@@ -27,6 +27,11 @@ ifeq ($(CONTOUR_DIR),)
 $(error MKG_CONTOUR_DIR env variable must be set)
 endif
 
+COASTLINES_DIR=${MKG_COASTLINES_DIR}
+ifeq ($(COASTLINES_DIR),)
+$(error MKG_COASTLINES_DIR env variable must be set)
+endif
+
 
 WORKING_DIR=${MKG_WORKING_DIR}
 ifeq ($(WORKING_DIR),)
