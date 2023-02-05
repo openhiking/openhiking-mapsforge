@@ -206,11 +206,10 @@ else
 	MAP_MW_TYPE=hd
 endif
 
-
-MAP_WRITER_CONF=tag-values=true type=$(MAP_MW_TYPE) preferred-languages=$(MAP_LANGUAGES)
+MAP_WRITER_THREADS?=2
+MAP_WRITER_CONF=tag-values=true type=$(MAP_MW_TYPE) preferred-languages=$(MAP_LANGUAGES) threads=$(MAP_WRITER_THREADS)
 MAP_MAPSFORGE_FP=$(MFMAP_DIR)$(PSEP)$(MAPNAME).map
 MAP_MAPSFORGE_ZIP_FP=$(MFMAP_DIR)$(PSEP)$(MAPNAME).zip
-
 
 
 ##############################################
@@ -313,9 +312,6 @@ style: $(MAP_STYLE_XML_FP)
 
 stage1: refresh master transform map
 	@echo Stage-1 completed successfully
-
-stage2: map nsi-script install $(MAKE_GMAPI)
-	@echo Stage-2 completed successfully
 
 all:  master transform map zip
 	@echo Map making completed successfully
