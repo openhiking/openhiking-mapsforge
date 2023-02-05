@@ -51,6 +51,21 @@
 </rule>
 
 
+<rule  e="any" k="historic" v="city_gate" >  
+  <rule  e="any" k="*" v="*" zoom-min="15" zoom-max="16">   
+    <symbol id="city_gate" src="{$symbolPath}/city_gate.svg" symbol-width="20" priority="{$pr-city-gate}"/>           
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="17" >        
+    <symbol id="city_gate" src="{$symbolPath}/city_gate.svg" symbol-width="23" priority="{$pr-city-gate}"/>                   
+  </rule>
+  <rule e="any" k="*" v="*" zoom-min="16">
+    <caption k="name" symbol-id="city_gate" 
+    font-style="bold" font-size="12" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-historical}"/>
+  </rule>      
+</rule>
+
+
+
 <rule  e="any" k="historic" v="ruins" >
   <rule  e="any" k="ruins" v="castle|fort|tower" zoom-min="14">
     <rule  e="any" k="*" v="*"  zoom-max="16">   
@@ -137,6 +152,18 @@
   </rule>       
 </rule>
 
+<rule  e="any" k="man_made" v="watermill" zoom-min="15">
+  <rule  e="any" k="*" v="*" zoom-max="16">
+    <symbol id="watermill" src="{$symbolPath}/watermill.svg" symbol-width="22" priority="{$pr-watermill}"/>
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="17"> 
+    <symbol id="watermill" src="{$symbolPath}/watermill.svg" symbol-width="24" priority="{$pr-watermill}"/>  
+  </rule>     
+  <rule e="any" k="*" v="*" zoom-min="16">
+      <caption k="name" symbol-id="watermill" 
+      font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-historical}"/>
+  </rule>       
+</rule>
 
 
 <rule  e="any" k="historic" v="memorial|monument" zoom-min="16">

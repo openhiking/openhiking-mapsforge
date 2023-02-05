@@ -32,6 +32,8 @@
 <xsl:variable name="pr-shelter">30</xsl:variable>
 <xsl:variable name="pr-picnic-shelter">30</xsl:variable>
 
+<xsl:variable name="pr-city-gate">30</xsl:variable>
+
 <xsl:variable name="pr-viewpoint">30</xsl:variable>
 <xsl:variable name="pr-museum">30</xsl:variable>
 <xsl:variable name="pr-bus-station">30</xsl:variable>
@@ -60,6 +62,7 @@
 
 <xsl:variable name="pr-bus-stop">20</xsl:variable>
 <xsl:variable name="pr-windmill">20</xsl:variable>
+<xsl:variable name="pr-watermill">20</xsl:variable>
 
 <xsl:variable name="pr-suburb">20</xsl:variable>
 <xsl:variable name="pr-hamlet">20</xsl:variable>
