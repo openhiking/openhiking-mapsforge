@@ -321,7 +321,6 @@ clean:
 
 cleancache:
 	$(DEL) $(OSM_CACHE_DIR)$(PSEP)*.pbf
-	$(DEL) $(COMMON_DIR)$(PSEP)*.pbf
 	$(DEL) $(COMMON_DIR)$(PSEP)*.o5m
 
 cleanstyle:
