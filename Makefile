@@ -32,103 +32,30 @@ endif
 
 include $(CONFIG_DIR)/$(MAP).cfg
 
-
-##############################################
-# Directory configurations
-
-OSM_CACHE_DIR=${MKG_OSM_CACHE_DIR}
-ifeq ($(OSM_CACHE_DIR),)
-$(error MKG_OSM_CACHE_DIR env variable must be set)
-endif
-
-DEM_DIR=${MKG_DEM_DIR}
-ifeq ($(DEM_DIR),)
-$(error MKG_DEM_DIR env variable must be set)
-endif
-
-
-CONTOUR_DIR=${MKG_CONTOUR_DIR}
-ifeq ($(CONTOUR_DIR),)
-$(error MKG_CONTOUR_DIR env variable must be set)
-endif
-
-
-WORKING_DIR=${MKG_WORKING_DIR}
-ifeq ($(WORKING_DIR),)
-$(error MKG_WORKING_DIR env variable must be set)
-endif
-
-SEA_AREA_DIR=$(MKG_SEA_AREA_DIR)
-OUTPUT_DIR=${MKG_OUTPUT_DIR}
-
-ifneq (${MKG_WGET},)
-WGET=${MKG_WGET}
-endif
-
-ifneq (${MKG_OSMCONVERT},)
-OSMCONVERT=${MKG_OSMCONVERT}
-endif
-
-ifneq (${MKG_OSMFILTER},)
-OSMFILTER=${MKG_OSMFILTER}
-endif
-
-
-ifneq (${MKG_MAKESYMBOLS},)
-MAKESYMBOLS=${MKG_MAKESYMBOLS}
-endif
-
-ifneq (${MKG_OSMOSIS},)
-OSMOSIS=${MKG_OSMOSIS}
-endif
-
-ifneq (${MKG_XSLTPROC},)
-XSLTPROC=${MKG_XSLTPROC}
-endif
-
-
-ifneq (${MKG_ZIP},)
-ZIP=${MKG_ZIP}
-endif
+include $(CONFIG_DIR)/environment.mk
 
 
 ##############################################
-# Operating System Dependent Tools
+# Contour Lines
 
+PHYGHTMAP_JOBS?=2
 
-ifeq (${ComSpec},)
-	LINUX=1
-	OSMCONVERT?=osmconvert64
-	OSMFILTER?=osmfilter
-	OSMOSIS?=${HOME}/tools/osmosis-0.48.3/bin/osmosis
-	XSLTPROC?=xsltproc
-	ZIP?=zip
-	ZIPARGS?=-r
-	PSEP=$(subst /,/,/)
-	PSEP2=$(PSEP)
-	CMDLIST=&&
-	COPY=cp
-	MOVE=mv
-	DEL=rm
-	CAT=cat
-else
-	LINUX=0
-	OSMCONVERT?=osmconvert64.exe
-	OSMFILTER?=osmfilter.exe
-	OSMOSIS?=c:\Apps\osmosis-0-48\bin\osmosis
-	XSLTPROC?=xsltproc
-	ZIP?="c:\Program Files\7-Zip\7z.exe"
-	ZIPARGS?=a -tzip
-	PSEP=$(subst /,\,/)
-	PSEP2=$(PSEP)$(PSEP)
-	CMDLIST=&
-	COPY=copy /b
-	MOVE=move
-	DEL=del /f /q
-        RMDIR=rmdir /s /q
+CONTOUR_START_ID=100000000000
+CONTOUR_FILE_FP=$(CONTOUR_DIR)$(PSEP)$(CONTOUR_LINES)
+
+ifeq ($(DEM_SOURCES),)
+	DEM_SOURCES=alos
 endif
 
-WGET?=wget
+DEM_SOURCE_TILES=$(shell $(DEMMGR) -s -i -p $(BOUNDARY_POLYGON_FP) -d $(DEM_DIR) $(DEM_SOURCES))
+
+ifeq ($(CONTOUR_LINE_STEP),10)
+	CONTOUR_LINE_MEDIUM=20
+	CONTOUR_LINE_MAJOR=100
+else ifeq ($(CONTOUR_LINE_STEP),20)
+	CONTOUR_LINE_MEDIUM=40
+	CONTOUR_LINE_MAJOR=200
+endif
 
 
 ##############################################
