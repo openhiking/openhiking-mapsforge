@@ -54,6 +54,11 @@
     </rule>
 </rule>
 
+<rule e="way" k="leisure" v="golf_course" closed="yes">
+  <area fill="#acebad" scale="none"/>
+</rule>
+
+
 <rule e="way" k="tourism" v="camp_site" closed="yes">
     <area fill="#7BFF8B" stroke="#000000" stroke-width="0.2" scale="none"/>
 </rule>

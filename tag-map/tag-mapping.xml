@@ -202,17 +202,17 @@
                 A E R I A L   W A Y S
     ************************************************** -->
     <ways>
-        <osm-tag key="aerialway" value="cable_car" zoom-appear="13"/>
+        <osm-tag key="aerialway" value="cable_car" zoom-appear="12"/>
         <osm-tag key="aerialway" value="chair_lift" zoom-appear="13"/>
-        <osm-tag key="aerialway" value="drag_lift" zoom-appear="13"/>
-        <osm-tag key="aerialway" value="gondola" zoom-appear="13"/>
+        <osm-tag key="aerialway" value="drag_lift" zoom-appear="14"/>
+        <osm-tag key="aerialway" value="gondola" zoom-appear="12"/>
         <osm-tag key="aerialway" value="goods" zoom-appear="13"/> 
-        <osm-tag key="aerialway" value="j-bar" zoom-appear="13"/>               
-        <osm-tag key="aerialway" value="magic_carpet" zoom-appear="13"/>
+        <osm-tag key="aerialway" value="j-bar" zoom-appear="14"/>               
+        <osm-tag key="aerialway" value="magic_carpet" zoom-appear="14"/>
         <osm-tag key="aerialway" value="mixed_lift" zoom-appear="13"/>
-        <osm-tag key="aerialway" value="platter" zoom-appear="13"/>
-        <osm-tag key="aerialway" value="rope_tow" zoom-appear="13"/>
-        <osm-tag key="aerialway" value="t-bar" zoom-appear="13"/>
+        <osm-tag key="aerialway" value="platter" zoom-appear="14"/>
+        <osm-tag key="aerialway" value="rope_tow" zoom-appear="14"/>
+        <osm-tag key="aerialway" value="t-bar" zoom-appear="14"/>
     </ways>    
 
 <!-- ************************************************** 

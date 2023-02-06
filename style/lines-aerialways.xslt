@@ -3,10 +3,15 @@
 
 <xsl:template name="lines-aerialways">
 
-<rule e="way" k="aerialway" v="cable_car|gondola" zoom-min="14">
-    <line stroke="#000000" stroke-width="0.6" stroke-dasharray="13,3" stroke-linecap="butt"/>
+<rule e="way" k="aerialway" v="cable_car|gondola" zoom-min="12">
+    <rule  e="any" k="*" v="*"  zoom-max="13">   
+        <line stroke="#000000" stroke-width="1.0" stroke-dasharray="13,3" stroke-linecap="butt"/>
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="14" >        
+        <line stroke="#000000" stroke-width="0.8" stroke-dasharray="13,3" stroke-linecap="butt"/>
+    </rule>
 </rule>
-<rule e="way" k="aerialway" v="chair_lift|mixed_lift" zoom-min="14">
+<rule e="way" k="aerialway" v="chair_lift|mixed_lift" zoom-min="13">
     <line stroke="#000000" stroke-width="0.3"  stroke-linecap="butt"/>
     <line stroke="#000000" stroke-width="1.3" stroke-dasharray="1.2,32" stroke-linecap="round"/>    
 </rule>

@@ -61,6 +61,20 @@
   </rule>
 </rule>  
 
+<rule  e="any" k="leisure" v="golf_course" zoom-min="15">
+  <rule  e="any" k="*" v="*" zoom-min="15" zoom-max="16">
+    <symbol id="golf_course" src="{$symbolPath}/golf.svg" symbol-width="16" priority="{$pr-sport}"/>
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="17"> 
+    <symbol id="golf_course" src="{$symbolPath}/golf.svg" symbol-width="20" priority="{$pr-sport}"/>
+  </rule>  
+  <rule e="any" k="*" v="*" zoom-min="16">
+    <caption k="name" symbol-id="golf_course" 
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
+  </rule>
+</rule>
+
+
 <rule  e="any" k="tourism" v="attraction" zoom-min="15">
   <symbol id="attraction" src="{$symbolPath}/attraction.svg" symbol-width="16" priority="{$pr-attraction}"/>
   <rule e="any" k="*" v="*" zoom-min="16">

@@ -11,6 +11,15 @@
 
 
 <xsl:template name="poly-landuse">
+
+<rule e="way" k="natural" v="sea">
+  <area fill="#8CC5FF"/>
+</rule>
+
+<rule e="way" k="natural" v="land">
+  <area fill="#FDFEEE"/>
+</rule>
+
 <!-- DO 3-->
 <rule e="way" k="landuse" v="field|farm|farmland">
   <area fill="#FFFFE6"/>
@@ -92,7 +101,7 @@
       <area src="file:/patterns/orchard.svg" symbol-height="16"/>
     </rule>
     <rule e="way" k="*" v="*" zoom-min="15">
-      <area src="file:/patterns/orchard.svg" symbol-height="24"/>
+      <area src="file:/patterns/orchard.svg" symbol-height="20"/>
   </rule>
 </rule>
 

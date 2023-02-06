@@ -36,8 +36,8 @@
             <line stroke="{$lc-bridleway}" stroke-width="{$lw-bridleway}" stroke-dasharray="4,4"  stroke-linecap="butt"/>                      
         </rule>
         <rule e="way" k="highway" v="via_ferrata" zoom-min="{$zm-ferrata}">
-            <line stroke="{$lc-ferrata}" stroke-width="0.15" stroke-dasharray="0.4,0.6" scale="all"/>
-            <line stroke="{$lc-ferrata}" stroke-width="0.6" stroke-linecap="butt" stroke-dasharray="0,0.1,0.15,0.75" scale="all"/>
+            <line stroke="{$lc-ferrata}" stroke-width="0.25" stroke-dasharray="0.5,0.5" scale="all"/>
+            <line stroke="{$lc-ferrata}" stroke-width="0.8" stroke-linecap="butt" stroke-dasharray="0,0.1,0.25,0.65" scale="all"/>
         </rule>  
         <rule e="way" k="highway" v="steps" zoom-min="{$zm-steps}">
             <line stroke="{$lc-steps}" stroke-width="{$lw-steps}" stroke-dasharray="2,2" stroke-linecap="butt"/>          
