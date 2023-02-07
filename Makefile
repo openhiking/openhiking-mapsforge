@@ -201,24 +201,13 @@ $(MAP_TRAIL_COLORS_OSC_FP): $(MAP_ROUTES_PBF_FP)
 symbols: $(MAP_HIKING_SYMBOLS_OSM_FP) $(MAP_TRAIL_COLORS_OSC_FP)
 	@echo "Done"
 
-
-$(MAP_MERGED_PBF_FP):  $(MAP_INP_OSM_O5M) $(MAP_INP_SYMBOLS_OSM) $(MAP_INP_CONTOUR) $(MAP_INP_COASTLINES_O5M_FP)
+$(MAP_MERGED_PBF_FP):  $(MAP_INP_OSM_O5M) $(MAP_INP_SYMBOLS_OSM) $(MAP_INP_CONTOUR)
 	$(OSMCONVERT) --hash-memory=240-30-2  --complete-ways --complete-multipolygons $^ -B=$(BOUNDARY_POLYGON_FP) -o=$@
 
 merge: $(MAP_MERGED_PBF_FP)
 	@echo "Merge completed"
 	
-$(TILES_DIR)$(PSEP2)%-places.o5m: $(TILES_DIR)$(PSEP)%-clipped.o5m
-	$(OSMFILTER) $< --keep=$(PLACE_CONDITION)  -o=$@
-
-$(TILES_DIR)$(PSEP2)%-places.pbf: $(TILES_DIR)$(PSEP)%-places.o5m
-	$(OSMCONVERT) $< -o=$@
-
-$(TILES_DIR)$(PSEP2)%-places.osc: $(TILES_DIR)$(PSEP)%-places.pbf
-	$(MAKENAMES) $^ $@
-
-
-$(MAP_MASTER_PBF_FP): $(MAP_MERGED_PBF_FP) $(MAP_INP_OSC)
+$(MAP_MASTER_PBF_FP): $(MAP_MERGED_PBF_FP) $(MAP_INP_OSC) $(MAP_INP_COASTLINES_O5M_FP)
 	$(OSMCONVERT) --hash-memory=240-30-2   --drop-version $^ -o=$@
 
 master: $(MAP_MASTER_PBF_FP)

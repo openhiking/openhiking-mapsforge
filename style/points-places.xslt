@@ -47,7 +47,10 @@
 
 
 <rule e="node" k="place" v="village" >
-    <rule e="node" k="*" v="*" zoom-min="11" zoom-max="12">
+    <rule e="node" k="*" v="*" zoom-min="11" zoom-max="11">
+        <caption k="name" font-style="bold" font-size="10" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-village}" display="ifspace"/>
+    </rule>
+    <rule e="node" k="*" v="*" zoom-min="12" zoom-max="12">
         <caption k="name" font-style="bold" font-size="12" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-village}" display="ifspace"/>
     </rule>
     <rule e="node" k="*" v="*" zoom-min="13" zoom-max="14">

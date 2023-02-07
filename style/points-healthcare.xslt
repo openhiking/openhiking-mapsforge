@@ -41,7 +41,7 @@
 
 
 <rule  e="any" k="amenity" v="pharmacy" zoom-min="15">
-        <symbol id="pharmacy" src="{$symbolPath}/pharmacy.svg" symbol-width="18" priority="{$pr-pharmacy}"/>
+        <symbol id="pharmacy" src="{$symbolPath}/pharmacy.svg" symbol-width="17" priority="{$pr-pharmacy}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="pharmacy" 
             font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-healthcare}"/>

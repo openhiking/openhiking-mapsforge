@@ -16,7 +16,7 @@
   <area fill="#8CC5FF"/>
 </rule>
 
-<rule e="way" k="natural" v="land">
+<rule e="way" k="natural" v="land|nosea">
   <area fill="#FDFEEE"/>
 </rule>
 
