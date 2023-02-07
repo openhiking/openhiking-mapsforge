@@ -165,11 +165,14 @@
 
 <rule  e="way" k="natural" v="shingle">
   <area fill="#E0E4E0" scale="none"/>
-  <rule e="way" k="*" v="*" zoom-max="14">
+  <rule e="way" k="*" v="*" zoom-max="12">
+    <area src="file:/patterns/shingle.svg" symbol-height="14"/>
+  </rule>
+  <rule e="way" k="*" v="*" zoom-min="13" zoom-max="14">
     <area src="file:/patterns/shingle.svg" symbol-height="18"/>
   </rule>
   <rule e="way" k="*" v="*" zoom-min="15">
-    <area src="file:/patterns/shingle.svg" symbol-height="32"/>
+    <area src="file:/patterns/shingle.svg" symbol-height="25"/>
   </rule>
 </rule>
 

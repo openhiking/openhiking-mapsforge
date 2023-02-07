@@ -81,7 +81,7 @@
 <xsl:variable name="lc-motorway_link-tunnel">#fd957c</xsl:variable>
 <xsl:variable name="lc-trunk-tunnel">#fd957c</xsl:variable>
 <xsl:variable name="lc-trunk_link-tunnel">#fd957c</xsl:variable>
-<xsl:variable name="lc-primary-tunnel">#fcb871ff</xsl:variable>
+<xsl:variable name="lc-primary-tunnel">#fcb871</xsl:variable>
 <xsl:variable name="lc-secondary-tunnel">#fef99e</xsl:variable>
 <xsl:variable name="lc-tertiary-tunnel">#fef893</xsl:variable>
 <xsl:variable name="lc-unclassified-tunnel">#FFFFFF</xsl:variable>
