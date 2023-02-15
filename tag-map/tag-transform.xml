@@ -93,7 +93,8 @@
 				<tag k="surface" v="compacted"/>                
 				<tag k="surface" v="pebblestone"/>				
 				<tag k="surface" v="rock"/>				
-				<tag k="surface" v="grass_paver"/>												
+				<tag k="surface" v="grass_paver"/>	
+				<tag k="surface" v="gravel"/>															
 			</match>
 		</match>
 		<output>
@@ -114,7 +115,6 @@
 			</match>
 			<match type="way" mode="or">
                 <tag k="surface" v="unpaved"/>            
-				<tag k="surface" v="gravel"/>
 				<tag k="surface" v="ground"/>				
 				<tag k="surface" v="earth"/>				
 				<tag k="surface" v="dirt"/>	
@@ -191,8 +191,10 @@
                     <tag k="tracktype" v="grade2"/>					
                 </match>
 				<match type="way" mode="or">
-					<tag k="surface" v="unpaved"/>            
+					<!--
+					<tag k="surface" v="unpaved"/> 					
 					<tag k="surface" v="gravel"/>
+					-->           
 					<tag k="surface" v="ground"/>				
 					<tag k="surface" v="earth"/>				
 					<tag k="surface" v="dirt"/>	

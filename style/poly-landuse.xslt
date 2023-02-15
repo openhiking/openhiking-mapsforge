@@ -52,11 +52,14 @@
 </rule>  
 
 <rule e="way" k="landuse" v="meadow">
+<!--
   <area fill="#d8fca4" scale="none"/>
+  -->
+  <area fill="#e4fdbf" scale="none"/>
 </rule>
 
 <rule e="way" k="natural" v="grass|grassland">
-  <area fill="#d8fca4" scale="none"/>
+  <area fill="#e4fdbf" scale="none"/>
 </rule>
 
 <rule e="way" k="tourism" v="zoo" closed="yes">
@@ -121,11 +124,11 @@
 <rule e="way" k="natural" v="sand">
   <area fill="#F8F898" scale="none"/>
 </rule>
-
+<!-- 
 <rule e="way" k="man_made" v="clearcut" zoom-min="12">
   <area fill="#D8FCB0" scale="none"/>
 </rule>
-
+-->
 <rule e="way" k="landuse" v="farmyard">
   <area fill="#D1DAB2"/>
 </rule>

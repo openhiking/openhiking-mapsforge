@@ -12,12 +12,20 @@
 <xsl:template name="points-religion">
 
 <rule  e="any" k="amenity" v="place_of_worship" zoom-min="14">
-  <rule  e="any" k="building" v="church|cathedral" >
+  <rule  e="any" k="building" v="cathedral" >
     <rule  e="any" k="*" v="*"  zoom-max="15">   
-      <symbol id="church" src="{$symbolPath}/church.svg" symbol-width="20" priority="{$pr-church}"/>
+      <symbol id="church" src="{$symbolPath}/cathedral.svg" symbol-width="24" priority="{$pr-church}"/>
     </rule>
     <rule  e="any" k="*" v="*" zoom-min="16" >        
-      <symbol id="church" src="{$symbolPath}/church.svg" symbol-width="24" priority="{$pr-church}"/>
+      <symbol id="church" src="{$symbolPath}/cathedral.svg" symbol-width="28" priority="{$pr-church}"/>
+    </rule>
+  </rule>
+  <rule  e="any" k="building" v="church" >
+    <rule  e="any" k="*" v="*"  zoom-max="15">   
+      <symbol id="church" src="{$symbolPath}/church.svg" symbol-width="18" priority="{$pr-church}"/>
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="16" >        
+      <symbol id="church" src="{$symbolPath}/church.svg" symbol-width="22" priority="{$pr-church}"/>
     </rule>
   </rule>
   <rule  e="any" k="building" v="chapel" >
@@ -32,10 +40,10 @@
   <rule  e="any" k="building" v="~" >
     <rule  e="any" k="religion" v="christian" >
       <rule  e="any" k="*" v="*"  zoom-max="15">   
-        <symbol id="church" src="{$symbolPath}/church.svg" symbol-width="20" priority="{$pr-church}"/>
+        <symbol id="church" src="{$symbolPath}/church.svg" symbol-width="18" priority="{$pr-church}"/>
       </rule>
       <rule  e="any" k="*" v="*" zoom-min="16" >        
-        <symbol id="church" src="{$symbolPath}/church.svg" symbol-width="24" priority="{$pr-church}"/>
+        <symbol id="church" src="{$symbolPath}/church.svg" symbol-width="22" priority="{$pr-church}"/>
       </rule>
     </rule>
   </rule>
