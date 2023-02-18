@@ -1028,6 +1028,7 @@
         <osm-tag key="building" label-position="true" value="apartment" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="apartments" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="barn" zoom-appear="15"/>
+        <osm-tag key="building" label-position="true" value="basilica" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="block" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="building" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="cabin" zoom-appear="15"/>
