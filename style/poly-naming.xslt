@@ -7,12 +7,12 @@
     v="grassland|heath|marsh|wetland|scree|scrub|wood"
     zoom-min="15">
     <caption fill="#202020" font-family="serif" font-size="12" font-style="italic" k="name"
-        priority="-100" stroke="#FFFFFF" stroke-width="0.1" />
+        priority="{$pr-poly-label-natural}" stroke="#FFFFFF" stroke-width="0.1" />
 </rule>
 
 <rule e="way" k="natural" v="water" zoom-min="14">
     <caption k="name" font-style="italic" font-size="14" 
-    priority="-100" fill="#4040ff" stroke="#ffffff" stroke-width="3"/>
+    priority="{$pr-poly-label-natural}" fill="#4040ff" stroke="#ffffff" stroke-width="3"/>
 </rule>
 
 
@@ -22,6 +22,13 @@
     <caption fill="#202020" font-family="serif" font-size="12" font-style="italic" k="name"
         priority="-100" stroke="#FFFFFF" stroke-width="0.1" />
 </rule>
+
+<rule e="way" k="natural" v="glacier" zoom-min="14">
+    <caption k="name" font-style="italic" font-size="14" 
+    priority="{$pr-poly-label-natural}" fill="#4040ff" stroke="#ffffff" stroke-width="2"/>
+</rule>
+
+
 <rule e="way" k="landuse"
     v="industrial|recreation_ground|military|garden|green|cemetery|graveyard"
     zoom-min="16">

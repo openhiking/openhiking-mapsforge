@@ -24,7 +24,7 @@
     </rule>
 </rule>
 
-<rule e="way" k="landuse" v="reservoir">
+<rule e="way" k="landuse" v="reservoir|basin">
     <area fill="#69A7F5"/>    
 </rule>
 

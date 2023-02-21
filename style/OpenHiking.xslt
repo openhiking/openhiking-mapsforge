@@ -20,6 +20,7 @@
   <xsl:include href="poly-highways.xslt" />
   <xsl:include href="poly-sport.xslt" />
   <xsl:include href="poly-buildings.xslt" />
+  <xsl:include href="poly-top.xslt" />
   <xsl:include href="poly-naming.xslt" />
 
   <xsl:include href="lines-contours.xslt" /> 
@@ -32,6 +33,7 @@
   <xsl:include href="lines-tunnels.xslt" />
   <xsl:include href="lines-embankments.xslt" />
   <xsl:include href="lines-ski.xslt" />
+  <xsl:include href="lines-sac-scale.xslt" />
   <xsl:include href="lines-hiking-trails.xslt" />
   <xsl:include href="lines-highways.xslt" />
   <xsl:include href="lines-access-restrictions.xslt" />
@@ -78,6 +80,7 @@
   <xsl:call-template name="poly-facilities"/>
   <xsl:call-template name="poly-highways"/>
   <xsl:call-template name="poly-sport"/>
+  <xsl:call-template name="poly-top"/>
   
   <xsl:call-template name="poly-buildings"/>  
   <xsl:call-template name="poly-naming"/>
@@ -95,6 +98,7 @@
   <xsl:call-template name="lines-tunnels"/>
   <xsl:call-template name="lines-embankments"/>
   <xsl:call-template name="lines-hiking-trails"/>   
+  <xsl:call-template name="lines-sac-scale"/>  
   <xsl:call-template name="lines-highways"/>
   <xsl:call-template name="lines-access-restrictions"/>
   <xsl:call-template name="lines-obstacles"/>

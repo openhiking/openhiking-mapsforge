@@ -106,6 +106,15 @@
   </rule>
 </rule>
 
+<rule e="any" k="aeroway" v="helipad" >
+  <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="15">
+    <symbol id="helipad" src="{$symbolPath}/helipad.svg" symbol-width="15" priority="{$pr-helipad}"/>
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="15" >
+    <symbol id="helipad" src="{$symbolPath}/helipad.svg" symbol-width="16" priority="{$pr-helipad}"/>
+  </rule>
+</rule>
+
 
 </xsl:template>
 </xsl:stylesheet>

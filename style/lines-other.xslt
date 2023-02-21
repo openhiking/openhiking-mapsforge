@@ -22,6 +22,11 @@
 	<line stroke="#78FCF8" stroke-width="{$lw-ferry}" stroke-dasharray="13,3" stroke-linecap="butt" />
 </rule>
 
+<rule e="way" k="man_made" v="pier" closed="no">
+	<line stroke="#ddd340" stroke-width="{$lw-pier}"  />
+</rule>
+
+
 <rule cat="power" e="way" k="power" v="*">
     <rule e="way" k="power" v="line" zoom-min="14">
       <line stroke="#949494" stroke-width="0.2"  stroke-linecap="butt"/>

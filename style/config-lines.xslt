@@ -74,6 +74,7 @@
 <xsl:variable name="lc-bridleway">#7B3000</xsl:variable>
 <xsl:variable name="lc-path">#7B3000</xsl:variable>
 <xsl:variable name="lc-mountain-path">#7B3000</xsl:variable>
+<xsl:variable name="lc-alpine-path">#000000</xsl:variable>
 <xsl:variable name="lc-steps">#BD3041</xsl:variable>
 <xsl:variable name="lc-ferrata">#D90000</xsl:variable>
 
@@ -116,12 +117,15 @@
 <xsl:variable name="lw-path2">0.3</xsl:variable>
 <xsl:variable name="lw-path3">0.25</xsl:variable>
 <xsl:variable name="lw-steps">0.6</xsl:variable>
+<xsl:variable name="lw-ferrata">0.8</xsl:variable>
+
 
 <xsl:variable name="lw-tunnel">0.2</xsl:variable>
 <xsl:variable name="lw-embankment">0.1</xsl:variable>
 <xsl:variable name="lw-embankment2">1</xsl:variable>
 
 <xsl:variable name="lw-ferry">0.5</xsl:variable>
+<xsl:variable name="lw-pier">0.5</xsl:variable>
 <xsl:variable name="lw-rail">0.55</xsl:variable>
 <xsl:variable name="lw-rail-narrow">0.45</xsl:variable>
 

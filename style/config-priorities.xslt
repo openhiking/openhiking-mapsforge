@@ -60,6 +60,7 @@
 <xsl:variable name="pr-camp-site">20</xsl:variable>
 <xsl:variable name="pr-zoo">20</xsl:variable>
 
+<xsl:variable name="pr-helipad">20</xsl:variable>
 <xsl:variable name="pr-bus-stop">20</xsl:variable>
 <xsl:variable name="pr-windmill">20</xsl:variable>
 <xsl:variable name="pr-watermill">20</xsl:variable>
@@ -69,6 +70,7 @@
 <xsl:variable name="pr-island">20</xsl:variable>
 <xsl:variable name="pr-locality">20</xsl:variable>
 
+<xsl:variable name="pr-sac-scale">20</xsl:variable>
 <xsl:variable name="pr-fixme">20</xsl:variable>
 
 <!-- Priority 10 -->
@@ -108,6 +110,7 @@
 <xsl:variable name="pr-chalet">10</xsl:variable>
 
 <xsl:variable name="pr-drinking-water">10</xsl:variable>
+<xsl:variable name="pr-toll-booth">10</xsl:variable>
 
 <xsl:variable name="pr-factory">10</xsl:variable>
 <xsl:variable name="pr-power-plant">10</xsl:variable>
@@ -142,6 +145,7 @@
 <xsl:variable name="pr-marketplace">0</xsl:variable>
 <xsl:variable name="pr-library">0</xsl:variable>
 <xsl:variable name="pr-obelisk">0</xsl:variable>
+<xsl:variable name="pr-fountain">0</xsl:variable>
 <xsl:variable name="pr-dentist">0</xsl:variable>
 <xsl:variable name="pr-swimming-pool">0</xsl:variable>
 <xsl:variable name="pr-courthouse">0</xsl:variable>
@@ -192,5 +196,11 @@
 <xsl:variable name="pr-hiking-symbols-minor">-21</xsl:variable>
 <xsl:variable name="pr-drift">-20</xsl:variable>
 <xsl:variable name="pr-oneway">-20</xsl:variable>
+
+<xsl:variable name="pr-poly-label-natural">-20</xsl:variable>
+<xsl:variable name="pr-poly-label-landuse">-20</xsl:variable>
+
 <xsl:variable name="pr-label-contour-ele">-21</xsl:variable>
+
+
 </xsl:stylesheet>

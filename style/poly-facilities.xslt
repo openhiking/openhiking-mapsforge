@@ -213,13 +213,13 @@
 
 
 <rule e="way" k="man_made" v="pier" closed="yes">
-    <area fill="#BDCA6A" />
+    <area fill="#ddd340" />
 </rule>
 
 <rule e="way" k="waterway" v="dock">
     <area fill="#b5d6f1"/>
 </rule>
-  
+
 
 </xsl:template>
 </xsl:stylesheet>

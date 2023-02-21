@@ -585,7 +585,8 @@
         <osm-tag key="power" value="generator" label-position="true" zoom-appear="13"/>
         <osm-tag key="power" value="tower" label-position="true" zoom-appear="15"/>
 
-        <osm-tag key="plant:source" renderable="false" value="solar"/>        
+        <osm-tag key="plant:source" renderable="false" value="solar"/>
+        <osm-tag key="plant:source" renderable="false" value="hydro"/> 
         <osm-tag key="generator:source" renderable="false" value="solar"/>                
 
     </ways>  
@@ -605,13 +606,13 @@
         <osm-tag key="man_made" value="wastewater_plant" zoom-appear="15"/>
         <osm-tag key="man_made" value="works" zoom-appear="15"/>
 
-        
+        <osm-tag key="power" value="generator" zoom-appear="15"/>        
         <osm-tag key="power" value="plant" zoom-appear="15"/>
-        <osm-tag key="power" value="generator" zoom-appear="15"/>
-        <osm-tag key="generator:source" renderable="false" value="wind"/>                
-        
         <osm-tag key="power" value="tower" zoom-appear="15"/>
 
+        <osm-tag key="plant:source" renderable="false" value="solar"/>
+        <osm-tag key="plant:source" renderable="false" value="hydro"/> 
+        <osm-tag key="generator:source" renderable="false" value="wind"/>                
     </pois>  
 
 
@@ -905,7 +906,7 @@
         <!-- 
         <osm-tag key="aeroway" value="apron" zoom-appear="13"/>
         -->
-        <osm-tag key="aeroway" value="helipad" zoom-appear="17"/>
+        <osm-tag key="aeroway" value="helipad" label-position="true" zoom-appear="14"/>
         <osm-tag key="aeroway" value="runway" zoom-appear="10"/>
         <osm-tag key="aeroway" value="taxiway" zoom-appear="10"/>
         <osm-tag key="aeroway" value="terminal" zoom-appear="15"/>
@@ -923,7 +924,7 @@
         <!--
         <osm-tag key="aeroway" value="gate" zoom-appear="17"/>
         -->
-        <osm-tag key="aeroway" value="helipad" zoom-appear="17"/>
+        <osm-tag key="aeroway" value="helipad" zoom-appear="14"/>
 
         <osm-tag key="amenity" value="bus_station" zoom-appear="14"/>
         <osm-tag key="amenity" value="charging_station" zoom-appear="16"/>         
@@ -1229,8 +1230,10 @@
         <osm-tag key="trail_symbol" value="osmc:red:green_lower" zoom-appear="14"/>                
 
         <!-- BLUE background-->
+        <osm-tag key="trail_symbol" value="osmc:blue:white_bar" zoom-appear="14"/>
 
         <!-- YELLOW background-->
+        <osm-tag key="trail_symbol" value="osmc:yellow:white_bar" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="osmc:yellow:white_stripe" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="osmc:yellow:white_lower" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="osmc:yellow:red_lower" zoom-appear="14"/>

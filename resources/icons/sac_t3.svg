@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="20"
+   viewBox="0 0 32 20"
+   version="1.1"
+   id="SVGRoot"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10511" />
+  <g
+     id="layer1">
+    <rect
+       style="fill:#c91400;fill-opacity:1;stroke:none;stroke-width:2.99999;paint-order:fill markers stroke"
+       id="rect11424"
+       width="31.437939"
+       height="19.484777"
+       x="0.29976586"
+       y="0.37470731"
+       ry="3.3944068" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:21.2244px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;stroke:none;stroke-width:3.00001;paint-order:fill markers stroke"
+       x="2.5139389"
+       y="18.648212"
+       id="text11895"
+       transform="scale(1.0842575,0.92229017)"><tspan
+         id="tspan11893"
+         x="2.5139389"
+         y="18.648212"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.2244px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Bold';fill:#ffffff;stroke-width:3.00001">T3</tspan></text>
+  </g>
+</svg>

@@ -64,6 +64,11 @@
 		<name lang="hu" value="Turistajelzések" />
 		<cat id="hiking_symbols" />
 	</layer>
+	<layer id="hiking_sac_highlight" enabled="false" visible="false">
+		<name lang="en" value="SAC highlighting" />
+		<name lang="hu" value="SAC nehézség jelölés" />
+		<cat id="hiking_sac_highlight" />
+	</layer>
 	<layer id="editorial" enabled="false" visible="false">
 		<name lang="en" value="OSM editorial symbols" />
 		<name lang="hu" value="OSM szerkesztői jelölések" />
@@ -74,17 +79,18 @@
 		<name lang="en" value="OpenHiking layers" />    
 		<name lang="hu" value="OpenHiking rétegek" />
         <cat id="building" />
-		<overlay id="contours" />
-		<overlay id="buildings" />        
-		<overlay id="fences" />
-        <overlay id="power" />  
-        <overlay id="ski" /> 
-		<overlay id="protected_area" />
+		<overlay id="hiking_colored_routes_t" />        
+		<overlay id="hiking_symbols" /> 
+        <overlay id="hiking_sac_highlight" />                
+        <overlay id="ski" />         
+		<overlay id="protected_area" />        
 		<overlay id="military_area" />
         <overlay id="restricted_access" />
-		<overlay id="hiking_colored_routes_t" />        
-		<overlay id="hiking_symbols" />                
-        <overlay id="editorial" />    
+		<overlay id="contours" />        
+		<overlay id="fences" />        
+        <overlay id="power" />  
+		<overlay id="buildings" />     
+        <overlay id="editorial" />                       
 	</layer>
 
 

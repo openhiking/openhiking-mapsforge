@@ -45,9 +45,14 @@
 </rule>    
 </rule>
 
-<rule e="node" k="barrier" v="lift_gate|swing_gate" zoom-min="15">
+<rule e="node" k="barrier" v="lift_gate|swing_gate" zoom-min="16">
     <symbol src="{$symbolPath}/lift_gate.svg" symbol-width="20" priority="{$pr-lift-gate}"/>
 </rule>
+
+<rule e="node" k="barrier" v="toll_booth" zoom-min="15">
+    <symbol src="{$symbolPath}/toll_booth.svg" symbol-width="22" priority="{$pr-toll-booth}"/>
+</rule>
+
 
 <rule e="node" k="barrier" v="stile" zoom-min="16">
     <symbol src="{$symbolPath}/stile.svg" symbol-width="18" priority="{$pr-stile}"/>

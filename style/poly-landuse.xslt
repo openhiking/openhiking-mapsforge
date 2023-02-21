@@ -91,11 +91,11 @@
 
 
 <rule e="way" k="natural" v="beach">
-    <area fill="#F8F898" scale="none"/>
-  </rule>
+  <area fill="#F8F898" scale="none"/>
+</rule>
 
 <rule e="way" k="natural" v="glacier">
-  <area fill="#38FCF8" scale="none"/>
+  <area fill="#b1fefc" scale="none"/>
 </rule>
 
 <rule e="way" k="landuse" v="orchard">

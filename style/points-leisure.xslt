@@ -74,7 +74,6 @@
   </rule>
 </rule>
 
-
 <rule  e="any" k="tourism" v="attraction" zoom-min="15">
   <symbol id="attraction" src="{$symbolPath}/attraction.svg" symbol-width="16" priority="{$pr-attraction}"/>
   <rule e="any" k="*" v="*" zoom-min="16">
@@ -82,7 +81,6 @@
     font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
   </rule>
 </rule>
-
 
 </xsl:template>
 </xsl:stylesheet>

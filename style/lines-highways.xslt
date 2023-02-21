@@ -1,5 +1,13 @@
 <?xml-stylesheet type="text/xsl"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!-- 
+# OpenHikingMap
+#
+# Highways
+#
+# Copyright (c) 2022-2023 OpenHiking contributors
+# SPDX-License-Identifier: GPL-3.0-only
+-->
 
 <xsl:template name="lines-highways">
 
@@ -9,17 +17,6 @@
             <line stroke="{$lc-footway}" stroke-width="{$lw-footway}" stroke-linecap="butt"/>          
         </rule>        
         <rule e="way" k="highway" v="path" zoom-min="{$zm-path}">
-            <rule e="way" k="sac_scale" v="demanding_mountain_hiking|alpine_hiking|demanding_alpine_hiking|difficult_alpine_hiking" zoom-min="{$zm-path}">
-                <rule e="way" k="*" v="*" zoom-min="{$zm-path}" zoom-max="{$zm-level2 - 1}"> 
-                    <line stroke="{$lc-mountain-path}" stroke-width="{$lw-path}" stroke-dasharray="2,2"  stroke-linecap="butt"/>          
-                </rule>                                
-                <rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}"> 
-                    <line stroke="{$lc-mountain-path}" stroke-width="{$lw-path2}" stroke-dasharray="3,3"  stroke-linecap="butt"/>          
-                </rule> 
-                <rule e="way" k="*" v="*" zoom-min="{$zm-level3}" > 
-                    <line stroke="{$lc-mountain-path}" stroke-width="{$lw-path3}" stroke-dasharray="4,4"  stroke-linecap="butt"/>          
-                </rule>                                
-            </rule>
             <rule e="way" k="sac_scale" v="hiking|mountain_hiking|~" zoom-min="{$zm-path}">
                 <rule e="way" k="*" v="*" zoom-min="{$zm-path}" zoom-max="{$zm-level2 - 1}"> 
                     <line stroke="{$lc-path}" stroke-width="{$lw-path}" stroke-dasharray="4,4"  stroke-linecap="butt"/>          
@@ -31,13 +28,35 @@
                     <line stroke="{$lc-path}" stroke-width="{$lw-path3}" stroke-dasharray="10,10"  stroke-linecap="butt"/>          
                 </rule>                                
             </rule>
+            <rule e="way" k="sac_scale" v="demanding_mountain_hiking" zoom-min="{$zm-path}">
+                <rule e="way" k="*" v="*" zoom-min="{$zm-path}" zoom-max="{$zm-level2 - 1}"> 
+                    <line stroke="{$lc-mountain-path}" stroke-width="{$lw-path}" stroke-dasharray="2,2"  stroke-linecap="butt"/>          
+                </rule>                                
+                <rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}"> 
+                    <line stroke="{$lc-mountain-path}" stroke-width="{$lw-path2}" stroke-dasharray="3,3"  stroke-linecap="butt"/>          
+                </rule> 
+                <rule e="way" k="*" v="*" zoom-min="{$zm-level3}" > 
+                    <line stroke="{$lc-mountain-path}" stroke-width="{$lw-path3}" stroke-dasharray="4,4"  stroke-linecap="butt"/>          
+                </rule>                                
+            </rule>
+            <rule e="way" k="sac_scale" v="alpine_hiking|demanding_alpine_hiking|difficult_alpine_hiking" zoom-min="{$zm-path}">
+                <rule e="way" k="*" v="*" zoom-min="{$zm-path}" zoom-max="{$zm-level2 - 1}"> 
+                    <line stroke="{$lc-alpine-path}" stroke-width="{$lw-path}" stroke-dasharray="2,2"  stroke-linecap="butt"/>          
+                </rule>                                
+                <rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}"> 
+                    <line stroke="{$lc-alpine-path}" stroke-width="{$lw-path2}" stroke-dasharray="3,3"  stroke-linecap="butt"/>          
+                </rule> 
+                <rule e="way" k="*" v="*" zoom-min="{$zm-level3}" > 
+                    <line stroke="{$lc-alpine-path}" stroke-width="{$lw-path3}" stroke-dasharray="4,4"  stroke-linecap="butt"/>          
+                </rule>                                
+            </rule>
         </rule>            
         <rule e="way" k="highway" v="bridleway" zoom-min="{$zm-bridleway}">
             <line stroke="{$lc-bridleway}" stroke-width="{$lw-bridleway}" stroke-dasharray="4,4"  stroke-linecap="butt"/>                      
         </rule>
         <rule e="way" k="highway" v="via_ferrata" zoom-min="{$zm-ferrata}">
             <line stroke="{$lc-ferrata}" stroke-width="0.25" stroke-dasharray="0.5,0.5" scale="all"/>
-            <line stroke="{$lc-ferrata}" stroke-width="0.8" stroke-linecap="butt" stroke-dasharray="0,0.1,0.25,0.65" scale="all"/>
+            <line stroke="{$lc-ferrata}" stroke-width="{$lw-ferrata}" stroke-linecap="butt" stroke-dasharray="0,0.1,0.25,0.65" scale="all"/>
         </rule>  
         <rule e="way" k="highway" v="steps" zoom-min="{$zm-steps}">
             <line stroke="{$lc-steps}" stroke-width="{$lw-steps}" stroke-dasharray="2,2" stroke-linecap="butt"/>          
@@ -180,6 +199,14 @@
         </rule>    
     </rule>    
 </rule>
+
+<rule e="way" k="railway" v="platform" >
+    <rule e="way" k="area" v="~">
+        <rule e="any" k="*" v="*" zoom-min="{$zm-footway}">
+            <line stroke="{$lc-footway}" stroke-width="{$lw-footway}" stroke-linecap="butt"/>          
+        </rule>        
+    </rule>
+</rule>    
 
 
 

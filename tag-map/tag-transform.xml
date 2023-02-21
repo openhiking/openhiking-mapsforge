@@ -316,18 +316,17 @@
 	<translation>
 		<name>Tunnels</name>
 		<description>Move tunnels to layer 0</description>
-		<match type="way" mode="or">
-			<match>
+		<match type="way" mode="and">
+			<match type="way" mode="or">
 				<tag k="highway" v=".*"/>
-				<tag k="tunnel" v="yes"/>
-			</match>
-			<match>
 				<tag k="railway" v=".*"/>
-				<tag k="tunnel" v="yes"/>
-			</match>
-			<match>
 				<tag k="waterway" v=".*"/>
-                <tag k="tunnel" v=".*"/>
+			</match>
+			<match type="way" mode="or">
+				<tag k="tunnel" v="yes"/>
+				<tag k="tunnel" v="avalanche_protector"/>					
+				<tag k="tunnel" v="building_passage"/>	
+				<tag k="tunnel" v="culvert"/>				
 			</match>
 		</match>
 		<output>

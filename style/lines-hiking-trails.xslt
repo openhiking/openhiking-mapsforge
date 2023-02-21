@@ -118,8 +118,9 @@
 		<rule e="way" k="*" v="*" zoom-min="{$zm-level3}">		
 			<line stroke="{$color}" dy="{$lw-path - 0.1}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
 			<line stroke="{$color}" dy="-{$lw-path - 0.1}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
-		</rule>
+		</rule>		
 	</rule>
+	
 	<rule e="way" k="highway" v="footway">
 		<rule e="way" k="*" v="*" zoom-max="{$zm-footway - 1}">		
 			<line stroke="{$color}" stroke-width="{$lw-trail-highlight-low}" stroke-linecap="butt" />
@@ -135,6 +136,23 @@
 		<rule e="way" k="*" v="*" zoom-min="{$zm-level3 }">		
 			<line stroke="{$color}" dy="{$lw-footway - 0.1}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
 			<line stroke="{$color}" dy="-{$lw-footway - 0.1}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
+		</rule>
+	</rule>
+	<rule e="way" k="highway" v="via_ferrata">
+		<rule e="way" k="*" v="*" zoom-max="{$zm-ferrata - 1}">		
+			<line stroke="{$color}" stroke-width="{$lw-trail-highlight-low}" stroke-linecap="butt" />
+		</rule>
+		<rule e="way" k="*" v="*" zoom-min="{$zm-ferrata}" zoom-max="{$zm-level2 - 1}">		
+			<line stroke="{$color}" dy="{$lw-ferrata}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
+			<line stroke="{$color}" dy="-{$lw-ferrata}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
+		</rule>
+		<rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}" >		
+			<line stroke="{$color}" dy="{$lw-ferrata}" stroke-width="{$lw-trail-highlight-l2}" stroke-linecap="butt" />
+			<line stroke="{$color}" dy="-{$lw-ferrata}" stroke-width="{$lw-trail-highlight-l2}" stroke-linecap="butt" />
+		</rule>
+		<rule e="way" k="*" v="*" zoom-min="{$zm-level3 }">		
+			<line stroke="{$color}" dy="{$lw-ferrata - 0.1}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
+			<line stroke="{$color}" dy="-{$lw-ferrata - 0.1}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
 		</rule>
 	</rule>
 	<rule e="way" k="highway" v="steps">

@@ -9,8 +9,8 @@
 </rule>
 
 <rule e="way" k="natural" v="arete" zoom-min="14">
-  <line stroke="#000000" stroke-width="1" scale="none"/>
-  <line stroke="#000000" stroke-dasharray="1,9" stroke-width="6" stroke-linecap="butt"  scale="none"/>
+  <line stroke="#808080" stroke-width="1" scale="none"/>
+  <line stroke="#808080" stroke-dasharray="1,9" stroke-width="5" stroke-linecap="butt"  scale="none"/>
 </rule>
 
 <!-- 
