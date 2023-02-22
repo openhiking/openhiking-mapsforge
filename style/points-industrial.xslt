@@ -69,6 +69,13 @@
 </rule>
 
 
+<rule  e="any" k="power" v="generator" zoom-min="14">
+    <rule  e="any" k="generator:source" v="wind" >
+        <symbol id="wind_turbine" src="{$symbolPath}/wind_turbine.svg" symbol-width="20" priority="{$pr-wind-turbine}"/>
+    </rule>
+</rule>
+
+
 <rule  e="any" k="man_made" v="water_tower" zoom-min="16">
     <symbol id="mast" src="{$symbolPath}/water_tower.svg" symbol-width="22" priority="{$pr-water-tower}"/>
 </rule>

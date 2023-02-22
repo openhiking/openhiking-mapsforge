@@ -606,8 +606,8 @@
         <osm-tag key="man_made" value="wastewater_plant" zoom-appear="15"/>
         <osm-tag key="man_made" value="works" zoom-appear="15"/>
 
-        <osm-tag key="power" value="generator" zoom-appear="15"/>        
-        <osm-tag key="power" value="plant" zoom-appear="15"/>
+        <osm-tag key="power" value="generator" zoom-appear="14"/>        
+        <osm-tag key="power" value="plant" zoom-appear="14"/>
         <osm-tag key="power" value="tower" zoom-appear="15"/>
 
         <osm-tag key="plant:source" renderable="false" value="solar"/>
@@ -1231,6 +1231,8 @@
 
         <!-- BLUE background-->
         <osm-tag key="trail_symbol" value="osmc:blue:white_bar" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="osmc:blue:white_lower" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="osmc:blue:yellow_lower" zoom-appear="14"/>
 
         <!-- YELLOW background-->
         <osm-tag key="trail_symbol" value="osmc:yellow:white_bar" zoom-appear="14"/>

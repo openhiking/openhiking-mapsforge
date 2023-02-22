@@ -3,6 +3,10 @@ O,red:white:::M:red,9,red,hu:pm
 O,yellow:white:::M:yellow,9,yellow,hu:sm
 O,green:white:::M:green,9,green,hu:zm
 O,purple:white:::M:purple,9,purple,hu:lm
+O,red:white::VM:red,9,red,hu:pm
+O,red:white::Mw:red,9,ews,hu:pm
+O,blue:white::SzM:blue,9,blue,hu:km
+O,blue:white::VM:blue,9,blue,hu:km
 O,red:red:red_bar:S:white,5,red,hu:palp
 O,:white:orange_dot:::,7,orange,osmc:white:orange_dot
 O,:yellow:blue_dot,6,blue,osmc:yellow:blue_dot

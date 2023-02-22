@@ -153,6 +153,8 @@
 <xsl:variable name="pr-soccer">0</xsl:variable>
 <xsl:variable name="pr-sport">0</xsl:variable>
 
+<xsl:variable name="pr-wind-turbine">0</xsl:variable>
+
 <xsl:variable name="pr-label-natural">0</xsl:variable>
 <xsl:variable name="pr-label-cave">0</xsl:variable>
 <xsl:variable name="pr-label-spring">0</xsl:variable>
