@@ -54,6 +54,18 @@
             font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-industrial}"/>
         </rule>
     </rule>
+    <rule e="way" k="plant:source" v="hydro">
+        <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="16">
+            <symbol id="hydro_plant" src="{$symbolPath}/hydro_plant.svg" symbol-width="20" priority="{$pr-power-plant}"/>
+        </rule> 
+        <rule  e="any" k="*" v="*" zoom-min="17">
+            <symbol id="hydro_plant" src="{$symbolPath}/hydro_plant.svg" symbol-width="24" priority="{$pr-power-plant}"/>
+        </rule>                                 
+        <rule e="node" k="*" v="*" zoom-min="16">
+            <caption k="name" symbol-id="hydro_plant" 
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-industrial}"/>
+        </rule>
+    </rule>
 </rule>
 
 
