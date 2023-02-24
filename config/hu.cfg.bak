@@ -1,8 +1,9 @@
 # Input data
 MAPNAME=openhiking-hungary
 OSM_COUNTRY_LIST=hungary
-OSM_COUNTRY_LIST_PARTIAL=slovakia austria slovenia
+OSM_COUNTRY_LIST_PARTIAL=slovakia ukraine romania serbia croatia slovenia austria 
 CONTOUR_LINES=contour-mf-hungary-v10.o5m
 BOUNDARY_POLYGON=hungary.poly
 GENERATE_HIKING_SYMBOLS=yes
-MAP_LANGUAGES=hu,sk,en
+MAP_LANGUAGES=hu,sk,de
+MAPWRITER_IN_MEMORY=yes
