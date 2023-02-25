@@ -20,13 +20,6 @@
 <xsl:variable name="lc-trail-black">#626262</xsl:variable>
 
 <rule cat="colored_ski_routes" e="way" k="highway" v="*" zoom-min="12">
-	<rule  e="way" k="ski_route_color" v="*" >
-   		<xsl:call-template name="trail-highlight-rules-unpaved">
-        	<xsl:with-param name="color" select="$lc-trail-blue" />
-    	</xsl:call-template>
-	</rule>
-
-<!--
 	<rule  e="way" k="ski_route_color" v="blue" >
    		<xsl:call-template name="trail-highlight-rules-unpaved">
         	<xsl:with-param name="color" select="$lc-trail-blue" />
@@ -52,7 +45,6 @@
         	<xsl:with-param name="color" select="$lc-trail-red" />
     	</xsl:call-template>
 	</rule>
--->	
 </rule>
 </xsl:template>
 </xsl:stylesheet>
