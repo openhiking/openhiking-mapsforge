@@ -59,7 +59,7 @@
 		<name lang="hu" value="Turistaút kiemelés" />        
 		<cat id="colored_hiking" />
 	</layer>
-    	<layer id="ski_colored_routes_t" enabled="true" visible="false">
+    	<layer id="ski_colored_routes_t" enabled="false" visible="false">
 		<name lang="en" value="Ski routes " />
 		<name lang="hu" value="Síút kiemelés" />        
 		<cat id="colored_ski_routes" />

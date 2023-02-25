@@ -1157,6 +1157,9 @@
         <osm-tag key="trail_symbol" value="hu:t" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="hu:palp" zoom-appear="14"/>
 
+        <osm-tag key="trail_symbol" value="hu:kx" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:px" zoom-appear="14"/>
+
         <osm-tag key="trail_symbol" value="czsk:blue:major" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="czsk:blue:ruin" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="czsk:blue:peak" zoom-appear="14"/>
