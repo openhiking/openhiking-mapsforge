@@ -3,14 +3,14 @@
 <!-- 
 # OpenHikingMap
 #
-# Hiking trail highlightd
+# Ski route highlighting
 #
 # Copyright (c) 2022-2023 OpenHiking contributors
 # SPDX-License-Identifier: GPL-3.0-only
 -->
 
 
-<xsl:template name="lines-hiking-trails">
+<xsl:template name="lines-ski-routes">
 <xsl:variable name="lc-trail-blue">#0094F8</xsl:variable>
 <xsl:variable name="lc-trail-red">#F80000</xsl:variable>
 <xsl:variable name="lc-trail-green">#38C820</xsl:variable>
@@ -19,90 +19,47 @@
 <xsl:variable name="lc-trail-orange">#ffa100</xsl:variable>
 <xsl:variable name="lc-trail-black">#626262</xsl:variable>
 
-<rule cat="colored_hiking" e="way" k="highway" v="*" zoom-min="12">
-	<rule  e="way" k="trail_color" v="blue" >
+<rule cat="colored_ski_routes" e="way" k="highway" v="*" zoom-min="12">
+	<rule  e="way" k="ski_route_color" v="blue" >
    		<xsl:call-template name="trail-highlight-rules">
         	<xsl:with-param name="color" select="$lc-trail-blue" />
     	</xsl:call-template>
 	</rule>
-	<rule  e="way" k="trail_color" v="red" >
+	<rule  e="way" k="ski_route_color" v="red" >
    		<xsl:call-template name="trail-highlight-rules">
         	<xsl:with-param name="color" select="$lc-trail-red" />
     	</xsl:call-template>
 	</rule>
-	<rule  e="way" k="trail_color" v="green" >
+	<rule  e="way" k="ski_route_color" v="green" >
    		<xsl:call-template name="trail-highlight-rules">
         	<xsl:with-param name="color" select="$lc-trail-green" />
     	</xsl:call-template>
 	</rule>
-	<rule  e="way" k="trail_color" v="yellow" >
+	<rule  e="way" k="ski_route_color" v="yellow" >
    		<xsl:call-template name="trail-highlight-rules">
         	<xsl:with-param name="color" select="$lc-trail-yellow" />
     	</xsl:call-template>
 	</rule>
-	<rule  e="way" k="trail_color" v="purple" >
+	<rule  e="way" k="ski_route_color" v="purple" >
    		<xsl:call-template name="trail-highlight-rules">
         	<xsl:with-param name="color" select="$lc-trail-purple" />
     	</xsl:call-template>
 	</rule>
-	<rule  e="way" k="trail_color" v="orange" >
+	<rule  e="way" k="ski_route_color" v="orange" >
    		<xsl:call-template name="trail-highlight-rules">
         	<xsl:with-param name="color" select="$lc-trail-orange" />
     	</xsl:call-template>
 	</rule>
-	<rule  e="way" k="trail_color" v="black" >
+	<rule  e="way" k="ski_route_color" v="black" >
    		<xsl:call-template name="trail-highlight-rules">
         	<xsl:with-param name="color" select="$lc-trail-black" />
     	</xsl:call-template>
 	</rule>
-	<rule  e="way" k="trail_color" v="default" >
+	<rule  e="way" k="ski_route_color" v="default" >
    		<xsl:call-template name="trail-highlight-rules">
         	<xsl:with-param name="color" select="$lc-trail-red" />
     	</xsl:call-template>
 	</rule>
 </rule>
-
-<rule cat="colored_hiking" e="way" k="route" v="ferry" >
-	<rule  e="way" k="trail_color" v="blue" >
-   		<xsl:call-template name="trail-highlight-rules-ferry">
-        	<xsl:with-param name="color" select="$lc-trail-blue" />
-    	</xsl:call-template>
-	</rule>
-	<rule  e="way" k="trail_color" v="red" >
-   		<xsl:call-template name="trail-highlight-rules-ferry">
-        	<xsl:with-param name="color" select="$lc-trail-red" />
-    	</xsl:call-template>
-	</rule>
-	<rule  e="way" k="trail_color" v="green" >
-   		<xsl:call-template name="trail-highlight-rules-ferry">
-        	<xsl:with-param name="color" select="$lc-trail-green" />
-    	</xsl:call-template>
-	</rule>
-	<rule  e="way" k="trail_color" v="yellow" >
-   		<xsl:call-template name="trail-highlight-rules-ferry">
-        	<xsl:with-param name="color" select="$lc-trail-yellow" />
-    	</xsl:call-template>
-	</rule>
-	<rule  e="way" k="trail_color" v="purple" >
-   		<xsl:call-template name="trail-highlight-rules-ferry">
-        	<xsl:with-param name="color" select="$lc-trail-purple" />
-    	</xsl:call-template>
-	</rule>
-	<rule  e="way" k="trail_color" v="orange" >
-   		<xsl:call-template name="trail-highlight-rules">
-        	<xsl:with-param name="color" select="$lc-trail-orange" />
-    	</xsl:call-template>
-	</rule>
-	<rule  e="way" k="trail_color" v="black" >
-   		<xsl:call-template name="trail-highlight-rules">
-        	<xsl:with-param name="color" select="$lc-trail-black" />
-    	</xsl:call-template>
-	</rule>
-</rule>
-
-
 </xsl:template>
-
-
-
 </xsl:stylesheet>

@@ -11,6 +11,7 @@
 -->
 
 <xsl:variable name="symbol-tag">trail_symbol</xsl:variable>
+<xsl:variable name="ski-symbol-tag">ski_route_symbol</xsl:variable>
 <xsl:variable name="symbol-level-tag">trail_symbol_level</xsl:variable>
 
 <xsl:variable name="sw-hiking-z14">14</xsl:variable>

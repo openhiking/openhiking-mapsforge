@@ -42,9 +42,18 @@
 			<xsl:with-param name="color" select="'s'" />
 		</xsl:call-template>
 		<xsl:call-template name="hiking-symbol-hu-special-rules"/>
-	</rule>
-	
+	</rule>	
 </rule>	
+
+<rule cat="hiking_symbols" e="node" k="{$ski-symbol-tag}" v="*" >
+	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
+		<xsl:call-template name="hiking-symbol-hu-ski"/>
+	</rule>
+	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
+		<xsl:call-template name="hiking-symbol-hu-ski"/>	
+	</rule>	
+</rule>	
+
 </xsl:template>
 
 
@@ -148,21 +157,6 @@
 		<symbol src="{$hikingSymbolPath}/hu-t.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}"/>
 	</rule>
 
-	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-hu}px" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-px.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols-minor}"/>
-	</rule>
-	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-hu}px" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-px.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}"/>
-	</rule>
-
-	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-hu}kx" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-kx.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols-minor}"/>
-	</rule>
-	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-hu}kx" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-kx.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}"/>
-	</rule>
-
-
 
 	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-hu}km" zoom-min="12" zoom-max="15">
 		<symbol src="{$hikingSymbolPath}/hu-km.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}"/>
@@ -201,9 +195,22 @@
 	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-hu}palp" zoom-min="16" >
 		<symbol src="{$hikingSymbolPath}/hu-palp.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}"/>
 	</rule>
+</xsl:template>
 
+<xsl:template name="hiking-symbol-hu-ski">
+	<rule e="node" k="{$ski-symbol-tag}" v="{$ns-symbol-hu}px" zoom-min="12" zoom-max="15">
+		<symbol src="{$hikingSymbolPath}/hu-px.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols-minor}"/>
+	</rule>
+	<rule e="node" k="{$ski-symbol-tag}" v="{$ns-symbol-hu}px" zoom-min="16" >
+		<symbol src="{$hikingSymbolPath}/hu-px.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}"/>
+	</rule>
 
-
+	<rule e="node" k="{$ski-symbol-tag}" v="{$ns-symbol-hu}kx" zoom-min="12" zoom-max="15">
+		<symbol src="{$hikingSymbolPath}/hu-kx.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols-minor}"/>
+	</rule>
+	<rule e="node" k="{$ski-symbol-tag}" v="{$ns-symbol-hu}kx" zoom-min="16" >
+		<symbol src="{$hikingSymbolPath}/hu-kx.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}"/>
+	</rule>
 </xsl:template>
 
 

@@ -35,7 +35,7 @@
     </layer>
     <layer id="ski" enabled="false" visible="false">
         <name lang="en" value="Ski tracks" />
-        <name lang="hu" value="Sípályák" />
+        <name lang="hu" value="Sílesikló pályák" />
         <cat id="ski" />
     </layer>
 
@@ -59,6 +59,11 @@
 		<name lang="hu" value="Turistaút kiemelés" />        
 		<cat id="colored_hiking" />
 	</layer>
+    	<layer id="ski_colored_routes_t" enabled="true" visible="false">
+		<name lang="en" value="Ski routes " />
+		<name lang="hu" value="Síút kiemelés" />        
+		<cat id="colored_ski_routes" />
+	</layer>
 	<layer id="hiking_symbols" enabled="true" visible="false">
 		<name lang="en" value="Hiking symbols" />
 		<name lang="hu" value="Turistajelzések" />
@@ -81,7 +86,8 @@
         <cat id="building" />
 		<overlay id="hiking_colored_routes_t" />        
 		<overlay id="hiking_symbols" /> 
-        <overlay id="hiking_sac_highlight" />                
+        <overlay id="hiking_sac_highlight" />    
+        <overlay id="ski_colored_routes_t" /> 
         <overlay id="ski" />         
 		<overlay id="protected_area" />        
 		<overlay id="military_area" />

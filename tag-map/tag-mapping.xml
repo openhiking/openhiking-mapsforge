@@ -126,6 +126,17 @@
         <osm-tag key="trail_color" value="black" zoom-appear="12"/>
         <osm-tag key="trail_color" value="default" zoom-appear="12"/>
 
+        <osm-tag key="ski_route_color" value="blue" zoom-appear="12"/>
+        <osm-tag key="ski_route_color" value="red" zoom-appear="12"/>
+        <osm-tag key="ski_route_color" value="yellow" zoom-appear="12"/>
+        <osm-tag key="ski_route_color" value="green" zoom-appear="12"/>
+        <osm-tag key="ski_route_color" value="purple" zoom-appear="12"/>
+        <osm-tag key="ski_route_color" value="orange" zoom-appear="12"/>
+        <osm-tag key="ski_route_color" value="black" zoom-appear="12"/>
+        <osm-tag key="ski_route_color" value="white" zoom-appear="12"/>
+        <osm-tag key="ski_route_color" value="default" zoom-appear="12"/>
+
+
         <!-- Surface -->
         <!-- 
         <osm-tag key="surface" equivalent-values="chipseal,concrete,paving_stones,metal,wood,sett,cobblestone" renderable="false" value="paved"/>
@@ -1142,9 +1153,6 @@
         <osm-tag key="trail_symbol" value="hu:sm" zoom-appear="14"/>     
         <osm-tag key="trail_symbol" value="hu:lm" zoom-appear="14"/>   
 
-        <osm-tag key="trail_symbol" value="hu:kx" zoom-appear="14"/>
-        <osm-tag key="trail_symbol" value="hu:px" zoom-appear="14"/>
-
         <osm-tag key="trail_symbol" value="hu:f" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="hu:t" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="hu:palp" zoom-appear="14"/>
@@ -1251,6 +1259,10 @@
         <osm-tag key="trail_symbol" value="osmc:red_circle:white_dot" zoom-appear="14"/>
 
         <osm-tag key="trail_symbol" value="osmc:blue_round:yellow_dot" zoom-appear="14"/>                
+
+        <!-- Ski routes -->
+        <osm-tag key="ski_route_symbol" value="hu:kx" zoom-appear="14"/>
+        <osm-tag key="ski_route_symbol" value="hu:px" zoom-appear="14"/>
 
 
         <osm-tag key="trail_symbol_level" value="major" zoom-appear="13"/>                           
