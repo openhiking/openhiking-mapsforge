@@ -126,15 +126,20 @@
         <osm-tag key="trail_color" value="black" zoom-appear="12"/>
         <osm-tag key="trail_color" value="default" zoom-appear="12"/>
 
-        <osm-tag key="ski_route_color" value="blue" zoom-appear="12"/>
-        <osm-tag key="ski_route_color" value="red" zoom-appear="12"/>
-        <osm-tag key="ski_route_color" value="yellow" zoom-appear="12"/>
-        <osm-tag key="ski_route_color" value="green" zoom-appear="12"/>
-        <osm-tag key="ski_route_color" value="purple" zoom-appear="12"/>
-        <osm-tag key="ski_route_color" value="orange" zoom-appear="12"/>
-        <osm-tag key="ski_route_color" value="black" zoom-appear="12"/>
-        <osm-tag key="ski_route_color" value="white" zoom-appear="12"/>
-        <osm-tag key="ski_route_color" value="default" zoom-appear="12"/>
+        <osm-tag key="nordic_ski_color" value="blue" zoom-appear="12"/>
+        <osm-tag key="nordic_ski_color" value="red" zoom-appear="12"/>
+        <osm-tag key="nordic_ski_color" value="yellow" zoom-appear="12"/>
+        <osm-tag key="nordic_ski_color" value="green" zoom-appear="12"/>
+        <osm-tag key="nordic_ski_color" value="orange" zoom-appear="12"/>
+        <osm-tag key="nordic_ski_color" value="brown" zoom-appear="12"/>
+        <osm-tag key="nordic_ski_color" value="purple" zoom-appear="12"/>        
+        <osm-tag key="nordic_ski_color" value="grey" zoom-appear="12"/>        
+        <osm-tag key="nordic_ski_color" value="black" zoom-appear="12"/>        
+        <osm-tag key="nordic_ski_color" value="default" zoom-appear="12"/>
+
+        <osm-tag key="skitour_color" value="default" zoom-appear="12"/>
+
+        <osm-tag key="winter_hike_color" value="default" zoom-appear="12"/>
 
 
         <!-- Surface -->
@@ -1264,8 +1269,8 @@
         <osm-tag key="trail_symbol" value="osmc:blue_round:yellow_dot" zoom-appear="14"/>                
 
         <!-- Ski routes -->
-        <osm-tag key="ski_route_symbol" value="hu:kx" zoom-appear="14"/>
-        <osm-tag key="ski_route_symbol" value="hu:px" zoom-appear="14"/>
+        <osm-tag key="nordic_ski_symbol" value="hu:kx" zoom-appear="14"/>
+        <osm-tag key="nordic_ski_symbol" value="hu:px" zoom-appear="14"/>
 
 
         <osm-tag key="trail_symbol_level" value="major" zoom-appear="13"/>                           
