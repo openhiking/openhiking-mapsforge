@@ -33,12 +33,6 @@
         <name lang="hu" value="Távvezetékek" />
         <cat id="power" />
     </layer>
-    <layer id="ski" enabled="false" visible="false">
-        <name lang="en" value="Ski tracks" />
-        <name lang="hu" value="Sílesikló pályák" />
-        <cat id="ski" />
-    </layer>
-
     <layer id="protected_area" enabled="true" visible="false">
         <name lang="en" value="Protected areas" />
         <name lang="hu" value="Védett területek" />
@@ -58,12 +52,7 @@
 		<name lang="en" value="Hiking routes " />
 		<name lang="hu" value="Turistaút kiemelés" />        
 		<cat id="colored_hiking" />
-	</layer>
-    	<layer id="ski_colored_routes_t" enabled="false" visible="false">
-		<name lang="en" value="Ski routes " />
-		<name lang="hu" value="Síút kiemelés" />        
-		<cat id="colored_ski_routes" />
-	</layer>
+    </layer>
 	<layer id="hiking_symbols" enabled="true" visible="false">
 		<name lang="en" value="Hiking symbols" />
 		<name lang="hu" value="Turistajelzések" />
@@ -73,6 +62,26 @@
 		<name lang="en" value="SAC highlighting" />
 		<name lang="hu" value="SAC nehézség jelölés" />
 		<cat id="hiking_sac_highlight" />
+	</layer>
+    <layer id="hiking_winter" enabled="false" visible="false">
+		<name lang="en" value="Winter hiking routes" />
+		<name lang="hu" value="Téli túrautak" />        
+		<cat id="hiking_winter" />
+	</layer>
+    <layer id="ski_downhill" enabled="false" visible="false">
+        <name lang="en" value="Downhill ski tracks" />
+        <name lang="hu" value="Sílesikló pályák" />
+        <cat id="ski_downhill" />
+    </layer>    
+    <layer id="ski_nordic" enabled="false" visible="false">
+		<name lang="en" value="Cross-country ski routes " />
+		<name lang="hu" value="Sífutó utak" />        
+		<cat id="ski_nordic" />
+	</layer>
+    <layer id="ski_tour" enabled="false" visible="false">
+		<name lang="en" value="Skitour routes " />
+		<name lang="hu" value="Sítúra utak" />        
+		<cat id="ski_tour" />
 	</layer>
 	<layer id="editorial" enabled="false" visible="false">
 		<name lang="en" value="OSM editorial symbols" />
@@ -84,11 +93,13 @@
 		<name lang="en" value="OpenHiking layers" />    
 		<name lang="hu" value="OpenHiking rétegek" />
         <cat id="building" />
+		<overlay id="hiking_symbols" />         
 		<overlay id="hiking_colored_routes_t" />        
-		<overlay id="hiking_symbols" /> 
         <overlay id="hiking_sac_highlight" />    
-        <overlay id="ski_colored_routes_t" /> 
-        <overlay id="ski" />         
+        <overlay id="hiking_winter" /> 
+        <overlay id="ski_downhill" /> 
+        <overlay id="ski_nordic" />         
+        <overlay id="ski_tour" />         
 		<overlay id="protected_area" />        
 		<overlay id="military_area" />
         <overlay id="restricted_access" />

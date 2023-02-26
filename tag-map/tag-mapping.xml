@@ -121,13 +121,15 @@
         <osm-tag key="trail_color" value="red" zoom-appear="12"/>
         <osm-tag key="trail_color" value="yellow" zoom-appear="12"/>
         <osm-tag key="trail_color" value="green" zoom-appear="12"/>
-        <osm-tag key="trail_color" value="purple" zoom-appear="12"/>
         <osm-tag key="trail_color" value="orange" zoom-appear="12"/>
+        <osm-tag key="trail_color" value="brown" zoom-appear="12"/>
+        <osm-tag key="trail_color" value="purple" zoom-appear="12"/>
+        <osm-tag key="trail_color" value="grey" zoom-appear="12"/>
         <osm-tag key="trail_color" value="black" zoom-appear="12"/>
         <osm-tag key="trail_color" value="default" zoom-appear="12"/>
 
-        <osm-tag key="nordic_ski_color" value="blue" zoom-appear="12"/>
         <osm-tag key="nordic_ski_color" value="red" zoom-appear="12"/>
+        <osm-tag key="nordic_ski_color" value="blue" zoom-appear="12"/>
         <osm-tag key="nordic_ski_color" value="yellow" zoom-appear="12"/>
         <osm-tag key="nordic_ski_color" value="green" zoom-appear="12"/>
         <osm-tag key="nordic_ski_color" value="orange" zoom-appear="12"/>
@@ -137,8 +139,26 @@
         <osm-tag key="nordic_ski_color" value="black" zoom-appear="12"/>        
         <osm-tag key="nordic_ski_color" value="default" zoom-appear="12"/>
 
+        <osm-tag key="skitour_color" value="red" zoom-appear="12"/>
+        <osm-tag key="skitour_color" value="blue" zoom-appear="12"/>
+        <osm-tag key="skitour_color" value="yellow" zoom-appear="12"/>
+        <osm-tag key="skitour_color" value="green" zoom-appear="12"/>
+        <osm-tag key="skitour_color" value="orange" zoom-appear="12"/>
+        <osm-tag key="skitour_color" value="brown" zoom-appear="12"/>
+        <osm-tag key="skitour_color" value="purple" zoom-appear="12"/>
+        <osm-tag key="skitour_color" value="grey" zoom-appear="12"/>
+        <osm-tag key="skitour_color" value="black" zoom-appear="12"/>
         <osm-tag key="skitour_color" value="default" zoom-appear="12"/>
 
+        <osm-tag key="winter_hike_color" value="red" zoom-appear="12"/>
+        <osm-tag key="winter_hike_color" value="blue" zoom-appear="12"/>
+        <osm-tag key="winter_hike_color" value="yellow" zoom-appear="12"/>
+        <osm-tag key="winter_hike_color" value="green" zoom-appear="12"/>
+        <osm-tag key="winter_hike_color" value="orange" zoom-appear="12"/>
+        <osm-tag key="winter_hike_color" value="brown" zoom-appear="12"/>
+        <osm-tag key="winter_hike_color" value="purple" zoom-appear="12"/>
+        <osm-tag key="winter_hike_color" value="grey" zoom-appear="12"/>
+        <osm-tag key="winter_hike_color" value="black" zoom-appear="12"/>
         <osm-tag key="winter_hike_color" value="default" zoom-appear="12"/>
 
 

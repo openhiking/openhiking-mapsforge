@@ -23,6 +23,8 @@
   <xsl:include href="poly-top.xslt" />
   <xsl:include href="poly-naming.xslt" />
 
+  <xsl:include href="lines-highlights.xslt"/>
+
   <xsl:include href="lines-contours.xslt" /> 
   <xsl:include href="lines-admin.xslt" />
   <xsl:include href="lines-waterways.xslt" />
@@ -32,11 +34,12 @@
   <xsl:include href="lines-bridges.xslt" />
   <xsl:include href="lines-tunnels.xslt" />
   <xsl:include href="lines-embankments.xslt" />
-  <xsl:include href="lines-ski.xslt" />
-  <xsl:include href="lines-sac-scale.xslt" />
-  <xsl:include href="lines-highlights.xslt"/>
+  <xsl:include href="lines-ski-downhill.xslt" />
+  <xsl:include href="lines-sac-scale.xslt" />  
+  <xsl:include href="lines-winter-hike.xslt" />
   <xsl:include href="lines-hiking-trails.xslt" />
-  <xsl:include href="lines-ski-routes.xslt" />
+  <xsl:include href="lines-ski-nordic.xslt" />
+  <xsl:include href="lines-ski-tour.xslt" />  
   <xsl:include href="lines-highways.xslt" />
   <xsl:include href="lines-access-restrictions.xslt" />
   <xsl:include href="lines-obstacles.xslt" />
@@ -93,14 +96,16 @@
   <xsl:call-template name="lines-natural"/> 
   <xsl:call-template name="lines-protected"/> 
   <xsl:call-template name="lines-admin"/>>
-  <xsl:call-template name="lines-ski"/>
+  <xsl:call-template name="lines-ski-downhill"/>
 
 
   <xsl:call-template name="lines-bridges"/> 
   <xsl:call-template name="lines-tunnels"/>
   <xsl:call-template name="lines-embankments"/>
   <xsl:call-template name="lines-hiking-trails"/>   
-  <xsl:call-template name="lines-ski-routes"/>   
+  <xsl:call-template name="lines-ski-nordic"/>   
+  <xsl:call-template name="lines-ski-tour"/>     
+  <xsl:call-template name="lines-winter-hike"/>     
   <xsl:call-template name="lines-sac-scale"/>  
   <xsl:call-template name="lines-highways"/>
   <xsl:call-template name="lines-access-restrictions"/>
