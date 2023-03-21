@@ -405,27 +405,28 @@
                P O I   C U L T U R E
     ************************************************** -->
     <ways>
-        <osm-tag key="amenity" value="cinema" label-position="true" zoom-appear="17"/>  
-        <osm-tag key="amenity" value="library" label-position="true" zoom-appear="17"/>    
+        <osm-tag key="amenity" value="cinema" label-position="true" zoom-appear="15"/>  
+        <osm-tag key="amenity" value="library" label-position="true" zoom-appear="15"/>            
         <osm-tag key="amenity" value="theatre" label-position="true" zoom-appear="14"/>
-        <osm-tag key="tourism" value="gallery" label-position="true" zoom-appear="17"/>
-        <osm-tag key="tourism" value="museum" label-position="true" zoom-appear="17"/>
-        <osm-tag key="tourism" value="theme_park" label-position="true" zoom-appear="17"/>                        
+
+        <osm-tag key="tourism" value="gallery" label-position="true" zoom-appear="14"/>
+        <osm-tag key="tourism" value="museum" label-position="true" zoom-appear="14"/>
+        <osm-tag key="tourism" value="theme_park" label-position="true" zoom-appear="14"/>                        
         <osm-tag key="tourism" value="zoo" label-position="true" zoom-appear="12"/>        
     </ways>
 
     <pois>
-        <osm-tag key="amenity" value="cinema" zoom-appear="17"/>  
-        <osm-tag key="amenity" value="fountain" zoom-appear="16"/>    
-        <osm-tag key="amenity" value="library" zoom-appear="17"/>    
-        <osm-tag key="amenity" value="theatre" zoom-appear="17"/>        
+        <osm-tag key="amenity" value="cinema" zoom-appear="15"/> 
+        <osm-tag key="amenity" value="library" zoom-appear="15"/>     
+        <osm-tag key="amenity" value="fountain" zoom-appear="15"/>    
+        <osm-tag key="amenity" value="theatre" zoom-appear="14"/>        
 
         <osm-tag key="man_made" value="cross" zoom-appear="16"/>    
         <osm-tag key="man_made" value="obelisk" zoom-appear="17"/>    
 
-        <osm-tag key="tourism" value="gallery" zoom-appear="17"/>
-        <osm-tag key="tourism" value="museum" zoom-appear="17"/>
-        <osm-tag key="tourism" value="theme_park" zoom-appear="17"/>                
+        <osm-tag key="tourism" value="gallery" zoom-appear="14"/>
+        <osm-tag key="tourism" value="museum" zoom-appear="14"/>
+        <osm-tag key="tourism" value="theme_park" zoom-appear="14"/>                
         <osm-tag key="tourism" value="zoo" zoom-appear="12"/>        
     </pois>
         
@@ -732,6 +733,7 @@
     <pois>
         <osm-tag key="natural" value="arch" zoom-appear="14"/>    
         <osm-tag key="natural" value="bay" zoom-appear="12"/>    
+        <osm-tag key="natural" value="cape" zoom-appear="14"/>
         <osm-tag key="natural" value="cave_entrance" zoom-appear="14"/>
         <osm-tag key="natural" value="cliff" zoom-appear="14"/>        
         <osm-tag key="natural" value="geyser" zoom-appear="14"/>        

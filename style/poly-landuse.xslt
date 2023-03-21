@@ -58,7 +58,7 @@
   <area fill="#e4fdbf" scale="none"/>
 </rule>
 
-<rule e="way" k="natural" v="grass|grassland">
+<rule e="way" k="natural|landuse" v="grass|grassland">
   <area fill="#e4fdbf" scale="none"/>
 </rule>
 

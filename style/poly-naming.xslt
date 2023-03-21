@@ -10,6 +10,12 @@
         priority="{$pr-poly-label-natural}" stroke="#FFFFFF" stroke-width="0.1" />
 </rule>
 
+<rule e="way" k="natural"  v="beach"  zoom-min="15">
+    <caption fill="#202020" font-family="serif" font-size="11" font-style="italic" k="name"
+        priority="{$pr-poly-label-natural}" stroke="#FFFFFF" stroke-width="0.1" />
+</rule>
+
+
 <rule e="way" k="natural" v="water" zoom-min="14">
     <caption k="name" font-style="italic" font-size="14" 
     priority="{$pr-poly-label-natural}" fill="#4040ff" stroke="#ffffff" stroke-width="3"/>

@@ -10,8 +10,6 @@
 -->
 
 <xsl:template name="lines-admin">
-<xsl:variable name="prot-class-1-line-color">#FF956A</xsl:variable>
-<xsl:variable name="prot-class-2-line-color">#39CA20</xsl:variable>
 
 <rule  e="way" k="boundary" v="administrative"  zoom-min="6">
     <rule  e="way" k="admin_level" v="2">

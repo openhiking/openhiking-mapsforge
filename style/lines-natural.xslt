@@ -3,12 +3,12 @@
 
 <xsl:template name="lines-natural">
 
-<rule e="way" k="natural" v="cliff" zoom-min="14">
+<rule e="way" k="natural" v="cliff" zoom-min="13">
   <line stroke="#000000" stroke-width="1" scale="none"/>
   <line stroke="#000000" dy="2" stroke-dasharray="1,6" stroke-width="4" stroke-linecap="butt"  scale="none"/>
 </rule>
 
-<rule e="way" k="natural" v="arete" zoom-min="14">
+<rule e="way" k="natural" v="arete" zoom-min="13">
   <line stroke="#808080" stroke-width="1" scale="none"/>
   <line stroke="#808080" stroke-dasharray="1,9" stroke-width="5" stroke-linecap="butt"  scale="none"/>
 </rule>
