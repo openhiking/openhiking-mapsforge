@@ -75,6 +75,10 @@
     </rule>
 </rule>
 
+<rule  e="any" k="man_made" v="water_works" zoom-min="16">
+    <symbol id="water_works" src="{$symbolPath}/water_works.svg" symbol-width="16" priority="{$pr-water-works}"/>
+</rule>
+
 
 <rule  e="any" k="man_made" v="water_tower" zoom-min="16">
     <symbol id="mast" src="{$symbolPath}/water_tower.svg" symbol-width="22" priority="{$pr-water-tower}"/>

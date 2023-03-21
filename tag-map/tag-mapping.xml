@@ -705,10 +705,10 @@
                P O I   M I L I T A R Y
     ************************************************** -->
     <ways>
-        <osm-tag key="military" value="airfield" zoom-appear="14"/>
-        <osm-tag key="military" value="barracks" zoom-appear="14"/>
-        <osm-tag key="military" value="bunker" zoom-appear="14"/>
-        <osm-tag key="military" value="naval_base" zoom-appear="14"/>
+        <osm-tag key="military" value="airfield" label-position="true" zoom-appear="14"/>
+        <osm-tag key="military" value="barracks" label-position="true" zoom-appear="14"/>
+        <osm-tag key="military" value="bunker" label-position="true" zoom-appear="14"/>
+        <osm-tag key="military" value="naval_base" label-position="true" zoom-appear="14"/>
     </ways>  
 
     <pois>

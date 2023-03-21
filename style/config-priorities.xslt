@@ -138,6 +138,7 @@
 <xsl:variable name="pr-bunker">0</xsl:variable>
 <xsl:variable name="pr-obstacle">0</xsl:variable>
 <xsl:variable name="pr-water-tower">0</xsl:variable>
+<xsl:variable name="pr-water-works">0</xsl:variable>
 <xsl:variable name="pr-police">0</xsl:variable>
 <xsl:variable name="pr-ambulance-station">0</xsl:variable>
 <xsl:variable name="pr-tumulus">0</xsl:variable>
@@ -151,6 +152,7 @@
 <xsl:variable name="pr-courthouse">0</xsl:variable>
 <xsl:variable name="pr-playground">0</xsl:variable>
 <xsl:variable name="pr-soccer">0</xsl:variable>
+<xsl:variable name="pr-tennis">0</xsl:variable>
 <xsl:variable name="pr-sport">0</xsl:variable>
 
 <xsl:variable name="pr-wind-turbine">0</xsl:variable>

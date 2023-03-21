@@ -739,7 +739,7 @@
             <notag k="protect_class" v=".*"/>
         </match>            
 		<output>
-			<copy-unmatched/>
+			<copy-all/>
 			<tag k="boundary" v="protected_area"/>
 			<tag k="protect_class" v="2"/>
 		</output>
