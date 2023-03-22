@@ -730,18 +730,27 @@
 		</output>
 	</translation>
 	<translation>
-		<name>Natural reserve</name>
-		<description>alternative tagging</description>
+		<name>National parks</name>
+		<description>to protected area</description>
         <match type="way" >
-            <match>
-                <tag k="leisure" v="nature_reserve"/>
-            </match>
-            <notag k="protect_class" v=".*"/>
+			<tag k="boundary" v="national_park"/>
         </match>            
 		<output>
 			<copy-all/>
 			<tag k="boundary" v="protected_area"/>
 			<tag k="protect_class" v="2"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Natural reserve</name>
+		<description>to protected area</description>
+        <match type="way" >
+			<tag k="leisure" v="nature_reserve"/>
+            <notag k="boundary" v=".*"/>
+        </match>            
+		<output>
+			<copy-all/>
+			<tag k="boundary" v="protected_area"/>
 		</output>
 	</translation>
 	<translation>

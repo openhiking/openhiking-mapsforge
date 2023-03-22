@@ -217,6 +217,11 @@
     font-style="bold" font-size="10" fill="#4040ff" stroke="#ffffff" stroke-width="2" priority="{$pr-label-natural}"/>
 </rule>
 
+<rule  e="node" k="natural" v="cape" zoom-min="15">
+    <caption k="name" 
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-natural}"/>
+</rule>
+
 
 <rule  e="node" k="natural" v="geyser" zoom-min="14">
     <rule  e="any" k="*" v="*" zoom-max="15">
