@@ -730,15 +730,18 @@
 		</output>
 	</translation>
 	<translation>
-		<name>National parks</name>
-		<description>to protected area</description>
+		<name>National parks and protected areas</name>
+		<description>change type to multipolygon</description>
         <match type="way" >
-			<tag k="boundary" v="national_park"/>
+            <match type="way" mode="or">
+                <tag k="boundary" v="national_park"/>
+                <tag k="boundary" v="protected_area"/>                
+            </match>
+			<tag k="type" v="boundary"/>
         </match>            
 		<output>
 			<copy-all/>
-			<tag k="boundary" v="protected_area"/>
-			<tag k="protect_class" v="2"/>
+			<tag k="type" v="multipolygon"/>
 		</output>
 	</translation>
 	<translation>
@@ -746,10 +749,11 @@
 		<description>to protected area</description>
         <match type="way" >
 			<tag k="leisure" v="nature_reserve"/>
-            <notag k="boundary" v=".*"/>
+			<notag k="boundary" v="national_park"/> 
         </match>            
 		<output>
 			<copy-all/>
+			<tag k="type" v="multipolygon"/>
 			<tag k="boundary" v="protected_area"/>
 		</output>
 	</translation>

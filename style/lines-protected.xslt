@@ -13,7 +13,7 @@
 <xsl:variable name="prot-class-1-line-color">#FF956A</xsl:variable>
 <xsl:variable name="prot-class-2-line-color">#39CA20</xsl:variable>
 
-<!--
+
 <rule cat="protected_area" e="way" k="boundary" v="national_park"  zoom-min="13">
     <rule e="any" k="*" v="*" zoom-min="13"  zoom-max="15">
         <line stroke="#39CA20" stroke-width="{$lw-protected-area}" stroke-dasharray="3,3" scale="all"/>          
@@ -25,7 +25,7 @@
         <caption k="name" font-style="bold_italic" font-family="serif" font-size="12" fill="#95588d42"  />
     </rule>
 </rule>
--->
+
 
 <rule cat="protected_area" e="way" k="boundary" v="protected_area">
     <rule e="any" k="protect_class" v="1" >
@@ -57,6 +57,7 @@
         <caption k="name" font-style="bold_italic" font-family="serif" font-size="12" fill="#95588d42"  />
     </rule>
 </rule>
+
 
 </xsl:template>
 </xsl:stylesheet>
