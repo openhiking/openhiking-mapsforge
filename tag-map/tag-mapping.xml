@@ -24,7 +24,8 @@
         <osm-tag key="natural" value="heath" zoom-appear="10"/>
         <osm-tag key="natural" value="land" zoom-appear="8"/>
         <osm-tag key="natural" value="marsh" zoom-appear="12"/>
-        <osm-tag key="natural" value="mud" zoom-appear="12"/>        
+        <osm-tag key="natural" value="mud" zoom-appear="12"/>    
+        <osm-tag key="natural" value="sand" zoom-appear="12"/>    
         <osm-tag key="natural" value="scrub" zoom-appear="12"/>
         <osm-tag key="natural" value="scree" zoom-appear="12"/>
         <osm-tag key="natural" value="shingle" zoom-appear="10"/>        
@@ -90,10 +91,10 @@
                 H I G H W A Y S
     ************************************************** -->
     <ways>
-        <osm-tag key="highway" value="bridleway" zoom-appear="13"/>    
-        <osm-tag key="highway" value="cycleway" zoom-appear="13"/>
-        <osm-tag key="highway" value="footway" zoom-appear="13"/>
-        <osm-tag key="highway" value="living_street" zoom-appear="13"/>
+        <osm-tag key="highway" value="bridleway" zoom-appear="14"/>    
+        <osm-tag key="highway" value="cycleway" zoom-appear="14"/>
+        <osm-tag key="highway" value="footway" zoom-appear="14"/>
+        <osm-tag key="highway" value="living_street" zoom-appear="12"/>
         <osm-tag key="highway" value="motorway" zoom-appear="8"/>
         <osm-tag key="highway" value="motorway_link" zoom-appear="8"/>
         <osm-tag key="highway" value="path" zoom-appear="14"/>
@@ -102,15 +103,15 @@
         <osm-tag key="highway" value="primary" zoom-appear="8"/>
         <osm-tag key="highway" value="primary_link" zoom-appear="8"/>
         <osm-tag key="highway" value="raceway" zoom-appear="12"/>
-        <osm-tag key="highway" value="residential" zoom-appear="13"/>
+        <osm-tag key="highway" value="residential" zoom-appear="12"/>
         <osm-tag key="highway" value="road" zoom-appear="12"/>
         <osm-tag key="highway" value="secondary" zoom-appear="9"/>
         <osm-tag key="highway" value="secondary_link" zoom-appear="9"/>
-        <osm-tag key="highway" value="service" zoom-appear="14"/>
-        <osm-tag key="highway" value="steps" zoom-appear="16"/>
+        <osm-tag key="highway" value="service" zoom-appear="13"/>
+        <osm-tag key="highway" value="steps" zoom-appear="15"/>
         <osm-tag key="highway" value="tertiary" zoom-appear="10"/>
         <osm-tag key="highway" value="tertiary_link" zoom-appear="10"/>
-        <osm-tag key="highway" value="track" zoom-appear="13"/>
+        <osm-tag key="highway" value="track" zoom-appear="14"/>
         <osm-tag key="highway" value="trunk" zoom-appear="8"/>
         <osm-tag key="highway" value="trunk_link" zoom-appear="8"/>
         <osm-tag key="highway" value="unclassified" zoom-appear="11"/>
@@ -176,7 +177,7 @@
         <osm-tag key="surface" equivalent-values="tartan,carpet" renderable="false" value="clay"/> 
 
         <!-- Tracktype -->
-        <osm-tag key="tracktype" renderable="false" value="grade1"/>
+        <osm-tag key="tracktype" value="grade1" zoom-appear="12"/>
         <osm-tag key="tracktype" renderable="false" value="grade2"/>
         <osm-tag key="tracktype" renderable="false" value="grade3"/>
         <osm-tag key="tracktype" renderable="false" value="grade4"/>
