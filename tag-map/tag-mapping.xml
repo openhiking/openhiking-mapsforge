@@ -619,6 +619,7 @@
 
         <osm-tag key="plant:source" renderable="false" value="solar"/>
         <osm-tag key="plant:source" renderable="false" value="hydro"/> 
+        <osm-tag key="plant:source" renderable="false" value="nuclear"/> 
         <osm-tag key="generator:source" renderable="false" value="solar"/>                
 
     </ways>  
