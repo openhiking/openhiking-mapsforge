@@ -45,6 +45,14 @@
       <symbol id="train" src="{$symbolPath}/light_rail.svg" symbol-width="18" priority="{$pr-train-station}"/>
     </rule>
   </rule>
+  <rule  e="any" k="station" v="funicular" >
+    <rule  e="any" k="*" v="*" zoom-max="15">
+      <symbol id="train" src="{$symbolPath}/funicular.svg" symbol-width="18" priority="{$pr-train-station}"/>
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="16" >
+      <symbol id="train" src="{$symbolPath}/funicular.svg" symbol-width="24" priority="{$pr-train-station}"/>
+    </rule>
+  </rule>
   <rule e="node" k="*" v="*" zoom-min="15">
     <caption k="name" symbol-id="train" position="below" 
     font-style="bold" font-size="10" fill="#4040ff" stroke="#ffffff" stroke-width="2" priority="{$pr-label-public-transport}"/>
