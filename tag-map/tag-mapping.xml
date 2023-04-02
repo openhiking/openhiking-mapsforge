@@ -111,7 +111,7 @@
         <osm-tag key="highway" value="steps" zoom-appear="15"/>
         <osm-tag key="highway" value="tertiary" zoom-appear="10"/>
         <osm-tag key="highway" value="tertiary_link" zoom-appear="10"/>
-        <osm-tag key="highway" value="track" zoom-appear="14"/>
+        <osm-tag key="highway" value="track" zoom-appear="13"/>
         <osm-tag key="highway" value="trunk" zoom-appear="8"/>
         <osm-tag key="highway" value="trunk_link" zoom-appear="8"/>
         <osm-tag key="highway" value="unclassified" zoom-appear="11"/>
@@ -164,12 +164,6 @@
 
 
         <!-- Surface -->
-        <!-- 
-        <osm-tag key="surface" equivalent-values="chipseal,concrete,paving_stones,metal,wood,sett,cobblestone" renderable="false" value="paved"/>
-        <osm-tag key="surface" equivalent-values="fine_gravel,pebblestone,rock,grass_paver" renderable="false" value="compacted"/>
-        <osm-tag key="surface" equivalent-values="gravel,ground,earth,dirt,mud" renderable="false" value="unpaved"/>        
-        -->
-
         <osm-tag key="surface" renderable="false" value="sand"/>
         <osm-tag key="surface" renderable="false" value="snow"/>
         <osm-tag key="surface" renderable="false" value="asphalt"/>
