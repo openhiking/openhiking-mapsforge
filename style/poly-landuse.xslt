@@ -123,12 +123,14 @@
 
 <rule e="way" k="natural" v="sand">
   <area fill="#F8F898" scale="none"/>
+    <rule e="way" k="*" v="*" zoom-min="14" zoom-max="16">
+      <area src="{$patternPath}/sand.svg" symbol-height="16"/>
+    </rule>
+    <rule e="way" k="*" v="*" zoom-min="17">
+      <area src="{$patternPath}/sand.svg" symbol-height="22"/>
+  </rule>
 </rule>
-<!-- 
-<rule e="way" k="man_made" v="clearcut" zoom-min="12">
-  <area fill="#D8FCB0" scale="none"/>
-</rule>
--->
+
 <rule e="way" k="landuse" v="farmyard">
   <area fill="#D1DAB2"/>
 </rule>
