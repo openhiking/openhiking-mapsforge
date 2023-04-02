@@ -59,11 +59,11 @@
         </rule>                                 
     </rule>
     <rule e="way" k="plant:source" v="nuclear">
-        <rule  e="any" k="*" v="*"  zoom-max="16">
-            <symbol id="hydro_plant" src="{$symbolPath}/nuclear_plant.svg" symbol-width="18" priority="{$pr-power-plant}"/>
+        <rule  e="any" k="*" v="*"  zoom-max="15">
+            <symbol id="hydro_plant" src="{$symbolPath}/nuclear_plant.svg" symbol-width="20" priority="{$pr-power-plant}"/>
         </rule> 
-        <rule  e="any" k="*" v="*" zoom-min="17">
-            <symbol id="hydro_plant" src="{$symbolPath}/nuclear_plant.svg" symbol-width="23" priority="{$pr-power-plant}"/>
+        <rule  e="any" k="*" v="*" zoom-min="16">
+            <symbol id="hydro_plant" src="{$symbolPath}/nuclear_plant.svg" symbol-width="26" priority="{$pr-power-plant}"/>
         </rule>                                 
     </rule>
     <rule e="node" k="*" v="*" zoom-min="16">

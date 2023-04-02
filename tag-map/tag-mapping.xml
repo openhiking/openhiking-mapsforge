@@ -949,6 +949,9 @@
         <osm-tag key="station" value="subway" zoom-appear="15">
             <zoom-override key="railway" value="station"/>
         </osm-tag>
+        <osm-tag key="station" value="funicular" zoom-appear="15">
+            <zoom-override key="railway" value="station"/>
+        </osm-tag>
     </ways>
 
     <pois>
@@ -976,7 +979,9 @@
         <osm-tag key="station" value="subway" zoom-appear="15">
             <zoom-override key="railway" value="station"/>
         </osm-tag>
-
+        <osm-tag key="station" value="funicular" zoom-appear="15">
+            <zoom-override key="railway" value="station"/>
+        </osm-tag>
         <osm-tag key="bus_local" value="yes" zoom-appear="15">
             <zoom-override key="highway" value="bus_stop"/>
         </osm-tag>
