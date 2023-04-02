@@ -945,9 +945,7 @@
         <osm-tag key="aeroway" value="taxiway" zoom-appear="10"/>
         <osm-tag key="aeroway" value="terminal" zoom-appear="15"/>
 
-        <osm-tag key="station" value="light_rail" zoom-appear="14">
-            <zoom-override key="railway" value="station"/>
-        </osm-tag>
+        <osm-tag key="station" value="light_rail" renderable="false"/>
         <osm-tag key="station" value="subway" zoom-appear="15">
             <zoom-override key="railway" value="station"/>
         </osm-tag>
@@ -972,11 +970,9 @@
         <osm-tag key="railway" value="halt" zoom-appear="14"/>
         <osm-tag key="railway" value="level_crossing" zoom-appear="16"/>
         <osm-tag key="railway" value="station" zoom-appear="14"/>
-        <osm-tag key="railway" value="tram_stop" zoom-appear="16"/>
+        <osm-tag key="railway" value="tram_stop" zoom-appear="15"/>
 
-        <osm-tag key="station" value="light_rail" zoom-appear="15">
-            <zoom-override key="railway" value="station"/>
-        </osm-tag>
+        <osm-tag key="station" value="light_rail" renderable="false"/>
         <osm-tag key="station" value="subway" zoom-appear="15">
             <zoom-override key="railway" value="station"/>
         </osm-tag>

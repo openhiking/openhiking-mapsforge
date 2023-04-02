@@ -4,9 +4,7 @@
 		<name>Propagate access restriction to foot</name>
 		<description>Set foot=no if access is restricted</description>
         <match type="way" mode="and">
-			<match>
-				<tag k="highway" v=".*"/>
-			</match>
+			<tag k="highway" v=".*"/>
             <match type="way" mode="or">
                 <tag k="access" v="no"/>
                 <tag k="access" v="private"/>                
@@ -24,9 +22,7 @@
 		<name>Propagate access restriction to foot</name>
 		<description>Set foot=no if access is restricted</description>
         <match type="way" mode="and">
-			<match>
-				<tag k="highway" v=".*"/>
-			</match>
+			<tag k="highway" v=".*"/>
             <match type="way" mode="or">
                 <tag k="access" v="customers"/>												                    
             </match>
@@ -906,7 +902,10 @@
 		<description>removal</description>
 		<match type="node" mode="and">
 			<tag k="amenity" v="shelter"/>
-			<tag k="shelter_type" v="public_transport"/>
+			<match type="any" mode="or">
+				<tag k="shelter_type" v="public_transport"/>
+				<tag k="shelter" v="public_transport"/>				
+			</match>				
 		</match>
 		<output>
 			<copy-unmatched/>
