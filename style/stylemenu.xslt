@@ -62,11 +62,16 @@
 		<name lang="en" value="SAC highlighting" />
 		<name lang="hu" value="SAC nehézség jelölés" />
 		<cat id="hiking_sac_highlight" />
-	</layer>
+	</layer>    
     <layer id="hiking_winter" enabled="false" visible="false">
 		<name lang="en" value="Winter hiking routes" />
 		<name lang="hu" value="Téli túrautak" />        
 		<cat id="hiking_winter" />
+	</layer>
+	<layer id="cycleway_symbols" enabled="true" visible="false">
+		<name lang="en" value="Cycleway symbols" />
+		<name lang="hu" value="Kerékpárút ikonok" />
+		<cat id="cycleway_symbols" />
 	</layer>
     <layer id="ski_downhill" enabled="false" visible="false">
         <name lang="en" value="Downhill ski tracks" />
@@ -97,6 +102,7 @@
 		<overlay id="hiking_colored_routes_t" />        
         <overlay id="hiking_sac_highlight" />    
         <overlay id="hiking_winter" /> 
+        <overlay id="cycleway_symbols" />         
         <overlay id="ski_downhill" /> 
         <overlay id="ski_nordic" />         
         <overlay id="ski_tour" />         

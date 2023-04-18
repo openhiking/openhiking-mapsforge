@@ -17,7 +17,7 @@
 
 <xsl:template name="trail-highlight-rules-unpaved">
 <xsl:param name="color" />
-	<rule e="way" k="highway" v="path|bridleway|cycleway">
+	<rule e="way" k="highway" v="path|bridleway">
 		<rule e="way" k="*" v="*" zoom-max="{$zm-path - 1}">		
 			<line stroke="{$color}" stroke-width="{$lw-trail-highlight-low}" stroke-linecap="butt" />
 		</rule>
@@ -126,6 +126,14 @@
 
 <xsl:template name="trail-highlight-rules-paved">
 <xsl:param name="color" />
+	<rule e="way" k="highway" v="cycleway">
+		<rule e="way" k="*" v="*" zoom-max="{$zm-cycleway - 1}">		
+			<line stroke="{$color}" stroke-width="{$lw-trail-highlight-low}" stroke-linecap="butt" />
+		</rule>
+		<rule e="way" k="*" v="*" zoom-min="{$zm-cycleway}">	
+			<line stroke="{$color}" stroke-width="{$lw-cycleway + $lw-trail-highlight + 0.2}" stroke-linecap="butt" />				
+		</rule>	
+	</rule>			
 	<rule e="way" k="highway" v="service">
 		<rule e="way" k="*" v="*" zoom-max="{$zm-service - 1}">		
 			<line stroke="{$color}" stroke-width="{$lw-trail-highlight-low}" stroke-linecap="butt" />

@@ -25,7 +25,7 @@
 <xsl:variable name="zm-macadam">12</xsl:variable>
 <xsl:variable name="zm-track">13</xsl:variable>
 <xsl:variable name="zm-track2">16</xsl:variable>
-<xsl:variable name="zm-cycleway">14</xsl:variable>
+<xsl:variable name="zm-cycleway">13</xsl:variable>
 <xsl:variable name="zm-footway">14</xsl:variable>
 <xsl:variable name="zm-bridleway">14</xsl:variable>
 <xsl:variable name="zm-path">14</xsl:variable>
@@ -50,6 +50,7 @@
 <xsl:variable name="bc-residential">#383040</xsl:variable>
 <xsl:variable name="bc-living">#383040</xsl:variable>
 <xsl:variable name="bc-service">#383040</xsl:variable>
+<xsl:variable name="bc-cycleway">#7373ff</xsl:variable>
 <xsl:variable name="bc-macadam">#383040</xsl:variable>
 <xsl:variable name="bc-tunnel">#383040</xsl:variable>
 
@@ -65,11 +66,11 @@
 <xsl:variable name="lc-residential">#FFFFFF</xsl:variable>
 <xsl:variable name="lc-living">#FFFFFF</xsl:variable>
 <xsl:variable name="lc-service">#FFFFFF</xsl:variable>
+<xsl:variable name="lc-cycleway">#FFFFFF</xsl:variable>
 <xsl:variable name="lc-raceway">#838383</xsl:variable>
 <xsl:variable name="lc-macadam">#FFFFFF</xsl:variable>
 <xsl:variable name="lc-track">#7B3000</xsl:variable>
 <xsl:variable name="lc-pedestrian">#626262</xsl:variable>
-<xsl:variable name="lc-cycleway">#BB00B6</xsl:variable>
 <xsl:variable name="lc-footway">#4B3D23</xsl:variable>
 <xsl:variable name="lc-bridleway">#7B3000</xsl:variable>
 <xsl:variable name="lc-path">#7B3000</xsl:variable>
@@ -105,12 +106,12 @@
 <xsl:variable name="lw-living_street">1.2</xsl:variable>
 <xsl:variable name="lw-unclassified">1.2</xsl:variable>
 <xsl:variable name="lw-service">0.8</xsl:variable>
+<xsl:variable name="lw-cycleway">1.0</xsl:variable>
 <xsl:variable name="lw-raceway">0.6</xsl:variable>
 <xsl:variable name="lw-macadam">1.0</xsl:variable>
 <xsl:variable name="lw-track">0.4</xsl:variable>
 <xsl:variable name="lw-track2">0.3</xsl:variable>
 <xsl:variable name="lw-pedestrian">0.4</xsl:variable>
-<xsl:variable name="lw-cycleway">0.4</xsl:variable>
 <xsl:variable name="lw-footway">0.2</xsl:variable>
 <xsl:variable name="lw-bridleway">0.4</xsl:variable>
 <xsl:variable name="lw-path">0.4</xsl:variable>

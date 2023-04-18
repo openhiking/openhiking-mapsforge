@@ -64,9 +64,6 @@
         <rule e="way" k="highway" v="pedestrian" zoom-min="{$zm-pedestrian}">
             <line stroke="{$lc-pedestrian}" stroke-width="{$lw-pedestrian}" stroke-linecap="butt"/>          
         </rule>
-        <rule e="way" k="highway" v="cycleway" zoom-min="{$zm-cycleway}">
-            <line stroke="{$lc-cycleway}" stroke-width="{$lw-cycleway}" stroke-linecap="butt"/>          
-        </rule>
         <rule e="way" k="highway" v="track" >
             <rule e="way" k="tracktype" v="grade1|grade2" zoom-min="{$zm-macadam}"> 
                 <rule e="way" k="*" v="*" zoom-max="{$zm-macadam + 1}"> 
@@ -107,6 +104,11 @@
         </rule>
         <rule e="way" k="highway" v="raceway" zoom-min="{$zm-raceway}">
             <line stroke="{$lc-raceway}" stroke-width="{$lw-raceway}" stroke-linecap="butt"/>          
+        </rule>
+        <rule e="way" k="highway" v="cycleway" zoom-min="{$zm-cycleway}">
+            <line stroke="{$bc-cycleway}" stroke-width="{$lw-cycleway}" stroke-linecap="butt"/>  
+            <line stroke="{$lc-cycleway}" stroke-width="{$lw-cycleway - 0.3 }" stroke-linecap="butt"/>   
+            <line stroke="{$bc-cycleway}" stroke-width="0.1" stroke-dasharray="4,3" stroke-linecap="butt"/>           
         </rule>
         <rule e="way" k="highway" v="service" >
             <line stroke="{$bc-service}" stroke-width="{$lw-service}" stroke-linecap="butt"/>
@@ -254,6 +256,11 @@
         </rule>
     </rule>   
 </rule>       
+
+<rule cat="cycleway_symbols" e="way" k="highway" v="cycleway" zoom-min="15" >
+    <lineSymbol src="{$symbolPath}/cycleway.svg" align-center="true" repeat="true" repeat-start="30" repeat-gap="180" symbol-width="18"  rotate="false" priority="{$pr-cycleway}"/>
+</rule>
+
 
 </xsl:template>
 </xsl:stylesheet>

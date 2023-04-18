@@ -200,6 +200,7 @@
 <xsl:variable name="pr-hiking-symbols-minor">-21</xsl:variable>
 <xsl:variable name="pr-drift">-20</xsl:variable>
 <xsl:variable name="pr-oneway">-20</xsl:variable>
+<xsl:variable name="pr-cycleway">-20</xsl:variable>
 
 <xsl:variable name="pr-poly-label-natural">-20</xsl:variable>
 <xsl:variable name="pr-poly-label-landuse">-20</xsl:variable>
