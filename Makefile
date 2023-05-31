@@ -208,7 +208,7 @@ merge: $(MAP_MERGED_PBF_FP)
 	@echo "Merge completed"
 	
 $(MAP_MASTER_PBF_FP): $(MAP_MERGED_PBF_FP) $(MAP_INP_OSC) $(MAP_INP_COASTLINES_O5M_FP)
-	$(OSMCONVERT) --hash-memory=240-30-2   --drop-version $^ -o=$@
+	$(OSMCONVERT) --hash-memory=240-30-2 --max-refs=400000 --drop-version $^ -o=$@
 
 master: $(MAP_MASTER_PBF_FP)
 	@echo "DONE"
