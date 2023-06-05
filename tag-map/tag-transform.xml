@@ -4,7 +4,21 @@
 		<name>Propagate access restriction to foot</name>
 		<description>Set foot=no if access is restricted</description>
         <match type="way" mode="and">
-			<tag k="highway" v=".*"/>
+            <match type="way" mode="or">
+                <tag k="highway" v="primary"/>
+                <tag k="highway" v="secondary"/>                
+                <tag k="highway" v="tertiary"/>				
+                <tag k="highway" v="unclassified"/>	
+                <tag k="highway" v="residential"/>
+                <tag k="highway" v="living_street"/>				
+                <tag k="highway" v="service"/>                
+                <tag k="highway" v="track"/>
+                <tag k="highway" v="path"/>                
+                <tag k="highway" v="footway"/>				
+                <tag k="highway" v="cycleway"/>								
+                <tag k="highway" v="bridleway"/>												
+                <tag k="highway" v="steps"/>								
+            </match>
             <match type="way" mode="or">
                 <tag k="access" v="no"/>
                 <tag k="access" v="private"/>                
@@ -90,7 +104,8 @@
 				<tag k="surface" v="pebblestone"/>				
 				<tag k="surface" v="rock"/>				
 				<tag k="surface" v="grass_paver"/>	
-				<tag k="surface" v="gravel"/>															
+				<tag k="surface" v="gravel"/>	
+                <tag k="surface" v="unpaved"/> 
 			</match>
 		</match>
 		<output>
@@ -110,7 +125,6 @@
 				<tag k="highway" v="living_street"/>	
 			</match>
 			<match type="way" mode="or">
-                <tag k="surface" v="unpaved"/>            
 				<tag k="surface" v="ground"/>				
 				<tag k="surface" v="earth"/>				
 				<tag k="surface" v="dirt"/>	
