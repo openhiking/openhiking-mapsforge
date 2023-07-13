@@ -9,7 +9,7 @@
 # SPDX-License-Identifier: GPL-3.0-only
 -->
 <xsl:template name="lines-access-restrictions">
-<rule cat="restricted_access" e="way" k="highway" v="*" >
+<rule cat="restricted_access" e="way" k="highway" v="path|footway|platform|bridleway|steps|pedestrian|track|raceway|cycleway|service|living_street|residential|unclassified|tertiary|secondary|primary" >
     <rule e="way" k="area" v="~">
         <rule e="way" k="foot" v="no" >
             <rule e="any" k="*" v="*" zoom-max="16">
