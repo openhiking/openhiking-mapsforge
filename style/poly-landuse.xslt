@@ -33,28 +33,19 @@
   <area fill="#FADEA5" stroke="#000000" stroke-width="0.2" scale="none" />   
 </rule>
 
-<rule e="way" k="landuse" v="forest"  zoom-min="10">
+<rule e="way" k="landuse" v="forest" >
   <rule e="way" k="leaf_type" v="~|broadleaved" >
-  <!-- 
-    <area fill="#A1E976"/>
-    -->
     <area fill="#aee98a"/>
   </rule>
 </rule>  
 
-<rule e="way" k="natural" v="wood"  zoom-min="10">
+<rule e="way" k="natural" v="wood"  >
   <rule e="way" k="leaf_type" v="~|broadleaved" >
-  <!--
-    <area fill="#A1E976"/>
-    -->
     <area fill="#aee98a"/>
   </rule>
 </rule>  
 
 <rule e="way" k="landuse" v="meadow">
-<!--
-  <area fill="#d8fca4" scale="none"/>
-  -->
   <area fill="#e4fdbf" scale="none"/>
 </rule>
 
@@ -77,13 +68,13 @@
 
 
 <!-- DO 5-->
-<rule e="way" k="landuse" v="forest"  zoom-min="10">
+<rule e="way" k="landuse" v="forest" >
   <rule e="way" k="leaf_type" v="needleleaved" >
     <area fill="#83E36E"/>
   </rule>
 </rule>  
 
-<rule e="way" k="natural" v="wood"  zoom-min="10">
+<rule e="way" k="natural" v="wood" >
   <rule e="way" k="leaf_type" v="needleleaved" >
     <area fill="#83E36E"/>
   </rule>

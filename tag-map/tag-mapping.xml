@@ -15,23 +15,23 @@
         <osm-tag key="natural" value="sea" zoom-appear="0"/>
         <osm-tag key="natural" value="nosea" zoom-appear="0"/>
 
-        <osm-tag key="natural" value="bare_rock" zoom-appear="10"/>
-        <osm-tag key="natural" value="beach" zoom-appear="10"/>
+        <osm-tag key="natural" value="bare_rock" zoom-appear="9"/>
+        <osm-tag key="natural" value="beach" zoom-appear="9"/>
         <osm-tag key="natural" value="coastline" zoom-appear="0"/>
-        <osm-tag key="natural" value="fell" zoom-appear="10"/>
-        <osm-tag key="natural" value="glacier" zoom-appear="10"/>
-        <osm-tag key="natural" value="grassland" zoom-appear="10"/>
-        <osm-tag key="natural" value="heath" zoom-appear="10"/>
+        <osm-tag key="natural" value="fell" zoom-appear="9"/>
+        <osm-tag key="natural" value="glacier" zoom-appear="9"/>
+        <osm-tag key="natural" value="grassland" zoom-appear="9"/>
+        <osm-tag key="natural" value="heath" zoom-appear="9"/>
         <osm-tag key="natural" value="land" zoom-appear="8"/>
         <osm-tag key="natural" value="marsh" zoom-appear="12"/>
         <osm-tag key="natural" value="mud" zoom-appear="12"/>    
         <osm-tag key="natural" value="sand" zoom-appear="12"/>    
         <osm-tag key="natural" value="scrub" zoom-appear="12"/>
         <osm-tag key="natural" value="scree" zoom-appear="12"/>
-        <osm-tag key="natural" value="shingle" zoom-appear="10"/>        
+        <osm-tag key="natural" value="shingle" zoom-appear="9"/>        
         <osm-tag key="natural" value="water" zoom-appear="8"/>
         <osm-tag key="natural" value="wetland" zoom-appear="11"/>
-        <osm-tag key="natural" value="wood" zoom-appear="10"/>
+        <osm-tag key="natural" value="wood" zoom-appear="9"/>
     </ways>
 
     <!-- LANDUSE TAGS -->
@@ -46,7 +46,7 @@
         <osm-tag key="landuse" value="farm" zoom-appear="12"/>
         <osm-tag key="landuse" value="farmland" zoom-appear="12"/>
         <osm-tag key="landuse" value="farmyard" zoom-appear="12"/>
-        <osm-tag key="landuse" value="forest" zoom-appear="10"/>
+        <osm-tag key="landuse" value="forest" zoom-appear="9"/>
         <osm-tag key="landuse" value="garages" zoom-appear="12"/>        
         <osm-tag key="landuse" value="grass" zoom-appear="12"/>
         <osm-tag key="landuse" value="greenfield" zoom-appear="12"/>
@@ -118,16 +118,16 @@
         <osm-tag key="highway" value="via_ferrata" zoom-appear="14"/>
 
         <!-- Trail color -->
-        <osm-tag key="trail_color" value="blue" zoom-appear="12"/>
-        <osm-tag key="trail_color" value="red" zoom-appear="12"/>
-        <osm-tag key="trail_color" value="yellow" zoom-appear="12"/>
-        <osm-tag key="trail_color" value="green" zoom-appear="12"/>
-        <osm-tag key="trail_color" value="orange" zoom-appear="12"/>
-        <osm-tag key="trail_color" value="brown" zoom-appear="12"/>
-        <osm-tag key="trail_color" value="purple" zoom-appear="12"/>
-        <osm-tag key="trail_color" value="grey" zoom-appear="12"/>
-        <osm-tag key="trail_color" value="black" zoom-appear="12"/>
-        <osm-tag key="trail_color" value="default" zoom-appear="12"/>
+        <osm-tag key="trail_color" value="blue" zoom-appear="11"/>
+        <osm-tag key="trail_color" value="red" zoom-appear="11"/>
+        <osm-tag key="trail_color" value="yellow" zoom-appear="11"/>
+        <osm-tag key="trail_color" value="green" zoom-appear="11"/>
+        <osm-tag key="trail_color" value="orange" zoom-appear="11"/>
+        <osm-tag key="trail_color" value="brown" zoom-appear="11"/>
+        <osm-tag key="trail_color" value="purple" zoom-appear="11"/>
+        <osm-tag key="trail_color" value="grey" zoom-appear="11"/>
+        <osm-tag key="trail_color" value="black" zoom-appear="11"/>
+        <osm-tag key="trail_color" value="default" zoom-appear="11"/>
 
         <osm-tag key="nordic_ski_color" value="red" zoom-appear="12"/>
         <osm-tag key="nordic_ski_color" value="blue" zoom-appear="12"/>
@@ -348,16 +348,16 @@
     ************************************************** -->
     <ways>
         <osm-tag key="tourism" value="apartment" label-position="true" zoom-appear="15"/>
-        <osm-tag key="tourism" value="alpine_hut" label-position="true" zoom-appear="12"/>
+        <osm-tag key="tourism" value="alpine_hut" label-position="true" zoom-appear="11"/>
         <osm-tag key="tourism" value="bed_and_breakfast" label-position="true" zoom-appear="15"/>
-        <osm-tag key='tourism' value='camp_site' label-position="true" zoom-appear='13' />
+        <osm-tag key='tourism' value='camp_site' label-position="true" zoom-appear='12' />
         <osm-tag key='tourism' value='caravan_site' label-position="true" zoom-appear='13' />
         <osm-tag key="tourism" value="chalet" label-position="true" zoom-appear="15"/>        
         <osm-tag key="tourism" value="guest_house" label-position="true" zoom-appear="15"/>        
         <osm-tag key="tourism" value="hostel" label-position="true" zoom-appear="15"/>
         <osm-tag key="tourism" value="hotel" label-position="true" zoom-appear="15"/>
         <osm-tag key="tourism" value="motel" label-position="true" zoom-appear="15"/>
-        <osm-tag key="tourism" value="wilderness_hut" label-position="true" zoom-appear="14"/>
+        <osm-tag key="tourism" value="wilderness_hut" label-position="true" zoom-appear="12"/>
 
         <osm-tag key="camp_site" value="basic" renderable="false" />
 

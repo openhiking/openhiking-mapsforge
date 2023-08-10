@@ -228,6 +228,7 @@
 				<tag k="highway" v="footway"/>
 			</match>
 			<match type="way" mode="or">
+				<tag k="surface" v="wood"/>																
 				<tag k="surface" v="gravel"/>
 				<tag k="surface" v="ground"/>				
 				<tag k="surface" v="earth"/>				
