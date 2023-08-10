@@ -11,34 +11,34 @@
 <xsl:template name="points-places">
 <rule e="node" k="place" v="city">
     <rule e="node" k="*" v="*" zoom-min="6" zoom-max="7">    
-        <caption k="name" font-style="bold_italic" font-size="12" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-city}"/>
-    </rule>
-    <rule e="node" k="*" v="*" zoom-min="8" zoom-max="9">    
         <caption k="name" font-style="bold_italic" font-size="14" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-city}"/>
     </rule>
-    <rule e="node" k="*" v="*" zoom-min="10" zoom-max="14">    
+    <rule e="node" k="*" v="*" zoom-min="8" zoom-max="9">    
         <caption k="name" font-style="bold_italic" font-size="16" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-city}"/>
+    </rule>
+    <rule e="node" k="*" v="*" zoom-min="10" zoom-max="14">    
+        <caption k="name" font-style="bold_italic" font-size="18" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-city}"/>
     </rule>
 </rule>
 
 <rule e="node" k="place" v="town" >
     <rule e="node" k="*" v="*" zoom-min="9" zoom-max="10">
-        <caption k="name" font-style="bold" font-size="12" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-town}"/>
-    </rule>
-    <rule e="node" k="*" v="*" zoom-min="11" zoom-max="12">
         <caption k="name" font-style="bold" font-size="14" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-town}"/>
     </rule>
-    <rule e="node" k="*" v="*" zoom-min="13" zoom-max="15">
+    <rule e="node" k="*" v="*" zoom-min="11" zoom-max="12">
         <caption k="name" font-style="bold" font-size="16" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-town}"/>
+    </rule>
+    <rule e="node" k="*" v="*" zoom-min="13" zoom-max="15">
+        <caption k="name" font-style="bold" font-size="18" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-town}"/>
     </rule>
 </rule>
 
 <rule e="node" k="place" v="suburb" >
     <rule e="node" k="*" v="*" zoom-min="12" zoom-max="12">
-        <caption k="name" font-style="normal" font-size="10" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-suburb}" display="always"/>
+        <caption k="name" font-style="normal" font-size="12" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-suburb}" display="always"/>
     </rule>
     <rule e="node" k="*" v="*" zoom-min="13" zoom-max="14">
-        <caption k="name" font-style="normal" font-size="12" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-suburb}" display="ifspace"/>
+        <caption k="name" font-style="normal" font-size="14" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-suburb}" display="ifspace"/>
     </rule>
     <rule e="node" k="*" v="*" zoom-min="15" zoom-max="16">
         <caption k="name" font-style="normal" font-size="16" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-suburb}" display="ifspace"/>
@@ -48,16 +48,16 @@
 
 <rule e="node" k="place" v="village" >
     <rule e="node" k="*" v="*" zoom-min="11" zoom-max="11">
-        <caption k="name" font-style="bold" font-size="10" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-village}" display="ifspace"/>
-    </rule>
-    <rule e="node" k="*" v="*" zoom-min="12" zoom-max="12">
         <caption k="name" font-style="bold" font-size="12" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-village}" display="ifspace"/>
     </rule>
+    <rule e="node" k="*" v="*" zoom-min="12" zoom-max="12">
+        <caption k="name" font-style="bold" font-size="14" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-village}" display="ifspace"/>
+    </rule>
     <rule e="node" k="*" v="*" zoom-min="13" zoom-max="14">
-        <caption k="name" font-style="normal" font-size="14" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-village}" display="always"/>
+        <caption k="name" font-style="normal" font-size="16" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-village}" display="always"/>
     </rule>
     <rule e="node" k="*" v="*" zoom-min="15" zoom-max="18">
-        <caption k="name" font-style="normal" font-size="16" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-village}" display="always"/>
+        <caption k="name" font-style="normal" font-size="18" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-village}" display="always"/>
     </rule>
 </rule>
 

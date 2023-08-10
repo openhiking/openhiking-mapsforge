@@ -19,7 +19,7 @@
 <xsl:variable name="lc-trail-orange">#ffa100</xsl:variable>
 <xsl:variable name="lc-trail-black">#626262</xsl:variable>
 
-<rule cat="colored_hiking" e="way" k="highway" v="*" zoom-min="12">
+<rule cat="colored_hiking" e="way" k="highway" v="*" zoom-min="11">
 	<rule  e="way" k="trail_color" v="blue" >
    		<xsl:call-template name="trail-highlight-rules-unpaved">
         	<xsl:with-param name="color" select="$lc-trail-blue" />

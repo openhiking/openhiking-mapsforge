@@ -206,6 +206,7 @@
 <xsl:variable name="pr-poly-label-landuse">-20</xsl:variable>
 
 <xsl:variable name="pr-label-contour-ele">-21</xsl:variable>
+<xsl:variable name="pr-poly-label-building">-50</xsl:variable>
 
 
 </xsl:stylesheet>

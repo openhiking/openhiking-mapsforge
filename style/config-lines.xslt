@@ -95,6 +95,15 @@
 
 <xsl:variable name="lc-restricted">#FF0000</xsl:variable>
 
+<xsl:variable name="lw-motorway">2.8</xsl:variable>
+<xsl:variable name="lw-motorway_link">1.6</xsl:variable>
+<xsl:variable name="lw-trunk">2.8</xsl:variable>
+<xsl:variable name="lw-trunk_link">1.6</xsl:variable>
+<xsl:variable name="lw-primary">2.8</xsl:variable>
+<xsl:variable name="lw-secondary">2.6</xsl:variable>
+<xsl:variable name="lw-tertiary">2.2</xsl:variable>
+
+<!-- 
 <xsl:variable name="lw-motorway">2.2</xsl:variable>
 <xsl:variable name="lw-motorway_link">1.6</xsl:variable>
 <xsl:variable name="lw-trunk">2.2</xsl:variable>
@@ -102,6 +111,8 @@
 <xsl:variable name="lw-primary">2.2</xsl:variable>
 <xsl:variable name="lw-secondary">2.0</xsl:variable>
 <xsl:variable name="lw-tertiary">1.8</xsl:variable>
+-->
+
 <xsl:variable name="lw-residential">1.2</xsl:variable>
 <xsl:variable name="lw-living_street">1.2</xsl:variable>
 <xsl:variable name="lw-unclassified">1.2</xsl:variable>

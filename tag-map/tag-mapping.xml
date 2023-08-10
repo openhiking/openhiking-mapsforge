@@ -270,7 +270,7 @@
     ************************************************** -->
     <ways>
         <osm-tag key="admin_level" value="2" force-polygon-line="true" zoom-appear="6"/>
-        <osm-tag key="boundary" value="national_park" force-polygon-line="true" zoom-appear="13"/>
+        <osm-tag key="boundary" value="national_park" force-polygon-line="true" zoom-appear="11"/>
         <osm-tag key='boundary' value='protected_area'  force-polygon-line="true" zoom-appear='13'/>
         <osm-tag key='boundary' value='protected_landscape_area'  force-polygon-line="true" zoom-appear='13'/>        
 
@@ -807,7 +807,7 @@
     <pois>
         <osm-tag key="amenity" value="community_centre" zoom-appear="15"/>                
         <osm-tag key="amenity" value="courthouse" zoom-appear="15"/>
-        <osm-tag key="amenity" value="drinking_water" zoom-appear="15"/>                
+        <osm-tag key="amenity" value="drinking_water" zoom-appear="13"/>                
         <osm-tag key="amenity" value="fire_station" zoom-appear="15"/>        
         <osm-tag key="amenity" value="marketplace" zoom-appear="15"/>        
         <osm-tag key="amenity" value="police" zoom-appear="15"/>
