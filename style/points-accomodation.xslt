@@ -46,7 +46,7 @@
 </rule>
 -->
 
-<rule  e="any" k="tourism" v="camp_site" zoom-min="14">
+<rule  e="any" k="tourism" v="camp_site" zoom-min="13">
     <rule  e="any" k="camp_site" v="basic" >
         <rule  e="any" k="*" v="*" zoom-max="15">
             <symbol id="camp_site" src="{$symbolPath}/camp_site_basic.svg" symbol-width="21" priority="{$pr-camp-site}"/>
@@ -69,7 +69,7 @@
     </rule>                 
 </rule>
 
-<rule  e="any" k="tourism" v="caravan_site" zoom-min="15">
+<rule  e="any" k="tourism" v="caravan_site" zoom-min="14">
     <symbol id="caravan_site" src="{$symbolPath}/camp_site.svg" symbol-width="23" priority="{$pr-camp-site}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="caravan_site" 
