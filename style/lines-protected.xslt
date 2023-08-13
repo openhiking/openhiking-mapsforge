@@ -15,13 +15,16 @@
 
 
 <rule cat="protected_area" e="way" k="boundary" v="national_park" >
-    <rule e="any" k="*" v="*"  zoom-max="15">
-        <line stroke="#39CA20" stroke-width="{$lw-protected-area}" stroke-dasharray="3,3" scale="all"/>          
+    <rule e="any" k="*" v="*" zoom-min="10"  zoom-max="12">
+        <line stroke="#39CA20" stroke-width="{$lw-protected-area}"  stroke-dasharray="6,4" scale="all"/>          
+    </rule> 
+    <rule e="any" k="*" v="*"  zoom-min="13"  zoom-max="15">
+        <line stroke="#39CA20" stroke-width="{$lw-protected-area-l2}" stroke-dasharray="4,3" scale="all"/>          
     </rule> 
     <rule e="any" k="*" v="*" zoom-min="16"  >
-        <line stroke="#39CA20" stroke-width="{$lw-protected-area-l2}" stroke-dasharray="3,3" scale="all"/>                  
+        <line stroke="#39CA20" stroke-width="{$lw-protected-area-l3}" stroke-dasharray="3,3" scale="all"/>                  
     </rule> 
-    <rule e="any" k="*" v="*" zoom-min="12"  >
+    <rule e="any" k="*" v="*" zoom-min="10"  >
         <caption k="name" font-style="bold_italic" font-family="serif" font-size="14" fill="#95588d42"  />
     </rule>
 </rule>
@@ -30,24 +33,24 @@
 <rule cat="protected_area" e="way" k="boundary" v="protected_area">
     <rule e="any" k="protect_class" v="1" >
         <rule e="any" k="*" v="*" zoom-min="13"  zoom-max="15">
-            <line stroke="#FF956A" stroke-width="{$lw-protected-area}" stroke-dasharray="3,3" scale="all"/>          
+            <line stroke="#FF956A" stroke-width="{$lw-protected-area-l2}" stroke-dasharray="4,3" scale="all"/>          
         </rule> 
         <rule e="any" k="*" v="*" zoom-min="16"  zoom-max="17">
-            <line stroke="#FF956A" stroke-width="{$lw-protected-area-l2}" stroke-dasharray="2,2" scale="all"/>                  
+            <line stroke="#FF956A" stroke-width="{$lw-protected-area-l3}" stroke-dasharray="2,2" scale="all"/>                  
         </rule> 
         <rule e="any" k="*" v="*" zoom-min="18"  >
-            <line stroke="#FF956A" stroke-width="{$lw-protected-area-l3}" stroke-dasharray="2,2" scale="all"/>                  
+            <line stroke="#FF956A" stroke-width="{$lw-protected-area-l4}" stroke-dasharray="2,2" scale="all"/>                  
         </rule> 
     </rule>        
     <rule e="any" k="protect_class" v="2|~" >
         <rule e="any" k="*" v="*" zoom-min="13"  zoom-max="15">
-            <line stroke="#39CA20" stroke-width="{$lw-protected-area}" stroke-dasharray="3,3" scale="all"/>          
+            <line stroke="#39CA20" stroke-width="{$lw-protected-area-l2}" stroke-dasharray="4,3" scale="all"/>          
         </rule> 
         <rule e="any" k="*" v="*" zoom-min="16"  zoom-max="17">
-            <line stroke="#39CA20" stroke-width="{$lw-protected-area-l2}" stroke-dasharray="2,2" scale="all"/>                  
+            <line stroke="#39CA20" stroke-width="{$lw-protected-area-l3}" stroke-dasharray="2,2" scale="all"/>                  
         </rule> 
         <rule e="any" k="*" v="*" zoom-min="18"  >
-            <line stroke="#39CA20" stroke-width="{$lw-protected-area-l3}" stroke-dasharray="2,2" scale="all"/>                  
+            <line stroke="#39CA20" stroke-width="{$lw-protected-area-l4}" stroke-dasharray="2,2" scale="all"/>                  
         </rule> 
     </rule>
     <rule e="any" k="*" v="*" zoom-min="13"  zoom-max="14">

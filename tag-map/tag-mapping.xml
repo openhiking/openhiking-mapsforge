@@ -270,7 +270,7 @@
     ************************************************** -->
     <ways>
         <osm-tag key="admin_level" value="2" force-polygon-line="true" label-position="true" zoom-appear="6"/>
-        <osm-tag key="boundary" value="national_park" force-polygon-line="true" label-position="true" zoom-appear="11"/>
+        <osm-tag key="boundary" value="national_park" force-polygon-line="true" label-position="true" zoom-appear="10"/>
         <osm-tag key='boundary' value='protected_area'  force-polygon-line="true" label-position="true" zoom-appear='13'/>
         <osm-tag key='boundary' value='protected_landscape_area'  force-polygon-line="true" label-position="true" zoom-appear='13'/>        
 
