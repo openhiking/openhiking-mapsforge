@@ -95,6 +95,9 @@
 
 <xsl:variable name="lc-restricted">#FF0000</xsl:variable>
 
+<xsl:variable name="lc-protected">#588d42</xsl:variable>
+<xsl:variable name="lc-protected-strictly">#FF956A</xsl:variable>
+
 <xsl:variable name="lw-motorway">2.8</xsl:variable>
 <xsl:variable name="lw-motorway_link">1.6</xsl:variable>
 <xsl:variable name="lw-trunk">2.8</xsl:variable>
