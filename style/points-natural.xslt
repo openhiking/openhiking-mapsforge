@@ -11,7 +11,14 @@
 <xsl:template name="points-natural">
 
 <rule e="node" k="natural" v="peak" >
-    <rule e="node" k="summit:cross|name" v="*" zoom-min="13" zoom-max="13">   
+    <rule e="node" k="importance" v="national" zoom-min="12" zoom-max="12">   
+        <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="8" priority="{$pr-peak-named}"/>
+        <caption  k="name" font-size="11" fill="#693600" font-style="bold_italic"  position="above"
+        stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}" />
+        <caption fill="#693600" font-size="10" font-style="bold" k="ele" position="below"
+            stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}"/>
+    </rule>
+    <rule e="node" k="summit:cross|name|importance" v="*" zoom-min="13" zoom-max="13">   
         <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="8" priority="{$pr-peak-named}"/>
         <caption  k="name" font-size="11" fill="#693600" font-style="bold_italic"  position="above"
         stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}" />
