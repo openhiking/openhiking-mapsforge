@@ -152,8 +152,8 @@
 
 <xsl:variable name="lw-restricted">1.5</xsl:variable>
 
-<xsl:variable name="lw-protected-area">1.8</xsl:variable>
-<xsl:variable name="lw-protected-area-l2">1.1</xsl:variable>
+<xsl:variable name="lw-protected-area">2.4</xsl:variable>
+<xsl:variable name="lw-protected-area-l2">1.8</xsl:variable>
 <xsl:variable name="lw-protected-area-l3">0.7</xsl:variable>
 <xsl:variable name="lw-protected-area-l4">0.5</xsl:variable>
 
