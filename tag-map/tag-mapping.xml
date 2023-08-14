@@ -19,7 +19,7 @@
         <osm-tag key="natural" value="beach" zoom-appear="9"/>
         <osm-tag key="natural" value="coastline" zoom-appear="0"/>
         <osm-tag key="natural" value="fell" zoom-appear="9"/>
-        <osm-tag key="natural" value="glacier" zoom-appear="9"/>
+        <osm-tag key="natural" value="glacier" label-position="true" zoom-appear="9"/>
         <osm-tag key="natural" value="grassland" zoom-appear="9"/>
         <osm-tag key="natural" value="heath" zoom-appear="9"/>
         <osm-tag key="natural" value="land" zoom-appear="8"/>
@@ -29,7 +29,7 @@
         <osm-tag key="natural" value="scrub" zoom-appear="12"/>
         <osm-tag key="natural" value="scree" zoom-appear="12"/>
         <osm-tag key="natural" value="shingle" zoom-appear="9"/>        
-        <osm-tag key="natural" value="water" zoom-appear="8"/>
+        <osm-tag key="natural" value="water" label-position="true" zoom-appear="8"/>
         <osm-tag key="natural" value="wetland" zoom-appear="11"/>
         <osm-tag key="natural" value="wood" zoom-appear="9"/>
     </ways>
@@ -57,7 +57,7 @@
         <osm-tag key="landuse" value="military" zoom-appear="12"/>
         <osm-tag key="landuse" value="orchard" zoom-appear="12"/>
         <osm-tag key="landuse" value="plant_nursery" zoom-appear="12"/>
-        <osm-tag key="landuse" value="quarry" zoom-appear="12"/>
+        <osm-tag key="landuse" value="quarry" label-position="true" zoom-appear="12"/>
         <osm-tag key="landuse" value="railway" zoom-appear="12"/>
         <osm-tag key="landuse" value="recreation_ground" zoom-appear="12"/>
         <osm-tag key="landuse" value="reservoir" zoom-appear="12"/>
