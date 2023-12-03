@@ -129,6 +129,17 @@
         <osm-tag key="trail_color" value="black" zoom-appear="11"/>
         <osm-tag key="trail_color" value="default" zoom-appear="11"/>
 
+        <osm-tag key="pilgrimage_color" value="blue" zoom-appear="12"/>
+        <osm-tag key="pilgrimage_color" value="red" zoom-appear="12"/>
+        <osm-tag key="pilgrimage_color" value="yellow" zoom-appear="12"/>
+        <osm-tag key="pilgrimage_color" value="green" zoom-appear="12"/>
+        <osm-tag key="pilgrimage_color" value="orange" zoom-appear="12"/>
+        <osm-tag key="pilgrimage_color" value="brown" zoom-appear="12"/>
+        <osm-tag key="pilgrimage_color" value="purple" zoom-appear="12"/>
+        <osm-tag key="pilgrimage_color" value="grey" zoom-appear="12"/>
+        <osm-tag key="pilgrimage_color" value="black" zoom-appear="12"/>
+        <osm-tag key="pilgrimage_color" value="default" zoom-appear="12"/>
+
         <osm-tag key="nordic_ski_color" value="red" zoom-appear="12"/>
         <osm-tag key="nordic_ski_color" value="blue" zoom-appear="12"/>
         <osm-tag key="nordic_ski_color" value="yellow" zoom-appear="12"/>
@@ -1287,6 +1298,19 @@
 
         <osm-tag key="trail_symbol" value="osmc:blue_round:yellow_dot" zoom-appear="14"/>                
 
+        <!-- Pilgrimage routes -->
+        <osm-tag key="pilgrimage_symbol" value="hu:km" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol" value="hu:pm" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol" value="hu:zm" zoom-appear="14"/>     
+        <osm-tag key="pilgrimage_symbol" value="hu:sm" zoom-appear="14"/>     
+        <osm-tag key="pilgrimage_symbol" value="hu:lm" zoom-appear="14"/>   
+
+        <osm-tag key="pilgrimage_symbol" value="hu:stj" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol" value="hu:sgy" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol" value="hu:smz" zoom-appear="14"/>     
+        <osm-tag key="pilgrimage_symbol" value="hu:ste" zoom-appear="14"/>        
+        <osm-tag key="pilgrimage_symbol" value="hu:fput" zoom-appear="14"/>
+
         <!-- Ski routes -->
         <osm-tag key="nordic_ski_symbol" value="hu:kx" zoom-appear="14"/>
         <osm-tag key="nordic_ski_symbol" value="hu:px" zoom-appear="14"/>
@@ -1294,7 +1318,6 @@
 
         <osm-tag key="trail_symbol_level" value="major" zoom-appear="13"/>                           
     </pois>
-
 
 
     <!-- ************************************************** 
