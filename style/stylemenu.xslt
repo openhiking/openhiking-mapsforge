@@ -48,15 +48,15 @@
         <name lang="hu" value="Behajtási korlátozások" />
         <cat id="restricted_access" />
     </layer>
-	<layer id="hiking_colored_routes_t" enabled="true" visible="false">
-		<name lang="en" value="Hiking routes " />
-		<name lang="hu" value="Turistaút kiemelés" />        
-		<cat id="colored_hiking" />
-    </layer>
-	<layer id="hiking_symbols" enabled="true" visible="false">
-		<name lang="en" value="Hiking symbols" />
-		<name lang="hu" value="Turistajelzések" />
-		<cat id="hiking_symbols" />
+	<layer id="hiking_routes" enabled="true" visible="false">
+		<name lang="en" value="Hiking routes" />
+		<name lang="hu" value="Turistautak" />
+		<cat id="hiking_routes" />
+	</layer>
+	<layer id="pilgrimage_routes" enabled="true" visible="false">
+		<name lang="en" value="Pilgrimage routes" />
+		<name lang="hu" value="Zarándokutak" />
+		<cat id="pilgrimage_routes" />
 	</layer>
 	<layer id="hiking_sac_highlight" enabled="false" visible="false">
 		<name lang="en" value="SAC highlighting" />
@@ -98,11 +98,10 @@
 		<name lang="en" value="OpenHiking layers" />    
 		<name lang="hu" value="OpenHiking rétegek" />
         <cat id="building" />
-		<overlay id="hiking_symbols" />         
-		<overlay id="hiking_colored_routes_t" />        
+        <overlay id="hiking_routes" /> 
+        <overlay id="pilgrimage_routes" />                                  
         <overlay id="hiking_sac_highlight" />    
         <overlay id="hiking_winter" /> 
-        <overlay id="cycleway_symbols" />         
         <overlay id="ski_downhill" /> 
         <overlay id="ski_nordic" />         
         <overlay id="ski_tour" />         
@@ -112,7 +111,8 @@
 		<overlay id="contours" />        
 		<overlay id="fences" />        
         <overlay id="power" />  
-		<overlay id="buildings" />     
+		<overlay id="buildings" />  
+        <overlay id="cycleway_symbols" />                    
         <overlay id="editorial" />                       
 	</layer>
 

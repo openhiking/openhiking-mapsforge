@@ -11,6 +11,7 @@
 -->
 
 <xsl:variable name="symbol-tag">trail_symbol</xsl:variable>
+<xsl:variable name="pilgrimage-symbol-tag">pilgrimage_symbol</xsl:variable>
 <xsl:variable name="ski-symbol-tag">nordic_ski_symbol</xsl:variable>
 <xsl:variable name="symbol-level-tag">trail_symbol_level</xsl:variable>
 
@@ -24,6 +25,14 @@
 <xsl:variable name="sw-hiking-s-z14">16</xsl:variable>
 <xsl:variable name="sw-hiking-s-z16">17</xsl:variable>
 
+<xsl:variable name="lc-trail-blue">#0094F8</xsl:variable>
+<xsl:variable name="lc-trail-red">#F80000</xsl:variable>
+<xsl:variable name="lc-trail-green">#38C820</xsl:variable>
+<xsl:variable name="lc-trail-yellow">#F8C800</xsl:variable>
+<xsl:variable name="lc-trail-purple">#be40be</xsl:variable>
+<xsl:variable name="lc-trail-orange">#ffa100</xsl:variable>
+<xsl:variable name="lc-trail-black">#626262</xsl:variable>
 
+<xsl:variable name="ns-symbol-hu">hu:</xsl:variable>
 
 </xsl:stylesheet>

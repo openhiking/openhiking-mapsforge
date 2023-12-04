@@ -37,6 +37,7 @@
   <xsl:include href="lines-ski-downhill.xslt" />
   <xsl:include href="lines-sac-scale.xslt" />  
   <xsl:include href="lines-winter-hike.xslt" />
+  <xsl:include href="lines-pilgrimage-trails.xslt" />
   <xsl:include href="lines-hiking-trails.xslt" />
   <xsl:include href="lines-ski-nordic.xslt" />
   <xsl:include href="lines-ski-tour.xslt" />  
@@ -51,6 +52,7 @@
   <xsl:include href="points-hiking-symbols-hu.xslt"/>
   <xsl:include href="points-hiking-symbols-czsk.xslt"/>
   <xsl:include href="points-hiking-symbols-osmc.xslt"/>
+  <xsl:include href="points-pilgrimage-symbols.xslt"/>  
   <xsl:include href="points-accomodation.xslt" />
   <xsl:include href="points-amenities.xslt" />  
   <xsl:include href="points-barriers.xslt" />  
@@ -102,6 +104,7 @@
   <xsl:call-template name="lines-bridges"/> 
   <xsl:call-template name="lines-tunnels"/>
   <xsl:call-template name="lines-embankments"/>
+  <xsl:call-template name="lines-pilgrimage-trails" />
   <xsl:call-template name="lines-hiking-trails"/>   
   <xsl:call-template name="lines-ski-nordic"/>   
   <xsl:call-template name="lines-ski-tour"/>     
@@ -121,6 +124,7 @@
   <xsl:call-template name="points-hiking-symbols-hu"/>  
   <xsl:call-template name="points-hiking-symbols-czsk"/>  
   <xsl:call-template name="points-hiking-symbols-osmc"/>  
+  <xsl:call-template name="points-pilgrimage-symbols"/>  
   <xsl:call-template name="points-accomodation"/>
   <xsl:call-template name="points-amenities"/>
   <xsl:call-template name="points-barriers"/>

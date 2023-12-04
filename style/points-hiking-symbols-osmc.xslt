@@ -12,7 +12,7 @@
 <xsl:variable name="ns-symbol-osmc">osmc:</xsl:variable>
 
 <xsl:template name="points-hiking-symbols-osmc">
-<rule cat="hiking_symbols" e="node" k="{$symbol-tag}" v="*" >
+<rule cat="hiking_routes" e="node" k="{$symbol-tag}" v="*" >
 	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
 		<xsl:call-template name="hiking-symbol-osmc-white-bg-rules">
 			<xsl:with-param name="color" select="'red'" />
