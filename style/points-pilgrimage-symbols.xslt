@@ -29,6 +29,12 @@
     <rule e="node" k="{$pilgrimage-symbol-tag}" v="{$ns-symbol-hu}lm" zoom-min="16" >
         <symbol src="{$hikingSymbolPath}/hu-lm.svg" symbol-width="{$sw-hiking2-z16}" priority="{$pr-hiking-symbols}"/>
     </rule>
+    <rule e="node" k="{$pilgrimage-symbol-tag}" v="{$ns-symbol-hu}pm" zoom-min="12" zoom-max="15">
+        <symbol src="{$hikingSymbolPath}/hu-pm.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}"/>
+    </rule>
+    <rule e="node" k="{$pilgrimage-symbol-tag}" v="{$ns-symbol-hu}pm" zoom-min="16" >
+        <symbol src="{$hikingSymbolPath}/hu-pm.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}"/>
+    </rule>
     <rule e="node" k="{$pilgrimage-symbol-tag}" v="{$ns-symbol-hu}km" zoom-min="12" zoom-max="15">
         <symbol src="{$hikingSymbolPath}/hu-km.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}"/>
     </rule>
