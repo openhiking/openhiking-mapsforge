@@ -1235,6 +1235,8 @@
         <osm-tag key="trail_symbol" value="czsk:green:learning" zoom-appear="14"/> 
         <osm-tag key="trail_symbol" value="czsk:green:local" zoom-appear="14"/>   
 
+        <osm-tag key="trail_symbol" value="ro:vt" zoom-appear="14"/>
+
         <!-- White background-->
         <osm-tag key="trail_symbol" value="osmc:white:red_stripe" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="osmc:white:red_dot" zoom-appear="14"/>
