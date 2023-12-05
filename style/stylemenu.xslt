@@ -53,7 +53,7 @@
 		<name lang="hu" value="Turistautak" />
 		<cat id="hiking_routes" />
 	</layer>
-	<layer id="pilgrimage_routes" enabled="true" visible="false">
+	<layer id="pilgrimage_routes" enabled="false" visible="false">
 		<name lang="en" value="Pilgrimage routes" />
 		<name lang="hu" value="Zarándokutak" />
 		<cat id="pilgrimage_routes" />
