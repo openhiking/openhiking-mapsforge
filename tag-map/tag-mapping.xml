@@ -1432,30 +1432,30 @@
         <osm-tag key="pilgrimage_symbol" value="hu:fput" zoom-appear="14"/>
 
         <!-- Pilgrimage routes, mid position -->
-        <osm-tag key="pligrimage_symbol_2" value="hu:km" zoom-appear="14"/>
-        <osm-tag key="pligrimage_symbol_2" value="hu:pm" zoom-appear="14"/>
-        <osm-tag key="pligrimage_symbol_2" value="hu:zm" zoom-appear="14"/>     
-        <osm-tag key="pligrimage_symbol_2" value="hu:sm" zoom-appear="14"/>     
-        <osm-tag key="pligrimage_symbol_2" value="hu:lm" zoom-appear="14"/>   
+        <osm-tag key="pilgrimage_symbol_2" value="hu:km" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_2" value="hu:pm" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_2" value="hu:zm" zoom-appear="14"/>     
+        <osm-tag key="pilgrimage_symbol_2" value="hu:sm" zoom-appear="14"/>     
+        <osm-tag key="pilgrimage_symbol_2" value="hu:lm" zoom-appear="14"/>   
 
-        <osm-tag key="pligrimage_symbol_2" value="hu:stj" zoom-appear="14"/>
-        <osm-tag key="pligrimage_symbol_2" value="hu:sgy" zoom-appear="14"/>
-        <osm-tag key="pligrimage_symbol_2" value="hu:smz" zoom-appear="14"/>     
-        <osm-tag key="pligrimage_symbol_2" value="hu:ste" zoom-appear="14"/>        
-        <osm-tag key="pligrimage_symbol_2" value="hu:fput" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_2" value="hu:stj" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_2" value="hu:sgy" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_2" value="hu:smz" zoom-appear="14"/>     
+        <osm-tag key="pilgrimage_symbol_2" value="hu:ste" zoom-appear="14"/>        
+        <osm-tag key="pilgrimage_symbol_2" value="hu:fput" zoom-appear="14"/>
 
         <!-- Pilgrimage routes, low position -->
-        <osm-tag key="pligrimage_symbol_3" value="hu:km" zoom-appear="14"/>
-        <osm-tag key="pligrimage_symbol_3" value="hu:pm" zoom-appear="14"/>
-        <osm-tag key="pligrimage_symbol_3" value="hu:zm" zoom-appear="14"/>     
-        <osm-tag key="pligrimage_symbol_3" value="hu:sm" zoom-appear="14"/>     
-        <osm-tag key="pligrimage_symbol_3" value="hu:lm" zoom-appear="14"/>   
+        <osm-tag key="pilgrimage_symbol_3" value="hu:km" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_3" value="hu:pm" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_3" value="hu:zm" zoom-appear="14"/>     
+        <osm-tag key="pilgrimage_symbol_3" value="hu:sm" zoom-appear="14"/>     
+        <osm-tag key="pilgrimage_symbol_3" value="hu:lm" zoom-appear="14"/>   
 
-        <osm-tag key="pligrimage_symbol_3" value="hu:stj" zoom-appear="14"/>
-        <osm-tag key="pligrimage_symbol_3" value="hu:sgy" zoom-appear="14"/>
-        <osm-tag key="pligrimage_symbol_3" value="hu:smz" zoom-appear="14"/>     
-        <osm-tag key="pligrimage_symbol_3" value="hu:ste" zoom-appear="14"/>        
-        <osm-tag key="pligrimage_symbol_3" value="hu:fput" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_3" value="hu:stj" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_3" value="hu:sgy" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_3" value="hu:smz" zoom-appear="14"/>     
+        <osm-tag key="pilgrimage_symbol_3" value="hu:ste" zoom-appear="14"/>        
+        <osm-tag key="pilgrimage_symbol_3" value="hu:fput" zoom-appear="14"/>
 
         <!-- Ski routes -->
         <osm-tag key="nordic_ski_symbol" value="hu:kx" zoom-appear="14"/>

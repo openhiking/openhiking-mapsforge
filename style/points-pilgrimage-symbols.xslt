@@ -36,10 +36,10 @@
 
 <xsl:template name="pilgrimage-symbol-deep-pos-rules">
 <xsl:param name="level" />
-	<rule e="node" k="{$symbol-tag}_{$level}" v="{$ns-symbol-hu}stj" zoom-min="12" zoom-max="15">
+	<rule e="node" k="{$pilgrimage-symbol-tag}_{$level}" v="{$ns-symbol-hu}stj" zoom-min="12" zoom-max="15">
 		<symbol src="{$hikingSymbolPath}/hu-stj-{$level}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
-	<rule e="node" k="{$symbol-tag}_{$level}" v="{$ns-symbol-hu}stj" zoom-min="16" >
+	<rule e="node" k="{$pilgrimage-symbol-tag}_{$level}" v="{$ns-symbol-hu}stj" zoom-min="16" >
 		<symbol src="{$hikingSymbolPath}/hu-stj-{$level}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
 </xsl:template>
@@ -48,40 +48,40 @@
 
 <xsl:template name="pilgrimage-symbol-pos-rules">
 <xsl:param name="level" />
-	<rule e="node" k="{$symbol-tag}_{$level}" v="{$ns-symbol-hu}lm" zoom-min="12" zoom-max="15">
+	<rule e="node" k="{$pilgrimage-symbol-tag}_{$level}" v="{$ns-symbol-hu}lm" zoom-min="12" zoom-max="15">
 		<symbol src="{$hikingSymbolPath}/hu-lm-{$level}.svg" symbol-width="{$sw-hiking-w-z14}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
-	<rule e="node" k="{$symbol-tag}_{$level}" v="{$ns-symbol-hu}lm" zoom-min="16" >
+	<rule e="node" k="{$pilgrimage-symbol-tag}_{$level}" v="{$ns-symbol-hu}lm" zoom-min="16" >
 		<symbol src="{$hikingSymbolPath}/hu-lm-{$level}.svg" symbol-width="{$sw-hiking-w-z16}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
-	<rule e="node" k="{$symbol-tag}_{$level}" v="{$ns-symbol-hu}pm" zoom-min="12" zoom-max="15">
+	<rule e="node" k="{$pilgrimage-symbol-tag}_{$level}" v="{$ns-symbol-hu}pm" zoom-min="12" zoom-max="15">
 		<symbol src="{$hikingSymbolPath}/hu-pm-{$level}.svg" symbol-width="{$sw-hiking-w-z14}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
-	<rule e="node" k="{$symbol-tag}_{$level}" v="{$ns-symbol-hu}pm" zoom-min="16" >
+	<rule e="node" k="{$pilgrimage-symbol-tag}_{$level}" v="{$ns-symbol-hu}pm" zoom-min="16" >
 		<symbol src="{$hikingSymbolPath}/hu-pm-{$level}.svg" symbol-width="{$sw-hiking-w-z16}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
-	<rule e="node" k="{$symbol-tag}_{$level}" v="{$ns-symbol-hu}km" zoom-min="12" zoom-max="15">
+	<rule e="node" k="{$pilgrimage-symbol-tag}_{$level}" v="{$ns-symbol-hu}km" zoom-min="12" zoom-max="15">
 		<symbol src="{$hikingSymbolPath}/hu-km-{$level}.svg" symbol-width="{$sw-hiking-w-z14}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
-	<rule e="node" k="{$symbol-tag}_{$level}" v="{$ns-symbol-hu}km" zoom-min="16" >
+	<rule e="node" k="{$pilgrimage-symbol-tag}_{$level}" v="{$ns-symbol-hu}km" zoom-min="16" >
 		<symbol src="{$hikingSymbolPath}/hu-km-{$level}.svg" symbol-width="{$sw-hiking-w-z16}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
-	<rule e="node" k="{$symbol-tag}_{$level}" v="{$ns-symbol-hu}sm" zoom-min="12" zoom-max="15">
+	<rule e="node" k="{$pilgrimage-symbol-tag}_{$level}" v="{$ns-symbol-hu}sm" zoom-min="12" zoom-max="15">
 		<symbol src="{$hikingSymbolPath}/hu-sm-{$level}.svg" symbol-width="{$sw-hiking-w-z14}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
-	<rule e="node" k="{$symbol-tag}_{$level}" v="{$ns-symbol-hu}sm" zoom-min="16" >
+	<rule e="node" k="{$pilgrimage-symbol-tag}_{$level}" v="{$ns-symbol-hu}sm" zoom-min="16" >
 		<symbol src="{$hikingSymbolPath}/hu-sm-{$level}.svg" symbol-width="{$sw-hiking-w-z16}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
-	<rule e="node" k="{$symbol-tag}_{$level}" v="{$ns-symbol-hu}zm" zoom-min="12" zoom-max="15">
+	<rule e="node" k="{$pilgrimage-symbol-tag}_{$level}" v="{$ns-symbol-hu}zm" zoom-min="12" zoom-max="15">
 		<symbol src="{$hikingSymbolPath}/hu-zm-{$level}.svg" symbol-width="{$sw-hiking-w-z14}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
-	<rule e="node" k="{$symbol-tag}_{$level}" v="{$ns-symbol-hu}zm" zoom-min="16" >
+	<rule e="node" k="{$pilgrimage-symbol-tag}_{$level}" v="{$ns-symbol-hu}zm" zoom-min="16" >
 		<symbol src="{$hikingSymbolPath}/hu-zm-{$level}.svg" symbol-width="{$sw-hiking-w-z16}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
-	<rule e="node" k="{$symbol-tag}_{$level}" v="{$ns-symbol-hu}stj" zoom-min="12" zoom-max="15">
+	<rule e="node" k="{$pilgrimage-symbol-tag}_{$level}" v="{$ns-symbol-hu}stj" zoom-min="12" zoom-max="15">
 		<symbol src="{$hikingSymbolPath}/hu-stj-{$level}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
-	<rule e="node" k="{$symbol-tag}_{$level}" v="{$ns-symbol-hu}stj" zoom-min="16" >
+	<rule e="node" k="{$pilgrimage-symbol-tag}_{$level}" v="{$ns-symbol-hu}stj" zoom-min="16" >
 		<symbol src="{$hikingSymbolPath}/hu-stj-{$level}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
 </xsl:template>
