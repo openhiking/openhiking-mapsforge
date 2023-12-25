@@ -10,7 +10,7 @@
 -->
 
 <xsl:template name="points-hiking-symbols-hu">
-<rule cat="hiking_routes" e="node" k="{$symbol-tag}" v="*" >
+<rule cat="hiking_routes" e="node" k="{$symbol-tag}_3" v="*" >
 	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
 		<xsl:call-template name="hiking-symbol-hu-mtsz-base-pos-rules">
 			<xsl:with-param name="color" select="'k'" />
@@ -32,58 +32,6 @@
 		<xsl:call-template name="hiking-symbol-hu-special-pos-rules">
 			<xsl:with-param name="level" select="'3'" />
 		</xsl:call-template>
-
-		<xsl:call-template name="hiking-symbol-hu-mtsz-base-pos-rules">
-			<xsl:with-param name="color" select="'k'" />
-			<xsl:with-param name="level" select="'2'" />
-		</xsl:call-template>
-		<xsl:call-template name="hiking-symbol-hu-mtsz-base-pos-rules">
-			<xsl:with-param name="color" select="'p'" />
-			<xsl:with-param name="level" select="'2'" />
-		</xsl:call-template>
-		<xsl:call-template name="hiking-symbol-hu-mtsz-base-pos-rules">
-			<xsl:with-param name="color" select="'z'" />
-			<xsl:with-param name="level" select="'2'" />
-		</xsl:call-template>
-		<xsl:call-template name="hiking-symbol-hu-mtsz-base-pos-rules">
-			<xsl:with-param name="color" select="'s'" />
-			<xsl:with-param name="level" select="'2'" />
-		</xsl:call-template>
-		
-		<xsl:call-template name="hiking-symbol-hu-mtsz-ext-pos-rules">
-			<xsl:with-param name="color" select="'k'" />
-			<xsl:with-param name="level" select="'2'" />
-		</xsl:call-template>
-		<xsl:call-template name="hiking-symbol-hu-mtsz-ext-pos-rules">
-			<xsl:with-param name="color" select="'p'" />
-			<xsl:with-param name="level" select="'2'" />
-		</xsl:call-template>
-		<xsl:call-template name="hiking-symbol-hu-mtsz-ext-pos-rules">
-			<xsl:with-param name="color" select="'z'" />
-			<xsl:with-param name="level" select="'2'" />
-		</xsl:call-template>
-		<xsl:call-template name="hiking-symbol-hu-mtsz-ext-pos-rules">
-			<xsl:with-param name="color" select="'s'" />
-			<xsl:with-param name="level" select="'2'" />
-		</xsl:call-template>
-
-		<xsl:call-template name="hiking-symbol-hu-special-pos-rules">
-			<xsl:with-param name="level" select="'2'" />
-		</xsl:call-template>
-
-		<xsl:call-template name="hiking-symbol-hu-mtsz-rules">
-			<xsl:with-param name="color" select="'k'" />
-		</xsl:call-template>
-		<xsl:call-template name="hiking-symbol-hu-mtsz-rules">
-			<xsl:with-param name="color" select="'p'" />
-		</xsl:call-template>
-		<xsl:call-template name="hiking-symbol-hu-mtsz-rules">
-			<xsl:with-param name="color" select="'z'" />
-		</xsl:call-template>
-		<xsl:call-template name="hiking-symbol-hu-mtsz-rules">
-			<xsl:with-param name="color" select="'s'" />
-		</xsl:call-template>
-		<xsl:call-template name="hiking-symbol-hu-special-rules"/>
 	</rule>
 	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
 		<xsl:call-template name="hiking-symbol-hu-mtsz-base-pos-rules">
@@ -106,7 +54,11 @@
 		<xsl:call-template name="hiking-symbol-hu-special-pos-rules">
 			<xsl:with-param name="level" select="'3'" />
 		</xsl:call-template>
+	</rule>	
+</rule>	
 
+<rule cat="hiking_routes" e="node" k="{$symbol-tag}_2" v="*" >
+	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
 		<xsl:call-template name="hiking-symbol-hu-mtsz-base-pos-rules">
 			<xsl:with-param name="color" select="'k'" />
 			<xsl:with-param name="level" select="'2'" />
@@ -144,7 +96,52 @@
 		<xsl:call-template name="hiking-symbol-hu-special-pos-rules">
 			<xsl:with-param name="level" select="'2'" />
 		</xsl:call-template>
+	</rule>
+	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
+		<xsl:call-template name="hiking-symbol-hu-mtsz-base-pos-rules">
+			<xsl:with-param name="color" select="'k'" />
+			<xsl:with-param name="level" select="'2'" />
+		</xsl:call-template>
+		<xsl:call-template name="hiking-symbol-hu-mtsz-base-pos-rules">
+			<xsl:with-param name="color" select="'p'" />
+			<xsl:with-param name="level" select="'2'" />
+		</xsl:call-template>
+		<xsl:call-template name="hiking-symbol-hu-mtsz-base-pos-rules">
+			<xsl:with-param name="color" select="'z'" />
+			<xsl:with-param name="level" select="'2'" />
+		</xsl:call-template>
+		<xsl:call-template name="hiking-symbol-hu-mtsz-base-pos-rules">
+			<xsl:with-param name="color" select="'s'" />
+			<xsl:with-param name="level" select="'2'" />
+		</xsl:call-template>
+		
+		<xsl:call-template name="hiking-symbol-hu-mtsz-ext-pos-rules">
+			<xsl:with-param name="color" select="'k'" />
+			<xsl:with-param name="level" select="'2'" />
+		</xsl:call-template>
+		<xsl:call-template name="hiking-symbol-hu-mtsz-ext-pos-rules">
+			<xsl:with-param name="color" select="'p'" />
+			<xsl:with-param name="level" select="'2'" />
+		</xsl:call-template>
+		<xsl:call-template name="hiking-symbol-hu-mtsz-ext-pos-rules">
+			<xsl:with-param name="color" select="'z'" />
+			<xsl:with-param name="level" select="'2'" />
+		</xsl:call-template>
+		<xsl:call-template name="hiking-symbol-hu-mtsz-ext-pos-rules">
+			<xsl:with-param name="color" select="'s'" />
+			<xsl:with-param name="level" select="'2'" />
+		</xsl:call-template>
 
+		<xsl:call-template name="hiking-symbol-hu-special-pos-rules">
+			<xsl:with-param name="level" select="'2'" />
+		</xsl:call-template>
+	</rule>	
+</rule>	
+
+
+
+<rule cat="hiking_routes" e="node" k="{$symbol-tag}" v="*" >
+	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
 		<xsl:call-template name="hiking-symbol-hu-mtsz-rules">
 			<xsl:with-param name="color" select="'k'" />
 		</xsl:call-template>
@@ -158,31 +155,55 @@
 			<xsl:with-param name="color" select="'s'" />
 		</xsl:call-template>
 		<xsl:call-template name="hiking-symbol-hu-special-rules"/>
+	</rule>
+	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
+		<xsl:call-template name="hiking-symbol-hu-mtsz-rules">
+			<xsl:with-param name="color" select="'k'" />
+		</xsl:call-template>
+		<xsl:call-template name="hiking-symbol-hu-mtsz-rules">
+			<xsl:with-param name="color" select="'p'" />
+		</xsl:call-template>
+		<xsl:call-template name="hiking-symbol-hu-mtsz-rules">
+			<xsl:with-param name="color" select="'z'" />
+		</xsl:call-template>
+		<xsl:call-template name="hiking-symbol-hu-mtsz-rules">
+			<xsl:with-param name="color" select="'s'" />
+		</xsl:call-template>
+		<xsl:call-template name="hiking-symbol-hu-special-rules"/>
+	</rule>	
+</rule>	
 
+<rule cat="hiking_routes" e="node" k="{$ski-symbol-tag}_3" v="*" >
+	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
+		<xsl:call-template name="hiking-symbol-hu-ski-pos">
+			<xsl:with-param name="level" select="'3'" />
+		</xsl:call-template>
+	</rule>
+	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
+		<xsl:call-template name="hiking-symbol-hu-ski-pos">
+			<xsl:with-param name="level" select="'3'" />
+		</xsl:call-template>
+	</rule>	
+</rule>	
+
+<rule cat="hiking_routes" e="node" k="{$ski-symbol-tag}_2" v="*" >
+	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
+		<xsl:call-template name="hiking-symbol-hu-ski-pos">
+			<xsl:with-param name="level" select="'2'" />
+		</xsl:call-template>
+	</rule>
+	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
+		<xsl:call-template name="hiking-symbol-hu-ski-pos">
+			<xsl:with-param name="level" select="'2'" />
+		</xsl:call-template>
 	</rule>	
 </rule>	
 
 <rule cat="hiking_routes" e="node" k="{$ski-symbol-tag}" v="*" >
 	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
-		<xsl:call-template name="hiking-symbol-hu-ski-pos">
-			<xsl:with-param name="level" select="'3'" />
-		</xsl:call-template>
-
-		<xsl:call-template name="hiking-symbol-hu-ski-pos">
-			<xsl:with-param name="level" select="'2'" />
-		</xsl:call-template>
-
 		<xsl:call-template name="hiking-symbol-hu-ski"/>
 	</rule>
 	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
-		<xsl:call-template name="hiking-symbol-hu-ski-pos">
-			<xsl:with-param name="level" select="'3'" />
-		</xsl:call-template>
-
-		<xsl:call-template name="hiking-symbol-hu-ski-pos">
-			<xsl:with-param name="level" select="'2'" />
-		</xsl:call-template>
-
 		<xsl:call-template name="hiking-symbol-hu-ski"/>	
 	</rule>	
 </rule>	

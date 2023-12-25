@@ -1460,6 +1460,10 @@
         <!-- Ski routes -->
         <osm-tag key="nordic_ski_symbol" value="hu:kx" zoom-appear="14"/>
         <osm-tag key="nordic_ski_symbol" value="hu:px" zoom-appear="14"/>
+        <osm-tag key="nordic_ski_symbol_2" value="hu:kx" zoom-appear="14"/>
+        <osm-tag key="nordic_ski_symbol_2" value="hu:px" zoom-appear="14"/>
+        <osm-tag key="nordic_ski_symbol_3" value="hu:kx" zoom-appear="14"/>
+        <osm-tag key="nordic_ski_symbol_3" value="hu:px" zoom-appear="14"/>
 
 
         <osm-tag key="trail_symbol_level" value="major" zoom-appear="13"/>                           

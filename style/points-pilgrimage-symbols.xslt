@@ -10,28 +10,41 @@
 -->
 
 
-<xsl:template name="points-pilgrimage-symbols">
-<rule cat="pilgrimage_routes" e="node" k="{$pilgrimage-symbol-tag}" v="*" >
+<xsl:template name="points-pilgrimage-symbols">	
+<rule cat="pilgrimage_routes" e="node" k="{$pilgrimage-symbol-tag}_3" v="*" >
 	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
-        <xsl:call-template name="pilgrimage-symbol-deep-pos-rules">
+        <xsl:call-template name="pilgrimage-symbol-pos-rules">
 			<xsl:with-param name="level" select="'3'" />
 		</xsl:call-template>       
+ 	</rule>
+	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
+        <xsl:call-template name="pilgrimage-symbol-pos-rules">
+			<xsl:with-param name="level" select="'3'" />
+		</xsl:call-template>   
+ 	</rule>	
+</rule>	
+
+<rule cat="pilgrimage_routes" e="node" k="{$pilgrimage-symbol-tag}_2" v="*" >
+	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
  		<xsl:call-template name="pilgrimage-symbol-pos-rules">
 			<xsl:with-param name="level" select="'2'" />
 		</xsl:call-template>   
+	</rule>
+	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
+  		<xsl:call-template name="pilgrimage-symbol-pos-rules">
+			<xsl:with-param name="level" select="'2'" />
+		</xsl:call-template>   
+ 	</rule>	
+</rule>	
+
+<rule cat="pilgrimage_routes" e="node" k="{$pilgrimage-symbol-tag}" v="*" >
+	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
         <xsl:call-template name="pilgrimage-symbol-base-rules"/>
 	</rule>
 	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
-        <xsl:call-template name="pilgrimage-symbol-deep-pos-rules">
-			<xsl:with-param name="level" select="'3'" />
-		</xsl:call-template>   
- 		<xsl:call-template name="pilgrimage-symbol-pos-rules">
-			<xsl:with-param name="level" select="'2'" />
-		</xsl:call-template>   
         <xsl:call-template name="pilgrimage-symbol-base-rules"/>
 	</rule>	
-</rule>	
-
+</rule>
 </xsl:template>
 
 <xsl:template name="pilgrimage-symbol-deep-pos-rules">
