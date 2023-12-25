@@ -21,6 +21,13 @@ O,blue:blue::E4:yellow,-1,,
 O,orange:orange_circle::T:orange,5,orange,ro:vt
 J,ste,9,red,hu:ste
 J,t,10,blue,hu:t
+J,fivv,10,black,
+J,kivv,10,blue,
+J,zivv,10,green,
+J,kfut,10,blue,
+J,pfut,10,red,
+J,sfut,10,yellow,
+J,zfut,10,green,
 J,zut,-1,,
 P,red:white:red_circle,1,red,osmc:white:red_circle
 P,red:white:red_stripe,1,red,osmc:white:red_stripe
