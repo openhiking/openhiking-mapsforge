@@ -165,12 +165,20 @@
 <rule cat="hiking_routes" e="node" k="{$ski-symbol-tag}" v="*" >
 	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
 		<xsl:call-template name="hiking-symbol-hu-ski-pos">
+			<xsl:with-param name="level" select="'3'" />
+		</xsl:call-template>
+
+		<xsl:call-template name="hiking-symbol-hu-ski-pos">
 			<xsl:with-param name="level" select="'2'" />
 		</xsl:call-template>
 
 		<xsl:call-template name="hiking-symbol-hu-ski"/>
 	</rule>
 	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
+		<xsl:call-template name="hiking-symbol-hu-ski-pos">
+			<xsl:with-param name="level" select="'3'" />
+		</xsl:call-template>
+
 		<xsl:call-template name="hiking-symbol-hu-ski-pos">
 			<xsl:with-param name="level" select="'2'" />
 		</xsl:call-template>
