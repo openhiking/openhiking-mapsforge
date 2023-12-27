@@ -100,10 +100,14 @@
 			<xsl:with-param name="key" select="$symbol-tag" />
 			<xsl:with-param name="variant" select="''" />
 		</xsl:call-template>
-		<xsl:call-template name="trail-symbol-hu-mtsz-allcolor-3">
+		<xsl:call-template name="trail-symbol-hu-mtsz-allcolor-2">
 			<xsl:with-param name="key" select="$symbol-tag" />
 			<xsl:with-param name="variant" select="''" />
 		</xsl:call-template>
+		<xsl:call-template name="trail-symbol-hu-temple-allcolor">
+			<xsl:with-param name="key" select="$symbol-tag" />
+			<xsl:with-param name="variant" select="''" />
+		</xsl:call-template>		
 		<xsl:call-template name="trail-symbol-hu-special-3">
 			<xsl:with-param name="key" select="$symbol-tag" />
 			<xsl:with-param name="variant" select="''" />
@@ -122,6 +126,10 @@
 			<xsl:with-param name="key" select="$symbol-tag" />
 			<xsl:with-param name="variant" select="''" />
 		</xsl:call-template>
+		<xsl:call-template name="trail-symbol-hu-temple-allcolor">
+			<xsl:with-param name="key" select="$symbol-tag" />
+			<xsl:with-param name="variant" select="''" />
+		</xsl:call-template>		
 		<xsl:call-template name="trail-symbol-hu-special-3">
 			<xsl:with-param name="key" select="$symbol-tag" />
 			<xsl:with-param name="variant" select="''" />
@@ -205,6 +213,32 @@
 	</xsl:call-template>
 </xsl:template>
 
+<xsl:template name="trail-symbol-hu-temple-allcolor">
+<xsl:param name="key" />
+<xsl:param name="variant" />
+	<xsl:call-template name="trail-symbol-hu-temple">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="variant" select="$variant" />
+		<xsl:with-param name="color" select="'k'" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-symbol-hu-temple">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="variant" select="$variant" />
+		<xsl:with-param name="color" select="'p'" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-symbol-hu-temple">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="variant" select="$variant" />
+		<xsl:with-param name="color" select="'z'" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-symbol-hu-temple">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="variant" select="$variant" />
+		<xsl:with-param name="color" select="'s'" />
+	</xsl:call-template>
+</xsl:template>
+
+
 <xsl:template name="trail-symbol-hu-mtsz-allcolor-2">
 <xsl:param name="key" />
 <xsl:param name="variant" />
@@ -278,6 +312,19 @@
 	</rule>
 </xsl:template>
 
+<xsl:template name="trail-symbol-hu-temple">
+<xsl:param name="key" />
+<xsl:param name="variant"/>
+<xsl:param name="color"/>
+	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}tmp" zoom-min="12" zoom-max="15">
+		<symbol src="{$hikingSymbolPath}/hu-{$color}tmp{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols-minor}"/>
+	</rule>
+	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}tmp" zoom-min="16" >
+		<symbol src="{$hikingSymbolPath}/hu-{$color}tmp{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}"/>
+	</rule>
+</xsl:template>
+
+
 <xsl:template name="trail-symbol-hu-mtsz-2">
 <xsl:param name="key" />
 <xsl:param name="variant" />
@@ -332,6 +379,7 @@
 	</rule>
 </xsl:template>
 
+
 <xsl:template name="trail-symbol-hu-special-1">
 <xsl:param name="key" />
 <xsl:param name="variant" />
@@ -340,13 +388,6 @@
 	</rule>
 	<rule e="node" k="{$key}" v="{$ns-symbol-hu}kpec" zoom-min="16" >
 		<symbol src="{$hikingSymbolPath}/hu-kpec{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}"/>
-	</rule>
-
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}ktmp" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-ktmp{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols-minor}"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}ktmp" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-ktmp{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}"/>
 	</rule>
 	<rule e="node" k="{$key}" v="{$ns-symbol-hu}keml" zoom-min="12" zoom-max="15">
 		<symbol src="{$hikingSymbolPath}/hu-keml{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols-minor}"/>
