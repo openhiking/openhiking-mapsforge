@@ -11,7 +11,7 @@ O,green:white:::M:green,12,green,hu:zm
 O,red:red:red_bar:S:white,4,red,hu:palp
 O,red:white:red_flower,12,red,hu:ste
 O,blue:blue:shell_modern,12,blue,hu:stj
-O,"	purple:blue:shell_modern",12,blue,hu:stj
+O,purple:blue:shell_modern,12,purple,hu:stj
 O,yellow:white:::SG:yellow,12,yellow,hu:sgy
 O,:white:orange_dot:::,10,orange,osmc:white:orange_dot
 O,:yellow:blue_dot,7,blue,osmc:yellow:blue_dot

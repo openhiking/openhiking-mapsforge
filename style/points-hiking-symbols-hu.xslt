@@ -161,22 +161,22 @@
 <xsl:param name="variant" />
 	<xsl:call-template name="trail-symbol-hu-mtsz-3">
 			<xsl:with-param name="key" select="$key" />
-			<xsl:with-param name="level" select="$variant" />
+			<xsl:with-param name="variant" select="$variant" />
 			<xsl:with-param name="color" select="'k'" />
 		</xsl:call-template>
 		<xsl:call-template name="trail-symbol-hu-mtsz-3">
 			<xsl:with-param name="key" select="$key" />
-			<xsl:with-param name="level" select="$variant" />
+			<xsl:with-param name="variant" select="$variant" />
 			<xsl:with-param name="color" select="'p'" />
 		</xsl:call-template>
 		<xsl:call-template name="trail-symbol-hu-mtsz-3">
 			<xsl:with-param name="key" select="$key" />
-			<xsl:with-param name="level" select="$variant" />
+			<xsl:with-param name="variant" select="$variant" />
 			<xsl:with-param name="color" select="'z'" />
 		</xsl:call-template>
 		<xsl:call-template name="trail-symbol-hu-mtsz-3">
 			<xsl:with-param name="key" select="$key" />
-			<xsl:with-param name="level" select="$variant" />
+			<xsl:with-param name="variant" select="$variant" />
 			<xsl:with-param name="color" select="'s'" />
 		</xsl:call-template>
 </xsl:template>
@@ -208,43 +208,43 @@
 
 <xsl:template name="trail-symbol-hu-mtsz-3">
 <xsl:param name="key" />
-<xsl:param name="level" />
+<xsl:param name="variant" />
 <xsl:param name="color" />
 	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-{$color}{$level}.svg" symbol-width="{$sw-hiking-w-z14}" priority="{$pr-hiking-symbols}" display="always"/>
+		<symbol src="{$hikingSymbolPath}/hu-{$color}{$variant}.svg" symbol-width="{$sw-hiking-w-z14}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
 	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-{$color}{$level}.svg" symbol-width="{$sw-hiking-w-z16}" priority="{$pr-hiking-symbols}" display="always"/>
+		<symbol src="{$hikingSymbolPath}/hu-{$color}{$variant}.svg" symbol-width="{$sw-hiking-w-z16}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
 	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}+" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-{$color}+{$level}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
+		<symbol src="{$hikingSymbolPath}/hu-{$color}+{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
 	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}+" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-{$color}+{$level}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
+		<symbol src="{$hikingSymbolPath}/hu-{$color}+{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
 	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}3" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-{$color}3{$level}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
+		<symbol src="{$hikingSymbolPath}/hu-{$color}3{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
 	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}3" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-{$color}3{$level}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
+		<symbol src="{$hikingSymbolPath}/hu-{$color}3{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
 	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}4" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-{$color}4{$level}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
+		<symbol src="{$hikingSymbolPath}/hu-{$color}4{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
 	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}4" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-{$color}4{$level}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
+		<symbol src="{$hikingSymbolPath}/hu-{$color}4{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
 	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}t" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-{$color}t{$level}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
+		<symbol src="{$hikingSymbolPath}/hu-{$color}t{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
 	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}t" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-{$color}t{$level}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
+		<symbol src="{$hikingSymbolPath}/hu-{$color}t{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
 	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}atl" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-{$color}atl{$level}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
+		<symbol src="{$hikingSymbolPath}/hu-{$color}atl{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
 	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}atl" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-{$color}atl{$level}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
+		<symbol src="{$hikingSymbolPath}/hu-{$color}atl{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
 </xsl:template>
 
