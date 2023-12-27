@@ -20,9 +20,10 @@ O,red:white: :T:red,5,red,no:t
 O,blue:blue::E4:yellow,-1,,
 O,orange:orange_circle::T:orange,5,orange,ro:vt
 J,ste,12,red,hu:ste
-J,t,13,blue,hu:t
+J,t,13,blue,hu:ft
 J,ztfl,13,green,hu:zt
 J,pek,13,yellow,osmc:blue:yellow_lower
+J,fput,12,black,
 J,mberc,13,blue,
 J,tny,13,blue,
 J,but,13,black,

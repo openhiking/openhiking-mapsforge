@@ -1187,7 +1187,7 @@
         <osm-tag key="trail_symbol" value="hu:satl" zoom-appear="14"/>           
 
         <osm-tag key="trail_symbol" value="hu:f" zoom-appear="14"/>
-        <osm-tag key="trail_symbol" value="hu:t" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:ft" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="hu:palp" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="hu:salp" zoom-appear="14"/>
 
@@ -1247,7 +1247,7 @@
 
 
         <osm-tag key="trail_symbol_2" value="hu:f" zoom-appear="14"/>
-        <osm-tag key="trail_symbol_2" value="hu:t" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_2" value="hu:ft" zoom-appear="14"/>
         <osm-tag key="trail_symbol_2" value="hu:palp" zoom-appear="14"/>
         <osm-tag key="trail_symbol_2" value="hu:salp" zoom-appear="14"/>
 
@@ -1304,7 +1304,7 @@
         <osm-tag key="trail_symbol_3" value="hu:satl" zoom-appear="14"/>        
 
         <osm-tag key="trail_symbol_3" value="hu:f" zoom-appear="14"/>
-        <osm-tag key="trail_symbol_3" value="hu:t" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_3" value="hu:ft" zoom-appear="14"/>
         <osm-tag key="trail_symbol_3" value="hu:palp" zoom-appear="14"/>
         <osm-tag key="trail_symbol_3" value="hu:salp" zoom-appear="14"/>
 
@@ -1312,7 +1312,7 @@
         <osm-tag key="trail_symbol_3" value="hu:px" zoom-appear="14"/>
 
 
-        <!-- Czechis and Slovakian tagging, top position-->
+        <!-- Czech and Slovakian tagging, top position-->
         <osm-tag key="trail_symbol" value="czsk:blue:major" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="czsk:blue:ruin" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="czsk:blue:peak" zoom-appear="14"/>
@@ -1353,7 +1353,21 @@
         <osm-tag key="trail_symbol" value="czsk:green:learning" zoom-appear="14"/> 
         <osm-tag key="trail_symbol" value="czsk:green:local" zoom-appear="14"/>   
 
+        <!-- Czech and Slovakian tagging, top position-->
+        <osm-tag key="trail_symbol_2" value="czsk:red:major" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_2" value="czsk:blue:major" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_2" value="czsk:yellow:major" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_2" value="czsk:green:major" zoom-appear="14"/>
+
+        <!-- Czech and Slovakian tagging, bottom position-->
+        <osm-tag key="trail_symbol_3" value="czsk:red:major" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_3" value="czsk:blue:major" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_3" value="czsk:yellow:major" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_3" value="czsk:green:major" zoom-appear="14"/>
+
+
         <osm-tag key="trail_symbol" value="ro:vt" zoom-appear="14"/>
+
 
         <!-- White background-->
         <osm-tag key="trail_symbol" value="osmc:white:red_stripe" zoom-appear="14"/>

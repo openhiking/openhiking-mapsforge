@@ -347,11 +347,11 @@
 
 <xsl:template name="hiking-symbol-hu-special-pos-rules">
 <xsl:param name="level" />
-	<rule e="node" k="{$symbol-tag}_{$level}" v="{$ns-symbol-hu}t" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-t-{$level}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
+	<rule e="node" k="{$symbol-tag}_{$level}" v="{$ns-symbol-hu}ft" zoom-min="12" zoom-max="15">
+		<symbol src="{$hikingSymbolPath}/hu-ft-{$level}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
-	<rule e="node" k="{$symbol-tag}_{$level}" v="{$ns-symbol-hu}t" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-t-{$level}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
+	<rule e="node" k="{$symbol-tag}_{$level}" v="{$ns-symbol-hu}ft" zoom-min="16" >
+		<symbol src="{$hikingSymbolPath}/hu-ft-{$level}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
 	<rule e="node" k="{$symbol-tag}_{$level}" v="{$ns-symbol-hu}palp" zoom-min="12" zoom-max="15">
 		<symbol src="{$hikingSymbolPath}/hu-palp-{$level}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
@@ -395,11 +395,11 @@
 		<symbol src="{$hikingSymbolPath}/hu-katlv.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}"/>
 	</rule>
 
-	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-hu}t" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-t.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols-minor}" display="always"/>
+	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-hu}ft" zoom-min="12" zoom-max="15">
+		<symbol src="{$hikingSymbolPath}/hu-ft.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols-minor}" display="always"/>
 	</rule>
-	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-hu}t" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-t.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}" display="always"/>
+	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-hu}ft" zoom-min="16" >
+		<symbol src="{$hikingSymbolPath}/hu-ft.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}" display="always"/>
 	</rule>
 
 	<rule e="node" k="{$symbol-tag}" v="{$ns-symbol-hu}palp" zoom-min="12" zoom-max="15">
