@@ -2,12 +2,12 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="32.0px"
-   height="32.0px"
-   viewBox="0 0 32.0 32.0"
+   width="32"
+   height="64"
+   viewBox="0 0 32 64"
    version="1.1"
    id="SVGRoot"
-   sodipodi:docname="czsk-yellow-major.svg"
+   sodipodi:docname="czsk-blue-major-2.svg"
    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -22,16 +22,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     showgrid="true"
-     inkscape:zoom="28.59375"
-     inkscape:cx="15.982514"
-     inkscape:cy="16"
+     inkscape:zoom="17.593054"
+     inkscape:cx="15.972213"
+     inkscape:cy="32.768615"
      inkscape:window-width="1822"
      inkscape:window-height="1171"
      inkscape:window-x="89"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="SVGRoot">
+     inkscape:current-layer="layer1"
+     showgrid="true">
     <inkscape:grid
        id="grid1"
        units="px"
@@ -53,29 +53,28 @@
      id="defs12389" />
   <g
      id="layer1"
-     transform="matrix(0.99969143,0,0,1.0000172,0.00493665,-2.7510284e-4)">
+     inkscape:label="layer1">
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#808080;stroke-width:3.41608;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#ffffff;fill-opacity:1;stroke:#808080;stroke-width:3.02637;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="rect605"
-       width="36.931824"
-       height="28.961348"
-       x="1.5783675"
-       y="1.5488467"
-       transform="matrix(0.79333578,0,0,0.98841194,0.09815596,0.16343556)" />
+       width="28.973637"
+       height="28.973635"
+       x="1.5131818"
+       y="33.688927" />
     <rect
-       style="fill:#f8c800;fill-opacity:1;stroke:none;stroke-width:0.370148;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       style="fill:#0000f8;fill-opacity:1;stroke:none;stroke-width:0.368055;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="rect2665"
-       width="26.6"
+       width="26.299999"
        height="8"
-       x="2.7"
-       y="12" />
+       x="2.8621688"
+       y="43.993912" />
     <path
-       style="fill:#ffffff;fill-opacity:1;stroke:#070707;stroke-width:0.350099;stroke-dasharray:none;stroke-opacity:1"
-       d="m 2.700231,10.275049 26.599538,0.03487"
+       style="fill:#ffffff;fill-opacity:1;stroke:#070707;stroke-width:0.349768;stroke-dasharray:none;stroke-opacity:1"
+       d="m 2.8623994,42.268796 26.2995356,0.0352"
        id="path1" />
     <path
-       style="fill:#ffffff;fill-opacity:1;stroke:#070707;stroke-width:0.350099;stroke-dasharray:none;stroke-opacity:1"
-       d="m 2.7002295,21.675049 26.5995375,0.03487"
+       style="fill:#ffffff;fill-opacity:1;stroke:#070707;stroke-width:0.349768;stroke-dasharray:none;stroke-opacity:1"
+       d="m 2.8623979,53.668796 26.2995351,0.0352"
        id="path1-3" />
   </g>
 </svg>

@@ -19,6 +19,9 @@
 <xsl:variable name="sw-hiking-z16">15</xsl:variable>
 <xsl:variable name="sw-hiking-w-z14">16</xsl:variable>
 <xsl:variable name="sw-hiking-w-z16">17</xsl:variable>
+<xsl:variable name="sw-hiking-uw-z14">17</xsl:variable>
+<xsl:variable name="sw-hiking-uw-z16">18</xsl:variable>
+
 
 <xsl:variable name="sw-hiking2-z14">16</xsl:variable>
 <xsl:variable name="sw-hiking2-z16">17</xsl:variable>

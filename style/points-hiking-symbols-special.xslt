@@ -11,22 +11,61 @@
 
 
 <xsl:template name="points-hiking-symbols-special">
-<rule cat="hiking_routes" e="node" k="{$symbol-tag}" v="*" >
+
+<rule cat="hiking_routes" e="node" k="{$symbol-tag}_3" v="*" >
 	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
-		<xsl:call-template name="hiking-symbols-special-rules"/>
+		<xsl:call-template name="trail-symbol-special-3">
+			<xsl:with-param name="key" select="concat($symbol-tag,'_3')" />
+			<xsl:with-param name="variant" select="'-3'" />
+		</xsl:call-template>
 	</rule>
 	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
-		<xsl:call-template name="hiking-symbols-special-rules"/>	
+		<xsl:call-template name="trail-symbol-special-3">
+			<xsl:with-param name="key" select="concat($symbol-tag,'_3')" />
+			<xsl:with-param name="variant" select="'-3'" />
+		</xsl:call-template>	
 	</rule>	
 </rule>	
+
+<rule cat="hiking_routes" e="node" k="{$symbol-tag}_2" v="*" >
+	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
+		<xsl:call-template name="trail-symbol-special-3">
+			<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
+			<xsl:with-param name="variant" select="'-2'" />
+		</xsl:call-template>
+	</rule>
+	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
+		<xsl:call-template name="trail-symbol-special-3">
+			<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
+			<xsl:with-param name="variant" select="'-2'" />
+		</xsl:call-template>	
+	</rule>	
+</rule>
+
+<rule cat="hiking_routes" e="node" k="{$symbol-tag}" v="*" >
+	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
+		<xsl:call-template name="trail-symbol-special-3">
+			<xsl:with-param name="key" select="$symbol-tag" />
+			<xsl:with-param name="variant" select="''" />
+		</xsl:call-template>
+	</rule>
+	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
+		<xsl:call-template name="trail-symbol-special-3">
+			<xsl:with-param name="key" select="$symbol-tag" />
+			<xsl:with-param name="variant" select="''" />
+		</xsl:call-template>	
+	</rule>	
+</rule>
 </xsl:template>
 
-<xsl:template name="hiking-symbols-special-rules">
-	<rule e="node" k="{$symbol-tag}" v="ro:vt" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/ro-vt.svg" symbol-width="{$sw-hiking2-z14}" priority="{$pr-hiking-symbols}"/>
+<xsl:template name="trail-symbol-special-3">
+<xsl:param name="key" />
+<xsl:param name="variant" />
+	<rule e="node" k="{$key}" v="ro:vt" zoom-min="12" zoom-max="15">
+		<symbol src="{$hikingSymbolPath}/ro-vt{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
-	<rule e="node" k="{$symbol-tag}" v="ro:vt" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/ro-vt.svg" symbol-width="{$sw-hiking2-z16}" priority="{$pr-hiking-symbols}"/>
+	<rule e="node" k="{$key}" v="ro:vt" zoom-min="16" >
+		<symbol src="{$hikingSymbolPath}/ro-vt{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
 </xsl:template>
 
