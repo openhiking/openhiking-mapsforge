@@ -1162,6 +1162,7 @@
         <osm-tag key="trail_symbol" value="hu:pl" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="hu:pc" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="hu:pt" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:ptmp" zoom-appear="14"/>        
         <osm-tag key="trail_symbol" value="hu:patl" zoom-appear="14"/>      
 
         <osm-tag key="trail_symbol" value="hu:z" zoom-appear="14"/>
@@ -1173,6 +1174,7 @@
         <osm-tag key="trail_symbol" value="hu:zl" zoom-appear="14"/>        
         <osm-tag key="trail_symbol" value="hu:zc" zoom-appear="14"/>                
         <osm-tag key="trail_symbol" value="hu:zt" zoom-appear="14"/>
+        <osm-tag key="trail_symbol" value="hu:ztmp" zoom-appear="14"/>               
         <osm-tag key="trail_symbol" value="hu:zatl" zoom-appear="14"/>                  
 
         <osm-tag key="trail_symbol" value="hu:s" zoom-appear="14"/>
@@ -1184,6 +1186,7 @@
         <osm-tag key="trail_symbol" value="hu:sl" zoom-appear="14"/>    
         <osm-tag key="trail_symbol" value="hu:sc" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="hu:st" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol" value="hu:stmp" zoom-appear="14"/>        
         <osm-tag key="trail_symbol" value="hu:satl" zoom-appear="14"/>           
 
         <osm-tag key="trail_symbol" value="hu:f" zoom-appear="14"/>
@@ -1355,15 +1358,37 @@
 
         <!-- Czech and Slovakian tagging, top position-->
         <osm-tag key="trail_symbol_2" value="czsk:red:major" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_2" value="czsk:red:learning" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol_2" value="czsk:red:local" zoom-appear="14"/>   
+ 
         <osm-tag key="trail_symbol_2" value="czsk:blue:major" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_2" value="czsk:blue:learning" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol_2" value="czsk:blue:local" zoom-appear="14"/>                 
+
         <osm-tag key="trail_symbol_2" value="czsk:yellow:major" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_2" value="czsk:yellow:learning" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol_2" value="czsk:yellow:local" zoom-appear="14"/>   
+
         <osm-tag key="trail_symbol_2" value="czsk:green:major" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_2" value="czsk:green:learning" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol_2" value="czsk:green:local" zoom-appear="14"/>   
 
         <!-- Czech and Slovakian tagging, bottom position-->
         <osm-tag key="trail_symbol_3" value="czsk:red:major" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_3" value="czsk:red:learning" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol_3" value="czsk:red:local" zoom-appear="14"/>   
+
         <osm-tag key="trail_symbol_3" value="czsk:blue:major" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_3" value="czsk:blue:learning" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol_3" value="czsk:blue:local" zoom-appear="14"/>                 
+
         <osm-tag key="trail_symbol_3" value="czsk:yellow:major" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_3" value="czsk:yellow:learning" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol_3" value="czsk:yellow:local" zoom-appear="14"/>   
+
         <osm-tag key="trail_symbol_3" value="czsk:green:major" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_3" value="czsk:green:learning" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol_3" value="czsk:green:local" zoom-appear="14"/>   
 
          <!-- Romanian tagging, top position-->
         <osm-tag key="trail_symbol" value="osmc:white:red_stripe" zoom-appear="14"/>
@@ -1474,6 +1499,18 @@
         <osm-tag key="pilgrimage_symbol" value="hu:ste" zoom-appear="14"/>        
         <osm-tag key="pilgrimage_symbol" value="hu:fput" zoom-appear="14"/>
 
+        <osm-tag key="pilgrimage_symbol" value="hu:k" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol" value="hu:p" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol" value="hu:z" zoom-appear="14"/>     
+        <osm-tag key="pilgrimage_symbol" value="hu:s" zoom-appear="14"/>     
+
+        <osm-tag key="pilgrimage_symbol" value="hu:ltmp" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol" value="hu:ktmp" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol" value="hu:ptmp" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol" value="hu:ztmp" zoom-appear="14"/>     
+        <osm-tag key="pilgrimage_symbol" value="hu:stmp" zoom-appear="14"/>     
+
+
         <!-- Pilgrimage routes, mid position -->
         <osm-tag key="pilgrimage_symbol_2" value="hu:km" zoom-appear="14"/>
         <osm-tag key="pilgrimage_symbol_2" value="hu:pm" zoom-appear="14"/>
@@ -1487,6 +1524,17 @@
         <osm-tag key="pilgrimage_symbol_2" value="hu:ste" zoom-appear="14"/>        
         <osm-tag key="pilgrimage_symbol_2" value="hu:fput" zoom-appear="14"/>
 
+        <osm-tag key="pilgrimage_symbol_2" value="hu:k" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_2" value="hu:p" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_2" value="hu:z" zoom-appear="14"/>     
+        <osm-tag key="pilgrimage_symbol_2" value="hu:s" zoom-appear="14"/>     
+
+        <osm-tag key="pilgrimage_symbol_2" value="hu:ltmp" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_2" value="hu:ktmp" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_2" value="hu:ptmp" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_2" value="hu:ztmp" zoom-appear="14"/>     
+        <osm-tag key="pilgrimage_symbol_2" value="hu:stmp" zoom-appear="14"/>     
+
         <!-- Pilgrimage routes, low position -->
         <osm-tag key="pilgrimage_symbol_3" value="hu:km" zoom-appear="14"/>
         <osm-tag key="pilgrimage_symbol_3" value="hu:pm" zoom-appear="14"/>
@@ -1499,6 +1547,17 @@
         <osm-tag key="pilgrimage_symbol_3" value="hu:smz" zoom-appear="14"/>     
         <osm-tag key="pilgrimage_symbol_3" value="hu:ste" zoom-appear="14"/>        
         <osm-tag key="pilgrimage_symbol_3" value="hu:fput" zoom-appear="14"/>
+
+        <osm-tag key="pilgrimage_symbol_3" value="hu:k" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_3" value="hu:p" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_3" value="hu:z" zoom-appear="14"/>     
+        <osm-tag key="pilgrimage_symbol_3" value="hu:s" zoom-appear="14"/>     
+
+        <osm-tag key="pilgrimage_symbol_3" value="hu:ltmp" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_3" value="hu:ktmp" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_3" value="hu:ptmp" zoom-appear="14"/>
+        <osm-tag key="pilgrimage_symbol_3" value="hu:ztmp" zoom-appear="14"/>     
+        <osm-tag key="pilgrimage_symbol_3" value="hu:stmp" zoom-appear="14"/>     
 
         <!-- Ski routes -->
         <osm-tag key="nordic_ski_symbol" value="hu:kx" zoom-appear="14"/>

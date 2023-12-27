@@ -17,6 +17,10 @@
 			<xsl:with-param name="key" select="concat($pilgrimage-symbol-tag,'_3')" />
 			<xsl:with-param name="variant" select="'-3'" />
 		</xsl:call-template>    
+		<xsl:call-template name="trail-symbol-hu-major-allcolor-3">
+			<xsl:with-param name="key" select="concat($pilgrimage-symbol-tag,'_3')" />
+			<xsl:with-param name="variant" select="'-3'" />
+		</xsl:call-template>
  	</rule>
 	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
 		<xsl:call-template name="pilgrimage-symbol-hu-3">
@@ -24,6 +28,10 @@
 			<xsl:with-param name="variant" select="'-3'" />
 		</xsl:call-template>    
  	</rule>	
+	<xsl:call-template name="trail-symbol-hu-major-allcolor-3">
+		<xsl:with-param name="key" select="concat($pilgrimage-symbol-tag,'_3')" />
+		<xsl:with-param name="variant" select="'-3'" />
+	</xsl:call-template>
 </rule>	
 
 
@@ -32,13 +40,21 @@
 		<xsl:call-template name="pilgrimage-symbol-hu-3">
 			<xsl:with-param name="key" select="concat($pilgrimage-symbol-tag,'_2')" />
 			<xsl:with-param name="variant" select="'-2'" />
-		</xsl:call-template>    
+		</xsl:call-template>   
+		<xsl:call-template name="trail-symbol-hu-major-allcolor-3">
+			<xsl:with-param name="key" select="concat($pilgrimage-symbol-tag,'_2')" />
+			<xsl:with-param name="variant" select="'-2'" />
+		</xsl:call-template>
  	</rule>
 	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
 		<xsl:call-template name="pilgrimage-symbol-hu-3">
 			<xsl:with-param name="key" select="concat($pilgrimage-symbol-tag,'_2')" />
 			<xsl:with-param name="variant" select="'-2'" />
-		</xsl:call-template>    
+		</xsl:call-template> 
+		<xsl:call-template name="trail-symbol-hu-major-allcolor-3">
+			<xsl:with-param name="key" select="concat($pilgrimage-symbol-tag,'_2')" />
+			<xsl:with-param name="variant" select="'-2'" />
+		</xsl:call-template>
  	</rule>	
 </rule>	
 
@@ -52,6 +68,10 @@
 			<xsl:with-param name="key" select="$pilgrimage-symbol-tag" />
 			<xsl:with-param name="variant" select="''" />
 		</xsl:call-template>    
+		<xsl:call-template name="trail-symbol-hu-major-allcolor-3">
+			<xsl:with-param name="key" select="$pilgrimage-symbol-tag" />
+			<xsl:with-param name="variant" select="''" />
+		</xsl:call-template>
  	</rule>
 	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
 		<xsl:call-template name="pilgrimage-symbol-hu-3">
@@ -61,7 +81,12 @@
 		<xsl:call-template name="pilgrimage-symbol-hu-1">
 			<xsl:with-param name="key" select="$pilgrimage-symbol-tag" />
 			<xsl:with-param name="variant" select="''" />
-		</xsl:call-template>    
+		</xsl:call-template>  
+		<xsl:call-template name="trail-symbol-hu-major-allcolor-3">
+			<xsl:with-param name="key" select="$pilgrimage-symbol-tag" />
+			<xsl:with-param name="variant" select="''" />
+		</xsl:call-template>
+		  
  	</rule>	
 </rule>	
 </xsl:template>

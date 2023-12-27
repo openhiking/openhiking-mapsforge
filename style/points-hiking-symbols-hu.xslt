@@ -150,35 +150,59 @@
 </xsl:template>
 
 
-
-
-
-
-
-
 <xsl:template name="trail-symbol-hu-mtsz-allcolor-3">
 <xsl:param name="key" />
 <xsl:param name="variant" />
+	<xsl:call-template name="trail-symbol-hu-major-allcolor-3">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+
 	<xsl:call-template name="trail-symbol-hu-mtsz-3">
-			<xsl:with-param name="key" select="$key" />
-			<xsl:with-param name="variant" select="$variant" />
-			<xsl:with-param name="color" select="'k'" />
-		</xsl:call-template>
-		<xsl:call-template name="trail-symbol-hu-mtsz-3">
-			<xsl:with-param name="key" select="$key" />
-			<xsl:with-param name="variant" select="$variant" />
-			<xsl:with-param name="color" select="'p'" />
-		</xsl:call-template>
-		<xsl:call-template name="trail-symbol-hu-mtsz-3">
-			<xsl:with-param name="key" select="$key" />
-			<xsl:with-param name="variant" select="$variant" />
-			<xsl:with-param name="color" select="'z'" />
-		</xsl:call-template>
-		<xsl:call-template name="trail-symbol-hu-mtsz-3">
-			<xsl:with-param name="key" select="$key" />
-			<xsl:with-param name="variant" select="$variant" />
-			<xsl:with-param name="color" select="'s'" />
-		</xsl:call-template>
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="variant" select="$variant" />
+		<xsl:with-param name="color" select="'k'" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-symbol-hu-mtsz-3">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="variant" select="$variant" />
+		<xsl:with-param name="color" select="'p'" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-symbol-hu-mtsz-3">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="variant" select="$variant" />
+		<xsl:with-param name="color" select="'z'" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-symbol-hu-mtsz-3">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="variant" select="$variant" />
+		<xsl:with-param name="color" select="'s'" />
+	</xsl:call-template>
+</xsl:template>
+
+<xsl:template name="trail-symbol-hu-major-allcolor-3">
+<xsl:param name="key" />
+<xsl:param name="variant" />
+	<xsl:call-template name="trail-symbol-hu-major">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="variant" select="$variant" />
+		<xsl:with-param name="color" select="'k'" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-symbol-hu-major">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="variant" select="$variant" />
+		<xsl:with-param name="color" select="'p'" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-symbol-hu-major">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="variant" select="$variant" />
+		<xsl:with-param name="color" select="'z'" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-symbol-hu-major">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="variant" select="$variant" />
+		<xsl:with-param name="color" select="'s'" />
+	</xsl:call-template>
 </xsl:template>
 
 <xsl:template name="trail-symbol-hu-mtsz-allcolor-2">
@@ -206,7 +230,7 @@
 		</xsl:call-template>
 </xsl:template>
 
-<xsl:template name="trail-symbol-hu-mtsz-3">
+<xsl:template name="trail-symbol-hu-major">
 <xsl:param name="key" />
 <xsl:param name="variant" />
 <xsl:param name="color" />
@@ -216,6 +240,12 @@
 	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}" zoom-min="16" >
 		<symbol src="{$hikingSymbolPath}/hu-{$color}{$variant}.svg" symbol-width="{$sw-hiking-w-z16}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
+</xsl:template>
+
+<xsl:template name="trail-symbol-hu-mtsz-3">
+<xsl:param name="key" />
+<xsl:param name="variant" />
+<xsl:param name="color" />
 	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}+" zoom-min="12" zoom-max="15">
 		<symbol src="{$hikingSymbolPath}/hu-{$color}+{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
