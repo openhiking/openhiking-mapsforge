@@ -22,14 +22,13 @@
        y="1.4995" />
     <path
        id="path3-8"
-       style="fill:#ff9330;fill-opacity:1;stroke:none;stroke-width:2.65108"
-       d="M 10 11 L 10 14 L 14.5 14 L 14.5 23 L 17.5 23 L 17.5 14 L 22 14 L 22 11 L 17.5 11 L 14.5 11 L 10 11 z " />
-    <ellipse
-       style="fill:none;stroke:#ff9330;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ff7f09;fill-opacity:1;stroke:none;stroke-width:2.78362"
+       d="m 9.7,10.8 v 3.15 h 4.725 v 9.45 h 3.15 V 13.95 H 22.3 V 10.8 h -4.725 -3.15 z" />
+    <circle
+       style="fill:none;stroke:#ff7f09;stroke-width:3.059;stroke-dasharray:none;stroke-opacity:1"
        id="path2"
-       cx="16.018583"
-       cy="16"
-       rx="10.866305"
-       ry="10.847723" />
+       cx="16.000002"
+       cy="16.000002"
+       r="11.070501" />
   </g>
 </svg>
