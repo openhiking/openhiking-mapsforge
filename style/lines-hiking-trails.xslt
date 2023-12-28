@@ -69,6 +69,9 @@
         	<xsl:with-param name="color" select="$lc-trail-black" />
     	</xsl:call-template>
 	</rule>
+</rule>
+
+<rule cat="unmarked_routes" e="way" k="highway" v="*" zoom-min="11">
 	<rule  e="way" k="trail_color" v="default" >
    		<xsl:call-template name="trail-highlight-rules-unpaved">
         	<xsl:with-param name="color" select="$lc-trail-red" />

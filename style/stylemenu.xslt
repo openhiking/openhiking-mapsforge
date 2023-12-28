@@ -13,6 +13,47 @@
 
 
 <stylemenu id="openhiking" defaultvalue="topo" defaultlang="en">
+	<layer id="hiking_routes" enabled="true" visible="false">
+		<name lang="en" value="Hiking routes" />
+		<name lang="hu" value="Turistautak" />
+		<cat id="hiking_routes" />
+	</layer>
+	<layer id="pilgrimage_routes" enabled="false" visible="false">
+		<name lang="en" value="Pilgrimage routes" />
+		<name lang="hu" value="Zarándokutak" />
+		<cat id="pilgrimage_routes" />
+	</layer>
+	<layer id="unmarked_routes" enabled="false" visible="false">
+		<name lang="en" value="Unmarked hiking routes" />
+		<name lang="hu" value="Jelölés nélküli útvonalak" />
+		<cat id="unmarked_routes" />
+	</layer>    
+	<layer id="hiking_sac_highlight" enabled="false" visible="false">
+		<name lang="en" value="SAC highlighting" />
+		<name lang="hu" value="SAC nehézség jelölés" />
+		<cat id="hiking_sac_highlight" />
+	</layer>    
+    <layer id="hiking_winter" enabled="false" visible="false">
+		<name lang="en" value="Winter hiking routes" />
+		<name lang="hu" value="Téli túrautak" />        
+		<cat id="hiking_winter" />
+	</layer>
+    <layer id="ski_downhill" enabled="false" visible="false">
+        <name lang="en" value="Downhill ski tracks" />
+        <name lang="hu" value="Sílesikló pályák" />
+        <cat id="ski_downhill" />
+    </layer>  
+    <layer id="ski_nordic" enabled="false" visible="false">
+		<name lang="en" value="Cross-country ski routes " />
+		<name lang="hu" value="Sífutó utak" />        
+		<cat id="ski_nordic" />
+	</layer>
+    <layer id="ski_tour" enabled="false" visible="false">
+		<name lang="en" value="Skitour routes " />
+		<name lang="hu" value="Sítúra utak" />        
+		<cat id="ski_tour" />
+	</layer>
+
     <layer id="contours" enabled="true" visible="false">
         <name lang="en" value="Contour lines" />
         <name lang="hu" value="Szintvonalak" />
@@ -48,58 +89,25 @@
         <name lang="hu" value="Behajtási korlátozások" />
         <cat id="restricted_access" />
     </layer>
-	<layer id="hiking_routes" enabled="true" visible="false">
-		<name lang="en" value="Hiking routes" />
-		<name lang="hu" value="Turistautak" />
-		<cat id="hiking_routes" />
-	</layer>
-	<layer id="pilgrimage_routes" enabled="false" visible="false">
-		<name lang="en" value="Pilgrimage routes" />
-		<name lang="hu" value="Zarándokutak" />
-		<cat id="pilgrimage_routes" />
-	</layer>
-	<layer id="hiking_sac_highlight" enabled="false" visible="false">
-		<name lang="en" value="SAC highlighting" />
-		<name lang="hu" value="SAC nehézség jelölés" />
-		<cat id="hiking_sac_highlight" />
-	</layer>    
-    <layer id="hiking_winter" enabled="false" visible="false">
-		<name lang="en" value="Winter hiking routes" />
-		<name lang="hu" value="Téli túrautak" />        
-		<cat id="hiking_winter" />
-	</layer>
 	<layer id="cycleway_symbols" enabled="true" visible="false">
 		<name lang="en" value="Cycleway symbols" />
 		<name lang="hu" value="Kerékpárút ikonok" />
 		<cat id="cycleway_symbols" />
 	</layer>
-    <layer id="ski_downhill" enabled="false" visible="false">
-        <name lang="en" value="Downhill ski tracks" />
-        <name lang="hu" value="Sílesikló pályák" />
-        <cat id="ski_downhill" />
-    </layer>    
-    <layer id="ski_nordic" enabled="false" visible="false">
-		<name lang="en" value="Cross-country ski routes " />
-		<name lang="hu" value="Sífutó utak" />        
-		<cat id="ski_nordic" />
-	</layer>
-    <layer id="ski_tour" enabled="false" visible="false">
-		<name lang="en" value="Skitour routes " />
-		<name lang="hu" value="Sítúra utak" />        
-		<cat id="ski_tour" />
-	</layer>
-	<layer id="editorial" enabled="false" visible="false">
+   	<layer id="editorial" enabled="false" visible="false">
 		<name lang="en" value="OSM editorial symbols" />
 		<name lang="hu" value="OSM szerkesztői jelölések" />
 		<cat id="editorial" />
 	</layer>
+     
 
 	<layer id="topo" visible="true">
 		<name lang="en" value="OpenHiking layers" />    
 		<name lang="hu" value="OpenHiking rétegek" />
         <cat id="building" />
         <overlay id="hiking_routes" /> 
-        <overlay id="pilgrimage_routes" />                                  
+        <overlay id="pilgrimage_routes" />    
+        <overlay id="unmarked_routes" />    
         <overlay id="hiking_sac_highlight" />    
         <overlay id="hiking_winter" /> 
         <overlay id="ski_downhill" /> 
