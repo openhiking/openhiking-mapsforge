@@ -21,11 +21,11 @@
        x="1.4995"
        y="1.4995" />
     <rect
-       style="fill:#f8c800;fill-opacity:1;stroke:none;stroke-width:3.02362;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
+       style="fill:#f8c800;fill-opacity:1;stroke:#000000;stroke-width:0.49722;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect8076"
-       width="7.9999995"
-       height="26"
-       x="11.999999"
-       y="3" />
+       width="8.00278"
+       height="25.70278"
+       x="11.99861"
+       y="3.0986102" />
   </g>
 </svg>

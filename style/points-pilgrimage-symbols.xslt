@@ -138,6 +138,12 @@
 	<rule e="node" k="{$key}" v="{$ns-symbol-hu}stj" zoom-min="16" >
 		<symbol src="{$hikingSymbolPath}/hu-stj{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
+    <rule e="node" k="{$key}" v="{$ns-symbol-hu}sgy" zoom-min="12" zoom-max="15">
+        <symbol src="{$hikingSymbolPath}/hu-sgy{$variant}.svg" symbol-width="{$sw-hiking2-z14}" priority="{$pr-hiking-symbols}"/>
+    </rule>
+    <rule e="node" k="{$key}" v="{$ns-symbol-hu}sgy" zoom-min="16" >
+        <symbol src="{$hikingSymbolPath}/hu-sgy{$variant}.svg" symbol-width="{$sw-hiking2-z16}" priority="{$pr-hiking-symbols}"/>
+    </rule>
 </xsl:template>
 
 <xsl:template name="pilgrimage-symbol-hu-1">
@@ -148,12 +154,6 @@
     </rule>
     <rule e="node" k="{$key}" v="{$ns-symbol-hu}ste" zoom-min="16" >
         <symbol src="{$hikingSymbolPath}/hu-ste{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}"/>
-    </rule>
-    <rule e="node" k="{$key}" v="{$ns-symbol-hu}sgy" zoom-min="12" zoom-max="15">
-        <symbol src="{$hikingSymbolPath}/hu-sgy{$variant}.svg" symbol-width="{$sw-hiking2-z14}" priority="{$pr-hiking-symbols}"/>
-    </rule>
-    <rule e="node" k="{$key}" v="{$ns-symbol-hu}sgy" zoom-min="16" >
-        <symbol src="{$hikingSymbolPath}/hu-sgy{$variant}.svg" symbol-width="{$sw-hiking2-z16}" priority="{$pr-hiking-symbols}"/>
     </rule>
     <rule e="node" k="{$key}" v="{$ns-symbol-hu}smz" zoom-min="12" zoom-max="15">
         <symbol src="{$hikingSymbolPath}/hu-smz{$variant}.svg" symbol-width="{$sw-hiking2-z14}" priority="{$pr-hiking-symbols}"/>
