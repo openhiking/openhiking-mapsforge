@@ -3,8 +3,8 @@
 
 <svg
    width="36"
-   height="32"
-   viewBox="0 0 36 32"
+   height="64"
+   viewBox="0 0 36 64"
    version="1.1"
    id="SVGRoot"
    xmlns="http://www.w3.org/2000/svg"
@@ -13,7 +13,7 @@
      id="defs132" />
   <g
      id="layer1"
-     transform="matrix(0.90108096,0,0,1.0169515,-0.00224312,-0.04974473)">
+     transform="matrix(0.90108096,0,0,1.0169515,-0.00224312,32)">
     <g
        id="layer1-5"
        transform="translate(-0.06578243,-0.03626168)"

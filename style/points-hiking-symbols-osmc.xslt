@@ -34,12 +34,37 @@
 			<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
 			<xsl:with-param name="variant" select="'-2'" />
 		</xsl:call-template>
+		<xsl:call-template name="trail-symbol-osmc-white-2-allcolor">
+			<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
+			<xsl:with-param name="variant" select="'-2'" />
+		</xsl:call-template>
+		<xsl:call-template name="trail-symbol-osmc-red-2">
+			<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
+			<xsl:with-param name="variant" select="'-2'" />
+		</xsl:call-template>
+		<xsl:call-template name="trail-symbol-osmc-yellow-2">
+			<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
+			<xsl:with-param name="variant" select="'-2'" />
+		</xsl:call-template>
+
 	</rule>
 	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
 		<xsl:call-template name="trail-symbol-osmc-white-allcolor-3">
 			<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
 			<xsl:with-param name="variant" select="'-2'" />
-		</xsl:call-template>	
+		</xsl:call-template>
+		<xsl:call-template name="trail-symbol-osmc-white-2-allcolor">
+			<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
+			<xsl:with-param name="variant" select="'-2'" />
+		</xsl:call-template>
+		<xsl:call-template name="trail-symbol-osmc-red-2">
+			<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
+			<xsl:with-param name="variant" select="'-2'" />
+		</xsl:call-template>
+		<xsl:call-template name="trail-symbol-osmc-yellow-2">
+			<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
+			<xsl:with-param name="variant" select="'-2'" />
+		</xsl:call-template>
 	</rule>	
 </rule>	
 
@@ -54,6 +79,14 @@
 			<xsl:with-param name="key" select="$symbol-tag" />
 			<xsl:with-param name="variant" select="''" />
 		</xsl:call-template>
+		<xsl:call-template name="trail-symbol-osmc-white-2-allcolor">
+			<xsl:with-param name="key" select="$symbol-tag" />
+			<xsl:with-param name="variant" select="''" />
+		</xsl:call-template>
+		<xsl:call-template name="trail-symbol-osmc-red-2">
+			<xsl:with-param name="key" select="$symbol-tag" />
+			<xsl:with-param name="variant" select="''" />
+		</xsl:call-template>
 		<xsl:call-template name="trail-symbol-osmc-red">
 			<xsl:with-param name="key" select="$symbol-tag" />
 			<xsl:with-param name="variant" select="''" />
@@ -63,6 +96,10 @@
 			<xsl:with-param name="variant" select="''" />
 		</xsl:call-template>
 		<xsl:call-template name="trail-symbol-osmc-yellow">
+			<xsl:with-param name="key" select="$symbol-tag" />
+			<xsl:with-param name="variant" select="''" />
+		</xsl:call-template>
+		<xsl:call-template name="trail-symbol-osmc-yellow-2">
 			<xsl:with-param name="key" select="$symbol-tag" />
 			<xsl:with-param name="variant" select="''" />
 		</xsl:call-template>
@@ -85,6 +122,14 @@
 			<xsl:with-param name="key" select="$symbol-tag" />
 			<xsl:with-param name="variant" select="''" />
 		</xsl:call-template>
+		<xsl:call-template name="trail-symbol-osmc-white-2-allcolor">
+			<xsl:with-param name="key" select="$symbol-tag" />
+			<xsl:with-param name="variant" select="''" />
+		</xsl:call-template>
+		<xsl:call-template name="trail-symbol-osmc-red-2">
+			<xsl:with-param name="key" select="$symbol-tag" />
+			<xsl:with-param name="variant" select="''" />
+		</xsl:call-template>
 		<xsl:call-template name="trail-symbol-osmc-red">
 			<xsl:with-param name="key" select="$symbol-tag" />
 			<xsl:with-param name="variant" select="''" />
@@ -94,6 +139,10 @@
 			<xsl:with-param name="variant" select="''" />
 		</xsl:call-template>
 		<xsl:call-template name="trail-symbol-osmc-yellow">
+			<xsl:with-param name="key" select="$symbol-tag" />
+			<xsl:with-param name="variant" select="''" />
+		</xsl:call-template>
+		<xsl:call-template name="trail-symbol-osmc-yellow-2">
 			<xsl:with-param name="key" select="$symbol-tag" />
 			<xsl:with-param name="variant" select="''" />
 		</xsl:call-template>
@@ -162,6 +211,40 @@
 	</rule>
 </xsl:template>
 
+<xsl:template name="trail-symbol-osmc-white-2-allcolor">
+<xsl:param name="key" />
+<xsl:param name="variant" />
+	<xsl:call-template name="trail-symbol-osmc-white-2">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="variant" select="$variant" />
+		<xsl:with-param name="color" select="'red'" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-symbol-osmc-white-2">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="variant" select="$variant" />
+		<xsl:with-param name="color" select="'blue'" />
+	</xsl:call-template>	
+	<xsl:call-template name="trail-symbol-osmc-white-2">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="variant" select="$variant" />
+		<xsl:with-param name="color" select="'yellow'" />
+	</xsl:call-template>
+</xsl:template>
+
+
+
+<xsl:template name="trail-symbol-osmc-white-2">
+<xsl:param name="key" />
+<xsl:param name="variant" />
+<xsl:param name="color" />
+	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}white:{$color}_lower" zoom-min="12" zoom-max="15">
+		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_lower{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}"/>
+	</rule>
+	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}white:{$color}_lower" zoom-min="16">
+		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_lower{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}"/>
+	</rule>
+</xsl:template>
+
 <xsl:template name="trail-symbol-osmc-white-allcolor">
 <xsl:param name="key" />
 <xsl:param name="variant" />
@@ -199,11 +282,23 @@
 	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}white:{$color}_corner" zoom-min="16">
 		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_corner{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}"/>
 	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}white:{$color}_lower" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_lower{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}"/>
+</xsl:template>
+
+
+<xsl:template name="trail-symbol-osmc-red-2">
+<xsl:param name="key" />
+<xsl:param name="variant" />
+	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}red:white_bar" zoom-min="12" zoom-max="15">
+		<symbol src="{$hikingSymbolPath}/osmc-red-white_bar{$variant}.svg" symbol-width="{$sw-hiking-w-z14}" priority="{$pr-hiking-symbols}"/>
 	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}white:{$color}_lower" zoom-min="16">
-		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_lower{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}"/>
+	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}red:white_bar" zoom-min="16" >
+		<symbol src="{$hikingSymbolPath}/osmc-red-white_bar{$variant}.svg" symbol-width="{$sw-hiking-w-z16}" priority="{$pr-hiking-symbols}"/>
+	</rule>
+	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}red:yellow_lower" zoom-min="12" zoom-max="15">
+		<symbol src="{$hikingSymbolPath}/osmc-red-yellow_lower{$variant}.svg" symbol-width="{$sw-hiking-w-z14}" priority="{$pr-hiking-symbols}"/>
+	</rule>
+	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}red:yellow_lower" zoom-min="16" >
+		<symbol src="{$hikingSymbolPath}/osmc-red-yellow_lower{$variant}.svg" symbol-width="{$sw-hiking-w-z16}" priority="{$pr-hiking-symbols}"/>
 	</rule>
 </xsl:template>
 
@@ -211,12 +306,6 @@
 <xsl:template name="trail-symbol-osmc-red">
 <xsl:param name="key" />
 <xsl:param name="variant" />
-	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}red:white_bar" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/osmc-red-white_bar{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}red:white_bar" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/osmc-red-white_bar{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}"/>
-	</rule>
 	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}red:white_stripe" zoom-min="12" zoom-max="15">
 		<symbol src="{$hikingSymbolPath}/osmc-red-white_stripe{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}"/>
 	</rule>
@@ -240,12 +329,6 @@
 	</rule>
 	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}red:green_lower" zoom-min="16" >
 		<symbol src="{$hikingSymbolPath}/osmc-red-green_lower{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}red:yellow_lower" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/osmc-red-yellow_lower{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}red:yellow_lower" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/osmc-red-yellow_lower{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}"/>
 	</rule>
 </xsl:template>
 
@@ -279,6 +362,18 @@
 	</rule>
 </xsl:template>
 
+<xsl:template name="trail-symbol-osmc-yellow-2">
+<xsl:param name="key" />
+<xsl:param name="variant" />
+	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}yellow:blue_lower" zoom-min="12" zoom-max="15">
+		<symbol src="{$hikingSymbolPath}/osmc-yellow-blue_lower{$variant}.svg" symbol-width="{$sw-hiking-w-z14}" priority="{$pr-hiking-symbols}"/>
+	</rule>
+	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}yellow:blue_lower" zoom-min="16" >
+		<symbol src="{$hikingSymbolPath}/osmc-yellow-blue_lower{$variant}.svg" symbol-width="{$sw-hiking-w-z16}" priority="{$pr-hiking-symbols}"/>
+	</rule>
+</xsl:template>
+
+
 <xsl:template name="trail-symbol-osmc-yellow">
 <xsl:param name="key" />
 <xsl:param name="variant" />
@@ -305,12 +400,6 @@
 	</rule>
 	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}yellow:red_lower" zoom-min="16" >
 		<symbol src="{$hikingSymbolPath}/osmc-yellow-red_lower{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}yellow:blue_lower" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/osmc-yellow-blue_lower{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}yellow:blue_lower" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/osmc-yellow-blue_lower{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}"/>
 	</rule>
 	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}yellow:green_lower" zoom-min="12" zoom-max="15">
 		<symbol src="{$hikingSymbolPath}/osmc-yellow-green_lower{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}"/>

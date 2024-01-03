@@ -19,6 +19,8 @@ O,::white:blue_rectangle,7,blue,osmc:white:blue_rectangle
 O,red:white: :T:red,5,red,no:t
 O,blue:blue::E4:yellow,-1,,
 O,orange:orange_circle::T:orange,5,orange,ro:vt
+J,palp,9,red,hu:palp
+J,salp,10,yellow,hu:salp
 J,ste,12,red,hu:ste
 J,t,13,blue,hu:ft
 J,ztfl,13,green,hu:zt
