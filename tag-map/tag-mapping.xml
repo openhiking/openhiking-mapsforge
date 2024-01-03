@@ -1435,7 +1435,7 @@
         <osm-tag key="trail_symbol_3" value="osmc:white:yellow_triangle" zoom-appear="14"/>        
         <osm-tag key="trail_symbol_3" value="ro:vt" zoom-appear="14"/>
 
-        <!-- White background-->
+        <!-- White background, top position-->
         <osm-tag key="trail_symbol" value="osmc:white:red_circle" zoom-appear="14"/>   
         <osm-tag key="trail_symbol" value="osmc:white:red_corner" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="osmc:white:red_lower" zoom-appear="14"/>                
@@ -1446,16 +1446,30 @@
         
         <osm-tag key="trail_symbol" value="osmc:white:yellow_circle" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="osmc:white:yellow_corner" zoom-appear="14"/>
-        <osm-tag key="trail_symbol" value="osmc:white:yellow_lower" zoom-appear="14"/>                
-        <!-- NEW -->
-        <osm-tag key="trail_symbol" value="osmc:white:yellow_diamond" zoom-appear="14"/>
-        
-        <osm-tag key="trail_symbol" value="osmc:white:green_corner" zoom-appear="14"/>
-        <osm-tag key="trail_symbol" value="osmc:white:black_bar" zoom-appear="14"/>        
+        <osm-tag key="trail_symbol" value="osmc:white:yellow_lower" zoom-appear="14"/>     
 
+        <osm-tag key="trail_symbol" value="osmc:white:green_corner" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="osmc:white:green_lower" zoom-appear="14"/>                
 
-        <!-- RED background-->
+        <osm-tag key="trail_symbol" value="osmc:white:yellow_diamond" zoom-appear="14"/>       
+        <osm-tag key="trail_symbol" value="osmc:white:black_bar" zoom-appear="14"/>        
+
+
+        <!-- White background, mid position -->
+        <osm-tag key="trail_symbol_2" value="osmc:white:red_circle" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol_2" value="osmc:white:red_corner" zoom-appear="14"/>          
+        <osm-tag key="trail_symbol_2" value="osmc:white:red_lower" zoom-appear="14"/>                
+        <osm-tag key="trail_symbol_2" value="osmc:white:blue_circle" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol_2" value="osmc:white:blue_corner" zoom-appear="14"/>                       
+        <osm-tag key="trail_symbol_2" value="osmc:white:blue_lower" zoom-appear="14"/>                       
+        <osm-tag key="trail_symbol_2" value="osmc:white:yellow_circle" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_2" value="osmc:white:yellow_corner" zoom-appear="14"/>        
+        <osm-tag key="trail_symbol_2" value="osmc:white:yellow_lower" zoom-appear="14"/>                
+        <osm-tag key="trail_symbol_2" value="osmc:white:green_corner" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_2" value="osmc:white:green_lower" zoom-appear="14"/>                
+
+
+        <!-- RED background-, top position -->
         <osm-tag key="trail_symbol" value="osmc:red:white_bar" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="osmc:red:white_stripe" zoom-appear="14"/>        
         <osm-tag key="trail_symbol" value="osmc:red:white_lower" zoom-appear="14"/> 
@@ -1463,18 +1477,35 @@
         <osm-tag key="trail_symbol" value="osmc:red:yellow_lower" zoom-appear="14"/> 
         <osm-tag key="trail_symbol" value="osmc:red:green_lower" zoom-appear="14"/>                
 
+        <!-- RED background, mid position -->     
+        <osm-tag key="trail_symbol_2" value="osmc:red:white_bar" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_2" value="osmc:red:white_stripe" zoom-appear="14"/>        
+        <osm-tag key="trail_symbol_2" value="osmc:red:white_lower" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol_2" value="osmc:red:blue_lower" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol_2" value="osmc:red:yellow_lower" zoom-appear="14"/> 
+        <osm-tag key="trail_symbol_2" value="osmc:red:green_lower" zoom-appear="14"/>                
+
+
         <!-- BLUE background-->
         <osm-tag key="trail_symbol" value="osmc:blue:white_bar" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="osmc:blue:white_lower" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="osmc:blue:yellow_lower" zoom-appear="14"/>
 
-        <!-- YELLOW background-->
+        <!-- YELLOW background, top position -->
         <osm-tag key="trail_symbol" value="osmc:yellow:white_bar" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="osmc:yellow:white_stripe" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="osmc:yellow:white_lower" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="osmc:yellow:red_lower" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="osmc:yellow:blue_lower" zoom-appear="14"/>
         <osm-tag key="trail_symbol" value="osmc:yellow:green_lower" zoom-appear="14"/>
+
+        <!-- YELLOW background, mid position -->
+        <osm-tag key="trail_symbol_2" value="osmc:yellow:white_bar" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_2" value="osmc:yellow:white_stripe" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_2" value="osmc:yellow:white_lower" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_2" value="osmc:yellow:red_lower" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_2" value="osmc:yellow:blue_lower" zoom-appear="14"/>
+        <osm-tag key="trail_symbol_2" value="osmc:yellow:green_lower" zoom-appear="14"/>
 
         <!-- GREEN background-->
         <osm-tag key="trail_symbol" value="osmc:green:white_bar" zoom-appear="14"/>
