@@ -237,6 +237,12 @@
 <xsl:param name="key" />
 <xsl:param name="variant" />
 <xsl:param name="color" />
+	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}white:{$color}_circle" zoom-min="12" zoom-max="15">
+		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_circle{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}"/>
+	</rule>
+	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}white:{$color}_circle" zoom-min="16">
+		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_circle{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}"/>
+	</rule>
 	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}white:{$color}_lower" zoom-min="12" zoom-max="15">
 		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_lower{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}"/>
 	</rule>
@@ -270,12 +276,6 @@
 <xsl:param name="key" />
 <xsl:param name="variant" />
 <xsl:param name="color" />
-	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}white:{$color}_circle" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_circle{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}white:{$color}_circle" zoom-min="16">
-		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_circle{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}"/>
-	</rule>
 	<rule e="node" k="{$key}" v="{$ns-symbol-osmc}white:{$color}_corner" zoom-min="12" zoom-max="15">
 		<symbol src="{$hikingSymbolPath}/osmc-white-{$color}_corner{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}"/>
 	</rule>
