@@ -767,6 +767,42 @@
 		</output>
 	</translation>
 	<translation>
+		<name>Protected heritage areas</name>
+		<description>relations, do not map</description>
+        <match type="relation" mode="and">
+			<match>
+				<tag k="boundary" v="protected_area"/>                
+			</match>
+            <match mode="or">
+				<tag k="protect_class" v="21"/>
+				<tag k="protect_class" v="22"/>	
+				<tag k="protect_class" v="24"/>
+				<tag k="heritage" v=".*"/>
+            </match>
+        </match>            
+		<output>
+			<copy-unmatched/>
+		</output>
+	</translation>
+	<translation>
+		<name>Protected heritage areas</name>
+		<description>ways, do not map</description>
+        <match type="way" mode="and">
+			<match>
+				<tag k="boundary" v="protected_area"/>                
+			</match>
+            <match  mode="or">
+				<tag k="protect_class" v="21"/>
+				<tag k="protect_class" v="22"/>	
+				<tag k="protect_class" v="24"/>
+				<tag k="heritage" v=".*"/>
+            </match>
+        </match>            
+		<output>
+			<copy-unmatched/>
+		</output>
+	</translation>
+	<translation>
 		<name>Backcountry camp site </name>
 		<description>alternative tagging</description>
 		<match type="any" mode="and">
