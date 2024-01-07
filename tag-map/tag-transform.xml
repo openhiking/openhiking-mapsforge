@@ -767,6 +767,40 @@
 		</output>
 	</translation>
 	<translation>
+		<name>Strict nature reserve</name>
+		<description>unify tagging</description>
+        <match type="relation" mode="and">
+			<match>
+				<tag k="boundary" v="protected_area"/>                
+			</match>
+            <match mode="or">
+				<tag k="protect_class" v="1a"/>
+				<tag k="protect_class" v="1b"/>	
+            </match>
+        </match>            
+		<output>
+			<copy-all/>
+			<tag k="protect_class" v="1"/>			
+		</output>
+	</translation>
+	<translation>
+		<name>Strict nature reserve</name>
+		<description>unify tagging</description>
+        <match type="way" mode="and">
+			<match>
+				<tag k="boundary" v="protected_area"/>                
+			</match>
+            <match mode="or">
+				<tag k="protect_class" v="1a"/>
+				<tag k="protect_class" v="1b"/>	
+            </match>
+        </match>            
+		<output>
+			<copy-all/>
+			<tag k="protect_class" v="1"/>			
+		</output>
+	</translation>
+	<translation>
 		<name>Protected heritage areas</name>
 		<description>relations, do not map</description>
         <match type="relation" mode="and">
