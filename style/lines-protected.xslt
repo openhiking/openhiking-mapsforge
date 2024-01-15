@@ -42,6 +42,12 @@
         <rule e="any" k="*" v="*" zoom-min="18"  >
             <line stroke="{$lc-protected-strictly}" stroke-width="{$lw-protected-area-l4}" stroke-dasharray="2,2" scale="all"/>                  
         </rule> 
+        <rule e="any" k="*" v="*" zoom-min="13" zoom-max="14"  >
+            <caption k="name" font-style="bold_italic" font-family="serif" font-size="11" stroke="#ff4a35" fill="#ff7f5a"  />
+        </rule>
+        <rule e="any" k="*" v="*" zoom-min="15"  >
+            <caption k="name" font-style="bold_italic" font-family="serif" font-size="12" stroke="#ff4a35" fill="#ff7f5a"  />
+        </rule>
     </rule>        
     <rule e="any" k="protect_class" v="2|~" >
         <rule e="any" k="*" v="*" zoom-min="13"  zoom-max="15">
@@ -53,12 +59,12 @@
         <rule e="any" k="*" v="*" zoom-min="18"  >
             <line stroke="{$lc-protected}" stroke-width="{$lw-protected-area-l4}" stroke-dasharray="2,2" scale="all"/>                  
         </rule> 
-    </rule>
-    <rule e="any" k="*" v="*" zoom-min="13"  zoom-max="14">
-        <caption k="name" font-style="bold_italic" font-family="serif" font-size="11" fill="#95588d42"  />
-    </rule>
-    <rule e="any" k="*" v="*" zoom-min="14"  >
-        <caption k="name" font-style="bold_italic" font-family="serif" font-size="12" fill="#95588d42"  />
+        <rule e="any" k="*" v="*" zoom-min="13"  zoom-max="14">
+            <caption k="name" font-style="bold_italic" font-family="serif" font-size="11" fill="#95588d42"  />
+        </rule>
+        <rule e="any" k="*" v="*" zoom-min="15"  >
+            <caption k="name" font-style="bold_italic" font-family="serif" font-size="12" fill="#95588d42"  />
+        </rule>
     </rule>
 </rule>
 
