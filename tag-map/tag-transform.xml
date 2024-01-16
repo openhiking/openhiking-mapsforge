@@ -803,7 +803,7 @@
 	<translation>
 		<name>Protected heritage areas</name>
 		<description>relations, do not map</description>
-        <match type="relation" mode="and">
+        <match mode="and">
 			<match>
 				<tag k="boundary" v="protected_area"/>                
 			</match>
@@ -819,21 +819,15 @@
 		</output>
 	</translation>
 	<translation>
-		<name>Protected heritage areas</name>
-		<description>ways, do not map</description>
-        <match type="way" mode="and">
-			<match>
-				<tag k="boundary" v="protected_area"/>                
-			</match>
-            <match  mode="or">
-				<tag k="protect_class" v="21"/>
-				<tag k="protect_class" v="22"/>	
-				<tag k="protect_class" v="24"/>
-				<tag k="heritage" v=".*"/>
-            </match>
+		<name>Protection title</name>
+		<description>copy to name</description>
+        <match mode="and">
+			<tag k="protection_title" match_id="title" v=".*"/>
+			<notag k="name" v=".*"/> 
         </match>            
 		<output>
 			<copy-unmatched/>
+			<tag from_match="title" k="name" v="{0}"/>			
 		</output>
 	</translation>
 	<translation>
