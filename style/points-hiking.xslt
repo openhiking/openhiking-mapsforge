@@ -158,10 +158,10 @@
 
 <rule  e="node" k="information" v="board" zoom-min="16">
   <rule  e="any" k="board_type" v="notice" >
-    <symbol id="board" src="{$symbolPath}/board_notice.svg" symbol-width="24" priority="{$pr-board}"/>
+    <symbol id="board" src="{$symbolPath}/board_notice.svg" symbol-width="22" priority="{$pr-board}"/>
   </rule>
   <rule  e="any" k="board_type" v="~" >
-    <symbol id="board" src="{$symbolPath}/board.svg" symbol-width="24" priority="{$pr-board}"/>
+    <symbol id="board" src="{$symbolPath}/board.svg" symbol-width="22" priority="{$pr-board}"/>
   </rule>
   <rule e="node" k="*" v="*" zoom-min="17">
     <caption k="name" symbol-id="board" 

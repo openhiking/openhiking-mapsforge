@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="32.0px"
-   height="32.0px"
-   viewBox="0 0 32.0 32.0"
+   width="28"
+   height="32"
+   viewBox="0 0 28 32"
    version="1.1"
    id="SVGRoot"
    xmlns="http://www.w3.org/2000/svg"
@@ -12,7 +12,8 @@
   <defs
      id="defs54392" />
   <g
-     id="layer1">
+     id="layer1"
+     transform="matrix(1.3661152,0,0,1.3147739,-7.9634661,-6.3599457)">
     <rect
        style="fill:#c4c2c4;fill-opacity:1;stroke:#ffffff;stroke-width:0.987714;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
        id="rect10376"
