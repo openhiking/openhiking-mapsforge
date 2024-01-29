@@ -3,7 +3,7 @@
 #
 # Map building automation
 #
-# Copyright (c) 2021-2023 OpenHiking contributors
+# Copyright (c) 2021-2024 OpenHiking contributors
 # SPDX-License-Identifier: GPL-3.0-only
 #
 ########################################################
@@ -15,13 +15,11 @@ GEOFABRIK_URL=http://download.geofabrik.de/europe/
 
 ##############################################
 # Builder configuratios
-
 CONFIG_DIR=config
 BOUNDARY_DIR=boundaries
 TAGMAP_DIR=tag-map
 STYLES_DIR=style
 RESOURCES_DIR=resources
-
 
 ##############################################
 # Map configurations
@@ -78,7 +76,12 @@ ifneq (${COASTLINES},)
 MAP_INP_COASTLINES_O5M_FP=$(COASTLINES_DIR)$(PSEP)$(COASTLINES)
 endif
 
-
+ifeq (${LINUX},1)
+OSMC_COMPLETE_OPTS=--complete-ways --complete-multipolygons
+else
+OSMC_COMPLETE_OPTS=
+endif
+ 
 ##############################################
 # Hiking Symbol Generation
 
@@ -185,7 +188,7 @@ $(COMMON_DIR)$(PSEP2)%-latest.o5m: $(OSM_CACHE_DIR)$(PSEP)%-latest.osm.pbf
 	$(OSMCONVERT) $< -o=$@
 
 $(MFMAP_DIR)$(PSEP2)%-clipped.o5m: $(OSM_CACHE_DIR)$(PSEP)%-latest.osm.pbf
-	$(OSMCONVERT) --complete-ways --complete-multipolygons $< -B=$(BOUNDARY_POLYGON_FP) -o=$@
+	$(OSMCONVERT) $(OSMC_COMPLETE_OPTS) $< -B=$(BOUNDARY_POLYGON_FP) -o=$@
 
 
 $(COMMON_DIR)$(PSEP2)%-routes.o5m: $(COMMON_DIR)$(PSEP)%-latest.o5m
@@ -206,7 +209,7 @@ symbols: $(MAP_HIKING_SYMBOLS_OSM_FP) $(MAP_TRAIL_COLORS_OSC_FP)
 	@echo "Done"
 
 $(MAP_MERGED_PBF_FP):  $(MAP_INP_OSM_O5M) $(MAP_INP_SYMBOLS_OSM) $(MAP_INP_CONTOUR)
-	$(OSMCONVERT) --hash-memory=240-30-2  --complete-ways --complete-multipolygons $^ -B=$(BOUNDARY_POLYGON_FP) -o=$@
+	$(OSMCONVERT) --hash-memory=240-30-2  $(OSMC_COMPLETE_OPTS)  $^ -B=$(BOUNDARY_POLYGON_FP) -o=$@
 
 merge: $(MAP_MERGED_PBF_FP)
 	@echo "Merge completed"

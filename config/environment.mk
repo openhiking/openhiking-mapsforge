@@ -90,7 +90,6 @@ ifeq (${ComSpec},)
 	LINUX=1
 	OSMCONVERT?=osmconvert64
 	OSMFILTER?=osmfilter
-	OSMOSIS?=${HOME}/tools/osmosis-0.48.3/bin/osmosis
 	XSLTPROC?=xsltproc
 	ZIP?=zip
 	ZIPARGS?=-r
@@ -105,7 +104,6 @@ else
 	LINUX=0
 	OSMCONVERT?=osmconvert64.exe
 	OSMFILTER?=osmfilter.exe
-	OSMOSIS?=c:\Apps\osmosis-0-48\bin\osmosis
 	XSLTPROC?=xsltproc
 	ZIP?="c:\Program Files\7-Zip\7z.exe"
 	ZIPARGS?=a -tzip
