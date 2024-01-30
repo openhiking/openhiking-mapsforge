@@ -155,9 +155,9 @@ MAP_MAPSFORGE_ZIP_FP=$(MFMAP_DIR)$(PSEP)$(MAPNAME).zip
 ##############################################
 # ZIP
 ifeq ($(LINUX),1)
-	ZIPARGS?=-j
+	MAPZIPARGS?=-j
 else
-	ZIPARGS?=a -tzip 
+	MAPZIPARGS?=a -tzip 
 endif
 
 
@@ -258,7 +258,7 @@ map: $(MAP_MAPSFORGE_FP)
 	@echo "DONE"
 
 zip: $(MAP_MAPSFORGE_FP)
-	$(ZIP) $(ZIPARGS) $(MAP_MAPSFORGE_ZIP_FP) $(MAP_MAPSFORGE_FP)
+	$(ZIP) $(MAPZIPARGS) $(MAP_MAPSFORGE_ZIP_FP) $(MAP_MAPSFORGE_FP)
 
 
 style: $(MAP_STYLE_XML_FP)
