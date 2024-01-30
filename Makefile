@@ -82,6 +82,8 @@ else
 OSMC_COMPLETE_OPTS=
 endif
  
+MFMAP_DIR_DRIVE=$(word 1,$(subst :, ,$(MFMAP_DIR))):
+
 ##############################################
 # Hiking Symbol Generation
 
@@ -171,7 +173,13 @@ MAP_STYLE_XML=$(MAP_STYLE_NAME).xml
 MAP_STYLE_XML_FP = $(MAP_STYLE_OUTPUT_DIR)$(PSEP)$(MAP_STYLE_NAME)$(PSEP)$(MAP_STYLE_XML)
 
 MAP_STYLE_ZIP=$(MAP_STYLE_NAME)-theme.zip
-STYLEZIPARGS=-r
+
+ifeq ($(LINUX),1)
+	STYLEZIPARGS?=-r
+else
+	STYLEZIPARGS?=a -tzip 
+endif
+
 
 ##############################################
 # Recipes
@@ -252,8 +260,13 @@ map: $(MAP_MAPSFORGE_FP)
 zip: $(MAP_MAPSFORGE_FP)
 	$(ZIP) $(ZIPARGS) $(MAP_MAPSFORGE_ZIP_FP) $(MAP_MAPSFORGE_FP)
 
+
 style: $(MAP_STYLE_XML_FP)
+ifeq ($(LINUX),1)
 	cd $(MAP_STYLE_OUTPUT_DIR) && $(ZIP) $(STYLEZIPARGS) $(MAP_STYLE_ZIP) $(MAP_STYLE_NAME)/ 
+else
+	$(MFMAP_DIR_DRIVE) & cd $(MAP_STYLE_OUTPUT_DIR) & $(ZIP) $(STYLEZIPARGS) $(MAP_STYLE_ZIP) $(MAP_STYLE_NAME)/ 
+endif
 
 
 stage1: refresh master transform map
