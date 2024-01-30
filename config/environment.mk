@@ -92,7 +92,6 @@ ifeq (${ComSpec},)
 	OSMFILTER?=osmfilter
 	XSLTPROC?=xsltproc
 	ZIP?=zip
-	ZIPARGS?=-r
 	PSEP=$(subst /,/,/)
 	PSEP2=$(PSEP)
 	CMDLIST=&&
@@ -106,7 +105,6 @@ else
 	OSMFILTER?=osmfilter.exe
 	XSLTPROC?=xsltproc
 	ZIP?="c:\Program Files\7-Zip\7z.exe"
-	ZIPARGS?=a -tzip
 	PSEP=$(subst /,\,/)
 	PSEP2=$(PSEP)$(PSEP)
 	CMDLIST=&

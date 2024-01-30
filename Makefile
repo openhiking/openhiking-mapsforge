@@ -151,9 +151,18 @@ MAP_MAPSFORGE_ZIP_FP=$(MFMAP_DIR)$(PSEP)$(MAPNAME).zip
 
 
 ##############################################
+# ZIP
+ifeq ($(LINUX),1)
+	ZIPARGS?=-j
+else
+	ZIPARGS?=a -tzip 
+endif
+
+
+##############################################
 # Map style
-MAP_STYLE_NAME=OpenHiking
-MAP_STYLE_RESOURCES=icons/ hiking/ patterns/
+MAP_STYLE_NAME?=OpenHiking
+MAP_STYLE_RESOURCES?=icons/ hiking/ patterns/
 MAP_STYLE_XSLT_FP=$(STYLES_DIR)$(PSEP)$(MAP_STYLE_NAME).xslt
 
 
@@ -241,7 +250,7 @@ map: $(MAP_MAPSFORGE_FP)
 	@echo "DONE"
 
 zip: $(MAP_MAPSFORGE_FP)
-	$(ZIP) -j $(MAP_MAPSFORGE_ZIP_FP) $(MAP_MAPSFORGE_FP)
+	$(ZIP) $(ZIPARGS) $(MAP_MAPSFORGE_ZIP_FP) $(MAP_MAPSFORGE_FP)
 
 style: $(MAP_STYLE_XML_FP)
 	cd $(MAP_STYLE_OUTPUT_DIR) && $(ZIP) $(STYLEZIPARGS) $(MAP_STYLE_ZIP) $(MAP_STYLE_NAME)/ 
