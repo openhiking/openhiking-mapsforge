@@ -24,35 +24,11 @@ RESOURCES_DIR=resources
 ##############################################
 # Map configurations
 
-ifeq ($(MAP),)
-$(error MAP variable must be set)
-endif
-
-include $(CONFIG_DIR)/$(MAP).cfg
 
 include $(CONFIG_DIR)/environment.mk
 
-
-##############################################
-# Contour Lines
-
-PHYGHTMAP_JOBS?=2
-
-CONTOUR_START_ID=100000000000
-CONTOUR_FILE_FP=$(CONTOUR_DIR)$(PSEP)$(CONTOUR_LINES)
-
-ifeq ($(DEM_SOURCES),)
-	DEM_SOURCES=alos
-endif
-
-DEM_SOURCE_TILES=$(shell $(DEMMGR) -s -i -p $(BOUNDARY_POLYGON_FP) -d $(DEM_DIR) $(DEM_SOURCES))
-
-ifeq ($(CONTOUR_LINE_STEP),10)
-	CONTOUR_LINE_MEDIUM=20
-	CONTOUR_LINE_MAJOR=100
-else ifeq ($(CONTOUR_LINE_STEP),20)
-	CONTOUR_LINE_MEDIUM=40
-	CONTOUR_LINE_MAJOR=200
+ifneq ($(MAP),)
+include $(CONFIG_DIR)/$(MAP).cfg
 endif
 
 
@@ -163,9 +139,9 @@ endif
 
 ##############################################
 # Map style
-MAP_STYLE_NAME?=OpenHiking
+MAP_STYLE_NAME?=$(STYLE)
 MAP_STYLE_RESOURCES?=icons/ hiking/ patterns/
-MAP_STYLE_XSLT_FP=$(STYLES_DIR)$(PSEP)$(MAP_STYLE_NAME).xslt
+MAP_STYLE_XSLT_FP=$(STYLES_DIR)$(PSEP)$(MAP_STYLE_NAME)$(PSEP)$(MAP_STYLE_NAME).xslt
 
 
 MAP_STYLE_OUTPUT_DIR= $(WORKING_DIR)$(PSEP)styles
@@ -181,24 +157,34 @@ else
 endif
 
 
+
 ##############################################
 # Recipes
 
-alos:
-	$(DEMMGR) -r --poly=$(BOUNDARY_POLYGON_FP) --dem=$(DEM_DIR) --alos=$(ALOS_DOWNLOAD_SUBDIR)
+check_defined_MAP= \
+    $(if $(MAP),, \
+        $(error MAP variable must be set1))
 
-contour:
-	cd $(DEM_DIR) &&  $(PHYGHTMAP) --jobs=$(PHYGHTMAP_JOBS) \
-	 -s $(CONTOUR_LINE_STEP) -c $(CONTOUR_LINE_MAJOR),$(CONTOUR_LINE_MEDIUM)  \
-	 --start-node-id=$(CONTOUR_START_ID) --start-way-id=$(CONTOUR_START_ID) $(CONTOUR_RDP) \
-	 --max-nodes-per-tile=0 --o5m -o $(CONTOUR_FILE_FP) $(DEM_SOURCE_TILES)
+check_defined_STYLE= \
+    $(if $(STYLE),, \
+        $(error STYLE variable must be set1))
+
+
+
+.PHONY: refresh symbols merge master transform map zip style clean cleancache cleanstyle __check_MAP __check_STYLE
+
+__check_MAP: 
+	@:$(call check_defined_MAP)
+
+__check_STYLE: 
+	@:$(call check_defined_STYLE)
 
 
 $(OSM_CACHE_DIR)$(PSEP2)%-latest.osm.pbf:
 	$(WGET) $(GEOFABRIK_URL)$*-latest.osm.pbf -P $(OSM_CACHE_DIR)
 
 
-refresh:  $(MAP_OSM_LATEST_PBF) 
+refresh:  $(MAP_OSM_LATEST_PBF) | __check_MAP
 	@echo "Completed"
 
 $(COMMON_DIR)$(PSEP2)%-latest.o5m: $(OSM_CACHE_DIR)$(PSEP)%-latest.osm.pbf
@@ -212,29 +198,29 @@ $(COMMON_DIR)$(PSEP2)%-routes.o5m: $(COMMON_DIR)$(PSEP)%-latest.o5m
 	$(OSMFILTER) $< --keep-nodes= --keep-ways-relations=$(ROUTE_CONDITION)  -o=$@
 
 
-$(MAP_ROUTES_PBF_FP):  $(MAP_COUNTRY_ROUTES_O5M)
+$(MAP_ROUTES_PBF_FP):  $(MAP_COUNTRY_ROUTES_O5M) | __check_MAP
 	$(OSMCONVERT) --hash-memory=240-30-2  -B=$(BOUNDARY_POLYGON_FP) --drop-version $^  -o=$@
 
-$(MAP_HIKING_SYMBOLS_OSM_FP): $(MAP_ROUTES_PBF_FP)
+$(MAP_HIKING_SYMBOLS_OSM_FP): $(MAP_ROUTES_PBF_FP) | __check_MAP
 	$(MAKESYMBOLS) -s --start-node-id=$(SYMBOLS_START_ID) --lookup-file=$(MAP_SYMBOL_LOOKUP_FILE) --pictogram-file=$(MAP_HIKING_SYMBOLS_OSM_FP) --trail-file=$(MAP_TRAIL_COLORS_OSC_FP) $(DEFAULT_COLOR_OPT) $(MAP_ROUTES_PBF_FP)
 
-$(MAP_TRAIL_COLORS_OSC_FP): $(MAP_ROUTES_PBF_FP)
+$(MAP_TRAIL_COLORS_OSC_FP): $(MAP_ROUTES_PBF_FP) | __check_MAP
 	$(MAKESYMBOLS) --start-node-id=$(SYMBOLS_START_ID) --lookup-file=$(MAP_SYMBOL_LOOKUP_FILE) --pictogram-file=$(MAP_HIKING_SYMBOLS_OSM_FP) --trail-file=$(MAP_TRAIL_COLORS_OSC_FP) $(DEFAULT_COLOR_OPT) $(MAP_ROUTES_PBF_FP)
 
 
-symbols: $(MAP_HIKING_SYMBOLS_OSM_FP) $(MAP_TRAIL_COLORS_OSC_FP)
+symbols: $(MAP_HIKING_SYMBOLS_OSM_FP) $(MAP_TRAIL_COLORS_OSC_FP) | __check_MAP
 	@echo "Done"
 
-$(MAP_MERGED_PBF_FP):  $(MAP_INP_OSM_O5M) $(MAP_INP_SYMBOLS_OSM) $(MAP_INP_CONTOUR)
+$(MAP_MERGED_PBF_FP):  $(MAP_INP_OSM_O5M) $(MAP_INP_SYMBOLS_OSM) $(MAP_INP_CONTOUR) | __check_MAP
 	$(OSMCONVERT) --hash-memory=240-30-2  $(OSMC_COMPLETE_OPTS)  $^ -B=$(BOUNDARY_POLYGON_FP) -o=$@
 
-merge: $(MAP_MERGED_PBF_FP)
+merge: $(MAP_MERGED_PBF_FP) | __check_MAP
 	@echo "Merge completed"
 	
-$(MAP_MASTER_PBF_FP): $(MAP_MERGED_PBF_FP) $(MAP_INP_OSC) $(MAP_INP_COASTLINES_O5M_FP)
+$(MAP_MASTER_PBF_FP): $(MAP_MERGED_PBF_FP) $(MAP_INP_OSC) $(MAP_INP_COASTLINES_O5M_FP) | __check_MAP
 	$(OSMCONVERT) --hash-memory=240-30-2 --max-refs=400000 --drop-version $^ -o=$@
 
-master: $(MAP_MASTER_PBF_FP)
+master: $(MAP_MASTER_PBF_FP) | __check_MAP
 	@echo "DONE"
 
 merge-osmosis:  $(MAP_INP_OSM_PBF) $(MAP_INP_SUPP_PBF) $(MAP_INP_CONTOUR)
@@ -251,17 +237,17 @@ $(MAP_MAPSFORGE_FP): $(MAP_MASTERX_PBF_FP)
 $(MAP_STYLE_XML_FP): $(MAP_STYLE_XSLT_FP)
 	$(XSLTPROC) $< > $@
 	
-transform: $(MAP_MASTERX_PBF_FP)
+transform: $(MAP_MASTERX_PBF_FP) | __check_MAP
 	@echo "DONE"
 
-map: $(MAP_MAPSFORGE_FP)
+map: $(MAP_MAPSFORGE_FP) | __check_MAP
 	@echo "DONE"
 
-zip: $(MAP_MAPSFORGE_FP)
+zip: $(MAP_MAPSFORGE_FP) | __check_MAP
 	$(ZIP) $(MAPZIPARGS) $(MAP_MAPSFORGE_ZIP_FP) $(MAP_MAPSFORGE_FP)
 
 
-style: $(MAP_STYLE_XML_FP)
+style: $(MAP_STYLE_XML_FP) | __check_STYLE
 ifeq ($(LINUX),1)
 	cd $(MAP_STYLE_OUTPUT_DIR) && $(ZIP) $(STYLEZIPARGS) $(MAP_STYLE_ZIP) $(MAP_STYLE_NAME)/ 
 else
@@ -275,22 +261,16 @@ stage1: refresh master transform map
 all:  master transform map zip
 	@echo Map making completed successfully
 
-clean:
+clean: | __check_MAP
 	$(DEL) $(MFMAP_DIR)$(PSEP)*
 
-cleancache:
+cleancache: 
 	$(DEL) $(OSM_CACHE_DIR)$(PSEP)*.pbf
 	$(DEL) $(COMMON_DIR)$(PSEP)*.o5m
 
-cleanstyle:
+cleanstyle: | __check_STYLE
 	$(DEL) $(MAP_STYLE_XML_FP)
 	$(DEL) $(MAP_STYLE_OUTPUT_DIR)$(PSEP)$(MAP_STYLE_ZIP)
 
-
-test:
-	@echo $(MAP_INP_COASTLINES_O5M_FP)
-
-
-
-
-
+test: | __check_STYLE
+	@echo OK
