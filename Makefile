@@ -18,7 +18,7 @@ GEOFABRIK_URL=http://download.geofabrik.de/europe/
 CONFIG_DIR=config
 BOUNDARY_DIR=boundaries
 TAGMAP_DIR=tag-map
-STYLES_DIR=style
+STYLES_DIR=styles
 RESOURCES_DIR=resources
 
 ##############################################
@@ -106,11 +106,11 @@ MAP_MASTER_PBF_FP=$(MFMAP_DIR)$(PSEP)$(MAP_MASTER_PBF)
 ##############################################
 # Tag-transform and map writing
 
-MAP_TAG_TRANSFORM=tag-transform.xml
-MAP_TAG_MAP=tag-mapping.xml
+TAG_TRANSFORM_XML?=tag-transform.xml
+TAG_MAP_XML?=tag-mapping.xml
 
-MAP_TAG_TANSFORM_FP=$(TAGMAP_DIR)$(PSEP)$(MAP_TAG_TRANSFORM)
-MAP_TAG_MAP_FP=$(TAGMAP_DIR)$(PSEP)$(MAP_TAG_MAP)
+TAG_TANSFORM_XML_FP=$(TAGMAP_DIR)$(PSEP)$(TAG_TRANSFORM_XML)
+TAG_MAP_XML_FP=$(TAGMAP_DIR)$(PSEP)$(TAG_MAP_XML)
 
 MAP_MASTERX_PBF=master$(MAP)x.pbf
 MAP_MASTERX_PBF_FP=$(MFMAP_DIR)$(PSEP)$(MAP_MASTERX_PBF)
@@ -228,10 +228,10 @@ merge-osmosis:  $(MAP_INP_OSM_PBF) $(MAP_INP_SUPP_PBF) $(MAP_INP_CONTOUR)
 	@echo "Merge completed"
 
 $(MAP_MASTERX_PBF_FP): $(MAP_MASTER_PBF_FP)
-	$(OSMOSIS) --rb file=$< --tag-transform file=$(MAP_TAG_TANSFORM_FP) --wb file=$@ omitmetadata=true
+	$(OSMOSIS) --rb file=$< --tag-transform file=$(TAG_TANSFORM_XML_FP) --wb file=$@ omitmetadata=true
 
 $(MAP_MAPSFORGE_FP): $(MAP_MASTERX_PBF_FP)
-	$(OSMOSIS) --rb file=$< --mw tag-conf-file=$(MAP_TAG_MAP_FP) $(MAP_WRITER_CONF) file=$@ 
+	$(OSMOSIS) --rb file=$< --mw tag-conf-file=$(TAG_MAP_XML_FP) $(MAP_WRITER_CONF) file=$@ 
 
 
 $(MAP_STYLE_XML_FP): $(MAP_STYLE_XSLT_FP)

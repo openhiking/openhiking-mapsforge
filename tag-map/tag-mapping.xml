@@ -81,7 +81,7 @@
 
         <osm-tag key="wetland" renderable="false" value="reedbed"/>
         <osm-tag key="wetland" renderable="false" value="swamp"/>
-        <osm-tag key="wetland" renderable="false" value="tidalflag"/>
+        <osm-tag key="wetland" renderable="false" value="tidalflat"/>
 
         <osm-tag key="tidal" renderable="false" value="yes"/>
 
