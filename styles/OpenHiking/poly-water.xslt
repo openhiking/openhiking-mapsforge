@@ -12,14 +12,13 @@
 
   
 <!-- DO 6-->
-<!-- 
 <rule e="way" k="natural" v="water">
     <area fill="#69A7F5"/>    
     <rule e="way" k="tidal" v="yes">
         <area fill="#B8FCF8"/>    
     </rule>
 </rule>
--->
+
 <rule e="way" k="landuse" v="reservoir|basin">
     <area fill="#69A7F5"/>    
 </rule>
