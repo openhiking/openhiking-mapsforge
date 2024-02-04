@@ -52,6 +52,12 @@
   </rule>
   <rule e="way" k="wetland" v="tidalflat">
       <area fill="#B8FCF8"/>  
+      <rule e="way" k="*" v="*" zoom-max="15">
+        <area src="{$patternPath}/tidalflat.svg" symbol-height="16"/>
+      </rule>
+      <rule e="way" k="*" v="*" zoom-min="16">
+        <area src="{$patternPath}/tidalflat.svg" symbol-height="32"/>
+      </rule>
   </rule>
   <rule e="way" k="wetland" v="~">
       <area fill="{$wetland-color}"/> 
