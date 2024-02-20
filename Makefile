@@ -93,10 +93,9 @@ SYMBOLS_START_ID=120000000000
 ##############################################
 # Rule-based tag-transform 
 
-TAG_TRANSFORM_RULE_FP=$(TAGMAP_DIR)$(PSEP)$(TAG_TRANSFORM_RULE)
 MAP_MERGEDX_PBF=merged$(MAP)x.pbf
 MAP_MERGEDX_PBF_FP=$(MFMAP_DIR)$(PSEP)$(MAP_MERGEDX_PBF)
-
+TAG_TRANSFORM_RULE_OPTS := $(foreach rules,$(TAG_TRANSFORM_RULES),--rules=$(TAGMAP_DIR)$(PSEP)$(rules))
 
 ##############################################
 # Master 
@@ -235,10 +234,10 @@ merge: $(MAP_TTX_INP) | __check_MAP
 	
 
 $(MAP_MERGEDX_PBF_FP): $(MAP_TTX_INP)  | __check_MAP
-ifeq ($(TAG_TRANSFORM_RULE),)
+ifeq ($(TAG_TRANSFORM_RULES),)
 	$(OSMOSIS) --rb file=$< --tag-transform file=$(TAG_TANSFORM_XML_FP) --wb file=$@ omitmetadata=true
 else
-	-$(TAGXFORM) --rules=$(TAG_TRANSFORM_RULE_FP)   $^ --output=$@
+	-$(TAGXFORM) $(TAG_TRANSFORM_RULE_OPTS)   $^ --output=$@
 endif
 
 transform: $(MAP_MERGEDX_PBF_FP) | __check_MAP
@@ -301,4 +300,4 @@ cleanstyle: | __check_STYLE
 	$(DEL) $(MAP_STYLE_OUTPUT_DIR)$(PSEP)$(MAP_STYLE_ZIP)
 
 test: 
-	@echo $(TAG_TRANSFORM_RULE) $(TAGXFORM)
+	@echo $(TAG_TRANSFORM_RULE_OPTS) $(TAGXFORM)
