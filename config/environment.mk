@@ -65,6 +65,10 @@ ifneq (${MKG_MAKESYMBOLS},)
 MAKESYMBOLS=${MKG_MAKESYMBOLS}
 endif
 
+ifneq (${MKG_TAGXFORM},)
+TAGXFORM=${MKG_TAGXFORM}
+endif
+
 ifneq (${MKG_DEMMGR},)
 DEMMGR=${MKG_DEMMGR}
 endif

@@ -1,0 +1,212 @@
+scope=way
+if (highway=*) 
+    proposed=yes | disused=yes | abandoned=yes  { delete highway;  delete surface; stop }
+    highway=service & serice=driveway & access=private & trail_color!=* { delete highway;  delete surface; stop }
+
+    highway~'primary|secondary|tertiary|unclassified|residential|living_street|service|track|path|footway|cycleway|bridleway|step' & access~'no|private|agricultural|forestry' & foot!=no { foot=no }
+    access=customers & foot!=* { foot=customers }
+    vehicle!=* & motor_vehicle!=* & access~'no|private|agricultural|forestry' { motor_vehicle=no }
+    motor_vehicle!=* & vehicle~'no|private|agricultural|forestry'  { motor_vehicle=no }
+
+    if (highway~'unclassified|residential|living_street|service') 
+        surface~'fine_gravel|compacted|pebblestone|rock|grass_paver|gravel|unpaved' { highway=track; tracktype=grade1 }
+        surface~'ground|earth|dirt|grass|mud|sand' { highway=track; tracktype=grade3 }
+    end
+
+    if (highway=track)
+        surface~'paved|asphalt|chipseal|concrete|concrete:lanes|concrete:plates|paving_stones|sett|cobblestone|metal|wood' { highway=unclassified }
+        tracktype!=grade1 & surface~'fine_gravel|compacted|pebblestone|rock|grass_paver' { tracktype=grade1 } 
+        tracktype~'grade1|grade2' & surface~'ground|earth|dirt|grass|mud|sand' { tracktype=grade3 }
+    end
+
+    highway=footway  & surface~'wood|gravel|ground|earth|dirt|grass|mud|sand' { highway=path }
+    
+    if (highway=path)
+        surface~'paved|asphalt|chipseal|concrete' { highway=footway }
+        via_ferrata_scale=* { highway=via_ferrata }
+    end
+
+    tunnel~'yes|avalanche_protector|building_passage|culvert' {layer='0' }
+
+    () { delete surface; stop }
+end
+
+if (railway=*)
+    proposed=yes  { delete railway; stop }
+    tunnel~'yes|avalanche_protector|building_passage|culvert' {layer='0' }
+    () {stop}
+end
+
+if (waterway=*)
+    tunnel~'yes|avalanche_protector|building_passage|culvert' {layer='0' }
+    () {stop}
+end
+
+disused:railway~'rail|light_rail|narrow_gauge|tram' { railway=disused; disused='{disused:railway}'; delete disused:railway }
+
+# Landuses
+scope=way,relation
+if (landuse=industrial)
+    plant:source=solar { delete landuse; power=plant }
+    generator:source=solar { delete landuse; power=generator }
+end
+
+# Pitch surfaces
+scope=way,relation
+if (leisure=pitch)
+    if (surface!=*)
+        sport~'soccer|baseball|equestrian|croquet|shooting|model_aerodrome|rugby_league' { surface=grass }
+        sport~'basketball|skateboard|karting|motor' { surface=asphalt }
+        sport=tennis { surface=clay }
+        sport~'beach_handball|beachvolleyball|ultimate|volleyball' { surface=sand }
+    end
+    () { stop}
+end
+
+
+scope=way
+if (landuse=*)
+    () { stop}
+end
+
+# National parks and protected areas
+scope=way,relation
+if (boundary=protected_area)
+    protect_class~'1a|1b' { protect_class='1'  }
+    protect_class~'21|22|24' | heritage=*  { delete boundary; delete protect_class; stop }
+    protection_title=* & name!=* { name='{protection_title}' }
+    () { type=multipolygon; stop }
+end    
+
+if (boundary=national_park)
+    () { type=multipolygon; stop }
+end
+
+leisure=nature_reserve & boundary!~'national_park|protected_area'  { boundary=protected_area; type=multipolygon; stop }
+
+# Recreational grounds
+scope=way,relation
+if (landuse=recreation_ground)
+    leisure=park { delete leisure }
+    tourism=museum { delete tourism}
+    () { stop}
+end
+
+
+#Private amenities
+scope=node,way
+if (access ~'no|private' | ownership=private)
+    amenity~'parking|public_bath|spa'  { delete amenity; delete access; stop}
+    leisure~'beach_resort|sports_centre|swimming_pool'  { delete leisure; delete access; stop}
+    tourism~'alpine_hut|apartment|camp_site|wilderness_hut' { delete tourism; delete access; stop}
+
+    amenity~'bench|drinking_water|fuel|recycling|shelter|toilets'  { delete amenity; delete access; stop}
+    leisure~'firepit|golf_course|horse_riding|ice_rink|picnic_table|pitch|pitch'  { delete leisure; delete access; stop}
+    tourism~'chalet|picnic_site' { delete tourism; delete access; stop}
+end
+
+if (access=customers)
+    amenity~'bench|drinking_water|fuel|recycling|shelter|toilets'  { delete amenity; delete access; stop}
+    leisure~'firepit|golf_course|horse_riding|ice_rink|picnic_table|pitch|pitch'  { delete leisure; delete access; stop}
+    tourism~'chalet|picnic_site' { delete tourism; delete access; stop}
+end
+
+scope=node,way
+leisure=swimming_pool & (swimming_pool=personal | location=indoor ) { delete leisure; stop }
+
+#Removables
+scope=node
+barrier=gate & entrance=home { delete barrier; stop }
+
+scope=node,way
+amenity=shelter & (shelter_type=public_transport | shelter=public_transport ) { delete amenity; delete shelter_type; stop }
+
+scope=node
+natural~'saddle|tree' & name!=*  { delete natural; stop }
+
+scope=way
+natural~'valley|gorge|ridge' & name!=*  { delete natural; stop }
+
+
+# Historical objects
+scope=node,way,relation
+tourism=attraction & (amenity=* | leisure=* | historic=* | natural=* |  man_made=cross)  { delete tourism  }
+man_made~'mineshaft|adit' & (abandoned=yes | disused=yes) { historic=mine; delete man_made }
+
+if (historic=ruins)
+    if (castle_type=*)
+        () { ruins='{castle_type}'; delete castle_type; stop}
+    end
+    amenity=place_of_worship { delete amenity}
+    military=bunker { delete historic}
+    () { stop}
+end
+
+historic~'fort|manor' & ruins=* { ruins='{historic}'; historic=ruins; stop   }
+
+if (historic=castle)
+    if (ruins=*)
+        castle_type=* { historic=ruins; ruins='{castle_type}'; delete castle_type; stop }
+        () {  historic=ruins; ruins=castle; stop}
+    end
+    castle_type~'stately|manor'  { historic=manor; delete castle_type }
+end
+
+if (historic=archaeological_site)
+    site_type~'fortification|tumulus' & archaeological_site!=* { archaeological_site='{site_type}'; delete site_type  }
+    leisure=nature_reserve { delete leisure  }
+    () { stop}
+end
+
+scope=node,way
+historic=tomb & tomb=tumulus { historic=archaeological_site; archaeological_site=tumulus; delete tomb  }
+amenity=place_of_worship & ruins=yes { historic=ruins; delete amenity}
+man_made=obelisk & historic=memorial  { delete historic }
+
+# Watering points
+scope=node
+if (natural=spring)
+    spring:type=hot | temperature=hot  { natural=hot_spring }
+    water_characteristic=mineral { natural=mineral_spring }
+    () { stop}    
+end
+
+if (man_made=water_well)
+    access~'no|private|customers' | pump=powered   { delete man_made; stop }
+    name~'.*[gG]émeskút' | description~'.*[gG]émeskút' | description:hu~'.*[gG]émeskút'    { man_made=crane_well }
+    drinking_water=yes { delete man_made; amenity=drinking_water }    
+    () { stop}
+end
+
+disused:natural=spring  { natural=spring; seasonal=yes; stop }
+
+# Natural objects
+scope=node
+natural=peak & man_made~'cross|summit_cross'  { delete man_made; summit:cross=yes }
+
+
+scope=node,way
+amenity=place_of_worship & name~'.*k.polna' & building!=chapel { building=chapel }
+
+if (man_made=tower)
+    tower:type=observation & (tourism=viewpoint | viewpoint=yes | access=yes ) { tower=outlook; delete tower:type; delete tourism  }
+    tower:type=bell_tower  { man_made=campanile; delete tower:type }
+    tower:type=stupa  { man_made=stupa; delete tower:type }
+    tower:type=communication  { man_made=mast; delete tower:type }
+    () { stop}
+end
+
+
+scope=node,way
+tourism=camp_site & backcountry=yes { camp_site=basic }
+shop=alcohol & drink:wine=retail { delete shop; craft=winery }
+
+
+scope=node
+highway=bus_stop & (operator~'BKV|RATB|DPB|STB|DKV|DKV Zrt\.' | network~'VOR|MHD Košice|RAT Brașov|Miskolc Városi Közlekedési Zrt\.' ) { bus_local=yes }
+
+scope=way
+shop=* & building=yes { building=shop }
+
+scope=node
+ford~'...+' & ford!=yes { ford=yes }
