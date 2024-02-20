@@ -1,3 +1,4 @@
+scope=node,way,relation
 if (name:hu=*)
     if (landuse=* | natural=* | waterway=* | highway=* | place=* | tourism=* | amenity=* | leisure=* | historic=* | shop=* )
         name!=$name:hu {name='{name} ({name:hu})' }
