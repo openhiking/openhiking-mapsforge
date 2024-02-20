@@ -301,4 +301,4 @@ cleanstyle: | __check_STYLE
 	$(DEL) $(MAP_STYLE_OUTPUT_DIR)$(PSEP)$(MAP_STYLE_ZIP)
 
 test: 
-	@echo $(TAG_TANSFORM_XML_FP) $(MAP_TTX_INP)
+	@echo $(TAG_TRANSFORM_RULE) $(MAP_TTX_INP)
