@@ -1,0 +1,6 @@
+scope=node,way,relation
+if (name:hu=*)
+    if (landuse=* | natural=* | waterway=* | highway=* | place=* | tourism=* | amenity=* | leisure=* | historic=* | shop=* )
+        name!=$name:hu {%localname = '{name}'; name='{name} ({name:hu})' }
+    end
+end

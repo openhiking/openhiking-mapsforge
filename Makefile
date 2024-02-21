@@ -87,7 +87,7 @@ ifneq ($(DEFAULT_TRAIL_COLOR),)
 	DEFAULT_COLOR_OPT=--default-color=$(DEFAULT_TRAIL_COLOR)
 endif
 
-SYMBOLS_START_ID=120000000000
+SYMBOLS_START_ID=120000000000	
 
 
 ##############################################
@@ -96,6 +96,7 @@ SYMBOLS_START_ID=120000000000
 MAP_MERGEDX_PBF=merged$(MAP)x.pbf
 MAP_MERGEDX_PBF_FP=$(MFMAP_DIR)$(PSEP)$(MAP_MERGEDX_PBF)
 TAG_TRANSFORM_RULE_OPTS := $(foreach rules,$(TAG_TRANSFORM_RULES),--rules=$(TAGMAP_DIR)$(PSEP)$(rules))
+TAG_TRANSFORM_VAR_OPTS := $(foreach var,$(TAG_TRANSFORM_VARS),--set=$(var))
 
 ##############################################
 # Master 
@@ -237,7 +238,7 @@ $(MAP_MERGEDX_PBF_FP): $(MAP_TTX_INP)  | __check_MAP
 ifeq ($(TAG_TRANSFORM_RULES),)
 	$(OSMOSIS) --rb file=$< --tag-transform file=$(TAG_TANSFORM_XML_FP) --wb file=$@ omitmetadata=true
 else
-	-$(TAGXFORM) $(TAG_TRANSFORM_RULE_OPTS)   $^ --output=$@
+	-$(TAGXFORM) $(TAG_TRANSFORM_RULE_OPTS) $(TAG_TRANSFORM_VAR_OPTS)  $^ --output=$@
 endif
 
 transform: $(MAP_MERGEDX_PBF_FP) | __check_MAP
@@ -300,4 +301,4 @@ cleanstyle: | __check_STYLE
 	$(DEL) $(MAP_STYLE_OUTPUT_DIR)$(PSEP)$(MAP_STYLE_ZIP)
 
 test: 
-	@echo $(TAG_TRANSFORM_RULE_OPTS) $(TAGXFORM)
+	@echo $(TAG_TRANSFORM_VARS) $(TAG_TRANSFORM_VAR_OPTS)

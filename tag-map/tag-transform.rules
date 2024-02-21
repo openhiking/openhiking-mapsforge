@@ -31,6 +31,8 @@ if (highway=*)
     () { delete surface; stop }
 end
 
+disused:railway~'rail|light_rail|narrow_gauge|tram' { railway=disused; disused='{disused:railway}'; delete disused:railway; stop }
+
 if (railway=*)
     proposed=yes  { delete railway; stop }
     tunnel~'yes|avalanche_protector|building_passage|culvert' {layer='0' }
@@ -42,7 +44,6 @@ if (waterway=*)
     () {stop}
 end
 
-disused:railway~'rail|light_rail|narrow_gauge|tram' { railway=disused; disused='{disused:railway}'; delete disused:railway }
 
 # Landuses
 scope=way,relation
@@ -64,7 +65,7 @@ if (leisure=pitch)
 end
 
 
-scope=way
+scope=way,relation
 if (landuse=*)
     () { stop}
 end
@@ -82,7 +83,10 @@ if (boundary=national_park)
     () { type=multipolygon; stop }
 end
 
-leisure=nature_reserve & boundary!~'national_park|protected_area'  { boundary=protected_area; type=multipolygon; stop }
+if (leisure=nature_reserve)
+    historic=archaeological_site { delete leisure; stop}
+    boundary!~'national_park|protected_area'  { boundary=protected_area; type=multipolygon; stop }
+end
 
 # Recreational grounds
 scope=way,relation
@@ -116,7 +120,7 @@ leisure=swimming_pool & (swimming_pool=personal | location=indoor ) { delete lei
 
 #Removables
 scope=node
-barrier=gate & entrance=home { delete barrier; stop }
+barrier=gate & entrance=home { delete barrier; delete entrance; stop }
 
 scope=node,way
 amenity=shelter & (shelter_type=public_transport | shelter=public_transport ) { delete amenity; delete shelter_type; stop }
@@ -134,9 +138,7 @@ tourism=attraction & (amenity=* | leisure=* | historic=* | natural=* |  man_made
 man_made~'mineshaft|adit' & (abandoned=yes | disused=yes) { historic=mine; delete man_made }
 
 if (historic=ruins)
-    if (castle_type=*)
-        () { ruins='{castle_type}'; delete castle_type; stop}
-    end
+    ruins!=* & castle_type=* { ruins='{castle_type}' }
     amenity=place_of_worship { delete amenity}
     military=bunker { delete historic}
     () { stop}
@@ -145,17 +147,8 @@ end
 historic~'fort|manor' & ruins=* { ruins='{historic}'; historic=ruins; stop   }
 
 if (historic=castle)
-    if (ruins=*)
-        castle_type=* { historic=ruins; ruins='{castle_type}'; delete castle_type; stop }
-        () {  historic=ruins; ruins=castle; stop}
-    end
+    ruins=* {  historic=ruins; ruins=castle; stop}
     castle_type~'stately|manor'  { historic=manor; delete castle_type }
-end
-
-if (historic=archaeological_site)
-    site_type~'fortification|tumulus' & archaeological_site!=* { archaeological_site='{site_type}'; delete site_type  }
-    leisure=nature_reserve { delete leisure  }
-    () { stop}
 end
 
 scope=node,way
@@ -174,7 +167,7 @@ end
 if (man_made=water_well)
     access~'no|private|customers' | pump=powered   { delete man_made; stop }
     name~'.*[gG]émeskút' | description~'.*[gG]émeskút' | description:hu~'.*[gG]émeskút'    { man_made=crane_well }
-    drinking_water=yes { delete man_made; amenity=drinking_water }    
+    drinking_water=yes { delete man_made; amenity=drinking_water; delete drinking_water }    
     () { stop}
 end
 
@@ -198,7 +191,7 @@ end
 
 
 scope=node,way
-tourism=camp_site & backcountry=yes { camp_site=basic }
+tourism=camp_site & backcountry=yes { camp_site=basic; delete backcountry  }
 shop=alcohol & drink:wine=retail { delete shop; craft=winery }
 
 
