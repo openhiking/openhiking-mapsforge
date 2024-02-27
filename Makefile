@@ -67,7 +67,7 @@ MAP_SYMBOL_LOOKUP_FILE=$(CONFIG_DIR)$(PSEP)symbol-lookup.csv
 MAP_COUNTRY_ROUTES_O5M := $(foreach ds,$(ALL_COUNTRIES),$(COMMON_DIR)$(PSEP)$(ds)-routes.o5m)
 MAP_ROUTES_FILE=routes
 MAP_ROUTES_PBF_FP=$(MFMAP_DIR)$(PSEP)$(MAP_ROUTES_FILE).pbf
-ROUTE_CONDITION?="route=hiking or route=foot or piste:type=nordic or piste:type=skitour or piste:type=hike "
+ROUTE_CONDITION?="route=hiking or route=foot or route=bicycle or route=mtb or piste:type=nordic or piste:type=skitour or piste:type=hike "
 
 MAP_HIKING_SYMBOLS_OSM_FP=$(MFMAP_DIR)$(PSEP)symbols.osm
 MAP_TRAIL_COLORS_OSC_FP=$(MFMAP_DIR)$(PSEP)trails.osc
@@ -107,8 +107,10 @@ ifneq (${COASTLINES},)
 MAP_INP_COASTLINES_O5M_FP=$(COASTLINES_DIR)$(PSEP)$(COASTLINES)
 endif
 
+ifneq (${CONTOUR_LINES},)
 MAP_INP_CONTOUR=$(CONTOUR_DIR)$(PSEP)$(CONTOUR_LINES)
 MAP_INP_CONTOUR_ARGS=--read-pbf file=$(MAP_INP_CONTOUR)
+endif
 
 MAP_MASTER_PBF=master$(MAP).pbf
 MAP_MASTER_PBF_FP=$(MFMAP_DIR)$(PSEP)$(MAP_MASTER_PBF)
