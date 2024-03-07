@@ -33,14 +33,14 @@
 
 <rule cat="protected_area" e="way" k="boundary" v="protected_area">
     <rule e="any" k="protect_class" v="1" >
-        <rule e="any" k="*" v="*" zoom-min="13"  zoom-max="15">
-            <line stroke="{$lc-protected-strictly}" stroke-width="{$lw-protected-area-l2}" stroke-dasharray="4,3" scale="all"/>          
+        <rule e="any" k="*" v="*" zoom-min="13"  zoom-max="14">
+            <line stroke="{$lc-protected-strictly}" stroke-width="{$lw-protected-strictly-2}" stroke-dasharray="4,3" scale="all"/>          
         </rule> 
-        <rule e="any" k="*" v="*" zoom-min="16"  zoom-max="17">
-            <line stroke="{$lc-protected-strictly}" stroke-width="{$lw-protected-area-l3}" stroke-dasharray="2,2" scale="all"/>                  
+        <rule e="any" k="*" v="*" zoom-min="15"  zoom-max="16">
+            <line stroke="{$lc-protected-strictly}" stroke-width="{$lw-protected-strictly-3}" stroke-dasharray="3,3" scale="all"/>                  
         </rule> 
-        <rule e="any" k="*" v="*" zoom-min="18"  >
-            <line stroke="{$lc-protected-strictly}" stroke-width="{$lw-protected-area-l4}" stroke-dasharray="2,2" scale="all"/>                  
+        <rule e="any" k="*" v="*" zoom-min="17"  >
+            <line stroke="{$lc-protected-strictly}" stroke-width="{$lw-protected-strictly-4}" stroke-dasharray="2,2" scale="all"/>                  
         </rule> 
         <rule e="any" k="*" v="*" zoom-min="13" zoom-max="14"  >
             <caption k="name" font-style="bold_italic" font-family="serif" font-size="11" stroke="#ff4a35" fill="#ff7f5a"  />

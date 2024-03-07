@@ -157,6 +157,10 @@
 <xsl:variable name="lw-protected-area-l3">0.7</xsl:variable>
 <xsl:variable name="lw-protected-area-l4">0.5</xsl:variable>
 
+<xsl:variable name="lw-protected-strictly-2">1.5</xsl:variable>
+<xsl:variable name="lw-protected-strictly-3">0.9</xsl:variable>
+<xsl:variable name="lw-protected-strictly-4">0.4</xsl:variable>
+
 <xsl:variable name="da-tunnel">16,16</xsl:variable>
 <xsl:variable name="da-embankment">0.1,2</xsl:variable>
 <xsl:variable name="da-restricted">0.08,1.8</xsl:variable>
