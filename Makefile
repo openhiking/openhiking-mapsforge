@@ -61,7 +61,12 @@ endif
 MFMAP_DIR_DRIVE=$(word 1,$(subst :, ,$(MFMAP_DIR))):
 
 ##############################################
-# Hiking Symbol Generation
+# Route processing
+
+# Backward compatibility
+ifeq ($(GENERATE_HIKING_SYMBOLS),yes)
+ROUTE_MAPPING=yes
+endif
 
 MAP_SYMBOL_LOOKUP_FILE=$(CONFIG_DIR)$(PSEP)symbol-lookup.csv
 MAP_COUNTRY_ROUTES_O5M := $(foreach ds,$(ALL_COUNTRIES),$(COMMON_DIR)$(PSEP)$(ds)-routes.o5m)
@@ -75,7 +80,7 @@ MAP_TRAIL_COLORS_OSC_FP=$(MFMAP_DIR)$(PSEP)trails.osc
 MAP_MERGED2_PBF=merged$(MAP)2.pbf
 MAP_MERGED2_PBF_FP=$(MFMAP_DIR)$(PSEP)$(MAP_MERGED2_PBF)
 
-ifeq ($(GENERATE_HIKING_SYMBOLS),yes)
+ifeq ($(ROUTE_MAPPING),yes)
 	MAP_INP_SYMBOLS_OSM :=$(MAP_HIKING_SYMBOLS_OSM_FP)
 	MAP_INP_OSC := $(MAP_TRAIL_COLORS_OSC_FP)
 	MAP_TTX_INP := $(MAP_MERGED2_PBF_FP)
