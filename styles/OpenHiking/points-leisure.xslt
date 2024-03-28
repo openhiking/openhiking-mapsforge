@@ -40,15 +40,20 @@
     font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
   </rule>
 </rule>
-<!-- 
-<rule  e="node" k="leisure" v="swimming_pool" zoom-min="14">
-  <symbol id="swimming_pool" src="{$symbolPath}/swimming_pool.svg" symbol-width="24" priority="{$pr-swimming-pool}"/>
+
+<rule  e="node" k="leisure" v="swimming_facility" zoom-min="14">
+  <rule  e="any" k="*" v="*" zoom-max="15">
+    <symbol id="swimming_facility" src="{$symbolPath}/swimming_pool.svg" symbol-width="24" priority="{$pr-swimming-pool}"/>
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="16"> 
+    <symbol id="swimming_facility" src="{$symbolPath}/swimming_pool.svg" symbol-width="26" priority="{$pr-swimming-pool}"/>
+  </rule>     
   <rule e="any" k="*" v="*" zoom-min="16">
-    <caption k="name" symbol-id="swimming_pool" 
+    <caption k="name" symbol-id="swimming_facility" 
     font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-swimming-pool}"/>
   </rule>
 </rule>
--->
+
 
 <rule  e="any" k="leisure" v="*" >
   <rule  e="any" k="sport" v="soccer" zoom-min="15">

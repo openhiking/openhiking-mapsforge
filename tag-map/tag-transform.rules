@@ -190,6 +190,18 @@ if (man_made=tower)
 end
 
 
+# Sport & leisure
+scope=node,way
+if (leisure=*)
+    leisure!=golf_course & sport=golf { leisure=golf_course }
+    leisure!=ice_rink & sport~'ice_.*' { leisure=ice_rink }
+    leisure!=fitness_centre & sport=fitness { leisure=fitness_centre }
+    sport=swimming & leisure~'sports_centre|sports_hall|water_park'  { leisure=swimming_facility }
+    leisure=spa { amenity=public_bath }
+end        
+
+amenity=spa { amenity=public_bath }
+
 scope=node,way
 tourism=camp_site & backcountry=yes { camp_site=basic; delete backcountry  }
 shop=alcohol & drink:wine=retail { delete shop; craft=winery }

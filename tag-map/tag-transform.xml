@@ -952,6 +952,44 @@
 		</output>
 	</translation>
 	<translation>
+		<name>Swimming facility </name>
+		<description>Remapping</description>
+		<match type="any" mode="and">
+			<tag k="leisure" v="sports_centre|sports_hall|water_park"/>
+			<tag k="sport" v="swimming"/>
+        </match>                         
+		<output>
+			<copy-unmatched/>
+			<tag k="leisure" v="swimming_facility"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Golf course </name>
+		<description>Remapping</description>
+		<match type="any" mode="and">
+			<tag k="leisure" v=".*"/>
+			<tag k="sport" v="golf"/>
+			<notag k="leisure" v="golf_course"/>
+        </match>                         
+		<output>
+			<copy-unmatched/>
+			<tag k="leisure" v="golf_course"/>
+		</output>
+	</translation>
+	<translation>
+		<name>Fitness center </name>
+		<description>Remapping</description>
+		<match type="any" mode="and">
+			<tag k="leisure" v=".*"/>
+			<tag k="sport" v="fitness"/>
+			<notag k="leisure" v="fitness_centre"/>
+        </match>                         
+		<output>
+			<copy-unmatched/>
+			<tag k="leisure" v="fitness_centre"/>
+		</output>
+	</translation>
+	<translation>
 		<name>Local bus stops </name>
 		<description>selection</description>
 		<match type="any" mode="and">

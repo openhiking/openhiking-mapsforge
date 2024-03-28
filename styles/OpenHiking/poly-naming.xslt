@@ -43,7 +43,7 @@
 </rule>
 
 <rule e="way" k="leisure"
-    v="beach_resort|village_green|common|park|stadium|sports_centre|swimming_pool"
+    v="beach_resort|village_green|common|park|fitness_centre|sports_hall|sports_centre|water_park|stadium|swimming_facility"
     zoom-min="16">
     <caption fill="#202020" font-family="serif" font-size="14" font-style="italic" k="name"
         priority="{$pr-poly-label-landuse}" stroke="#FFFFFF" stroke-width="2.0" />
