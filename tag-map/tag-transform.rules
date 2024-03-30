@@ -88,15 +88,7 @@ if (leisure=nature_reserve)
     boundary!~'national_park|protected_area'  { boundary=protected_area; type=multipolygon; stop }
 end
 
-# Recreational grounds
-scope=way,relation
-if (landuse=recreation_ground)
-    leisure=park { delete leisure }
-    tourism=museum { delete tourism}
-    () { stop}
-end
-
-
+### Clean-Ups
 #Private amenities
 scope=node,way
 if (access ~'no|private' | ownership=private)
@@ -130,6 +122,50 @@ natural~'saddle|tree' & name!=*  { delete natural; stop }
 
 scope=way
 natural~'valley|gorge|ridge' & name!=*  { delete natural; stop }
+
+### Commong Remapping
+scope=node,way
+sport=swimming & leisure~'sports_centre|sports_hall|water_park'  { leisure=swimming_facility; delete sport }
+
+
+### Buildings
+scope=way
+if (building=*)
+    building~'kiosk' { building=supermarket}
+    building~'yes|commercial|retail|warehouse' & shop=* { building=supermarket}
+
+    building~'chapel|temple|church|cathedral|basilica|monastery|synagogue|mosque' { building=religious}
+
+    building~'civic|fire_station|government' { building=public}
+
+    building=yes & tourism=museum { building=museum}
+
+    building~'kindergarten|school|college|university' { building=education}
+    building=yes & amenity~'kindergarten|school|college|university' { building=education}
+
+    building~'clinic' & building!=hospital {  building=hospital}
+    building=yes & amenity~'clinic|hospital'  { building=hospital}
+
+    building~'train_station|parking' { building=transportation}
+
+    building~'riding_hall|sports_hall|stadium' { building=sports_centre }
+
+    building~'castle|pagoda|windmill' {  building=historic}
+    building=* & (heritage=* | historic=*)  & man_made!=tower & building!=historic { building=historic}
+end
+
+leisure=swimming_facility { building=swimming_facility }
+leisure=sports_hall & building!=sports_centre {building=sports_centre}
+
+
+# Recreational grounds
+scope=way,relation
+if (landuse=recreation_ground)
+    leisure=park { delete leisure }
+    tourism=museum { delete tourism}
+    () { stop}
+end
+
 
 
 # Historical objects
@@ -190,13 +226,12 @@ if (man_made=tower)
 end
 
 
-# Sport & leisure
+### Sport & leisure
 scope=node,way
 if (leisure=*)
     leisure!=golf_course & sport=golf { leisure=golf_course; delete sport }
     leisure!=ice_rink & sport~'ice_.*' { leisure=ice_rink; delete sport }
     leisure!=fitness_centre & sport=fitness { leisure=fitness_centre; delete sport }
-    sport=swimming & leisure~'sports_centre|sports_hall|water_park'  { leisure=swimming_facility; delete sport }
     leisure=spa { amenity=public_bath }
 end        
 
