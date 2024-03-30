@@ -154,11 +154,11 @@ if (building=*)
 
     # Others
     building~'apartments|barracks|building|bungalow|cabin|detached|dormitory|farm|hotel|house|residential' { building=yes}
-    building~'commercial|industrial|office|retail|warehouse' { building=yes}
-    building~'barn|conservatory|cowshed|farm_auxiliary|stable' { building=yes}
+    building~'commercial|factory|industrial|office|retail|warehouse' { building=yes}
+    building~'barn|conservatory|cowshed|farm_auxiliary|hut|shed|shelter|stable' { building=yes}
     building~'grandstand|pavilion' { building=yes}
     building~'boathouse|hangar|garages|water_tower|silo' { building=yes}
-    building~'bunker|hangar' { building=yes}
+    building~'bunker|hangar|embassy' { building=yes}
 
 end
 
