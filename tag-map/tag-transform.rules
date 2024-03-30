@@ -131,12 +131,11 @@ sport=swimming & leisure~'sports_centre|sports_hall|water_park'  { leisure=swimm
 ### Buildings
 scope=way
 if (building=*)
-    building~'kiosk' { building=supermarket}
-    building~'yes|commercial|retail|warehouse' & shop=* { building=supermarket}
+    building~'yes|commercial|kiosk|retail|warehouse' & shop~'department_store|mall|supermarket' {  building=supermarket}
 
     building~'chapel|temple|church|cathedral|basilica|monastery|synagogue|mosque' { building=religious}
 
-    building~'civic|fire_station|government' { building=public}
+    building~'civic|fire_station|government|library' { building=public}
 
     building=yes & tourism=museum { building=museum}
 
@@ -150,8 +149,17 @@ if (building=*)
 
     building~'riding_hall|sports_hall|stadium' { building=sports_centre }
 
-    building~'castle|pagoda|windmill' {  building=historic}
+    building~'castle|gatehouse|pagoda|windmill' {  building=historic}
     building=* & (heritage=* | historic=*)  & man_made!=tower & building!=historic { building=historic}
+
+    # Others
+    building~'apartments|barracks|building|bungalow|cabin|detached|dormitory|farm|hotel|house|residential' { building=yes}
+    building~'commercial|industrial|office|retail|warehouse' { building=yes}
+    building~'barn|conservatory|cowshed|farm_auxiliary|stable' { building=yes}
+    building~'grandstand|pavilion' { building=yes}
+    building~'boathouse|hangar|garages|water_tower|silo' { building=yes}
+    building~'bunker|hangar' { building=yes}
+
 end
 
 leisure=swimming_facility { building=swimming_facility }

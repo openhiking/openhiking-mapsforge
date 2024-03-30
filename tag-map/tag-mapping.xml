@@ -1088,7 +1088,7 @@
         <osm-tag key="building" label-position="true" value="swimming_facility" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="transportation" zoom-appear="15"/>
 
-        
+
         <osm-tag key="building" label-position="true" value="apartment" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="apartments" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="barn" zoom-appear="15"/>
@@ -1132,7 +1132,7 @@
         <osm-tag key="building" label-position="true" value="semidetached_house" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="shed" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="shelter" zoom-appear="15"/>
-        <osm-tag key="building" label-position="true" value="shop" zoom-appear="15"/>
+        <osm-tag key="building" label-position="true" value="shop" zoom-appear="15"/>     
         <osm-tag key="building" label-position="true" value="terrace" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="train_station" zoom-appear="14"/>
         <osm-tag key="building" label-position="true" value="university" zoom-appear="13"/>
