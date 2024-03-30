@@ -675,7 +675,7 @@
         <osm-tag key="leisure" value="playground" label-position="true" zoom-appear="14"/>
         <osm-tag key="leisure" value="sports_centre" label-position="true" zoom-appear="14"/>        
         <osm-tag key="leisure" value="stadium" label-position="true" zoom-appear="14"/>  
-        <osm-tag key="leisure" value="swimming_facility" label-position="true" zoom-appear="15"/>              
+        <osm-tag key="leisure" value="swimming_facility" label-position="true" zoom-appear="14"/>              
         <osm-tag key="leisure" value="swimming_pool" label-position="true" zoom-appear="15"/>
         <osm-tag key="leisure" value="water_park" label-position="true" zoom-appear="14"/>
         
@@ -706,7 +706,7 @@
         <osm-tag key="leisure" value="playground" zoom-appear="14"/>
         <osm-tag key="leisure" value="sports_centre" zoom-appear="14"/>        
         <osm-tag key="leisure" value="stadium" zoom-appear="14"/>   
-        <osm-tag key="leisure" value="swimming_facility" zoom-appear="15"/>             
+        <osm-tag key="leisure" value="swimming_facility" zoom-appear="14"/>             
         <osm-tag key="leisure" value="water_park" zoom-appear="15"/>
 
         <osm-tag key="amenity" value="public_bath" zoom-appear="15"/>

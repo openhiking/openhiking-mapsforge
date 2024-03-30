@@ -146,6 +146,7 @@ if (building=*)
     building~'train_station|parking' { building=transportation}
 
     building~'riding_hall|sports_hall|stadium' { building=sports_centre }
+    leisure=sports_centre { building=sports_centre; delete leisure }
 
     building~'castle|gatehouse|pagoda|windmill' {  building=historic}
     building=* & (heritage=* | historic=*)  & man_made!=tower & building!=historic { building=historic}
@@ -161,7 +162,7 @@ if (building=*)
 end
 
 leisure=swimming_facility { building=swimming_facility }
-leisure=sports_hall & building!=sports_centre {building=sports_centre}
+leisure=sports_hall & building!=sports_centre {building=sports_centre }
 
 
 # Recreational grounds

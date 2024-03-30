@@ -41,12 +41,12 @@
   </rule>
 </rule>
 
-<rule  e="node" k="leisure" v="swimming_facility" zoom-min="14">
-  <rule  e="any" k="*" v="*" zoom-max="15">
-    <symbol id="swimming_facility" src="{$symbolPath}/swimming_pool.svg" symbol-width="24" priority="{$pr-swimming-pool}"/>
+<rule  e="any" k="leisure" v="swimming_facility" zoom-min="14">
+  <rule  e="any" k="*" v="*" zoom-max="16">
+    <symbol id="swimming_facility" src="{$symbolPath}/swimming_pool.svg" symbol-width="18" priority="{$pr-swimming-pool}"/>
   </rule>
-  <rule  e="any" k="*" v="*" zoom-min="16"> 
-    <symbol id="swimming_facility" src="{$symbolPath}/swimming_pool.svg" symbol-width="26" priority="{$pr-swimming-pool}"/>
+  <rule  e="any" k="*" v="*" zoom-min="17"> 
+    <symbol id="swimming_facility" src="{$symbolPath}/swimming_pool.svg" symbol-width="24" priority="{$pr-swimming-pool}"/>
   </rule>     
   <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="swimming_facility" 
