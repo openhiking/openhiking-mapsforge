@@ -5,7 +5,7 @@
 <xsl:template name="poly-buildings">
 <rule cat="buildings" e="way" k="*" v="*" zoom-min="15">
   <rule e="way" k="building" v="*">
-    <!--
+
     <rule e="way" k="shop" v="~">
       <area fill="#B0CBCBCB" stroke="#8F8F8F" stroke-width="0.6" scale="none" />
     </rule>
@@ -19,6 +19,7 @@
       <area fill="#B0A3D3D9" stroke="#1b8389" stroke-width="1" scale="none" />
     </rule>
   </rule>
+  <!-- 
   <rule e="way" k="building" v="cathedral|church|chapel">
     <area fill="#B0d19158" stroke="#8F8F8F" stroke-width="1.6" scale="none" />
   </rule>
@@ -53,7 +54,7 @@
     <rule e="way" k="building" v="yes">
       <area fill="#B0CBCBCB" stroke="#8F8F8F" stroke-width="0.6" scale="none" />
     </rule>
-  </rule>
+
 </rule>
 </xsl:template>
 </xsl:stylesheet>

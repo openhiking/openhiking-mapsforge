@@ -1,3 +1,4 @@
+### Highways
 scope=way
 if (highway=*) 
     proposed=yes | disused=yes | abandoned=yes  { delete highway;  delete surface; stop }
@@ -31,6 +32,7 @@ if (highway=*)
     () { delete surface; stop }
 end
 
+### Railways
 disused:railway~'rail|light_rail|narrow_gauge|tram' { railway=disused; disused='{disused:railway}'; delete disused:railway; stop }
 
 if (railway=*)
@@ -39,13 +41,14 @@ if (railway=*)
     () {stop}
 end
 
+### Waterways
 if (waterway=*)
     tunnel~'yes|avalanche_protector|building_passage|culvert' {layer='0' }
     () {stop}
 end
 
 
-# Landuses
+### Landuses
 scope=way,relation
 if (landuse=industrial)
     plant:source=solar { delete landuse; power=plant }
@@ -70,7 +73,7 @@ if (landuse=*)
     () { stop}
 end
 
-# National parks and protected areas
+### National parks and protected areas
 scope=way,relation
 if (boundary=protected_area)
     protect_class~'1a|1b' { protect_class='1'  }
@@ -109,15 +112,10 @@ end
 
 scope=node,way
 leisure=swimming_pool & (swimming_pool=personal | location=indoor ) { delete leisure; stop }
-
-#Removables
-scope=node
-barrier=gate & entrance=home { delete barrier; delete entrance; stop }
-
-scope=node,way
 amenity=shelter & (shelter_type=public_transport | shelter=public_transport ) { delete amenity; delete shelter_type; stop }
 
 scope=node
+barrier=gate & entrance=home { delete barrier; delete entrance; stop }
 natural~'saddle|tree' & name!=*  { delete natural; stop }
 
 scope=way
