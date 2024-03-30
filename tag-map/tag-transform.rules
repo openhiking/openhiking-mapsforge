@@ -193,10 +193,10 @@ end
 # Sport & leisure
 scope=node,way
 if (leisure=*)
-    leisure!=golf_course & sport=golf { leisure=golf_course }
-    leisure!=ice_rink & sport~'ice_.*' { leisure=ice_rink }
-    leisure!=fitness_centre & sport=fitness { leisure=fitness_centre }
-    sport=swimming & leisure~'sports_centre|sports_hall|water_park'  { leisure=swimming_facility }
+    leisure!=golf_course & sport=golf { leisure=golf_course; delete sport }
+    leisure!=ice_rink & sport~'ice_.*' { leisure=ice_rink; delete sport }
+    leisure!=fitness_centre & sport=fitness { leisure=fitness_centre; delete sport }
+    sport=swimming & leisure~'sports_centre|sports_hall|water_park'  { leisure=swimming_facility; delete sport }
     leisure=spa { amenity=public_bath }
 end        
 
