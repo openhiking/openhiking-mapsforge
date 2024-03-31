@@ -131,7 +131,8 @@ scope=way
 if (building=*)
     building~'yes|commercial|kiosk|retail|warehouse' & shop~'department_store|mall|supermarket' {  building=supermarket}
 
-    building~'chapel|temple|church|cathedral|basilica|monastery|synagogue|mosque' { building=religious}
+    #building~'chapel|temple|church|cathedral|basilica|monastery|synagogue|mosque' { building=religious}
+    building=temple { building=church}
 
     building~'civic|fire_station|government|library' { building=public}
 

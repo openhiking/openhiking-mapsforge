@@ -1082,25 +1082,28 @@
         <osm-tag key="building" label-position="true" value="hospital" zoom-appear="15"/>    
         <osm-tag key="building" label-position="true" value="museum" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="public" zoom-appear="15"/>
-        <osm-tag key="building" label-position="true" value="religious" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="sports_centre" zoom-appear="15"/>    
         <osm-tag key="building" label-position="true" value="supermarket" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="swimming_facility" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="transportation" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="yes" zoom-appear="15"/>
 
+        <osm-tag key="building" label-position="true" value="basilica" zoom-appear="15"/>
+        <osm-tag key="building" label-position="true" value="cathedral" zoom-appear="15"/>
+        <osm-tag key="building" label-position="true" value="chapel" zoom-appear="15"/>
+        <osm-tag key="building" label-position="true" value="church" zoom-appear="15"/>
+        <osm-tag key="building" label-position="true" value="monastery" zoom-appear="15"/>
+        <osm-tag key="building" label-position="true" value="mosque" zoom-appear="15"/>
+        <osm-tag key="building" label-position="true" value="synagogue" zoom-appear="15"/>
+ 
 <!-- 
         <osm-tag key="building" label-position="true" value="apartment" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="apartments" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="barn" zoom-appear="15"/>
-        <osm-tag key="building" label-position="true" value="basilica" zoom-appear="15"/>
-        <osm-tag key="building" label-position="true" value="block" zoom-appear="15"/>
+         <osm-tag key="building" label-position="true" value="block" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="building" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="cabin" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="castle" zoom-appear="15"/>
-        <osm-tag key="building" label-position="true" value="cathedral" zoom-appear="15"/>
-        <osm-tag key="building" label-position="true" value="chapel" zoom-appear="15"/>
-        <osm-tag key="building" label-position="true" value="church" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="civic" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="commercial" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="detached" zoom-appear="15"/>
@@ -1120,11 +1123,11 @@
         <osm-tag key="building" label-position="true" value="industrial" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="library" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="manufacture" zoom-appear="15"/>
-        <osm-tag key="building" label-position="true" value="monastery" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="mosque" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="office" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="residential" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="Residential" zoom-appear="15"/>
+        <osm-tag key="building" label-position="true" value="religious" zoom-appear="15"/> 
         <osm-tag key="building" label-position="true" value="retail" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="roof" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="ruins" zoom-appear="15"/>
