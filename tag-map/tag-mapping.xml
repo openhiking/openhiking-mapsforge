@@ -1087,8 +1087,9 @@
         <osm-tag key="building" label-position="true" value="supermarket" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="swimming_facility" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="transportation" zoom-appear="15"/>
+        <osm-tag key="building" label-position="true" value="yes" zoom-appear="15"/>
 
-
+<!-- 
         <osm-tag key="building" label-position="true" value="apartment" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="apartments" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="barn" zoom-appear="15"/>
@@ -1138,7 +1139,7 @@
         <osm-tag key="building" label-position="true" value="university" zoom-appear="13"/>
         <osm-tag key="building" label-position="true" value="wall" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="warehouse" zoom-appear="15"/>
-        <osm-tag key="building" label-position="true" value="yes" zoom-appear="15"/>
+    -->    
     </ways>
 
 
