@@ -14,10 +14,7 @@
       <area fill="#B0CD7878" stroke="#550000" stroke-width="0.6" scale="none" />
     </rule>
   </rule>
-  <rule e="way" k="building" v="cathedral|church|chapel">
-    <area fill="#B0d19158" stroke="#8F8F8F" stroke-width="1.6" scale="none" />
-  </rule>
-  <rule e="way" k="building" v="shop|retail">
+   <rule e="way" k="building" v="shop|retail">
       <area fill="#C783A4" stroke="#8F8F8F" stroke-width="0.6" scale="none" />
   </rule>
   <rule e="way" k="building" v="stadium">
@@ -30,8 +27,8 @@
     <rule e="way" k="building" v="supermarket">
       <area fill="#C783A4" stroke="#8F8F8F" stroke-width="0.6" scale="none" />
     </rule>
-   <rule e="way" k="building" v="religious">
-      <area fill="#B0d19158" stroke="#8F8F8F" stroke-width="0.6" scale="none" />
+    <rule e="way" k="building" v="chapel|church|cathedral|basicila|monastry|mosque|synagogue">
+      <area fill="#B0d19158" stroke="#8F8F8F" stroke-width="1.6" scale="none" />
     </rule>
      <rule e="way" k="building" v="museum">
       <area fill="#9c626a" stroke="#8F8F8F" stroke-width="0.6" scale="none" />
