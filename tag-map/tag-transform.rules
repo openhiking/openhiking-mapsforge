@@ -127,7 +127,7 @@ sport=swimming & leisure~'sports_centre|sports_hall|water_park'  { leisure=swimm
 
 
 ### Buildings
-scope=way
+scope=way,relation
 if (building=*)
     building~'yes|commercial|kiosk|retail|warehouse' & shop~'department_store|mall|supermarket' {  building=supermarket}
 
