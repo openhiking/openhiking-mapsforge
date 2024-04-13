@@ -84,7 +84,9 @@
   <xsl:call-template name="stylemenu"/>
   
   <xsl:call-template name="poly-landuse"/>
+  
   <xsl:call-template name="poly-water"/>
+  
   <xsl:call-template name="poly-facilities"/>
   <xsl:call-template name="poly-highways"/>
   <xsl:call-template name="poly-sport"/>
@@ -141,9 +143,6 @@
   <xsl:call-template name="points-industrial"/>
   <xsl:call-template name="points-leisure"/>
   <xsl:call-template name="points-military"/>  
-  <!--
-  <xsl:call-template name="points-obstacles"/>
-  -->
   <xsl:call-template name="points-places"/>  
   <xsl:call-template name="points-religion"/>
   <xsl:call-template name="points-shops"/>

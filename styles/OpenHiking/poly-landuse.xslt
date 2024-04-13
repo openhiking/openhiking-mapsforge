@@ -12,6 +12,7 @@
 
 <xsl:template name="poly-landuse">
 
+
 <rule e="way" k="natural" v="sea">
   <area fill="#8CC5FF"/>
 </rule>
@@ -80,7 +81,7 @@
   </rule>
 </rule>  
 
-
+ 
 <rule e="way" k="natural" v="beach">
   <area fill="#F8F898" scale="none"/>
 </rule>
