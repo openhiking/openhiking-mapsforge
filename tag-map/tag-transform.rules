@@ -4,7 +4,7 @@ if (highway=*)
     proposed=yes | disused=yes | abandoned=yes  { delete highway;  delete surface; stop }
     highway=service & serice=driveway & access=private & trail_color!=* { delete highway;  delete surface; stop }
 
-    highway~'primary|secondary|tertiary|unclassified|residential|living_street|service|track|path|footway|cycleway|bridleway|step' & access~'no|private|agricultural|forestry' & foot!=no { foot=no }
+    highway~'primary|secondary|tertiary|unclassified|residential|living_street|service|track|path|footway|cycleway|bridleway|step' & access~'no|private|agricultural|forestry' & foot!=* { foot=no }
     access=customers & foot!=* { foot=customers }
     vehicle!=* & motor_vehicle!=* & access~'no|private|agricultural|forestry' { motor_vehicle=no }
     motor_vehicle!=* & vehicle~'no|private|agricultural|forestry'  { motor_vehicle=no }
