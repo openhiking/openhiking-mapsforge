@@ -16,7 +16,7 @@ if (highway=*)
 
     if (highway=track)
         surface~'paved|asphalt|chipseal|concrete|concrete:lanes|concrete:plates|paving_stones|sett|cobblestone|metal|wood' { highway=unclassified }
-        tracktype!=grade1 & surface~'fine_gravel|compacted|pebblestone|rock|grass_paver' { tracktype=grade1 } 
+        tracktype!=grade1 & surface~'fine_gravel|compacted|pebblestone|grass_paver' { tracktype=grade1 } 
         tracktype~'grade1|grade2' & surface~'ground|earth|dirt|grass|mud|sand' { tracktype=grade3 }
     end
 
