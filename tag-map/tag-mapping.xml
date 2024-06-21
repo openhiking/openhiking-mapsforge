@@ -1705,6 +1705,7 @@
         <osm-tag key="information" value="office" renderable="false"/>                 
 
         <osm-tag key="board_type" value="notice" renderable="false"/> 
+        <osm-tag key="board_type" value="rules" renderable="false"/> 
 
     </pois>
 </tag-mapping>

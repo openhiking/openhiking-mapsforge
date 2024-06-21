@@ -157,7 +157,7 @@
 
 
 <rule  e="node" k="information" v="board" zoom-min="16">
-  <rule  e="any" k="board_type" v="notice" >
+  <rule  e="any" k="board_type" v="notice|rules" >
     <symbol id="board" src="{$symbolPath}/board_notice.svg" symbol-width="20" priority="{$pr-board}"/>
   </rule>
   <rule  e="any" k="board_type" v="~" >
