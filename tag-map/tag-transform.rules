@@ -226,7 +226,7 @@ scope=node,way
 amenity=place_of_worship & name~'.*k.polna' & building!=chapel { building=chapel }
 
 if (man_made=tower)
-    tower:type=observation & (tourism=viewpoint | viewpoint=yes | access=yes ) { tower=outlook; delete tower:type; delete tourism  }
+    tower:type~'observation|observation;communication' & (tourism=viewpoint | viewpoint=yes | access=yes ) { tower=outlook; delete tower:type; delete tourism  }
     tower:type=bell_tower  { man_made=campanile; delete tower:type }
     tower:type=stupa  { man_made=stupa; delete tower:type }
     tower:type=communication  { man_made=mast; delete tower:type }
