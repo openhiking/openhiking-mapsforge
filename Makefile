@@ -10,10 +10,6 @@
 
 
 ##############################################
-# External data sources
-GEOFABRIK_URL=http://download.geofabrik.de/europe/
-
-##############################################
 # Builder configuratios
 CONFIG_DIR=config
 BOUNDARY_DIR=boundaries
@@ -33,18 +29,38 @@ endif
 
 
 ##############################################
+# OSM Data Acquisition
+
+GEOFABRIK_URL_EUROPE=http://download.geofabrik.de/europe/
+GEOFABRIK_URL_ASIA=https://download.geofabrik.de/asia/
+GEOFABRIK_URL_GLOBAL=https://download.geofabrik.de/
+
+OSM_COUNTRIES_EUROPE_ALL := $(OSM_COUNTRIES_EUROPE) $(OSM_COUNTRIES_EUROPE_PARTIAL)
+OSM_COUNTRIES_ASIA_ALL := $(OSM_COUNTRIES_ASIA) $(OSM_COUNTRIES_ASIA_PARTIAL)
+OSM_COUNTRIES_GLOBAL_ALL := $(OSM_COUNTRIES_GLOBAL) $(OSM_COUNTRIES_GLOBAL_PARTIAL)
+
+OSM_COUNTRIES_EUROPE_FP := $(foreach ds,$(OSM_COUNTRIES_EUROPE_ALL),$(OSM_CACHE_DIR)$(PSEP)$(ds)-latest.osm.pbf)
+OSM_COUNTRIES_ASIA_FP := $(foreach ds,$(OSM_COUNTRIES_ASIA_ALL),$(OSM_CACHE_DIR)$(PSEP)$(ds)-latest.osm.pbf)
+OSM_COUNTRIES_GLOBAL_FP := $(foreach ds,$(OSM_COUNTRIES_GLOBAL_ALL),$(OSM_CACHE_DIR)$(PSEP)$(ds)-latest.osm.pbf)
+
+MAP_OSM_LATEST_PBF = $(OSM_COUNTRIES_EUROPE_FP) $(OSM_COUNTRIES_ASIA_FP) $(OSM_COUNTRIES_GLOBAL_FP)
+
+
+##############################################
 # Preprocessing
 
 COMMON_DIR=$(WORKING_DIR)$(PSEP)common
 MFMAP_DIR = $(WORKING_DIR)$(PSEP)mf-$(MAP)
 
-ALL_COUNTRIES=$(OSM_COUNTRY_LIST) $(OSM_COUNTRY_LIST_PARTIAL)
+OSM_COUNTRIES_FULL = $(OSM_COUNTRIES_EUROPE) $(OSM_COUNTRIES_ASIA) $(OSM_COUNTRIES_GLOBAL)
+OSM_COUNTRIES_PARTIAL = $(OSM_COUNTRIES_EUROPE_PARTIAL) $(OSM_COUNTRIES_ASIA_PARTIAL) $(OSM_COUNTRIES_GLOBAL_PARTIAL)
+ALL_COUNTRIES=$(OSM_COUNTRIES_FULL) $(OSM_COUNTRIES_PARTIAL)
+
 
 BOUNDARY_POLYGON_FP=$(BOUNDARY_DIR)$(PSEP)$(BOUNDARY_POLYGON)
-MAP_OSM_LATEST_PBF := $(foreach ds,$(ALL_COUNTRIES),$(OSM_CACHE_DIR)$(PSEP)$(ds)-latest.osm.pbf)
 
-MAP_INP_OSM_O5M_1 := $(foreach ds,$(OSM_COUNTRY_LIST),$(COMMON_DIR)$(PSEP)$(ds)-latest.o5m)
-MAP_INP_OSM_O5M_2 := $(foreach ds,$(OSM_COUNTRY_LIST_PARTIAL),$(MFMAP_DIR)$(PSEP)$(ds)-clipped.o5m)
+MAP_INP_OSM_O5M_1 := $(foreach ds,$(OSM_COUNTRIES_FULL),$(COMMON_DIR)$(PSEP)$(ds)-latest.o5m)
+MAP_INP_OSM_O5M_2 := $(foreach ds,$(OSM_COUNTRIES_PARTIAL),$(MFMAP_DIR)$(PSEP)$(ds)-clipped.o5m)
 
 MAP_INP_OSM_O5M := $(MAP_INP_OSM_O5M_1) $(MAP_INP_OSM_O5M_2)
 
@@ -198,12 +214,16 @@ __check_STYLE:
 	@:$(call check_defined_STYLE)
 
 
+
+$(OSM_COUNTRIES_EUROPE_FP): GEOFABRIK_URL = $(GEOFABRIK_URL_EUROPE)
+$(OSM_COUNTRIES_ASIA_FP): GEOFABRIK_URL = $(GEOFABRIK_URL_ASIA)
+$(OSM_COUNTRIES_GLOBAL_FP): GEOFABRIK_URL = $(GEOFABRIK_URL_GLOBAL)
 $(OSM_CACHE_DIR)$(PSEP2)%-latest.osm.pbf:
 	$(WGET) $(GEOFABRIK_URL)$*-latest.osm.pbf -P $(OSM_CACHE_DIR)
 
-
 refresh:  $(MAP_OSM_LATEST_PBF) | __check_MAP
 	@echo "Completed"
+
 
 $(COMMON_DIR)$(PSEP2)%-latest.o5m: $(OSM_CACHE_DIR)$(PSEP)%-latest.osm.pbf
 	$(OSMCONVERT) $< -o=$@
