@@ -280,7 +280,8 @@
                 A D M I N   &    P R O T E C T E D   A R E A S
     ************************************************** -->
     <ways>
-        <osm-tag key="admin_level" value="2" force-polygon-line="true" label-position="true" zoom-appear="6"/>
+        <osm-tag key="admin_level" value="2" force-polygon-line="true"  zoom-appear="6"/>
+        <osm-tag key="admin_level" value="3" force-polygon-line="true"  zoom-appear="6"/>
         <osm-tag key="boundary" value="national_park" force-polygon-line="true" label-position="true" zoom-appear="10"/>
         <osm-tag key='boundary' value='protected_area'  force-polygon-line="true" label-position="true" zoom-appear='13'/>
         <osm-tag key='boundary' value='protected_landscape_area'  force-polygon-line="true" label-position="true" zoom-appear='13'/>        
