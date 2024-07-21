@@ -208,7 +208,7 @@
         <osm-tag key="service" renderable="false" value="driveway"/>
 
         <!-- Route ref -->
-        <osm-tag key="route_ref_hiking" renderable="false" value="%f"/>
+        <osm-tag key="route_ref_hiking" renderable="false" value="%s"/>
 
     </ways>
 
