@@ -16,7 +16,7 @@
 
 
 <rule cat="protected_area" e="way" k="boundary" v="national_park" >
-    <rule e="any" k="*" v="*" zoom-min="10"  zoom-max="12">
+    <rule e="any" k="*" v="*" zoom-min="9"  zoom-max="12">
         <line stroke="{$lc-protected}" stroke-width="{$lw-protected-area}"  stroke-dasharray="6,4" scale="all"/>          
     </rule> 
     <rule e="any" k="*" v="*"  zoom-min="13"  zoom-max="15">
@@ -33,7 +33,7 @@
 
 <rule cat="protected_area" e="way" k="boundary" v="protected_area">
     <rule e="any" k="protect_class" v="1" >
-        <rule e="any" k="*" v="*" zoom-min="13"  zoom-max="14">
+        <rule e="any" k="*" v="*" zoom-min="12"  zoom-max="14">
             <line stroke="{$lc-protected-strictly}" stroke-width="{$lw-protected-strictly-2}" stroke-dasharray="4,3" scale="all"/>          
         </rule> 
         <rule e="any" k="*" v="*" zoom-min="15"  zoom-max="16">
@@ -50,7 +50,7 @@
         </rule>
     </rule>        
     <rule e="any" k="protect_class" v="2|~" >
-        <rule e="any" k="*" v="*" zoom-min="13"  zoom-max="15">
+        <rule e="any" k="*" v="*" zoom-min="12"  zoom-max="15">
             <line stroke="{$lc-protected}" stroke-width="{$lw-protected-area-l2}" stroke-dasharray="4,3" scale="all"/>          
         </rule> 
         <rule e="any" k="*" v="*" zoom-min="16"  zoom-max="17">
