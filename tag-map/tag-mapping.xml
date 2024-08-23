@@ -16,7 +16,7 @@
         <osm-tag key="natural" value="nosea" zoom-appear="0"/>
 
         <osm-tag key="natural" value="bare_rock" zoom-appear="9"/>
-        <osm-tag key="natural" value="beach" zoom-appear="9"/>
+        <osm-tag key="natural" value="beach" label-position="true" zoom-appear="9"/>
         <osm-tag key="natural" value="coastline" zoom-appear="0"/>
         <osm-tag key="natural" value="fell" zoom-appear="9"/>
         <osm-tag key="natural" value="glacier" label-position="true" zoom-appear="9"/>
