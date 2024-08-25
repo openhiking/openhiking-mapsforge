@@ -104,7 +104,7 @@
         <osm-tag key="highway" value="primary" zoom-appear="8"/>
         <osm-tag key="highway" value="primary_link" zoom-appear="8"/>
         <osm-tag key="highway" value="raceway" zoom-appear="12"/>
-        <osm-tag key="highway" value="residential" zoom-appear="12"/>
+        <osm-tag key="highway" value="residential" zoom-appear="11"/>
         <osm-tag key="highway" value="road" zoom-appear="12"/>
         <osm-tag key="highway" value="secondary" zoom-appear="9"/>
         <osm-tag key="highway" value="secondary_link" zoom-appear="9"/>
@@ -751,14 +751,14 @@
 
     <pois>
         <osm-tag key="natural" value="arch" zoom-appear="14"/>    
-        <osm-tag key="natural" value="bay" zoom-appear="12"/>    
+        <osm-tag key="natural" value="bay" zoom-appear="10"/>    
         <osm-tag key="natural" value="cape" zoom-appear="14"/>
         <osm-tag key="natural" value="cave_entrance" zoom-appear="14"/>
         <osm-tag key="natural" value="cliff" zoom-appear="14"/>        
         <osm-tag key="natural" value="geyser" zoom-appear="14"/>        
         <osm-tag key="natural" value="hot_spring" zoom-appear="14"/> 
         <osm-tag key="natural" value="mineral_spring" zoom-appear="14"/>       
-        <osm-tag key="natural" value="peak" zoom-appear="13"/>
+        <osm-tag key="natural" value="peak" zoom-appear="11"/>
         <osm-tag key="natural" value="rock" zoom-appear="14"/>     
         <osm-tag key="natural" value="saddle" zoom-appear="14"/>           
         <osm-tag key="natural" value="sinkhole" zoom-appear="14"/>        
@@ -775,7 +775,7 @@
         <osm-tag key="summit:cross" value="yes" renderable="false"/>   
         <osm-tag key="seasonal" value="yes" equivalent-values="wet_season,dry_season,winter,summer" renderable="false"/> 
 
-        <osm-tag key="importance" value="national" zoom-appear="12"/>
+        <osm-tag key="importance" value="national" zoom-appear="10"/>
     </pois>
 
 <!-- ************************************************** 

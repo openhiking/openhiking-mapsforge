@@ -141,7 +141,7 @@
 
 <xsl:variable name="lw-ferry">0.5</xsl:variable>
 <xsl:variable name="lw-pier">0.5</xsl:variable>
-<xsl:variable name="lw-rail">0.55</xsl:variable>
+<xsl:variable name="lw-rail">0.8</xsl:variable>
 <xsl:variable name="lw-rail-narrow">0.45</xsl:variable>
 
 <xsl:variable name="lw-trail-highlight-low">1.5</xsl:variable>

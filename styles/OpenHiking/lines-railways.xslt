@@ -14,8 +14,8 @@
 <rule e="way" k="disused" v="~">
     <rule e="way" k="railway" v="rail|light_rail">
         <line stroke="{$lc-dark}" stroke-linecap="butt" stroke-width="{$lw-rail}" />
-        <line stroke="{$lc-light}" stroke-linecap="butt" stroke-width="0.4" />
-        <line stroke="{$lc-dark}" stroke-dasharray="3,3" stroke-linecap="butt" stroke-width="0.4" scale="all" />
+        <line stroke="{$lc-light}" stroke-linecap="butt" stroke-width="0.55" />
+        <line stroke="{$lc-dark}" stroke-dasharray="3,3" stroke-linecap="butt" stroke-width="0.55" scale="all" />
     </rule>
     <rule e="way" k="railway" v="narrow_gauge|funicular">
         <line stroke="{$lc-dark}" stroke-linecap="butt" stroke-width="{$lw-rail-narrow}" />
@@ -47,7 +47,7 @@
 <rule e="way" k="tunnel" v="yes">
     <rule e="way" k="railway" v="rail|light_rail">
         <line stroke="{$lc-dark}" stroke-dasharray="3,3" stroke-linecap="butt" stroke-width="{$lw-rail}" scale="all" />        
-        <line stroke="{$lc-tunnel}" stroke-dasharray="3,3" stroke-linecap="butt" stroke-width="0.4" scale="all" />
+        <line stroke="{$lc-tunnel}" stroke-dasharray="3,3" stroke-linecap="butt" stroke-width="0.55" scale="all" />
     </rule>
     <rule e="way" k="railway" v="narrow_gauge|funicular|tram">
         <line stroke="{$lc-dark}" stroke-dasharray="2,2" stroke-linecap="butt" stroke-width="{$lw-rail}" scale="all" />        
