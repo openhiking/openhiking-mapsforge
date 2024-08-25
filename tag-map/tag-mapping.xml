@@ -16,6 +16,7 @@
         <osm-tag key="natural" value="nosea" zoom-appear="0"/>
 
         <osm-tag key="natural" value="bare_rock" zoom-appear="9"/>
+        <osm-tag key="natural" value="bay" label-position="true" zoom-appear="9"/>
         <osm-tag key="natural" value="beach" label-position="true" zoom-appear="9"/>
         <osm-tag key="natural" value="coastline" zoom-appear="0"/>
         <osm-tag key="natural" value="fell" zoom-appear="9"/>
@@ -30,7 +31,7 @@
         <osm-tag key="natural" value="scree" zoom-appear="12"/>
         <osm-tag key="natural" value="shingle" zoom-appear="9"/>        
         <osm-tag key="natural" value="water" label-position="true" zoom-appear="8"/>
-        <osm-tag key="natural" value="wetland" zoom-appear="11"/>
+        <osm-tag key="natural" value="wetland" zoom-appear="10"/>
         <osm-tag key="natural" value="wood" zoom-appear="9"/>
     </ways>
 
@@ -182,7 +183,7 @@
         <osm-tag key="surface" equivalent-values="tartan,carpet" renderable="false" value="clay"/> 
 
         <!-- Tracktype -->
-        <osm-tag key="tracktype" value="grade1" zoom-appear="12"/>
+        <osm-tag key="tracktype" value="grade1" zoom-appear="11"/>
         <osm-tag key="tracktype" renderable="false" value="grade2"/>
         <osm-tag key="tracktype" renderable="false" value="grade3"/>
         <osm-tag key="tracktype" renderable="false" value="grade4"/>
@@ -226,7 +227,7 @@
         <osm-tag key="railway" value="narrow_gauge" zoom-appear="14"/>
         <osm-tag key="railway" value="platform" zoom-appear="14"/>
         <osm-tag key="railway" value="preserved" zoom-appear="14"/>
-        <osm-tag key="railway" value="rail" zoom-appear="12"/>
+        <osm-tag key="railway" value="rail" zoom-appear="9"/>
         <osm-tag key="railway" value="subway" zoom-appear="15"/>
         <osm-tag key="railway" value="tram" zoom-appear="15"/>
 
@@ -288,8 +289,8 @@
         <osm-tag key="admin_level" value="2" force-polygon-line="true"  zoom-appear="6"/>
         <osm-tag key="admin_level" value="3" force-polygon-line="true"  zoom-appear="6"/>
         <osm-tag key="boundary" value="national_park" force-polygon-line="true" label-position="true" zoom-appear="9"/>
-        <osm-tag key='boundary' value='protected_area'  force-polygon-line="true" label-position="true" zoom-appear='12'/>
-        <osm-tag key='boundary' value='protected_landscape_area'  force-polygon-line="true" label-position="true" zoom-appear='12'/>        
+        <osm-tag key='boundary' value='protected_area'  force-polygon-line="true" label-position="true" zoom-appear='10'/>
+        <osm-tag key='boundary' value='protected_landscape_area'  force-polygon-line="true" label-position="true" zoom-appear='10'/>        
 
         <!-- 
         <osm-tag key='leisure' value='nature_reserve'  force-polygon-line="true" zoom-appear='10'/>             
@@ -328,9 +329,9 @@
         <osm-tag key="waterway" value="canal" zoom-appear="11"/>
         <osm-tag key="waterway" value="ditch" zoom-appear="13"/>        
         <osm-tag key="waterway" value="drain" zoom-appear="13"/>
-        <osm-tag key="waterway" value="river" zoom-appear="11"/>
-        <osm-tag key="waterway" value="riverbank" zoom-appear="10"/>
-        <osm-tag key="waterway" value="stream" zoom-appear="13"/>
+        <osm-tag key="waterway" value="river" zoom-appear="9"/>
+        <osm-tag key="waterway" value="riverbank" zoom-appear="9"/>
+        <osm-tag key="waterway" value="stream" zoom-appear="12"/>
 
     </ways>
 
@@ -799,7 +800,7 @@
         <osm-tag key="place" value="country" zoom-appear="3"/>
         <osm-tag key="place" value="city" zoom-appear="6"/>
         <osm-tag key="place" value="town" zoom-appear="9"/>
-        <osm-tag key="place" value="village" zoom-appear="11"/>
+        <osm-tag key="place" value="village" zoom-appear="9"/>
         <osm-tag key="place" value="suburb" zoom-appear="11"/>
         <osm-tag key="place" value="hamlet" zoom-appear="12"/>
         <osm-tag key="place" value="island" zoom-appear="12"/>
