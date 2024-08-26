@@ -10,6 +10,18 @@
         priority="{$pr-poly-label-natural}" stroke="#FFFFFF" stroke-width="0.1" />
 </rule>
 
+<rule e="way" k="natural" v="mountain_range">
+    <rule e="any" k="*" v="*" zoom-min="8" zoom-max="9">
+        <caption k="name" font-style="bold_italic" font-size="14" 
+            priority="{$pr-poly-label-natural}" fill="#996633" stroke="#ffffff" stroke-width="3"/>
+    </rule>
+    <rule e="any" k="*" v="*"  zoom-min="10" >
+        <caption k="name" font-style="bold_italic" font-size="16" 
+            priority="{$pr-poly-label-natural}" fill="#996633" stroke="#ffffff" stroke-width="3"/>
+    </rule>
+</rule>
+
+
 <rule e="way" k="natural"  v="beach"  zoom-min="15">
     <caption fill="#202020" font-family="serif" font-size="11" font-style="italic" k="name"
         priority="{$pr-poly-label-natural}" stroke="#FFFFFF" stroke-width="0.1" />
