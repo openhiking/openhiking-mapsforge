@@ -25,6 +25,7 @@
         <osm-tag key="natural" value="heath" zoom-appear="9"/>
         <osm-tag key="natural" value="land" zoom-appear="8"/>
         <osm-tag key="natural" value="marsh" zoom-appear="12"/>
+        <osm-tag key="natural" value="mountain_range" force-polygon-line="true" label-position="true" zoom-appear="8"/>
         <osm-tag key="natural" value="mud" zoom-appear="12"/>    
         <osm-tag key="natural" value="sand" zoom-appear="12"/>    
         <osm-tag key="natural" value="scrub" zoom-appear="12"/>
@@ -288,7 +289,7 @@
     <ways>
         <osm-tag key="admin_level" value="2" force-polygon-line="true"  zoom-appear="6"/>
         <osm-tag key="admin_level" value="3" force-polygon-line="true"  zoom-appear="6"/>
-        <osm-tag key="boundary" value="national_park" force-polygon-line="true" label-position="true" zoom-appear="9"/>
+        <osm-tag key="boundary" value="national_park" force-polygon-line="false" label-position="true" zoom-appear="9"/>
         <osm-tag key='boundary' value='protected_area'  force-polygon-line="true" label-position="true" zoom-appear='10'/>
         <osm-tag key='boundary' value='protected_landscape_area'  force-polygon-line="true" label-position="true" zoom-appear='10'/>        
 

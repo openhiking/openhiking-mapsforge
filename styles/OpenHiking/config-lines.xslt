@@ -145,7 +145,7 @@
 
 <xsl:variable name="lw-national-park">2.2</xsl:variable>
 <xsl:variable name="lw-national-park-l2">1.9</xsl:variable>
-<xsl:variable name="lw-national-park-l3">0.7</xsl:variable>
+<xsl:variable name="lw-national-park-l3">1.5</xsl:variable>
 <xsl:variable name="lw-national-park-l4">0.5</xsl:variable>
 
 <xsl:variable name="lw-protected-area">2.4</xsl:variable>

@@ -33,7 +33,6 @@
     </rule>
 </rule>
 
-
 <rule cat="protected_area" e="way" k="boundary" v="protected_area">
     <rule e="any" k="protect_class" v="1" >
         <rule e="any" k="*" v="*" zoom-min="12"  zoom-max="14">
