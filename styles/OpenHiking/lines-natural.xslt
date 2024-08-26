@@ -26,7 +26,19 @@
 </rule>
 
 
-<rule  e="way" k="natural" v="ridge|valley|gorge" zoom-min="13"> 
+<rule  e="way" k="natural" v="valley" zoom-min="12"> 
+  <rule e="way" k="*" v="*" zoom-min="12" zoom-max="12">
+    <pathText k="name"  font-size="11" fill="#404040" stroke="#e6e6e6" repeat-gap="150" stroke-width="0.5" />
+  </rule>
+  <rule e="way" k="*" v="*" zoom-min="13" zoom-max="14">
+    <pathText k="name"  font-size="13" fill="#404040" stroke="#e6e6e6" repeat-gap="200" stroke-width="0.8" />
+  </rule>
+  <rule e="way" k="*" v="*" zoom-min="15" zoom-max="16">
+    <pathText k="name"  font-style="italic"  font-size="16" fill="#404040" stroke="#e6e6e6" repeat-gap="300" stroke-width="1" />
+  </rule>
+</rule>
+
+<rule  e="way" k="natural" v="ridge|gorge" zoom-min="13"> 
   <rule e="way" k="*" v="*" zoom-min="12" zoom-max="13">
     <pathText k="name"  font-size="10" fill="#1f8500" stroke="#f0f0e8" repeat-gap="150" stroke-width="0.5" />
   </rule>

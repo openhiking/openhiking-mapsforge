@@ -16,7 +16,7 @@
 
 <xsl:call-template name="create-waterway-rules">
     <xsl:with-param name="waterway" select="'stream|canal'" />
-    <xsl:with-param name="zoom-min" select="12" />      
+    <xsl:with-param name="zoom-min" select="11" />      
     <xsl:with-param name="stroke-color" select="$stream-color" />
     <xsl:with-param name="stroke-width" select="0.3" />
     <xsl:with-param name="repeat-gap-low" select="120" />    

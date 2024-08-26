@@ -33,11 +33,11 @@
             priority="{$pr-poly-label-natural}" fill="#4040ff" stroke="#ffffff" stroke-width="2"/>
     </rule>
     <rule e="any" k="*" v="*" zoom-min="10" zoom-max="11">
-        <caption k="name" font-style="italic" font-size="11" 
+        <caption k="name" font-style="bold_italic" font-size="11" 
             priority="{$pr-poly-label-natural}" fill="#4040ff" stroke="#ffffff" stroke-width="2"/>
     </rule>
     <rule e="any" k="*" v="*" zoom-min="12" >
-        <caption k="name" font-style="italic" font-size="14" 
+        <caption k="name" font-style="bold_italic" font-size="14" 
             priority="{$pr-poly-label-natural}" fill="#4040ff" stroke="#ffffff" stroke-width="3"/>
     </rule>            
 </rule>
@@ -45,11 +45,11 @@
 
 <rule e="way" k="natural" v="water" >
     <rule e="any" k="*" v="*" zoom-min="12" zoom-max="13">
-        <caption k="name" font-style="italic" font-size="11" 
+        <caption k="name" font-style="bold_italic" font-size="11" 
             priority="{$pr-poly-label-natural}" fill="#4040ff" stroke="#ffffff" stroke-width="2"/>
     </rule>
     <rule e="any" k="*" v="*" zoom-min="14" >
-        <caption k="name" font-style="italic" font-size="14" 
+        <caption k="name" font-style="bold_italic" font-size="14" 
             priority="{$pr-poly-label-natural}" fill="#4040ff" stroke="#ffffff" stroke-width="3"/>
     </rule>            
 </rule>
