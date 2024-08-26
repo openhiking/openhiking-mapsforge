@@ -18,6 +18,7 @@
 <xsl:variable name="pr-historic-ruins">40</xsl:variable>
 <xsl:variable name="pr-city">40</xsl:variable>
 <xsl:variable name="pr-town">40</xsl:variable>
+<xsl:variable name="pr-mountain">40</xsl:variable>
 
 <!-- Priority 30 -->
 <xsl:variable name="pr-peak-named">30</xsl:variable>
