@@ -25,7 +25,9 @@
         <osm-tag key="natural" value="heath" zoom-appear="9"/>
         <osm-tag key="natural" value="land" zoom-appear="8"/>
         <osm-tag key="natural" value="marsh" zoom-appear="12"/>
+        <!-- 
         <osm-tag key="natural" value="mountain_range" force-polygon-line="true" label-position="true" zoom-appear="8"/>
+        -->
         <osm-tag key="natural" value="mud" zoom-appear="12"/>    
         <osm-tag key="natural" value="sand" zoom-appear="12"/>    
         <osm-tag key="natural" value="scrub" zoom-appear="12"/>
@@ -327,12 +329,12 @@
                 W A T E R W A Y S
     ************************************************** -->
     <ways>
-        <osm-tag key="waterway" value="canal" zoom-appear="11"/>
+        <osm-tag key="waterway" value="canal" zoom-appear="12"/>
         <osm-tag key="waterway" value="ditch" zoom-appear="13"/>        
         <osm-tag key="waterway" value="drain" zoom-appear="12"/>
         <osm-tag key="waterway" value="river" zoom-appear="9"/>
         <osm-tag key="waterway" value="riverbank" zoom-appear="9"/>
-        <osm-tag key="waterway" value="stream" zoom-appear="11"/>
+        <osm-tag key="waterway" value="stream" zoom-appear="12"/>
 
     </ways>
 
@@ -799,15 +801,15 @@
     ************************************************** -->
     <pois>
         <osm-tag key="place" value="country" zoom-appear="3"/>
-        <osm-tag key="place" value="city" zoom-appear="6"/>
-        <osm-tag key="place" value="town" zoom-appear="9"/>
+        <osm-tag key="place" value="capital" zoom-appear="6"/>        
+        <osm-tag key="place" value="city" zoom-appear="7"/>
+        <osm-tag key="place" value="town" zoom-appear="8"/>
         <osm-tag key="place" value="village" zoom-appear="9"/>
         <osm-tag key="place" value="suburb" zoom-appear="11"/>
         <osm-tag key="place" value="hamlet" zoom-appear="12"/>
         <osm-tag key="place" value="island" zoom-appear="12"/>
         <osm-tag key="place" value="islet" zoom-appear="12"/>        
         <osm-tag key="place" value="locality" zoom-appear="12"/>
-
     </pois>
 
 <!-- ************************************************** 

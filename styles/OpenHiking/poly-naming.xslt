@@ -9,18 +9,18 @@
     <caption fill="#202020" font-family="serif" font-size="12" font-style="italic" k="name"
         priority="{$pr-poly-label-natural}" stroke="#FFFFFF" stroke-width="0.1" />
 </rule>
-
+<!-- 
 <rule e="way" k="natural" v="mountain_range">
     <rule e="any" k="*" v="*" zoom-min="8" zoom-max="9">
-        <caption k="name" font-style="bold_italic" font-size="14" 
-            priority="{$pr-mountain}" fill="#996633" stroke="#ffffff" stroke-width="3"/>
+        <caption k="name" font-family="sans_serif" font-style="bold" font-size="12" 
+            priority="{$pr-mountain}" fill="#663300" stroke="#ffffff" stroke-width="2"/>
     </rule>
-    <rule e="any" k="*" v="*"  zoom-min="10" zoom-max="12">
-        <caption k="name" font-style="bold_italic" font-size="16" 
-            priority="{$pr-mountain}" fill="#996633" stroke="#ffffff" stroke-width="3"/>
+    <rule e="any" k="*" v="*"  zoom-min="10" zoom-max="11">
+        <caption k="name" font-family="serif"  font-style="bold" font-size="16" 
+            priority="{$pr-mountain}" fill="#663300" stroke="#ffffff" stroke-width="2"/>
     </rule>
 </rule>
-
+-->
 
 <rule e="way" k="natural"  v="beach"  zoom-min="15">
     <caption fill="#202020" font-family="serif" font-size="11" font-style="italic" k="name"

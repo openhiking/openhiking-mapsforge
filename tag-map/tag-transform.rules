@@ -125,6 +125,8 @@ natural~'valley|gorge|ridge' & name!=*  { delete natural; stop }
 scope=node,way
 sport=swimming & leisure~'sports_centre|sports_hall|water_park'  { leisure=swimming_facility; delete sport }
 
+scope=node
+place=city & capital=yes  { place=capital}
 
 ### Buildings
 scope=way,relation
