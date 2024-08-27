@@ -19,8 +19,11 @@
             stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}"/>
     </rule>
     <rule e="node" k="summit:cross|name|importance" v="*" zoom-min="11" zoom-max="12">   
-        <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="8" priority="{$pr-peak-named}"/>
-        <rule e="node" k="*" v="*" zoom-min="12" zoom-max="12">   
+        <rule e="node" k="*" v="*" zoom-min="11" zoom-max="11">  
+            <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="6" priority="{$pr-peak-named}"/>              
+        </rule>
+        <rule e="node" k="*" v="*" zoom-min="12" zoom-max="12">        
+            <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="8" priority="{$pr-peak-named}"/>        
             <caption  k="name" font-size="11" fill="#693600" font-style="bold_italic"  position="above"
             stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}" />
         </rule>
@@ -66,7 +69,7 @@
     </rule>
 </rule>
 
-<rule e="node" k="natural" v="rock" zoom-min="15">
+<rule e="node" k="natural" v="rock|arch" zoom-min="15">
     <symbol id="cliff" src="{$symbolPath}/rock.svg" priority="{$pr-rock}"/>
     <rule e="any" k="*" v="*" >
         <caption fill="#7b0000" font-size="10" font-style="bold" k="name" position="below"
@@ -82,9 +85,6 @@
     </rule>
 </rule>
 
-
-<rule e="node" k="natural" v="arch" zoom-min="15">
-</rule>
 
 <!-- 
 <rule e="any" k="mountain_pass" v="yes" zoom-min="14">
@@ -230,6 +230,16 @@
     <caption k="name" 
     font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-natural}"/>
 </rule>
+
+<rule e="way" k="natural" v="beach" zoom-min="13">
+    <rule  e="any" k="*" v="*" zoom-max="14">
+        <symbol id="cliff" src="{$symbolPath}/beach.svg" symbol-width="14" priority="{$pr-beach}"/>
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="15">
+        <symbol id="cliff" src="{$symbolPath}/beach.svg" symbol-width="20" priority="{$pr-beach}"/>
+    </rule>
+</rule>
+
 
 
 <rule  e="node" k="natural" v="geyser" zoom-min="14">

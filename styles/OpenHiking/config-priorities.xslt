@@ -74,6 +74,8 @@
 <xsl:variable name="pr-sac-scale">20</xsl:variable>
 <xsl:variable name="pr-fixme">20</xsl:variable>
 
+<xsl:variable name="pr-beach">20</xsl:variable>
+
 <!-- Priority 10 -->
 <xsl:variable name="pr-picnic">10</xsl:variable>
 <xsl:variable name="pr-watering-place">10</xsl:variable>
