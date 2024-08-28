@@ -1,6 +1,8 @@
 ### Highways
 scope=way
 if (highway=*) 
+
+    highway=path & layer="-5" { delete layer; }
     proposed=yes | disused=yes | abandoned=yes  { delete highway;  delete surface; stop }
     highway=service & serice=driveway & access=private & trail_color!=* { delete highway;  delete surface; stop }
 
