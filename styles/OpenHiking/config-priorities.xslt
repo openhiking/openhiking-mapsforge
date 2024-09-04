@@ -167,6 +167,7 @@
 <xsl:variable name="pr-label-public-transport">0</xsl:variable>
 <xsl:variable name="pr-label-historical">0</xsl:variable>
 
+<xsl:variable name="pr-ele-peak">-5</xsl:variable>
 
 <!-- Priority -10 -->
 <xsl:variable name="pr-hunting-stand">-10</xsl:variable>

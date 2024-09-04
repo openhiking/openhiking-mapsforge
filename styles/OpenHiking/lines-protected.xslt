@@ -43,7 +43,7 @@
         </rule> 
         <rule e="any" k="*" v="*" zoom-min="17"  >
             <line stroke="{$lc-protected-strictly}" stroke-width="{$lw-protected-strictly-4}" stroke-dasharray="2,2" scale="all"/>                  
-        </rule> 
+        </rule>         
         <rule e="any" k="*" v="*" zoom-min="12" zoom-max="14"  >
             <caption k="name" font-style="bold_italic" font-family="serif" font-size="11" stroke="#ff4a35" fill="#ff7f5a"  />
         </rule>

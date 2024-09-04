@@ -47,7 +47,7 @@
 
 <rule e="node" k="place" v="suburb" >
     <rule e="node" k="*" v="*" zoom-min="12" zoom-max="12">
-        <caption k="name" font-style="normal" font-size="12" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-suburb}" display="always"/>
+        <caption k="name" font-style="normal" font-size="12" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-suburb}" display="ifspace"/>
     </rule>
     <rule e="node" k="*" v="*" zoom-min="13" zoom-max="14">
         <caption k="name" font-style="normal" font-size="14" fill="#000000" stroke="#ffffff" stroke-width="3" priority="{$pr-suburb}" display="ifspace"/>
