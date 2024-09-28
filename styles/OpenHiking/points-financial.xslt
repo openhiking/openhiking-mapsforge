@@ -18,5 +18,13 @@
         </rule>       
 </rule>
 
+<rule  e="any" k="amenity" v="atm" zoom-min="15">
+        <symbol id="atm" src="{$symbolPath}/atm.svg" symbol-width="16" priority="{$pr-bank}"/>
+        <rule e="any" k="*" v="*" zoom-min="16">
+            <caption k="name" symbol-id="atm" 
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-financial}"/>
+        </rule>       
+</rule>
+
 </xsl:template>
 </xsl:stylesheet>
