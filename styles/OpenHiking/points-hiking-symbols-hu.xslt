@@ -377,6 +377,12 @@
 	<rule e="node" k="{$key}" v="{$ns-symbol-hu}salp" zoom-min="16" >
 		<symbol src="{$hikingSymbolPath}/hu-salp{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
 	</rule>
+	<rule e="node" k="{$key}" v="{$ns-symbol-hu}vcv" zoom-min="12" zoom-max="15">
+		<symbol src="{$hikingSymbolPath}/hu-vcv{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
+	</rule>
+	<rule e="node" k="{$key}" v="{$ns-symbol-hu}vcv" zoom-min="16" >
+		<symbol src="{$hikingSymbolPath}/hu-vcv{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
+	</rule>
 </xsl:template>
 
 
