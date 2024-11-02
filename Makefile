@@ -162,7 +162,7 @@ MAP_WRITER_THREADS?=4
 
 MAP_LICENSE="This map may be freely used for research and personal purposes. Redistribution, sale or commercial use is not allowed. Screenshots may be published according to CCBYSA 2.0 as long as you attribute OpenHiking. Map data © OpenStreetMap and its contributors http://www.openstreetmap.org/copyright, available under the Open Database License: http://opendatacommons.org/licenses/odbl/1.0/ ***  Elevation data LiDAR DTM models by Sonny  https://sonny.4lima.de "
 
-MAP_WRITER_CONF=tag-values=true type=$(MAP_MW_TYPE) preferred-languages=$(MAP_LANGUAGES) threads=$(MAP_WRITER_THREADS) bbox-enlargement=50  comment=$(MAP_LICENSE)
+MAP_WRITER_CONF=tag-values=true type=$(MAP_MW_TYPE) preferred-languages=$(MAP_LANGUAGES) threads=$(MAP_WRITER_THREADS) bbox-enlargement=10  comment=$(MAP_LICENSE)
 MAP_MAPSFORGE_FP=$(MFMAP_DIR)$(PSEP)$(MAPNAME).map
 MAP_MAPSFORGE_ZIP_FP=$(MFMAP_DIR)$(PSEP)$(MAPNAME).zip
 
