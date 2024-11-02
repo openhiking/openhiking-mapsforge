@@ -157,7 +157,7 @@ ifeq ($(MAPWRITER_IN_MEMORY),yes)
 else
 	MAP_MW_TYPE=hd
 endif
-MAP_SIMPL_MAX_ZOOM?=14
+MAP_SIMPL_MAX_ZOOM?=11
 MAP_WRITER_THREADS?=4
 MAP_LICENSE="This map may be freely used for research and personal purposes. Redistribution, sale or commercial use is not allowed. Screenshots may be published according to CCBYSA 2.0 as long as you attribute OpenHiking. Map data © OpenStreetMap and its contributors http://www.openstreetmap.org/copyright, available under the Open Database License: http://opendatacommons.org/licenses/odbl/1.0/ ***  Elevation data LiDAR DTM models by Sonny  https://sonny.4lima.de "
 
