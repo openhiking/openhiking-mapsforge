@@ -83,7 +83,7 @@
     </rule>
 </rule>
 
-<rule e="node" k="place" v="hamlet" zoom-min="13" zoom-max="18">
+<rule e="node" k="place" v="hamlet|farm" zoom-min="13" zoom-max="18">
     <caption k="name" font-style="normal" font-size="11" fill="#000000" stroke="#ffffff" stroke-width="2" priority="{$pr-hamlet}"/>
 </rule>
 <rule e="node" k="place" v="locality" zoom-min="14" >

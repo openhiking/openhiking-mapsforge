@@ -807,6 +807,7 @@
         <osm-tag key="place" value="village" zoom-appear="10"/>
         <osm-tag key="place" value="suburb" zoom-appear="11"/>
         <osm-tag key="place" value="hamlet" zoom-appear="12"/>
+        <osm-tag key="place" value="farm" zoom-appear="12"/>
         <osm-tag key="place" value="island" zoom-appear="12"/>
         <osm-tag key="place" value="islet" zoom-appear="12"/>        
         <osm-tag key="place" value="locality" zoom-appear="12"/>
