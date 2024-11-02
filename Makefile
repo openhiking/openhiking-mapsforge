@@ -150,14 +150,16 @@ MAP_MASTERX_PBF=master$(MAP)x.pbf
 MAP_MASTERX_PBF_FP=$(MFMAP_DIR)$(PSEP)$(MAP_MASTERX_PBF)
 
 
+##############################################
+# Map writing
 ifeq ($(MAPWRITER_IN_MEMORY),yes)
 	MAP_MW_TYPE=ram
 else
 	MAP_MW_TYPE=hd
 endif
-
+MAP_LICENSE="This map may be freely used for research and personal purposes. Redistribution, sale or commercial use is not allowed. Screenshots may be published according to CCBYSA 2.0 as long as you attribute OpenHiking."
 MAP_WRITER_THREADS?=4
-MAP_WRITER_CONF=tag-values=true type=$(MAP_MW_TYPE) preferred-languages=$(MAP_LANGUAGES) threads=$(MAP_WRITER_THREADS)
+MAP_WRITER_CONF=tag-values=true type=$(MAP_MW_TYPE) preferred-languages=$(MAP_LANGUAGES) threads=$(MAP_WRITER_THREADS) comment=$(MAP_LICENSE)
 MAP_MAPSFORGE_FP=$(MFMAP_DIR)$(PSEP)$(MAPNAME).map
 MAP_MAPSFORGE_ZIP_FP=$(MFMAP_DIR)$(PSEP)$(MAPNAME).zip
 
@@ -328,4 +330,4 @@ cleanstyle: | __check_STYLE
 	$(DEL) $(MAP_STYLE_OUTPUT_DIR)$(PSEP)$(MAP_STYLE_ZIP)
 
 test: 
-	@echo $(TAG_TRANSFORM_VARS) $(TAG_TRANSFORM_VAR_OPTS)
+	@echo $(MAP_LICENSE)
