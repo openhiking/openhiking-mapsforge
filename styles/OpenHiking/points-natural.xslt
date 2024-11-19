@@ -61,6 +61,37 @@
     </rule>
 </rule>
 
+<rule e="node" k="natural" v="volcano" >
+    <rule e="node" k="name" v="*">   
+        <rule e="node" k="*" v="*" zoom-min="11" zoom-max="11">  
+            <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="6" priority="{$pr-peak-named}"/>              
+        </rule>
+        <rule e="node" k="*" v="*" zoom-min="12" zoom-max="12">        
+            <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="8" priority="{$pr-peak-named}"/>        
+            <caption  k="name" font-size="11" fill="#693600" font-style="bold_italic"  position="above"
+            stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}" />
+        </rule>
+        <rule e="node" k="*" v="*" zoom-min="13" zoom-max="14">        
+            <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="8" priority="{$pr-peak-named}"/>
+        </rule>
+        <rule e="node" k="*" v="*" zoom-min="15">
+            <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="9" priority="{$pr-peak-named}"/>
+        </rule>
+        <rule e="node" k="*" v="*" zoom-min="13" >
+            <caption  k="name" font-size="12" fill="#693600" font-style="bold_italic"  position="above"
+            stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}" />
+            <caption fill="#693600" font-size="11" font-style="bold" k="ele" position="below"
+                stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-ele-peak}"/>
+        </rule>
+    </rule>
+    <rule e="node" k="name" v="~" zoom-min="13" >   
+        <symbol id="peak" src="{$symbolPath}/peak.svg" symbol-width="8" priority="{$pr-peak}"/>
+        <caption fill="#693600" font-size="10" font-style="bold" k="ele" position="below"
+            stroke="#FFFFFF" stroke-width="1.5" symbol-id="peak" priority="{$pr-label-peak}"/>
+    </rule>
+</rule>
+
+
 <rule e="node" k="natural" v="cliff" zoom-min="15">
     <symbol id="cliff" src="{$symbolPath}/cliff.svg" priority="{$pr-cliff}"/>
     <rule e="any" k="*" v="*" >
