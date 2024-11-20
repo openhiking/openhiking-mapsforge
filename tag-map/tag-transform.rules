@@ -225,6 +225,7 @@ disused:natural=spring  { natural=spring; seasonal=yes; stop }
 # Natural objects
 scope=node
 natural=peak & man_made~'cross|summit_cross'  { delete man_made; summit:cross=yes }
+natural=volcano & volcano:status!=active { natural=peak }
 
 
 scope=node,way
