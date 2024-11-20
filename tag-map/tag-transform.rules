@@ -184,7 +184,7 @@ end
 scope=node,way,relation
 tourism=attraction & (amenity=* | leisure=* | historic=* | natural=* |  man_made=cross)  { delete tourism  }
 man_made~'mineshaft|adit' & (abandoned=yes | disused=yes) { historic=mine; delete man_made }
-historic~'mine_adit|mine_adit|adit' { historic=mine; }
+historic~'mine_adit|mine_adit|adit' { historic=mine }
 
 if (historic=ruins)
     ruins!=* & castle_type=* { ruins='{castle_type}' }
