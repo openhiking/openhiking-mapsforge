@@ -569,7 +569,6 @@
         <osm-tag key="ruins" renderable="false" value="fort"/>
         <osm-tag key="ruins" renderable="false" value="monastery"/>
         <osm-tag key="ruins" renderable="false" value="temple"/>
-        <osm-tag key="ruins" renderable="false" value="tower"/>    
         <osm-tag key="ruins" renderable="false" value="yes"/>          
 
         <osm-tag key="castle_type" renderable="false" value="palace"/>     
