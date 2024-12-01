@@ -557,6 +557,7 @@
         <osm-tag key="historic" value="manor" label-position="true" zoom-appear="15"/>    
         <osm-tag key="historic" value="memorial" label-position="true" zoom-appear="15"/>
         <osm-tag key="historic" value="monument" zoom-appear="15"/>
+        <osm-tag key="historic" value="quarry" zoom-appear="15"/>        
         <osm-tag key="historic" value="ruins" label-position="true" zoom-appear="15"/>    
         <osm-tag key="historic" value="tower" label-position="true" zoom-appear="15"/> 
         <osm-tag key="man_made" value="watermill" label-position="true" zoom-appear="15"/> 

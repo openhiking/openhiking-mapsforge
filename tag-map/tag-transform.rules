@@ -183,6 +183,14 @@ end
 # Historical objects
 scope=node,way,relation
 tourism=attraction & (amenity=* | leisure=* | historic=* | natural=* |  man_made=cross)  { delete tourism  }
+
+if (historic=castle)
+    ruins=* {  historic=ruins; ruins=castle; stop}
+    castle_type~'stately|manor'  { historic=manor; delete castle_type }
+end
+
+historic~'fort|manor' & ruins=* { ruins='{historic}'; historic=ruins; stop   }
+
 man_made~'mineshaft|adit' & (abandoned=yes | disused=yes) { historic=mine; delete man_made }
 historic~'mine_adit|mine_adit|adit' { historic=mine }
 
@@ -191,13 +199,6 @@ if (historic=ruins)
     amenity=place_of_worship { delete amenity}
     military=bunker { delete historic}
     () { stop}
-end
-
-historic~'fort|manor' & ruins=* { ruins='{historic}'; historic=ruins; stop   }
-
-if (historic=castle)
-    ruins=* {  historic=ruins; ruins=castle; stop}
-    castle_type~'stately|manor'  { historic=manor; delete castle_type }
 end
 
 scope=node,way
