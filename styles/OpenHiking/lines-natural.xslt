@@ -53,5 +53,19 @@
   </rule>
 </rule>
 
+<rule  e="way" k="natural" v="bay" zoom-min="10" closed="no">  
+  <rule e="way" k="*" v="*" zoom-min="9" zoom-max="9">
+    <pathText k="name"  font-style="italic" font-size="9" fill="#4040ff" stroke="#ffffff" repeat-gap="150" stroke-width="2" />
+  </rule>
+  <rule e="way" k="*" v="*" zoom-min="10" zoom-max="11">
+    <pathText k="name"  font-style="bold_italic" font-size="11" fill="#4040ff" stroke="#ffffff" repeat-gap="200" stroke-width="2" />
+  </rule>
+  <rule e="way" k="*" v="*" zoom-min="12" >
+    <pathText k="name"  font-style="bold_italic" font-size="14" fill="#4040ff" stroke="#ffffff" repeat-gap="350" stroke-width="3" />
+  </rule>
+</rule>
+
+
+
 </xsl:template>
 </xsl:stylesheet>

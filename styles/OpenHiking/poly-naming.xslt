@@ -27,7 +27,7 @@
         priority="{$pr-poly-label-natural}" stroke="#FFFFFF" stroke-width="0.1" />
 </rule>
 
-<rule e="way" k="natural" v="bay">
+<rule e="way" k="natural" v="bay" closed="yes">
     <rule e="any" k="*" v="*" zoom-min="9" zoom-max="9">
         <caption k="name" font-style="italic" font-size="9" 
             priority="{$pr-poly-label-natural}" fill="#4040ff" stroke="#ffffff" stroke-width="2"/>
