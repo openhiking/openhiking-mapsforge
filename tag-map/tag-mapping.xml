@@ -754,7 +754,7 @@
 
     <pois>
         <osm-tag key="natural" value="arch" zoom-appear="14"/>    
-        <osm-tag key="natural" value="bay" zoom-appear="10"/>    
+        <osm-tag key="natural" value="bay" zoom-appear="9"/>    
         <osm-tag key="natural" value="cape" zoom-appear="14"/>
         <osm-tag key="natural" value="cave_entrance" zoom-appear="14"/>
         <osm-tag key="natural" value="cliff" zoom-appear="14"/>        
