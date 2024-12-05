@@ -1,6 +1,15 @@
+R,E1,15,blue,
+R,E2,15,blue,
 R,E3,15,blue,
 R,E4,15,blue,
+R,E5,15,blue,
+R,E6,15,blue,
 R,E7,15,blue,
+R,E8,15,blue,
+R,E9,15,blue,
+R,E10,15,blue,
+R,E11,15,blue,
+R,E12,15,blue,
 R,ST,-1,,
 O,purple:white:::M:purple,13,purple,hu:lm
 O,purple:purple::M01:white,13,purple,hu:lm
