@@ -94,7 +94,7 @@
 </rule>
 
 <rule e="node" k="natural" v="rock|arch" zoom-min="15">
-    <symbol id="cliff" src="{$symbolPath}/rock.svg" priority="{$pr-rock}"/>
+    <symbol id="rock" src="{$symbolPath}/rock.svg" priority="{$pr-rock}"/>
     <rule e="any" k="*" v="*" >
         <caption fill="#7b0000" font-size="10" font-style="bold" k="name" position="below"
             stroke="#FFFFFF" stroke-width="2.0" symbol-id="rock" priority="{$pr-label-natural}"/>
@@ -102,10 +102,10 @@
 </rule>
 
 <rule e="node" k="natural" v="stone" zoom-min="15">
-    <symbol id="cliff" src="{$symbolPath}/stone.svg" symbol-width="22" priority="{$pr-rock}"/>
+    <symbol id="stone" src="{$symbolPath}/stone.svg" symbol-width="22" priority="{$pr-rock}"/>
     <rule e="any" k="*" v="*" >
         <caption fill="#7b0000" font-size="10" font-style="bold" k="name" position="below"
-            stroke="#FFFFFF" stroke-width="2.0" symbol-id="rock" priority="{$pr-label-natural}"/>
+            stroke="#FFFFFF" stroke-width="2.0" symbol-id="stone" priority="{$pr-label-natural}"/>
     </rule>
 </rule>
 
