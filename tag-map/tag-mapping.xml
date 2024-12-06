@@ -58,8 +58,7 @@
         <osm-tag key="landuse" value="industrial" zoom-appear="12"/>
         <osm-tag key="landuse" value="landfill" zoom-appear="12"/>
         <osm-tag key="landuse" value="meadow" zoom-appear="12"/>
-        <osm-tag key="landuse" value="military" force-polygon-line="true" zoom-appear="12"/>
-        <osm-tag key="landuse" value="military" force-polygon-line="false" zoom-appear="12"/>
+        <osm-tag key="landuse" value="military" zoom-appear="12"/>
         <osm-tag key="landuse" value="orchard" zoom-appear="12"/>
         <osm-tag key="landuse" value="plant_nursery" zoom-appear="12"/>
         <osm-tag key="landuse" value="quarry" label-position="true" zoom-appear="12"/>
