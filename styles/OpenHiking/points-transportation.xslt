@@ -139,6 +139,18 @@
   </rule>
 </rule>
 
+<rule e="any" k="man_made" v="lighthouse" >
+  <rule  e="any" k="*" v="*" zoom-min="15" zoom-max="15">
+    <symbol id="lighthouse" src="{$symbolPath}/lighthouse.svg" symbol-width="11" priority="{$pr-lighthouse}" />
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="16"  zoom-max="17">
+    <symbol id="lighthouse" src="{$symbolPath}/lighthouse.svg" symbol-width="14" priority="{$pr-lighthouse}"  />
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="18" >
+    <symbol id="lighthouse" src="{$symbolPath}/lighthouse.svg" symbol-width="16" priority="{$pr-lighthouse}" />
+  </rule>
+</rule>
+
 
 </xsl:template>
 </xsl:stylesheet>

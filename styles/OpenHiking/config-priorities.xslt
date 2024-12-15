@@ -63,6 +63,7 @@
 
 <xsl:variable name="pr-helipad">20</xsl:variable>
 <xsl:variable name="pr-bus-stop">20</xsl:variable>
+<xsl:variable name="pr-lighthouse">20</xsl:variable>
 <xsl:variable name="pr-windmill">20</xsl:variable>
 <xsl:variable name="pr-watermill">20</xsl:variable>
 

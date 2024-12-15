@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="12"
+   height="32"
+   viewBox="0 0 12 32"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1">
+    <path
+       style="fill:#f1eeed;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1"
+       d="M 1.6073056,29.417078 3.0171319,10.295785 9.0368274,10.215794 10.378362,29.446183 Z"
+       id="path3" />
+    <path
+       style="fill:#ff0000;stroke:#000000;stroke-width:0.439329;stroke-dasharray:none;stroke-opacity:1"
+       d="M 1.5888668,29.462459 H 10.478258 L 10.015695,24.188862 H 1.980922 Z"
+       id="path2" />
+    <path
+       style="fill:#ff0000;stroke:#000000;stroke-width:0.454781;stroke-dasharray:none;stroke-opacity:1"
+       d="m 2.3507692,19.320364 h 7.2326933 l -0.2857206,-5.2 H 2.7367194 Z"
+       id="path2-2" />
+    <rect
+       style="fill:#666666;fill-opacity:1;stroke:#000000;stroke-width:0.545102;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3"
+       width="11.125228"
+       height="1.4751004"
+       x="0.49224231"
+       y="29.420921"
+       ry="0.38413611" />
+    <path
+       id="rect4"
+       style="fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1"
+       d="M 6.1020157,3.1750793 C 5.69252,3.1526229 5.2857743,3.2570042 4.9324528,3.4752186 4.2865794,3.8744074 3.8941771,4.6058367 3.9041794,5.3918979 L 3.9183904,8.723269 H 8.145976 L 8.1153907,5.3199347 c -0.08116,0 0.023448,-1.1940032 -1.0851816,-1.8587577 C 6.7464175,3.2909831 6.4284985,3.1929907 6.1020157,3.1750793 Z" />
+    <path
+       style="fill:#e3dedb;fill-opacity:1;stroke:#000000;stroke-width:0.7;stroke-dasharray:none;stroke-opacity:1"
+       d="M 6.0558502,3.1912952 6.0183622,0.90454517"
+       id="path5" />
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3-3"
+       width="8.4863291"
+       height="1.5136176"
+       x="1.7851411"
+       y="8.7325096"
+       ry="0.38033983" />
+  </g>
+</svg>
