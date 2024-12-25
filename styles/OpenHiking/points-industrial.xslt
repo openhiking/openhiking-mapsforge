@@ -87,7 +87,7 @@
     </rule>
 </rule>
 
-<rule  e="any" k="man_made" v="water_works" >
+<rule  e="any" k="man_made" v="water_works" zoom-min="15">
     <symbol id="water_works" src="{$industrialIconPath}/water_works.svg" symbol-width="18" priority="{$pr-water-works}"/>
 </rule>
 
@@ -104,7 +104,7 @@
     <symbol id="mast" src="{$industrialIconPath}/communication_tower.svg" symbol-width="25" priority="{$pr-mast}"/>
 </rule>
 
-<rule  e="any" k="tower:type" v="observation">
+<rule  e="any" k="tower:type" v="observation" zoom-min="15">
     <rule  e="any" k="*" v="*" zoom-max="16">
         <symbol id="observation" src="{$industrialIconPath}/observation_tower.svg" symbol-width="12" priority="{$pr-tower-observation}"/>
     </rule> 

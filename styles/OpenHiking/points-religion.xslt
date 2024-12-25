@@ -12,14 +12,6 @@
 <xsl:template name="points-religion">
 
 <rule  e="any" k="amenity" v="place_of_worship" zoom-min="14">
-  <rule  e="any" k="religion" v="jewish" >
-    <rule  e="any" k="*" v="*"  zoom-max="15">   
-      <symbol id="church" src="{$religionIconPath}/synagogue.svg" symbol-width="20" priority="{$pr-church}"/>
-    </rule>
-    <rule  e="any" k="*" v="*" zoom-min="16" >        
-      <symbol id="church" src="{$religionIconPath}/synagogue.svg" symbol-width="24" priority="{$pr-church}"/>
-    </rule>
-  </rule>
   <rule  e="any" k="religion" v="christian|~" >
     <rule  e="any" k="building" v="cathedral|basilica" >
       <rule  e="any" k="*" v="*"  zoom-max="15">   
@@ -46,6 +38,22 @@
       </rule>
     </rule>
   </rule>
+  <rule  e="any" k="religion" v="jewish" >
+    <rule  e="any" k="*" v="*"  zoom-max="15">   
+      <symbol id="church" src="{$religionIconPath}/synagogue.svg" symbol-width="20" priority="{$pr-church}"/>
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="16" >        
+      <symbol id="church" src="{$religionIconPath}/synagogue.svg" symbol-width="24" priority="{$pr-church}"/>
+    </rule>
+  </rule>
+  <rule  e="any" k="religion" v="buddhist|muslim" >
+    <rule  e="any" k="*" v="*"  zoom-max="15">   
+      <symbol id="church" src="{$religionIconPath}/church.svg" symbol-width="20" priority="{$pr-church}"/>
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="16" >        
+      <symbol id="church" src="{$religionIconPath}/church.svg" symbol-width="24" priority="{$pr-church}"/>
+    </rule>
+  </rule>    
   <rule e="any" k="*" v="*" zoom-min="16">
       <caption k="name" symbol-id="church" 
       font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-religion}"/>

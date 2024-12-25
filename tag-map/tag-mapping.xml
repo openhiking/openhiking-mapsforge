@@ -647,7 +647,7 @@
         <osm-tag key="power" value="tower" label-position="true" zoom-appear="15"/>
 
         <osm-tag key="tower:type" value="cooling" label-position="true" zoom-appear="14"/>
-        <osm-tag key="tower:type" value="observation" label-position="true" zoom-appear="14"/>
+        <osm-tag key="tower:type" value="observation" label-position="true" zoom-appear="15"/>
         <osm-tag key="tower:type" value="radar" label-position="true" zoom-appear="13"/>        
 
         <osm-tag key="plant:source" renderable="false" value="solar"/>

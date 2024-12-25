@@ -11,15 +11,15 @@
 
 <xsl:template name="points-education">
 
-<rule  e="any" k="amenity" v="kindergarten" >
-        <symbol id="kindergarten" src="{$educationIconPath}/kindergarten.svg" symbol-width="20" priority="{$pr-school}"/>
-        <rule e="any" k="*" v="*" zoom-min="16">
-            <caption k="name" symbol-id="kindergarten" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-education}"/>
-        </rule>       
+<rule  e="any" k="amenity" v="kindergarten" zoom-min="15">
+  <symbol id="kindergarten" src="{$educationIconPath}/kindergarten.svg" symbol-width="20" priority="{$pr-school}"/>
+  <rule e="any" k="*" v="*" zoom-min="16">
+      <caption k="name" symbol-id="kindergarten" 
+      font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-education}"/>
+  </rule>       
 </rule>
 
-<rule  e="any" k="amenity" v="school" >
+<rule  e="any" k="amenity" v="school" zoom-min="15">
   <rule  e="any" k="*" v="*" zoom-max="15">
     <symbol id="school" src="{$educationIconPath}/school.svg" symbol-width="20" priority="{$pr-school}"/>
   </rule>

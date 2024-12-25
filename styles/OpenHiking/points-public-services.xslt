@@ -33,6 +33,22 @@
     </rule>       
 </rule>
 
+<rule  e="any" k="amenity" v="marketplace" zoom-min="15">
+        <symbol id="marketplace" src="{$publicServiceIconPath}/marketplace.svg" symbol-width="22" priority="{$pr-marketplace}"/>
+        <rule e="any" k="*" v="*" zoom-min="16">
+            <caption k="name" symbol-id="marketplace" 
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-amenities}"/>
+        </rule>       
+</rule>
+
+<rule  e="any" k="amenity" v="community_centre" zoom-min="15">
+        <symbol id="community_centre" src="{$publicServiceIconPath}/community_centre.svg" symbol-width="22" priority="{$pr-community-centre}"/>
+        <rule e="any" k="*" v="*" zoom-min="16">
+            <caption k="name" symbol-id="community_centre" 
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-amenities}"/>
+        </rule>       
+</rule>
+
 <rule  e="any" k="amenity" v="police" zoom-min="15">
         <symbol id="police" src="{$publicServiceIconPath}/police.svg" symbol-width="20" priority="{$pr-police}"/>
         <rule e="any" k="*" v="*" zoom-min="16">
@@ -90,14 +106,6 @@
     </rule>        
 </rule>        
 
-
-<rule  e="any" k="amenity" v="marketplace" zoom-min="15">
-        <symbol id="marketplace" src="{$publicServiceIconPath}/marketplace.svg" symbol-width="22" priority="{$pr-marketplace}"/>
-        <rule e="any" k="*" v="*" zoom-min="16">
-            <caption k="name" symbol-id="marketplace" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-amenities}"/>
-        </rule>       
-</rule>
 
 
 </xsl:template>

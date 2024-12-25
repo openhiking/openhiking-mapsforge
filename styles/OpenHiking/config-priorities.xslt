@@ -152,6 +152,7 @@
 <xsl:variable name="pr-tumulus">0</xsl:variable>
 <xsl:variable name="pr-shop">0</xsl:variable>
 <xsl:variable name="pr-marketplace">0</xsl:variable>
+<xsl:variable name="pr-community-centre">0</xsl:variable>
 <xsl:variable name="pr-library">0</xsl:variable>
 <xsl:variable name="pr-obelisk">0</xsl:variable>
 <xsl:variable name="pr-fountain">0</xsl:variable>
