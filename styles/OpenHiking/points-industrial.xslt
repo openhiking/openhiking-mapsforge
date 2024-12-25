@@ -139,7 +139,7 @@
     </rule>       
 </rule> 
 
-<rule  e="any" k="man_made" v="observatory" >
+<rule  e="any" k="man_made" v="observatory" zoom-min="15">
     <rule  e="any" k="observatory:type" v="astronomical">
         <rule  e="any" k="*" v="*" zoom-max="16">
             <symbol id="observatory" src="{$industrialIconPath}/observatory.svg" symbol-width="20" priority="{$pr-observatory}"/>

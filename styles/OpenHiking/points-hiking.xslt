@@ -122,16 +122,29 @@
 
 <rule  e="any" k="tower" v="outlook" zoom-min="14">
   <rule  e="any" k="*" v="*" zoom-max="15">
-    <symbol id="tower_outlook" src="{$hikingIconPath}/lookout_tower.svg" symbol-width="22" priority="{$pr-tower-lookout}" display="always"/>      
+    <symbol id="lookout_tower" src="{$hikingIconPath}/lookout_tower.svg" symbol-width="22" priority="{$pr-tower-lookout}" display="always"/>      
   </rule>
   <rule  e="any" k="*" v="*" zoom-min="16">
-    <symbol id="tower_outlook" src="{$hikingIconPath}/lookout_tower.svg" symbol-width="26" priority="{$pr-tower-lookout}" display="always"/>      
+    <symbol id="lookout_tower" src="{$hikingIconPath}/lookout_tower.svg" symbol-width="26" priority="{$pr-tower-lookout}" display="always"/>      
   </rule>
   <rule e="any" k="*" v="*" zoom-min="15">
-      <caption k="name" symbol-id="tower_outlook" 
+      <caption k="name" symbol-id="lookout_tower" 
           font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-wilderness}" display="ifspace"/>
   </rule>
 </rule>       
+
+<rule  e="any" k="tower" v="outlook_closed" zoom-min="14">
+  <rule  e="any" k="*" v="*" zoom-max="15">
+    <symbol id="lookout_tower_closed" src="{$hikingIconPath}/lookout_tower_closed.svg" symbol-width="22" priority="{$pr-tower-lookout}" display="always"/>      
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="16">
+    <symbol id="lookout_tower_closed" src="{$hikingIconPath}/lookout_tower_closed.svg" symbol-width="26" priority="{$pr-tower-lookout}" display="always"/>      
+  </rule>
+  <rule e="any" k="*" v="*" zoom-min="15">
+      <caption k="name" symbol-id="lookout_tower_closed" 
+          font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-wilderness}" display="ifspace"/>
+  </rule>
+</rule>     
 
 <rule  e="any" k="tourism" v="viewpoint" zoom-min="14">
     <symbol id="viewpoint" src="{$hikingIconPath}/viewpoint.svg" symbol-width="20" priority="{$pr-viewpoint}"/>

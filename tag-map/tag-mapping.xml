@@ -700,7 +700,9 @@
    <ways>
         <osm-tag key="leisure" value="beach_resort" label-position="true" zoom-appear="12"/>    
         <osm-tag key="leisure" value="common" zoom-appear="12"/>    
-        <osm-tag key="leisure" value="garden"  zoom-appear="12"/>
+        <osm-tag key="leisure" value="fitness_centre" label-position="true" zoom-appear="15"/>
+        <osm-tag key="leisure" value="fitness_station" label-position="true" zoom-appear="15"/>
+        <osm-tag key="leisure" value="garden" label-position="true" zoom-appear="12"/>
         <osm-tag key="leisure" value="golf_course" label-position="true" zoom-appear="13"/>
         <osm-tag key="leisure" value="horse_riding" label-position="true" zoom-appear="15"/>
         <osm-tag key="leisure" value="ice_rink" label-position="true" zoom-appear="15"/>
@@ -716,9 +718,7 @@
         <osm-tag key="amenity" value="public_bath" label-position="true" zoom-appear="15"/>
         <osm-tag key="amenity" value="spa" label-position="true" zoom-appear="15"/>
 
-        <osm-tag key="swimming_pool" renderable="false" value="personal"/>        
-        <osm-tag key="location" renderable="false" value="indoor"/>        
-
+        <osm-tag key="garden:type" renderable="false" value="botanical"/>        
 
         <osm-tag key="sport" value="soccer" renderable="false"/>
         <osm-tag key="sport" value="tennis" renderable="false"/>
@@ -732,7 +732,10 @@
     </ways>  
 
     <pois>
-        <osm-tag key="leisure" value="beach_resort" zoom-appear="15"/>    
+        <osm-tag key="leisure" value="beach_resort" zoom-appear="15"/>   
+        <osm-tag key="leisure" value="fitness_centre"  zoom-appear="15"/>
+        <osm-tag key="leisure" value="fitness_station" zoom-appear="15"/>
+        <osm-tag key="leisure" value="garden" zoom-appear="15"/>
         <osm-tag key="leisure" value="golf_course" zoom-appear="15"/>
         <osm-tag key="leisure" value="horse_riding" zoom-appear="15"/>
         <osm-tag key="leisure" value="ice_rink" zoom-appear="15"/>
@@ -745,6 +748,9 @@
 
         <osm-tag key="amenity" value="public_bath" zoom-appear="15"/>
         <osm-tag key="amenity" value="spa" zoom-appear="15"/>
+
+        <osm-tag key="garden:type" renderable="false" value="botanical"/>        
+    
     </pois>  
 
     <!-- ************************************************** 

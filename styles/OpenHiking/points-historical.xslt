@@ -66,10 +66,10 @@
 
 <rule  e="any" k="tower:type" v="clock" zoom-min="15" >  
   <rule  e="any" k="*" v="*" zoom-max="16">   
-    <symbol id="clock_tower" src="{$historicIconPath}/clock_tower.svg" symbol-width="20" priority="{$pr-city-gate}"/>           
+    <symbol id="clock_tower" src="{$historicIconPath}/clock_tower.svg" symbol-width="20" priority="{$pr-clock-tower}"/>           
   </rule>
   <rule  e="any" k="*" v="*" zoom-min="17" >        
-    <symbol id="clock_tower" src="{$historicIconPath}/clock_tower.svg" symbol-width="23" priority="{$pr-city-gate}"/>                   
+    <symbol id="clock_tower" src="{$historicIconPath}/clock_tower.svg" symbol-width="23" priority="{$pr-clock-tower}"/>                   
   </rule>
   <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="clock_tower" 

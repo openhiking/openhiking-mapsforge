@@ -46,7 +46,25 @@
       <symbol id="church" src="{$religionIconPath}/synagogue.svg" symbol-width="24" priority="{$pr-church}"/>
     </rule>
   </rule>
-  <rule  e="any" k="religion" v="buddhist|muslim" >
+  <rule  e="any" k="religion" v="muslim" >
+    <rule  e="any" k="building" v="mosque" >
+      <rule  e="any" k="*" v="*"  zoom-max="15">   
+        <symbol id="church" src="{$religionIconPath}/mosque.svg" symbol-width="22" priority="{$pr-church}"/>
+      </rule>
+      <rule  e="any" k="*" v="*" zoom-min="16" >        
+        <symbol id="church" src="{$religionIconPath}/mosque.svg" symbol-width="26" priority="{$pr-church}"/>
+      </rule>
+    </rule>
+    <rule  e="any" k="building" v="church|chapel|~" >
+      <rule  e="any" k="*" v="*"  zoom-max="15">   
+          <symbol id="church" src="{$religionIconPath}/church.svg" symbol-width="20" priority="{$pr-church}"/>
+        </rule>
+        <rule  e="any" k="*" v="*" zoom-min="16" >        
+          <symbol id="church" src="{$religionIconPath}/church.svg" symbol-width="24" priority="{$pr-church}"/>
+        </rule>
+    </rule>
+  </rule>   
+  <rule  e="any" k="religion" v="buddhist" >
     <rule  e="any" k="*" v="*"  zoom-max="15">   
       <symbol id="church" src="{$religionIconPath}/church.svg" symbol-width="20" priority="{$pr-church}"/>
     </rule>

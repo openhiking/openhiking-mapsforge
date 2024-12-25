@@ -89,6 +89,7 @@
 
 <xsl:variable name="pr-ruins">10</xsl:variable>
 <xsl:variable name="pr-bell-tower">10</xsl:variable>
+<xsl:variable name="pr-clock-tower">10</xsl:variable>
 <xsl:variable name="pr-cross">10</xsl:variable>
 <xsl:variable name="pr-historic-mine">10</xsl:variable>
 <xsl:variable name="pr-archeological">10</xsl:variable>
