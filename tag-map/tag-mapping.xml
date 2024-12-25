@@ -637,13 +637,13 @@
    <ways>
         <osm-tag key="man_made" value="lighthouse" label-position="true" zoom-appear="13"/>    
         <osm-tag key="man_made" value="observatory" label-position="true" zoom-appear="14"/> 
+        <osm-tag key="man_made" value="telescope" label-position="true" zoom-appear="14"/>       
         <osm-tag key="man_made" value="water_works" label-position="true" zoom-appear="15"/>
         <osm-tag key="man_made" value="water_tower" label-position="true" zoom-appear="15"/>
         <osm-tag key="man_made" value="wastewater_plant" label-position="true" zoom-appear="15"/>
         <osm-tag key="man_made" value="works" label-position="true" zoom-appear="13"/>
         <osm-tag key="power" value="plant" label-position="true" zoom-appear="13"/>
         <osm-tag key="power" value="generator" label-position="true" zoom-appear="13"/>
-        <osm-tag key="power" value="telescope" label-position="true" zoom-appear="14"/>        
         <osm-tag key="power" value="tower" label-position="true" zoom-appear="15"/>
 
         <osm-tag key="tower:type" value="cooling" label-position="true" zoom-appear="14"/>
@@ -653,7 +653,10 @@
         <osm-tag key="plant:source" renderable="false" value="solar"/>
         <osm-tag key="plant:source" renderable="false" value="hydro"/> 
         <osm-tag key="plant:source" renderable="false" value="nuclear"/> 
-        <osm-tag key="generator:source" renderable="false" value="solar"/>                
+        <osm-tag key="generator:source" renderable="false" value="solar"/>   
+
+        <osm-tag key="observatory:type" renderable="false" value="astronomical"/>
+        <osm-tag key="telescope:type" renderable="false" value="radio"/>                       
 
     </ways>  
 
@@ -683,6 +686,7 @@
 
         <osm-tag key="plant:source" renderable="false" value="solar"/>
         <osm-tag key="plant:source" renderable="false" value="hydro"/> 
+        <osm-tag key="plant:source" renderable="false" value="nuclear"/>         
         <osm-tag key="generator:source" renderable="false" value="wind"/>    
 
         <osm-tag key="observatory:type" renderable="false" value="astronomical"/>
@@ -1071,12 +1075,9 @@
         <osm-tag key="tourism" label-position="true" value="picnic_site" zoom-appear="14"/>
         <osm-tag key="tourism" label-position="true" value="viewpoint" zoom-appear="14"/> 
         <osm-tag key="tower" value="outlook" label-position="true" zoom-appear="14"/>     
+        <osm-tag key="tower" value="outlook_closed" label-position="true" zoom-appear="14"/>     
 
         <osm-tag key="ford" value="yes" label-position="true" zoom-appear="12"/>     
-
-        <!-- 
-        <osm-tag key="viewpoint" value="yes" renderable="false"/>     
-        -->
 
         <osm-tag key="shelter_type" value="rock_shelter"  renderable="false"/>
         <osm-tag key="shelter_type" value="basic_hut"  renderable="false"/>
@@ -1107,6 +1108,7 @@
         <osm-tag key="tourism" value="viewpoint" zoom-appear="14"/>
 
         <osm-tag key="tower" value="outlook" zoom-appear="14"/>     
+        <osm-tag key="tower" value="outlook_closed" zoom-appear="14"/>     
 
         <osm-tag key="ford" value="yes" zoom-appear="12"/>                
         <osm-tag key="shelter_type" value="basic_hut"  renderable="false"/>

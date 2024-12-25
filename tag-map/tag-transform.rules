@@ -195,7 +195,7 @@ end
 # Historical objects
 
 scope=node,way,relation
-tourism=attraction & (amenity=* | leisure=* | historic=* | natural=* |  man_made=cross)  { delete tourism  }
+tourism=attraction & (amenity=* | leisure=* | historic=* | natural=* |  man_made=cross )  { delete tourism  }
 
 if (historic=castle)
     ruins=* {  historic=ruins; ruins=castle; stop}
@@ -250,10 +250,15 @@ scope=node,way
 amenity=place_of_worship & name~'.*k.polna' & building!=chapel { building=chapel }
 
 if (man_made=tower)
-    tower:type~'observation|observation;communication' & (tourism=viewpoint | viewpoint=yes | access=yes ) { tower=outlook; delete tower:type; delete tourism  }
+    if (tower:type~'observation|observation;communication')
+        tourism=viewpoint | viewpoint=yes | access=yes { tower=outlook; delete tower:type; delete tourism  }    
+        abandoned:tourism=viewpoint | disused:tourism=viewpoint { tower=outlook_closed; delete tower:type }
+    end
     tower:type=bell_tower  { man_made=campanile; delete tower:type }
     tower:type=stupa  { man_made=stupa; delete tower:type }
     tower:type=communication  { man_made=mast; delete tower:type }
+    tower:type=minaret & tourism=* { delete tourism }
+    tower:type=defensive & tourism=* { delete tourism }    
     () { stop}
 end
 

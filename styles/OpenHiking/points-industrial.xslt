@@ -80,6 +80,15 @@
     </rule>
 </rule>
 
+<rule  e="any" k="tower:type" v="cooling" zoom-min="15">
+    <rule  e="any" k="*" v="*" zoom-max="16">
+        <symbol id="cooling_tower" src="{$industrialIconPath}/cooling_tower.svg" symbol-width="22" priority="{$pr-cooling-tower}"/>
+    </rule> 
+    <rule  e="any" k="*" v="*" zoom-min="17">
+        <symbol id="cooling_tower" src="{$industrialIconPath}/cooling_tower.svg" symbol-width="24" priority="{$pr-cooling-tower}"/>
+    </rule>                         
+</rule> 
+
 
 <rule  e="any" k="power" v="generator" zoom-min="14">
     <rule  e="any" k="generator:source" v="wind" >
@@ -91,13 +100,13 @@
     <symbol id="water_works" src="{$industrialIconPath}/water_works.svg" symbol-width="18" priority="{$pr-water-works}"/>
 </rule>
 
-<rule  e="any" k="man_made" v="wastewater_plant" >
+<rule  e="any" k="man_made" v="wastewater_plant" zoom-min="15">
     <symbol id="wastewater_plant" src="{$industrialIconPath}/wastewater_plant.svg" symbol-width="18" priority="{$pr-water-works}"/>
 </rule>
 
 
 <rule  e="any" k="man_made" v="water_tower" zoom-min="16">
-    <symbol id="mast" src="{$industrialIconPath}/water_tower.svg" symbol-width="22" priority="{$pr-water-tower}"/>
+    <symbol id="mast" src="{$industrialIconPath}/water_tower.svg" symbol-width="20" priority="{$pr-water-tower}"/>
 </rule>
 
 <rule  e="any" k="man_made" v="communications_tower|mast" zoom-min="15">
@@ -117,14 +126,26 @@
     </rule>       
 </rule>
 
+<rule  e="any" k="tower:type" v="radar" >
+    <rule  e="any" k="*" v="*" zoom-max="15">
+        <symbol id="radar" src="{$industrialIconPath}/radar_tower.svg" symbol-width="22" priority="{$pr-radar}"/>
+    </rule> 
+    <rule  e="any" k="*" v="*" zoom-min="16">
+        <symbol id="radar" src="{$industrialIconPath}/radar_tower.svg" symbol-width="24" priority="{$pr-radar}"/>
+    </rule>                         
+    <rule e="any" k="*" v="*" zoom-min="16">
+        <caption k="name" symbol-id="radar" 
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-industrial}"/>
+    </rule>       
+</rule> 
 
 <rule  e="any" k="man_made" v="observatory" >
     <rule  e="any" k="observatory:type" v="astronomical">
         <rule  e="any" k="*" v="*" zoom-max="16">
-            <symbol id="observatory" src="{$industrialIconPath}/observatory.svg" symbol-width="12" priority="{$pr-tower-observation}"/>
+            <symbol id="observatory" src="{$industrialIconPath}/observatory.svg" symbol-width="20" priority="{$pr-observatory}"/>
         </rule> 
         <rule  e="any" k="*" v="*" zoom-min="17">
-            <symbol id="observatory" src="{$industrialIconPath}/observatory.svg" symbol-width="14" priority="{$pr-tower-observation}"/>
+            <symbol id="observatory" src="{$industrialIconPath}/observatory.svg" symbol-width="24" priority="{$pr-observatory}"/>
         </rule>                         
         <rule e="any" k="*" v="*" zoom-min="16">
             <caption k="name" symbol-id="observatory" 

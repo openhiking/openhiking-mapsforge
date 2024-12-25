@@ -64,6 +64,31 @@
   </rule>      
 </rule>
 
+<rule  e="any" k="tower:type" v="clock" zoom-min="15" >  
+  <rule  e="any" k="*" v="*" zoom-max="16">   
+    <symbol id="clock_tower" src="{$historicIconPath}/clock_tower.svg" symbol-width="20" priority="{$pr-city-gate}"/>           
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="17" >        
+    <symbol id="clock_tower" src="{$historicIconPath}/clock_tower.svg" symbol-width="23" priority="{$pr-city-gate}"/>                   
+  </rule>
+  <rule e="any" k="*" v="*" zoom-min="16">
+    <caption k="name" symbol-id="clock_tower" 
+    font-style="bold" font-size="12" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-historical}"/>
+  </rule>      
+</rule>
+
+<rule  e="any" k="tower:type" v="defensive" zoom-min="15" >  
+  <rule  e="any" k="*" v="*" zoom-max="16">   
+    <symbol id="defensive_tower" src="{$historicIconPath}/defensive_tower.svg" symbol-width="18" priority="{$pr-defensive-tower}"/>           
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="17" >        
+    <symbol id="defensive_tower" src="{$historicIconPath}/defensive_tower.svg" symbol-width="22" priority="{$pr-defensive-tower}"/>                   
+  </rule>
+  <rule e="any" k="*" v="*" zoom-min="16">
+    <caption k="name" symbol-id="defensive_tower" 
+    font-style="bold" font-size="12" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-historical}"/>
+  </rule>      
+</rule>
 
 
 <rule  e="any" k="historic" v="ruins" >

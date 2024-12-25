@@ -29,7 +29,7 @@
 
 
 <rule  e="any" k="railway" v="station|halt" zoom-min="14">
-  <rule  e="any" k="station" v="~|subway" >
+  <rule  e="any" k="station" v="~" >
     <rule  e="any" k="*" v="*" zoom-max="15">
       <symbol id="train" src="{$transportationIconPath}/train_station.svg" symbol-width="15" priority="{$pr-train-station}"/>
     </rule>
@@ -45,6 +45,14 @@
       <symbol id="train" src="{$transportationIconPath}/light_rail.svg" symbol-width="18" priority="{$pr-train-station}"/>
     </rule>
   </rule>
+  <rule  e="any" k="station" v="subway" >
+    <rule  e="any" k="*" v="*" zoom-max="15">
+      <symbol id="train" src="{$transportationIconPath}/subway_station.svg" symbol-width="18" priority="{$pr-train-station}"/>
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="16" >
+      <symbol id="train" src="{$transportationIconPath}/subway_station.svg" symbol-width="20" priority="{$pr-train-station}"/>
+    </rule>
+  </rule>  
   <rule e="node" k="*" v="*" zoom-min="15">
     <caption k="name" symbol-id="train" position="below" 
     font-style="bold" font-size="10" fill="#4040ff" stroke="#ffffff" stroke-width="2" priority="{$pr-label-public-transport}"/>

@@ -83,27 +83,6 @@
 </rule>
 
 
-<rule  e="any" k="man_made" v="campanile" zoom-min="15">
-  <symbol id="bell_tower" src="{$religionIconPath}/campanile.svg" symbol-width="24" priority="{$pr-bell-tower}"/>
-  <rule e="any" k="*" v="*" zoom-min="16">
-    <caption k="name" symbol-id="bell_tower" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-religion}"/>
-  </rule>
-</rule>
-
-<rule  e="any" k="man_made" v="stupa" >
-  <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="15">   
-    <symbol id="stupa" src="{$religionIconPath}/stupa.svg" symbol-width="26" priority="{$pr-stupa}"/>           
-  </rule>
-  <rule  e="any" k="*" v="*" zoom-min="16" >        
-    <symbol id="stupa" src="{$religionIconPath}/stupa.svg" symbol-width="30" priority="{$pr-stupa}"/>                   
-  </rule>
-  <rule e="any" k="*" v="*" zoom-min="16">
-    <caption k="name" symbol-id="stupa" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-religion}"/>
-  </rule>
-</rule>
-
 <rule  e="any" k="amenity" v="monastery" >
   <rule  e="any" k="religion" v="christian|~" >
     <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="15">   
@@ -116,6 +95,41 @@
       <caption k="name" symbol-id="monastery" 
       font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-religion}"/>
     </rule>
+  </rule>
+</rule>
+
+
+<rule  e="any" k="man_made" v="campanile" zoom-min="15">
+  <symbol id="bell_tower" src="{$religionIconPath}/campanile.svg" symbol-width="24" priority="{$pr-bell-tower}"/>
+  <rule e="any" k="*" v="*" zoom-min="16">
+    <caption k="name" symbol-id="bell_tower" 
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-religion}"/>
+  </rule>
+</rule>
+
+<rule  e="any" k="tower:type" v="minaret" zoom-min="15">
+    <rule  e="any" k="*" v="*" zoom-max="16">
+        <symbol id="minaret" src="{$religionIconPath}/minaret.svg" symbol-width="18" priority="{$pr-minaret}"/>
+    </rule> 
+    <rule  e="any" k="*" v="*" zoom-min="17">
+        <symbol id="minaret" src="{$religionIconPath}/minaret.svg" symbol-width="22" priority="{$pr-minaret}"/>
+    </rule>                         
+    <rule e="any" k="*" v="*" zoom-min="16">
+        <caption k="name" symbol-id="minaret" 
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-religion}"/>
+    </rule>       
+</rule>
+
+<rule  e="any" k="man_made" v="stupa" >
+  <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="15">   
+    <symbol id="stupa" src="{$religionIconPath}/stupa.svg" symbol-width="26" priority="{$pr-stupa}"/>           
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="16" >        
+    <symbol id="stupa" src="{$religionIconPath}/stupa.svg" symbol-width="30" priority="{$pr-stupa}"/>                   
+  </rule>
+  <rule e="any" k="*" v="*" zoom-min="16">
+    <caption k="name" symbol-id="stupa" 
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-religion}"/>
   </rule>
 </rule>
 

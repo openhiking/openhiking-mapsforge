@@ -65,11 +65,27 @@
     </rule>       
 </rule>
 
-<rule  e="any" k="shop" v="ticket" zoom-min="16">
+<rule  e="any" k="shop" v="ticket" zoom-min="15">
     <symbol id="tickets" src="{$shopIconPath}/tickets.svg" symbol-width="20" priority="{$pr-tickets}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="tickets" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-amenities}"/>
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
+    </rule>       
+</rule>
+
+<rule  e="any" k="shop" v="greengrocer" zoom-min="15">
+    <symbol id="tickets" src="{$shopIconPath}/greengrocer.svg" symbol-width="20" priority="{$pr-greengrocer}"/>
+    <rule e="any" k="*" v="*" zoom-min="16">
+        <caption k="name" symbol-id="greengrocer" 
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
+    </rule>       
+</rule>
+
+<rule  e="any" k="shop" v="kiosk" zoom-min="15">
+    <symbol id="kiosk" src="{$shopIconPath}/kiosk.svg" symbol-width="20" priority="{$pr-shop}"/>
+    <rule e="any" k="*" v="*" zoom-min="16">
+        <caption k="name" symbol-id="kiosk" 
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
     </rule>       
 </rule>
 
@@ -129,15 +145,6 @@
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
     </rule>       
 </rule>
-
-<rule  e="any" k="shop" v="kiosk" zoom-min="15">
-    <symbol id="shop" src="{$shopIconPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
-    <rule e="any" k="*" v="*" zoom-min="16">
-        <caption k="name" symbol-id="shop" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
-    </rule>       
-</rule>
-
 
 
 </xsl:template>

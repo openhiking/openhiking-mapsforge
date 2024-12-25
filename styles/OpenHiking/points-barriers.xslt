@@ -12,6 +12,15 @@
 
 <xsl:template name="points-barriers">
 
+<rule e="node" k="barrier" v="border_control" zoom-min="14">
+    <rule  e="any" k="*" v="*" zoom-max="15">
+        <symbol src="{$barrierIconPath}/border_control.svg" symbol-width="18" priority="{$pr-border-control}"/>
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="16">
+        <symbol src="{$barrierIconPath}/border_control.svg" symbol-width="22" priority="{$pr-border-control}"/>
+    </rule>
+</rule>
+
 <rule e="node" k="barrier" v="gate|sliding_gate" zoom-min="16">  
 <rule e="node" k="entrance" v="~" >  
     <rule e="node" k="access" v="yes" >  
