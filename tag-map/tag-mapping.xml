@@ -459,17 +459,17 @@
                P O I   E D U C A T I O N
     ************************************************** -->
     <ways>
-        <osm-tag key="amenity" value="college" label-position="true" zoom-appear="13"/>        
-        <osm-tag key="amenity" value="kindergarten" label-position="true" zoom-appear="17"/>                
-        <osm-tag key="amenity" value="school" label-position="true" zoom-appear="14"/>
-        <osm-tag key="amenity" value="university" label-position="true" zoom-appear="13"/>
+        <osm-tag key="amenity" value="college" label-position="true" zoom-appear="14"/>        
+        <osm-tag key="amenity" value="kindergarten" label-position="true" zoom-appear="15"/>                
+        <osm-tag key="amenity" value="school" label-position="true" zoom-appear="15"/>
+        <osm-tag key="amenity" value="university" label-position="true" zoom-appear="14"/>
     </ways>
 
     <pois>
-        <osm-tag key="amenity" value="college" zoom-appear="13"/>            
-        <osm-tag key="amenity" value="kindergarten" zoom-appear="17"/>        
-        <osm-tag key="amenity" value="school" zoom-appear="17"/>
-        <osm-tag key="amenity" value="university" zoom-appear="17"/>
+        <osm-tag key="amenity" value="college" zoom-appear="14"/>            
+        <osm-tag key="amenity" value="kindergarten" zoom-appear="15"/>        
+        <osm-tag key="amenity" value="school" zoom-appear="15"/>
+        <osm-tag key="amenity" value="university" zoom-appear="14"/>
     </pois>
 
         
@@ -563,6 +563,9 @@
         <osm-tag key="man_made" value="watermill" label-position="true" zoom-appear="15"/> 
         <osm-tag key="man_made" value="windmill" label-position="true" zoom-appear="15"/> 
 
+        <osm-tag key="tower:type" value="clock" label-position="true" zoom-appear="15"/>
+        <osm-tag key="tower:type" value="defensive" label-position="true" zoom-appear="14"/>
+
         <osm-tag key="ruins" renderable="false" value="castle"/>
         <osm-tag key="ruins" renderable="false" value="chapel"/>
         <osm-tag key="ruins" renderable="false" value="church"/>
@@ -603,6 +606,9 @@
         <osm-tag key="man_made" value="watermill" zoom-appear="15"/> 
         <osm-tag key="man_made" value="windmill" zoom-appear="15"/> 
 
+        <osm-tag key="tower:type" value="clock" zoom-appear="15"/>
+        <osm-tag key="tower:type" value="defensive" zoom-appear="14"/>
+	        
         <osm-tag key="ruins" renderable="false" value="castle"/>
         <osm-tag key="ruins" renderable="false" value="chapel"/>
         <osm-tag key="ruins" renderable="false" value="church"/>
@@ -629,14 +635,20 @@
                P O I   I N D U S T R I A L
     ************************************************** -->
    <ways>
-        <osm-tag key="man_made" value="tower" label-position="true" zoom-appear="13"/>
+        <osm-tag key="man_made" value="lighthouse" label-position="true" zoom-appear="13"/>    
+        <osm-tag key="man_made" value="observatory" label-position="true" zoom-appear="14"/> 
         <osm-tag key="man_made" value="water_works" label-position="true" zoom-appear="15"/>
         <osm-tag key="man_made" value="water_tower" label-position="true" zoom-appear="15"/>
         <osm-tag key="man_made" value="wastewater_plant" label-position="true" zoom-appear="15"/>
-        <osm-tag key="man_made" value="works" label-position="true" zoom-appear="15"/>
+        <osm-tag key="man_made" value="works" label-position="true" zoom-appear="13"/>
         <osm-tag key="power" value="plant" label-position="true" zoom-appear="13"/>
         <osm-tag key="power" value="generator" label-position="true" zoom-appear="13"/>
+        <osm-tag key="power" value="telescope" label-position="true" zoom-appear="14"/>        
         <osm-tag key="power" value="tower" label-position="true" zoom-appear="15"/>
+
+        <osm-tag key="tower:type" value="cooling" label-position="true" zoom-appear="14"/>
+        <osm-tag key="tower:type" value="observation" label-position="true" zoom-appear="14"/>
+        <osm-tag key="tower:type" value="radar" label-position="true" zoom-appear="13"/>        
 
         <osm-tag key="plant:source" renderable="false" value="solar"/>
         <osm-tag key="plant:source" renderable="false" value="hydro"/> 
@@ -649,24 +661,32 @@
         <osm-tag key="man_made" value="adit" zoom-appear="15"/>    
         <osm-tag key="man_made" value="chimney" zoom-appear="15"/>  
         <osm-tag key="man_made" value="communications_tower" zoom-appear="15"/>  
-        <osm-tag key="man_made" value="lighthouse" zoom-appear="15"/>
+        <osm-tag key="man_made" value="lighthouse" zoom-appear="13"/>
         <osm-tag key="man_made" value="mast" zoom-appear="15"/>
         <osm-tag key="man_made" value="mineshaft" zoom-appear="15"/>
+        <osm-tag key="man_made" value="observatory" zoom-appear="14"/>        
         <osm-tag key="man_made" value="petroleum_well" zoom-appear="15"/>
         <osm-tag key="man_made" value="surveillance" zoom-appear="15"/>
-        <osm-tag key="man_made" value="tower" zoom-appear="13"/>
+        <osm-tag key="man_made" value="telescope" zoom-appear="14"/>        
         <osm-tag key="man_made" value="water_works" zoom-appear="15"/>
         <osm-tag key="man_made" value="water_tower" zoom-appear="15"/>
         <osm-tag key="man_made" value="wastewater_plant" zoom-appear="15"/>
-        <osm-tag key="man_made" value="works" zoom-appear="15"/>
+        <osm-tag key="man_made" value="works" zoom-appear="13"/>
 
         <osm-tag key="power" value="generator" zoom-appear="14"/>        
         <osm-tag key="power" value="plant" zoom-appear="14"/>
         <osm-tag key="power" value="tower" zoom-appear="15"/>
 
+        <osm-tag key="tower:type" value="cooling" zoom-appear="14"/>
+        <osm-tag key="tower:type" value="observation" zoom-appear="14"/>
+        <osm-tag key="tower:type" value="radar" zoom-appear="13"/>
+
         <osm-tag key="plant:source" renderable="false" value="solar"/>
         <osm-tag key="plant:source" renderable="false" value="hydro"/> 
-        <osm-tag key="generator:source" renderable="false" value="wind"/>                
+        <osm-tag key="generator:source" renderable="false" value="wind"/>    
+
+        <osm-tag key="observatory:type" renderable="false" value="astronomical"/>
+        <osm-tag key="telescope:type" renderable="false" value="radio"/>                           
     </pois>  
 
 
@@ -817,6 +837,7 @@
                P O I   P U B L I C   S E R V I C E S
     ************************************************** -->
     <ways>
+        <osm-tag key="emergency" value="ambulance_station" label-position="true" zoom-appear="15"/>  
         <osm-tag key="amenity" value="community_centre" label-position="true" zoom-appear="15"/>                
         <osm-tag key="amenity" value="courthouse" label-position="true" zoom-appear="15"/>
         <osm-tag key="amenity" value="fire_station" label-position="true"  zoom-appear="15"/>        
@@ -832,15 +853,13 @@
     </ways>
 
     <pois>
+       <osm-tag key="emergency" value="ambulance_station" zoom-appear="15"/> 
         <osm-tag key="amenity" value="community_centre" zoom-appear="15"/>                
         <osm-tag key="amenity" value="courthouse" zoom-appear="15"/>
         <osm-tag key="amenity" value="drinking_water" zoom-appear="13"/>                
         <osm-tag key="amenity" value="fire_station" zoom-appear="15"/>        
         <osm-tag key="amenity" value="marketplace" zoom-appear="15"/>        
         <osm-tag key="amenity" value="police" zoom-appear="15"/>
-        <!-- 
-        <osm-tag key="amenity" value="post_box" zoom-appear="15"/>
-        -->
         <osm-tag key="amenity" value="post_office" zoom-appear="15"/>
         <osm-tag key="amenity" value="prison"  zoom-appear="14"/>        
         <osm-tag key="amenity" value="recycling" zoom-appear="15"/>        
@@ -862,6 +881,9 @@
         <osm-tag key="man_made" value="campanile" zoom-appear="15"/> 
         <osm-tag key="man_made" value="stupa" zoom-appear="14"/> 
 
+        <osm-tag key="tower:type" value="minaret" label-position="true" zoom-appear="14"/>        
+
+        <osm-tag key="religion" renderable="false" value="buddhist"/>
         <osm-tag key="religion" renderable="false" value="christian"/>
         <osm-tag key="religion" renderable="false" value="jewish"/>
         <osm-tag key="religion" renderable="false" value="muslim"/>
@@ -880,6 +902,9 @@
         <osm-tag key="historic" value="wayside_cross" zoom-appear="15"/>
         <osm-tag key="historic" value="wayside_shrine" zoom-appear="15"/> 
 
+        <osm-tag key="tower:type" value="minaret" zoom-appear="14"/>        
+
+        <osm-tag key="religion" renderable="false" value="buddhist"/>
         <osm-tag key="religion" renderable="false" value="christian"/>
         <osm-tag key="religion" renderable="false" value="jewish"/>
         <osm-tag key="religion" renderable="false" value="muslim"/>
@@ -1099,8 +1124,8 @@
         <osm-tag key="building" label-position="true" value="transportation" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="yes" zoom-appear="15"/>
 
-        <osm-tag key="building" label-position="true" value="basilica" zoom-appear="15"/>
-        <osm-tag key="building" label-position="true" value="cathedral" zoom-appear="15"/>
+        <osm-tag key="building" label-position="true" value="basilica" zoom-appear="14"/>
+        <osm-tag key="building" label-position="true" value="cathedral" zoom-appear="14"/>
         <osm-tag key="building" label-position="true" value="chapel" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="church" zoom-appear="15"/>
         <osm-tag key="building" label-position="true" value="monastery" zoom-appear="15"/>
@@ -1675,10 +1700,11 @@
 
 
         <!-- Solar plants -->
+        <!-- 
         <osm-tag key="tower:type" renderable="false" value="defensive"/>         
         <osm-tag key="tower:type" renderable="false" value="observation"/> 
         <osm-tag key="tower:type" renderable="false" value="watchtower"/> 
-
+        -->
     </ways>
 
     <pois>
@@ -1693,9 +1719,11 @@
         <osm-tag key="abandoned" renderable="false" value="yes"/> 
         <osm-tag key="disused" renderable="false" value="yes"/> 
 
+        <!-- 
         <osm-tag key="tower:type" renderable="false" value="defensive"/>         
         <osm-tag key="tower:type" renderable="false" value="observation"/> 
         <osm-tag key="tower:type" renderable="false" value="watchtower"/> 
+        -->
 
         <osm-tag key="sport" value="golf" renderable="false"/>
         <osm-tag key="sport" value="soccer" renderable="false"/>
