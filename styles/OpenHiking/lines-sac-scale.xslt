@@ -50,13 +50,13 @@
 <xsl:template name="render-sac-symbol">
 <xsl:param name="icon" />
     <rule e="any" k="*" v="*" zoom-min="15" zoom-max="16">
-        <lineSymbol src="{$symbolPath}/{$icon}" align-center="true" repeat="true" repeat-start="10" repeat-gap="140" symbol-width="18"  rotate="false" display="always" priority="{$pr-sac-scale}"/>
+        <lineSymbol src="{$signsPath}/{$icon}" align-center="true" repeat="true" repeat-start="10" repeat-gap="140" symbol-width="18"  rotate="false" display="always" priority="{$pr-sac-scale}"/>
     </rule>
     <rule e="any" k="*" v="*" zoom-min="17" zoom-max="18">
-        <lineSymbol src="{$symbolPath}/{$icon}" align-center="true" repeat="true" repeat-start="30" repeat-gap="160" symbol-width="22"  rotate="false" display="always" priority="{$pr-sac-scale}"/>
+        <lineSymbol src="{$signsPath}/{$icon}" align-center="true" repeat="true" repeat-start="30" repeat-gap="160" symbol-width="22"  rotate="false" display="always" priority="{$pr-sac-scale}"/>
     </rule>
     <rule e="any" k="*" v="*" zoom-min="19" >
-        <lineSymbol src="{$symbolPath}/{$icon}" align-center="true" repeat="true" repeat-start="60" repeat-gap="200" symbol-width="24"  rotate="false" display="always" priority="{$pr-sac-scale}"/>
+        <lineSymbol src="{$signsPath}/{$icon}" align-center="true" repeat="true" repeat-start="60" repeat-gap="200" symbol-width="24"  rotate="false" display="always" priority="{$pr-sac-scale}"/>
     </rule>            
 </xsl:template>
 </xsl:stylesheet>

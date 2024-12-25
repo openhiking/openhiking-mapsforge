@@ -63,7 +63,6 @@
 
 <xsl:variable name="pr-helipad">20</xsl:variable>
 <xsl:variable name="pr-bus-stop">20</xsl:variable>
-<xsl:variable name="pr-lighthouse">20</xsl:variable>
 <xsl:variable name="pr-windmill">20</xsl:variable>
 <xsl:variable name="pr-watermill">20</xsl:variable>
 
@@ -118,6 +117,9 @@
 
 <xsl:variable name="pr-factory">10</xsl:variable>
 <xsl:variable name="pr-power-plant">10</xsl:variable>
+<xsl:variable name="pr-lighthouse">10</xsl:variable>
+
+<xsl:variable name="pr-university">10</xsl:variable>
 
 <!-- Priority 0 -->
 
@@ -130,6 +132,7 @@
 <xsl:variable name="pr-mineshaft">0</xsl:variable>
 <xsl:variable name="pr-mast">0</xsl:variable>
 <xsl:variable name="pr-theatre">0</xsl:variable>
+<xsl:variable name="pr-school">0</xsl:variable>
 
 <xsl:variable name="pr-memorial">0</xsl:variable>
 <xsl:variable name="pr-tower-observation">0</xsl:variable>
@@ -144,6 +147,7 @@
 <xsl:variable name="pr-water-tower">0</xsl:variable>
 <xsl:variable name="pr-water-works">0</xsl:variable>
 <xsl:variable name="pr-police">0</xsl:variable>
+<xsl:variable name="pr-fire-station">0</xsl:variable>
 <xsl:variable name="pr-ambulance-station">0</xsl:variable>
 <xsl:variable name="pr-tumulus">0</xsl:variable>
 <xsl:variable name="pr-shop">0</xsl:variable>
@@ -171,6 +175,7 @@
 <xsl:variable name="pr-ele-peak">-5</xsl:variable>
 
 <!-- Priority -10 -->
+<xsl:variable name="pr-chimney">-10</xsl:variable>
 <xsl:variable name="pr-hunting-stand">-10</xsl:variable>
 <xsl:variable name="pr-game-feeding">-10</xsl:variable>
 <xsl:variable name="pr-stile">-10</xsl:variable>
@@ -189,6 +194,7 @@
 <xsl:variable name="pr-label-accomodation">-10</xsl:variable>
 <xsl:variable name="pr-label-amenities">-10</xsl:variable>
 <xsl:variable name="pr-label-culture">-10</xsl:variable>
+<xsl:variable name="pr-label-education">-10</xsl:variable>
 <xsl:variable name="pr-label-financial">-10</xsl:variable>
 <xsl:variable name="pr-label-healthcare">-10</xsl:variable>
 <xsl:variable name="pr-label-industrial">-10</xsl:variable>

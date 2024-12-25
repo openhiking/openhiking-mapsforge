@@ -54,12 +54,11 @@
   <xsl:include href="points-hiking-symbols-osmc.xslt"/>
   <xsl:include href="points-hiking-symbols-special.xslt"/>
   <xsl:include href="points-pilgrimage-symbols.xslt"/>  
-  <xsl:include href="points-accomodation.xslt" />
-  <xsl:include href="points-amenities.xslt" />  
+  <xsl:include href="points-accomodation.xslt" /> 
   <xsl:include href="points-barriers.xslt" />  
   <xsl:include href="points-culture.xslt" />  
   <xsl:include href="points-editorial.xslt" />
-  <xsl:include href="points-emergency.xslt" />
+  <xsl:include href="points-education.xslt" />  
   <xsl:include href="points-financial.xslt" />
   <xsl:include href="points-food.xslt" />
   <xsl:include href="points-healthcare.xslt" />
@@ -70,6 +69,7 @@
   <xsl:include href="points-military.xslt" />
   <xsl:include href="points-obstacles.xslt" />
   <xsl:include href="points-places.xslt" />   
+  <xsl:include href="points-public-services.xslt" /> 
   <xsl:include href="points-religion.xslt" />  
   <xsl:include href="points-shops.xslt" />
   <xsl:include href="points-natural.xslt" />
@@ -130,11 +130,10 @@
   <xsl:call-template name="points-hiking-symbols-special"/>  
   <xsl:call-template name="points-pilgrimage-symbols"/>  
   <xsl:call-template name="points-accomodation"/>
-  <xsl:call-template name="points-amenities"/>
   <xsl:call-template name="points-barriers"/>
   <xsl:call-template name="points-culture"/>
-  <xsl:call-template name="points-editorial"/>    
-  <xsl:call-template name="points-emergency"/>  
+  <xsl:call-template name="points-editorial"/>  
+  <xsl:call-template name="points-education"/>     
   <xsl:call-template name="points-financial"/>
   <xsl:call-template name="points-food"/>
   <xsl:call-template name="points-healthcare"/>
@@ -147,6 +146,7 @@
   <xsl:call-template name="points-religion"/>
   <xsl:call-template name="points-shops"/>
   <xsl:call-template name="points-natural"/>
+  <xsl:call-template name="points-public-services"/> 
   <xsl:call-template name="points-transportation"/>
   <xsl:call-template name="points-wilderness"/>  
     

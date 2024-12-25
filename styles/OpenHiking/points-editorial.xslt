@@ -5,13 +5,13 @@
 #
 # Point rendering: OSM Editorial
 #
-# Copyright (c) 2022-2023 OpenHiking contributors
+# Copyright (c) 2022-2024 OpenHiking contributors
 # SPDX-License-Identifier: GPL-3.0-only
 -->
 <xsl:template name="points-editorial">
 
 <rule  cat="editorial" e="node" k="fixme" v="continue" zoom-min="16">
-        <symbol id="fixme" src="{$symbolPath}/fixme.svg" symbol-width="10" priority="{$pr-fixme}"/>  
+        <symbol id="fixme" src="{$signsPath}/fixme.svg" symbol-width="10" priority="{$pr-fixme}"/>  
 </rule>
 
 </xsl:template>

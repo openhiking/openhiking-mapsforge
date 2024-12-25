@@ -5,21 +5,21 @@
 #
 # Point rendering: Accomodation
 #
-# Copyright (c) 2022-2023 OpenHiking contributors
+# Copyright (c) 2022-2024 OpenHiking contributors
 # SPDX-License-Identifier: GPL-3.0-only
 -->
 <xsl:template name="points-obstacles">
 
 <rule  e="node" k="obstacle" v="vegetation" zoom-min="15">
-  <symbol id="obstacle" src="{$symbolPath}/obstacle_vegetation.svg" symbol-width="22" priority="{$pr-obstacle}"/>
+  <symbol id="obstacle" src="{$hikingIconPath}/obstacle_vegetation.svg" symbol-width="22" priority="{$pr-obstacle}"/>
 </rule>
 
 <rule  e="node" k="obstacle" v="fallen_tree" zoom-min="15">
-  <symbol id="obstacle" src="{$symbolPath}/obstacle_fallen_tree.svg" symbol-width="22" priority="{$pr-obstacle}"/>
+  <symbol id="obstacle" src="{$hikingIconPath}/obstacle_fallen_tree.svg" symbol-width="22" priority="{$pr-obstacle}"/>
 </rule>
 
 <rule  e="node" k="obstacle" v="yes" zoom-min="15">
-  <symbol id="obstacle" src="{$symbolPath}/obstacle.svg" symbol-width="22" priority="{$pr-obstacle}"/>
+  <symbol id="obstacle" src="{$hikingIconPath}/obstacle.svg" symbol-width="22" priority="{$pr-obstacle}"/>
 </rule>
 
 </xsl:template>

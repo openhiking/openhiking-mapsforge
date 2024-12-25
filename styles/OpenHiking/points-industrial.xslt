@@ -5,7 +5,7 @@
 #
 # Point rendering: Industrial
 #
-# Copyright (c) 2022-2023 OpenHiking contributors
+# Copyright (c) 2022-2024 OpenHiking contributors
 # SPDX-License-Identifier: GPL-3.0-only
 -->
 
@@ -14,7 +14,7 @@
 <rule  e="any" k="man_made" v="adit" zoom-min="15">
     <rule  e="any" k="abandoned" v="~" >
         <rule  e="any" k="disused" v="~">
-        <symbol id="adit" src="{$symbolPath}/adit.svg" symbol-width="18" priority="{$pr-adit}"/>
+        <symbol id="adit" src="{$industrialIconPath}/adit.svg" symbol-width="18" priority="{$pr-adit}"/>
         <rule e="any" k="*" v="*" zoom-min="16">
             <caption k="name" symbol-id="adit" 
             font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-industrial}"/>
@@ -25,7 +25,7 @@
 
 <rule  e="any" k="man_made" v="mineshaft" zoom-min="15">
     <rule  e="any" k="abandoned" v="~" >
-        <symbol id="mineshaft" src="{$symbolPath}/mineshaft.svg" symbol-width="17" priority="{$pr-mineshaft}"/>
+        <symbol id="mineshaft" src="{$industrialIconPath}/mineshaft.svg" symbol-width="17" priority="{$pr-mineshaft}"/>
         <rule e="any" k="*" v="*" zoom-min="16">
             <caption k="name" symbol-id="mineshaft" 
             font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-industrial}"/>     
@@ -34,9 +34,17 @@
 </rule>
 
 <rule  e="any" k="man_made" v="works" zoom-min="14">
-  <symbol id="factory" src="{$symbolPath}/factory.svg" symbol-width="24" priority="{$pr-factory}"/>
+  <symbol id="factory" src="{$industrialIconPath}/factory.svg" symbol-width="26" priority="{$pr-factory}"/>
   <rule e="node" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="factory" 
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-industrial}"/>
+  </rule>
+</rule>
+
+<rule  e="any" k="man_made" v="chimney" zoom-min="15">
+  <symbol id="chimney" src="{$industrialIconPath}/chimney.svg" symbol-width="16" priority="{$pr-chimney}"/>
+  <rule e="node" k="*" v="*" zoom-min="16">
+    <caption k="name" symbol-id="chimney" 
     font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-industrial}"/>
   </rule>
 </rule>
@@ -44,26 +52,26 @@
 <rule  e="any" k="power" v="plant" zoom-min="13">
     <rule e="way" k="plant:source" v="~">
         <rule  e="any" k="*" v="*" zoom-max="14">
-            <symbol id="power_plant" src="{$symbolPath}/power_plant.svg" symbol-width="16" priority="{$pr-power-plant}"/>
+            <symbol id="power_plant" src="{$industrialIconPath}/power_plant.svg" symbol-width="16" priority="{$pr-power-plant}"/>
         </rule> 
         <rule  e="any" k="*" v="*" zoom-min="15">
-            <symbol id="power_plant" src="{$symbolPath}/power_plant.svg" symbol-width="21" priority="{$pr-power-plant}"/>
+            <symbol id="power_plant" src="{$industrialIconPath}/power_plant.svg" symbol-width="21" priority="{$pr-power-plant}"/>
         </rule>                         
     </rule>
     <rule e="way" k="plant:source" v="hydro">
         <rule  e="any" k="*" v="*"  zoom-min="14" zoom-max="16">
-            <symbol id="hydro_plant" src="{$symbolPath}/hydro_plant.svg" symbol-width="20" priority="{$pr-power-plant}"/>
+            <symbol id="hydro_plant" src="{$industrialIconPath}/hydro_plant.svg" symbol-width="20" priority="{$pr-power-plant}"/>
         </rule> 
         <rule  e="any" k="*" v="*" zoom-min="17">
-            <symbol id="hydro_plant" src="{$symbolPath}/hydro_plant.svg" symbol-width="24" priority="{$pr-power-plant}"/>
+            <symbol id="hydro_plant" src="{$industrialIconPath}/hydro_plant.svg" symbol-width="24" priority="{$pr-power-plant}"/>
         </rule>                                 
     </rule>
     <rule e="way" k="plant:source" v="nuclear">
         <rule  e="any" k="*" v="*"  zoom-max="15">
-            <symbol id="hydro_plant" src="{$symbolPath}/nuclear_plant.svg" symbol-width="20" priority="{$pr-power-plant}"/>
+            <symbol id="hydro_plant" src="{$industrialIconPath}/nuclear_plant.svg" symbol-width="20" priority="{$pr-power-plant}"/>
         </rule> 
         <rule  e="any" k="*" v="*" zoom-min="16">
-            <symbol id="hydro_plant" src="{$symbolPath}/nuclear_plant.svg" symbol-width="26" priority="{$pr-power-plant}"/>
+            <symbol id="hydro_plant" src="{$industrialIconPath}/nuclear_plant.svg" symbol-width="26" priority="{$pr-power-plant}"/>
         </rule>                                 
     </rule>
     <rule e="node" k="*" v="*" zoom-min="16">
@@ -75,38 +83,67 @@
 
 <rule  e="any" k="power" v="generator" zoom-min="14">
     <rule  e="any" k="generator:source" v="wind" >
-        <symbol id="wind_turbine" src="{$symbolPath}/wind_turbine.svg" symbol-width="20" priority="{$pr-wind-turbine}"/>
+        <symbol id="wind_turbine" src="{$industrialIconPath}/wind_turbine.svg" symbol-width="20" priority="{$pr-wind-turbine}"/>
     </rule>
 </rule>
 
-<rule  e="any" k="man_made" v="water_works" zoom-min="16">
-    <symbol id="water_works" src="{$symbolPath}/water_works.svg" symbol-width="16" priority="{$pr-water-works}"/>
+<rule  e="any" k="man_made" v="water_works" >
+    <symbol id="water_works" src="{$industrialIconPath}/water_works.svg" symbol-width="18" priority="{$pr-water-works}"/>
+</rule>
+
+<rule  e="any" k="man_made" v="wastewater_plant" >
+    <symbol id="wastewater_plant" src="{$industrialIconPath}/wastewater_plant.svg" symbol-width="18" priority="{$pr-water-works}"/>
 </rule>
 
 
 <rule  e="any" k="man_made" v="water_tower" zoom-min="16">
-    <symbol id="mast" src="{$symbolPath}/water_tower.svg" symbol-width="22" priority="{$pr-water-tower}"/>
+    <symbol id="mast" src="{$industrialIconPath}/water_tower.svg" symbol-width="22" priority="{$pr-water-tower}"/>
 </rule>
 
 <rule  e="any" k="man_made" v="communications_tower|mast" zoom-min="15">
-    <symbol id="mast" src="{$symbolPath}/mast.svg" symbol-width="25" priority="{$pr-mast}"/>
+    <symbol id="mast" src="{$industrialIconPath}/communication_tower.svg" symbol-width="25" priority="{$pr-mast}"/>
 </rule>
 
-<rule  e="any" k="man_made" v="tower" zoom-min="15">
-    <rule  e="any" k="tower:type" v="observation">
+<rule  e="any" k="tower:type" v="observation">
+    <rule  e="any" k="*" v="*" zoom-max="16">
+        <symbol id="observation" src="{$industrialIconPath}/observation_tower.svg" symbol-width="12" priority="{$pr-tower-observation}"/>
+    </rule> 
+    <rule  e="any" k="*" v="*" zoom-min="17">
+        <symbol id="observation" src="{$industrialIconPath}/observation_tower.svg" symbol-width="14" priority="{$pr-tower-observation}"/>
+    </rule>                         
+    <rule e="any" k="*" v="*" zoom-min="16">
+        <caption k="name" symbol-id="observation" 
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-industrial}"/>
+    </rule>       
+</rule>
+
+
+<rule  e="any" k="man_made" v="observatory" >
+    <rule  e="any" k="observatory:type" v="astronomical">
         <rule  e="any" k="*" v="*" zoom-max="16">
-            <symbol id="observation" src="{$symbolPath}/tower_observation.svg" symbol-width="12" priority="{$pr-tower-observation}"/>
+            <symbol id="observatory" src="{$industrialIconPath}/observatory.svg" symbol-width="12" priority="{$pr-tower-observation}"/>
         </rule> 
         <rule  e="any" k="*" v="*" zoom-min="17">
-            <symbol id="observation" src="{$symbolPath}/tower_observation.svg" symbol-width="14" priority="{$pr-tower-observation}"/>
+            <symbol id="observatory" src="{$industrialIconPath}/observatory.svg" symbol-width="14" priority="{$pr-tower-observation}"/>
         </rule>                         
         <rule e="any" k="*" v="*" zoom-min="16">
-            <caption k="name" symbol-id="observation" 
+            <caption k="name" symbol-id="observatory" 
             font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-industrial}"/>
         </rule>       
     </rule>
 </rule>  
 
+<rule e="any" k="man_made" v="lighthouse" >
+  <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="15">
+    <symbol id="lighthouse" src="{$industrialIconPath}/lighthouse.svg" symbol-width="18" priority="{$pr-lighthouse}" />
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="16"  zoom-max="17">
+    <symbol id="lighthouse" src="{$industrialIconPath}/lighthouse.svg" symbol-width="20" priority="{$pr-lighthouse}"  />
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="18" >
+    <symbol id="lighthouse" src="{$industrialIconPath}/lighthouse.svg" symbol-width="24" priority="{$pr-lighthouse}" />
+  </rule>
+</rule>
 
 
 

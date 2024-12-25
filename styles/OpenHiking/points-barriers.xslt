@@ -5,7 +5,7 @@
 #
 # Points: Barriers
 #
-# Copyright (c) 2022-2023 OpenHiking contributors
+# Copyright (c) 2022-2024 OpenHiking contributors
 # SPDX-License-Identifier: GPL-3.0-only
 -->
 
@@ -16,26 +16,26 @@
 <rule e="node" k="entrance" v="~" >  
     <rule e="node" k="access" v="yes" >  
         <rule e="node" k="*" v="*" zoom-max="17">  
-            <symbol id="gate" src="{$symbolPath}/gate_open.svg" symbol-width="12" priority="{$pr-gate}"/>        
+            <symbol id="gate" src="{$barrierIconPath}/gate_open.svg" symbol-width="12" priority="{$pr-gate}"/>        
         </rule>
         <rule e="node" k="*" v="*" zoom-min="18">  
-            <symbol id="gate" src="{$symbolPath}/gate_open.svg" symbol-width="14" priority="{$pr-gate}"/>        
+            <symbol id="gate" src="{$barrierIconPath}/gate_open.svg" symbol-width="14" priority="{$pr-gate}"/>        
         </rule>
     </rule>    
     <rule e="node" k="access" v="no" >  
         <rule e="node" k="*" v="*" zoom-max="17">  
-            <symbol id="gate" src="{$symbolPath}/gate_closed.svg" symbol-width="12" priority="{$pr-gate}"/>        
+            <symbol id="gate" src="{$barrierIconPath}/gate_closed.svg" symbol-width="12" priority="{$pr-gate}"/>        
         </rule>
         <rule e="node" k="*" v="*" zoom-min="18">  
-            <symbol id="gate" src="{$symbolPath}/gate_closed.svg" symbol-width="14" priority="{$pr-gate}"/>        
+            <symbol id="gate" src="{$barrierIconPath}/gate_closed.svg" symbol-width="14" priority="{$pr-gate}"/>        
         </rule>
     </rule>      
     <rule e="node" k="access" v="~" >  
         <rule e="node" k="*" v="*" zoom-max="17">  
-            <symbol id="gate" src="{$symbolPath}/gate.svg" symbol-width="12" priority="{$pr-gate}"/>        
+            <symbol id="gate" src="{$barrierIconPath}/gate.svg" symbol-width="12" priority="{$pr-gate}"/>        
         </rule>
         <rule e="node" k="*" v="*" zoom-min="18">  
-            <symbol id="gate" src="{$symbolPath}/gate.svg" symbol-width="14" priority="{$pr-gate}"/>        
+            <symbol id="gate" src="{$barrierIconPath}/gate.svg" symbol-width="14" priority="{$pr-gate}"/>        
         </rule>
     </rule>    
     <rule e="any" k="*" v="*" zoom-min="17">
@@ -46,16 +46,16 @@
 </rule>
 
 <rule e="node" k="barrier" v="lift_gate|swing_gate" zoom-min="16">
-    <symbol src="{$symbolPath}/lift_gate.svg" symbol-width="20" priority="{$pr-lift-gate}"/>
+    <symbol src="{$barrierIconPath}/lift_gate.svg" symbol-width="20" priority="{$pr-lift-gate}"/>
 </rule>
 
 <rule e="node" k="barrier" v="toll_booth" zoom-min="15">
-    <symbol src="{$symbolPath}/toll_booth.svg" symbol-width="22" priority="{$pr-toll-booth}"/>
+    <symbol src="{$barrierIconPath}/toll_booth.svg" symbol-width="22" priority="{$pr-toll-booth}"/>
 </rule>
 
 
 <rule e="node" k="barrier" v="stile" zoom-min="16">
-    <symbol src="{$symbolPath}/stile.svg" symbol-width="18" priority="{$pr-stile}"/>
+    <symbol src="{$barrierIconPath}/stile.svg" symbol-width="18" priority="{$pr-stile}"/>
 </rule>
 
 </xsl:template>

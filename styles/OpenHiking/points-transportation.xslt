@@ -12,7 +12,7 @@
 <xsl:template name="points-transportation">
 
 <rule  e="any" k="amenity" v="parking" zoom-min="16">
-    <symbol id="parking" src="{$symbolPath}/parking.svg" symbol-width="14" priority="{$pr-parking}"/>
+    <symbol id="parking" src="{$transportationIconPath}/parking.svg" symbol-width="14" priority="{$pr-parking}"/>
     <rule e="any" k="*" v="*" >
         <caption k="name" symbol-id="parking" 
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-transportation}"/>
@@ -20,7 +20,7 @@
 </rule>        
 
 <rule  e="any" k="amenity" v="fuel" zoom-min="14">
-    <symbol id="fuel" src="{$symbolPath}/fuel.svg" symbol-width="16" priority="{$pr-fuel}"/>
+    <symbol id="fuel" src="{$transportationIconPath}/fuel.svg" symbol-width="16" priority="{$pr-fuel}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="fuel" 
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-transportation}"/>
@@ -31,18 +31,18 @@
 <rule  e="any" k="railway" v="station|halt" zoom-min="14">
   <rule  e="any" k="station" v="~|subway" >
     <rule  e="any" k="*" v="*" zoom-max="15">
-      <symbol id="train" src="{$symbolPath}/train_station.svg" symbol-width="15" priority="{$pr-train-station}"/>
+      <symbol id="train" src="{$transportationIconPath}/train_station.svg" symbol-width="15" priority="{$pr-train-station}"/>
     </rule>
     <rule  e="any" k="*" v="*" zoom-min="16" >
-      <symbol id="train" src="{$symbolPath}/train_station.svg" symbol-width="18" priority="{$pr-train-station}"/>
+      <symbol id="train" src="{$transportationIconPath}/train_station.svg" symbol-width="18" priority="{$pr-train-station}"/>
     </rule>
   </rule>
   <rule  e="any" k="station" v="light_rail" >
     <rule  e="any" k="*" v="*" zoom-max="15">
-      <symbol id="train" src="{$symbolPath}/light_rail.svg" symbol-width="15" priority="{$pr-train-station}"/>
+      <symbol id="train" src="{$transportationIconPath}/light_rail.svg" symbol-width="15" priority="{$pr-train-station}"/>
     </rule>
     <rule  e="any" k="*" v="*" zoom-min="16" >
-      <symbol id="train" src="{$symbolPath}/light_rail.svg" symbol-width="18" priority="{$pr-train-station}"/>
+      <symbol id="train" src="{$transportationIconPath}/light_rail.svg" symbol-width="18" priority="{$pr-train-station}"/>
     </rule>
   </rule>
   <rule e="node" k="*" v="*" zoom-min="15">
@@ -53,10 +53,10 @@
 
 <rule  e="any" k="station" v="funicular" zoom-min="14">
   <rule  e="any" k="*" v="*" zoom-max="15">
-    <symbol id="funicular" src="{$symbolPath}/funicular.svg" symbol-width="18" priority="{$pr-train-station}"/>
+    <symbol id="funicular" src="{$transportationIconPath}/funicular.svg" symbol-width="18" priority="{$pr-train-station}"/>
   </rule>
   <rule  e="any" k="*" v="*" zoom-min="16" >
-    <symbol id="funicular" src="{$symbolPath}/funicular.svg" symbol-width="24" priority="{$pr-train-station}"/>
+    <symbol id="funicular" src="{$transportationIconPath}/funicular.svg" symbol-width="24" priority="{$pr-train-station}"/>
   </rule>
   <rule e="node" k="*" v="*" zoom-min="15">
     <caption k="name" symbol-id="funicular" position="below" 
@@ -66,24 +66,24 @@
 
 
 <rule  e="any" k="railway" v="crossing|level_crossing" zoom-min="17">
-  <symbol id="crossing" src="{$symbolPath}/railway_crossing.svg" symbol-width="21" priority="{$pr-crossing}"/>
+  <symbol id="crossing" src="{$transportationIconPath}/railway_crossing.svg" symbol-width="21" priority="{$pr-crossing}"/>
 </rule>
 
 
 <rule  e="any" k="highway" v="bus_stop">
   <rule  e="any" k="bus_local" v="~" zoom-min="14" zoom-max="15">
     <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="14">
-      <symbol id="bus_stop" src="{$symbolPath}/bus_stop_small.svg" symbol-width="8" priority="{$pr-bus-stop}"/>
+      <symbol id="bus_stop" src="{$transportationIconPath}/bus_stop_small.svg" symbol-width="8" priority="{$pr-bus-stop}"/>
     </rule>
     <rule  e="any" k="*" v="*" zoom-min="15" zoom-max="15">
-      <symbol id="bus_stop" src="{$symbolPath}/bus_stop.svg" symbol-width="14" priority="{$pr-bus-stop}"/>
+      <symbol id="bus_stop" src="{$transportationIconPath}/bus_stop.svg" symbol-width="14" priority="{$pr-bus-stop}"/>
     </rule>    
   </rule>
   <rule  e="any" k="bus_local" v="yes" zoom-min="15" zoom-max="15">
-     <symbol id="bus_stop" src="{$symbolPath}/bus_stop_small.svg" symbol-width="8" priority="{$pr-bus-stop}"/>
+     <symbol id="bus_stop" src="{$transportationIconPath}/bus_stop_small.svg" symbol-width="8" priority="{$pr-bus-stop}"/>
   </rule>
   <rule  e="any" k="*" v="*" zoom-min="16" >
-    <symbol id="bus_stop" src="{$symbolPath}/bus_stop.svg" symbol-width="18" priority="{$pr-bus-stop}"/>  
+    <symbol id="bus_stop" src="{$transportationIconPath}/bus_stop.svg" symbol-width="18" priority="{$pr-bus-stop}"/>  
   </rule>
   <rule e="node" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="bus_stop" 
@@ -93,10 +93,10 @@
 
 <rule  e="any" k="amenity" v="bus_station">
   <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="15">
-    <symbol id="bus_stop" src="{$symbolPath}/bus_stop.svg" symbol-width="14" priority="{$pr-bus-station}"/>
+    <symbol id="bus_stop" src="{$transportationIconPath}/bus_stop.svg" symbol-width="14" priority="{$pr-bus-station}"/>
   </rule>
   <rule  e="any" k="*" v="*" zoom-min="16" >
-    <symbol id="bus_stop" src="{$symbolPath}/bus_stop.svg" symbol-width="18" priority="{$pr-bus-station}"/>
+    <symbol id="bus_stop" src="{$transportationIconPath}/bus_stop.svg" symbol-width="18" priority="{$pr-bus-station}"/>
   </rule>
   <rule e="node" k="*" v="*" zoom-min="15">
     <caption k="name" symbol-id="bus_stop" position="below" 
@@ -106,10 +106,10 @@
 
 <rule  e="any" k="amenity" v="ferry_terminal">
   <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="15">
-    <symbol id="ferry_terminal" src="{$symbolPath}/ferry_terminal.svg" symbol-width="17" priority="{$pr-ferry-terminal}"/>
+    <symbol id="ferry_terminal" src="{$transportationIconPath}/ferry_terminal.svg" symbol-width="17" priority="{$pr-ferry-terminal}"/>
   </rule>
   <rule  e="any" k="*" v="*" zoom-min="16" >
-    <symbol id="ferry_terminal" src="{$symbolPath}/ferry_terminal.svg" symbol-width="20" priority="{$pr-ferry-terminal}"/>
+    <symbol id="ferry_terminal" src="{$transportationIconPath}/ferry_terminal.svg" symbol-width="20" priority="{$pr-ferry-terminal}"/>
   </rule>
   <rule e="node" k="*" v="*" zoom-min="15">
     <caption k="name" symbol-id="ferry_terminal" 
@@ -119,10 +119,10 @@
 
 <rule  e="any" k="aeroway" v="aerodrome">
   <rule  e="any" k="*" v="*" zoom-min="13" zoom-max="14">
-    <symbol id="airport" src="{$symbolPath}/airport.svg" symbol-width="19" priority="{$pr-airport}"/>
+    <symbol id="airport" src="{$transportationIconPath}/airport.svg" symbol-width="19" priority="{$pr-airport}"/>
   </rule>
   <rule  e="any" k="*" v="*" zoom-min="15" >
-    <symbol id="airport" src="{$symbolPath}/airport.svg" symbol-width="23" priority="{$pr-airport}"/>
+    <symbol id="airport" src="{$transportationIconPath}/airport.svg" symbol-width="23" priority="{$pr-airport}"/>
   </rule>
   <rule e="any" k="*" v="*" zoom-min="14">
     <caption k="name" symbol-id="airport" 
@@ -132,24 +132,13 @@
 
 <rule e="any" k="aeroway" v="helipad" >
   <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="15">
-    <symbol id="helipad" src="{$symbolPath}/helipad.svg" symbol-width="15" priority="{$pr-helipad}"/>
+    <symbol id="helipad" src="{$transportationIconPath}/helipad.svg" symbol-width="15" priority="{$pr-helipad}"/>
   </rule>
   <rule  e="any" k="*" v="*" zoom-min="15" >
-    <symbol id="helipad" src="{$symbolPath}/helipad.svg" symbol-width="16" priority="{$pr-helipad}"/>
+    <symbol id="helipad" src="{$transportationIconPath}/helipad.svg" symbol-width="16" priority="{$pr-helipad}"/>
   </rule>
 </rule>
 
-<rule e="any" k="man_made" v="lighthouse" >
-  <rule  e="any" k="*" v="*" zoom-min="15" zoom-max="15">
-    <symbol id="lighthouse" src="{$symbolPath}/lighthouse.svg" symbol-width="11" priority="{$pr-lighthouse}" />
-  </rule>
-  <rule  e="any" k="*" v="*" zoom-min="16"  zoom-max="17">
-    <symbol id="lighthouse" src="{$symbolPath}/lighthouse.svg" symbol-width="14" priority="{$pr-lighthouse}"  />
-  </rule>
-  <rule  e="any" k="*" v="*" zoom-min="18" >
-    <symbol id="lighthouse" src="{$symbolPath}/lighthouse.svg" symbol-width="16" priority="{$pr-lighthouse}" />
-  </rule>
-</rule>
 
 
 </xsl:template>

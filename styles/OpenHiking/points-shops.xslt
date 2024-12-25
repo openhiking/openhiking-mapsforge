@@ -5,7 +5,7 @@
 #
 # Point rendering: Shops
 #
-# Copyright (c) 2022-2023 OpenHiking contributors
+# Copyright (c) 2022-2024 OpenHiking contributors
 # SPDX-License-Identifier: GPL-3.0-only
 -->
 
@@ -14,10 +14,10 @@
 
 <rule  e="any" k="shop" v="mall" zoom-min="14">
     <rule  e="any" k="*" v="*" zoom-max="15">
-        <symbol id="shopping_center" src="{$symbolPath}/shopping_center.svg" symbol-width="18" priority="{$pr-shopping-center}"/>
+        <symbol id="shopping_center" src="{$shopIconPath}/shopping_center.svg" symbol-width="18" priority="{$pr-shopping-center}"/>
     </rule> 
     <rule  e="any" k="*" v="*" zoom-min="16">
-        <symbol id="shopping_center" src="{$symbolPath}/shopping_center.svg" symbol-width="20" priority="{$pr-shopping-center}"/>
+        <symbol id="shopping_center" src="{$shopIconPath}/shopping_center.svg" symbol-width="20" priority="{$pr-shopping-center}"/>
     </rule>                         
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="shopping_center" 
@@ -27,10 +27,10 @@
 
 <rule  e="any" k="shop" v="general|supermarket" zoom-min="14">
     <rule  e="any" k="*" v="*" zoom-max="15">
-        <symbol id="supermarket" src="{$symbolPath}/supermarket.svg" symbol-width="18" priority="{$pr-supermarket}"/>
+        <symbol id="supermarket" src="{$shopIconPath}/supermarket.svg" symbol-width="18" priority="{$pr-supermarket}"/>
     </rule> 
     <rule  e="any" k="*" v="*" zoom-min="16">
-        <symbol id="supermarket" src="{$symbolPath}/supermarket.svg" symbol-width="22" priority="{$pr-supermarket}"/>            
+        <symbol id="supermarket" src="{$shopIconPath}/supermarket.svg" symbol-width="22" priority="{$pr-supermarket}"/>            
     </rule>                         
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="supermarket" 
@@ -41,10 +41,10 @@
 
 <rule  e="any" k="shop" v="convenience" zoom-min="14">
     <rule  e="any" k="*" v="*" zoom-max="15">
-        <symbol id="convenience" src="{$symbolPath}/convenience.svg" symbol-width="18" priority="{$pr-convenience}"/>
+        <symbol id="convenience" src="{$shopIconPath}/convenience.svg" symbol-width="18" priority="{$pr-convenience}"/>
     </rule> 
     <rule  e="any" k="*" v="*" zoom-min="16">
-        <symbol id="convenience" src="{$symbolPath}/convenience.svg" symbol-width="22" priority="{$pr-convenience}"/>
+        <symbol id="convenience" src="{$shopIconPath}/convenience.svg" symbol-width="22" priority="{$pr-convenience}"/>
     </rule>                         
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="convenience" 
@@ -54,10 +54,10 @@
 
 <rule  e="any" k="shop" v="bakery" zoom-min="14">
     <rule  e="any" k="*" v="*" zoom-max="15">
-        <symbol id="bakery" src="{$symbolPath}/bakery.svg" symbol-width="18" priority="{$pr-bakery}"/> 
+        <symbol id="bakery" src="{$shopIconPath}/bakery.svg" symbol-width="18" priority="{$pr-bakery}"/> 
     </rule> 
     <rule  e="any" k="*" v="*" zoom-min="16">
-        <symbol id="bakery" src="{$symbolPath}/bakery.svg" symbol-width="20" priority="{$pr-bakery}"/>  
+        <symbol id="bakery" src="{$shopIconPath}/bakery.svg" symbol-width="20" priority="{$pr-bakery}"/>  
     </rule>                         
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="bakery" 
@@ -66,7 +66,7 @@
 </rule>
 
 <rule  e="any" k="shop" v="ticket" zoom-min="16">
-    <symbol id="tickets" src="{$symbolPath}/tickets.svg" symbol-width="20" priority="{$pr-tickets}"/>
+    <symbol id="tickets" src="{$shopIconPath}/tickets.svg" symbol-width="20" priority="{$pr-tickets}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="tickets" 
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-amenities}"/>
@@ -75,7 +75,7 @@
 
 
 <rule  e="any" k="shop" v="clothes|boutique|shoes|leather" zoom-min="15">
-    <symbol id="shop" src="{$symbolPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
+    <symbol id="shop" src="{$shopIconPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="shop" 
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
@@ -83,7 +83,7 @@
 </rule>
 
 <rule  e="any" k="shop" v="doityourself|electrical|florist|garden_centre|houseware" zoom-min="15">
-    <symbol id="shop" src="{$symbolPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
+    <symbol id="shop" src="{$shopIconPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="shop" 
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
@@ -91,7 +91,7 @@
 </rule>
 
 <rule  e="any" k="shop" v="furniture|interior_decoration|kitchen" zoom-min="15">
-    <symbol id="shop" src="{$symbolPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
+    <symbol id="shop" src="{$shopIconPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="shop" 
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
@@ -99,7 +99,7 @@
 </rule>
 
 <rule  e="any" k="shop" v="bicycle" zoom-min="15">
-    <symbol id="shop" src="{$symbolPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
+    <symbol id="shop" src="{$shopIconPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="shop" 
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
@@ -107,7 +107,7 @@
 </rule>
 
 <rule  e="any" k="shop" v="computer|electronics|mobile_phone" zoom-min="15">
-    <symbol id="shop" src="{$symbolPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
+    <symbol id="shop" src="{$shopIconPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="shop" 
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
@@ -115,7 +115,7 @@
 </rule>
 
 <rule  e="any" k="shop" v="sports" zoom-min="15">
-    <symbol id="shop" src="{$symbolPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
+    <symbol id="shop" src="{$shopIconPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="shop" 
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
@@ -123,7 +123,7 @@
 </rule>
 
 <rule  e="any" k="shop" v="butcher|cheese|chocolate|deli|farm|seafood" zoom-min="15">
-    <symbol id="shop" src="{$symbolPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
+    <symbol id="shop" src="{$shopIconPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="shop" 
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>
@@ -131,7 +131,7 @@
 </rule>
 
 <rule  e="any" k="shop" v="kiosk" zoom-min="15">
-    <symbol id="shop" src="{$symbolPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
+    <symbol id="shop" src="{$shopIconPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="shop" 
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-shop}"/>

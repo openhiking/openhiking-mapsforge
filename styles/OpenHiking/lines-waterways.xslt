@@ -57,10 +57,10 @@
         </rule>
     </rule>
     <rule e="way" k="*" v="*" zoom-min="15" zoom-max="17">
-        <lineSymbol src="{$symbolPath}/drift.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="{$repeat-gap-low}" symbol-width="8"  priority="{$pr-drift}"/>
+        <lineSymbol src="{$signsPath}/drift.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="{$repeat-gap-low}" symbol-width="8"  priority="{$pr-drift}"/>
     </rule>
     <rule e="way" k="*" v="*" zoom-min="18">
-        <lineSymbol src="{$symbolPath}/drift.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="{$repeat-gap-high}"  symbol-width="12" priority="{$pr-drift}"/>
+        <lineSymbol src="{$signsPath}/drift.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="{$repeat-gap-high}"  symbol-width="12" priority="{$pr-drift}"/>
     </rule>    
 </rule>
 </xsl:template>

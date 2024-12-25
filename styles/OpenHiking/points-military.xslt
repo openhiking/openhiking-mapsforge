@@ -5,13 +5,13 @@
 #
 # Point rendering: Military
 #
-# Copyright (c) 2022-2023 OpenHiking contributors
+# Copyright (c) 2022-2024 OpenHiking contributors
 # SPDX-License-Identifier: GPL-3.0-only
 -->
 <xsl:template name="points-military">
 
 <rule  e="any" k="military" v="bunker" zoom-min="16">
-        <symbol id="bunker" src="{$symbolPath}/bunker.svg" symbol-width="22" priority="{$pr-bunker}"/>
+        <symbol id="bunker" src="{$militaryIconPath}/bunker.svg" symbol-width="22" priority="{$pr-bunker}"/>
         <rule e="any" k="*" v="*" >
             <caption k="name" symbol-id="bunker" 
             font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-military}"/>

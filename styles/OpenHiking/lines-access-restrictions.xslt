@@ -13,24 +13,24 @@
     <rule e="way" k="area" v="~">
         <rule e="way" k="foot" v="no" >
             <rule e="any" k="*" v="*" zoom-max="16">
-                <lineSymbol src="{$symbolPath}/access_private.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="60" symbol-width="8"  priority="{$pr-restricted}"/>
+                <lineSymbol src="{$signsPath}/access_private.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="60" symbol-width="8"  priority="{$pr-restricted}"/>
             </rule> 
             <rule e="any" k="*" v="*" zoom-min="17" zoom-max="18">
-                <lineSymbol src="{$symbolPath}/access_private.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="80" symbol-width="12"  priority="{$pr-restricted}"/>
+                <lineSymbol src="{$signsPath}/access_private.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="80" symbol-width="12"  priority="{$pr-restricted}"/>
             </rule> 
             <rule e="any" k="*" v="*" zoom-min="19" >
-                <lineSymbol src="{$symbolPath}/access_private.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="160" symbol-width="14"  priority="{$pr-restricted}"/>
+                <lineSymbol src="{$signsPath}/access_private.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="160" symbol-width="14"  priority="{$pr-restricted}"/>
             </rule> 
         </rule>
         <rule e="way" k="foot" v="customers" >
             <rule e="any" k="*" v="*" zoom-max="16">
-                <lineSymbol src="{$symbolPath}/access_customers.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="60" symbol-width="8"  priority="{$pr-restricted}"/>
+                <lineSymbol src="{$signsPath}/access_customers.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="60" symbol-width="8"  priority="{$pr-restricted}"/>
             </rule> 
             <rule e="any" k="*" v="*" zoom-min="17" zoom-max="18">
-                <lineSymbol src="{$symbolPath}/access_customers.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="80" symbol-width="12"  priority="{$pr-restricted}"/>
+                <lineSymbol src="{$signsPath}/access_customers.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="80" symbol-width="12"  priority="{$pr-restricted}"/>
             </rule> 
             <rule e="any" k="*" v="*" zoom-min="19" >
-                <lineSymbol src="{$symbolPath}/access_customers.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="160" symbol-width="14"  priority="{$pr-restricted}"/>
+                <lineSymbol src="{$signsPath}/access_customers.svg" align-center="true" repeat="true" repeat-start="15" repeat-gap="160" symbol-width="14"  priority="{$pr-restricted}"/>
             </rule> 
         </rule>
     </rule>
