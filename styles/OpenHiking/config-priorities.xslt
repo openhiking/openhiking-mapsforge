@@ -59,11 +59,13 @@
 <xsl:variable name="pr-stupa">20</xsl:variable>
 <xsl:variable name="pr-monastery">20</xsl:variable>
 
+<xsl:variable name="pr-botanical-garden">20</xsl:variable>
 <xsl:variable name="pr-camp-site">20</xsl:variable>
 <xsl:variable name="pr-zoo">20</xsl:variable>
 
 <xsl:variable name="pr-helipad">20</xsl:variable>
 <xsl:variable name="pr-bus-stop">20</xsl:variable>
+<xsl:variable name="pr-historic-mine">20</xsl:variable>
 <xsl:variable name="pr-windmill">20</xsl:variable>
 <xsl:variable name="pr-watermill">20</xsl:variable>
 
@@ -91,7 +93,6 @@
 <xsl:variable name="pr-bell-tower">10</xsl:variable>
 <xsl:variable name="pr-clock-tower">10</xsl:variable>
 <xsl:variable name="pr-cross">10</xsl:variable>
-<xsl:variable name="pr-historic-mine">10</xsl:variable>
 <xsl:variable name="pr-archeological">10</xsl:variable>
 <xsl:variable name="pr-hillfort">10</xsl:variable>
 
@@ -179,6 +180,13 @@
 <xsl:variable name="pr-label-peak">0</xsl:variable>
 <xsl:variable name="pr-label-public-transport">0</xsl:variable>
 <xsl:variable name="pr-label-historical">0</xsl:variable>
+<xsl:variable name="pr-label-culture">-5</xsl:variable>
+<xsl:variable name="pr-label-education">10</xsl:variable>
+<xsl:variable name="pr-label-financial">0</xsl:variable>
+<xsl:variable name="pr-label-healthcare">0</xsl:variable>
+<xsl:variable name="pr-label-leisure">0</xsl:variable>
+<xsl:variable name="pr-label-military">0</xsl:variable>
+<xsl:variable name="pr-label-religion">0</xsl:variable>
 
 <xsl:variable name="pr-ele-peak">-5</xsl:variable>
 
@@ -201,15 +209,10 @@
 
 <xsl:variable name="pr-label-accomodation">-10</xsl:variable>
 <xsl:variable name="pr-label-amenities">-10</xsl:variable>
-<xsl:variable name="pr-label-culture">-10</xsl:variable>
-<xsl:variable name="pr-label-education">-10</xsl:variable>
-<xsl:variable name="pr-label-financial">-10</xsl:variable>
-<xsl:variable name="pr-label-healthcare">-10</xsl:variable>
+
+
 <xsl:variable name="pr-label-industrial">-10</xsl:variable>
 <xsl:variable name="pr-label-food">-10</xsl:variable>
-<xsl:variable name="pr-label-leisure">-10</xsl:variable>
-<xsl:variable name="pr-label-military">-10</xsl:variable>
-<xsl:variable name="pr-label-religion">-10</xsl:variable>
 <xsl:variable name="pr-label-shop">-10</xsl:variable>
 <xsl:variable name="pr-label-transportation">-10</xsl:variable>
 <xsl:variable name="pr-label-wilderness">-10</xsl:variable>

@@ -11,6 +11,21 @@
 
 <xsl:template name="points-leisure">
 
+<rule  e="any" k="leisure" v="garden" zoom-min="15">
+  <rule  e="any" k="garden:type" v="botanical">
+    <rule  e="any" k="*" v="*" zoom-min="15" zoom-max="16">
+      <symbol id="botanical_garden" src="{$leisureIconPath}/botanical_garden.svg" symbol-width="16" priority="{$pr-botanical-garden}"/>
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="17"> 
+      <symbol id="botanical_garden" src="{$leisureIconPath}/botanical_garden.svg" symbol-width="20" priority="{$pr-botanical-garden}"/>
+    </rule>  
+    <rule e="any" k="*" v="*" zoom-min="16">
+      <caption k="name" symbol-id="botanical_garden" 
+      font-style="bold_italic" font-family="serif" font-size="14"  fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
+    </rule>
+  </rule>
+</rule>
+
 <rule  e="any" k="tourism" v="zoo" zoom-min="14">
   <rule  e="any" k="*" v="*" zoom-max="15">
     <symbol id="zoo" src="{$leisureIconPath}/zoo.svg" symbol-width="18" priority="{$pr-zoo}"/>
@@ -42,11 +57,11 @@
 </rule>
 
 <rule  e="any" k="leisure" v="swimming_facility" zoom-min="14">
-  <rule  e="any" k="*" v="*" zoom-max="16">
-    <symbol id="swimming_facility" src="{$leisureIconPath}/swimming.svg" symbol-width="18" priority="{$pr-swimming-pool}"/>
+  <rule  e="any" k="*" v="*" zoom-max="15">
+    <symbol id="swimming_facility" src="{$leisureIconPath}/swimming.svg" symbol-width="16" priority="{$pr-swimming-pool}"/>
   </rule>
-  <rule  e="any" k="*" v="*" zoom-min="17"> 
-    <symbol id="swimming_facility" src="{$leisureIconPath}/swimming.svg" symbol-width="24" priority="{$pr-swimming-pool}"/>
+  <rule  e="any" k="*" v="*" zoom-min="16"> 
+    <symbol id="swimming_facility" src="{$leisureIconPath}/swimming.svg" symbol-width="22" priority="{$pr-swimming-pool}"/>
   </rule>     
   <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="swimming_facility" 

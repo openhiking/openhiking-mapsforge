@@ -11,25 +11,30 @@
 
 <xsl:template name="points-education">
 
-<rule  e="any" k="amenity" v="kindergarten" zoom-min="15">
-  <symbol id="kindergarten" src="{$educationIconPath}/kindergarten.svg" symbol-width="20" priority="{$pr-school}"/>
+<rule  e="any" k="amenity" v="childcare|kindergarten" zoom-min="15">
+  <rule  e="any" k="*" v="*" zoom-max="16">
+    <symbol id="kindergarten" src="{$educationIconPath}/kindergarten.svg" symbol-width="18" priority="{$pr-school}"/>
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="17">
+    <symbol id="kindergarten" src="{$educationIconPath}/kindergarten.svg" symbol-width="22" priority="{$pr-school}"/>
+  </rule>
   <rule e="any" k="*" v="*" zoom-min="16">
       <caption k="name" symbol-id="kindergarten" 
-      font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-education}"/>
+      font-style="bold_italic" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-education}"/>
   </rule>       
 </rule>
 
 <rule  e="any" k="amenity" v="school" zoom-min="15">
-  <rule  e="any" k="*" v="*" zoom-max="15">
-    <symbol id="school" src="{$educationIconPath}/school.svg" symbol-width="20" priority="{$pr-school}"/>
+  <rule  e="any" k="*" v="*" zoom-max="16">
+    <symbol id="school" src="{$educationIconPath}/school.svg" symbol-width="18" priority="{$pr-school}"/>
   </rule>
-  <rule  e="any" k="*" v="*" zoom-min="16"> 
+  <rule  e="any" k="*" v="*" zoom-min="17"> 
     <symbol id="school" src="{$educationIconPath}/school.svg" symbol-width="22" priority="{$pr-school}"/>
   </rule>     
-    <rule e="any" k="*" v="*" >
-        <caption k="name" symbol-id="school" 
-        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-education}"/>
-    </rule>       
+  <rule e="any" k="*" v="*" zoom-min="16">
+      <caption k="name" symbol-id="school" 
+      font-style="bold_italic" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-education}"/>
+  </rule>       
 </rule>
 
 <rule  e="any" k="amenity" v="college|university" zoom-min="14">

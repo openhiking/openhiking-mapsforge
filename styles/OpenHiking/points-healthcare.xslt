@@ -11,11 +11,16 @@
 
 <xsl:template name="points-healthcare">
 <rule  e="any" k="amenity" v="hospital|clinic" zoom-min="14">
-        <symbol id="hospital" src="{$healthcareIconPath}/hospital.svg" symbol-width="16" priority="{$pr-hospital}"/>
-        <rule e="node" k="*" v="*" >
-            <caption k="name" symbol-id="hospital" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-healthcare}"/>
-        </rule>       
+  <rule  e="any" k="*" v="*" zoom-max="15">
+    <symbol id="hospital" src="{$healthcareIconPath}/hospital.svg" symbol-width="16" priority="{$pr-hospital}"/>
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="16">
+    <symbol id="hospital" src="{$healthcareIconPath}/hospital.svg" symbol-width="20" priority="{$pr-hospital}"/>
+  </rule>
+   <rule e="any" k="*" v="*" zoom-min="15">
+      <caption k="name" symbol-id="hospital" 
+      font-style="bold_italic" font-size="12" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-healthcare}"/>
+  </rule>       
 </rule>
 
 <rule  e="any" k="amenity" v="doctors" zoom-min="14">
@@ -25,10 +30,10 @@
   <rule  e="any" k="*" v="*" zoom-min="16"> 
     <symbol id="doctors" src="{$healthcareIconPath}/doctors.svg" symbol-width="18" priority="{$pr-doctors}"/>
   </rule>     
-    <rule e="any" k="*" v="*" >
+  <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="doctors" 
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-healthcare}"/>
-    </rule>       
+  </rule>       
 </rule>
 
 <rule  e="any" k="amenity" v="dentist" zoom-min="14">

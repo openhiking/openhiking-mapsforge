@@ -48,7 +48,7 @@
   <rule e="way" k="*" v="*" zoom-min="15">
     <area src="{$patternPath}/park.svg" symbol-height="30"/>
   </rule>
-  <rule e="way" k="*" v="*" zoom-min="16">
+  <rule e="way" k="garden:type" v="~" zoom-min="16">
     <caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
   </rule>
 </rule>
@@ -109,18 +109,17 @@
     <area fill="#F0E8E0" />
   </rule>
 
-  <rule e="way" k="amenity" v="school|childcare" closed="yes">  
+  <rule e="way" k="amenity" v="childcare|kindergarten|school" closed="yes">  
     <area fill="#E0ECD3" stroke="#676a3f" stroke-width="1" scale="none"/>
-    <rule e="way" k="*" v="*" zoom-min="16">
-      <caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
-    </rule>
   </rule>
 
   <rule e="way" k="amenity" v="hospital|clinic" closed="yes">
     <area fill="#fcb6b4" stroke="#F86C68" stroke-width="1" scale="none"/>
+    <!-- 
     <rule e="way" k="*" v="*" zoom-min="16">
       <caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
     </rule>
+    -->
   </rule>
 
 

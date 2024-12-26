@@ -69,7 +69,7 @@
 
 
 <rule e="way" k="landuse"
-    v="industrial|recreation_ground|military|garden|green|cemetery|graveyard"
+    v="industrial|recreation_ground|military|green|cemetery|graveyard"
     zoom-min="16">
     <caption fill="#202020" font-family="serif" font-size="14" font-style="italic" k="name"
         priority="{$pr-poly-label-landuse}" stroke="#FFFFFF" stroke-width="2.0" />
