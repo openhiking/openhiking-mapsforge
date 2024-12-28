@@ -11,16 +11,17 @@
 
 <xsl:template name="points-industrial">
 
-<rule  e="any" k="man_made" v="adit" zoom-min="15">
-    <rule  e="any" k="abandoned" v="~" >
-        <rule  e="any" k="disused" v="~">
-        <symbol id="adit" src="{$industrialIconPath}/adit.svg" symbol-width="18" priority="{$pr-adit}"/>
-        <rule e="any" k="*" v="*" zoom-min="16">
-            <caption k="name" symbol-id="adit" 
-            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-industrial}"/>
-        </rule>       
-        </rule>               
-    </rule>           
+<rule  e="any" k="man_made" v="adit" zoom-min="14">
+    <rule e="any" k="*" v="*" zoom-max="15">
+        <symbol id="adit" src="{$industrialIconPath}/adit.svg" symbol-width="16" priority="{$pr-adit}"/>
+    </rule>
+    <rule e="any" k="*" v="*" zoom-min="16">
+        <symbol id="adit" src="{$industrialIconPath}/adit.svg" symbol-width="20" priority="{$pr-adit}"/>
+    </rule>
+    <rule e="any" k="*" v="*" zoom-min="16">
+        <caption k="name" symbol-id="adit" 
+        font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-industrial}"/>
+    </rule>             
 </rule>
 
 <rule  e="any" k="man_made" v="mineshaft" zoom-min="15">

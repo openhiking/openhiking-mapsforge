@@ -587,7 +587,7 @@
     </ways>
 
     <pois>
-        <osm-tag key="historic" value="adit" zoom-appear="15"/> 
+        <osm-tag key="historic" value="adit" zoom-appear="14"/> 
         <osm-tag key="historic" value="aqueduct" zoom-appear="15"/>
         <osm-tag key="historic" value="archaeological_site" zoom-appear="14"/>
         <osm-tag key="historic" value="building" zoom-appear="15"/>            
