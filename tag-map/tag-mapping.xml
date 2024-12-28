@@ -557,12 +557,12 @@
         <osm-tag key="historic" value="lime_kiln" label-position="true" zoom-appear="15"/>              
         <osm-tag key="historic" value="manor" label-position="true" zoom-appear="15"/>    
         <osm-tag key="historic" value="memorial" label-position="true" zoom-appear="15"/>
-        <osm-tag key="historic" value="monument" zoom-appear="15"/>
-        <osm-tag key="historic" value="quarry" zoom-appear="15"/>        
+        <osm-tag key="historic" value="monument" label-position="true" zoom-appear="15"/>
+        <osm-tag key="historic" value="quarry" label-position="true" zoom-appear="14"/>        
         <osm-tag key="historic" value="ruins" label-position="true" zoom-appear="15"/>    
         <osm-tag key="historic" value="tower" label-position="true" zoom-appear="15"/> 
-        <osm-tag key="man_made" value="watermill" label-position="true" zoom-appear="15"/> 
-        <osm-tag key="man_made" value="windmill" label-position="true" zoom-appear="15"/> 
+        <osm-tag key="man_made" value="watermill" label-position="true" zoom-appear="14"/> 
+        <osm-tag key="man_made" value="windmill" label-position="true" zoom-appear="14"/> 
 
         <osm-tag key="tower:type" value="clock" label-position="true" zoom-appear="15"/>
         <osm-tag key="tower:type" value="defensive" label-position="true" zoom-appear="14"/>
@@ -598,16 +598,16 @@
         <osm-tag key="historic" value="lime_kiln" zoom-appear="15"/>         
         <osm-tag key="historic" value="manor" zoom-appear="15"/>    
         <osm-tag key="historic" value="memorial" zoom-appear="15"/>
-        <osm-tag key="historic" value="mine" zoom-appear="15"/> 
+        <osm-tag key="historic" value="mine" zoom-appear="14"/> 
         <osm-tag key="historic" value="monument" zoom-appear="15"/>
-        <osm-tag key="historic" value="quarry"  zoom-appear="15"/>         
+        <osm-tag key="historic" value="quarry"  zoom-appear="14"/>         
         <osm-tag key="historic" value="ruins" zoom-appear="15"/>            
         <osm-tag key="historic" value="tomb" zoom-appear="15"/> 
         <osm-tag key="historic" value="tower" zoom-appear="15"/> 
         <osm-tag key="man_made" value="crane_well" zoom-appear="15"/> 
         <osm-tag key="man_made" value="water_well" zoom-appear="15"/> 
-        <osm-tag key="man_made" value="watermill" zoom-appear="15"/> 
-        <osm-tag key="man_made" value="windmill" zoom-appear="15"/> 
+        <osm-tag key="man_made" value="watermill" zoom-appear="14"/> 
+        <osm-tag key="man_made" value="windmill" zoom-appear="14"/> 
 
         <osm-tag key="tower:type" value="clock" zoom-appear="15"/>
         <osm-tag key="tower:type" value="defensive" zoom-appear="14"/>
@@ -659,17 +659,20 @@
         <osm-tag key="generator:source" renderable="false" value="solar"/>   
 
         <osm-tag key="observatory:type" renderable="false" value="astronomical"/>
+        <!-- 
+        <osm-tag key="telescope:type" renderable="false" value="optical"/>     
+        -->
         <osm-tag key="telescope:type" renderable="false" value="radio"/>                       
 
     </ways>  
 
     <pois>
-        <osm-tag key="man_made" value="adit" zoom-appear="15"/>    
+        <osm-tag key="man_made" value="adit" zoom-appear="14"/>    
         <osm-tag key="man_made" value="chimney" zoom-appear="15"/>  
         <osm-tag key="man_made" value="communications_tower" zoom-appear="15"/>  
         <osm-tag key="man_made" value="lighthouse" zoom-appear="13"/>
         <osm-tag key="man_made" value="mast" zoom-appear="15"/>
-        <osm-tag key="man_made" value="mineshaft" zoom-appear="15"/>
+        <osm-tag key="man_made" value="mineshaft" zoom-appear="14"/>
         <osm-tag key="man_made" value="observatory" zoom-appear="14"/>        
         <osm-tag key="man_made" value="petroleum_well" zoom-appear="15"/>
         <osm-tag key="man_made" value="surveillance" zoom-appear="15"/>
@@ -693,6 +696,9 @@
         <osm-tag key="generator:source" renderable="false" value="wind"/>    
 
         <osm-tag key="observatory:type" renderable="false" value="astronomical"/>
+        <!-- 
+        <osm-tag key="telescope:type" renderable="false" value="optical"/>     
+        -->
         <osm-tag key="telescope:type" renderable="false" value="radio"/>                           
     </pois>  
 

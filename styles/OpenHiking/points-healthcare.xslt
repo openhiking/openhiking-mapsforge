@@ -19,7 +19,7 @@
   </rule>
    <rule e="any" k="*" v="*" zoom-min="15">
       <caption k="name" symbol-id="hospital" 
-      font-style="bold_italic" font-size="12" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-healthcare}"/>
+      font-style="bold_italic" font-size="12" fill="#b90000" stroke="#ffffff" stroke-width="1"  priority="{$pr-label-healthcare}"/>
   </rule>       
 </rule>
 

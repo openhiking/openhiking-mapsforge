@@ -156,13 +156,23 @@
   </rule>
 </rule>
 
-<rule  e="any" k="historic" v="adit|mine" zoom-min="15">
+<rule  e="any" k="historic" v="adit|mine" zoom-min="14">
   <symbol id="historic_mine" src="{$historicIconPath}/mine.svg" symbol-width="18" priority="{$pr-historic-mine}"/>
   <rule e="any" k="*" v="*" zoom-min="16">
       <caption k="name" symbol-id="historic_mine" 
       font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-historical}"/>
   </rule>       
 </rule>
+
+
+<rule  e="any" k="historic" v="quarry" zoom-min="14">
+  <symbol id="historic_quarry" src="{$historicIconPath}/quarry.svg" symbol-width="16" priority="{$pr-historic-mine}"/>
+  <rule e="any" k="*" v="*" zoom-min="16">
+      <caption k="name" symbol-id="historic_quarry" 
+      font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-historical}"/>
+  </rule>       
+</rule>
+
 
 <rule  e="any" k="man_made" v="windmill" zoom-min="15">
   <rule  e="any" k="*" v="*" zoom-max="16">

@@ -255,7 +255,7 @@ if (man_made=tower)
         abandoned:tourism=viewpoint | disused:tourism=viewpoint { tower=outlook_closed; delete tower:type }
     end
     tower:type=bell_tower  { man_made=campanile; delete tower:type }
-    tower:type=stupa  { man_made=stupa; delete tower:type }
+    tower:type=stupa  { man_made=stupa; amenity=none; delete tower:type }
     tower:type=communication  { man_made=mast; delete tower:type }
     tower:type=minaret & tourism=* { delete tourism }
     tower:type=defensive & tourism=* { delete tourism }    

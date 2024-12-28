@@ -3,7 +3,7 @@
 <!-- 
 # OpenHikingMap
 #
-# Point rendering: Education
+# Point rendering: Education & Research
 #
 # Copyright (c) 2022-2024 OpenHiking contributors
 # SPDX-License-Identifier: GPL-3.0-only
@@ -50,6 +50,34 @@
     </rule>       
 </rule>
 
+<rule  e="any" k="man_made" v="observatory" zoom-min="15">
+    <rule  e="any" k="observatory:type" v="astronomical">
+        <rule  e="any" k="*" v="*" zoom-max="16">
+            <symbol id="observatory" src="{$educationIconPath}/observatory.svg" symbol-width="20" priority="{$pr-observatory}"/>
+        </rule> 
+        <rule  e="any" k="*" v="*" zoom-min="17">
+            <symbol id="observatory" src="{$educationIconPath}/observatory.svg" symbol-width="24" priority="{$pr-observatory}"/>
+        </rule>                         
+        <rule e="any" k="*" v="*" zoom-min="16">
+            <caption k="name" symbol-id="observatory" 
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-industrial}"/>
+        </rule>       
+    </rule>
+</rule>  
 
+<rule  e="any" k="man_made" v="telescope" zoom-min="15">
+    <rule  e="any" k="telescope:type" v="radio">
+        <rule  e="any" k="*" v="*" zoom-max="16">
+            <symbol id="telescope" src="{$educationIconPath}/radio_telescope.svg" symbol-width="20" priority="{$pr-observatory}"/>
+        </rule> 
+        <rule  e="any" k="*" v="*" zoom-min="17">
+            <symbol id="telescope" src="{$educationIconPath}/radio_telescope.svg" symbol-width="24" priority="{$pr-observatory}"/>
+        </rule>                         
+        <rule e="any" k="*" v="*" zoom-min="16">
+            <caption k="name" symbol-id="telescope" 
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-industrial}"/>
+        </rule>       
+    </rule>
+</rule>  
 </xsl:template>
 </xsl:stylesheet>
