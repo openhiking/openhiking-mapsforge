@@ -553,7 +553,8 @@
         <osm-tag key="historic" value="castle" label-position="true" zoom-appear="14"/>        
         <osm-tag key="historic" value="church" label-position="true" zoom-appear="15"/>  
         <osm-tag key="historic" value="city_gate" label-position="true" zoom-appear="15"/>  
-        <osm-tag key="historic" value="fort" label-position="true" zoom-appear="14"/>      
+        <osm-tag key="historic" value="fort" label-position="true" zoom-appear="14"/>  
+        <osm-tag key="historic" value="lime_kiln" label-position="true" zoom-appear="15"/>              
         <osm-tag key="historic" value="manor" label-position="true" zoom-appear="15"/>    
         <osm-tag key="historic" value="memorial" label-position="true" zoom-appear="15"/>
         <osm-tag key="historic" value="monument" zoom-appear="15"/>
@@ -594,10 +595,12 @@
         <osm-tag key="historic" value="church" zoom-appear="15"/>  
         <osm-tag key="historic" value="city_gate" zoom-appear="15"/>  
         <osm-tag key="historic" value="fort" zoom-appear="14"/>      
+        <osm-tag key="historic" value="lime_kiln" zoom-appear="15"/>         
         <osm-tag key="historic" value="manor" zoom-appear="15"/>    
         <osm-tag key="historic" value="memorial" zoom-appear="15"/>
         <osm-tag key="historic" value="mine" zoom-appear="15"/> 
         <osm-tag key="historic" value="monument" zoom-appear="15"/>
+        <osm-tag key="historic" value="quarry"  zoom-appear="15"/>         
         <osm-tag key="historic" value="ruins" zoom-appear="15"/>            
         <osm-tag key="historic" value="tomb" zoom-appear="15"/> 
         <osm-tag key="historic" value="tower" zoom-appear="15"/> 
@@ -936,6 +939,7 @@
         <osm-tag key="shop" value="bicycle" label-position="true" zoom-appear="15"/>
         <osm-tag key="shop" value="boutique" label-position="true"  zoom-appear="15"/>                        
         <osm-tag key="shop" value="butcher" label-position="true" zoom-appear="15"/> 
+        <osm-tag key="shop" value="chemist" label-position="true" zoom-appear="15"/>         
         <osm-tag key="shop" value="clothes" label-position="true" zoom-appear="15"/>
         <osm-tag key="shop" value="confectionery" label-position="true" zoom-appear="15"/> 
         <osm-tag key="shop" value="convenience" label-position="true" zoom-appear="15"/>        
@@ -948,10 +952,8 @@
         <osm-tag key="shop" value="general" label-position="true" zoom-appear="14"/>
         <osm-tag key="shop" value="greengrocer" label-position="true" zoom-appear="15"/>
         <osm-tag key="shop" value="houseware" label-position="true" zoom-appear="15"/>         
-        <osm-tag key="shop" value="interior_decoration" label-position="true" zoom-appear="15"/> 
         <osm-tag key="shop" value="kiosk" label-position="true" zoom-appear="15"/> 
         <osm-tag key="shop" value="kitchen" label-position="true" zoom-appear="15"/>         
-        <osm-tag key="shop" value="leather" label-position="true" zoom-appear="15"/> 
         <osm-tag key="shop" value="mall" label-position="true" zoom-appear="14"/>
         <osm-tag key="shop" value="pastry" label-position="true" zoom-appear="15"/> 
         <osm-tag key="shop" value="supermarket" label-position="true" zoom-appear="14"/>

@@ -126,12 +126,12 @@
     </rule>       
 </rule>
 
-<rule  e="any" k="tower:type" v="radar" >
+<rule  e="any" k="tower:type" v="radar" zoom-min="14">
     <rule  e="any" k="*" v="*" zoom-max="15">
         <symbol id="radar" src="{$industrialIconPath}/radar_tower.svg" symbol-width="22" priority="{$pr-radar}"/>
     </rule> 
     <rule  e="any" k="*" v="*" zoom-min="16">
-        <symbol id="radar" src="{$industrialIconPath}/radar_tower.svg" symbol-width="24" priority="{$pr-radar}"/>
+        <symbol id="radar" src="{$industrialIconPath}/radar_tower.svg" symbol-width="28" priority="{$pr-radar}"/>
     </rule>                         
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="radar" 

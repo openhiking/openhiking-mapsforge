@@ -90,7 +90,7 @@
 </rule>
 
 
-<rule  e="any" k="shop" v="clothes|boutique|shoes|leather" zoom-min="15">
+<rule  e="any" k="shop" v="chemist|clothes|boutique|shoes" zoom-min="15">
     <symbol id="shop" src="{$shopIconPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="shop" 
@@ -106,7 +106,7 @@
     </rule>       
 </rule>
 
-<rule  e="any" k="shop" v="furniture|interior_decoration|kitchen" zoom-min="15">
+<rule  e="any" k="shop" v="furniture|kitchen" zoom-min="15">
     <symbol id="shop" src="{$shopIconPath}/shop.svg" symbol-width="20" priority="{$pr-shop}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="shop" 

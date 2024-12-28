@@ -142,7 +142,6 @@ place=city & capital=yes  { place=capital}
 
 ##################################################################
 ### Buildings
-
 scope=way,relation
 if (building=*)
     building~'yes|commercial|kiosk|retail|warehouse' & shop~'department_store|mall|supermarket' {  building=supermarket}
@@ -175,15 +174,15 @@ if (building=*)
     building~'grandstand|pavilion' { building=yes}
     building~'boathouse|hangar|garages|water_tower|silo' { building=yes}
     building~'bunker|hangar|embassy' { building=yes}
-
 end
 
+##################################################################
+### Recreational facilities
+scope=way,relation
 leisure=swimming_facility { building=swimming_facility }
 leisure=sports_hall & building!=sports_centre {building=sports_centre }
+garden:type=arboretum { garden:type=botanical }
 
-
-# Recreational grounds
-scope=way,relation
 if (landuse=recreation_ground)
     leisure=park { delete leisure }
     tourism=museum { delete tourism}
@@ -247,8 +246,8 @@ natural=volcano & volcano:status!=active { natural=peak }
 natural=bay & place=locality { delete place}
 
 scope=node,way
-amenity=place_of_worship & name~'.*k.polna' & building!=chapel { building=chapel }
-
+##################################################################
+# Towers
 if (man_made=tower)
     if (tower:type~'observation|observation;communication')
         tourism=viewpoint | viewpoint=yes | access=yes { tower=outlook; delete tower:type; delete tourism  }    
@@ -262,13 +261,16 @@ if (man_made=tower)
     () { stop}
 end
 
+amenity=place_of_worship & name~'.*k.polna' & building!=chapel { building=chapel }
+man_made=stupa & amenity=place_of_worship { delete amenity }
+
 
 ### Sport & leisure
 scope=node,way
 if (leisure=*)
     leisure!=golf_course & sport=golf { leisure=golf_course; delete sport }
     leisure!=ice_rink & sport~'ice_.*' { leisure=ice_rink; delete sport }
-    leisure!=fitness_centre & sport=fitness { leisure=fitness_centre; delete sport }
+#   leisure!=fitness_centre & sport=fitness { leisure=fitness_centre; delete sport }
     leisure=spa { amenity=public_bath }
 end        
 

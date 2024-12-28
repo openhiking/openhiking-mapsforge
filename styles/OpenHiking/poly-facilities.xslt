@@ -115,11 +115,6 @@
 
   <rule e="way" k="amenity" v="hospital|clinic" closed="yes">
     <area fill="#fcb6b4" stroke="#F86C68" stroke-width="1" scale="none"/>
-    <!-- 
-    <rule e="way" k="*" v="*" zoom-min="16">
-      <caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
-    </rule>
-    -->
   </rule>
 
 

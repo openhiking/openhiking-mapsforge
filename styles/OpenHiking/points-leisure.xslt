@@ -11,17 +11,17 @@
 
 <xsl:template name="points-leisure">
 
-<rule  e="any" k="leisure" v="garden" zoom-min="15">
+<rule  e="any" k="leisure" v="garden" zoom-min="13">
   <rule  e="any" k="garden:type" v="botanical">
-    <rule  e="any" k="*" v="*" zoom-min="15" zoom-max="16">
+    <rule  e="any" k="*" v="*" zoom-max="14">
       <symbol id="botanical_garden" src="{$leisureIconPath}/botanical_garden.svg" symbol-width="16" priority="{$pr-botanical-garden}"/>
     </rule>
-    <rule  e="any" k="*" v="*" zoom-min="17"> 
-      <symbol id="botanical_garden" src="{$leisureIconPath}/botanical_garden.svg" symbol-width="20" priority="{$pr-botanical-garden}"/>
+    <rule  e="any" k="*" v="*" zoom-min="15"> 
+      <symbol id="botanical_garden" src="{$leisureIconPath}/botanical_garden.svg" symbol-width="22" priority="{$pr-botanical-garden}"/>
     </rule>  
-    <rule e="any" k="*" v="*" zoom-min="16">
+    <rule e="any" k="*" v="*" zoom-min="14">
       <caption k="name" symbol-id="botanical_garden" 
-      font-style="bold_italic" font-family="serif" font-size="14"  fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
+      font-style="bold_italic" font-family="serif" font-size="16"  fill="#004208" stroke="#ffffff" stroke-width="1" priority="{$pr-label-leisure}"/>
     </rule>
   </rule>
 </rule>
@@ -55,6 +55,20 @@
     font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
   </rule>
 </rule>
+
+<rule  e="any" k="leisure" v="fitness_station" zoom-min="15">
+  <rule  e="any" k="*" v="*" zoom-max="16">
+    <symbol id="fitness_station" src="{$leisureIconPath}/fitness_station.svg" symbol-width="18" priority="{$pr-fitness-station}"/>
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="17"> 
+    <symbol id="fitness_station" src="{$leisureIconPath}/fitness_station.svg" symbol-width="22" priority="{$pr-fitness-station}"/>
+  </rule>     
+  <rule e="any" k="*" v="*" zoom-min="16">
+    <caption k="name" symbol-id="fitness_station" 
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
+  </rule>
+</rule>
+
 
 <rule  e="any" k="leisure" v="swimming_facility" zoom-min="14">
   <rule  e="any" k="*" v="*" zoom-max="15">

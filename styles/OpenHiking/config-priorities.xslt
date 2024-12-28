@@ -100,6 +100,7 @@
 <xsl:variable name="pr-fuel">10</xsl:variable>
 
 <xsl:variable name="pr-spa">10</xsl:variable>
+<xsl:variable name="pr-fitness-station">10</xsl:variable>
 <xsl:variable name="pr-attraction">10</xsl:variable>
 
 <xsl:variable name="pr-supermarket">10</xsl:variable>
@@ -187,6 +188,8 @@
 <xsl:variable name="pr-label-leisure">0</xsl:variable>
 <xsl:variable name="pr-label-military">0</xsl:variable>
 <xsl:variable name="pr-label-religion">0</xsl:variable>
+<xsl:variable name="pr-label-wilderness">0</xsl:variable>
+
 
 <xsl:variable name="pr-ele-peak">-5</xsl:variable>
 
@@ -215,7 +218,6 @@
 <xsl:variable name="pr-label-food">-10</xsl:variable>
 <xsl:variable name="pr-label-shop">-10</xsl:variable>
 <xsl:variable name="pr-label-transportation">-10</xsl:variable>
-<xsl:variable name="pr-label-wilderness">-10</xsl:variable>
 
 <!-- Priority -20 -->
 <xsl:variable name="pr-hiking-symbols">-20</xsl:variable>
