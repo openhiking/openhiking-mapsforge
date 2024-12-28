@@ -206,6 +206,7 @@ historic~'fort|manor' & ruins=* { ruins='{historic}'; historic=ruins; stop   }
 
 man_made~'mineshaft|adit' & (abandoned=yes | disused=yes) { historic=mine; delete man_made }
 historic~'mine_adit|mine_adit|adit' { historic=mine }
+historic=mine & natural=cave_entrance { delete natural }
 
 if (historic=ruins)
     ruins!=* & castle_type=* { ruins='{castle_type}' }

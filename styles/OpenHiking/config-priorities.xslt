@@ -89,6 +89,8 @@
 
 <xsl:variable name="pr-sinkhole">10</xsl:variable>
 <xsl:variable name="pr-ford">10</xsl:variable>
+<xsl:variable name="pr-adit">10</xsl:variable>
+<xsl:variable name="pr-mineshaft">10</xsl:variable>
 
 <xsl:variable name="pr-ruins">10</xsl:variable>
 <xsl:variable name="pr-bell-tower">10</xsl:variable>
@@ -137,8 +139,7 @@
 <xsl:variable name="pr-toilets">0</xsl:variable>
 <xsl:variable name="pr-hospital">0</xsl:variable>
 <xsl:variable name="pr-bank">0</xsl:variable>
-<xsl:variable name="pr-adit">0</xsl:variable>
-<xsl:variable name="pr-mineshaft">0</xsl:variable>
+
 <xsl:variable name="pr-mast">0</xsl:variable>
 <xsl:variable name="pr-theatre">0</xsl:variable>
 <xsl:variable name="pr-school">0</xsl:variable>
