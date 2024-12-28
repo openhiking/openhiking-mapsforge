@@ -43,6 +43,19 @@
         <symbol id="playground" src="{$leisureIconPath}/playground.svg" symbol-width="23" priority="{$pr-playground}"/>
 </rule>
 
+<rule e="way" k="leisure" v="beach_resort" zoom-min="12">
+    <rule  e="any" k="*" v="*" zoom-max="13">
+        <symbol id="beach_resort" src="{$leisureIconPath}/beach.svg" symbol-width="14" priority="{$pr-beach-resort}"/>
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="14" zoom-max="15">
+        <symbol id="beach_resort" src="{$leisureIconPath}/beach.svg" symbol-width="18" priority="{$pr-beach-resort}"/>
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="16">
+        <symbol id="beach_resort" src="{$leisureIconPath}/beach.svg" symbol-width="22" priority="{$pr-beach-resort}"/>
+    </rule>
+</rule>
+
+
 <rule  e="any" k="amenity" v="public_bath|spa" zoom-min="14">
   <rule  e="any" k="*" v="*" zoom-max="15">
     <symbol id="spa" src="{$leisureIconPath}/spa.svg" symbol-width="24" priority="{$pr-spa}"/>
@@ -52,19 +65,6 @@
   </rule>     
   <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="spa" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
-  </rule>
-</rule>
-
-<rule  e="any" k="leisure" v="fitness_station" zoom-min="15">
-  <rule  e="any" k="*" v="*" zoom-max="16">
-    <symbol id="fitness_station" src="{$leisureIconPath}/fitness_station.svg" symbol-width="18" priority="{$pr-fitness-station}"/>
-  </rule>
-  <rule  e="any" k="*" v="*" zoom-min="17"> 
-    <symbol id="fitness_station" src="{$leisureIconPath}/fitness_station.svg" symbol-width="22" priority="{$pr-fitness-station}"/>
-  </rule>     
-  <rule e="any" k="*" v="*" zoom-min="16">
-    <caption k="name" symbol-id="fitness_station" 
     font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
   </rule>
 </rule>
@@ -83,6 +83,31 @@
   </rule>
 </rule>
 
+<rule  e="any" k="leisure" v="fitness_station" zoom-min="15">
+  <rule  e="any" k="*" v="*" zoom-max="16">
+    <symbol id="fitness_station" src="{$leisureIconPath}/fitness_station.svg" symbol-width="18" priority="{$pr-fitness-station}"/>
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="17"> 
+    <symbol id="fitness_station" src="{$leisureIconPath}/fitness_station.svg" symbol-width="22" priority="{$pr-fitness-station}"/>
+  </rule>     
+  <rule e="any" k="*" v="*" zoom-min="16">
+    <caption k="name" symbol-id="fitness_station" 
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
+  </rule>
+</rule>
+
+<rule  e="any" k="leisure" v="horse_riding" zoom-min="15">
+  <rule  e="any" k="*" v="*" zoom-max="16">
+    <symbol id="horse_riding" src="{$leisureIconPath}/horse_riding.svg" symbol-width="20" priority="{$pr-horse-riding}"/>
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="17"> 
+    <symbol id="horse_riding" src="{$leisureIconPath}/horse_riding.svg" symbol-width="24" priority="{$pr-horse-riding}"/>
+  </rule>     
+  <rule e="any" k="*" v="*" zoom-min="16">
+    <caption k="name" symbol-id="horse_riding" 
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
+  </rule>
+</rule>
 
 <rule  e="any" k="leisure" v="*" >
   <rule  e="any" k="sport" v="soccer" zoom-min="15">

@@ -20,7 +20,7 @@
 </rule>
 
 <rule  e="any" k="amenity" v="library" zoom-min="15">
-  <symbol id="library" src="{$cultureIconPath}/library.svg" symbol-width="20" priority="{$pr-library}"/>
+  <symbol id="library" src="{$cultureIconPath}/library.svg" symbol-width="18" priority="{$pr-library}"/>
   <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="library" 
     font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-culture}"/>

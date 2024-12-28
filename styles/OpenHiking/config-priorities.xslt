@@ -81,6 +81,7 @@
 <xsl:variable name="pr-fixme">20</xsl:variable>
 
 <xsl:variable name="pr-beach">20</xsl:variable>
+<xsl:variable name="pr-beach-resort">20</xsl:variable>
 
 <!-- Priority 10 -->
 <xsl:variable name="pr-picnic">10</xsl:variable>
@@ -101,6 +102,7 @@
 
 <xsl:variable name="pr-spa">10</xsl:variable>
 <xsl:variable name="pr-fitness-station">10</xsl:variable>
+<xsl:variable name="pr-horse-riding">10</xsl:variable>
 <xsl:variable name="pr-attraction">10</xsl:variable>
 
 <xsl:variable name="pr-supermarket">10</xsl:variable>

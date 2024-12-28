@@ -257,13 +257,13 @@
 
 <rule e="way" k="natural" v="beach" zoom-min="13">
     <rule  e="any" k="*" v="*" zoom-max="14">
-        <symbol id="cliff" src="{$naturalIconPath}/beach.svg" symbol-width="13" priority="{$pr-beach}"/>
+        <symbol id="beach" src="{$naturalIconPath}/beach.svg" symbol-width="13" priority="{$pr-beach}"/>
     </rule>
     <rule  e="any" k="*" v="*" zoom-min="15" zoom-max="16">
-        <symbol id="cliff" src="{$naturalIconPath}/beach.svg" symbol-width="16" priority="{$pr-beach}"/>
+        <symbol id="beach" src="{$naturalIconPath}/beach.svg" symbol-width="16" priority="{$pr-beach}"/>
     </rule>
     <rule  e="any" k="*" v="*" zoom-min="17">
-        <symbol id="cliff" src="{$naturalIconPath}/beach.svg" symbol-width="20" priority="{$pr-beach}"/>
+        <symbol id="beach" src="{$naturalIconPath}/beach.svg" symbol-width="20" priority="{$pr-beach}"/>
     </rule>
 </rule>
 

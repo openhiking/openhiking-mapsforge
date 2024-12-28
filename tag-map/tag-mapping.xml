@@ -371,8 +371,8 @@
         <osm-tag key="tourism" value="apartment" label-position="true" zoom-appear="15"/>
         <osm-tag key="tourism" value="alpine_hut" label-position="true" zoom-appear="12"/>
         <osm-tag key="tourism" value="bed_and_breakfast" label-position="true" zoom-appear="15"/>
-        <osm-tag key='tourism' value='camp_site' label-position="true" zoom-appear='13' />
-        <osm-tag key='tourism' value='caravan_site' label-position="true" zoom-appear='13' />
+        <osm-tag key='tourism' value='camp_site' label-position="true" zoom-appear='12' />
+        <osm-tag key='tourism' value='caravan_site' label-position="true" zoom-appear='12' />
         <osm-tag key="tourism" value="chalet" label-position="true" zoom-appear="15"/>        
         <osm-tag key="tourism" value="guest_house" label-position="true" zoom-appear="15"/>        
         <osm-tag key="tourism" value="hostel" label-position="true" zoom-appear="15"/>
@@ -388,7 +388,7 @@
         <osm-tag key="tourism" value="apartment" zoom-appear="15"/>
         <osm-tag key="tourism" value="alpine_hut" zoom-appear="12"/>
         <osm-tag key="tourism" value="bed_and_breakfast" zoom-appear="15"/>
-        <osm-tag key='tourism' value='camp_site' zoom-appear='14' />
+        <osm-tag key='tourism' value='camp_site' zoom-appear='13' />
         <osm-tag key='tourism' value='caravan_site' zoom-appear='14' />
         <osm-tag key="tourism" value="chalet" zoom-appear="15"/>        
         <osm-tag key="tourism" value="guest_house" zoom-appear="15"/>                
@@ -735,7 +735,7 @@
     </ways>  
 
     <pois>
-        <osm-tag key="leisure" value="beach_resort" zoom-appear="15"/>   
+        <osm-tag key="leisure" value="beach_resort" zoom-appear="13"/>   
         <osm-tag key="leisure" value="fitness_centre"  zoom-appear="15"/>
         <osm-tag key="leisure" value="fitness_station" zoom-appear="15"/>
         <osm-tag key="leisure" value="garden" zoom-appear="15"/>
