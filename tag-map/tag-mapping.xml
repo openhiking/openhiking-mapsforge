@@ -723,6 +723,9 @@
 
         <osm-tag key="garden:type" renderable="false" value="botanical"/>        
 
+
+        <osm-tag key="sport" value="climbing" zoom-appear="15"/>
+
         <osm-tag key="sport" value="soccer" renderable="false"/>
         <osm-tag key="sport" value="tennis" renderable="false"/>
         <osm-tag key="sport" value="skiing" renderable="false"/>
@@ -751,6 +754,8 @@
 
         <osm-tag key="amenity" value="public_bath" zoom-appear="15"/>
         <osm-tag key="amenity" value="spa" zoom-appear="15"/>
+
+        <osm-tag key="sport" value="climbing" zoom-appear="15"/>
 
         <osm-tag key="garden:type" renderable="false" value="botanical"/>        
     
