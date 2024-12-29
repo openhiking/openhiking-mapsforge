@@ -184,6 +184,16 @@
   </rule>
 </rule>
 
+<rule  e="way" k="geological" v="volcanic_lava_field">
+  <area fill="#E0E4E0" scale="none"/>
+  <rule e="way" k="*" v="*" zoom-max="15">
+    <area src="file:/patterns/lava_field.svg" symbol-height="18"/>
+  </rule>
+  <rule e="way" k="*" v="*" zoom-min="16">
+    <area src="file:/patterns/lava_field.svg" symbol-height="32"/>
+  </rule>
+</rule>
+
 <rule e="way" k="natural" v="mud">
   <area fill="#AEAE97" scale="none"/>
 </rule>
