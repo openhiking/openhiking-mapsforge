@@ -481,12 +481,10 @@
                P O I   E M E R G E N C Y
     ************************************************** -->
     <ways>
-        <osm-tag key="emergency" value="ambulance_station" label-position="true" zoom-appear="14"/> 
         <osm-tag key="emergency" value="mountain_rescue" label-position="true" zoom-appear="14"/>  
     </ways>
 
     <pois>
-        <osm-tag key="emergency" value="ambulance_station" zoom-appear="14"/> 
         <osm-tag key="emergency" value="mountain_rescue" zoom-appear="14"/>  
     </pois>
 
@@ -1751,12 +1749,6 @@
         <osm-tag key="abandoned" renderable="false" value="yes"/> 
         <osm-tag key="disused" renderable="false" value="yes"/> 
 
-        <!-- 
-        <osm-tag key="tower:type" renderable="false" value="defensive"/>         
-        <osm-tag key="tower:type" renderable="false" value="observation"/> 
-        <osm-tag key="tower:type" renderable="false" value="watchtower"/> 
-        -->
-
         <osm-tag key="sport" value="golf" renderable="false"/>
         <osm-tag key="sport" value="soccer" renderable="false"/>
         <osm-tag key="sport" value="swimming" renderable="false"/>
@@ -1770,7 +1762,9 @@
         <osm-tag key="sport" value="boules" renderable="false"/>
         <osm-tag key="sport" value="football" renderable="false"/>
         <osm-tag key="sport" value="skating" renderable="false"/>
+        <!-- 
         <osm-tag key="sport" value="climbing" renderable="false"/>
+        -->
         <osm-tag key="sport" value="equestrian" renderable="false"/>
         <osm-tag key="sport" value="bowls" renderable="false"/>
         <osm-tag key="sport" value="multi" renderable="false"/>  
