@@ -35,6 +35,9 @@ if (highway=*)
     () { delete surface; stop }
 end
 
+scope=relation
+highway=* & type=multipolygon & area!=* {area=yes}
+
 ##################################################################
 ### Railways
 disused:railway~'rail|light_rail|narrow_gauge|tram' { railway=disused; disused='{disused:railway}'; delete disused:railway; stop }
@@ -71,7 +74,6 @@ if (leisure=pitch)
     end
     () { stop}
 end
-
 
 scope=way,relation
 if (landuse=*)
