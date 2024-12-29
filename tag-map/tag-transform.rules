@@ -153,12 +153,12 @@ if (building=*)
     #building~'chapel|temple|church|cathedral|basilica|monastery|synagogue|mosque' { building=religious}
     building=temple { building=church}
 
-    building~'civic|government|library|theatre' { building=public}
-    building=yes & amenity~'library|theatre' {  building=public}
+    building~'civic|government|library|theatre|cinema' { building=public}
+    building=yes & amenity~'library|theatre|cinema' {  building=public}
     building=yes & tourism=museum { building=museum}
 
     building~'childcare|kindergarten|school|college|university' { building=education}
-    building=yes & amenity~'kindergarten|school|college|university' { building=education}
+    building=yes & amenity~'childcare|kindergarten|school|college|university' { building=education}
 
     building~'clinic' {  building=hospital}
     building=yes & amenity~'clinic|hospital'  { building=hospital}

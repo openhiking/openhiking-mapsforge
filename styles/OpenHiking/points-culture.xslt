@@ -5,11 +5,19 @@
 #
 # Point rendering: Culture
 #
-# Copyright (c) 2022-2023 OpenHiking contributors
+# Copyright (c) 2022-2024 OpenHiking contributors
 # SPDX-License-Identifier: GPL-3.0-only
 -->
 
 <xsl:template name="points-culture">
+
+<rule  e="any" k="amenity" v="library" zoom-min="15">
+  <symbol id="library" src="{$cultureIconPath}/library.svg" symbol-width="18" priority="{$pr-library}"/>
+  <rule e="any" k="*" v="*" zoom-min="16">
+    <caption k="name" symbol-id="library" 
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-culture}"/>
+  </rule>
+</rule>
 
 <rule  e="any" k="amenity" v="theatre" zoom-min="15">
   <symbol id="theatre" src="{$cultureIconPath}/theatre.svg" symbol-width="20" priority="{$pr-theatre}"/>
@@ -19,10 +27,18 @@
   </rule>
 </rule>
 
-<rule  e="any" k="amenity" v="library" zoom-min="15">
-  <symbol id="library" src="{$cultureIconPath}/library.svg" symbol-width="18" priority="{$pr-library}"/>
+<rule  e="any" k="amenity" v="cinema" zoom-min="15">
+  <symbol id="cinema" src="{$cultureIconPath}/cinema.svg" symbol-width="18" priority="{$pr-cinema}"/>
   <rule e="any" k="*" v="*" zoom-min="16">
-    <caption k="name" symbol-id="library" 
+    <caption k="name" symbol-id="cinema" 
+    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-culture}"/>
+  </rule>
+</rule>
+
+<rule  e="any" k="tourism" v="gallery" zoom-min="15">
+  <symbol id="gallery" src="{$cultureIconPath}/gallery.svg" symbol-width="22" priority="{$pr-gallery}"/>
+  <rule e="any" k="*" v="*" zoom-min="16">
+    <caption k="name" symbol-id="gallery" 
     font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-culture}"/>
   </rule>
 </rule>
@@ -41,13 +57,6 @@
   </rule>
 </rule>
 
-<rule  e="any" k="tourism" v="gallery" zoom-min="15">
-  <symbol id="gallery" src="{$cultureIconPath}/gallery.svg" symbol-width="22" priority="{$pr-gallery}"/>
-  <rule e="any" k="*" v="*" zoom-min="16">
-    <caption k="name" symbol-id="gallery" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-culture}"/>
-  </rule>
-</rule>
 
 
 
