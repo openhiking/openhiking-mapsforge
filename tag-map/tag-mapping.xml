@@ -558,11 +558,12 @@
         <osm-tag key="historic" value="city_gate" label-position="true" zoom-appear="15"/>  
         <osm-tag key="historic" value="fort" label-position="true" zoom-appear="14"/>  
         <osm-tag key="historic" value="lime_kiln" label-position="true" zoom-appear="15"/>              
-        <osm-tag key="historic" value="manor" label-position="true" zoom-appear="15"/>    
+        <osm-tag key="historic" value="manor" label-position="true" zoom-appear="14"/>    
         <osm-tag key="historic" value="memorial" label-position="true" zoom-appear="15"/>
         <osm-tag key="historic" value="monument" label-position="true" zoom-appear="15"/>
+        <osm-tag key="historic" value="monastery" label-position="true" zoom-appear="14"/>        
         <osm-tag key="historic" value="quarry" label-position="true" zoom-appear="14"/>        
-        <osm-tag key="historic" value="ruins" label-position="true" zoom-appear="15"/>    
+        <osm-tag key="historic" value="ruins" label-position="true" zoom-appear="14"/>    
         <osm-tag key="historic" value="tower" label-position="true" zoom-appear="15"/> 
         <osm-tag key="man_made" value="watermill" label-position="true" zoom-appear="14"/> 
         <osm-tag key="man_made" value="windmill" label-position="true" zoom-appear="14"/> 
@@ -571,16 +572,16 @@
         <osm-tag key="tower:type" value="defensive" label-position="true" zoom-appear="14"/>
 
         <osm-tag key="ruins" renderable="false" value="castle"/>
-        <osm-tag key="ruins" renderable="false" value="chapel"/>
         <osm-tag key="ruins" renderable="false" value="church"/>
         <osm-tag key="ruins" renderable="false" value="fort"/>
+        <osm-tag key="ruins" renderable="false" value="manor"/>
         <osm-tag key="ruins" renderable="false" value="monastery"/>
-        <osm-tag key="ruins" renderable="false" value="temple"/>
+        <osm-tag key="ruins" renderable="false" value="palace"/>
+        <osm-tag key="ruins" renderable="false" value="tower"/>        
         <osm-tag key="ruins" renderable="false" value="yes"/>          
 
         <osm-tag key="castle_type" renderable="false" value="palace"/>     
-        <osm-tag key="castle_type" renderable="false" value="stately"/>             
-
+ 
         <osm-tag key="archaeological_site" renderable="false" value="fortification"/> 
         <osm-tag key="archaeological_site" renderable="false" value="tumulus"/> 
         <osm-tag key="fortification_type" renderable="false" value="hill_fort"/> 
@@ -595,16 +596,17 @@
         <osm-tag key="historic" value="archaeological_site" zoom-appear="14"/>
         <osm-tag key="historic" value="building" zoom-appear="15"/>            
         <osm-tag key="historic" value="castle" zoom-appear="14"/>        
-        <osm-tag key="historic" value="church" zoom-appear="15"/>  
+        <osm-tag key="historic" value="church" zoom-appear="14"/>  
         <osm-tag key="historic" value="city_gate" zoom-appear="15"/>  
         <osm-tag key="historic" value="fort" zoom-appear="14"/>      
         <osm-tag key="historic" value="lime_kiln" zoom-appear="15"/>         
-        <osm-tag key="historic" value="manor" zoom-appear="15"/>    
+        <osm-tag key="historic" value="manor" zoom-appear="14"/>    
         <osm-tag key="historic" value="memorial" zoom-appear="15"/>
         <osm-tag key="historic" value="mine" zoom-appear="14"/> 
         <osm-tag key="historic" value="monument" zoom-appear="15"/>
+        <osm-tag key="historic" value="monastery" zoom-appear="14"/>
         <osm-tag key="historic" value="quarry"  zoom-appear="14"/>         
-        <osm-tag key="historic" value="ruins" zoom-appear="15"/>            
+        <osm-tag key="historic" value="ruins" zoom-appear="14"/>            
         <osm-tag key="historic" value="tomb" zoom-appear="15"/> 
         <osm-tag key="historic" value="tower" zoom-appear="15"/> 
         <osm-tag key="man_made" value="crane_well" zoom-appear="15"/> 
@@ -616,11 +618,10 @@
         <osm-tag key="tower:type" value="defensive" zoom-appear="14"/>
 	        
         <osm-tag key="ruins" renderable="false" value="castle"/>
-        <osm-tag key="ruins" renderable="false" value="chapel"/>
         <osm-tag key="ruins" renderable="false" value="church"/>
         <osm-tag key="ruins" renderable="false" value="fort"/>
         <osm-tag key="ruins" renderable="false" value="monastery"/>
-        <osm-tag key="ruins" renderable="false" value="temple"/>
+        <osm-tag key="ruins" renderable="false" value="palace"/>
         <osm-tag key="ruins" renderable="false" value="tower"/>    
         <osm-tag key="ruins" renderable="false" value="yes"/>    
 

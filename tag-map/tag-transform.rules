@@ -201,23 +201,47 @@ end
 scope=node,way,relation
 tourism=attraction & (amenity=* | leisure=* | historic=* | natural=* |  man_made=cross )  { delete tourism  }
 
-if (historic=castle)
-    ruins=* {  historic=ruins; ruins=castle; stop}
-    castle_type~'stately|manor'  { historic=manor; delete castle_type }
+if (historic=ruins)    
+    amenity=place_of_worship { delete amenity}
+    military=bunker { delete historic}
+    if (ruins!=*)
+        castle_type~'palace|manor' { ruins='{castle_type}'; stop}
+        castle_type=stately { ruins=manor; stop }
+        castle_type=* { ruins=castle}
+        () { stop}
+    end
+    if (ruins=castle)
+        castle_type=palace { ruins=palace}
+        castle_type~'stately|manor' { ruins=manor}
+    end
+    ruins ~'chapel|temple' { ruins=church }
+    () { stop}
 end
 
-historic~'fort|manor' & ruins=* { ruins='{historic}'; historic=ruins; stop   }
+
+if (historic=castle)
+    if (ruins=*)
+        () { historic=ruins }
+        castle_type~'palace|manor' { ruins='{castle_type}'; delete castle_type; stop}
+        castle_type=stately {  ruins=manor; delete castle_type; stop }
+        castle_type=* { ruins=castle; delete castle_type; stop}
+        () { ruins=castle; stop}
+    end
+    castle_type~'stately|manor' { historic=manor; delete castle_type }
+end
+
+historic~'fort|tower|manor' & ruins=* { ruins='{historic}'; historic=ruins; stop }
+
+if (historic~'chapel|church|temple' & ruins=*)
+    amenity=place_of_worship { delete amenity}
+    ()  { ruins=church; historic=ruins; stop }
+end
 
 man_made~'mineshaft|adit' & (abandoned=yes | disused=yes) { historic=mine; delete man_made }
 historic~'mine_adit|mine_adit|adit' { historic=mine }
 historic=mine & natural=cave_entrance { delete natural }
 
-if (historic=ruins)
-    ruins!=* & castle_type=* { ruins='{castle_type}' }
-    amenity=place_of_worship { delete amenity}
-    military=bunker { delete historic}
-    () { stop}
-end
+
 
 scope=node,way
 historic=tomb & tomb=tumulus { historic=archaeological_site; archaeological_site=tumulus; delete tomb  }
