@@ -10,7 +10,7 @@
 -->
 <xsl:template name="points-hiking">
 
-<rule  e="any" k="tourism" v="alpine_hut" zoom-min="12">
+<rule  e="any" k="tourism" v="alpine_hut" zoom-min="11">
     <rule  e="any" k="*" v="*" zoom-max="13">
         <symbol id="alpine_hut" src="{$hikingIconPath}/alpine_hut.svg" symbol-width="20" priority="{$pr-alpine-hut}"/>
     </rule> 

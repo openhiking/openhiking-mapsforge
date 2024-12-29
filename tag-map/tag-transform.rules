@@ -12,7 +12,7 @@ if (highway=*)
     vehicle!=* & motor_vehicle!=* & access~'no|private|agricultural|forestry' { motor_vehicle=no }
     motor_vehicle!=* & vehicle~'no|private|agricultural|forestry'  { motor_vehicle=no }
 
-    if (highway~'unclassified|residential|living_street|service') 
+    if (highway~'tertiary|unclassified|residential|living_street|service') 
         surface~'fine_gravel|compacted|pebblestone|rock|grass_paver|gravel|unpaved' { highway=track; tracktype=grade1 }
         surface~'ground|earth|dirt|grass|mud|sand' { highway=track; tracktype=grade3 }
     end

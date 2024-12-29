@@ -311,8 +311,8 @@
                  C O N T O U R   L I N E S
     ************************************************** -->
     <ways>
-        <osm-tag key='contour_ext' value='elevation_major' force-polygon-line="true" zoom-appear='11'/> 
-        <osm-tag key='contour_ext' value='elevation_medium' force-polygon-line="true" zoom-appear='12'/> 
+        <osm-tag key='contour_ext' value='elevation_major' force-polygon-line="true" zoom-appear='10'/> 
+        <osm-tag key='contour_ext' value='elevation_medium' force-polygon-line="true" zoom-appear='11'/> 
         <osm-tag key='contour_ext' value='elevation_minor' force-polygon-line="true" zoom-appear='14'/>    
 
         <osm-tag key="ele" renderable="false" value="%f"/>    
@@ -372,16 +372,16 @@
     ************************************************** -->
     <ways>
         <osm-tag key="tourism" value="apartment" label-position="true" zoom-appear="15"/>
-        <osm-tag key="tourism" value="alpine_hut" label-position="true" zoom-appear="12"/>
+        <osm-tag key="tourism" value="alpine_hut" label-position="true" zoom-appear="11"/>
         <osm-tag key="tourism" value="bed_and_breakfast" label-position="true" zoom-appear="15"/>
-        <osm-tag key='tourism' value='camp_site' label-position="true" zoom-appear='12' />
+        <osm-tag key='tourism' value='camp_site' label-position="true" zoom-appear='11' />
         <osm-tag key='tourism' value='caravan_site' label-position="true" zoom-appear='12' />
         <osm-tag key="tourism" value="chalet" label-position="true" zoom-appear="15"/>        
         <osm-tag key="tourism" value="guest_house" label-position="true" zoom-appear="15"/>        
         <osm-tag key="tourism" value="hostel" label-position="true" zoom-appear="15"/>
         <osm-tag key="tourism" value="hotel" label-position="true" zoom-appear="15"/>
         <osm-tag key="tourism" value="motel" label-position="true" zoom-appear="15"/>
-        <osm-tag key="tourism" value="wilderness_hut" label-position="true" zoom-appear="13"/>
+        <osm-tag key="tourism" value="wilderness_hut" label-position="true" zoom-appear="12"/>
 
         <osm-tag key="camp_site" value="basic" renderable="false" />
 
@@ -389,7 +389,7 @@
 
     <pois>
         <osm-tag key="tourism" value="apartment" zoom-appear="15"/>
-        <osm-tag key="tourism" value="alpine_hut" zoom-appear="12"/>
+        <osm-tag key="tourism" value="alpine_hut" zoom-appear="11"/>
         <osm-tag key="tourism" value="bed_and_breakfast" zoom-appear="15"/>
         <osm-tag key='tourism' value='camp_site' zoom-appear='13' />
         <osm-tag key='tourism' value='caravan_site' zoom-appear='14' />
@@ -398,7 +398,7 @@
         <osm-tag key="tourism" value="hostel" zoom-appear="15"/>
         <osm-tag key="tourism" value="hotel" zoom-appear="15"/>       
         <osm-tag key="tourism" value="motel" zoom-appear="15"/>
-        <osm-tag key="tourism" value="wilderness_hut" zoom-appear="14"/>
+        <osm-tag key="tourism" value="wilderness_hut" zoom-appear="12"/>
 
         <osm-tag key="camp_site" value="basic" renderable="false" />    
     </pois>
@@ -1094,7 +1094,7 @@
 
         <osm-tag key="tourism" label-position="true" value="attraction" zoom-appear="14"/>    
         <osm-tag key="tourism" label-position="true" value="picnic_site" zoom-appear="14"/>
-        <osm-tag key="tourism" label-position="true" value="viewpoint" zoom-appear="14"/> 
+        <osm-tag key="tourism" label-position="true" value="viewpoint" zoom-appear="12"/> 
         <osm-tag key="tower" value="outlook" label-position="true" zoom-appear="14"/>     
         <osm-tag key="tower" value="outlook_closed" label-position="true" zoom-appear="14"/>     
 
@@ -1126,7 +1126,7 @@
 
         <osm-tag key="tourism" value="attraction" zoom-appear="14"/>                    
         <osm-tag key="tourism" value="picnic_site" zoom-appear="14"/>
-        <osm-tag key="tourism" value="viewpoint" zoom-appear="14"/>
+        <osm-tag key="tourism" value="viewpoint" zoom-appear="12"/>
 
         <osm-tag key="tower" value="outlook" zoom-appear="14"/>     
         <osm-tag key="tower" value="outlook_closed" zoom-appear="14"/>     
