@@ -63,6 +63,8 @@ if (landuse=industrial)
     generator:source=solar { delete landuse; power=generator }
 end
 
+natural=bare_rock & geological=volcanic_lava_field { delete natural}
+
 # Pitch surfaces
 scope=way,relation
 if (leisure=pitch)
@@ -246,7 +248,7 @@ disused:natural=spring  { natural=spring; seasonal=yes; stop }
 
 scope=node
 natural=peak & man_made~'cross|summit_cross'  { delete man_made; summit:cross=yes }
-natural=volcano & volcano:status!=active { natural=peak }
+natural=volcano & volcano:status!=active & geological!=volcanic_vent { natural=peak }
 natural=bay & place=locality { delete place}
 
 scope=node,way

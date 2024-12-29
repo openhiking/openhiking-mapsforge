@@ -7,7 +7,7 @@
                 P O L Y G O N S
     ************************************************** -->
 
-    <!-- NATURAL / WATERWAY TAGS -->
+    <!-- NATURAL, GEOLOGICAL &  WATERWAY TAGS -->
     <ways>
         <osm-tag key="lock" value="yes" zoom-appear="13"/>
 
@@ -36,7 +36,10 @@
         <osm-tag key="natural" value="water" label-position="true" zoom-appear="8"/>
         <osm-tag key="natural" value="wetland" zoom-appear="10"/>
         <osm-tag key="natural" value="wood" zoom-appear="9"/>
+
+        <osm-tag key="geological" value="volcanic_lava_field" zoom-appear="9"/>
     </ways>
+
 
     <!-- LANDUSE TAGS -->
     <ways>
