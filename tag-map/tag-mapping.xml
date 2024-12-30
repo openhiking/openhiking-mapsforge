@@ -31,7 +31,7 @@
         <osm-tag key="natural" value="mud" zoom-appear="12"/>    
         <osm-tag key="natural" value="sand" zoom-appear="12"/>    
         <osm-tag key="natural" value="scrub" zoom-appear="12"/>
-        <osm-tag key="natural" value="scree" zoom-appear="12"/>
+        <osm-tag key="natural" value="scree" zoom-appear="10"/>
         <osm-tag key="natural" value="shingle" zoom-appear="9"/>        
         <osm-tag key="natural" value="water" label-position="true" zoom-appear="8"/>
         <osm-tag key="natural" value="wetland" zoom-appear="10"/>
@@ -115,7 +115,7 @@
         <osm-tag key="highway" value="secondary" zoom-appear="9"/>
         <osm-tag key="highway" value="secondary_link" zoom-appear="9"/>
         <osm-tag key="highway" value="service" zoom-appear="13"/>
-        <osm-tag key="highway" value="steps" zoom-appear="15"/>
+        <osm-tag key="highway" value="steps" zoom-appear="14"/>
         <osm-tag key="highway" value="tertiary" zoom-appear="10"/>
         <osm-tag key="highway" value="tertiary_link" zoom-appear="10"/>
         <osm-tag key="highway" value="track" zoom-appear="12"/>
@@ -1101,7 +1101,7 @@
         <osm-tag key="ford" value="yes" label-position="true" zoom-appear="12"/>     
 
         <osm-tag key="shelter_type" value="rock_shelter"  renderable="false"/>
-        <osm-tag key="shelter_type" value="basic_hut"  renderable="false"/>
+        <osm-tag key="shelter_type" value="basic_hut"  zoom-appear="13"/>
         <osm-tag key="shelter_type" value="picnic_shelter"  renderable="false"/>
 
 

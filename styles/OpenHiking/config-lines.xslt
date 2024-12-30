@@ -28,7 +28,7 @@
 <xsl:variable name="zm-cycleway">13</xsl:variable>
 <xsl:variable name="zm-footway">14</xsl:variable>
 <xsl:variable name="zm-bridleway">14</xsl:variable>
-<xsl:variable name="zm-path">14</xsl:variable>
+<xsl:variable name="zm-path">13</xsl:variable>
 <xsl:variable name="zm-path2">16</xsl:variable>
 <xsl:variable name="zm-steps">15</xsl:variable>
 <xsl:variable name="zm-ferrata">15</xsl:variable>
@@ -45,18 +45,20 @@
 <xsl:variable name="lw-motorway_link">1.6</xsl:variable>
 <xsl:variable name="lw-trunk">2.8</xsl:variable>
 <xsl:variable name="lw-trunk_link">1.6</xsl:variable>
-<xsl:variable name="lw-primary">2.8</xsl:variable>
-<xsl:variable name="lw-secondary">2.6</xsl:variable>
-<xsl:variable name="lw-tertiary">2.2</xsl:variable>
-
-
-<xsl:variable name="lw-residential">1.5</xsl:variable>
+<xsl:variable name="lw-primary">3.0</xsl:variable>
+<xsl:variable name="lw-secondary">2.8</xsl:variable>
+<xsl:variable name="lw-tertiary">2.5</xsl:variable>
+<xsl:variable name="lw-residential">2.0</xsl:variable>
+<xsl:variable name="lw-residential2">1.8</xsl:variable>
 <xsl:variable name="lw-living_street">1.3</xsl:variable>
-<xsl:variable name="lw-unclassified">1.5</xsl:variable>
-<xsl:variable name="lw-service">1.2</xsl:variable>
+<xsl:variable name="lw-unclassified">2.5</xsl:variable>
+<xsl:variable name="lw-unclassified2">1.8</xsl:variable>
+<xsl:variable name="lw-service">2.2</xsl:variable>
+<xsl:variable name="lw-service2">1.2</xsl:variable>
 <xsl:variable name="lw-cycleway">1.2</xsl:variable>
 <xsl:variable name="lw-raceway">0.6</xsl:variable>
-<xsl:variable name="lw-macadam">1.5</xsl:variable>
+<xsl:variable name="lw-macadam">2.5</xsl:variable>
+<xsl:variable name="lw-macadam2">1.5</xsl:variable>
 <xsl:variable name="lw-track">0.65</xsl:variable>
 <xsl:variable name="lw-track2">0.5</xsl:variable>
 <xsl:variable name="lw-track3">0.3</xsl:variable>
@@ -80,11 +82,12 @@
 <xsl:variable name="lw-rail">0.8</xsl:variable>
 <xsl:variable name="lw-rail-narrow">0.45</xsl:variable>
 
-<xsl:variable name="lw-trail-highlight-low">2</xsl:variable>
-<xsl:variable name="lw-trail-highlight">0.8</xsl:variable>
+<xsl:variable name="lw-trail-highlight-low">2.5</xsl:variable>
+<xsl:variable name="lw-trail-highlight">1.4</xsl:variable>
 <xsl:variable name="lw-trail-highlight-deep">0.5</xsl:variable>
-<xsl:variable name="lw-trail-highlight-l2">0.7</xsl:variable>
-<xsl:variable name="lw-trail-highlight-l3">0.4</xsl:variable>
+<xsl:variable name="lw-trail-highlight-l2">0.9</xsl:variable>
+<xsl:variable name="lw-trail-highlight-l3">0.6</xsl:variable>
+<xsl:variable name="lw-trail-highlight-l4">0.4</xsl:variable>
 
 <xsl:variable name="lw-restricted">1.5</xsl:variable>
 

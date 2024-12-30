@@ -147,7 +147,12 @@
 </rule>     
 
 <rule  e="any" k="tourism" v="viewpoint" zoom-min="13">
+  <rule  e="any" k="*" v="*" zoom-max="14">
     <symbol id="viewpoint" src="{$hikingIconPath}/viewpoint.svg" symbol-width="20" priority="{$pr-viewpoint}"/>
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="15">
+    <symbol id="viewpoint" src="{$hikingIconPath}/viewpoint.svg" symbol-width="24" priority="{$pr-viewpoint}"/>
+  </rule>  
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="viewpoint" 
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-wilderness}"/>

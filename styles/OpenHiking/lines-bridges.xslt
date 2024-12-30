@@ -2,8 +2,8 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://mapsforge.org/renderTheme" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
 <xsl:template name="lines-bridges">
-<xsl:variable name="lw-bridge-border">0.9</xsl:variable>
-<xsl:variable name="lw-bridge-base">0.5</xsl:variable>
+<xsl:variable name="lw-bridge-border">3.6</xsl:variable>
+<xsl:variable name="lw-bridge-base">2.6</xsl:variable>
 
 
 <xsl:variable name="lc-bridge">#333333</xsl:variable>

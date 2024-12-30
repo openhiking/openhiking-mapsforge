@@ -255,14 +255,14 @@
     </rule>
 </rule>
 
-<rule  e="node" k="waterway" v="waterfall" zoom-min="14">
-    <rule  e="any" k="*" v="*" zoom-max="15">
+<rule  e="node" k="waterway" v="waterfall" zoom-min="13">
+    <rule  e="any" k="*" v="*" zoom-max="14">
         <symbol id="waterfall" src="{$naturalIconPath}/waterfall.svg" symbol-width="18" display="always" priority="{$pr-waterfall}"/>
     </rule> 
-    <rule  e="any" k="*" v="*" zoom-min="16">
-        <symbol id="waterfall" src="{$naturalIconPath}/waterfall.svg" symbol-width="20" display="always" priority="{$pr-waterfall}"/>
+    <rule  e="any" k="*" v="*" zoom-min="15">
+        <symbol id="waterfall" src="{$naturalIconPath}/waterfall.svg" symbol-width="22" display="always" priority="{$pr-waterfall}"/>
     </rule>                         
-    <rule e="node" k="*" v="*" zoom-min="16">
+    <rule e="node" k="*" v="*" zoom-min="15">
     <caption k="name" symbol-id="waterfall" position="below" 
     font-style="bold" font-size="10" fill="#4040ff" stroke="#ffffff" stroke-width="2" priority="{$pr-label-natural}"/>
     </rule>

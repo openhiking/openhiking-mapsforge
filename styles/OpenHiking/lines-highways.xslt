@@ -77,15 +77,19 @@
             <rule e="way" k="tracktype" v="grade1|grade2" zoom-min="{$zm-macadam}"> 
                 <rule e="way" k="*" v="*" zoom-max="{$zm-macadam + 1}"> 
                     <line stroke="{$bc-macadam}" stroke-width="{$lw-macadam}" stroke-dasharray="8,2" stroke-linecap="butt"/>
-                    <line stroke="{$lc-macadam}" stroke-width="{$lw-macadam - 0.3}" />          
+                    <line stroke="{$lc-macadam}" stroke-width="{$lw-macadam - 0.5}" />          
                 </rule>  
-                <rule e="way" k="*" v="*" zoom-min="{$zm-macadam + 2}" zoom-max="{$zm-level3 - 1 }"> 
+                <rule e="way" k="*" v="*" zoom-min="{$zm-macadam + 2}" zoom-max="{$zm-level2 - 1 }"> 
                     <line stroke="{$bc-macadam}" stroke-width="{$lw-macadam}" stroke-dasharray="10,5" stroke-linecap="butt"/>
-                    <line stroke="{$lc-macadam}" stroke-width="{$lw-macadam - 0.4}" />          
-                </rule>      
+                    <line stroke="{$lc-macadam}" stroke-width="{$lw-macadam - 0.5}" />          
+                </rule> 
+                <rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1 }"> 
+                    <line stroke="{$bc-macadam}" stroke-width="{$lw-macadam2}" stroke-dasharray="10,5" stroke-linecap="butt"/>
+                    <line stroke="{$lc-macadam}" stroke-width="{$lw-macadam2 - 0.4}" />          
+                </rule>                       
                 <rule e="way" k="*" v="*" zoom-min="{$zm-level3 }"> 
-                    <line stroke="{$bc-macadam}" stroke-width="{$lw-macadam}" stroke-dasharray="14,6" stroke-linecap="butt"/>
-                    <line stroke="{$lc-macadam}" stroke-width="{$lw-macadam - 0.4}" />          
+                    <line stroke="{$bc-macadam}" stroke-width="{$lw-macadam2}" stroke-dasharray="14,6" stroke-linecap="butt"/>
+                    <line stroke="{$lc-macadam}" stroke-width="{$lw-macadam2 - 0.4}" />          
                 </rule>                                    
             </rule>
             <rule e="way" k="*" v="*" zoom-min="{$zm-track}" zoom-max="{$zm-level2 - 1}"> 
@@ -131,20 +135,38 @@
             <line stroke="{$bc-cycleway}" stroke-width="0.1" stroke-dasharray="4,3" stroke-linecap="butt"/>           
         </rule>
         <rule e="way" k="highway" v="service" >
-            <line stroke="{$bc-service}" stroke-width="{$lw-service}" stroke-linecap="butt"/>
-            <line stroke="{$lc-service}" stroke-width="{$lw-service  - 0.4}" stroke-linecap="butt"/>          
+            <rule e="way" k="*" v="*"  zoom-max="{$zm-level2 - 1 }">           
+                <line stroke="{$bc-service}" stroke-width="{$lw-service}" stroke-linecap="butt"/>
+                <line stroke="{$lc-service}" stroke-width="{$lw-service  - 0.4}" stroke-linecap="butt"/> 
+            </rule>  
+           <rule e="way" k="*" v="*"  zoom-min="{$zm-level2 }">           
+                <line stroke="{$bc-service}" stroke-width="{$lw-service2}" stroke-linecap="butt"/>
+                <line stroke="{$lc-service}" stroke-width="{$lw-service2  - 0.4}" stroke-linecap="butt"/> 
+            </rule>         
         </rule>
         <rule e="way" k="highway" v="living_street"  zoom-min="{$zm-living}">
             <line stroke="{$bc-living}" stroke-width="{$lw-living_street}" stroke-linecap="butt"/>
             <line stroke="{$lc-living}" stroke-width="{$lw-living_street - 0.4}" stroke-linecap="butt"/>          
         </rule>
         <rule e="way" k="highway" v="residential" zoom-min="{$zm-residential}">
-            <line stroke="{$bc-residential}" stroke-width="{$lw-residential}" stroke-linecap="butt"/>
-            <line stroke="{$lc-residential}" stroke-width="{$lw-residential - 0.4}" />          
+            <rule e="way" k="*" v="*"  zoom-max="{$zm-level2 - 1 }">         
+                <line stroke="{$bc-residential}" stroke-width="{$lw-residential}" stroke-linecap="butt"/>
+                <line stroke="{$lc-residential}" stroke-width="{$lw-residential - 0.4}" />      
+            </rule>  
+           <rule e="way" k="*" v="*"  zoom-min="{$zm-level2 }">         
+                <line stroke="{$bc-residential}" stroke-width="{$lw-residential2}" stroke-linecap="butt"/>
+                <line stroke="{$lc-residential}" stroke-width="{$lw-residential2 - 0.4}" />      
+            </rule>    
         </rule>
         <rule e="way" k="highway" v="unclassified" >
-            <line stroke="{$bc-unclassified}" stroke-width="{$lw-unclassified}" stroke-linecap="butt"/>
-            <line stroke="{$lc-unclassified}" stroke-width="{$lw-unclassified - 0.4}" />          
+            <rule e="way" k="*" v="*"  zoom-max="{$zm-level2 - 1 }">         
+                <line stroke="{$bc-unclassified}" stroke-width="{$lw-unclassified}" stroke-linecap="butt"/>
+                <line stroke="{$lc-unclassified}" stroke-width="{$lw-unclassified - 0.4}" />    
+            </rule>    
+           <rule e="way" k="*" v="*" zoom-min="{$zm-level2}">         
+                <line stroke="{$bc-unclassified}" stroke-width="{$lw-unclassified2}" stroke-linecap="butt"/>
+                <line stroke="{$lc-unclassified}" stroke-width="{$lw-unclassified2 - 0.4}" />    
+            </rule>      
         </rule>
     
     <rule e="way" k="tunnel" v="~|no">        
