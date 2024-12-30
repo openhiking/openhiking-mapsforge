@@ -1095,7 +1095,7 @@
         <osm-tag key="tourism" label-position="true" value="attraction" zoom-appear="14"/>    
         <osm-tag key="tourism" label-position="true" value="picnic_site" zoom-appear="14"/>
         <osm-tag key="tourism" label-position="true" value="viewpoint"  zoom-appear="12"/> 
-        <osm-tag key="tower" value="outlook" label-position="true" zoom-appear="14"/>     
+        <osm-tag key="tower" value="outlook" label-position="true" zoom-appear="13"/>     
         <osm-tag key="tower" value="outlook_closed" label-position="true" zoom-appear="14"/>     
 
         <osm-tag key="ford" value="yes" label-position="true" zoom-appear="12"/>     
