@@ -43,7 +43,7 @@
 
 
 <rule  e="any" k="amenity" v="shelter" >
-  <rule  e="any" k="shelter_type" v="basic_hut" zoom-min="14">
+  <rule  e="any" k="shelter_type" v="basic_hut" zoom-min="13">
     <rule  e="any" k="*" v="*" zoom-max="15">
       <symbol id="basic_hut" src="{$hikingIconPath}/basic_hut.svg" symbol-width="20" priority="{$pr-basic-hut}"/>
     </rule> 
@@ -120,7 +120,7 @@
   <symbol id="firepit" src="{$hikingIconPath}/firepit.svg" symbol-width="20" priority="{$pr-firepit}"/>
 </rule>
 
-<rule  e="any" k="tower" v="outlook" zoom-min="14">
+<rule  e="any" k="tower" v="outlook" zoom-min="13">
   <rule  e="any" k="*" v="*" zoom-max="15">
     <symbol id="lookout_tower" src="{$hikingIconPath}/lookout_tower.svg" symbol-width="22" priority="{$pr-tower-lookout}" display="always"/>      
   </rule>
@@ -146,7 +146,7 @@
   </rule>
 </rule>     
 
-<rule  e="any" k="tourism" v="viewpoint" zoom-min="12">
+<rule  e="any" k="tourism" v="viewpoint" zoom-min="13">
     <symbol id="viewpoint" src="{$hikingIconPath}/viewpoint.svg" symbol-width="20" priority="{$pr-viewpoint}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="viewpoint" 

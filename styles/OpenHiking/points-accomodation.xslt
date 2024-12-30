@@ -46,7 +46,7 @@
 </rule>
 -->
 
-<rule  e="any" k="tourism" v="camp_site" zoom-min="13">
+<rule  e="any" k="tourism" v="camp_site" zoom-min="12">
     <rule  e="any" k="camp_site" v="basic" >
         <rule  e="any" k="*" v="*" zoom-max="14">
             <symbol id="camp_site" src="{$accomodationIconPath}/camp_site_basic.svg" symbol-width="18" priority="{$pr-camp-site}"/>
