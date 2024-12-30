@@ -98,13 +98,13 @@
                 H I G H W A Y S
     ************************************************** -->
     <ways>
-        <osm-tag key="highway" value="bridleway" zoom-appear="14"/>    
+        <osm-tag key="highway" value="bridleway" zoom-appear="13"/>    
         <osm-tag key="highway" value="cycleway" zoom-appear="13"/>
-        <osm-tag key="highway" value="footway" zoom-appear="14"/>
+        <osm-tag key="highway" value="footway" zoom-appear="13"/>
         <osm-tag key="highway" value="living_street" zoom-appear="12"/>
         <osm-tag key="highway" value="motorway" zoom-appear="8"/>
         <osm-tag key="highway" value="motorway_link" zoom-appear="8"/>
-        <osm-tag key="highway" value="path" zoom-appear="14"/>
+        <osm-tag key="highway" value="path" zoom-appear="13"/>
         <osm-tag key="highway" value="pedestrian" zoom-appear="14"/>
         <osm-tag key="highway" value="platform" zoom-appear="14"/>
         <osm-tag key="highway" value="primary" zoom-appear="8"/>
@@ -118,11 +118,11 @@
         <osm-tag key="highway" value="steps" zoom-appear="15"/>
         <osm-tag key="highway" value="tertiary" zoom-appear="10"/>
         <osm-tag key="highway" value="tertiary_link" zoom-appear="10"/>
-        <osm-tag key="highway" value="track" zoom-appear="13"/>
+        <osm-tag key="highway" value="track" zoom-appear="12"/>
         <osm-tag key="highway" value="trunk" zoom-appear="8"/>
         <osm-tag key="highway" value="trunk_link" zoom-appear="8"/>
         <osm-tag key="highway" value="unclassified" zoom-appear="11"/>
-        <osm-tag key="highway" value="via_ferrata" zoom-appear="14"/>
+        <osm-tag key="highway" value="via_ferrata" zoom-appear="13"/>
 
         <!-- Trail color -->
         <osm-tag key="trail_color" value="blue" zoom-appear="11"/>
@@ -391,8 +391,8 @@
         <osm-tag key="tourism" value="apartment" zoom-appear="15"/>
         <osm-tag key="tourism" value="alpine_hut" zoom-appear="11"/>
         <osm-tag key="tourism" value="bed_and_breakfast" zoom-appear="15"/>
-        <osm-tag key='tourism' value='camp_site' zoom-appear='13' />
-        <osm-tag key='tourism' value='caravan_site' zoom-appear='14' />
+        <osm-tag key='tourism' value='camp_site' zoom-appear='11' />
+        <osm-tag key='tourism' value='caravan_site' zoom-appear='12' />
         <osm-tag key="tourism" value="chalet" zoom-appear="15"/>        
         <osm-tag key="tourism" value="guest_house" zoom-appear="15"/>                
         <osm-tag key="tourism" value="hostel" zoom-appear="15"/>
@@ -971,7 +971,7 @@
         <osm-tag key="shop" value="pastry" label-position="true" zoom-appear="15"/> 
         <osm-tag key="shop" value="supermarket" label-position="true" zoom-appear="14"/>
         <osm-tag key="shop" value="shoes" label-position="true" zoom-appear="15"/> 
-        <osm-tag key="shop" value="ticket" zlabel-position="true" oom-appear="15"/> 
+        <osm-tag key="shop" value="ticket" label-position="true" zoom-appear="15"/> 
     </ways>
 
     <pois>
@@ -1128,11 +1128,11 @@
         <osm-tag key="tourism" value="picnic_site" zoom-appear="14"/>
         <osm-tag key="tourism" value="viewpoint"  zoom-appear="12"/>
 
-        <osm-tag key="tower" value="outlook" zoom-appear="14"/>     
+        <osm-tag key="tower" value="outlook" zoom-appear="13"/>     
         <osm-tag key="tower" value="outlook_closed" zoom-appear="14"/>     
 
-        <osm-tag key="ford" value="yes" zoom-appear="12"/>                
-        <osm-tag key="shelter_type" value="basic_hut"  renderable="false"/>
+        <osm-tag key="ford" value="yes" zoom-appear="14"/>                
+        <osm-tag key="shelter_type" value="basic_hut"  zoom-appear="13"/>
         <osm-tag key="shelter_type" value="picnic_shelter"  renderable="false"/>
         <osm-tag key="shelter_type" value="public_transport"  renderable="false"/>
     </pois>

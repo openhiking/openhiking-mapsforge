@@ -20,34 +20,43 @@
             <rule e="way" k="sac_scale" v="hiking|mountain_hiking|~" zoom-min="{$zm-path}">
                 <rule e="way" k="*" v="*" zoom-min="{$zm-path}" zoom-max="{$zm-level2 - 1}"> 
                     <line stroke="{$lc-path}" stroke-width="{$lw-path}" stroke-dasharray="4,4"  stroke-linecap="butt"/>          
-                </rule>                                
-                <rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}"> 
-                    <line stroke="{$lc-path}" stroke-width="{$lw-path2}" stroke-dasharray="7,7"  stroke-linecap="butt"/>          
+                </rule> 
+               <rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}"> 
+                    <line stroke="{$lc-path}" stroke-width="{$lw-path2}" stroke-dasharray="4,4"  stroke-linecap="butt"/>          
                 </rule>       
-                <rule e="way" k="*" v="*" zoom-min="{$zm-level3}"> 
-                    <line stroke="{$lc-path}" stroke-width="{$lw-path3}" stroke-dasharray="10,10"  stroke-linecap="butt"/>          
+                <rule e="way" k="*" v="*" zoom-min="{$zm-level3}" zoom-max="{$zm-level4 - 1}"> 
+                    <line stroke="{$lc-path}" stroke-width="{$lw-path3}" stroke-dasharray="7,7"  stroke-linecap="butt"/>          
+                </rule>       
+                <rule e="way" k="*" v="*" zoom-min="{$zm-level4}"> 
+                    <line stroke="{$lc-path}" stroke-width="{$lw-path4}" stroke-dasharray="10,10"  stroke-linecap="butt"/>          
                 </rule>                                
             </rule>
             <rule e="way" k="sac_scale" v="demanding_mountain_hiking" zoom-min="{$zm-path}">
                 <rule e="way" k="*" v="*" zoom-min="{$zm-path}" zoom-max="{$zm-level2 - 1}"> 
                     <line stroke="{$lc-mountain-path}" stroke-width="{$lw-path}" stroke-dasharray="2,2"  stroke-linecap="butt"/>          
-                </rule>                                
-                <rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}"> 
-                    <line stroke="{$lc-mountain-path}" stroke-width="{$lw-path2}" stroke-dasharray="3,3"  stroke-linecap="butt"/>          
                 </rule> 
-                <rule e="way" k="*" v="*" zoom-min="{$zm-level3}" > 
-                    <line stroke="{$lc-mountain-path}" stroke-width="{$lw-path3}" stroke-dasharray="4,4"  stroke-linecap="butt"/>          
+               <rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}"> 
+                    <line stroke="{$lc-mountain-path}" stroke-width="{$lw-path2}" stroke-dasharray="2,2"  stroke-linecap="butt"/>          
+                </rule>                                               
+                <rule e="way" k="*" v="*" zoom-min="{$zm-level3}" zoom-max="{$zm-level4 - 1}"> 
+                    <line stroke="{$lc-mountain-path}" stroke-width="{$lw-path3}" stroke-dasharray="3,3"  stroke-linecap="butt"/>          
+                </rule> 
+                <rule e="way" k="*" v="*" zoom-min="{$zm-level4}" > 
+                    <line stroke="{$lc-mountain-path}" stroke-width="{$lw-path4}" stroke-dasharray="4,4"  stroke-linecap="butt"/>          
                 </rule>                                
             </rule>
             <rule e="way" k="sac_scale" v="alpine_hiking|demanding_alpine_hiking|difficult_alpine_hiking" zoom-min="{$zm-path}">
                 <rule e="way" k="*" v="*" zoom-min="{$zm-path}" zoom-max="{$zm-level2 - 1}"> 
                     <line stroke="{$lc-alpine-path}" stroke-width="{$lw-path}" stroke-dasharray="2,2"  stroke-linecap="butt"/>          
-                </rule>                                
-                <rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}"> 
-                    <line stroke="{$lc-alpine-path}" stroke-width="{$lw-path2}" stroke-dasharray="3,3"  stroke-linecap="butt"/>          
+                </rule>    
+               <rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}"> 
+                    <line stroke="{$lc-alpine-path}" stroke-width="{$lw-path2}" stroke-dasharray="2,2"  stroke-linecap="butt"/>          
                 </rule> 
-                <rule e="way" k="*" v="*" zoom-min="{$zm-level3}" > 
-                    <line stroke="{$lc-alpine-path}" stroke-width="{$lw-path3}" stroke-dasharray="4,4"  stroke-linecap="butt"/>          
+                <rule e="way" k="*" v="*" zoom-min="{$zm-level3}" zoom-max="{$zm-level4 - 1}"> 
+                    <line stroke="{$lc-alpine-path}" stroke-width="{$lw-path3}" stroke-dasharray="3,3"  stroke-linecap="butt"/>          
+                </rule> 
+                <rule e="way" k="*" v="*" zoom-min="{$zm-level4}" > 
+                    <line stroke="{$lc-alpine-path}" stroke-width="{$lw-path4}" stroke-dasharray="4,4"  stroke-linecap="butt"/>          
                 </rule>                                
             </rule>
         </rule>            
@@ -70,11 +79,11 @@
                     <line stroke="{$bc-macadam}" stroke-width="{$lw-macadam}" stroke-dasharray="8,2" stroke-linecap="butt"/>
                     <line stroke="{$lc-macadam}" stroke-width="{$lw-macadam - 0.3}" />          
                 </rule>  
-                <rule e="way" k="*" v="*" zoom-min="{$zm-macadam + 2}" zoom-max="{$zm-level2 - 1 }"> 
+                <rule e="way" k="*" v="*" zoom-min="{$zm-macadam + 2}" zoom-max="{$zm-level3 - 1 }"> 
                     <line stroke="{$bc-macadam}" stroke-width="{$lw-macadam}" stroke-dasharray="10,5" stroke-linecap="butt"/>
                     <line stroke="{$lc-macadam}" stroke-width="{$lw-macadam - 0.4}" />          
                 </rule>      
-                <rule e="way" k="*" v="*" zoom-min="{$zm-level2 }"> 
+                <rule e="way" k="*" v="*" zoom-min="{$zm-level3 }"> 
                     <line stroke="{$bc-macadam}" stroke-width="{$lw-macadam}" stroke-dasharray="14,6" stroke-linecap="butt"/>
                     <line stroke="{$lc-macadam}" stroke-width="{$lw-macadam - 0.4}" />          
                 </rule>                                    
@@ -90,15 +99,26 @@
                     <line stroke="{$lc-track}" stroke-width="{$lw-track}" stroke-dasharray="5,4"  stroke-linecap="butt" />
                 </rule>
             </rule>
-            <rule e="way" k="*" v="*" zoom-min="{$zm-level2}"> 
+            <rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}"> 
                 <rule e="way" k="tracktype" v="grade3" > 
-                    <line stroke="{$lc-track}" stroke-width="{$lw-track2}" stroke-dasharray="22,7"  stroke-linecap="butt"/>
+                    <line stroke="{$lc-track}" stroke-width="{$lw-track2}" stroke-dasharray="16,3"  stroke-linecap="butt"/>
                 </rule>
-                <rule e="way" k="tracktype" v="~|grade4" >
-                    <line stroke="{$lc-track}" stroke-width="{$lw-track2}" stroke-dasharray="19,7"  stroke-linecap="butt" />
+                <rule e="way" k="tracktype" v="~|grade4" > 
+                    <line stroke="{$lc-track}" stroke-width="{$lw-track2}" stroke-dasharray="13,3"  stroke-linecap="butt" />
                 </rule>
                 <rule e="way" k="tracktype" v="grade5" > 
-                    <line stroke="{$lc-track}" stroke-width="{$lw-track2}" stroke-dasharray="12,8"  stroke-linecap="butt" />
+                    <line stroke="{$lc-track}" stroke-width="{$lw-track2}" stroke-dasharray="5,4"  stroke-linecap="butt" />
+                </rule>
+            </rule>            
+            <rule e="way" k="*" v="*" zoom-min="{$zm-level3}"> 
+                <rule e="way" k="tracktype" v="grade3" > 
+                    <line stroke="{$lc-track}" stroke-width="{$lw-track3}" stroke-dasharray="22,7"  stroke-linecap="butt"/>
+                </rule>
+                <rule e="way" k="tracktype" v="~|grade4" >
+                    <line stroke="{$lc-track}" stroke-width="{$lw-track3}" stroke-dasharray="19,7"  stroke-linecap="butt" />
+                </rule>
+                <rule e="way" k="tracktype" v="grade5" > 
+                    <line stroke="{$lc-track}" stroke-width="{$lw-track3}" stroke-dasharray="12,8"  stroke-linecap="butt" />
                 </rule>
             </rule>
         </rule>

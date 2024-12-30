@@ -4,16 +4,16 @@
 <xsl:template name="lines-contours">
 
 <rule cat="contours" e="way" k="contour_ext" v="*">
-  <rule e="way" k="contour_ext" v="elevation_major" zoom-min="11" zoom-max="13">
-    <line stroke="#7B6520" stroke-width="0.4" stroke-linecap="butt" scale="none"/>
+  <rule e="way" k="contour_ext" v="elevation_major" zoom-min="10" zoom-max="12">
+    <line stroke="#7B6520" stroke-width="0.5" stroke-linecap="butt" scale="none"/>
   </rule>
-  <rule e="way" k="contour_ext" v="elevation_major" zoom-min="14">
+  <rule e="way" k="contour_ext" v="elevation_major" zoom-min="13">
     <line stroke="#7B6520" stroke-width="0.7" stroke-linecap="butt" scale="none"/>
   </rule>
-  <rule e="way" k="contour_ext" v="elevation_medium" zoom-min="12" zoom-max="13">
-    <line stroke="#BD956A" stroke-width="0.3" stroke-linecap="butt" scale="none"/>
+  <rule e="way" k="contour_ext" v="elevation_medium" zoom-min="11" zoom-max="12">
+    <line stroke="#BD956A" stroke-width="0.35" stroke-linecap="butt" scale="none"/>
   </rule>
-  <rule e="way" k="contour_ext" v="elevation_medium" zoom-min="14">
+  <rule e="way" k="contour_ext" v="elevation_medium" zoom-min="13">
     <line stroke="#BD956A" stroke-width="0.5" stroke-linecap="butt" scale="none"/>
   </rule>
   <rule e="way" k="contour_ext" v="elevation_minor" zoom-min="14">

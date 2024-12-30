@@ -20,21 +20,21 @@
     <rule  e="any" k="*" v="*" zoom-min="16">
         <symbol id="alpine_hut" src="{$hikingIconPath}/alpine_hut.svg" symbol-width="26" priority="{$pr-alpine-hut}"/>
     </rule>                         
-    <rule e="any" k="*" v="*" zoom-min="16">
+    <rule e="any" k="*" v="*" zoom-min="14">
         <caption k="name" symbol-id="alpine_hut" 
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-accomodation}"/>
     </rule>
 </rule>
 
 
-<rule  e="any" k="tourism" v="wilderness_hut" zoom-min="13">
-    <rule  e="any" k="*" v="*" zoom-max="15">
-        <symbol id="wilderness_hut" src="{$hikingIconPath}/wilderness_hut.svg" symbol-width="21" priority="{$pr-wilderness-hut}"/>
+<rule  e="any" k="tourism" v="wilderness_hut" zoom-min="12">
+    <rule  e="any" k="*" v="*" zoom-max="14">
+        <symbol id="wilderness_hut" src="{$hikingIconPath}/wilderness_hut.svg" symbol-width="18" priority="{$pr-wilderness-hut}"/>
     </rule> 
-    <rule  e="any" k="*" v="*" zoom-min="16">
-        <symbol id="wilderness_hut" src="{$hikingIconPath}/wilderness_hut.svg" symbol-width="25" priority="{$pr-wilderness-hut}"/>
+    <rule  e="any" k="*" v="*" zoom-min="15">
+        <symbol id="wilderness_hut" src="{$hikingIconPath}/wilderness_hut.svg" symbol-width="24" priority="{$pr-wilderness-hut}"/>
     </rule>                         
-    <rule e="any" k="*" v="*" zoom-min="16">
+    <rule e="any" k="*" v="*" zoom-min="15">
         <caption k="name" symbol-id="wilderness_hut" 
         font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-accomodation}"/>
     </rule>
@@ -146,7 +146,7 @@
   </rule>
 </rule>     
 
-<rule  e="any" k="tourism" v="viewpoint" zoom-min="13">
+<rule  e="any" k="tourism" v="viewpoint" zoom-min="12">
     <symbol id="viewpoint" src="{$hikingIconPath}/viewpoint.svg" symbol-width="20" priority="{$pr-viewpoint}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="viewpoint" 

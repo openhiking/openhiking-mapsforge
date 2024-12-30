@@ -35,9 +35,10 @@
 
 <xsl:variable name="zm-ferry">12</xsl:variable>
 
-<xsl:variable name="zm-level2">17</xsl:variable>
-<xsl:variable name="zm-level3">19</xsl:variable>
 
+<xsl:variable name="zm-level2">15</xsl:variable>
+<xsl:variable name="zm-level3">17</xsl:variable>
+<xsl:variable name="zm-level4">19</xsl:variable>
 
 
 <xsl:variable name="lw-motorway">2.8</xsl:variable>
@@ -56,14 +57,16 @@
 <xsl:variable name="lw-cycleway">1.2</xsl:variable>
 <xsl:variable name="lw-raceway">0.6</xsl:variable>
 <xsl:variable name="lw-macadam">1.5</xsl:variable>
-<xsl:variable name="lw-track">0.5</xsl:variable>
-<xsl:variable name="lw-track2">0.3</xsl:variable>
+<xsl:variable name="lw-track">0.6</xsl:variable>
+<xsl:variable name="lw-track2">0.5</xsl:variable>
+<xsl:variable name="lw-track3">0.3</xsl:variable>
 <xsl:variable name="lw-pedestrian">0.4</xsl:variable>
 <xsl:variable name="lw-footway">0.2</xsl:variable>
 <xsl:variable name="lw-bridleway">0.4</xsl:variable>
-<xsl:variable name="lw-path">0.5</xsl:variable>
-<xsl:variable name="lw-path2">0.3</xsl:variable>
-<xsl:variable name="lw-path3">0.25</xsl:variable>
+<xsl:variable name="lw-path">0.6</xsl:variable>
+<xsl:variable name="lw-path2">0.5</xsl:variable>
+<xsl:variable name="lw-path3">0.3</xsl:variable>
+<xsl:variable name="lw-path4">0.25</xsl:variable>
 <xsl:variable name="lw-steps">0.6</xsl:variable>
 <xsl:variable name="lw-ferrata">0.8</xsl:variable>
 
