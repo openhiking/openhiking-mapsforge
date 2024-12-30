@@ -22,16 +22,16 @@
 			<line stroke="{$color}" stroke-width="{$lw-trail-highlight-low}" stroke-linecap="butt" />
 		</rule>
 		<rule e="way" k="*" v="*" zoom-min="{$zm-path}" zoom-max="{$zm-level2 - 1}">		
-			<line stroke="{$color}" dy="{$lw-path}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
-			<line stroke="{$color}" dy="-{$lw-path}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
+			<line stroke="{$color}" dy="{($lw-path + $lw-trail-highlight) div 2}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
+			<line stroke="{$color}" dy="-{($lw-path + $lw-trail-highlight) div 2}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
 		</rule>
 		<rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}" >		
-			<line stroke="{$color}" dy="{$lw-path}" stroke-width="{$lw-trail-highlight-l2}" stroke-linecap="butt" />
-			<line stroke="{$color}" dy="-{$lw-path}" stroke-width="{$lw-trail-highlight-l2}" stroke-linecap="butt" />
+			<line stroke="{$color}" dy="{($lw-path2 + $lw-trail-highlight-l2) div 2}" stroke-width="{$lw-trail-highlight-l2}" stroke-linecap="butt" />
+			<line stroke="{$color}" dy="-{($lw-path2 + $lw-trail-highlight-l2) div 2}" stroke-width="{$lw-trail-highlight-l2}" stroke-linecap="butt" />
 		</rule>
 		<rule e="way" k="*" v="*" zoom-min="{$zm-level3}">		
-			<line stroke="{$color}" dy="{$lw-path - 0.1}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
-			<line stroke="{$color}" dy="-{$lw-path - 0.1}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
+			<line stroke="{$color}" dy="{($lw-path3 + $lw-trail-highlight-l3) div 2}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
+			<line stroke="{$color}" dy="-{($lw-path3 + $lw-trail-highlight-l3) div 2}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
 		</rule>		
 	</rule>
 	
@@ -40,16 +40,16 @@
 			<line stroke="{$color}" stroke-width="{$lw-trail-highlight-low}" stroke-linecap="butt" />
 		</rule>
 		<rule e="way" k="*" v="*" zoom-min="{$zm-footway}" zoom-max="{$zm-level2 - 1}">		
-			<line stroke="{$color}" dy="{$lw-footway}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
-			<line stroke="{$color}" dy="-{$lw-footway}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
+			<line stroke="{$color}" dy="{($lw-footway + $lw-trail-highlight) div 2}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
+			<line stroke="{$color}" dy="-{($lw-footway + $lw-trail-highlight) div 2}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
 		</rule>
 		<rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}" >		
-			<line stroke="{$color}" dy="{$lw-footway}" stroke-width="{$lw-trail-highlight-l2}" stroke-linecap="butt" />
-			<line stroke="{$color}" dy="-{$lw-footway}" stroke-width="{$lw-trail-highlight-l2}" stroke-linecap="butt" />
+			<line stroke="{$color}" dy="{($lw-footway + $lw-trail-highlight-l2) div 2}" stroke-width="{$lw-trail-highlight-l2}" stroke-linecap="butt" />
+			<line stroke="{$color}" dy="-{($lw-footway + $lw-trail-highlight-l2) div 2}" stroke-width="{$lw-trail-highlight-l2}" stroke-linecap="butt" />
 		</rule>
 		<rule e="way" k="*" v="*" zoom-min="{$zm-level3 }">		
-			<line stroke="{$color}" dy="{$lw-footway - 0.1}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
-			<line stroke="{$color}" dy="-{$lw-footway - 0.1}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
+			<line stroke="{$color}" dy="{($lw-footway + $lw-trail-highlight-l3) div 2}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
+			<line stroke="{$color}" dy="-{($lw-footway + $lw-trail-highlight-l3) div 2}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
 		</rule>
 	</rule>
 	<rule e="way" k="highway" v="via_ferrata">
@@ -101,16 +101,16 @@
 				<line stroke="{$color}" stroke-width="{$lw-trail-highlight-low}" stroke-linecap="butt" />
 			</rule>
 			<rule e="way" k="*" v="*" zoom-min="{$zm-track}" zoom-max="{$zm-level2 - 1}">					
-				<line stroke="{$color}" dy="{$lw-track}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
-				<line stroke="{$color}" dy="-{$lw-track}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
+				<line stroke="{$color}" dy="{($lw-track + $lw-trail-highlight) div 2}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
+				<line stroke="{$color}" dy="-{($lw-track + $lw-trail-highlight) div 2}" stroke-width="{$lw-trail-highlight}" stroke-linecap="butt" />
 			</rule>	
 			<rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}" >		
-				<line stroke="{$color}" dy="{$lw-track}" stroke-width="{$lw-trail-highlight-deep}" stroke-linecap="butt" />
-				<line stroke="{$color}" dy="-{$lw-track}" stroke-width="{$lw-trail-highlight-deep}" stroke-linecap="butt" />
+				<line stroke="{$color}" dy="{($lw-track2 + $lw-trail-highlight-deep) div 2}" stroke-width="{$lw-trail-highlight-deep}" stroke-linecap="butt" />
+				<line stroke="{$color}" dy="-{($lw-track2 + $lw-trail-highlight-deep) div 2}" stroke-width="{$lw-trail-highlight-deep}" stroke-linecap="butt" />
 			</rule>
 			<rule e="way" k="*" v="*" zoom-min="{$zm-level3 }">		
-				<line stroke="{$color}" dy="{$lw-track - 0.1}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
-				<line stroke="{$color}" dy="-{$lw-track - 0.1}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
+				<line stroke="{$color}" dy="{($lw-track2 + $lw-trail-highlight-l3) div 2}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
+				<line stroke="{$color}" dy="-{($lw-track2 + $lw-trail-highlight-l3) div 2}" stroke-width="{$lw-trail-highlight-l3}" stroke-linecap="butt" />
 			</rule>
 		</rule>
 	</rule>

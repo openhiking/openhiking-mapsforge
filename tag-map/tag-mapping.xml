@@ -1085,7 +1085,7 @@
     </pois>    
 
 
-    <!-- ************************************************** 
+    <!-- **************************************************
                P O I   W I L D E R N E S S   &   T O U R I S M
     ************************************************** -->
     <ways>
@@ -1094,7 +1094,7 @@
 
         <osm-tag key="tourism" label-position="true" value="attraction" zoom-appear="14"/>    
         <osm-tag key="tourism" label-position="true" value="picnic_site" zoom-appear="14"/>
-        <osm-tag key="tourism" label-position="true" value="viewpoint" zoom-appear="12"/> 
+        <osm-tag key="tourism" label-position="true" value="viewpoint"  zoom-appear="12"/> 
         <osm-tag key="tower" value="outlook" label-position="true" zoom-appear="14"/>     
         <osm-tag key="tower" value="outlook_closed" label-position="true" zoom-appear="14"/>     
 
@@ -1126,7 +1126,7 @@
 
         <osm-tag key="tourism" value="attraction" zoom-appear="14"/>                    
         <osm-tag key="tourism" value="picnic_site" zoom-appear="14"/>
-        <osm-tag key="tourism" value="viewpoint" zoom-appear="12"/>
+        <osm-tag key="tourism" value="viewpoint"  zoom-appear="12"/>
 
         <osm-tag key="tower" value="outlook" zoom-appear="14"/>     
         <osm-tag key="tower" value="outlook_closed" zoom-appear="14"/>     

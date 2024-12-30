@@ -39,6 +39,67 @@
 <xsl:variable name="zm-level3">19</xsl:variable>
 
 
+
+<xsl:variable name="lw-motorway">2.8</xsl:variable>
+<xsl:variable name="lw-motorway_link">1.6</xsl:variable>
+<xsl:variable name="lw-trunk">2.8</xsl:variable>
+<xsl:variable name="lw-trunk_link">1.6</xsl:variable>
+<xsl:variable name="lw-primary">2.8</xsl:variable>
+<xsl:variable name="lw-secondary">2.6</xsl:variable>
+<xsl:variable name="lw-tertiary">2.2</xsl:variable>
+
+
+<xsl:variable name="lw-residential">1.5</xsl:variable>
+<xsl:variable name="lw-living_street">1.3</xsl:variable>
+<xsl:variable name="lw-unclassified">1.5</xsl:variable>
+<xsl:variable name="lw-service">1.2</xsl:variable>
+<xsl:variable name="lw-cycleway">1.2</xsl:variable>
+<xsl:variable name="lw-raceway">0.6</xsl:variable>
+<xsl:variable name="lw-macadam">1.5</xsl:variable>
+<xsl:variable name="lw-track">0.5</xsl:variable>
+<xsl:variable name="lw-track2">0.3</xsl:variable>
+<xsl:variable name="lw-pedestrian">0.4</xsl:variable>
+<xsl:variable name="lw-footway">0.2</xsl:variable>
+<xsl:variable name="lw-bridleway">0.4</xsl:variable>
+<xsl:variable name="lw-path">0.5</xsl:variable>
+<xsl:variable name="lw-path2">0.3</xsl:variable>
+<xsl:variable name="lw-path3">0.25</xsl:variable>
+<xsl:variable name="lw-steps">0.6</xsl:variable>
+<xsl:variable name="lw-ferrata">0.8</xsl:variable>
+
+
+<xsl:variable name="lw-tunnel">0.2</xsl:variable>
+<xsl:variable name="lw-embankment">0.1</xsl:variable>
+<xsl:variable name="lw-embankment2">1</xsl:variable>
+
+<xsl:variable name="lw-ferry">0.5</xsl:variable>
+<xsl:variable name="lw-pier">0.5</xsl:variable>
+<xsl:variable name="lw-rail">0.8</xsl:variable>
+<xsl:variable name="lw-rail-narrow">0.45</xsl:variable>
+
+<xsl:variable name="lw-trail-highlight-low">2</xsl:variable>
+<xsl:variable name="lw-trail-highlight">0.8</xsl:variable>
+<xsl:variable name="lw-trail-highlight-deep">0.5</xsl:variable>
+<xsl:variable name="lw-trail-highlight-l2">0.7</xsl:variable>
+<xsl:variable name="lw-trail-highlight-l3">0.4</xsl:variable>
+
+<xsl:variable name="lw-restricted">1.5</xsl:variable>
+
+<xsl:variable name="lw-national-park">2.2</xsl:variable>
+<xsl:variable name="lw-national-park-l2">1.9</xsl:variable>
+<xsl:variable name="lw-national-park-l3">1.5</xsl:variable>
+<xsl:variable name="lw-national-park-l4">0.5</xsl:variable>
+
+<xsl:variable name="lw-protected-area">2.4</xsl:variable>
+<xsl:variable name="lw-protected-area-l2">1.8</xsl:variable>
+<xsl:variable name="lw-protected-area-l3">0.7</xsl:variable>
+<xsl:variable name="lw-protected-area-l4">0.5</xsl:variable>
+
+<xsl:variable name="lw-protected-strictly-2">1.5</xsl:variable>
+<xsl:variable name="lw-protected-strictly-3">0.9</xsl:variable>
+<xsl:variable name="lw-protected-strictly-4">0.4</xsl:variable>
+
+
 <xsl:variable name="bc-motorway">#808080</xsl:variable>
 <xsl:variable name="bc-motorway_link">#808080</xsl:variable>
 <xsl:variable name="bc-trunk">#808080</xsl:variable>
@@ -97,65 +158,6 @@
 
 <xsl:variable name="lc-protected">#588d42</xsl:variable>
 <xsl:variable name="lc-protected-strictly">#FF956A</xsl:variable>
-
-<xsl:variable name="lw-motorway">2.8</xsl:variable>
-<xsl:variable name="lw-motorway_link">1.6</xsl:variable>
-<xsl:variable name="lw-trunk">2.8</xsl:variable>
-<xsl:variable name="lw-trunk_link">1.6</xsl:variable>
-<xsl:variable name="lw-primary">2.8</xsl:variable>
-<xsl:variable name="lw-secondary">2.6</xsl:variable>
-<xsl:variable name="lw-tertiary">2.2</xsl:variable>
-
-
-<xsl:variable name="lw-residential">1.5</xsl:variable>
-<xsl:variable name="lw-living_street">1.3</xsl:variable>
-<xsl:variable name="lw-unclassified">1.5</xsl:variable>
-<xsl:variable name="lw-service">1.2</xsl:variable>
-<xsl:variable name="lw-cycleway">1.2</xsl:variable>
-<xsl:variable name="lw-raceway">0.6</xsl:variable>
-<xsl:variable name="lw-macadam">1.5</xsl:variable>
-<xsl:variable name="lw-track">0.4</xsl:variable>
-<xsl:variable name="lw-track2">0.3</xsl:variable>
-<xsl:variable name="lw-pedestrian">0.4</xsl:variable>
-<xsl:variable name="lw-footway">0.2</xsl:variable>
-<xsl:variable name="lw-bridleway">0.4</xsl:variable>
-<xsl:variable name="lw-path">0.4</xsl:variable>
-<xsl:variable name="lw-path2">0.3</xsl:variable>
-<xsl:variable name="lw-path3">0.25</xsl:variable>
-<xsl:variable name="lw-steps">0.6</xsl:variable>
-<xsl:variable name="lw-ferrata">0.8</xsl:variable>
-
-
-<xsl:variable name="lw-tunnel">0.2</xsl:variable>
-<xsl:variable name="lw-embankment">0.1</xsl:variable>
-<xsl:variable name="lw-embankment2">1</xsl:variable>
-
-<xsl:variable name="lw-ferry">0.5</xsl:variable>
-<xsl:variable name="lw-pier">0.5</xsl:variable>
-<xsl:variable name="lw-rail">0.8</xsl:variable>
-<xsl:variable name="lw-rail-narrow">0.45</xsl:variable>
-
-<xsl:variable name="lw-trail-highlight-low">1.5</xsl:variable>
-<xsl:variable name="lw-trail-highlight">0.6</xsl:variable>
-<xsl:variable name="lw-trail-highlight-deep">0.5</xsl:variable>
-<xsl:variable name="lw-trail-highlight-l2">0.5</xsl:variable>
-<xsl:variable name="lw-trail-highlight-l3">0.3</xsl:variable>
-
-<xsl:variable name="lw-restricted">1.5</xsl:variable>
-
-<xsl:variable name="lw-national-park">2.2</xsl:variable>
-<xsl:variable name="lw-national-park-l2">1.9</xsl:variable>
-<xsl:variable name="lw-national-park-l3">1.5</xsl:variable>
-<xsl:variable name="lw-national-park-l4">0.5</xsl:variable>
-
-<xsl:variable name="lw-protected-area">2.4</xsl:variable>
-<xsl:variable name="lw-protected-area-l2">1.8</xsl:variable>
-<xsl:variable name="lw-protected-area-l3">0.7</xsl:variable>
-<xsl:variable name="lw-protected-area-l4">0.5</xsl:variable>
-
-<xsl:variable name="lw-protected-strictly-2">1.5</xsl:variable>
-<xsl:variable name="lw-protected-strictly-3">0.9</xsl:variable>
-<xsl:variable name="lw-protected-strictly-4">0.4</xsl:variable>
 
 <xsl:variable name="da-tunnel">16,16</xsl:variable>
 <xsl:variable name="da-embankment">0.1,2</xsl:variable>

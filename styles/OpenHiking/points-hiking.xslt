@@ -146,7 +146,7 @@
   </rule>
 </rule>     
 
-<rule  e="any" k="tourism" v="viewpoint" zoom-min="14">
+<rule  e="any" k="tourism" v="viewpoint" zoom-min="13">
     <symbol id="viewpoint" src="{$hikingIconPath}/viewpoint.svg" symbol-width="20" priority="{$pr-viewpoint}"/>
     <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="viewpoint" 
