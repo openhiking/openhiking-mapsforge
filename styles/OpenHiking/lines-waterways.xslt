@@ -11,7 +11,7 @@
     <xsl:with-param name="zoom-label" select="11" />          
     <xsl:with-param name="stroke-color" select="$stream-color" />
     <xsl:with-param name="stroke-width" select="1.0" />
-    <xsl:with-param name="stroke-width2" select="1.6" />    
+    <xsl:with-param name="stroke-width2" select="1.4" />    
     <xsl:with-param name="font-size" select="10" />      
     <xsl:with-param name="repeat-gap-low" select="90" />    
     <xsl:with-param name="repeat-gap-high" select="160" />   
