@@ -86,7 +86,7 @@ endif
 
 MAP_SYMBOL_LOOKUP_FILE=$(CONFIG_DIR)$(PSEP)symbol-lookup.csv
 MAP_SYMBOL_STACKING_FILE=$(CONFIG_DIR)$(PSEP)symbol-stacking.csv
-MAP_SYMBOL_PRIORITY_FILE=$(CONFIG_DIR)$(PSEP)symbol-osmc-priorities.csv
+MAP_SYMBOL_PRIORITY_FILE=$(CONFIG_DIR)$(PSEP)symbol-priorities.csv
 MAP_COUNTRY_ROUTES_O5M := $(foreach ds,$(ALL_COUNTRIES),$(COMMON_DIR)$(PSEP)$(ds)-routes.o5m)
 MAP_ROUTES_FILE=routes
 MAP_ROUTES_PBF_FP=$(MFMAP_DIR)$(PSEP)$(MAP_ROUTES_FILE).pbf
