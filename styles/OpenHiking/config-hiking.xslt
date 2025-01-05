@@ -41,6 +41,7 @@
 <xsl:variable name="lc-trail-white">#FFFFFF</xsl:variable>
 <xsl:variable name="lc-trail-dash">#d9e6e6</xsl:variable>
 
+<xsl:variable name="route_condition">route_closed</xsl:variable>
 <xsl:variable name="ns-symbol-hu">hu:</xsl:variable>
 
 </xsl:stylesheet>

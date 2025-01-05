@@ -33,6 +33,11 @@
 		<name lang="hu" value="SAC nehézség jelölés" />
 		<cat id="hiking_sac_highlight" />
 	</layer>    
+	<layer id="seasonal_closure" enabled="true" visible="false">
+		<name lang="en" value="Seasonal closure highlighting" />
+		<name lang="hu" value="Időszakos zárlat kiemelés" />
+		<cat id="seasonal_closure" />
+	</layer>     
     <layer id="hiking_winter" enabled="false" visible="false">
 		<name lang="en" value="Winter hiking routes" />
 		<name lang="hu" value="Téli túrautak" />        
@@ -108,7 +113,8 @@
         <overlay id="hiking_routes" /> 
         <overlay id="pilgrimage_routes" />    
         <overlay id="unmarked_routes" />    
-        <overlay id="hiking_sac_highlight" />    
+        <overlay id="hiking_sac_highlight" /> 
+        <overlay id="seasonal_closure" />   
         <overlay id="hiking_winter" /> 
         <overlay id="ski_downhill" /> 
         <overlay id="ski_nordic" />         

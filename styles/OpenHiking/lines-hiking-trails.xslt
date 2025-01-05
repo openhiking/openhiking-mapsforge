@@ -14,58 +14,37 @@
 
 <rule cat="hiking_routes" e="way" k="highway" v="*" zoom-min="11">
 	<rule  e="way" k="trail_color" v="blue" >
-   		<xsl:call-template name="trail-highlight-rules-unpaved">
-        	<xsl:with-param name="color" select="$lc-trail-blue" />
-    	</xsl:call-template>
-   		<xsl:call-template name="trail-highlight-rules-paved">
+   		<xsl:call-template name="trail-highlight-rules">
         	<xsl:with-param name="color" select="$lc-trail-blue" />
     	</xsl:call-template>
 	</rule>
 	<rule  e="way" k="trail_color" v="red" >
-   		<xsl:call-template name="trail-highlight-rules-unpaved">
-        	<xsl:with-param name="color" select="$lc-trail-red" />
-    	</xsl:call-template>
-   		<xsl:call-template name="trail-highlight-rules-paved">
+   		<xsl:call-template name="trail-highlight-rules">
         	<xsl:with-param name="color" select="$lc-trail-red" />
     	</xsl:call-template>
 	</rule>
 	<rule  e="way" k="trail_color" v="green" >
-   		<xsl:call-template name="trail-highlight-rules-unpaved">
-        	<xsl:with-param name="color" select="$lc-trail-green" />
-    	</xsl:call-template>
-   		<xsl:call-template name="trail-highlight-rules-paved">
+   		<xsl:call-template name="trail-highlight-rules">
         	<xsl:with-param name="color" select="$lc-trail-green" />
     	</xsl:call-template>
 	</rule>
 	<rule  e="way" k="trail_color" v="yellow" >
-   		<xsl:call-template name="trail-highlight-rules-unpaved">
-        	<xsl:with-param name="color" select="$lc-trail-yellow" />
-    	</xsl:call-template>
-   		<xsl:call-template name="trail-highlight-rules-paved">
+   		<xsl:call-template name="trail-highlight-rules">
         	<xsl:with-param name="color" select="$lc-trail-yellow" />
     	</xsl:call-template>
 	</rule>
 	<rule  e="way" k="trail_color" v="purple" >
-   		<xsl:call-template name="trail-highlight-rules-unpaved">
-        	<xsl:with-param name="color" select="$lc-trail-purple" />
-    	</xsl:call-template>
-   		<xsl:call-template name="trail-highlight-rules-paved">
+   		<xsl:call-template name="trail-highlight-rules">
         	<xsl:with-param name="color" select="$lc-trail-purple" />
     	</xsl:call-template>
 	</rule>
 	<rule  e="way" k="trail_color" v="orange" >
-   		<xsl:call-template name="trail-highlight-rules-unpaved">
-        	<xsl:with-param name="color" select="$lc-trail-orange" />
-    	</xsl:call-template>
-   		<xsl:call-template name="trail-highlight-rules-paved">
+   		<xsl:call-template name="trail-highlight-rules">
         	<xsl:with-param name="color" select="$lc-trail-orange" />
     	</xsl:call-template>
 	</rule>
 	<rule  e="way" k="trail_color" v="black" >
-   		<xsl:call-template name="trail-highlight-rules-unpaved">
-        	<xsl:with-param name="color" select="$lc-trail-black" />
-    	</xsl:call-template>
-   		<xsl:call-template name="trail-highlight-rules-paved">
+   		<xsl:call-template name="trail-highlight-rules">
         	<xsl:with-param name="color" select="$lc-trail-black" />
     	</xsl:call-template>
 	</rule>
@@ -123,6 +102,20 @@
 
 </xsl:template>
 
+<xsl:template name="trail-highlight-rules">
+<xsl:param name="color" />
+	<xsl:call-template name="trail-highlight-rules-unpaved">
+		<xsl:with-param name="color" select="$color" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-highlight-rules-paved">
+		<xsl:with-param name="color" select="$color" />
+	</xsl:call-template>
+	<rule cat="seasonal_closure" e="way" k="{$route_condition}" v="*" >
+		<xsl:call-template name="trail-highlight-rules-conditional-unpaved">
+			<xsl:with-param name="color" select="$color" />
+		</xsl:call-template>
+	</rule>
 
+</xsl:template>
 
 </xsl:stylesheet>

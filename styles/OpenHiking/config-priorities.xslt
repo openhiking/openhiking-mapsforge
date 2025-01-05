@@ -132,6 +132,7 @@
 <xsl:variable name="pr-university">10</xsl:variable>
 <xsl:variable name="pr-border-control">10</xsl:variable>
 
+<xsl:variable name="pr-cond-access">10</xsl:variable>
 <!-- Priority 0 -->
 
 <xsl:variable name="pr-gate">0</xsl:variable>
@@ -193,8 +194,6 @@
 <xsl:variable name="pr-label-military">0</xsl:variable>
 <xsl:variable name="pr-label-religion">0</xsl:variable>
 <xsl:variable name="pr-label-wilderness">0</xsl:variable>
-
-<xsl:variable name="pr-cond-access">0</xsl:variable>
 
 <xsl:variable name="pr-ele-peak">-5</xsl:variable>
 
