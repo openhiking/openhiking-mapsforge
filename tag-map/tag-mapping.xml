@@ -217,7 +217,7 @@
         <!-- Route ref -->
         <osm-tag key="route_ref_hiking" renderable="false" value="%f"/>        
         <osm-tag key="route_ref_hiking" renderable="false" value="%s"/>
-
+        <osm-tag key="route_closed" renderable="false" value="%s"/>
     </ways>
 
 <!-- ************************************************** 
