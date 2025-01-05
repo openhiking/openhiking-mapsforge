@@ -236,7 +236,7 @@
 <rule e="way" k="assisted_trail|safety_rope|ladder|rungs" v="yes">
     <rule e="way" k="highway" v="path">
         <rule e="way" k="trail_color" v="*">    
-            <line stroke="#BD0000" stroke-dasharray="0.15,0.8" stroke-width="1.9" stroke-linecap="butt" scale="all"/>
+            <line stroke="#BD0000" stroke-dasharray="0.15,0.8" stroke-width="2.1" stroke-linecap="butt" scale="all"/>
         </rule>    
         <rule e="way" k="trail_color" v="~">    
             <line stroke="#FF6500" stroke-dasharray="0.15,0.9" stroke-width="1.3" stroke-linecap="butt" scale="all"/>

@@ -44,7 +44,7 @@
                 <symbol id="peak" src="{$naturalIconPath}/peak.svg" symbol-width="8" priority="{$pr-peak-named}"/>
             </rule>
             <rule e="node" k="*" v="*" zoom-min="15">
-                <symbol id="peak" src="{$naturalIconPath}/peak.svg" symbol-width="9" priority="{$pr-peak-named}"/>
+                <symbol id="peak" src="{$naturalIconPath}/peak.svg" symbol-width="10" priority="{$pr-peak-named}"/>
             </rule>
         </rule>
         <rule e="node" k="name" v="~" >    
