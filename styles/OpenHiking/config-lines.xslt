@@ -177,6 +177,20 @@
 <xsl:variable name="lc-protected">#588d42</xsl:variable>
 <xsl:variable name="lc-protected-strictly">#FF956A</xsl:variable>
 
+
+<xsl:variable name="da-highlight-l0">6,9</xsl:variable>
+<xsl:variable name="da-highlight-l1">8,12</xsl:variable>
+<xsl:variable name="da-highlight-l2">10,15</xsl:variable>
+<xsl:variable name="da-highlight-l3">16,24</xsl:variable>
+<xsl:variable name="da-highlight-l4">22,33</xsl:variable>
+<!-- 
+<xsl:variable name="da-highlight-l0">6,9</xsl:variable>
+<xsl:variable name="da-highlight-l1">8,12</xsl:variable>
+<xsl:variable name="da-highlight-l2">7,7</xsl:variable>
+<xsl:variable name="da-highlight-l3">10,10</xsl:variable>
+<xsl:variable name="da-highlight-l4">12,12</xsl:variable>
+-->
+
 <xsl:variable name="da-tunnel">16,16</xsl:variable>
 <xsl:variable name="da-embankment">0.1,2</xsl:variable>
 <xsl:variable name="da-restricted">0.08,1.8</xsl:variable>

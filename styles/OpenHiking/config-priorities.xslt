@@ -194,6 +194,7 @@
 <xsl:variable name="pr-label-religion">0</xsl:variable>
 <xsl:variable name="pr-label-wilderness">0</xsl:variable>
 
+<xsl:variable name="pr-cond-access">0</xsl:variable>
 
 <xsl:variable name="pr-ele-peak">-5</xsl:variable>
 
