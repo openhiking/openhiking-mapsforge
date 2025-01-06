@@ -114,7 +114,7 @@
 			<xsl:with-param name="zm-highway" select="$zm-residential" />
 			<xsl:with-param name="lw-l1" select="$lw-residential" />
 			<xsl:with-param name="lw-l2" select="$lw-residential2" />
-			<xsl:with-param name="lw-l3" select="$lw-residential2" />
+			<xsl:with-param name="lw-l3" select="$lw-residential3" />
 		</xsl:call-template>
 	</rule>
 
@@ -124,7 +124,7 @@
 			<xsl:with-param name="zm-highway" select="$zm-unclassified" />
 			<xsl:with-param name="lw-l1" select="$lw-unclassified" />
 			<xsl:with-param name="lw-l2" select="$lw-unclassified2" />
-			<xsl:with-param name="lw-l3" select="$lw-unclassified2" />
+			<xsl:with-param name="lw-l3" select="$lw-unclassified3" />
 		</xsl:call-template>
 	</rule>
 

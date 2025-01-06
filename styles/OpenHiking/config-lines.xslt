@@ -69,9 +69,11 @@
 <xsl:variable name="lw-tertiary">2.5</xsl:variable>
 <xsl:variable name="lw-residential">2.0</xsl:variable>
 <xsl:variable name="lw-residential2">1.8</xsl:variable>
+<xsl:variable name="lw-residential3">1.6</xsl:variable>
 <xsl:variable name="lw-living_street">1.3</xsl:variable>
 <xsl:variable name="lw-unclassified">2.5</xsl:variable>
 <xsl:variable name="lw-unclassified2">1.8</xsl:variable>
+<xsl:variable name="lw-unclassified3">1.6</xsl:variable>
 <xsl:variable name="lw-service">2.2</xsl:variable>
 <xsl:variable name="lw-service2">1.2</xsl:variable>
 <xsl:variable name="lw-cycleway">1.2</xsl:variable>

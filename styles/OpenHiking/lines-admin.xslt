@@ -16,7 +16,7 @@
         <line stroke="#e680ff" stroke-width="2"/>
         <line stroke="#CC00FF" stroke-width="0.4" stroke-dasharray="0.4,2,2,2" scale="all" />
     </rule>
-   <rule  e="way" k="admin_level" v="3">
+   <rule  cat="region_border" e="way" k="admin_level" v="3">
         <line stroke="#e680ff" stroke-width="1.5"/>
         <line stroke="#CC00FF" stroke-width="0.3" stroke-dasharray="0.4,2,2,2" scale="all" />
     </rule>

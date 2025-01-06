@@ -153,20 +153,28 @@
                 <line stroke="{$bc-residential}" stroke-width="{$lw-residential}" stroke-linecap="butt"/>
                 <line stroke="{$lc-residential}" stroke-width="{$lw-residential - 0.4}" />      
             </rule>  
-           <rule e="way" k="*" v="*"  zoom-min="{$zm-level2 }">         
+           <rule e="way" k="*" v="*"  zoom-min="{$zm-level2 }" zoom-max="{$zm-level3 - 1 }">         
                 <line stroke="{$bc-residential}" stroke-width="{$lw-residential2}" stroke-linecap="butt"/>
                 <line stroke="{$lc-residential}" stroke-width="{$lw-residential2 - 0.4}" />      
-            </rule>    
+            </rule>   
+           <rule e="way" k="*" v="*"  zoom-min="{$zm-level3 }">         
+                <line stroke="{$bc-residential}" stroke-width="{$lw-residential3}" stroke-linecap="butt"/>
+                <line stroke="{$lc-residential}" stroke-width="{$lw-residential3 - 0.4}" />      
+            </rule>              
         </rule>
         <rule e="way" k="highway" v="unclassified" >
             <rule e="way" k="*" v="*"  zoom-max="{$zm-level2 - 1 }">         
                 <line stroke="{$bc-unclassified}" stroke-width="{$lw-unclassified}" stroke-linecap="butt"/>
                 <line stroke="{$lc-unclassified}" stroke-width="{$lw-unclassified - 0.4}" />    
             </rule>    
-           <rule e="way" k="*" v="*" zoom-min="{$zm-level2}">         
+           <rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}">         
                 <line stroke="{$bc-unclassified}" stroke-width="{$lw-unclassified2}" stroke-linecap="butt"/>
                 <line stroke="{$lc-unclassified}" stroke-width="{$lw-unclassified2 - 0.4}" />    
             </rule>      
+           <rule e="way" k="*" v="*" zoom-min="{$zm-level3}">         
+                <line stroke="{$bc-unclassified}" stroke-width="{$lw-unclassified3}" stroke-linecap="butt"/>
+                <line stroke="{$lc-unclassified}" stroke-width="{$lw-unclassified3 - 0.4}" />    
+            </rule>              
         </rule>
     
     <rule e="way" k="tunnel" v="~|no">        

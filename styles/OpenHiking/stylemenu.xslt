@@ -58,6 +58,11 @@
 		<name lang="hu" value="Sítúra utak" />        
 		<cat id="ski_tour" />
 	</layer>
+    <layer id="region_border" enabled="false" visible="false">
+        <name lang="en" value="Region boundaries" />
+        <name lang="hu" value="Régióhatárok" />
+        <cat id="region_border" />
+    </layer>
 
     <layer id="contours" enabled="true" visible="false">
         <name lang="en" value="Contour lines" />
@@ -118,7 +123,8 @@
         <overlay id="hiking_winter" /> 
         <overlay id="ski_downhill" /> 
         <overlay id="ski_nordic" />         
-        <overlay id="ski_tour" />         
+        <overlay id="ski_tour" />  
+        <overlay id="region_border" />               
 		<overlay id="protected_area" />        
 		<overlay id="military_area" />
         <overlay id="restricted_access" />
