@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tag-mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-zoom-appear="16"
+<tag-mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-zoom-appear="1"
              profile-name="default-profile" xmlns="http://mapsforge.org/tag-mapping"
              xsi:schemaLocation="http://mapsforge.org/tag-mapping https://raw.githubusercontent.com/mapsforge/mapsforge/master/resources/tag-mapping.xsd">
 
@@ -25,5 +25,7 @@
         <osm-tag key="highway" value="trunk" zoom-appear="6"/>
         <osm-tag key="highway" value="trunk_link" zoom-appear="6"/>
         <osm-tag key="highway" value="unclassified" zoom-appear="14"/> 
+
+        <osm-tag key="name" value="%s" enabled="false"/> 
     </ways>   
 </tag-mapping>
