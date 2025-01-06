@@ -24,5 +24,6 @@
         <osm-tag key="highway" value="track" zoom-appear="14"/>
         <osm-tag key="highway" value="trunk" zoom-appear="6"/>
         <osm-tag key="highway" value="trunk_link" zoom-appear="6"/>
-        <osm-tag key="highway" value="unclassified" zoom-appear="14"/>    
+        <osm-tag key="highway" value="unclassified" zoom-appear="14"/> 
+    </ways>   
 </tag-mapping>
