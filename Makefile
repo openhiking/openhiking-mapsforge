@@ -3,7 +3,7 @@
 #
 # Map building automation
 #
-# Copyright (c) 2021-2024 OpenHiking contributors
+# Copyright (c) 2021-2025 OpenHiking contributors
 # SPDX-License-Identifier: GPL-3.0-only
 #
 ########################################################
@@ -84,6 +84,7 @@ ifeq ($(GENERATE_HIKING_SYMBOLS),yes)
 ROUTE_MAPPING=yes
 endif
 
+SYMBOLS_START_ID=120000000000	
 MAP_ROUTE_MAPPING_CONFIG=$(CONFIG_DIR)$(PSEP)routemapping.ini
 MAP_SYMBOL_LOOKUP_FILE=$(CONFIG_DIR)$(PSEP)symbol-lookup.csv
 MAP_SYMBOL_STACKING_FILE=$(CONFIG_DIR)$(PSEP)symbol-stacking.csv
@@ -106,6 +107,7 @@ ifeq ($(ROUTE_MAPPING),yes)
 else
 	MAP_TTX_INP := $(MAP_MERGED_PBF_FP)
 endif
+
 
 ifneq ($(DEFAULT_TRAIL_COLOR),)
 	DEFAULT_COLOR_OPT=--default-color=$(DEFAULT_TRAIL_COLOR)
@@ -246,11 +248,20 @@ $(MAP_ROUTES_PBF_FP):  $(MAP_COUNTRY_ROUTES_O5M) | __check_MAP
 	$(OSMCONVERT) --hash-memory=240-30-2  -B=$(BOUNDARY_POLYGON_FP) --drop-version $^  -o=$@
 
 $(MAP_HIKING_SYMBOLS_OSM_FP): $(MAP_ROUTES_PBF_FP) | __check_MAP
+ifneq ($(ROUTEMAPPER),)
 	$(ROUTEMAPPER) --config=$(MAP_ROUTE_MAPPING_CONFIG) --prio=$(MAP_SYMBOL_PRIORITY_FILE) --lookup=$(MAP_SYMBOL_LOOKUP_FILE) --stacking=$(MAP_SYMBOL_STACKING_FILE) --pictogram=$(MAP_HIKING_SYMBOLS_OSM_FP) --trail=$(MAP_TRAIL_COLORS_OSC_FP) $(DEFAULT_COLOR_OPT) $(MAP_ROUTES_PBF_FP)
+else
+	$(MAKESYMBOLS) --start-node-id=$(SYMBOLS_START_ID) --lookup-file=$(MAP_SYMBOL_LOOKUP_FILE) --pictogram-file=$(MAP_HIKING_SYMBOLS_OSM_FP) --trail-file=$(MAP_TRAIL_COLORS_OSC_FP) $(DEFAULT_COLOR_OPT) $(MAP_ROUTES_PBF_FP)	
+endif
+
 
 $(MAP_TRAIL_COLORS_OSC_FP): $(MAP_ROUTES_PBF_FP) | __check_MAP
-	$(ROUTEMAPPER) --config=$(MAP_ROUTE_MAPPING_CONFIG) --prio=$(MAP_SYMBOL_PRIORITY_FILE) --lookup=$(MAP_SYMBOL_LOOKUP_FILE) --stacking=$(MAP_SYMBOL_STACKING_FILE) --pictogram=$(MAP_HIKING_SYMBOLS_OSM_FP) --trail=$(MAP_TRAIL_COLORS_OSC_FP) $(DEFAULT_COLOR_OPT) $(MAP_ROUTES_PBF_FP)
-
+ifneq ($(ROUTEMAPPER),)
+	$(ROUTEMAPPER)  --prio=$(MAP_SYMBOL_PRIORITY_FILE) --lookup=$(MAP_SYMBOL_LOOKUP_FILE) --stacking=$(MAP_SYMBOL_STACKING_FILE) --pictogram=$(MAP_HIKING_SYMBOLS_OSM_FP) --trail=$(MAP_TRAIL_COLORS_OSC_FP) $(DEFAULT_COLOR_OPT) $(MAP_ROUTES_PBF_FP)
+else
+	$(MAKESYMBOLS) --start-node-id=$(SYMBOLS_START_ID) --lookup-file=$(MAP_SYMBOL_LOOKUP_FILE) --pictogram-file=$(MAP_HIKING_SYMBOLS_OSM_FP) --trail-file=$(MAP_TRAIL_COLORS_OSC_FP) $(DEFAULT_COLOR_OPT) $(MAP_ROUTES_PBF_FP)	
+endif
+	
 
 symbols: $(MAP_HIKING_SYMBOLS_OSM_FP) $(MAP_TRAIL_COLORS_OSC_FP) | __check_MAP
 	@echo "Done"

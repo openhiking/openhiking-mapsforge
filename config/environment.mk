@@ -3,7 +3,7 @@
 #
 # Map building automation
 #
-# Copyright (c) 2021-2024 OpenHiking contributors
+# Copyright (c) 2021-2025 OpenHiking contributors
 # SPDX-License-Identifier: GPL-3.0-only
 #
 ########################################################
