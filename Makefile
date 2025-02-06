@@ -159,7 +159,7 @@ MAP_MASTERX_PBF_FP=$(MFMAP_DIR)$(PSEP)$(MAP_MASTERX_PBF)
 ifneq (${LICENSE_FILE},)
 LICENSE_FILE_FP=$(CONFIG_DIR)$(PSEP)$(LICENSE_FILE)
 MAP_LICENSE :=$(file < $(LICENSE_FILE_FP))
-MAP_LICENSE_OPT=comment=$(MAP_LICENSE)
+MAP_LICENSE_OPT=comment="$(MAP_LICENSE)"
 endif
 
 ifeq ($(MAPWRITER_IN_MEMORY),yes)
@@ -170,7 +170,6 @@ endif
 
 MAP_WRITER_THREADS?=4
 MAP_BBOX_ENLARGEMENT?=1
-#MAP_LICENSE="This map may be freely used for research and personal purposes. Redistribution, sale or commercial use is not allowed. Screenshots may be published according to CCBYSA 2.0 as long as you attribute OpenHiking. Map data © OpenStreetMap and its contributors http://www.openstreetmap.org/copyright, available under the Open Database License: http://opendatacommons.org/licenses/odbl/1.0/ ***  Elevation data LiDAR DTM models by Sonny  https://sonny.4lima.de "
 
 MAP_WRITER_CONF=tag-values=true type=$(MAP_MW_TYPE) preferred-languages=$(MAP_LANGUAGES) threads=$(MAP_WRITER_THREADS) bbox-enlargement=$(MAP_BBOX_ENLARGEMENT)  $(MAP_LICENSE_OPT)
 MAP_MAPSFORGE_FP=$(MFMAP_DIR)$(PSEP)$(MAPNAME).map
@@ -192,8 +191,8 @@ MAP_STYLE_NAME?=$(STYLE)
 MAP_STYLE_RESOURCES?=icons/ hiking/ patterns/
 MAP_STYLE_XSLT_FP=$(STYLES_DIR)$(PSEP)$(MAP_STYLE_NAME)$(PSEP)$(MAP_STYLE_NAME).xslt
 
-
-MAP_STYLE_OUTPUT_DIR?= $(WORKING_DIR)$(PSEP)styles
+STYLE_OUTPUT_DIR?=styles
+MAP_STYLE_OUTPUT_DIR=$(WORKING_DIR)$(PSEP)$(STYLE_OUTPUT_DIR)
 MAP_STYLE_XML=$(MAP_STYLE_NAME).xml
 MAP_STYLE_XML_FP = $(MAP_STYLE_OUTPUT_DIR)$(PSEP)$(MAP_STYLE_NAME)$(PSEP)$(MAP_STYLE_XML)
 
@@ -353,5 +352,4 @@ cleanstyle: | __check_STYLE
 
 test: 
 	@echo $(LICENSE_FILE)
-	@echo $(LICENSE_FILE_FP)
-	@echo $(MAP_LICENSE_OPT)
+	@echo $(MAP_STYLE_OUTPUT_DIR)
