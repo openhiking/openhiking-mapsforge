@@ -1600,7 +1600,7 @@
         <osm-tag key="trail_symbol" value="osmc:red_round:white_dot" zoom-appear="14"/>          
         <osm-tag key="trail_symbol" value="osmc:red_round:yellow_dot" zoom-appear="14"/>        
         <osm-tag key="trail_symbol" value="osmc:red_circle:white_dot" zoom-appear="14"/>
-
+        <osm-tag key="trail_symbol" value="osmc:blue_round:white_dot" zoom-appear="14"/>                
         <osm-tag key="trail_symbol" value="osmc:blue_round:yellow_dot" zoom-appear="14"/>                
 
         <!-- Pilgrimage routes, top position -->

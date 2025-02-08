@@ -5,9 +5,13 @@
 #
 # Line configuration
 #
-# Copyright (c) 2022-2023 OpenHiking contributors
+# Copyright (c) 2022-2025 OpenHiking contributors
 # SPDX-License-Identifier: GPL-3.0-only
 -->
+
+<xsl:variable name="zm-level2">14</xsl:variable>
+<xsl:variable name="zm-level3">16</xsl:variable>
+<xsl:variable name="zm-level4">18</xsl:variable>
 
 <xsl:variable name="zm-motorway">8</xsl:variable>
 <xsl:variable name="zm-motorway_link">12</xsl:variable>
@@ -48,9 +52,6 @@
 <xsl:variable name="lw-trail-highlight-l4">0.4</xsl:variable>
 -->
 
-<xsl:variable name="zm-level2">14</xsl:variable>
-<xsl:variable name="zm-level3">16</xsl:variable>
-<xsl:variable name="zm-level4">18</xsl:variable>
 
 <xsl:variable name="lw-trail-highlight-low">2.6</xsl:variable>
 <xsl:variable name="lw-trail-highlight">1.2</xsl:variable>

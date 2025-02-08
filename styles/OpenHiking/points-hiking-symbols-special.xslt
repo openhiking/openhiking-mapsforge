@@ -5,7 +5,7 @@
 #
 # Specific hiking symbols
 #
-# Copyright (c) 2022-2023 OpenHiking contributors
+# Copyright (c) 2022-2025 OpenHiking contributors
 # SPDX-License-Identifier: GPL-3.0-only
 -->
 
@@ -13,60 +13,39 @@
 <xsl:template name="points-hiking-symbols-special">
 
 <rule cat="hiking_routes" e="node" k="{$symbol-tag}_3" v="*" >
-	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
-		<xsl:call-template name="trail-symbol-special-3">
-			<xsl:with-param name="key" select="concat($symbol-tag,'_3')" />
-			<xsl:with-param name="variant" select="'-3'" />
-		</xsl:call-template>
-	</rule>
-	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
-		<xsl:call-template name="trail-symbol-special-3">
-			<xsl:with-param name="key" select="concat($symbol-tag,'_3')" />
-			<xsl:with-param name="variant" select="'-3'" />
-		</xsl:call-template>	
-	</rule>	
+	<xsl:call-template name="trail-symbol-special-3">
+		<xsl:with-param name="key" select="concat($symbol-tag,'_3')" />
+		<xsl:with-param name="variant" select="'-3'" />
+	</xsl:call-template>	
 </rule>	
 
 <rule cat="hiking_routes" e="node" k="{$symbol-tag}_2" v="*" >
-	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
-		<xsl:call-template name="trail-symbol-special-3">
-			<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
-			<xsl:with-param name="variant" select="'-2'" />
-		</xsl:call-template>
-	</rule>
-	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
-		<xsl:call-template name="trail-symbol-special-3">
-			<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
-			<xsl:with-param name="variant" select="'-2'" />
-		</xsl:call-template>	
-	</rule>	
+	<xsl:call-template name="trail-symbol-special-3">
+		<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
+		<xsl:with-param name="variant" select="'-2'" />
+	</xsl:call-template>	
 </rule>
 
 <rule cat="hiking_routes" e="node" k="{$symbol-tag}" v="*" >
-	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
-		<xsl:call-template name="trail-symbol-special-3">
-			<xsl:with-param name="key" select="$symbol-tag" />
-			<xsl:with-param name="variant" select="''" />
-		</xsl:call-template>
-	</rule>
-	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
-		<xsl:call-template name="trail-symbol-special-3">
-			<xsl:with-param name="key" select="$symbol-tag" />
-			<xsl:with-param name="variant" select="''" />
-		</xsl:call-template>	
-	</rule>	
+	<xsl:call-template name="trail-symbol-special-3">
+		<xsl:with-param name="key" select="$symbol-tag" />
+		<xsl:with-param name="variant" select="''" />
+	</xsl:call-template>
 </rule>
 </xsl:template>
 
 <xsl:template name="trail-symbol-special-3">
 <xsl:param name="key" />
 <xsl:param name="variant" />
-	<rule e="node" k="{$key}" v="ro:vt" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/ro-vt{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="ro:vt" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/ro-vt{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="'ro:vt'" />
+		<xsl:with-param name="icon" select="'ro-vt'" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
 </xsl:template>
 
 </xsl:stylesheet>

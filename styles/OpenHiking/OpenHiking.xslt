@@ -49,6 +49,7 @@
   <xsl:include href="lines-aerialways.xslt" />
   <xsl:include href="lines-highways-labels.xslt" />
   
+  <xsl:include href="points-hiking-symbols-common.xslt"/>
   <xsl:include href="points-hiking-symbols-hu.xslt"/>
   <xsl:include href="points-hiking-symbols-czsk.xslt"/>
   <xsl:include href="points-hiking-symbols-osmc.xslt"/>

@@ -5,155 +5,87 @@
 #
 # Hiking symbols: Hungary
 #
-# Copyright (c) 2022-2023 OpenHiking contributors
+# Copyright (c) 2022-2025 OpenHiking contributors
 # SPDX-License-Identifier: GPL-3.0-only
 -->
 
 <xsl:template name="points-hiking-symbols-hu">
 <rule cat="hiking_routes" e="node" k="{$symbol-tag}_3" v="*" >
-	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
-		<xsl:call-template name="trail-symbol-hu-mtsz-allcolor-3">
-			<xsl:with-param name="key" select="concat($symbol-tag,'_3')" />
-			<xsl:with-param name="variant" select="'-3'" />
-		</xsl:call-template>
-		<xsl:call-template name="trail-symbol-hu-special-3">
-			<xsl:with-param name="key" select="concat($symbol-tag,'_3')" />
-			<xsl:with-param name="variant" select="'-3'" />
-		</xsl:call-template>
-	</rule>
-	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
-		<xsl:call-template name="trail-symbol-hu-mtsz-allcolor-3">
-			<xsl:with-param name="key" select="concat($symbol-tag,'_3')" />
-			<xsl:with-param name="variant" select="'-3'" />
-		</xsl:call-template>
-		<xsl:call-template name="trail-symbol-hu-special-3">
-			<xsl:with-param name="key" select="concat($symbol-tag,'_3')" />
-			<xsl:with-param name="variant" select="'-3'" />
-		</xsl:call-template>		
-	</rule>	
+	<xsl:call-template name="trail-symbol-hu-major-allcolor-3">
+		<xsl:with-param name="key" select="concat($symbol-tag,'_3')" />
+		<xsl:with-param name="variant" select="'-3'" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-symbol-hu-mtsz-allcolor-3">
+		<xsl:with-param name="key" select="concat($symbol-tag,'_3')" />
+		<xsl:with-param name="variant" select="'-3'" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-symbol-hu-special-3">
+		<xsl:with-param name="key" select="concat($symbol-tag,'_3')" />
+		<xsl:with-param name="variant" select="'-3'" />
+	</xsl:call-template>
 </rule>	
 
 <rule cat="hiking_routes" e="node" k="{$ski-symbol-tag}_3" v="*" >
-	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
-		<xsl:call-template name="trail-symbol-hu-ski-3">
-			<xsl:with-param name="key" select="concat($ski-symbol-tag,'_3')" />
-			<xsl:with-param name="variant" select="'-3'" />
-		</xsl:call-template>
-	</rule>
-	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
-		<xsl:call-template name="trail-symbol-hu-ski-3">
-			<xsl:with-param name="key" select="concat($ski-symbol-tag,'_3')" />
-			<xsl:with-param name="variant" select="'-3'" />
-		</xsl:call-template>
-	</rule>	
+	<xsl:call-template name="trail-symbol-hu-ski-3">
+		<xsl:with-param name="key" select="concat($ski-symbol-tag,'_3')" />
+		<xsl:with-param name="variant" select="'-3'" />
+	</xsl:call-template>
 </rule>	
 
 <rule cat="hiking_routes" e="node" k="{$symbol-tag}_2" v="*" >
-	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
-		<xsl:call-template name="trail-symbol-hu-mtsz-allcolor-3">
-			<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
-			<xsl:with-param name="variant" select="'-2'" />
-		</xsl:call-template>
-		<xsl:call-template name="trail-symbol-hu-mtsz-allcolor-2">
-			<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
-			<xsl:with-param name="variant" select="'-2'" />
-		</xsl:call-template>
-		<xsl:call-template name="trail-symbol-hu-special-3">
-			<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
-			<xsl:with-param name="variant" select="'-2'" />
-		</xsl:call-template>		
-	</rule>
-	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
-		<xsl:call-template name="trail-symbol-hu-mtsz-allcolor-3">
-			<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
-			<xsl:with-param name="variant" select="'-2'" />
-		</xsl:call-template>
-		<xsl:call-template name="trail-symbol-hu-mtsz-allcolor-2">
-			<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
-			<xsl:with-param name="variant" select="'-2'" />
-		</xsl:call-template>
-		<xsl:call-template name="trail-symbol-hu-special-3">
-			<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
-			<xsl:with-param name="variant" select="'-2'" />
-		</xsl:call-template>		
-	</rule>	
+	<xsl:call-template name="trail-symbol-hu-major-allcolor-3">
+		<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
+		<xsl:with-param name="variant" select="'-2'" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-symbol-hu-mtsz-allcolor-3">
+		<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
+		<xsl:with-param name="variant" select="'-2'" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-symbol-hu-mtsz-allcolor-2">
+		<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
+		<xsl:with-param name="variant" select="'-2'" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-symbol-hu-special-3">
+		<xsl:with-param name="key" select="concat($symbol-tag,'_2')" />
+		<xsl:with-param name="variant" select="'-2'" />
+	</xsl:call-template>		
 </rule>	
 
 <rule cat="hiking_routes" e="node" k="{$ski-symbol-tag}_2" v="*" >
-	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
-		<xsl:call-template name="trail-symbol-hu-ski-3">
-			<xsl:with-param name="key" select="concat($ski-symbol-tag,'_2')" />
-			<xsl:with-param name="variant" select="'-2'" />
-		</xsl:call-template>
-	</rule>
-	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
-		<xsl:call-template name="trail-symbol-hu-ski-3">
-			<xsl:with-param name="key" select="concat($ski-symbol-tag,'_2')" />
-			<xsl:with-param name="variant" select="'-2'" />
-		</xsl:call-template>
-	</rule>	
+	<xsl:call-template name="trail-symbol-hu-ski-3">
+		<xsl:with-param name="key" select="concat($ski-symbol-tag,'_2')" />
+		<xsl:with-param name="variant" select="'-2'" />
+	</xsl:call-template>
 </rule>	
 
 <rule cat="hiking_routes" e="node" k="{$symbol-tag}" v="*" >
-	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
-		<xsl:call-template name="trail-symbol-hu-mtsz-allcolor-3">
-			<xsl:with-param name="key" select="$symbol-tag" />
-			<xsl:with-param name="variant" select="''" />
-		</xsl:call-template>
-		<xsl:call-template name="trail-symbol-hu-mtsz-allcolor-2">
-			<xsl:with-param name="key" select="$symbol-tag" />
-			<xsl:with-param name="variant" select="''" />
-		</xsl:call-template>
-		<xsl:call-template name="trail-symbol-hu-temple-allcolor">
-			<xsl:with-param name="key" select="$symbol-tag" />
-			<xsl:with-param name="variant" select="''" />
-		</xsl:call-template>		
-		<xsl:call-template name="trail-symbol-hu-special-3">
-			<xsl:with-param name="key" select="$symbol-tag" />
-			<xsl:with-param name="variant" select="''" />
-		</xsl:call-template>
-		<xsl:call-template name="trail-symbol-hu-special-1">
-			<xsl:with-param name="key" select="$symbol-tag" />
-			<xsl:with-param name="variant" select="''" />
-		</xsl:call-template>		
-	</rule>
-	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
-		<xsl:call-template name="trail-symbol-hu-mtsz-allcolor-3">
-			<xsl:with-param name="key" select="$symbol-tag" />
-			<xsl:with-param name="variant" select="''" />
-		</xsl:call-template>
-		<xsl:call-template name="trail-symbol-hu-mtsz-allcolor-2">
-			<xsl:with-param name="key" select="$symbol-tag" />
-			<xsl:with-param name="variant" select="''" />
-		</xsl:call-template>
-		<xsl:call-template name="trail-symbol-hu-temple-allcolor">
-			<xsl:with-param name="key" select="$symbol-tag" />
-			<xsl:with-param name="variant" select="''" />
-		</xsl:call-template>		
-		<xsl:call-template name="trail-symbol-hu-special-3">
-			<xsl:with-param name="key" select="$symbol-tag" />
-			<xsl:with-param name="variant" select="''" />
-		</xsl:call-template>	
-		<xsl:call-template name="trail-symbol-hu-special-1">
-			<xsl:with-param name="key" select="$symbol-tag" />
-			<xsl:with-param name="variant" select="''" />
-		</xsl:call-template>		
-	</rule>	
+	<xsl:call-template name="trail-symbol-hu-major-allcolor-3">
+		<xsl:with-param name="key" select="$symbol-tag" />
+		<xsl:with-param name="variant" select="''" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-symbol-hu-mtsz-allcolor-3">
+		<xsl:with-param name="key" select="$symbol-tag" />
+		<xsl:with-param name="variant" select="''" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-symbol-hu-mtsz-allcolor-2">
+		<xsl:with-param name="key" select="$symbol-tag" />
+		<xsl:with-param name="variant" select="''" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-symbol-hu-special-3">
+		<xsl:with-param name="key" select="$symbol-tag" />
+		<xsl:with-param name="variant" select="''" />
+	</xsl:call-template>
+	<xsl:call-template name="trail-symbol-hu-special-1">
+		<xsl:with-param name="key" select="$symbol-tag" />
+		<xsl:with-param name="variant" select="''" />
+	</xsl:call-template>		
 </rule>	
 
 <rule cat="hiking_routes" e="node" k="{$ski-symbol-tag}" v="*" >
-	<rule  e="node" k="{$symbol-level-tag}" v="major" zoom-min="13">
-		<xsl:call-template name="trail-symbol-hu-ski-3">
-			<xsl:with-param name="key" select="$ski-symbol-tag" />
-			<xsl:with-param name="variant" select="''" />
-		</xsl:call-template>
-	</rule>
-	<rule  e="node" k="{$symbol-level-tag}" v="~" zoom-min="15">
-		<xsl:call-template name="trail-symbol-hu-ski-3">
-			<xsl:with-param name="key" select="$ski-symbol-tag" />
-			<xsl:with-param name="variant" select="''" />
-		</xsl:call-template>
-	</rule>	
+	<xsl:call-template name="trail-symbol-hu-ski-3">
+		<xsl:with-param name="key" select="$ski-symbol-tag" />
+		<xsl:with-param name="variant" select="''" />
+	</xsl:call-template>
 </rule>	
 </xsl:template>
 
@@ -161,12 +93,7 @@
 <xsl:template name="trail-symbol-hu-mtsz-allcolor-3">
 <xsl:param name="key" />
 <xsl:param name="variant" />
-	<xsl:call-template name="trail-symbol-hu-major-allcolor-3">
-		<xsl:with-param name="key" select="$key" />
-		<xsl:with-param name="variant" select="$variant" />
-	</xsl:call-template>
-
-	<xsl:call-template name="trail-symbol-hu-mtsz-3">
+ 	<xsl:call-template name="trail-symbol-hu-mtsz-3">
 		<xsl:with-param name="key" select="$key" />
 		<xsl:with-param name="variant" select="$variant" />
 		<xsl:with-param name="color" select="'k'" />
@@ -187,57 +114,6 @@
 		<xsl:with-param name="color" select="'s'" />
 	</xsl:call-template>
 </xsl:template>
-
-<xsl:template name="trail-symbol-hu-major-allcolor-3">
-<xsl:param name="key" />
-<xsl:param name="variant" />
-	<xsl:call-template name="trail-symbol-hu-major">
-		<xsl:with-param name="key" select="$key" />
-		<xsl:with-param name="variant" select="$variant" />
-		<xsl:with-param name="color" select="'k'" />
-	</xsl:call-template>
-	<xsl:call-template name="trail-symbol-hu-major">
-		<xsl:with-param name="key" select="$key" />
-		<xsl:with-param name="variant" select="$variant" />
-		<xsl:with-param name="color" select="'p'" />
-	</xsl:call-template>
-	<xsl:call-template name="trail-symbol-hu-major">
-		<xsl:with-param name="key" select="$key" />
-		<xsl:with-param name="variant" select="$variant" />
-		<xsl:with-param name="color" select="'z'" />
-	</xsl:call-template>
-	<xsl:call-template name="trail-symbol-hu-major">
-		<xsl:with-param name="key" select="$key" />
-		<xsl:with-param name="variant" select="$variant" />
-		<xsl:with-param name="color" select="'s'" />
-	</xsl:call-template>
-</xsl:template>
-
-<xsl:template name="trail-symbol-hu-temple-allcolor">
-<xsl:param name="key" />
-<xsl:param name="variant" />
-	<xsl:call-template name="trail-symbol-hu-temple">
-		<xsl:with-param name="key" select="$key" />
-		<xsl:with-param name="variant" select="$variant" />
-		<xsl:with-param name="color" select="'k'" />
-	</xsl:call-template>
-	<xsl:call-template name="trail-symbol-hu-temple">
-		<xsl:with-param name="key" select="$key" />
-		<xsl:with-param name="variant" select="$variant" />
-		<xsl:with-param name="color" select="'p'" />
-	</xsl:call-template>
-	<xsl:call-template name="trail-symbol-hu-temple">
-		<xsl:with-param name="key" select="$key" />
-		<xsl:with-param name="variant" select="$variant" />
-		<xsl:with-param name="color" select="'z'" />
-	</xsl:call-template>
-	<xsl:call-template name="trail-symbol-hu-temple">
-		<xsl:with-param name="key" select="$key" />
-		<xsl:with-param name="variant" select="$variant" />
-		<xsl:with-param name="color" select="'s'" />
-	</xsl:call-template>
-</xsl:template>
-
 
 <xsl:template name="trail-symbol-hu-mtsz-allcolor-2">
 <xsl:param name="key" />
@@ -264,168 +140,295 @@
 		</xsl:call-template>
 </xsl:template>
 
-<xsl:template name="trail-symbol-hu-major">
+<xsl:template name="trail-symbol-hu-major-allcolor-3">
 <xsl:param name="key" />
 <xsl:param name="variant" />
-<xsl:param name="color" />
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-{$color}{$variant}.svg" symbol-width="{$sw-hiking-w-z14}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-{$color}{$variant}.svg" symbol-width="{$sw-hiking-w-z16}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,'k')" />
+		<xsl:with-param name="icon" select="'hu-k'" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-w-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-w-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,'p')" />
+		<xsl:with-param name="icon" select="'hu-p'" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-w-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-w-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,'s')" />
+		<xsl:with-param name="icon" select="'hu-s'" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-w-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-w-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,'z')" />
+		<xsl:with-param name="icon" select="'hu-z'" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-w-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-w-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+
 </xsl:template>
 
 <xsl:template name="trail-symbol-hu-mtsz-3">
 <xsl:param name="key" />
 <xsl:param name="variant" />
 <xsl:param name="color" />
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}+" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-{$color}+{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}+" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-{$color}+{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}3" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-{$color}3{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}3" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-{$color}3{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}4" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-{$color}4{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}4" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-{$color}4{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}t" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-{$color}t{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}t" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-{$color}t{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}atl" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-{$color}atl{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}atl" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-{$color}atl{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-</xsl:template>
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,$color,'+')" />
+		<xsl:with-param name="icon" select="concat('hu-',$color,'+')" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
 
-<xsl:template name="trail-symbol-hu-temple">
-<xsl:param name="key" />
-<xsl:param name="variant"/>
-<xsl:param name="color"/>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}tmp" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-{$color}tmp{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols-minor}"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}tmp" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-{$color}tmp{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}"/>
-	</rule>
-</xsl:template>
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,$color,'3')" />
+		<xsl:with-param name="icon" select="concat('hu-',$color,'3')" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
 
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,$color,'4')" />
+		<xsl:with-param name="icon" select="concat('hu-',$color,'4')" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,$color,'t')" />
+		<xsl:with-param name="icon" select="concat('hu-',$color,'t')" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,$color,'atl')" />
+		<xsl:with-param name="icon" select="concat('hu-',$color,'atl')" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+</xsl:template>
 
 <xsl:template name="trail-symbol-hu-mtsz-2">
 <xsl:param name="key" />
 <xsl:param name="variant" />
 <xsl:param name="color" />
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}q" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-{$color}q{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}q" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-{$color}q{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}b" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-{$color}b{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}b" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-{$color}b{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}l" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-{$color}l{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}l" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-{$color}l{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}c" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-{$color}c{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}{$color}c" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-{$color}c{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-</xsl:template>
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,$color,'q')" />
+		<xsl:with-param name="icon" select="concat('hu-',$color,'q')" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
 
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,$color,'b')" />
+		<xsl:with-param name="icon" select="concat('hu-',$color,'b')" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,$color,'l')" />
+		<xsl:with-param name="icon" select="concat('hu-',$color,'l')" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,$color,'c')" />
+		<xsl:with-param name="icon" select="concat('hu-',$color,'c')" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+</xsl:template>
 
 <xsl:template name="trail-symbol-hu-special-3">
 <xsl:param name="key" />
 <xsl:param name="variant" />
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}ft" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-ft{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}ft" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-ft{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}palp" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-palp{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}palp" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-palp{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}salp" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-salp{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}salp" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-salp{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}vcv" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-vcv{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}vcv" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-vcv{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols}" display="always"/>
-	</rule>
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,'ft')" />
+		<xsl:with-param name="icon" select="'hu-ft'" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,'palp')" />
+		<xsl:with-param name="icon" select="'hu-palp'" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,'salp')" />
+		<xsl:with-param name="icon" select="'hu-salp'" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,'vcv')" />
+		<xsl:with-param name="icon" select="'hu-vcv'" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
 </xsl:template>
 
+
+<xsl:template name="trail-symbol-hu-temple-allcolor">
+<xsl:param name="key" />
+<xsl:param name="variant" />
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,'ktmp')" />
+		<xsl:with-param name="icon" select="'hu-ktmp'" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols-minor"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,'ptmp')" />
+		<xsl:with-param name="icon" select="'hu-ptmp'" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols-minor"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,'stmp')" />
+		<xsl:with-param name="icon" select="'hu-stmp'" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols-minor"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,'ztmp')" />
+		<xsl:with-param name="icon" select="'hu-ztmp'" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols-minor"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+</xsl:template>
 
 <xsl:template name="trail-symbol-hu-special-1">
 <xsl:param name="key" />
 <xsl:param name="variant" />
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}kpec" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-kpec{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols-minor}"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}kpec" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-kpec{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}keml" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-keml{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols-minor}"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}keml" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-keml{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}"/>
-	</rule>
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,'kpec')" />
+		<xsl:with-param name="icon" select="'hu-kpec'" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols-minor"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
 
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}katlv" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-katlv{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols-minor}"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}katlv" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-katlv{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}"/>
-	</rule>
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,'keml')" />
+		<xsl:with-param name="icon" select="'hu-keml'" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols-minor"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,'katlv')" />
+		<xsl:with-param name="icon" select="'hu-katlv'" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols-minor"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
 </xsl:template>
 
 <xsl:template name="trail-symbol-hu-ski-3">
 <xsl:param name="key" />
 <xsl:param name="variant" />
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}px" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-px{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols-minor}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}px" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-px{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}" display="always"/>
-	</rule>
-
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}kx" zoom-min="12" zoom-max="15">
-		<symbol src="{$hikingSymbolPath}/hu-kx{$variant}.svg" symbol-width="{$sw-hiking-z14}" priority="{$pr-hiking-symbols-minor}" display="always"/>
-	</rule>
-	<rule e="node" k="{$key}" v="{$ns-symbol-hu}kx" zoom-min="16" >
-		<symbol src="{$hikingSymbolPath}/hu-kx{$variant}.svg" symbol-width="{$sw-hiking-z16}" priority="{$pr-hiking-symbols-minor}" display="always"/>
-	</rule>
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,'px')" />
+		<xsl:with-param name="icon" select="'hu-px'" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols-minor"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
+	<xsl:call-template name="render-trail-symbol">
+		<xsl:with-param name="key" select="$key" />
+		<xsl:with-param name="code" select="concat($ns-symbol-hu,'kx')" />
+		<xsl:with-param name="icon" select="'hu-kx'" />
+		<xsl:with-param name="symbol_width" select="$sw-hiking-z14"/>
+		<xsl:with-param name="symbol_width2" select="$sw-hiking-z16"/>
+		<xsl:with-param name="priority" select="$pr-hiking-symbols-minor"/>	
+		<xsl:with-param name="variant" select="$variant" />
+	</xsl:call-template>
 </xsl:template>
+
 
 </xsl:stylesheet>
