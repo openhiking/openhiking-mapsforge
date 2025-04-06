@@ -93,6 +93,15 @@
         <osm-tag key="tidal" renderable="false" value="yes"/>
 
     </ways>
+    <!-- ************************************************** 
+                H A Z A R D O U S   A R E A S
+    ************************************************** -->
+    <ways>
+        <osm-tag key="hazard" value="contamination" zoom-appear="12"/>
+        <osm-tag key="hazard" value="minefield" zoom-appear="12"/>
+        <osm-tag key="hazard" value="shooting_range" zoom-appear="12"/>
+        <osm-tag key="hazard" value="unexploded_ordnance" zoom-appear="12"/>
+    </ways>
 
     <!-- ************************************************** 
                 H I G H W A Y S
