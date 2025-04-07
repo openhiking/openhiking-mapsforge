@@ -17,7 +17,8 @@
   <xsl:include href="poly-landuse.xslt" />
   <xsl:include href="poly-water.xslt" />
   <xsl:include href="poly-facilities.xslt" />
-  <xsl:include href="poly-highways.xslt" />
+  <xsl:include href="poly-hazards.xslt" />  
+  <xsl:include href="poly-highways.xslt" />  
   <xsl:include href="poly-sport.xslt" />
   <xsl:include href="poly-buildings.xslt" />
   <xsl:include href="poly-top.xslt" />
@@ -94,6 +95,7 @@
   <xsl:call-template name="poly-top"/>
   
   <xsl:call-template name="poly-buildings"/>  
+  <xsl:call-template name="poly-hazards"/>  
   <xsl:call-template name="poly-naming"/>
 
   <xsl:call-template name="lines-contours"/>
