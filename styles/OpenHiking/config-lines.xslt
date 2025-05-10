@@ -116,10 +116,12 @@
 <xsl:variable name="lw-protected-area-l3">0.7</xsl:variable>
 <xsl:variable name="lw-protected-area-l4">0.5</xsl:variable>
 
-<xsl:variable name="lw-protected-strictly-2">1.5</xsl:variable>
-<xsl:variable name="lw-protected-strictly-3">0.9</xsl:variable>
+<xsl:variable name="lw-protected-strictly-2">1</xsl:variable>
+<xsl:variable name="lw-protected-strictly-2-wide">3.5</xsl:variable>
+<xsl:variable name="lw-protected-strictly-3">0.8</xsl:variable>
+<xsl:variable name="lw-protected-strictly-3-wide">2.5</xsl:variable>
 <xsl:variable name="lw-protected-strictly-4">0.4</xsl:variable>
-
+<xsl:variable name="lw-protected-strictly-4-wide">2</xsl:variable>
 
 <xsl:variable name="bc-motorway">#808080</xsl:variable>
 <xsl:variable name="bc-motorway_link">#808080</xsl:variable>
@@ -179,7 +181,7 @@
 
 <xsl:variable name="lc-protected">#588d42</xsl:variable>
 <xsl:variable name="lc-protected-strictly">#FF956A</xsl:variable>
-
+<xsl:variable name="lc-protected-strictly2">#40FF956A</xsl:variable>
 
 <xsl:variable name="da-highlight-l0">6,9</xsl:variable>
 <xsl:variable name="da-highlight-l1">8,12</xsl:variable>

@@ -36,12 +36,17 @@
 <rule cat="protected_area" e="way" k="boundary" v="protected_area">
     <rule e="any" k="protect_class" v="1" >
         <rule e="any" k="*" v="*" zoom-min="12"  zoom-max="14">
+<!--  
+            <line stroke="{$lc-protected-strictly2}" dy="{($lw-protected-strictly-2-wide - $lw-protected-strictly-2) div 2 }" stroke-width="{$lw-protected-strictly-2-wide}"/>          
+-->
             <line stroke="{$lc-protected-strictly}" stroke-width="{$lw-protected-strictly-2}" stroke-dasharray="4,3" scale="all"/>          
         </rule> 
         <rule e="any" k="*" v="*" zoom-min="15"  zoom-max="16">
+            <line stroke="{$lc-protected-strictly2}" dy="{($lw-protected-strictly-3-wide - $lw-protected-strictly-3) div 2 }" stroke-width="{$lw-protected-strictly-3-wide}"/>          
             <line stroke="{$lc-protected-strictly}" stroke-width="{$lw-protected-strictly-3}" stroke-dasharray="3,3" scale="all"/>                  
         </rule> 
         <rule e="any" k="*" v="*" zoom-min="17"  >
+            <line stroke="{$lc-protected-strictly2}" dy="{($lw-protected-strictly-4-wide - $lw-protected-strictly-4) div 2 }" stroke-width="{$lw-protected-strictly-4-wide}"/>          
             <line stroke="{$lc-protected-strictly}" stroke-width="{$lw-protected-strictly-4}" stroke-dasharray="2,2" scale="all"/>                  
         </rule>         
         <rule e="any" k="*" v="*" zoom-min="12" zoom-max="14"  >
