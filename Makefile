@@ -69,7 +69,7 @@ MAP_MERGED_PBF_FP=$(MFMAP_DIR)$(PSEP)$(MAP_MERGED_PBF)
 
 
 ifeq (${LINUX},1)
-OSMC_COMPLETE_OPTS=--complete-ways --complete-multipolygons
+OSMC_COMPLETE_OPTS=--complete-ways --complete-multipolygons --complete-boundaries
 else
 OSMC_COMPLETE_OPTS=
 endif
