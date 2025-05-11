@@ -89,7 +89,11 @@ MAP_ROUTE_MAPPING_CONFIG=$(CONFIG_DIR)$(PSEP)routemapping.ini
 MAP_SYMBOL_LOOKUP_FILE=$(CONFIG_DIR)$(PSEP)symbol-lookup.csv
 MAP_SYMBOL_STACKING_FILE=$(CONFIG_DIR)$(PSEP)symbol-stacking.csv
 MAP_SYMBOL_PRIORITY_FILE=$(CONFIG_DIR)$(PSEP)symbol-priorities.csv
-MAP_COUNTRY_ROUTES_O5M := $(foreach ds,$(ALL_COUNTRIES),$(COMMON_DIR)$(PSEP)$(ds)-routes.o5m)
+
+MAP_COUNTRY_ROUTES_O5M_1 := $(foreach ds,$(OSM_COUNTRIES_FULL),$(COMMON_DIR)$(PSEP)$(ds)-routes.o5m)
+MAP_COUNTRY_ROUTES_O5M_2 := $(foreach ds,$(OSM_COUNTRIES_PARTIAL),$(MFMAP_DIR)$(PSEP)$(ds)-croutes.o5m)
+MAP_COUNTRY_ROUTES_O5M := $(MAP_COUNTRY_ROUTES_O5M_1) $(MAP_COUNTRY_ROUTES_O5M_2)
+#MAP_COUNTRY_ROUTES_O5M := $(foreach ds,$(ALL_COUNTRIES),$(COMMON_DIR)$(PSEP)$(ds)-routes.o5m)
 MAP_ROUTES_FILE=routes
 MAP_ROUTES_PBF_FP=$(MFMAP_DIR)$(PSEP)$(MAP_ROUTES_FILE).pbf
 ROUTE_CONDITION?="route=hiking or route=foot or route=bicycle or route=mtb or piste:type=nordic or piste:type=skitour or piste:type=hike "
@@ -249,6 +253,8 @@ $(MFMAP_DIR)$(PSEP2)%-clipped.o5m: $(OSM_CACHE_DIR)$(PSEP)%-latest.osm.pbf
 $(COMMON_DIR)$(PSEP2)%-routes.o5m: $(COMMON_DIR)$(PSEP)%-latest.o5m
 	$(OSMFILTER) $< --keep-nodes= --keep-ways-relations=$(ROUTE_CONDITION)  -o=$@
 
+$(MFMAP_DIR)$(PSEP2)%-croutes.o5m: $(MFMAP_DIR)$(PSEP)%-clipped.o5m
+	$(OSMFILTER) $< --keep-nodes= --keep-ways-relations=$(ROUTE_CONDITION)  -o=$@
 
 $(MAP_ROUTES_PBF_FP):  $(MAP_COUNTRY_ROUTES_O5M) | __check_MAP
 	$(OSMCONVERT) --hash-memory=240-30-2  -B=$(BOUNDARY_POLYGON_FP) --drop-version $^  -o=$@
