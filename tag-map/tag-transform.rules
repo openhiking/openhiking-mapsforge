@@ -64,7 +64,7 @@ end
 scope=way
 
 if (boundary=disputed)
-    admin_level='2' { delete boundary; delete admin_level; }
+    admin_level='2' { delete boundary; delete admin_level }
 end
 
 ##################################################################
