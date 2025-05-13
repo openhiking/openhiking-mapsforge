@@ -27,7 +27,7 @@
   <xsl:include href="lines-highlights.xslt"/>
 
   <xsl:include href="lines-contours.xslt" /> 
-  <xsl:include href="lines-admin.xslt" />
+  <xsl:include href="lines-admin.xslt" />  
   <xsl:include href="lines-waterways.xslt" />
   <xsl:include href="lines-natural.xslt" />
   <xsl:include href="lines-protected.xslt" />
@@ -49,6 +49,7 @@
   <xsl:include href="lines-barriers.xslt" />
   <xsl:include href="lines-aerialways.xslt" />
   <xsl:include href="lines-highways-labels.xslt" />
+  
   
   <xsl:include href="points-hiking-symbols-common.xslt"/>
   <xsl:include href="points-hiking-symbols-hu.xslt"/>
@@ -103,7 +104,6 @@
   <xsl:call-template name="lines-waterways"/>  
   <xsl:call-template name="lines-natural"/> 
   <xsl:call-template name="lines-protected"/> 
-  <xsl:call-template name="lines-admin"/>>
   <xsl:call-template name="lines-ski-downhill"/>
 
 
@@ -124,7 +124,9 @@
   <xsl:call-template name="lines-barriers"/>
   <xsl:call-template name="lines-aerialways"/>
 
+  <xsl:call-template name="lines-admin"/>>
   <xsl:call-template name="lines-highways-labels"/>
+
   
 
   <xsl:call-template name="points-hiking-symbols-hu"/>  

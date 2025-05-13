@@ -40,6 +40,8 @@ highway=* & type=multipolygon & area!=* {area=yes}
 
 ##################################################################
 ### Railways
+scope=way
+
 disused:railway~'rail|light_rail|narrow_gauge|tram' { railway=disused; disused='{disused:railway}'; delete disused:railway; stop }
 
 if (railway=*)
@@ -50,9 +52,19 @@ end
 
 ##################################################################
 ### Waterways
+scope=way
+
 if (waterway=*)
     tunnel~'yes|avalanche_protector|building_passage|culvert' {layer='0' }
     () {stop}
+end
+
+##################################################################
+### Admin boundaries
+scope=way
+
+if (boundary=disputed)
+    admin_level=2 { delete boundary; delete admin_level; }
 end
 
 ##################################################################

@@ -13,11 +13,20 @@
 
 <rule  e="way" k="boundary" v="administrative"  zoom-min="6">
     <rule  e="way" k="admin_level" v="2">
-        <line stroke="#e680ff" stroke-width="2"/>
-        <line stroke="#CC00FF" stroke-width="0.4" stroke-dasharray="0.4,2,2,2" scale="all" />
+        <rule e="way" k="*" v="*" zoom-max="13">    
+            <line stroke="#e680ff" stroke-width="2"/>
+        </rule>
+        <rule e="way" k="*" v="*" zoom-min="14" zoom-max="14">    
+            <line stroke="#a0e680ff" stroke-width="2.5"/>
+        </rule>
+        <rule e="way" k="*" v="*" zoom-min="15">    
+            <line stroke="#80e680ff" stroke-width="3"/>
+            <line stroke="#CC00FF" stroke-width="0.4" stroke-dasharray="0.4,2,2,2" scale="all" />
+        </rule>
+
     </rule>
    <rule  cat="region_border" e="way" k="admin_level" v="3">
-        <line stroke="#e680ff" stroke-width="1.5"/>
+        <line stroke="#40e680ff" stroke-width="1.5"/>
         <line stroke="#CC00FF" stroke-width="0.3" stroke-dasharray="0.4,2,2,2" scale="all" />
     </rule>
 </rule>
