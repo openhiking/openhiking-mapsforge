@@ -133,7 +133,7 @@ natural~'saddle|tree|bay' & name!=*  { delete natural; stop }
 place=locality & name!=* { delete place }
 
 scope=way
-natural~'valley|gorge|ridge|bay' & name!=*  { delete natural; stop }
+natural~'valley|gorge|bay' & name!=*  { delete natural; stop }
 
 ##################################################################
 ### Common Remapping
