@@ -314,6 +314,8 @@
         <osm-tag key='leisure' value='nature_reserve'  force-polygon-line="true" zoom-appear='10'/>             
         <osm-tag key="boundary" value="administrative" renderable="false" />
         -->        
+        <osm-tag key="admin_level" value="2" renderable="false"/>
+        <osm-tag key="admin_level" value="3" renderable="false"/>
         <osm-tag key="protect_class" value="1" renderable="false" />
         <osm-tag key="protect_class" value="2" renderable="false" />
 
