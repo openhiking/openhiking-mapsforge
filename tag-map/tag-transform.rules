@@ -61,11 +61,16 @@ end
 
 ##################################################################
 ### Admin boundaries
-scope=way
+scope=way,relation
+
+if (boundary=administrative)
+    admin_level~'4|5|6|7|8|9' { delete boundary; delete admin_level }
+end
 
 if (boundary=disputed)
-    admin_level='2' { delete boundary; delete admin_level }
+    admin_level='2' { boundary=administrative }
 end
+
 
 ##################################################################
 ### Landuses
@@ -145,7 +150,7 @@ natural~'saddle|tree|bay' & name!=*  { delete natural; stop }
 place=locality & name!=* { delete place }
 
 scope=way
-natural~'valley|gorge|bay' & name!=*  { delete natural; stop }
+natural~'valley|gorge|ridge|bay' & name!=*  { delete natural; stop }
 
 ##################################################################
 ### Common Remapping
