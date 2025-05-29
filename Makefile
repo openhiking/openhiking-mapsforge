@@ -350,7 +350,7 @@ clean: | __check_MAP
 
 cleancache: 
 	$(DEL) $(OSM_CACHE_DIR)$(PSEP)*.pbf
-	$(DEL) $(COMMON_DIR)$(PSEP)*.o5m
+	$(DEL) $(COMMON_DIR)$(PSEP)*
 
 cleanstyle: | __check_STYLE
 	$(DEL) $(MAP_STYLE_XML_FP)

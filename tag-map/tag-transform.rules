@@ -203,6 +203,7 @@ scope=way,relation
 leisure=swimming_facility { building=swimming_facility }
 leisure=sports_hall & building!=sports_centre {building=sports_centre }
 leisure=sports_centre & sport=climbing { delete sport }
+leisure=picnic_table & covered=yes { delete leisure; tourism=picnic_site }
 garden:type=arboretum { garden:type=botanical }
 
 if (landuse=recreation_ground)
