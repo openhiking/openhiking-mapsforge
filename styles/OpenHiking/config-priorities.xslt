@@ -25,6 +25,7 @@
 <xsl:variable name="pr-cliff">30</xsl:variable>
 <xsl:variable name="pr-cave">30</xsl:variable>
 <xsl:variable name="pr-spring-drinking">30</xsl:variable>
+<xsl:variable name="pr-spring-mineral">30</xsl:variable>
 <xsl:variable name="pr-waterfall">31</xsl:variable>
 <xsl:variable name="pr-geyser">31</xsl:variable>
 

@@ -234,10 +234,10 @@
 
 <rule e="node" k="natural" v="mineral_spring" zoom-min="14">
     <rule  e="any" k="*" v="*" zoom-max="15">
-        <symbol id="spring" src="{$naturalIconPath}/mineral_spring.svg" symbol-width="16" priority="{$pr-spring}"/>    
+        <symbol id="spring" src="{$naturalIconPath}/mineral_spring.svg" symbol-width="16" priority="{$pr-spring-mineral}"/>    
     </rule> 
     <rule  e="any" k="*" v="*" zoom-min="16">
-        <symbol id="spring" src="{$naturalIconPath}/mineral_spring.svg" symbol-width="18" priority="{$pr-spring}"/>    
+        <symbol id="spring" src="{$naturalIconPath}/mineral_spring.svg" symbol-width="18" priority="{$pr-spring-mineral}"/>    
     </rule>                         
 </rule>
 
