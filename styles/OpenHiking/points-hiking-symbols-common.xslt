@@ -22,10 +22,16 @@
 			<symbol src="{$hikingSymbolPath}/{$icon}{$variant}.svg" symbol-width="{$symbol_width}" priority="{$priority}" display="always"/>
 		</rule>
 		<rule  e="node" k="*" v="*" zoom-min="15" zoom-max="15">
-			<symbol src="{$hikingSymbolPath}/{$icon}{$variant}.svg" symbol-width="{$symbol_width}" priority="{$priority}" display="always"/>
+			<symbol id="hsi{$icon}{$variant}" src="{$hikingSymbolPath}/{$icon}{$variant}.svg" symbol-width="{$symbol_width}" priority="{$priority}" display="always"/>
+			<!-- 
+        	<caption k="hiking_route_ref" symbol-id="hsi{$icon}{$variant}" font-style="bold" font-size="14" fill="#F80000" stroke="#FFFFFF" stroke-width="1"  position="right" dy="-2" priority="{$priority}"  display="always"/>			
+			-->
 		</rule>
 		<rule  e="node" k="*" v="*" zoom-min="16">
-			<symbol src="{$hikingSymbolPath}/{$icon}{$variant}.svg" symbol-width="{$symbol_width2}" priority="{$priority}" display="always"/>
+			<symbol id="hikingsymbol" src="{$hikingSymbolPath}/{$icon}{$variant}.svg" symbol-width="{$symbol_width2}" priority="{$priority}" display="always"/>
+			<!-- 
+        	<caption k="hiking_route_ref" symbol-id="hikingsymbol" font-style="bold" font-size="12" fill="#F80000" stroke="#FFFFFF" stroke-width="1"  position="right" dy="-1" priority="{$priority}"  display="always"/>						
+			-->
 		</rule>
 	</rule>
 </xsl:template>
