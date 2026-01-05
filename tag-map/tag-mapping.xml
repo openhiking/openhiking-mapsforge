@@ -654,6 +654,7 @@
                P O I   I N D U S T R I A L
     ************************************************** -->
    <ways>
+        <osm-tag key="man_made" value="excavation" label-position="true" zoom-appear="14"/>        
         <osm-tag key="man_made" value="lighthouse" label-position="true" zoom-appear="13"/>    
         <osm-tag key="man_made" value="observatory" label-position="true" zoom-appear="14"/> 
         <osm-tag key="man_made" value="telescope" label-position="true" zoom-appear="14"/>       
@@ -686,6 +687,7 @@
         <osm-tag key="man_made" value="adit" zoom-appear="14"/>    
         <osm-tag key="man_made" value="chimney" zoom-appear="15"/>  
         <osm-tag key="man_made" value="communications_tower" zoom-appear="15"/>  
+        <osm-tag key="man_made" value="excavation" zoom-appear="14"/>        
         <osm-tag key="man_made" value="lighthouse" zoom-appear="13"/>
         <osm-tag key="man_made" value="mast" zoom-appear="15"/>
         <osm-tag key="man_made" value="mineshaft" zoom-appear="14"/>
@@ -736,6 +738,7 @@
         <osm-tag key="leisure" value="playground" label-position="true" zoom-appear="14"/>
         <osm-tag key="leisure" value="sports_centre" label-position="true" zoom-appear="14"/>        
         <osm-tag key="leisure" value="stadium" label-position="true" zoom-appear="14"/>  
+        <osm-tag key="leisure" value="summer_camp" label-position="true" zoom-appear="13"/>              
         <osm-tag key="leisure" value="swimming_facility" label-position="true" zoom-appear="14"/>              
         <osm-tag key="leisure" value="swimming_pool" label-position="true" zoom-appear="15"/>
         <osm-tag key="leisure" value="water_park" label-position="true" zoom-appear="14"/>
@@ -770,7 +773,8 @@
         <osm-tag key="leisure" value="pitch" zoom-appear="15"/>
         <osm-tag key="leisure" value="playground" zoom-appear="14"/>
         <osm-tag key="leisure" value="sports_centre" zoom-appear="14"/>        
-        <osm-tag key="leisure" value="stadium" zoom-appear="14"/>   
+        <osm-tag key="leisure" value="stadium" zoom-appear="14"/>  
+        <osm-tag key="leisure" value="summer_camp" zoom-appear="13"/>              
         <osm-tag key="leisure" value="swimming_facility" zoom-appear="14"/>             
         <osm-tag key="leisure" value="water_park" zoom-appear="15"/>
 
