@@ -203,14 +203,15 @@ scope=way,relation
 leisure=swimming_facility { building=swimming_facility }
 leisure=sports_hall & building!=sports_centre {building=sports_centre }
 leisure=sports_centre & sport=climbing { delete sport }
-leisure=picnic_table & covered=yes { delete leisure; amenity=shelter; shelter_type=picnic_shelter }
-garden:type=arboretum { garden:type=botanical }
 
 if (landuse=recreation_ground)
     leisure=park { delete leisure }
     tourism=museum { delete tourism}
     () { stop}
 end
+
+scope=node,way
+garden:type=arboretum { garden:type=botanical }
 
 
 ##################################################################
@@ -317,6 +318,7 @@ amenity=place_of_worship & name~'.*k.polna' & building!=chapel { building=chapel
 man_made=stupa & amenity=place_of_worship { delete amenity }
 
 
+##################################################################
 ### Sport & leisure
 scope=node,way
 if (leisure=*)
@@ -329,8 +331,10 @@ end
 amenity=spa { amenity=public_bath }
 
 scope=node,way
+tourism=camp_site & group_only=yes { delete tourism; leisure=summer_camp }
 tourism=camp_site & backcountry=yes { camp_site=basic; delete backcountry  }
 shop=alcohol & drink:wine=retail { delete shop; craft=winery }
+leisure=picnic_table & covered=yes { delete leisure; amenity=shelter; shelter_type=picnic_shelter }
 
 
 scope=node

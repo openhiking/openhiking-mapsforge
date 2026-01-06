@@ -83,6 +83,23 @@
     </rule>
 </rule>        
 
+<rule  e="any" k="leisure" v="summer_camp" zoom-min="14">
+    <rule  e="any" k="*" v="*" zoom-max="14">
+        <symbol id="summer_camp" src="{$accomodationIconPath}/summer_camp.svg" symbol-width="18" priority="{$pr-summer-camp}"/>
+    </rule> 
+    <rule  e="any" k="*" v="*" zoom-min="15" zoom-max="16">
+        <symbol id="summer_camp" src="{$accomodationIconPath}/summer_camp.svg" symbol-width="22" priority="{$pr-summer-camp}"/>
+    </rule> 
+    <rule  e="any" k="*" v="*" zoom-min="17">
+        <symbol id="summer_camp" src="{$accomodationIconPath}/summer_camp.svg" symbol-width="24" priority="{$pr-summer-camp}"/>
+    </rule>        
+    <rule e="any" k="*" v="*" zoom-min="15">
+        <caption k="name" symbol-id="summer_camp" 
+        font-style="italic" font-size="12" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-accomodation}"/>
+    </rule>                 
+
+</rule> 
+
 
 
 

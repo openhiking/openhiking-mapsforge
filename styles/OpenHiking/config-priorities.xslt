@@ -92,6 +92,7 @@
 <xsl:variable name="pr-ford">10</xsl:variable>
 <xsl:variable name="pr-adit">10</xsl:variable>
 <xsl:variable name="pr-mineshaft">10</xsl:variable>
+<xsl:variable name="pr-excavation">10</xsl:variable>
 
 <xsl:variable name="pr-ruins">10</xsl:variable>
 <xsl:variable name="pr-bell-tower">10</xsl:variable>
@@ -123,6 +124,7 @@
 <xsl:variable name="pr-hostel">10</xsl:variable>
 <xsl:variable name="pr-hotel">10</xsl:variable>
 <xsl:variable name="pr-chalet">10</xsl:variable>
+<xsl:variable name="pr-summer-camp">10</xsl:variable>
 
 <xsl:variable name="pr-drinking-water">10</xsl:variable>
 <xsl:variable name="pr-toll-booth">10</xsl:variable>

@@ -34,6 +34,15 @@
     </rule>           
 </rule>
 
+<rule e="any" k="man_made" v="excavation" zoom-min="15">
+        <symbol id="excavation" src="{$industrialIconPath}/excavation.svg" symbol-width="14" priority="{$pr-excavation}"/>
+        <rule e="any" k="*" v="*" zoom-min="16">
+            <caption k="name" symbol-id="excavation" 
+            font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2"  priority="{$pr-label-industrial}"/>     
+        </rule>               
+</rule>
+
+
 <rule  e="any" k="man_made" v="works" zoom-min="14">
   <symbol id="factory" src="{$industrialIconPath}/factory.svg" symbol-width="26" priority="{$pr-factory}"/>
   <rule e="node" k="*" v="*" zoom-min="16">
