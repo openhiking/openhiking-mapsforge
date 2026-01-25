@@ -332,7 +332,7 @@ amenity=spa { amenity=public_bath }
 bath:type="hot_spring;river" { bath:type=hot_spring }
 
 if (tourism=camp_site)
-    leisure=summer_camp { delete tourism;  }
+    leisure=summer_camp { delete tourism  }
     group_only=yes { delete tourism; leisure=summer_camp }
     backcountry=yes { camp_site=basic; delete backcountry  }
 end
