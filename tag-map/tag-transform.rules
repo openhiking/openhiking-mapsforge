@@ -329,10 +329,13 @@ if (leisure=*)
 end        
 
 amenity=spa { amenity=public_bath }
+bath:type="hot_spring;river" { bath:type=hot_spring }
 
-scope=node,way
-tourism=camp_site & group_only=yes { delete tourism; leisure=summer_camp }
-tourism=camp_site & backcountry=yes { camp_site=basic; delete backcountry  }
+if (tourism=camp_site)
+    leisure=summer_camp { delete tourism;  }
+    group_only=yes { delete tourism; leisure=summer_camp }
+    backcountry=yes { camp_site=basic; delete backcountry  }
+end
 shop=alcohol & drink:wine=retail { delete shop; craft=winery }
 leisure=picnic_table & covered=yes { delete leisure; amenity=shelter; shelter_type=picnic_shelter }
 
