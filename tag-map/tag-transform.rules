@@ -335,6 +335,8 @@ end
 amenity=spa { amenity=public_bath }
 bath:type="hot_spring;river" { bath:type=hot_spring }
 
+amenity=public_spa & leisure=water_park { delete leisure }
+
 if (tourism=camp_site)
     leisure=summer_camp { delete tourism  }
     group_only=yes { delete tourism; leisure=summer_camp }
