@@ -57,12 +57,22 @@
 
 
 <rule  e="any" k="amenity" v="public_bath|spa" zoom-min="14">
-  <rule  e="any" k="*" v="*" zoom-max="15">
-    <symbol id="spa" src="{$leisureIconPath}/spa.svg" symbol-width="24" priority="{$pr-spa}"/>
+  <rule  e="any" k="bath:type" v="hot_spring" >
+    <rule  e="any" k="*" v="*" zoom-max="15">
+      <symbol id="spa" src="{$leisureIconPath}/public_bath_hot.svg" symbol-width="24" priority="{$pr-spa}"/>
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="16"> 
+      <symbol id="spa" src="{$leisureIconPath}/public_bath_hot.svg" symbol-width="26" priority="{$pr-spa}"/>
+    </rule>     
   </rule>
-  <rule  e="any" k="*" v="*" zoom-min="16"> 
-    <symbol id="spa" src="{$leisureIconPath}/spa.svg" symbol-width="26" priority="{$pr-spa}"/>
-  </rule>     
+  <rule  e="any" k="bath:type" v="~" >
+    <rule  e="any" k="*" v="*" zoom-max="15">
+      <symbol id="spa" src="{$leisureIconPath}/public_bath.svg" symbol-width="24" priority="{$pr-spa}"/>
+    </rule>
+    <rule  e="any" k="*" v="*" zoom-min="16"> 
+      <symbol id="spa" src="{$leisureIconPath}/public_bath.svg" symbol-width="26" priority="{$pr-spa}"/>
+    </rule>     
+  </rule>  
   <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="spa" 
     font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
