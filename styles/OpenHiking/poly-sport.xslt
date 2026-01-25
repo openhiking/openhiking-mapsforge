@@ -19,11 +19,6 @@
   </rule>
 </rule> 
 
-
-<rule e="way" k="leisure" v="sports_centre" closed="yes">
-  <area fill="#BDFFD5" scale="none"/>
-</rule>
-
 <rule e="way" k="leisure" v="swimming_pool" closed="yes">
     <rule e="way" k="location" v="~|outdoor" closed="yes">
       <area fill="#66B2FF" stroke="#000000" stroke-width="0.2" scale="none"/>
@@ -32,10 +27,6 @@
 
 <rule e="way" k="leisure" v="golf_course" closed="yes">
   <area fill="#acebad" scale="none"/>
-</rule>
-
-<rule e="way" k="tourism" v="camp_site" closed="yes">
-    <area fill="#7BFF8B" stroke="#000000" stroke-width="0.2" scale="none"/>
 </rule>
 
 </xsl:template>

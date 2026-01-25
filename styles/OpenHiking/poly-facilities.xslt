@@ -68,6 +68,24 @@
 </rule>
 
 
+<rule e="way" k="leisure" v="sports_centre" closed="yes">
+  <area fill="#BDFFD5" scale="none"/>
+</rule>
+
+<rule e="way" k="leisure" v="water_park" closed="yes">
+  <area fill="#b8dae8" scale="none"/>
+</rule>
+
+<rule e="way" k="amenity" v="public_bath" closed="yes">
+  <area fill="#b8dae8" scale="none"/>
+</rule>
+
+
+<rule e="way" k="tourism" v="camp_site" closed="yes">
+    <area fill="#7BFF8B" stroke="#000000" stroke-width="0.2" scale="none"/>
+</rule>
+
+
 <rule e="way" k="landuse" v="retail">
   <area fill="#F8E8E8" />
   <rule e="way" k="*" v="*" zoom-min="16">
@@ -78,7 +96,6 @@
 <rule e="way" k="landuse" v="railway">
   <area fill="#c6b4b0" />
 </rule>
-
 
 
 <rule e="way" k="landuse" v="plant_nursery">

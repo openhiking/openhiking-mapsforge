@@ -743,9 +743,8 @@
         <osm-tag key="leisure" value="swimming_pool" label-position="true" zoom-appear="15"/>
         <osm-tag key="leisure" value="water_park" label-position="true" zoom-appear="14"/>
         
-        <osm-tag key="amenity" value="public_bath" label-position="true" zoom-appear="15"/>
-        <osm-tag key="amenity" value="spa" label-position="true" zoom-appear="15"/>
-
+        <osm-tag key="amenity" value="public_bath" label-position="true" zoom-appear="14"/>
+        
         <osm-tag key="garden:type" renderable="false" value="botanical"/>        
 
 
@@ -778,11 +777,10 @@
         <osm-tag key="leisure" value="stadium" zoom-appear="14"/>  
         <osm-tag key="leisure" value="summer_camp" zoom-appear="13"/>              
         <osm-tag key="leisure" value="swimming_facility" zoom-appear="14"/>             
-        <osm-tag key="leisure" value="water_park" zoom-appear="15"/>
+        <osm-tag key="leisure" value="water_park" zoom-appear="14"/>
 
-        <osm-tag key="amenity" value="public_bath" zoom-appear="15"/>
-        <osm-tag key="amenity" value="spa" zoom-appear="15"/>
-
+        <osm-tag key="amenity" value="public_bath" zoom-appear="14"/>
+        
         <osm-tag key="sport" value="climbing" zoom-appear="15"/>
 
         <osm-tag key="garden:type" renderable="false" value="botanical"/>   

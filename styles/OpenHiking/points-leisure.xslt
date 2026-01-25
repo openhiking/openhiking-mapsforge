@@ -56,7 +56,7 @@
 </rule>
 
 
-<rule  e="any" k="amenity" v="public_bath|spa" zoom-min="14">
+<rule  e="any" k="amenity" v="public_bath" zoom-min="14">
   <rule  e="any" k="bath:type" v="hot_spring|thermal" >
     <rule  e="any" k="*" v="*" zoom-max="15">
       <symbol id="spa" src="{$leisureIconPath}/public_bath_hot.svg" symbol-width="18" priority="{$pr-spa}"/>
@@ -75,10 +75,22 @@
   </rule>  
   <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="spa" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
+    font-style="bold" font-size="12" fill="#2e2eba" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
   </rule>
 </rule>
 
+<rule  e="any" k="leisure" v="water_park" zoom-min="14">
+  <rule  e="any" k="*" v="*" zoom-max="15">
+    <symbol id="water_park" src="{$leisureIconPath}/public_bath.svg" symbol-width="18" priority="{$pr-spa}"/>
+  </rule>
+  <rule  e="any" k="*" v="*" zoom-min="16"> 
+    <symbol id="water_park" src="{$leisureIconPath}/public_bath.svg" symbol-width="22" priority="{$pr-spa}"/>
+  </rule>    
+  <rule e="any" k="*" v="*" zoom-min="16">
+    <caption k="name" symbol-id="water_park" 
+    font-style="bold" font-size="12" fill="#2e2eba" stroke="#ffffff" stroke-width="2" priority="{$pr-label-leisure}"/>
+  </rule>
+</rule>
 
 <rule  e="any" k="leisure" v="swimming_facility" zoom-min="14">
   <rule  e="any" k="*" v="*" zoom-max="15">
@@ -89,7 +101,7 @@
   </rule>     
   <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="swimming_facility" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-swimming-pool}"/>
+    font-style="bold" font-size="11" fill="#2e2eba" stroke="#ffffff" stroke-width="2" priority="{$pr-swimming-pool}"/>
   </rule>
 </rule>
 
