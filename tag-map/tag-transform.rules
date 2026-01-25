@@ -125,16 +125,19 @@ end
 #Private amenities
 scope=node,way
 if (access ~'no|private' | ownership=private)
-    amenity~'parking|public_bath|spa'  { delete amenity; delete access; stop}
-    leisure~'beach_resort|sports_centre|swimming_pool'  { delete leisure; delete access; stop}
-    tourism~'alpine_hut|apartment|camp_site|wilderness_hut' { delete tourism; delete access; stop}
+    amenity~'public_bath|spa'  { delete amenity}
+    leisure~'beach_resort|sports_centre|swimming_pool'  { delete leisure;  delete access; stop}
 
-    amenity~'bench|drinking_water|fuel|recycling|shelter|toilets'  { delete amenity; delete access; stop}
+    tourism~'alpine_hut|apartment|camp_site|wilderness_hut' { delete tourism; delete access; stop}
+    amenity~'parking|bench|drinking_water|fuel|recycling|shelter|toilets'  { delete amenity; delete access; stop}
     leisure~'firepit|golf_course|horse_riding|ice_rink|picnic_table|pitch|pitch'  { delete leisure; delete access; stop}
     tourism~'chalet|picnic_site' { delete tourism; delete access; stop}
 end
 
 if (access=customers)
+    amenity~'public_bath|spa'  { delete amenity}
+    leisure~'swimming_pool'  { delete leisure;  delete access; stop}
+
     amenity~'bench|drinking_water|fuel|recycling|shelter|toilets'  { delete amenity; delete access; stop}
     leisure~'firepit|golf_course|horse_riding|ice_rink|picnic_table|pitch|pitch'  { delete leisure; delete access; stop}
     tourism~'chalet|picnic_site' { delete tourism; delete access; stop}
@@ -328,6 +331,7 @@ if (leisure=*)
     leisure=spa { amenity=public_bath }
 end        
 
+#amenity=public_bath & leisure=swimming_pool { delete amenity }
 amenity=spa { amenity=public_bath }
 bath:type="hot_spring;river" { bath:type=hot_spring }
 

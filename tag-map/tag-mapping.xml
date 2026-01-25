@@ -755,6 +755,7 @@
         <osm-tag key="sport" value="tennis" renderable="false"/>
         <osm-tag key="sport" value="skiing" renderable="false"/>
         <osm-tag key="bath:type" value="hot_spring" renderable="false"/>
+        <osm-tag key="bath:type" value="thermal" renderable="false"/>
 
 <!--
         <osm-tag key="sport" value="golf" renderable="false"/>
@@ -785,7 +786,8 @@
         <osm-tag key="sport" value="climbing" zoom-appear="15"/>
 
         <osm-tag key="garden:type" renderable="false" value="botanical"/>   
-        <osm-tag key="bath:type" value="hot_spring" renderable="false"/>     
+        <osm-tag key="bath:type" value="hot_spring" renderable="false"/>  
+        <osm-tag key="bath:type" value="thermal" renderable="false"/>   
     
     </pois>  
 
