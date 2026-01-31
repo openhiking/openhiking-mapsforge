@@ -86,9 +86,6 @@
   <area fill="#F8F898" scale="none"/>
 </rule>
 
-<rule e="way" k="natural" v="glacier">
-  <area fill="#b1fefc" scale="none"/>
-</rule>
 
 <rule e="way" k="landuse" v="orchard">
     <area fill="#F8FCC8"/>
