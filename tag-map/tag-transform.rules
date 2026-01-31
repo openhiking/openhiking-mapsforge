@@ -106,6 +106,7 @@ scope=way,relation
 if (boundary=protected_area)
     protect_class~'1a|1b' { protect_class='1'  }
     protect_class~'21|22|24' | heritage=*  { delete boundary; delete protect_class; stop }
+    protect_class='2' { boundary=national_park}
     protection_title=* & name!=* { name='{protection_title}' }
     () { type=multipolygon; stop }
 end    
@@ -335,7 +336,7 @@ end
 amenity=spa { amenity=public_bath }
 bath:type="hot_spring;river" { bath:type=hot_spring }
 
-amenity=public_spa & leisure=water_park { delete leisure }
+amenity=public_bath & leisure=water_park { delete leisure }
 
 if (tourism=camp_site)
     leisure=summer_camp { delete tourism  }

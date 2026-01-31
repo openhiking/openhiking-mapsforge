@@ -317,7 +317,13 @@
         <osm-tag key="admin_level" value="2" renderable="false"/>
         <osm-tag key="admin_level" value="3" renderable="false"/>
         <osm-tag key="protect_class" value="1" renderable="false" />
+        <!-- 
         <osm-tag key="protect_class" value="2" renderable="false" />
+        -->
+        <osm-tag key="protect_class" value="5" renderable="false" />
+        <!--
+        <osm-tag key="protect_class" value="5" force-polygon-line="true"  zoom-appear="9"/>
+        -->
 
     </ways>
         
