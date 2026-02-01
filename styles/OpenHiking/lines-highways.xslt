@@ -179,12 +179,24 @@
     
     <rule e="way" k="tunnel" v="~|no">        
         <rule e="way" k="highway" v="tertiary|tertiary_link" zoom-min="{$zm-tertiary}">
-         <line stroke="{$bc-tertiary}" stroke-width="{$lw-tertiary}" stroke-linecap="butt"/> 
-          <line stroke="{$lc-tertiary}" stroke-width="{$lw-tertiary - 0.4}" />          
+            <rule e="way" k="4wd_only" v="~">             
+                <line stroke="{$bc-tertiary}" stroke-width="{$lw-tertiary}" stroke-linecap="butt"/> 
+                <line stroke="{$lc-tertiary}" stroke-width="{$lw-tertiary - 0.4}" />          
+            </rule>
+           <rule e="way" k="4wd_only" v="yes">             
+                <line stroke="{$bc-tertiary}" stroke-width="{$lw-tertiary}" stroke-linecap="butt"/> 
+                <line stroke="{$lc-4wd-road}" stroke-width="{$lw-tertiary - 0.4}" />          
+            </rule>
         </rule>
         <rule e="way" k="highway" v="secondary|secondary_link" zoom-min="{$zm-secondary}">
-            <line stroke="{$bc-secondary}" stroke-width="{$lw-secondary}" stroke-linecap="butt"/> 
-            <line stroke="{$lc-secondary}" stroke-width="{$lw-secondary - 0.4}" />          
+           <rule e="way" k="4wd_only" v="~">             
+                <line stroke="{$bc-secondary}" stroke-width="{$lw-secondary}" stroke-linecap="butt"/> 
+                <line stroke="{$lc-secondary}" stroke-width="{$lw-secondary - 0.4}" />          
+            </rule>
+           <rule e="way" k="4wd_only" v="yes">  
+                <line stroke="{$bc-secondary}" stroke-width="{$lw-secondary}" stroke-linecap="butt"/> 
+                <line stroke="{$lc-4wd-road}" stroke-width="{$lw-secondary - 0.4}" />                                           
+            </rule>
         </rule>
         <rule e="way" k="highway" v="primary|primary_link" zoom-min="{$zm-primary}">
            <line stroke="{$bc-primary}" stroke-width="{$lw-primary}" stroke-linecap="butt"/> 

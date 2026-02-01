@@ -15,18 +15,6 @@
 <rule  e="way" k="highway" v="*">
   <rule e="way" k="area" v="~|no|false">
     <rule e="way" k="tunnel" v="~|no">
-        <rule e="way" k="highway" v="footway|platform|path|bridleway|cycleway|via_ferrata|steps" zoom-min="16">
-            <pathText k="name" dy="0.5" font-style="bold" font-size="9" stroke="#FFFFFF" stroke-width="3"/>        
-        </rule>
-        <rule e="way" k="highway" v="track" zoom-min="13">
-            <pathText k="ref"  font-style="bold" font-size="10" fill="#FFFFFF" stroke="#6b4724" stroke-width="3" repeat="false" repeat-gap="500.0" repeat-start="100.0" />                
-            <rule e="way" k="tracktype" v="grade1|grade2" zoom-min="15">
-                <pathText k="name" font-style="bold" font-size="11" stroke="#FFFFFF" stroke-width="3" repeat-gap="160"/>
-            </rule>
-            <rule e="way" k="tracktype" v="grade3|grade4|grade5|~" zoom-min="16">	
-                <pathText k="name" dy="0.5" font-style="bold" font-size="10" stroke="#FFFFFF" stroke-width="3" repeat-gap="150"/>    
-            </rule>
-        </rule>                
         <rule e="way" k="highway" v="footway|platform|path|bridleway|cycleway|via_ferrata|steps|track" >        
             <rule e="way" k="trail_color" v="blue" zoom-min="14">
                 <pathText k="route_ref_hiking" dy="2" repeat-gap="240" font-style="bold" font-size="12" fill="#0025fd" stroke="#FFFFFF" stroke-width="2"/>        
@@ -41,25 +29,48 @@
                 <pathText k="route_ref_hiking" dy="2" repeat-gap="240" font-style="bold" font-size="12" fill="#069e03" stroke="#FFFFFF" stroke-width="2"/>        
             </rule>
         </rule>
+        <rule e="way" k="highway" v="footway|platform|path|bridleway|cycleway|via_ferrata|steps" zoom-min="16">
+            <pathText k="name" dy="0.5" font-style="bold" font-size="9" stroke="#FFFFFF" stroke-width="3"/>        
+        </rule> 
         <rule e="way" k="highway" v="service|living_street|residential|unclassified|pedestrian" zoom-min="15">
             <pathText k="name" font-style="bold" font-size="11" stroke="#FFFFFF" stroke-width="3" repeat-gap="180"/>
         </rule>
         <rule e="way" k="highway" v="raceway" zoom-min="15">
             <pathText k="name" dy="0.5" font-style="bold" font-size="11" stroke="#FFFFFF" stroke-width="3" repeat-gap="180"/>
         </rule>
-        <rule e="way" k="highway" v="tertiary|tertiary_link" zoom-min="13">
-            <pathText k="ref"  font-style="bold" font-size="10" fill="#FFFFFF" stroke="#008700" stroke-width="4" repeat="false" repeat-gap="500.0" repeat-start="100.0" /> 
+        <rule e="way" k="highway" v="track" zoom-min="11">
+            <pathText k="ref"  font-style="bold" font-size="10" fill="#FFFFFF" stroke="#6b4724" stroke-width="3" repeat="false" repeat-gap="500.0" repeat-start="100.0" />                
+            <rule e="way" k="tracktype" v="grade1|grade2" zoom-min="15">
+                <pathText k="name" font-style="bold" font-size="11" stroke="#FFFFFF" stroke-width="3" repeat-gap="160"/>
+            </rule>
+            <rule e="way" k="tracktype" v="grade3|grade4|grade5|~" zoom-min="16">	
+                <pathText k="name" dy="0.5" font-style="bold" font-size="10" stroke="#FFFFFF" stroke-width="3" repeat-gap="150"/>    
+            </rule>
+        </rule>                
+        <rule e="way" k="highway" v="tertiary|tertiary_link" zoom-min="11">
+            <rule e="way" k="4wd_only" v="~">             
+                <pathText k="ref"  font-style="bold" font-size="10" fill="#FFFFFF" stroke="#008700" stroke-width="4" repeat-gap="500.0" repeat-start="100.0" /> 
+            </rule>
+           <rule e="way" k="4wd_only" v="yes">             
+                <pathText k="ref"  font-style="bold" font-size="10" fill="#FFFFFF" stroke="#6b4724" stroke-width="3" repeat-gap="500.0" repeat-start="100.0" /> 
+            </rule>            
             <rule e="way" k="*" v="*" zoom-min="14">
                 <pathText k="name" dy="0.5" font-style="bold" font-size="11" stroke="#FFFFFF" stroke-width="3" repeat-gap="200"/>  
             </rule>
         </rule>
-        <rule e="way" k="highway" v="secondary|secondary_link" zoom-min="12">
+        <rule e="way" k="highway" v="secondary|secondary_link" zoom-min="11">
             <pathText k="name" dy="0.5" font-style="bold" font-size="11" stroke="#FFFFFF" stroke-width="3" repeat-gap="200"/>  
-            <pathText k="ref"  font-style="bold" font-size="10" fill="#FFFFFF" stroke="#008700" stroke-width="3" repeat="false" repeat-gap="500.0" repeat-start="100.0" />
+            <rule e="way" k="4wd_only" v="~">             
+                <pathText k="ref"  font-style="bold" font-size="10" fill="#FFFFFF" stroke="#008700" stroke-width="3" repeat-gap="500.0" repeat-start="100.0" />
+            </rule>
+            <rule e="way" k="4wd_only" v="yes">                        
+                <pathText k="ref"  font-style="bold" font-size="10" fill="#FFFFFF" stroke="#6b4724" stroke-width="3" repeat-gap="500.0" repeat-start="100.0" />
+            </rule>
+
         </rule>
         <rule e="way" k="highway" v="primary|primary_link" zoom-min="11">
             <pathText k="name" dy="0.5" font-style="bold" font-size="11" stroke="#FFFFFF" stroke-width="3" repeat-gap="200"/>
-            <pathText k="ref"  font-style="bold" font-size="10" fill="#FFFFFF" stroke="#008700" stroke-width="3" repeat="false" repeat-gap="500.0" repeat-start="100.0" display="always"/>                         
+            <pathText k="ref"  font-style="bold" font-size="10" fill="#FFFFFF" stroke="#008700" stroke-width="3" repeat-gap="500.0" repeat-start="100.0" display="always"/>                         
         </rule>
         <rule e="way" k="highway" v="trunk" zoom-min="11">
             <caption k="ref" font-style="bold" font-size="9" fill="#FFFFFF" stroke="#1076BA" stroke-width="4" />       

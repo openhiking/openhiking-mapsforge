@@ -154,6 +154,7 @@
 <xsl:variable name="lc-primary">#FB9C39</xsl:variable>
 <xsl:variable name="lc-secondary">#FEF458</xsl:variable>
 <xsl:variable name="lc-tertiary">#FEF458</xsl:variable>
+<xsl:variable name="lc-4wd-road">#a29a56</xsl:variable> 
 <xsl:variable name="lc-unclassified">#FFFFFF</xsl:variable>
 <xsl:variable name="lc-residential">#FFFFFF</xsl:variable>
 <xsl:variable name="lc-living">#FFFFFF</xsl:variable>
