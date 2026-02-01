@@ -115,8 +115,8 @@ end
 scope=way,relation
 if (boundary=protected_area)
     protect_class~'1a|1b' { protect_class='1'  }
+    protected_area=national_park { boundary=national_park}
     protect_class~'21|22|24' | heritage=*  { delete boundary; delete protect_class; stop }
-    protect_class='2' { boundary=national_park}
     protection_title=* & name!=* { name='{protection_title}' }
     () { type=multipolygon; stop }
 end    
