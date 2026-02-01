@@ -189,6 +189,8 @@
         <osm-tag key="winter_hike_color" value="black" zoom-appear="12"/>
         <osm-tag key="winter_hike_color" value="default" zoom-appear="12"/>
 
+        <!-- 4WD-only highways -->
+       <osm-tag key="4wd_only" renderable="false" value="yes"/>
 
         <!-- Surface -->
         <osm-tag key="surface" renderable="false" value="sand"/>
