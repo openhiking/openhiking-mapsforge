@@ -109,25 +109,6 @@ if (landuse=*)
     () { stop}
 end
 
-##################################################################
-### National parks and protected areas
-
-scope=way,relation
-if (boundary=protected_area)
-    protect_class~'1a|1b' { protect_class='1'  }
-    protected_area=national_park { boundary=national_park}
-    protect_class~'21|22|24' | heritage=*  { delete boundary; delete protect_class; stop }
-    () { type=multipolygon; stop }
-end    
-
-if (boundary=national_park)
-    () { type=multipolygon; stop }
-end
-
-if (leisure=nature_reserve)
-    historic=archaeological_site { delete leisure; stop}
-    boundary!~'national_park|protected_area'  { boundary=protected_area; type=multipolygon; stop }
-end
 
 ##################################################################
 ### Clean-Ups
