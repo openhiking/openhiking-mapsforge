@@ -323,11 +323,9 @@
         <osm-tag key="protect_class" value="1" renderable="false" />
         <!-- 
         <osm-tag key="protect_class" value="2" renderable="false" />
-        -->
-        <!--
         <osm-tag key="protect_class" value="5" renderable="false" />
         -->
-        <osm-tag key="protect_class" value="5" force-polygon-line="true"  zoom-appear="9"/>
+        <osm-tag key="protected_area_importance" value="major" force-polygon-line="true"  zoom-appear="9"/>
  
     </ways>
         

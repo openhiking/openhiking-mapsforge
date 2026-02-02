@@ -1,0 +1,11 @@
+scope=way,relation
+
+if (protection_title=*)
+    if (protect_class!='1')
+        protection_title~'UNESCO Global Geopark|Naturpark' { protected_area_importance=major }
+        protection_title='Tájvédelmi körzet'  { protected_area_importance=major }
+        protection_title='Chránená krajinná oblasť'  { protected_area_importance=major }
+        protection_title='Regijski park'  { protected_area_importance=major }
+    end
+end
+
