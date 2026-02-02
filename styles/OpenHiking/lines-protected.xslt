@@ -43,7 +43,7 @@
 
 
 <rule cat="protected_area" e="way" k="boundary" v="protected_area">
-   <rule e="any" k="protect_class" v="5">
+   <rule e="any" k="protected_area_importance" v="major">
         <rule e="any" k="*" v="*" zoom-min="9"  zoom-max="9">
             <line stroke="{$lc-protected-light}" dy="{($lw-national-park-1-wide - $lw-national-park-1) div 2 }" stroke-width="{$lw-national-park-1-wide}"/>              
             <line stroke="{$lc-protected}" stroke-width="{$lw-national-park-1}"/>          
@@ -64,44 +64,46 @@
             <caption k="name" font-style="bold_italic" font-family="serif" font-size="14" fill="#588d42"  />
         </rule>
     </rule> 
-    <rule e="any" k="protect_class" v="1" >
-        <rule e="any" k="*" v="*" zoom-min="12"  zoom-max="14">
-            <line stroke="{$lc-protected-strictly-light}" dy="{($lw-protected-strictly-2-wide - $lw-protected-strictly-2) div 2 }" stroke-width="{$lw-protected-strictly-2-wide}"/>          
-            <line stroke="{$lc-protected-strictly}" stroke-width="{$lw-protected-strictly-2}"/>          
-        </rule> 
-        <rule e="any" k="*" v="*" zoom-min="15"  zoom-max="16">
-            <line stroke="{$lc-protected-strictly-light}" dy="{($lw-protected-strictly-3-wide - $lw-protected-strictly-3) div 2 }" stroke-width="{$lw-protected-strictly-3-wide}"/>          
-            <line stroke="{$lc-protected-strictly}" stroke-width="{$lw-protected-strictly-3}"/>                              
-        </rule> 
-        <rule e="any" k="*" v="*" zoom-min="17"  >
-            <line stroke="{$lc-protected-strictly-light}" dy="{($lw-protected-strictly-4-wide - $lw-protected-strictly-4) div 2 }" stroke-width="{$lw-protected-strictly-4-wide}"/>          
-            <line stroke="{$lc-protected-strictly}" stroke-width="{$lw-protected-strictly-4}"/>                                      
-        </rule>         
-        <rule e="any" k="*" v="*" zoom-min="12" zoom-max="14"  >
-            <caption k="name" font-style="bold_italic" font-family="serif" font-size="11" stroke="#ff4a35" fill="#ff7f5a"  />
-        </rule>
-        <rule e="any" k="*" v="*" zoom-min="15"  >
-            <caption k="name" font-style="bold_italic" font-family="serif" font-size="12" stroke="#ff4a35" fill="#ff7f5a"  />
-        </rule>
-    </rule>        
-    <rule e="any" k="protect_class" v="2|~" zoom-min="12">
-        <rule e="any" k="*" v="*" zoom-min="12"  zoom-max="13">
-            <line stroke="{$lc-protected-light}" dy="{($lw-protected-area-2-wide - $lw-protected-area-2) div 2 }" stroke-width="{$lw-protected-area-2-wide}"/>          
-            <line stroke="{$lc-protected}" stroke-width="{$lw-protected-area-2}"/>          
-        </rule> 
-        <rule e="any" k="*" v="*" zoom-min="14"  zoom-max="15">
-            <line stroke="{$lc-protected-light}" dy="{($lw-protected-area-3-wide - $lw-protected-area-3) div 2 }" stroke-width="{$lw-protected-area-3-wide}"/>          
-            <line stroke="{$lc-protected}" stroke-width="{$lw-protected-area-3}"/>          
-        </rule> 
-        <rule e="any" k="*" v="*" zoom-min="16"  >
-            <line stroke="{$lc-protected-light}" dy="{($lw-protected-area-4-wide - $lw-protected-area-4) div 2 }" stroke-width="{$lw-protected-area-4-wide}"/>          
-            <line stroke="{$lc-protected}" stroke-width="{$lw-protected-area-4}"/>          
-        </rule> 
-        <rule e="any" k="*" v="*" zoom-min="12"  zoom-max="14">
-            <caption k="name" font-style="bold_italic" font-family="serif" font-size="11" fill="#95588d42"  />
-        </rule>
-        <rule e="any" k="*" v="*" zoom-min="15"  >
-            <caption k="name" font-style="bold_italic" font-family="serif" font-size="12" fill="#95588d42"  />
+   <rule e="any" k="protected_area_importance" v="~">
+        <rule e="any" k="protect_class" v="1" >
+            <rule e="any" k="*" v="*" zoom-min="12"  zoom-max="14">
+                <line stroke="{$lc-protected-strictly-light}" dy="{($lw-protected-strictly-2-wide - $lw-protected-strictly-2) div 2 }" stroke-width="{$lw-protected-strictly-2-wide}"/>          
+                <line stroke="{$lc-protected-strictly}" stroke-width="{$lw-protected-strictly-2}"/>          
+            </rule> 
+            <rule e="any" k="*" v="*" zoom-min="15"  zoom-max="16">
+                <line stroke="{$lc-protected-strictly-light}" dy="{($lw-protected-strictly-3-wide - $lw-protected-strictly-3) div 2 }" stroke-width="{$lw-protected-strictly-3-wide}"/>          
+                <line stroke="{$lc-protected-strictly}" stroke-width="{$lw-protected-strictly-3}"/>                              
+            </rule> 
+            <rule e="any" k="*" v="*" zoom-min="17"  >
+                <line stroke="{$lc-protected-strictly-light}" dy="{($lw-protected-strictly-4-wide - $lw-protected-strictly-4) div 2 }" stroke-width="{$lw-protected-strictly-4-wide}"/>          
+                <line stroke="{$lc-protected-strictly}" stroke-width="{$lw-protected-strictly-4}"/>                                      
+            </rule>         
+            <rule e="any" k="*" v="*" zoom-min="12" zoom-max="14"  >
+                <caption k="name" font-style="bold_italic" font-family="serif" font-size="11" stroke="#ff4a35" fill="#ff7f5a"  />
+            </rule>
+            <rule e="any" k="*" v="*" zoom-min="15"  >
+                <caption k="name" font-style="bold_italic" font-family="serif" font-size="12" stroke="#ff4a35" fill="#ff7f5a"  />
+            </rule>
+        </rule>        
+        <rule e="any" k="protect_class" v="2|~" zoom-min="12">
+            <rule e="any" k="*" v="*" zoom-min="12"  zoom-max="13">
+                <line stroke="{$lc-protected-light}" dy="{($lw-protected-area-2-wide - $lw-protected-area-2) div 2 }" stroke-width="{$lw-protected-area-2-wide}"/>          
+                <line stroke="{$lc-protected}" stroke-width="{$lw-protected-area-2}"/>          
+            </rule> 
+            <rule e="any" k="*" v="*" zoom-min="14"  zoom-max="15">
+                <line stroke="{$lc-protected-light}" dy="{($lw-protected-area-3-wide - $lw-protected-area-3) div 2 }" stroke-width="{$lw-protected-area-3-wide}"/>          
+                <line stroke="{$lc-protected}" stroke-width="{$lw-protected-area-3}"/>          
+            </rule> 
+            <rule e="any" k="*" v="*" zoom-min="16"  >
+                <line stroke="{$lc-protected-light}" dy="{($lw-protected-area-4-wide - $lw-protected-area-4) div 2 }" stroke-width="{$lw-protected-area-4-wide}"/>          
+                <line stroke="{$lc-protected}" stroke-width="{$lw-protected-area-4}"/>          
+            </rule> 
+            <rule e="any" k="*" v="*" zoom-min="12"  zoom-max="14">
+                <caption k="name" font-style="bold_italic" font-family="serif" font-size="11" fill="#95588d42"  />
+            </rule>
+            <rule e="any" k="*" v="*" zoom-min="15"  >
+                <caption k="name" font-style="bold_italic" font-family="serif" font-size="12" fill="#95588d42"  />
+            </rule>
         </rule>
     </rule>
 </rule>
