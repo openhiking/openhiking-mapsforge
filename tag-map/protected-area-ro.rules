@@ -1,0 +1,23 @@
+##################################################################
+### National parks and protected areas
+
+scope=way,relation
+
+if (leisure=nature_reserve)
+   boundary!~'national_park|protected_area' & historic!=archaeological_site { boundary=protected_area }
+end
+
+if (boundary=protected_area)
+    protect_class~'1a|1b' { protect_class='1'  }
+    protected_area=national_park { boundary=national_park}
+    protect_class~'21|22|24' | heritage=*  { delete boundary; delete protect_class; stop }
+    
+    protection_title='Natura 2000 site' { protected_area_importance=major }
+    protection_title='parc național' |  protection_title_1='parc național' {boundary=national_park}
+
+    () { type=multipolygon; stop }
+end    
+
+if (boundary=national_park)
+    () { type=multipolygon; stop }
+end

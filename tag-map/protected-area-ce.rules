@@ -4,8 +4,7 @@
 scope=way,relation
 
 if (leisure=nature_reserve)
-    historic=archaeological_site { delete leisure }
-    boundary!~'national_park|protected_area'  { boundary=protected_area }
+   boundary!~'national_park|protected_area' & historic!=archaeological_site { boundary=protected_area }
 end
 
 if (boundary=protected_area)
@@ -14,10 +13,13 @@ if (boundary=protected_area)
     protect_class~'21|22|24' | heritage=*  { delete boundary; delete protect_class; stop }
 
     if (protection_title=*)
-        protection_title~'UNESCO Global Geopark|Naturpark' { protected_area_importance=major }
-        protection_title='Tájvédelmi körzet'  { protected_area_importance=major }
+        protection_title='UNESCO Global Geopark' { protected_area_importance=major }
+        protection_title='Naturpark' { protected_area_importance=major }
+        protection_title='Regionaler Naturpark' { protected_area_importance=major }
         protection_title='Chránená krajinná oblasť'  { protected_area_importance=major }
         protection_title='Regijski park'  { protected_area_importance=major }
+        protection_title='Parco naturale regionale' { protected_area_importance=major }
+        protection_title='Tájvédelmi körzet'  { protected_area_importance=major }
     end
 
     () { type=multipolygon; stop }
