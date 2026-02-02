@@ -185,7 +185,7 @@
             </rule>
            <rule e="way" k="4wd_only" v="yes">             
                 <line stroke="{$bc-tertiary}" stroke-width="{$lw-tertiary}" stroke-linecap="butt"/> 
-                <line stroke="{$lc-4wd-road}" stroke-width="{$lw-tertiary - 0.4}" />          
+                <line stroke="{$lc-4wd-road}" stroke-width="{$lw-tertiary - 0.5}" />          
             </rule>
         </rule>
         <rule e="way" k="highway" v="secondary|secondary_link" zoom-min="{$zm-secondary}">
@@ -195,7 +195,7 @@
             </rule>
            <rule e="way" k="4wd_only" v="yes">  
                 <line stroke="{$bc-secondary}" stroke-width="{$lw-secondary}" stroke-linecap="butt"/> 
-                <line stroke="{$lc-4wd-road}" stroke-width="{$lw-secondary - 0.4}" />                                           
+                <line stroke="{$lc-4wd-road}" stroke-width="{$lw-secondary - 0.5}" />                                           
             </rule>
         </rule>
         <rule e="way" k="highway" v="primary|primary_link" zoom-min="{$zm-primary}">
