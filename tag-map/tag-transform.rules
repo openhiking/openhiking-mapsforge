@@ -291,6 +291,7 @@ if (natural=volcano)
             () { natural=peak }
         else
             () { delete natural}
+        end
     end
     geological=volcanic_vent { delete geological}
 end
