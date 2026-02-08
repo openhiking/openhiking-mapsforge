@@ -84,7 +84,7 @@
     </rule>
 </rule>
 
-<rule  e="node" k="geological" v="volcanic_vent" zoom-min="14">
+<rule  e="node" k="geological" v="volcanic_vent" zoom-min="11">
     <rule  e="any" k="*" v="*" zoom-max="15">
         <symbol id="volcanic_vent" src="{$naturalIconPath}/volcanic_vent.svg" symbol-width="20" display="always" priority="{$pr-geyser}"/>
     </rule> 

@@ -289,19 +289,15 @@ natural=peak & man_made~'cross|summit_cross'  { delete man_made; summit:cross=ye
 if (geological=volcanic_vent)
     if (volcano:status=active)
         natural=volcano { delete natural}
-    else
-        () { delete geological}
+        () { stop}
     end
+    () { delete geological}
 end
 
 if (natural=volcano)
-    if (volcano:status!=active & volcano:status!=dormant)
-        if (name=* | ele=*)
-            () { natural=peak}
-        else
-            () { delete natural }
-        end
-    end
+    volcano:status=active | volcano:status=dormant { stop}
+    name=* | ele=* { natural=peak; stop}    
+    () { delete natural}
 end
 
 

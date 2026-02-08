@@ -821,10 +821,10 @@
     ************************************************** -->
     <ways>
         <osm-tag key="natural" value="sinkhole" label-position="true" zoom-appear="14"/>        
-        <osm-tag key="natural" value="volcano" label-position="true" zoom-appear="12"/>
+        <osm-tag key="natural" value="volcano" label-position="true" zoom-appear="11"/>
 
         <osm-tag key="geological" value="columnar_jointing" label-position="true" zoom-appear="14"/>
-        <osm-tag key="geological" value="volcanic_vent" label-position="true" zoom-appear="14"/>
+        <osm-tag key="geological" value="volcanic_vent" label-position="true" zoom-appear="11"/>
 
         <osm-tag key="sinkhole" value="estavelle" renderable="false"/>   
         <osm-tag key="sinkhole" value="pit" renderable="false"/>   
@@ -847,12 +847,12 @@
         <osm-tag key="natural" value="spring" zoom-appear="14"/>
         <osm-tag key="natural" value="stone" zoom-appear="14"/>  
         <osm-tag key="natural" value="tree" zoom-appear="15"/>                      
-        <osm-tag key="natural" value="volcano" zoom-appear="9"/>
+        <osm-tag key="natural" value="volcano" zoom-appear="10"/>
 
         <osm-tag key="waterway" value="waterfall" zoom-appear="13"/>
 
         <osm-tag key="geological" value="columnar_jointing"  zoom-appear="14"/>
-        <osm-tag key="geological" value="volcanic_vent"  zoom-appear="12"/>
+        <osm-tag key="geological" value="volcanic_vent"  zoom-appear="11"/>
 
 
         <osm-tag key="sinkhole" value="estavelle" renderable="false"/>   
