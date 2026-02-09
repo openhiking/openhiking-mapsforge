@@ -286,20 +286,20 @@ disused:natural=spring  { natural=spring; seasonal=yes; stop }
 scope=node
 natural=peak & man_made~'cross|summit_cross'  { delete man_made; summit:cross=yes }
 
-if (geological=volcanic_vent)
-    if (volcano:status=active)
-        natural=volcano { delete natural}
-        () { stop}
-    end
-    () { delete geological}
-end
 
 if (natural=volcano)
-    volcano:status=active | volcano:status=dormant { stop}
+    if (volcano:status=active | volcano:status=dormant)
+        name=* & ele=* { {%localname = '{name}'; name='{name} ({ele})' }}
+        { stop}
+    end 
     name=* | ele=* { natural=peak; stop}    
     () { delete natural}
 end
 
+if (geological=volcanic_vent)
+    volcano:status=active | volcano:status=dormant { natural=volcano; stop}
+    () { delete geological}
+end
 
 natural=bay & place=locality { delete place}
 
