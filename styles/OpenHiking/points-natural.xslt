@@ -61,43 +61,47 @@
     </rule>
 </rule>
 
+
 <rule e="node" k="natural" v="volcano" >
-    <rule e="node" k="*" v="*" zoom-min="11" zoom-max="11">  
-        <symbol id="volcano" src="{$naturalIconPath}/volcano.svg" symbol-width="6" priority="{$pr-peak-named}"/>              
+    <rule e="node" k="volcano:status" v="active" >   
+        <rule e="node" k="*" v="*" zoom-min="11" zoom-max="12">  
+            <symbol id="volcano" src="{$naturalIconPath}/volcano.svg" symbol-width="10" priority="{$pr-peak-named}"/>              
+        </rule>
+
+        <rule e="node" k="*" v="*" zoom-min="13" zoom-max="14">        
+            <symbol id="volcano" src="{$naturalIconPath}/volcano.svg" symbol-width="14" priority="{$pr-peak-named}"/>
+        </rule>
+        <rule e="node" k="*" v="*" zoom-min="15">
+            <symbol id="volcano" src="{$naturalIconPath}/volcano.svg" symbol-width="16" priority="{$pr-peak-named}"/>
+        </rule>
+        <rule e="node" k="*" v="*" zoom-min="12" zoom-max="12">        
+            <caption  k="name" font-size="11" fill="#821111" font-style="bold_italic"  position="below"
+            stroke="#FFFFFF" stroke-width="1.5" symbol-id="volcano" priority="{$pr-label-peak}" />
+        </rule>
+    </rule>
+    <rule e="node" k="volcano:status" v="~" >  
+        <rule e="node" k="*" v="*" zoom-min="12" zoom-max="12">  
+            <symbol id="volcano" src="{$naturalIconPath}/volcano_dormant.svg" symbol-width="10" priority="{$pr-peak-named}"/>              
+        </rule>
+
+        <rule e="node" k="*" v="*" zoom-min="13" zoom-max="14">        
+            <symbol id="volcano" src="{$naturalIconPath}/volcano_dormant.svg" symbol-width="14" priority="{$pr-peak-named}"/>
+        </rule>
+        <rule e="node" k="*" v="*" zoom-min="15">
+            <symbol id="volcano" src="{$naturalIconPath}/volcano_dormant.svg" symbol-width="16" priority="{$pr-peak-named}"/>
+        </rule>
     </rule>
     <rule e="node" k="*" v="*" zoom-min="12" zoom-max="12">        
-        <symbol id="volcano" src="{$naturalIconPath}/volcano.svg" symbol-width="8" priority="{$pr-peak-named}"/>        
-        <caption  k="name" font-size="11" fill="#693600" font-style="bold_italic"  position="above"
+        <caption  k="name" font-size="11" fill="#821111" font-style="bold_italic"  position="below"
         stroke="#FFFFFF" stroke-width="1.5" symbol-id="volcano" priority="{$pr-label-peak}" />
-    </rule>
-    <rule e="node" k="*" v="*" zoom-min="13" zoom-max="14">        
-        <symbol id="volcano" src="{$naturalIconPath}/volcano.svg" symbol-width="8" priority="{$pr-peak-named}"/>
-    </rule>
-    <rule e="node" k="*" v="*" zoom-min="15">
-        <symbol id="volcano" src="{$naturalIconPath}/volcano.svg" symbol-width="9" priority="{$pr-peak-named}"/>
     </rule>
     <rule e="node" k="*" v="*" zoom-min="13" >
-        <caption  k="name" font-size="12" fill="#693600" font-style="bold_italic"  position="above"
+        <caption  k="name" font-size="12" fill="#821111" font-style="bold_italic"  position="below"
         stroke="#FFFFFF" stroke-width="1.5" symbol-id="volcano" priority="{$pr-label-peak}" />
-        <caption fill="#693600" font-size="11" font-style="bold" k="ele" position="below"
-            stroke="#FFFFFF" stroke-width="1.5" symbol-id="volcano" priority="{$pr-ele-peak}"/>
     </rule>
 </rule>
 
-<rule  e="node" k="geological" v="volcanic_vent" zoom-min="11">
-    <rule  e="any" k="*" v="*" zoom-max="15">
-        <symbol id="volcanic_vent" src="{$naturalIconPath}/volcanic_vent.svg" symbol-width="20" display="always" priority="{$pr-geyser}"/>
-    </rule> 
-    <rule  e="any" k="*" v="*" zoom-min="16">
-        <symbol id="volcanic_vent" src="{$naturalIconPath}/volcanic_vent.svg" symbol-width="24" display="always" priority="{$pr-geyser}"/>
-    </rule>                         
-    <rule e="node" k="*" v="*" zoom-min="16">
-    <caption k="name" symbol-id="volcanic_vent" 
-    font-style="bold" font-size="10" fill="#4040ff" stroke="#ffffff" stroke-width="2" priority="{$pr-label-natural}"/>
-    </rule>
-</rule>
-
-<rule  e="node" k="natural" v="geyser" zoom-min="14">
+<rule  e="node" k="natural" v="geyser" zoom-min="13">
     <rule  e="any" k="*" v="*" zoom-max="15">
         <symbol id="geyser" src="{$naturalIconPath}/geyser.svg" symbol-width="20" display="always" priority="{$pr-geyser}"/>
     </rule> 

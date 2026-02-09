@@ -838,7 +838,7 @@
         <osm-tag key="natural" value="cape" zoom-appear="14"/>
         <osm-tag key="natural" value="cave_entrance" zoom-appear="14"/>
         <osm-tag key="natural" value="cliff" zoom-appear="14"/>        
-        <osm-tag key="natural" value="geyser" zoom-appear="14"/>        
+        <osm-tag key="natural" value="geyser" zoom-appear="12"/>        
         <osm-tag key="natural" value="hot_spring" zoom-appear="14"/> 
         <osm-tag key="natural" value="mineral_spring" zoom-appear="14"/>       
         <osm-tag key="natural" value="peak" zoom-appear="11"/>
@@ -848,7 +848,7 @@
         <osm-tag key="natural" value="spring" zoom-appear="14"/>
         <osm-tag key="natural" value="stone" zoom-appear="14"/>  
         <osm-tag key="natural" value="tree" zoom-appear="15"/>                      
-        <osm-tag key="natural" value="volcano" zoom-appear="10"/>
+        <osm-tag key="natural" value="volcano" zoom-appear="11"/>
 
         <osm-tag key="waterway" value="waterfall" zoom-appear="13"/>
 
