@@ -290,7 +290,7 @@ natural=peak & man_made~'cross|summit_cross'  { delete man_made; summit:cross=ye
 if (natural=volcano)
     if (volcano:status=active | volcano:status=dormant)
         name=* & ele=*  {%localname = '{name}'; name='{name} ({ele})' }
-        { stop}
+        () { stop}
     end 
     name=* | ele=* { natural=peak; stop}    
     () { delete natural}
