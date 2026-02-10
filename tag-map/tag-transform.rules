@@ -335,9 +335,14 @@ end
 
 #amenity=public_bath & leisure=swimming_pool { delete amenity }
 amenity=spa { amenity=public_bath }
-bath:type="hot_spring;river" { bath:type=hot_spring }
 
-amenity=public_bath & leisure=water_park { delete leisure }
+if (amenity=public_bath)
+    bath:type="hot_spring;river" { bath:type=hot_spring }
+    natural=hot_spring { delete natural; bath:type=hot_spring }
+    leisure=water_park { delete leisure }
+end
+
+#amenity=public_bath & leisure=water_park { delete leisure }
 
 if (tourism=camp_site)
     leisure=summer_camp { delete tourism  }
