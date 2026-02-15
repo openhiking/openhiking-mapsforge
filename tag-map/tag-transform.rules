@@ -13,12 +13,11 @@ if (highway=*)
     motor_vehicle!=* & vehicle~'no|private|agricultural|forestry'  { motor_vehicle=no }
 
     if (highway~'secondary|tertiary') 
-        surface~'fine_gravel|compacted|pebblestone|rock|grass_paver|gravel|unpaved' { 4wd_only=yes }
-        surface~'ground|earth|dirt|grass|mud|sand' { highway=track; tracktype=grade3 }
+        surface~'fine_gravel|compacted|pebblestone|rock|grass_paver|gravel|unpaved|ground|earth|dirt|grass|mud|sand' { 4wd_only=yes }
     end
 
     if (highway~'unclassified|residential|living_street|service') 
-        surface~'fine_gravel|compacted|pebblestone|rock|grass_paver|gravel|unpaved' { highway=track; tracktype=grade1 }
+        surface~'fine_gravel|compacted|pebblestone|rock|grass_paver|gravel|unpaved|' { highway=track; tracktype=grade1 }
         surface~'ground|earth|dirt|grass|mud|sand' { highway=track; tracktype=grade3 }
     end
 

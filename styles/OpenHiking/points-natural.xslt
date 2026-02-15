@@ -64,11 +64,11 @@
 
 <rule e="node" k="natural" v="volcano" >
     <rule e="node" k="volcano:status" v="active" >   
-        <rule e="node" k="*" v="*" zoom-min="11" zoom-max="12">  
+        <rule e="node" k="*" v="*" zoom-min="9" zoom-max="11">  
             <symbol id="volcano" src="{$naturalIconPath}/volcano.svg" symbol-width="10" priority="{$pr-peak-named}"/>              
         </rule>
 
-        <rule e="node" k="*" v="*" zoom-min="13" zoom-max="14">        
+        <rule e="node" k="*" v="*" zoom-min="12" zoom-max="14">        
             <symbol id="volcano" src="{$naturalIconPath}/volcano.svg" symbol-width="14" priority="{$pr-peak-named}"/>
         </rule>
         <rule e="node" k="*" v="*" zoom-min="15">
