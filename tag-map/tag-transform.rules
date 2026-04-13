@@ -12,6 +12,8 @@ if (highway=*)
     vehicle!=* & motor_vehicle!=* & access~'no|private|agricultural|forestry' { motor_vehicle=no }
     motor_vehicle!=* & vehicle~'no|private|agricultural|forestry'  { motor_vehicle=no }
 
+    embankment=yes & embankment:side~'left|right' { delete embankment }    
+
     if (highway~'secondary|tertiary') 
         surface~'fine_gravel|compacted|pebblestone|rock|grass_paver|gravel|unpaved|ground|earth|dirt|grass|mud|sand' { 4wd_only=yes }
     end
