@@ -144,6 +144,8 @@ scope=node
 barrier=gate & entrance=home { delete barrier; delete entrance; stop }
 natural~'saddle|tree|bay' & name!=*  { delete natural; stop }
 place=locality & name!=* { delete place }
+ford=yes & intermittent=yes { delete ford}
+
 
 scope=way
 natural~'valley|gorge|ridge|bay' & name!=*  { delete natural; stop }
