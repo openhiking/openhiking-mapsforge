@@ -230,8 +230,6 @@
 <rule  e="any" k="historic" v="memorial" zoom-min="16">
   <rule  e="any" k="memorial" v="plaque" >
     <symbol id="memorial" src="{$historicIconPath}/plaque.svg" symbol-width="16" priority="{$pr-memorial}"/>
-  </rule>
-  <rule e="any" k="*" v="*" zoom-min="16">
     <caption k="name" symbol-id="memorial" 
     font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-historical}"/>
   </rule>
@@ -240,10 +238,8 @@
 <rule  e="any" k="historic" v="memorial|monument" zoom-min="16">
   <rule  e="any" k="memorial" v="~" >
     <symbol id="memorial" src="{$historicIconPath}/memorial.svg" symbol-width="14" priority="{$pr-memorial}"/>
-  </rule>
-  <rule e="any" k="*" v="*" zoom-min="16">
-    <caption k="name" symbol-id="memorial" 
-    font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-historical}"/>
+      <caption k="name" symbol-id="memorial" 
+      font-style="bold" font-size="10" fill="#666666" stroke="#ffffff" stroke-width="2" priority="{$pr-label-historical}"/>
   </rule>
 </rule>
 
