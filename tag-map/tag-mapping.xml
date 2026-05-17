@@ -897,6 +897,11 @@
         <osm-tag key="place" value="island" zoom-appear="12"/>
         <osm-tag key="place" value="islet" zoom-appear="12"/>        
         <osm-tag key="place" value="locality" zoom-appear="12"/>
+
+        <osm-tag key="capital" renderable="false" value="3"/>
+        <osm-tag key="capital" renderable="false" value="4"/>
+        <osm-tag key="capital" renderable="false" value="5"/>
+        <osm-tag key="capital" renderable="false" value="6"/>
     </pois>
 
 <!-- ************************************************** 

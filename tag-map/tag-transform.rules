@@ -92,6 +92,7 @@ if (landuse=industrial)
 end
 
 natural=bare_rock & geological=volcanic_lava_field { delete natural}
+man_made=clearcut & natural=scrub { delete natural}
 
 # Pitch surfaces
 scope=way,relation

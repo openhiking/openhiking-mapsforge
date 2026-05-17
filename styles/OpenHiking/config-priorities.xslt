@@ -12,13 +12,17 @@
 
 
 <!-- Priority 40 -->
+<xsl:variable name="pr-capital">44</xsl:variable>
+<xsl:variable name="pr-city-capital3">43</xsl:variable>
+<xsl:variable name="pr-city-capital5">42</xsl:variable>
+<xsl:variable name="pr-city">41</xsl:variable>
+<xsl:variable name="pr-town">40</xsl:variable>
+<xsl:variable name="pr-mountain">40</xsl:variable>
+
 <xsl:variable name="pr-tower-lookout">41</xsl:variable>
 <xsl:variable name="pr-alpine-hut">40</xsl:variable>
 <xsl:variable name="pr-castle">40</xsl:variable>
 <xsl:variable name="pr-historic-ruins">40</xsl:variable>
-<xsl:variable name="pr-city">40</xsl:variable>
-<xsl:variable name="pr-town">40</xsl:variable>
-<xsl:variable name="pr-mountain">40</xsl:variable>
 
 <!-- Priority 30 -->
 <xsl:variable name="pr-peak-named">30</xsl:variable>

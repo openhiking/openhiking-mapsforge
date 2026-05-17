@@ -110,6 +110,18 @@
   </rule>
 </rule>
 
+<rule  e="way" k="man_made" v="clearcut">
+  <area fill="#e2fbac" scale="none" />   
+  <rule e="any" k="*" v="*">
+    <rule e="way" k="*" v="*" zoom-max="14">
+      <area src="file:/patterns/clearcut.svg" symbol-height="32"/>
+    </rule>
+    <rule e="way" k="*" v="*" zoom-min="15">
+      <area src="file:/patterns/clearcut.svg" symbol-height="48"/>
+    </rule>
+  </rule>
+</rule>
+
 <rule e="way" k="natural" v="sand">
   <area fill="#F8F898" scale="none"/>
     <rule e="way" k="*" v="*" zoom-min="14" zoom-max="16">
