@@ -290,7 +290,6 @@ disused:natural=spring  { natural=spring; seasonal=yes; stop }
 scope=node
 natural=peak & man_made~'cross|summit_cross'  { delete man_made; summit:cross=yes }
 
-
 if (natural=volcano)
     if (volcano:status=active | volcano:status=dormant)
         name=* & ele=*  { name='{name} ({ele})' }

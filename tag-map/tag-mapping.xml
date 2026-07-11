@@ -820,6 +820,7 @@
                P O I   N A T U R A L
     ************************************************** -->
     <ways>
+        <osm-tag key="natural" value="hot_spring"  label-position="true" zoom-appear="14"/> 
         <osm-tag key="natural" value="sinkhole" label-position="true" zoom-appear="14"/>        
         <osm-tag key="natural" value="volcano" label-position="true" zoom-appear="10"/>
 
@@ -837,7 +838,8 @@
         <osm-tag key="natural" value="bay" zoom-appear="9"/>    
         <osm-tag key="natural" value="cape" zoom-appear="14"/>
         <osm-tag key="natural" value="cave_entrance" zoom-appear="14"/>
-        <osm-tag key="natural" value="cliff" zoom-appear="14"/>        
+        <osm-tag key="natural" value="cliff" zoom-appear="14"/>      
+        <osm-tag key="natural" value="fumarole" zoom-appear="14"/>           
         <osm-tag key="natural" value="geyser" zoom-appear="12"/>        
         <osm-tag key="natural" value="hot_spring" zoom-appear="14"/> 
         <osm-tag key="natural" value="mineral_spring" zoom-appear="14"/>       
