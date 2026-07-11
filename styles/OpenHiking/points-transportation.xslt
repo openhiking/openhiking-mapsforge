@@ -11,7 +11,7 @@
 
 <xsl:template name="points-transportation">
 
-<rule  e="any" k="amenity" v="parking" zoom-min="16">
+<rule  e="any" k="amenity" v="parking" zoom-min="15">
     <symbol id="parking" src="{$transportationIconPath}/parking.svg" symbol-width="14" priority="{$pr-parking}"/>
     <rule e="any" k="*" v="*" >
         <caption k="name" symbol-id="parking" 
