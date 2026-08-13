@@ -6,6 +6,8 @@ if (highway=*)
 #    highway=path & layer="-5" { delete layer }
     proposed=yes | disused=yes | abandoned=yes  { delete highway;  delete surface; stop }
     highway=service & serice=driveway & access=private & trail_color!=* { delete highway;  delete surface; stop }
+    highway=track & fixme=resurvey & obstacle=vegetation { highway=track_obscure; delete obstacle; stop}
+    highway=path & fixme=resurvey & obstacle=vegetation { highway=path_obscure; delete obstacle; stop}
 
     highway~'primary|secondary|tertiary|unclassified|residential|living_street|service|track|path|footway|cycleway|bridleway|step' & access~'no|private|agricultural|forestry' & foot!=* { foot=no }
     access=customers & foot!=* { foot=customers }
