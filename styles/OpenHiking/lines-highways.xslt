@@ -11,6 +11,7 @@
 
 <xsl:template name="lines-highways">
 
+
 <rule e="way" k="highway" v="*" >
   <rule e="way" k="area" v="~">
         <rule e="way" k="highway" v="footway|platform" zoom-min="{$zm-footway}">
@@ -60,6 +61,14 @@
                 </rule>                                
             </rule>
         </rule>            
+        <rule e="way" k="highway" v="path_obscure">
+            <rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}"> 
+                <line stroke="{$lc-obscure}" stroke-width="{$lw-obscure2}" stroke-dasharray="4,4"  stroke-linecap="butt"/>
+            </rule>
+            <rule e="way" k="*" v="*" zoom-min="{$zm-level3}"> 
+                <line stroke="{$lc-obscure}" stroke-width="{$lw-obscure3}" stroke-dasharray="7,7"  stroke-linecap="butt" />            
+            </rule>
+        </rule>
         <rule e="way" k="highway" v="bridleway" zoom-min="{$zm-bridleway}">
             <line stroke="{$lc-bridleway}" stroke-width="{$lw-bridleway}" stroke-dasharray="4,4"  stroke-linecap="butt"/>                      
         </rule>
@@ -111,7 +120,7 @@
                     <line stroke="{$lc-track}" stroke-width="{$lw-track2}" stroke-dasharray="13,3"  stroke-linecap="butt" />
                 </rule>
                 <rule e="way" k="tracktype" v="grade5" > 
-                    <line stroke="{$lc-track}" stroke-width="{$lw-track2}" stroke-dasharray="5,4"  stroke-linecap="butt" />
+                    <line stroke="{$lc-track}" stroke-width="{$lw-track2}" stroke-dasharray="8,3"  stroke-linecap="butt" />
                 </rule>
             </rule>            
             <rule e="way" k="*" v="*" zoom-min="{$zm-level3}"> 
@@ -124,6 +133,17 @@
                 <rule e="way" k="tracktype" v="grade5" > 
                     <line stroke="{$lc-track}" stroke-width="{$lw-track3}" stroke-dasharray="12,8"  stroke-linecap="butt" />
                 </rule>
+            </rule>
+        </rule>
+        <rule e="way" k="highway" v="track_obscure">
+            <rule e="way" k="*" v="*" zoom-min="{$zm-track}" zoom-max="{$zm-level2 - 1}"> 
+                <line stroke="{$lc-obscure}" stroke-width="{$lw-obscure}" stroke-dasharray="5,4"  stroke-linecap="butt"/>
+            </rule>
+            <rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}"> 
+                <line stroke="{$lc-obscure}" stroke-width="{$lw-obscure2}" stroke-dasharray="8,3"  stroke-linecap="butt"/>
+            </rule>
+            <rule e="way" k="*" v="*" zoom-min="{$zm-level3}"> 
+                <line stroke="{$lc-obscure}" stroke-width="{$lw-obscure3}" stroke-dasharray="12,8"  stroke-linecap="butt" />            
             </rule>
         </rule>
         <rule e="way" k="highway" v="raceway" zoom-min="{$zm-raceway}">

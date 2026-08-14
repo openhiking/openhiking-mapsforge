@@ -78,6 +78,9 @@
 <xsl:variable name="lw-track">0.65</xsl:variable>
 <xsl:variable name="lw-track2">0.5</xsl:variable>
 <xsl:variable name="lw-track3">0.3</xsl:variable>
+<xsl:variable name="lw-obscure">0.35</xsl:variable>
+<xsl:variable name="lw-obscure2">0.3</xsl:variable>
+<xsl:variable name="lw-obscure3">0.2</xsl:variable>
 <xsl:variable name="lw-pedestrian">0.4</xsl:variable>
 <xsl:variable name="lw-footway">0.2</xsl:variable>
 <xsl:variable name="lw-bridleway">0.4</xsl:variable>
@@ -165,6 +168,8 @@
 <xsl:variable name="lc-alpine-path">#000000</xsl:variable>
 <xsl:variable name="lc-steps">#BD3041</xsl:variable>
 <xsl:variable name="lc-ferrata">#D90000</xsl:variable>
+<xsl:variable name="lc-obscure">#5e5e5e</xsl:variable>
+
 
 <xsl:variable name="lc-motorway-tunnel">#fd957c</xsl:variable>
 <xsl:variable name="lc-motorway_link-tunnel">#fd957c</xsl:variable>
