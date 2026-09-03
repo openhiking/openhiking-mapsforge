@@ -57,10 +57,10 @@
 <rule e="way" k="landuse" v="recreation_ground">
     <area fill="#CFFF9E" scale="none"/>
   <rule e="way" k="*" v="*" zoom-max="14">
-    <area src="file:/patterns/park.svg" symbol-height="20"/>
+    <area src="{$patternPath}/park.svg" symbol-height="20"/>
   </rule>
   <rule e="way" k="*" v="*" zoom-min="15">
-    <area src="file:/patterns/park.svg" symbol-height="30"/>
+    <area src="{$patternPath}/park.svg" symbol-height="30"/>
   </rule>
   <rule e="way" k="*" v="*" zoom-min="16">
     <caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
@@ -185,24 +185,24 @@
     <area fill="#B8E4A8" stroke="#C0C0C0" stroke-width="0.8" scale="none"/>
     <rule e="any" k="*" v="*" zoom-max="15">
       <rule e="any" k="religion" v="christian">
-        <area src="file:/patterns/cemetery.svg" symbol-scaling="size" symbol-height="32" />
+        <area src="{$patternPath}/cemetery.svg" symbol-scaling="size" symbol-height="32" />
       </rule>
       <rule e="any" k="religion" v="jewish">
-        <area src="file:/patterns/cemetery2.svg" symbol-scaling="size" symbol-height="32" />
+        <area src="{$patternPath}/cemetery2.svg" symbol-scaling="size" symbol-height="32" />
       </rule>
       <rule e="any" k="religion" v="~">
-        <area src="file:/patterns/cemetery.svg" symbol-scaling="size" symbol-height="32" />
+        <area src="{$patternPath}/cemetery.svg" symbol-scaling="size" symbol-height="32" />
       </rule>
     </rule>
     <rule e="any" k="*" v="*" zoom-min="16">
       <rule e="any" k="religion" v="christian">
-        <area src="file:/patterns/cemetery.svg" symbol-scaling="size" symbol-height="64" />
+        <area src="{$patternPath}/cemetery.svg" symbol-scaling="size" symbol-height="64" />
       </rule>
       <rule e="any" k="religion" v="jewish">
-        <area src="file:/patterns/cemetery2.svg" symbol-scaling="size" symbol-height="64" />
+        <area src="{$patternPath}/cemetery2.svg" symbol-scaling="size" symbol-height="64" />
       </rule>
       <rule e="any" k="religion" v="~">
-        <area src="file:/patterns/cemetery.svg" symbol-scaling="size" symbol-height="64" />
+        <area src="{$patternPath}/cemetery.svg" symbol-scaling="size" symbol-height="64" />
       </rule>
     </rule>
     <rule e="way" k="*" v="*" zoom-min="16">

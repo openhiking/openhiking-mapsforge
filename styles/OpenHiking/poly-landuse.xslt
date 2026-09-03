@@ -57,10 +57,10 @@
 <rule e="way" k="tourism" v="zoo" closed="yes">
   <area fill="#CFFF9E" stroke="#1f7d18" stroke-width="1" scale="none"/>
   <rule e="way" k="*" v="*" zoom-max="14">
-    <area src="file:/patterns/zoo.svg" symbol-height="20"/>
+    <area src="{$patternPath}/zoo.svg" symbol-height="20"/>
   </rule>
   <rule e="way" k="*" v="*" zoom-min="15">
-    <area src="file:/patterns/zoo.svg" symbol-height="30"/>
+    <area src="{$patternPath}/zoo.svg" symbol-height="30"/>
   </rule>  
   <rule e="way" k="*" v="*" zoom-min="16">
     <caption k="name" font-style="italic" font-family="serif" font-size="12" fill="#000000" stroke="#FFFFFF" stroke-width="1.7" />
@@ -90,10 +90,10 @@
 <rule e="way" k="landuse" v="orchard">
     <area fill="#F8FCC8"/>
     <rule e="way" k="*" v="*" zoom-max="14">
-      <area src="file:/patterns/orchard.svg" symbol-height="16"/>
+      <area src="{$patternPath}/orchard.svg" symbol-height="16"/>
     </rule>
     <rule e="way" k="*" v="*" zoom-min="15">
-      <area src="file:/patterns/orchard.svg" symbol-height="20"/>
+      <area src="{$patternPath}/orchard.svg" symbol-height="20"/>
   </rule>
 </rule>
 
@@ -102,10 +102,10 @@
   <area fill="#e2fbac" scale="none" />   
   <rule e="any" k="*" v="*">
     <rule e="way" k="*" v="*" zoom-max="14">
-      <area src="file:/patterns/scrub.svg" symbol-height="28"/>
+      <area src="{$patternPath}/scrub.svg" symbol-height="28"/>
     </rule>
     <rule e="way" k="*" v="*" zoom-min="15">
-      <area src="file:/patterns/scrub.svg" symbol-height="42"/>
+      <area src="{$patternPath}/scrub.svg" symbol-height="42"/>
     </rule>
   </rule>
 </rule>
@@ -114,10 +114,10 @@
   <area fill="#e2fbac" scale="none" />   
   <rule e="any" k="*" v="*">
     <rule e="way" k="*" v="*" zoom-max="14">
-      <area src="file:/patterns/clearcut.svg" symbol-height="32"/>
+      <area src="{$patternPath}/clearcut.svg" symbol-height="32"/>
     </rule>
     <rule e="way" k="*" v="*" zoom-min="15">
-      <area src="file:/patterns/clearcut.svg" symbol-height="48"/>
+      <area src="{$patternPath}/clearcut.svg" symbol-height="48"/>
     </rule>
   </rule>
 </rule>
@@ -139,10 +139,10 @@
 <rule e="way" k="landuse" v="vineyard">
   <area fill="#D8FCB0"/>
   <rule e="way" k="*" v="*" zoom-max="14">
-    <area src="file:/patterns/vineyard.svg" symbol-height="20"/>
+    <area src="{$patternPath}/vineyard.svg" symbol-height="20"/>
   </rule>
   <rule e="way" k="*" v="*" zoom-min="15">
-    <area src="file:/patterns/vineyard.svg" symbol-height="30"/>
+    <area src="{$patternPath}/vineyard.svg" symbol-height="30"/>
   </rule>
 </rule>
 
@@ -162,23 +162,23 @@
 <rule  e="way" k="natural" v="scree">
   <area fill="#ebedeb" scale="none"/>
   <rule e="way" k="*" v="*" zoom-max="14">
-    <area src="file:/patterns/scree.svg" symbol-height="14"/>
+    <area src="{$patternPath}/scree.svg" symbol-height="14"/>
   </rule>
   <rule e="way" k="*" v="*" zoom-min="15">
-    <area src="file:/patterns/scree.svg" symbol-height="18"/>
+    <area src="{$patternPath}/scree.svg" symbol-height="18"/>
   </rule>
 </rule>
 
 <rule  e="way" k="natural" v="shingle">
   <area fill="#E0E4E0" scale="none"/>
   <rule e="way" k="*" v="*" zoom-max="12">
-    <area src="file:/patterns/shingle.svg" symbol-height="14"/>
+    <area src="{$patternPath}/shingle.svg" symbol-height="14"/>
   </rule>
   <rule e="way" k="*" v="*" zoom-min="13" zoom-max="14">
-    <area src="file:/patterns/shingle.svg" symbol-height="18"/>
+    <area src="{$patternPath}/shingle.svg" symbol-height="18"/>
   </rule>
   <rule e="way" k="*" v="*" zoom-min="15">
-    <area src="file:/patterns/shingle.svg" symbol-height="25"/>
+    <area src="{$patternPath}/shingle.svg" symbol-height="25"/>
   </rule>
 </rule>
 
@@ -186,20 +186,20 @@
 <rule  e="way" k="natural" v="bare_rock">
   <area fill="#E0E4E0" scale="none"/>
   <rule e="way" k="*" v="*" zoom-max="15">
-    <area src="file:/patterns/bare_rock.svg" symbol-height="18"/>
+    <area src="{$patternPath}/bare_rock.svg" symbol-height="18"/>
   </rule>
   <rule e="way" k="*" v="*" zoom-min="16">
-    <area src="file:/patterns/bare_rock.svg" symbol-height="32"/>
+    <area src="{$patternPath}/bare_rock.svg" symbol-height="32"/>
   </rule>
 </rule>
 
 <rule  e="way" k="geological" v="volcanic_lava_field">
   <area fill="#E0E4E0" scale="none"/>
   <rule e="way" k="*" v="*" zoom-max="15">
-    <area src="file:/patterns/lava_field.svg"   />
+    <area src="{$patternPath}/lava_field.svg"   />
   </rule>
   <rule e="way" k="*" v="*" zoom-min="16">
-    <area src="file:/patterns/lava_field.svg" />
+    <area src="{$patternPath}/lava_field.svg" />
   </rule>
 </rule>
 
@@ -211,10 +211,10 @@
 <rule e="way" k="landuse" v="quarry">
   <area fill="#E0E4E0"/>
   <rule e="way" k="*" v="*" zoom-max="15">
-    <area src="file:/patterns/quarry.svg" symbol-height="32"/>
+    <area src="{$patternPath}/quarry.svg" symbol-height="32"/>
   </rule>
   <rule e="way" k="*" v="*" zoom-min="16">
-    <area src="file:/patterns/quarry.svg" symbol-height="48"/>
+    <area src="{$patternPath}/quarry.svg" symbol-height="48"/>
   </rule>
 </rule>
 
