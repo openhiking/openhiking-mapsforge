@@ -77,6 +77,7 @@ end
 scope=way,relation
 
 if (boundary=administrative)
+    border_type=military_area { delete boundary; type=multipolygon; landuse=military; stop }
     admin_level~'4|5|6|7|8|9' { delete boundary; delete admin_level }
 end
 
