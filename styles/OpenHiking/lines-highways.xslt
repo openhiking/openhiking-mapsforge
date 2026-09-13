@@ -246,12 +246,17 @@
           <line stroke="{$lc-tertiary-tunnel}" stroke-width="{$lw-tertiary - 0.4}" />          
         </rule>
         <rule e="way" k="highway" v="secondary|secondary_link" zoom-min="{$zm-secondary}">
+        <!--
             <line stroke="{$bc-secondary}" stroke-dasharray="3,3" stroke-width="{$lw-secondary}" stroke-linecap="butt" scale="all"/> 
+        -->
             <line stroke="{$lc-secondary-tunnel}" stroke-width="{$lw-secondary - 0.4}" />          
         </rule>
         <rule e="way" k="highway" v="primary|primary_link" zoom-min="{$zm-primary}">
+        <!--
            <line stroke="{$bc-primary}" stroke-dasharray="3,3" stroke-width="{$lw-primary}" stroke-linecap="butt" scale="all"/> 
-          <line stroke="{$lc-primary-tunnel}" stroke-width="{$lw-primary - 0.4}" />          
+         -->     
+ 
+          <line stroke="{$lc-primary-tunnel}" stroke-width="{$lw-primary - 0.4}" />      
         </rule>
         <rule e="way" k="highway" v="trunk_link" zoom-min="{$zm-trunk_link}">
           <line stroke="{$bc-trunk_link}" stroke-dasharray="3,3" stroke-width="{$lw-trunk_link}" stroke-linecap="butt" scale="all"/>
@@ -262,11 +267,15 @@
           <line stroke="{$lc-trunk-tunnel}" stroke-width="{$lw-trunk - 0.4}" stroke-linecap="butt"/>          
         </rule>
         <rule e="way" k="highway" v="motorway_link" zoom-min="{$zm-motorway_link}">
+        <!--
           <line stroke="{$bc-motorway_link}" stroke-dasharray="3,3" stroke-width="{$lw-motorway_link}" stroke-linecap="butt" scale="all"/>
+        -->  
           <line stroke="{$lc-motorway_link-tunnel}" stroke-width="{$lw-motorway_link - 0.4}" stroke-linecap="butt"/>          
         </rule>
         <rule e="way" k="highway" v="motorway" zoom-min="{$zm-motorway}">
+        <!--
           <line stroke="{$bc-motorway}" stroke-dasharray="3,3" stroke-width="{$lw-motorway}" stroke-linecap="butt" scale="all"/>
+        -->  
           <line stroke="{$lc-motorway-tunnel}"  stroke-width="{$lw-motorway - 0.4}" stroke-linecap="butt"/>          
         </rule> 
     </rule>

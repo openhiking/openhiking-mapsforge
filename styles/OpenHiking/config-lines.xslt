@@ -47,12 +47,12 @@
 -->
 
 
-<xsl:variable name="lw-trail-highlight-low">2.6</xsl:variable>
-<xsl:variable name="lw-trail-highlight">1.2</xsl:variable>
+<xsl:variable name="lw-trail-highlight-low">2.4</xsl:variable>
+<xsl:variable name="lw-trail-highlight">1.1</xsl:variable>
 <xsl:variable name="lw-trail-highlight-deep">0.5</xsl:variable>
-<xsl:variable name="lw-trail-highlight-l2">0.9</xsl:variable>
-<xsl:variable name="lw-trail-highlight-l3">0.6</xsl:variable>
-<xsl:variable name="lw-trail-highlight-l4">0.35</xsl:variable>
+<xsl:variable name="lw-trail-highlight-l2">0.8</xsl:variable>
+<xsl:variable name="lw-trail-highlight-l3">0.5</xsl:variable>
+<xsl:variable name="lw-trail-highlight-l4">0.3</xsl:variable>
 
 
 <xsl:variable name="lw-motorway">2.8</xsl:variable>
@@ -66,15 +66,15 @@
 <xsl:variable name="lw-residential2">1.8</xsl:variable>
 <xsl:variable name="lw-residential3">1.6</xsl:variable>
 <xsl:variable name="lw-living_street">1.3</xsl:variable>
-<xsl:variable name="lw-unclassified">2.5</xsl:variable>
-<xsl:variable name="lw-unclassified2">1.8</xsl:variable>
-<xsl:variable name="lw-unclassified3">1.6</xsl:variable>
+<xsl:variable name="lw-unclassified">2.4</xsl:variable>
+<xsl:variable name="lw-unclassified2">1.6</xsl:variable>
+<xsl:variable name="lw-unclassified3">1.4</xsl:variable>
 <xsl:variable name="lw-service">2.2</xsl:variable>
 <xsl:variable name="lw-service2">1.2</xsl:variable>
 <xsl:variable name="lw-cycleway">1.2</xsl:variable>
 <xsl:variable name="lw-raceway">0.6</xsl:variable>
-<xsl:variable name="lw-macadam">2.5</xsl:variable>
-<xsl:variable name="lw-macadam2">1.5</xsl:variable>
+<xsl:variable name="lw-macadam">2.4</xsl:variable>
+<xsl:variable name="lw-macadam2">1.4</xsl:variable>
 <xsl:variable name="lw-track">0.65</xsl:variable>
 <xsl:variable name="lw-track2">0.5</xsl:variable>
 <xsl:variable name="lw-track3">0.3</xsl:variable>
@@ -171,12 +171,12 @@
 <xsl:variable name="lc-obscure">#5e5e5e</xsl:variable>
 
 
-<xsl:variable name="lc-motorway-tunnel">#fd957c</xsl:variable>
+<xsl:variable name="lc-motorway-tunnel">#80FC7352</xsl:variable>
 <xsl:variable name="lc-motorway_link-tunnel">#fd957c</xsl:variable>
 <xsl:variable name="lc-trunk-tunnel">#fd957c</xsl:variable>
 <xsl:variable name="lc-trunk_link-tunnel">#fd957c</xsl:variable>
-<xsl:variable name="lc-primary-tunnel">#fcb871</xsl:variable>
-<xsl:variable name="lc-secondary-tunnel">#fef99e</xsl:variable>
+<xsl:variable name="lc-primary-tunnel">#80FB9C39</xsl:variable>
+<xsl:variable name="lc-secondary-tunnel">#80FEF458</xsl:variable>
 <xsl:variable name="lc-tertiary-tunnel">#fef893</xsl:variable>
 <xsl:variable name="lc-unclassified-tunnel">#FFFFFF</xsl:variable>
 <xsl:variable name="lc-residential-tunnel">#FFFFFF</xsl:variable>
