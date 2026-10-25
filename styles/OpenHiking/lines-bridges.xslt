@@ -5,6 +5,8 @@
 <xsl:variable name="lc-bridge-bg">#EEEEEE</xsl:variable>
 <xsl:variable name="lw-bridge-border">1.9</xsl:variable>
 <xsl:variable name="lw-bridge-base">1.1</xsl:variable>
+<xsl:variable name="lw-bridge-border-thin">1.0</xsl:variable>
+<xsl:variable name="lw-bridge-base-thin">0.7</xsl:variable>
 
 <xsl:template name="lines-bridges">
 
@@ -21,6 +23,8 @@
                     <xsl:with-param name="lw-l2" select="$lw-path2" />
                     <xsl:with-param name="lw-l3" select="$lw-path3" />
                     <xsl:with-param name="lw-l4" select="$lw-path4" />
+                    <xsl:with-param name="lw-border" select="$lw-bridge-border-thin" />
+                    <xsl:with-param name="lw-base" select="$lw-bridge-base-thin" />
                 </xsl:call-template>	
             </rule>
 
@@ -28,10 +32,11 @@
                 <xsl:call-template name="bridge-rendering">
                     <xsl:with-param name="zm-highway" select="$zm-footway" />
                     <xsl:with-param name="lw-l1" select="$lw-footway" />
+                    <xsl:with-param name="lw-border" select="$lw-bridge-border-thin" />
+                    <xsl:with-param name="lw-base" select="$lw-bridge-base-thin" />
                 </xsl:call-template>
             </rule>
 
-           
             <rule e="way" k="highway" v="track">
                 <rule e="way" k="tracktype" v="grade1|grade2">
                     <xsl:call-template name="bridge-rendering-12">
@@ -56,6 +61,8 @@
                 <xsl:call-template name="bridge-rendering">
                     <xsl:with-param name="zm-highway" select="$zm-pedestrian" />
                     <xsl:with-param name="lw-l1" select="$lw-pedestrian" />
+                    <xsl:with-param name="lw-border" select="$lw-bridge-border-thin" />
+                    <xsl:with-param name="lw-base" select="$lw-bridge-base-thin" />
                 </xsl:call-template>
             </rule>
 
@@ -63,6 +70,8 @@
                 <xsl:call-template name="bridge-rendering">
                     <xsl:with-param name="zm-highway" select="$zm-cycleway" />
                     <xsl:with-param name="lw-l1" select="$lw-cycleway" />
+                    <xsl:with-param name="lw-border" select="$lw-bridge-border" />
+                    <xsl:with-param name="lw-base" select="$lw-bridge-base" />
                 </xsl:call-template>
             </rule>
 
@@ -87,6 +96,8 @@
                 <xsl:call-template name="bridge-rendering">
                     <xsl:with-param name="zm-highway" select="$zm-residential" />
                     <xsl:with-param name="lw-l1" select="$lw-living_street" />
+                    <xsl:with-param name="lw-border" select="$lw-bridge-border" />
+                    <xsl:with-param name="lw-base" select="$lw-bridge-base" />
                 </xsl:call-template>
             </rule>
             <rule e="way" k="highway" v="unclassified">
@@ -102,6 +113,8 @@
                 <xsl:call-template name="bridge-rendering">
                     <xsl:with-param name="zm-highway" select="$zm-tertiary" />
                     <xsl:with-param name="lw-l1" select="$lw-tertiary" />
+                    <xsl:with-param name="lw-border" select="$lw-bridge-border" />
+                    <xsl:with-param name="lw-base" select="$lw-bridge-base" />
                 </xsl:call-template>
             </rule>
 
@@ -109,6 +122,8 @@
                 <xsl:call-template name="bridge-rendering">
                     <xsl:with-param name="zm-highway" select="$zm-secondary" />
                     <xsl:with-param name="lw-l1" select="$lw-secondary" />
+                    <xsl:with-param name="lw-border" select="$lw-bridge-border" />
+                    <xsl:with-param name="lw-base" select="$lw-bridge-base" />
                 </xsl:call-template>
             </rule>
 
@@ -116,6 +131,8 @@
                 <xsl:call-template name="bridge-rendering">
                     <xsl:with-param name="zm-highway" select="$zm-primary" />
                     <xsl:with-param name="lw-l1" select="$lw-primary" />
+                    <xsl:with-param name="lw-border" select="$lw-bridge-border" />
+                    <xsl:with-param name="lw-base" select="$lw-bridge-base" />
                 </xsl:call-template>
             </rule>
 
@@ -123,6 +140,8 @@
                 <xsl:call-template name="bridge-rendering">
                     <xsl:with-param name="zm-highway" select="$zm-trunk" />
                     <xsl:with-param name="lw-l1" select="$lw-trunk" />
+                    <xsl:with-param name="lw-border" select="$lw-bridge-border" />
+                    <xsl:with-param name="lw-base" select="$lw-bridge-base" />
                 </xsl:call-template>
             </rule>
 
@@ -130,25 +149,14 @@
                 <xsl:call-template name="bridge-rendering">
                     <xsl:with-param name="zm-highway" select="$zm-motorway" />
                     <xsl:with-param name="lw-l1" select="$lw-motorway" />
+                    <xsl:with-param name="lw-border" select="$lw-bridge-border" />
+                    <xsl:with-param name="lw-base" select="$lw-bridge-base" />
                 </xsl:call-template>
             </rule>
 
 
         <!-- 
-        <rule e="way" k="highway" v="footway|platform" zoom-min="{$zm-footway}">
-            <line stroke="{$lc-bridge}" stroke-width="{$lw-footway + $lw-bridge-border}" stroke-linecap="butt"  /> 
-            <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-footway + $lw-bridge-base}" stroke-linecap="butt" />            
-        </rule>
-
-        <rule e="way" k="highway" v="path" zoom-min="{$zm-path}">
-            <line stroke="{$lc-bridge}" stroke-width="{$lw-path + $lw-bridge-border}" stroke-linecap="butt"  /> 
-            <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-path + $lw-bridge-base}" stroke-linecap="butt" />          
-        </rule>
-        <rule e="way" k="highway" v="bridleway" zoom-min="{$zm-bridleway}">
-            <line stroke="{$lc-bridge}" stroke-width="{$lw-bridleway + $lw-bridge-border}" stroke-linecap="butt"  /> 
-            <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-bridleway + $lw-bridge-base}" stroke-linecap="butt" /> 
-        </rule>
-
+ 
         <rule e="way" k="highway" v="steps" zoom-min="{$zm-steps}">
             <line stroke="{$lc-bridge}" stroke-width="{$lw-steps + $lw-bridge-border}" stroke-linecap="butt"  /> 
             <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-steps + $lw-bridge-base}" stroke-linecap="butt" /> 
@@ -274,12 +282,15 @@
 
 </xsl:template>
 
+
 <xsl:template name="bridge-rendering">
 <xsl:param name="zm-highway" />
 <xsl:param name="lw-l1" />
+<xsl:param name="lw-border"/>
+<xsl:param name="lw-base"/>
 	<rule e="way" k="*" v="*" zoom-min="{$zm-highway}" >		
-        <line stroke="{$lc-bridge}" stroke-width="{$lw-l1 + $lw-bridge-border}" stroke-linecap="butt"  /> 
-        <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-l1 + $lw-bridge-base}" stroke-linecap="butt" /> 
+        <line stroke="{$lc-bridge}" stroke-width="{$lw-l1 + $lw-border}" stroke-linecap="butt"  /> 
+        <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-l1 + $lw-base}" stroke-linecap="butt" /> 
 	</rule>
 </xsl:template>
 
@@ -341,21 +352,23 @@
 <xsl:param name="lw-l2" />
 <xsl:param name="lw-l3" />
 <xsl:param name="lw-l4" />
+<xsl:param name="lw-border"/>
+<xsl:param name="lw-base"/>
 	<rule e="way" k="*" v="*" zoom-min="{$zm-highway}" zoom-max="{$zm-level2 - 1}">		
-        <line stroke="{$lc-bridge}" stroke-width="{$lw-l1 + $lw-bridge-border}" stroke-linecap="butt"  /> 
-        <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-l1 + $lw-bridge-base}" stroke-linecap="butt" /> 
+        <line stroke="{$lc-bridge}" stroke-width="{$lw-l1 + $lw-border}" stroke-linecap="butt"  /> 
+        <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-l1 + $lw-base}" stroke-linecap="butt" /> 
 	</rule>
 	<rule e="way" k="*" v="*" zoom-min="{$zm-level2}" zoom-max="{$zm-level3 - 1}" >	
-        <line stroke="{$lc-bridge}" stroke-width="{$lw-l2 + $lw-bridge-border}" stroke-linecap="butt"  /> 
-        <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-l2 + $lw-bridge-base}" stroke-linecap="butt" /> 
+        <line stroke="{$lc-bridge}" stroke-width="{$lw-l2 + $lw-border}" stroke-linecap="butt"  /> 
+        <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-l2 + $lw-base}" stroke-linecap="butt" /> 
 	</rule>
 	<rule e="way" k="*" v="*" zoom-min="{$zm-level3}" zoom-max="{$zm-level4 - 1}" >
-        <line stroke="{$lc-bridge}" stroke-width="{$lw-l3 + $lw-bridge-border}" stroke-linecap="butt"  /> 
-        <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-l3 + $lw-bridge-base}" stroke-linecap="butt" /> 
+        <line stroke="{$lc-bridge}" stroke-width="{$lw-l3 + $lw-border}" stroke-linecap="butt"  /> 
+        <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-l3 + $lw-base}" stroke-linecap="butt" /> 
 	</rule>
 	<rule e="way" k="*" v="*" zoom-min="{$zm-level4}">		
-        <line stroke="{$lc-bridge}" stroke-width="{$lw-l4 + $lw-bridge-border}" stroke-linecap="butt"  /> 
-        <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-l4 + $lw-bridge-base}" stroke-linecap="butt" /> 
+        <line stroke="{$lc-bridge}" stroke-width="{$lw-l4 + $lw-border}" stroke-linecap="butt"  /> 
+        <line stroke="{$lc-bridge-bg}" stroke-width="{$lw-l4 + $lw-base}" stroke-linecap="butt" /> 
 	</rule>		 
 </xsl:template>
 

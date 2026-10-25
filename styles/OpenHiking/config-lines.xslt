@@ -88,7 +88,7 @@
 <xsl:variable name="lw-path2">0.5</xsl:variable>
 <xsl:variable name="lw-path3">0.3</xsl:variable>
 <xsl:variable name="lw-path4">0.25</xsl:variable>
-<xsl:variable name="lw-steps">0.6</xsl:variable>
+<xsl:variable name="lw-steps">0.5</xsl:variable>
 <xsl:variable name="lw-ferrata">0.8</xsl:variable>
 
 
@@ -182,7 +182,9 @@
 <xsl:variable name="lc-residential-tunnel">#FFFFFF</xsl:variable>
 <xsl:variable name="lc-living-tunnel">#FFFFFF</xsl:variable>
 <xsl:variable name="lc-service-tunnel">#FFFFFF</xsl:variable>
-<xsl:variable name="lc-tunnel">#FFFFFF</xsl:variable>
+
+
+<xsl:variable name="lc-tunnel">#80916922</xsl:variable>
 <xsl:variable name="lc-embankment">#949494</xsl:variable>
 
 <xsl:variable name="lc-restricted">#FF0000</xsl:variable>

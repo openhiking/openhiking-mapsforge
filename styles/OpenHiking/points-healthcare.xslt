@@ -23,12 +23,12 @@
   </rule>       
 </rule>
 
-<rule  e="any" k="amenity" v="doctors" zoom-min="14">
-  <rule  e="any" k="*" v="*" zoom-max="15">
-    <symbol id="doctors" src="{$healthcareIconPath}/doctors.svg" symbol-width="16" priority="{$pr-doctors}"/>
+<rule  e="any" k="amenity" v="doctors" zoom-min="15">
+  <rule  e="any" k="*" v="*" zoom-max="16">
+    <symbol id="doctors" src="{$healthcareIconPath}/doctors.svg" symbol-width="15" priority="{$pr-doctors}"/>
   </rule>
-  <rule  e="any" k="*" v="*" zoom-min="16"> 
-    <symbol id="doctors" src="{$healthcareIconPath}/doctors.svg" symbol-width="18" priority="{$pr-doctors}"/>
+  <rule  e="any" k="*" v="*" zoom-min="17"> 
+    <symbol id="doctors" src="{$healthcareIconPath}/doctors.svg" symbol-width="17" priority="{$pr-doctors}"/>
   </rule>     
   <rule e="any" k="*" v="*" zoom-min="16">
         <caption k="name" symbol-id="doctors" 
