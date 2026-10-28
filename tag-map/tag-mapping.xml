@@ -556,7 +556,7 @@
     ************************************************** -->
     <ways>
             <osm-tag key="amenity" value="clinic" label-position="true" zoom-appear="13"/>            
-            <osm-tag key="amenity" value="doctors" label-position="true" zoom-appear="14"/>
+            <osm-tag key="amenity" value="doctors" label-position="true" zoom-appear="15"/>
             <osm-tag key="amenity" value="dentist" label-position="true" zoom-appear="15"/>                        
             <osm-tag key="amenity" label-position="true" value="hospital" zoom-appear="13"/>
             <osm-tag key="amenity" label-position="true" value="pharmacy" zoom-appear="15"/>
@@ -564,7 +564,7 @@
 
     <pois>
             <osm-tag key="amenity" value="clinic" zoom-appear="13"/>            
-            <osm-tag key="amenity" value="doctors" zoom-appear="14"/>
+            <osm-tag key="amenity" value="doctors" zoom-appear="15"/>
             <osm-tag key="amenity" value="dentist" zoom-appear="15"/>                        
             <osm-tag key="amenity" value="hospital" zoom-appear="13"/>
             <osm-tag key="amenity" value="pharmacy" zoom-appear="15"/>
