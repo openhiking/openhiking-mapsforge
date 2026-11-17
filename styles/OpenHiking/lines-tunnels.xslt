@@ -28,31 +28,31 @@
 <xsl:template name="tunnel-rules">
 <xsl:param name="extraSpace" />
     <rule e="way" k="highway" v="footway" zoom-min="{$zm-footway}">
-        <line stroke="{$lc-tunnel}" stroke-width="{$lw-footway + $extraSpace + 0.6}" stroke-linecap="butt"/>          
+        <line stroke="{$lc-tunnel}" stroke-width="{$lw-footway + $extraSpace + 0.5}" stroke-linecap="butt"/>          
     </rule>
     <rule e="way" k="highway" v="path" zoom-min="{$zm-path}">
-        <line stroke="{$lc-tunnel}" stroke-width="{$lw-path + $extraSpace + 0.6}" stroke-linecap="butt"/>          
+        <line stroke="{$lc-tunnel}" stroke-width="{$lw-path + $extraSpace + 0.5}" stroke-linecap="butt"/>          
     </rule>
     <rule e="way" k="highway" v="path_obscure" zoom-min="{$zm-path}">
-        <line stroke="{$lc-tunnel}" stroke-width="{$lw-obscure2 + $extraSpace + 0.6}" stroke-linecap="butt"/>          
+        <line stroke="{$lc-tunnel}" stroke-width="{$lw-obscure2 + $extraSpace + 0.5}" stroke-linecap="butt"/>          
     </rule>
     <rule e="way" k="highway" v="bridleway" zoom-min="{$zm-bridleway}">
-        <line stroke="{$lc-tunnel}" stroke-width="{$lw-bridleway + $extraSpace + 0.6}" stroke-linecap="butt"/>          
+        <line stroke="{$lc-tunnel}" stroke-width="{$lw-bridleway + $extraSpace + 0.5}" stroke-linecap="butt"/>          
     </rule>
     <rule e="way" k="highway" v="steps" zoom-min="{$zm-steps}">
-        <line stroke="{$lc-tunnel}" stroke-width="{$lw-steps + $extraSpace + 0.7}" stroke-linecap="butt"/>          
+        <line stroke="{$lc-tunnel}" stroke-width="{$lw-steps + $extraSpace + 0.6}" stroke-linecap="butt"/>          
     </rule>
     <rule e="way" k="highway" v="pedestrian" zoom-min="{$zm-pedestrian}">
-        <line stroke="{$lc-tunnel}" stroke-width="{$lw-pedestrian + $extraSpace + 0.7}" stroke-linecap="butt"/>          
+        <line stroke="{$lc-tunnel}" stroke-width="{$lw-pedestrian + $extraSpace + 0.6}" stroke-linecap="butt"/>          
     </rule>
     <rule e="way" k="highway" v="track" zoom-min="{$zm-track}">
-        <line stroke="{$lc-tunnel}" stroke-width="{$lw-track + $extraSpace + 0.9}" stroke-linecap="butt"/>          
+        <line stroke="{$lc-tunnel}" stroke-width="{$lw-track + $extraSpace + 0.8}" stroke-linecap="butt"/>          
     </rule>
    <rule e="way" k="highway" v="track_obscure" zoom-min="{$zm-track}">
-        <line stroke="{$lc-tunnel}" stroke-width="{$lw-obscure + $extraSpace + 0.9}" stroke-linecap="butt"/>          
+        <line stroke="{$lc-tunnel}" stroke-width="{$lw-obscure + $extraSpace + 0.8}" stroke-linecap="butt"/>          
     </rule>
     <rule e="way" k="highway" v="cycleway" zoom-min="{$zm-cycleway}">
-        <line stroke="{$lc-tunnel}" stroke-width="{$lw-cycleway + $extraSpace + 0.9}" stroke-linecap="butt"/>          
+        <line stroke="{$lc-tunnel}" stroke-width="{$lw-cycleway + $extraSpace + 0.8}" stroke-linecap="butt"/>          
     </rule>
 
 </xsl:template>

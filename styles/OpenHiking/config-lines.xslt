@@ -184,7 +184,7 @@
 <xsl:variable name="lc-service-tunnel">#FFFFFF</xsl:variable>
 
 
-<xsl:variable name="lc-tunnel">#80916922</xsl:variable>
+<xsl:variable name="lc-tunnel">#809f9e9b</xsl:variable>
 <xsl:variable name="lc-embankment">#949494</xsl:variable>
 
 <xsl:variable name="lc-restricted">#FF0000</xsl:variable>
